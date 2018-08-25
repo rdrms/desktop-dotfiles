@@ -1,0 +1,13 @@
+#!/bin/bash
+sleep 2 &
+feh --bg-tile ~/Pictures/wallpaper/zenburn-tiling3.png &
+compton &
+pasystray &
+mpdscribble &
+mpDris2 &
+mpdscribble &
+mpDris2 &
+mpd &
+tint2 &
+xscreensaver -nosplash &
+~             
