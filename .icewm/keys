@@ -1,0 +1,6 @@
+key "Super+space" dmenu_run -b -fn "Meslo LG S DZ for Powerline:pixelsize=13" -nb "#FFFFFF" -nf "#3f3f3f" -sb "#2766c7" -p 'IceWM'
+key "Super+Enter" termite
+key "Super+l" xscreensaver-command -lock
+key "Print" scrot 'scrot-%Y-%m-%d_%h-%m-%s_$wx$h.png' -e 'mv $f ~/Pictures/scrot/ && xclip -t image/png ~/Pictures/scrot/$f -sel clip'
+key "shift+Print" scrot --select 'scrot-%Y-%m-%d_%h-%m-%s_$wx$h_snip.png' -e 'mv $f ~/Pictures/scrot/ && xclip -t image/png ~/Pictures/scrot/$f -sel clip'
+key "Super+r" killall -SIGHUP icewm

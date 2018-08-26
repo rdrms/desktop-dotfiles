@@ -1,10 +1,12 @@
 #!/bin/bash
 sleep 2 &
-feh --bg-tile ~/Pictures/wallpaper/zenburn-tiling3.png &
+feh --bg-scale ~/Pictures/wallpaper/mountains-3582x2398-pink-hd-8914.jpg &
 compton &
 pasystray &
-mpdscribble &
+blueman-applet &
+#nm-applet & #not needed on a desktop
 mpDris2 &
+killall mpdscribble &
 mpdscribble &
 mpDris2 &
 mpd &

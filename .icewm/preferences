@@ -137,13 +137,13 @@
 # DelayPointerFocus=1 # 0/1
 
 #  Support win95 keyboard keys (Penguin/Meta/Win_L,R shows menu)
-# Win95Keys=1 # 0/1
+Win95Keys=0 # 0/1
 
 #  Treat Super/Win modifier as Ctrl+Alt
 # ModSuperIsCtrlAlt=1 # 0/1
 
 #  Support mouse wheel
-# UseMouseWheel=0 # 0/1
+UseMouseWheel=1 # 0/1
 
 #  Show popup menus above mouse pointer
 # ShowPopupsAbovePointer=0 # 0/1
@@ -1421,3 +1421,5 @@ ShowTaskBar=1 # 0/1
 TaskBarAtTop=1 # 0/1
 
 ShowTaskBar=0 # 0/1
+
+TaskBarAtTop=0 # 0/1
