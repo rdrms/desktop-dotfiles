@@ -1,0 +1,1314 @@
+2018-08-22 11:21:47	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 11:21:47	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 11:21:47	--	gnutls: receiving 1 certificate
+2018-08-22 11:21:47	--	 - certificate[1] info:
+2018-08-22 11:21:47	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 11:21:47	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 11:21:47	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 11:21:47	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 11:21:47	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 11:21:47	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 11:21:47	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 11:21:47	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 11:21:47	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 11:21:47	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 11:21:47	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 11:21:47	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 11:21:47	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 11:21:47	--	36 :IRC Operators online
+2018-08-22 11:21:47	--	51325 :channels formed
+2018-08-22 11:21:47	--	I have 4844 clients and 2 servers
+2018-08-22 11:21:47	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 11:21:47	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 11:21:47	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 11:21:47	--	You are now known as rydare
+2018-08-22 11:21:47	--	MOTD blocked by ZNC
+2018-08-22 11:21:47	--	User mode [+RZi] by rydare
+2018-08-22 12:14:56	--	emerson (~emerson@freenode/staff/emerson): :[Global Notice] Services are going to be rebooted for maintenance now, apologies for the inconvenience.
+2018-08-22 14:23:39	--	irc: disconnected from server
+2018-08-22 14:29:07	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 14:29:07	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 14:29:07	--	gnutls: receiving 1 certificate
+2018-08-22 14:29:07	--	 - certificate[1] info:
+2018-08-22 14:29:07	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 14:29:07	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 14:29:07	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 14:29:07	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 14:29:07	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 14:29:07	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 14:29:07	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 14:29:07	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 14:29:07	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 14:29:07	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 14:29:07	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 14:29:07	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 14:29:07	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 14:29:07	--	36 :IRC Operators online
+2018-08-22 14:29:07	--	51325 :channels formed
+2018-08-22 14:29:07	--	I have 4844 clients and 2 servers
+2018-08-22 14:29:07	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 14:29:07	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 14:29:07	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 14:29:07	--	You are now known as rydare
+2018-08-22 14:29:07	--	MOTD blocked by ZNC
+2018-08-22 14:29:07	--	User mode [+RZi] by rydare
+2018-08-22 16:06:17	--	irc: disconnected from server
+2018-08-22 16:07:49	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 16:07:49	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 16:07:49	--	gnutls: receiving 1 certificate
+2018-08-22 16:07:49	--	 - certificate[1] info:
+2018-08-22 16:07:49	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 16:07:49	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 16:07:49	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 16:07:49	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 16:07:49	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 16:07:49	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 16:07:49	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 16:07:49	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 16:07:49	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 16:07:49	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 16:07:49	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 16:07:49	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 16:07:49	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 16:07:49	--	36 :IRC Operators online
+2018-08-22 16:07:49	--	51325 :channels formed
+2018-08-22 16:07:49	--	I have 4844 clients and 2 servers
+2018-08-22 16:07:49	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 16:07:49	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 16:07:49	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 16:07:49	--	You are now known as rydare
+2018-08-22 16:07:49	--	MOTD blocked by ZNC
+2018-08-22 16:07:49	--	User mode [+RZi] by rydare
+2018-08-22 16:11:06	--	irc: disconnected from server
+2018-08-22 16:11:58	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 16:11:58	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 16:11:58	--	gnutls: receiving 1 certificate
+2018-08-22 16:11:58	--	 - certificate[1] info:
+2018-08-22 16:11:58	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 16:11:58	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 16:11:58	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 16:11:58	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 16:11:58	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 16:11:58	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 16:11:58	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 16:11:58	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 16:11:58	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 16:11:58	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 16:11:58	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 16:11:58	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 16:11:58	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 16:11:58	--	36 :IRC Operators online
+2018-08-22 16:11:58	--	51325 :channels formed
+2018-08-22 16:11:58	--	I have 4844 clients and 2 servers
+2018-08-22 16:11:58	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 16:11:58	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 16:11:58	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 16:11:58	--	You are now known as rydare
+2018-08-22 16:11:58	--	MOTD blocked by ZNC
+2018-08-22 16:11:58	--	User mode [+RZi] by rydare
+2018-08-22 19:12:23	--	irc: disconnected from server
+2018-08-22 19:12:52	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 19:12:52	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 19:12:52	--	gnutls: receiving 1 certificate
+2018-08-22 19:12:52	--	 - certificate[1] info:
+2018-08-22 19:12:52	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 19:12:52	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 19:12:52	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 19:12:52	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 19:12:52	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 19:12:52	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 19:12:52	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 19:12:52	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 19:12:52	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 19:12:52	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 19:12:52	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 19:12:52	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 19:12:52	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 19:12:52	--	36 :IRC Operators online
+2018-08-22 19:12:52	--	51325 :channels formed
+2018-08-22 19:12:52	--	I have 4844 clients and 2 servers
+2018-08-22 19:12:52	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 19:12:52	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 19:12:52	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 19:12:52	--	You are now known as rydare
+2018-08-22 19:12:52	--	MOTD blocked by ZNC
+2018-08-22 19:12:52	--	User mode [+RZi] by rydare
+2018-08-22 19:44:22	--	irc: disconnected from server
+2018-08-22 19:44:27	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 19:44:27	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 19:44:27	--	gnutls: receiving 1 certificate
+2018-08-22 19:44:27	--	 - certificate[1] info:
+2018-08-22 19:44:27	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 19:44:27	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 19:44:27	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 19:44:27	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 19:44:27	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 19:44:27	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 19:44:27	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 19:44:27	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 19:44:27	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 19:44:27	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 19:44:27	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 19:44:27	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 19:44:27	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 19:44:27	--	36 :IRC Operators online
+2018-08-22 19:44:27	--	51325 :channels formed
+2018-08-22 19:44:27	--	I have 4844 clients and 2 servers
+2018-08-22 19:44:27	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 19:44:27	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 19:44:27	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 19:44:27	--	You are now known as rydare
+2018-08-22 19:44:27	--	MOTD blocked by ZNC
+2018-08-22 19:44:27	--	User mode [+RZi] by rydare
+2018-08-22 20:21:27	--	irc: disconnected from server
+2018-08-22 20:25:47	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:25:47	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:25:47	--	gnutls: receiving 1 certificate
+2018-08-22 20:25:47	--	 - certificate[1] info:
+2018-08-22 20:25:47	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:25:47	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:25:47	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:25:47	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:25:47	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:25:47	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 20:25:47	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 20:25:47	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 20:25:47	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 20:25:47	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 20:25:47	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 20:25:47	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 20:25:47	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 20:25:47	--	36 :IRC Operators online
+2018-08-22 20:25:47	--	51325 :channels formed
+2018-08-22 20:25:47	--	I have 4844 clients and 2 servers
+2018-08-22 20:25:47	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 20:25:47	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 20:25:47	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 20:25:47	--	You are now known as rydare
+2018-08-22 20:25:47	--	MOTD blocked by ZNC
+2018-08-22 20:25:47	--	User mode [+RZi] by rydare
+2018-08-22 20:25:52	--	irc: disconnected from server
+2018-08-22 20:27:51	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:27:51	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:27:51	--	gnutls: receiving 1 certificate
+2018-08-22 20:27:51	--	 - certificate[1] info:
+2018-08-22 20:27:51	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:27:51	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:27:51	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:27:51	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:27:51	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:27:51	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 20:27:51	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 20:27:51	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 20:27:51	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 20:27:51	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 20:27:51	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 20:27:51	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 20:27:51	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 20:27:51	--	36 :IRC Operators online
+2018-08-22 20:27:51	--	51325 :channels formed
+2018-08-22 20:27:51	--	I have 4844 clients and 2 servers
+2018-08-22 20:27:51	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 20:27:51	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 20:27:51	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 20:27:51	--	You are now known as rydare
+2018-08-22 20:27:51	--	MOTD blocked by ZNC
+2018-08-22 20:27:51	--	User mode [+RZi] by rydare
+2018-08-22 20:30:07	--	irc: disconnected from server
+2018-08-22 20:32:06	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:32:06	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:32:06	--	gnutls: receiving 1 certificate
+2018-08-22 20:32:06	--	 - certificate[1] info:
+2018-08-22 20:32:06	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:32:06	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:32:06	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:32:06	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:32:06	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:32:06	--	Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 20:32:06	--	Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 20:32:06	--	This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 20:32:06	--	verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 20:32:06	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 20:32:06	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 20:32:06	--	CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 20:32:06	--	There are 117 users and 82556 invisible on 34 servers
+2018-08-22 20:32:06	--	36 :IRC Operators online
+2018-08-22 20:32:06	--	51325 :channels formed
+2018-08-22 20:32:06	--	I have 4844 clients and 2 servers
+2018-08-22 20:32:06	--	4844 7978 :Current local users 4844, max 7978
+2018-08-22 20:32:06	--	82673 97718 :Current global users 82673, max 97718
+2018-08-22 20:32:06	--	Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 20:32:06	--	You are now known as rydare
+2018-08-22 20:32:06	--	MOTD blocked by ZNC
+2018-08-22 20:32:06	--	User mode [+RZi] by rydare
+2018-08-22 20:42:58	⚠️	irc: this buffer is not a channel!
+2018-08-22 20:50:42		irc: disconnected from server
+2018-08-22 20:50:45		irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:50:45		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:50:45		gnutls: receiving 1 certificate
+2018-08-22 20:50:45		 - certificate[1] info:
+2018-08-22 20:50:45		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:50:45	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:50:45	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:50:45	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:50:45		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:50:45		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 20:50:45		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 20:50:45		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 20:50:45		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 20:50:45		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 20:50:45		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 20:50:45		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 20:50:45		There are 117 users and 82556 invisible on 34 servers
+2018-08-22 20:50:45		36 :IRC Operators online
+2018-08-22 20:50:45		51325 :channels formed
+2018-08-22 20:50:45		I have 4844 clients and 2 servers
+2018-08-22 20:50:45		4844 7978 :Current local users 4844, max 7978
+2018-08-22 20:50:45		82673 97718 :Current global users 82673, max 97718
+2018-08-22 20:50:45		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 20:50:45		You are now known as rydare
+2018-08-22 20:50:45		MOTD blocked by ZNC
+2018-08-22 20:50:45		User mode [+RZi] by rydare
+2018-08-22 21:31:39		irc: disconnected from server
+2018-08-22 21:31:40		irc: connecting to server home/8080 (SSL)...
+2018-08-22 21:31:40		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 21:31:40		gnutls: receiving 1 certificate
+2018-08-22 21:31:40		 - certificate[1] info:
+2018-08-22 21:31:40		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 21:31:40	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 21:31:40	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 21:31:40	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 21:31:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 21:31:41		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 21:31:41		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 21:31:41		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 21:31:41		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 21:31:41		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 21:31:41		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 21:31:41		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 21:31:41		There are 117 users and 82556 invisible on 34 servers
+2018-08-22 21:31:41		36 :IRC Operators online
+2018-08-22 21:31:41		51325 :channels formed
+2018-08-22 21:31:41		I have 4844 clients and 2 servers
+2018-08-22 21:31:41		4844 7978 :Current local users 4844, max 7978
+2018-08-22 21:31:41		82673 97718 :Current global users 82673, max 97718
+2018-08-22 21:31:41		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 21:31:41		You are now known as rydare
+2018-08-22 21:31:41		MOTD blocked by ZNC
+2018-08-22 21:31:41		User mode [+RZi] by rydare
+2018-08-22 21:44:30		irc: disconnected from server
+2018-08-22 21:44:31		irc: connecting to server home/8080 (SSL)...
+2018-08-22 21:44:31		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 21:44:31		gnutls: receiving 1 certificate
+2018-08-22 21:44:31		 - certificate[1] info:
+2018-08-22 21:44:31		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 21:44:31	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 21:44:31	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 21:44:31	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 21:44:31		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 21:44:31		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 21:44:31		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 21:44:31		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 21:44:31		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 21:44:31		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 21:44:31		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 21:44:31		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 21:44:31		There are 117 users and 82556 invisible on 34 servers
+2018-08-22 21:44:31		36 :IRC Operators online
+2018-08-22 21:44:31		51325 :channels formed
+2018-08-22 21:44:31		I have 4844 clients and 2 servers
+2018-08-22 21:44:31		4844 7978 :Current local users 4844, max 7978
+2018-08-22 21:44:31		82673 97718 :Current global users 82673, max 97718
+2018-08-22 21:44:31		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 21:44:31		You are now known as rydare
+2018-08-22 21:44:31		MOTD blocked by ZNC
+2018-08-22 21:44:31		User mode [+RZi] by rydare
+2018-08-22 22:10:15	⚠️	irc: this buffer is not a channel!
+2018-08-22 22:11:09	⚠️	irc: this buffer is not a channel!
+2018-08-22 23:55:44		irc: disconnected from server
+2018-08-22 23:56:41		irc: connecting to server home/8080 (SSL)...
+2018-08-22 23:56:41		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 23:56:41		gnutls: receiving 1 certificate
+2018-08-22 23:56:41		 - certificate[1] info:
+2018-08-22 23:56:41		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 23:56:41	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 23:56:41	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 23:56:41	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 23:56:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 23:56:41		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-22 23:56:41		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-22 23:56:41		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-22 23:56:41		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-22 23:56:41		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-22 23:56:41		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-22 23:56:41		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-22 23:56:41		There are 117 users and 82556 invisible on 34 servers
+2018-08-22 23:56:41		36 :IRC Operators online
+2018-08-22 23:56:41		51325 :channels formed
+2018-08-22 23:56:41		I have 4844 clients and 2 servers
+2018-08-22 23:56:41		4844 7978 :Current local users 4844, max 7978
+2018-08-22 23:56:41		82673 97718 :Current global users 82673, max 97718
+2018-08-22 23:56:41		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-22 23:56:41		You are now known as rydare
+2018-08-22 23:56:41		MOTD blocked by ZNC
+2018-08-22 23:56:41		User mode [+RZi] by rydare
+2018-08-23 01:04:00		irc: disconnected from server
+2018-08-23 01:04:05		irc: connecting to server home/8080 (SSL)...
+2018-08-23 01:04:05		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 01:04:05		gnutls: receiving 1 certificate
+2018-08-23 01:04:05		 - certificate[1] info:
+2018-08-23 01:04:05		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 01:04:05	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 01:04:05	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 01:04:05	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 01:04:05		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 01:04:05		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 01:04:05		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 01:04:05		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 01:04:05		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 01:04:05		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 01:04:05		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 01:04:05		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 01:04:05		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 01:04:05		36 :IRC Operators online
+2018-08-23 01:04:05		51325 :channels formed
+2018-08-23 01:04:05		I have 4844 clients and 2 servers
+2018-08-23 01:04:05		4844 7978 :Current local users 4844, max 7978
+2018-08-23 01:04:05		82673 97718 :Current global users 82673, max 97718
+2018-08-23 01:04:05		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 01:04:05		You are now known as rydare
+2018-08-23 01:04:05		MOTD blocked by ZNC
+2018-08-23 01:04:05		User mode [+RZi] by rydare
+2018-08-23 11:42:20		irc: disconnected from server
+2018-08-23 11:42:34		irc: connecting to server home/8080 (SSL)...
+2018-08-23 11:42:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 11:42:34		gnutls: receiving 1 certificate
+2018-08-23 11:42:34		 - certificate[1] info:
+2018-08-23 11:42:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 11:42:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 11:42:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 11:42:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 11:42:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 11:42:34		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 11:42:34		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 11:42:34		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 11:42:34		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 11:42:34		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 11:42:34		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 11:42:34		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 11:42:34		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 11:42:34		36 :IRC Operators online
+2018-08-23 11:42:34		51325 :channels formed
+2018-08-23 11:42:34		I have 4844 clients and 2 servers
+2018-08-23 11:42:34		4844 7978 :Current local users 4844, max 7978
+2018-08-23 11:42:34		82673 97718 :Current global users 82673, max 97718
+2018-08-23 11:42:34		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 11:42:34		You are now known as rydare
+2018-08-23 11:42:34		MOTD blocked by ZNC
+2018-08-23 11:42:34		User mode [+RZi] by rydare
+2018-08-23 12:34:23		irc: disconnected from server
+2018-08-23 12:34:50		irc: connecting to server home/8080 (SSL)...
+2018-08-23 12:34:50		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 12:34:50		gnutls: receiving 1 certificate
+2018-08-23 12:34:50		 - certificate[1] info:
+2018-08-23 12:34:50		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 12:34:50	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 12:34:50	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 12:34:50	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 12:34:50		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 12:34:50		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 12:34:50		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 12:34:50		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 12:34:50		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 12:34:50		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 12:34:50		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 12:34:50		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 12:34:50		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 12:34:50		36 :IRC Operators online
+2018-08-23 12:34:50		51325 :channels formed
+2018-08-23 12:34:50		I have 4844 clients and 2 servers
+2018-08-23 12:34:50		4844 7978 :Current local users 4844, max 7978
+2018-08-23 12:34:50		82673 97718 :Current global users 82673, max 97718
+2018-08-23 12:34:50		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 12:34:50		You are now known as rydare
+2018-08-23 12:34:50		MOTD blocked by ZNC
+2018-08-23 12:34:50		User mode [+RZi] by rydare
+2018-08-23 12:38:17		emerson (~emerson@freenode/staff/emerson): [Global Notice] Unfortunately, due to the services disruption last night, we need to restart services again. We'll be doing this around 01:00UTC tomorrow. There will also be some netsplits afterwards as we continue to upgrade all of our servers, affected users will be sent notices before it happens. Sorry for the disruption, thanks for flying freenode :)
+2018-08-23 13:09:52		irc: disconnected from server
+2018-08-23 13:10:36		irc: connecting to server home/8080 (SSL)...
+2018-08-23 13:10:36		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 13:10:36		gnutls: receiving 1 certificate
+2018-08-23 13:10:36		 - certificate[1] info:
+2018-08-23 13:10:36		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 13:10:36	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 13:10:36	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 13:10:36	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 13:10:36		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 13:10:36		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 13:10:36		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 13:10:36		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 13:10:36		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 13:10:36		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 13:10:36		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 13:10:36		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 13:10:36		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 13:10:36		36 :IRC Operators online
+2018-08-23 13:10:36		51325 :channels formed
+2018-08-23 13:10:36		I have 4844 clients and 2 servers
+2018-08-23 13:10:36		4844 7978 :Current local users 4844, max 7978
+2018-08-23 13:10:36		82673 97718 :Current global users 82673, max 97718
+2018-08-23 13:10:36		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 13:10:36		You are now known as rydare
+2018-08-23 13:10:36		MOTD blocked by ZNC
+2018-08-23 13:10:36		User mode [+RZi] by rydare
+2018-08-23 14:05:48		irc: disconnected from server
+2018-08-23 14:05:57		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:05:57		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:05:57		gnutls: receiving 1 certificate
+2018-08-23 14:05:57		 - certificate[1] info:
+2018-08-23 14:05:57		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:05:57	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:05:57	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:05:57	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:05:57		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:05:57		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 14:05:57		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 14:05:57		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 14:05:57		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 14:05:57		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 14:05:57		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 14:05:57		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 14:05:57		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 14:05:57		36 :IRC Operators online
+2018-08-23 14:05:57		51325 :channels formed
+2018-08-23 14:05:57		I have 4844 clients and 2 servers
+2018-08-23 14:05:57		4844 7978 :Current local users 4844, max 7978
+2018-08-23 14:05:57		82673 97718 :Current global users 82673, max 97718
+2018-08-23 14:05:57		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 14:05:57		You are now known as rydare
+2018-08-23 14:05:57		MOTD blocked by ZNC
+2018-08-23 14:05:57		User mode [+RZi] by rydare
+2018-08-23 14:17:14		irc: disconnected from server
+2018-08-23 14:28:22		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:28:22		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:28:22		gnutls: receiving 1 certificate
+2018-08-23 14:28:22		 - certificate[1] info:
+2018-08-23 14:28:22		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:28:22	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:28:22	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:28:22	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:28:22		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:28:22		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 14:28:22		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 14:28:22		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 14:28:22		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 14:28:22		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 14:28:22		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 14:28:22		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 14:28:22		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 14:28:22		36 :IRC Operators online
+2018-08-23 14:28:22		51325 :channels formed
+2018-08-23 14:28:22		I have 4844 clients and 2 servers
+2018-08-23 14:28:22		4844 7978 :Current local users 4844, max 7978
+2018-08-23 14:28:22		82673 97718 :Current global users 82673, max 97718
+2018-08-23 14:28:22		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 14:28:22		You are now known as rydare
+2018-08-23 14:28:22		MOTD blocked by ZNC
+2018-08-23 14:28:22		User mode [+RZi] by rydare
+2018-08-23 14:48:01		irc: disconnected from server
+2018-08-23 14:49:56		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:49:56		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:49:56		gnutls: receiving 1 certificate
+2018-08-23 14:49:56		 - certificate[1] info:
+2018-08-23 14:49:56		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:49:56	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:49:56	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:49:56	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:49:56		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:49:56		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 14:49:56		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 14:49:56		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 14:49:56		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 14:49:56		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 14:49:56		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 14:49:56		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 14:49:56		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 14:49:56		36 :IRC Operators online
+2018-08-23 14:49:56		51325 :channels formed
+2018-08-23 14:49:56		I have 4844 clients and 2 servers
+2018-08-23 14:49:56		4844 7978 :Current local users 4844, max 7978
+2018-08-23 14:49:56		82673 97718 :Current global users 82673, max 97718
+2018-08-23 14:49:56		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 14:49:56		You are now known as rydare
+2018-08-23 14:49:56		MOTD blocked by ZNC
+2018-08-23 14:49:56		User mode [+RZi] by rydare
+2018-08-23 17:33:34		irc: disconnected from server
+2018-08-23 17:33:52		irc: connecting to server home/8080 (SSL)...
+2018-08-23 17:33:52		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 17:33:52		gnutls: receiving 1 certificate
+2018-08-23 17:33:52		 - certificate[1] info:
+2018-08-23 17:33:52		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 17:33:52	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 17:33:52	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 17:33:52	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 17:33:52		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 17:33:52		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 17:33:52		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 17:33:52		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 17:33:52		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 17:33:52		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 17:33:52		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 17:33:52		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 17:33:52		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 17:33:52		36 :IRC Operators online
+2018-08-23 17:33:52		51325 :channels formed
+2018-08-23 17:33:52		I have 4844 clients and 2 servers
+2018-08-23 17:33:52		4844 7978 :Current local users 4844, max 7978
+2018-08-23 17:33:52		82673 97718 :Current global users 82673, max 97718
+2018-08-23 17:33:52		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 17:33:52		You are now known as rydare
+2018-08-23 17:33:52		MOTD blocked by ZNC
+2018-08-23 17:33:52		User mode [+RZi] by rydare
+2018-08-23 18:26:29		irc: disconnected from server
+2018-08-23 18:29:52		irc: connecting to server home/8080 (SSL)...
+2018-08-23 18:29:52		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 18:29:52		gnutls: receiving 1 certificate
+2018-08-23 18:29:52		 - certificate[1] info:
+2018-08-23 18:29:52		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 18:29:52	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 18:29:52	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 18:29:52	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 18:29:52		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 18:29:52		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 18:29:52		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 18:29:52		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 18:29:52		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 18:29:52		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 18:29:52		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 18:29:52		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 18:29:52		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 18:29:52		36 :IRC Operators online
+2018-08-23 18:29:52		51325 :channels formed
+2018-08-23 18:29:52		I have 4844 clients and 2 servers
+2018-08-23 18:29:52		4844 7978 :Current local users 4844, max 7978
+2018-08-23 18:29:52		82673 97718 :Current global users 82673, max 97718
+2018-08-23 18:29:52		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 18:29:52		You are now known as rydare
+2018-08-23 18:29:52		MOTD blocked by ZNC
+2018-08-23 18:29:52		User mode [+RZi] by rydare
+2018-08-23 20:15:52		irc: lag is high, reconnecting to server Freenode
+2018-08-23 20:15:52		irc: disconnected from server
+2018-08-23 20:15:52		irc: reconnecting to server in 10 seconds
+2018-08-23 20:16:02		irc: reconnecting to server...
+2018-08-23 20:16:02		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:16:02	⚠️	irc: connection refused
+2018-08-23 20:16:02		irc: reconnecting to server in 20 seconds
+2018-08-23 20:16:22		irc: reconnecting to server...
+2018-08-23 20:16:22		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:16:22	⚠️	irc: connection refused
+2018-08-23 20:16:22		irc: reconnecting to server in 40 seconds
+2018-08-23 20:17:02		irc: reconnecting to server...
+2018-08-23 20:17:02		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:17:02		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 20:17:02		gnutls: receiving 1 certificate
+2018-08-23 20:17:02		 - certificate[1] info:
+2018-08-23 20:17:02		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 20:17:02	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 20:17:02	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 20:17:02	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 20:17:02		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 20:17:02		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 20:17:02		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 20:17:02		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 20:17:02		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 20:17:02		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 20:17:02		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 20:17:02		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 20:17:02		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 20:17:02		36 :IRC Operators online
+2018-08-23 20:17:02		51325 :channels formed
+2018-08-23 20:17:02		I have 4844 clients and 2 servers
+2018-08-23 20:17:02		4844 7978 :Current local users 4844, max 7978
+2018-08-23 20:17:02		82673 97718 :Current global users 82673, max 97718
+2018-08-23 20:17:02		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 20:17:02		MOTD blocked by ZNC
+2018-08-23 20:17:02		User mode [+RZi] by rydare
+2018-08-23 20:24:34	⚠️	irc: reading data on socket: error -54 Error in the pull function.
+2018-08-23 20:24:34		irc: disconnecting from server...
+2018-08-23 20:24:34		irc: disconnected from server
+2018-08-23 20:24:34		irc: reconnecting to server in 10 seconds
+2018-08-23 20:24:44		irc: reconnecting to server...
+2018-08-23 20:24:44		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:24:44		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 20:24:44		gnutls: receiving 1 certificate
+2018-08-23 20:24:44		 - certificate[1] info:
+2018-08-23 20:24:44		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 20:24:44	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 20:24:44	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 20:24:44	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 20:24:44		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 20:24:44		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 20:24:44		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 20:24:44		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 20:24:44		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 20:24:44		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 20:24:44		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 20:24:44		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 20:24:44		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 20:24:44		36 :IRC Operators online
+2018-08-23 20:24:44		51325 :channels formed
+2018-08-23 20:24:44		I have 4844 clients and 2 servers
+2018-08-23 20:24:44		4844 7978 :Current local users 4844, max 7978
+2018-08-23 20:24:44		82673 97718 :Current global users 82673, max 97718
+2018-08-23 20:24:44		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 20:24:44		MOTD blocked by ZNC
+2018-08-23 20:24:44		User mode [+RZi] by rydare
+2018-08-23 21:30:52		irc: disconnected from server
+2018-08-23 21:39:19		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:39:19		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:39:19		gnutls: receiving 1 certificate
+2018-08-23 21:39:19		 - certificate[1] info:
+2018-08-23 21:39:19		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:39:19	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:39:19	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:39:19	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:39:19		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:39:19		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 21:39:19		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 21:39:19		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 21:39:19		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 21:39:19		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 21:39:19		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 21:39:19		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 21:39:19		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 21:39:19		36 :IRC Operators online
+2018-08-23 21:39:19		51325 :channels formed
+2018-08-23 21:39:19		I have 4844 clients and 2 servers
+2018-08-23 21:39:19		4844 7978 :Current local users 4844, max 7978
+2018-08-23 21:39:19		82673 97718 :Current global users 82673, max 97718
+2018-08-23 21:39:19		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 21:39:19		You are now known as rydare
+2018-08-23 21:39:19		MOTD blocked by ZNC
+2018-08-23 21:39:19		User mode [+RZi] by rydare
+2018-08-23 21:41:59		irc: disconnected from server
+2018-08-23 21:46:57		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:46:57		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:46:57		gnutls: receiving 1 certificate
+2018-08-23 21:46:57		 - certificate[1] info:
+2018-08-23 21:46:57		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:46:57	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:46:57	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:46:57	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:46:57		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:46:57		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 21:46:57		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 21:46:57		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 21:46:57		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 21:46:57		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 21:46:57		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 21:46:57		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 21:46:57		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 21:46:57		36 :IRC Operators online
+2018-08-23 21:46:57		51325 :channels formed
+2018-08-23 21:46:57		I have 4844 clients and 2 servers
+2018-08-23 21:46:57		4844 7978 :Current local users 4844, max 7978
+2018-08-23 21:46:57		82673 97718 :Current global users 82673, max 97718
+2018-08-23 21:46:57		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 21:46:57		You are now known as rydare
+2018-08-23 21:46:57		MOTD blocked by ZNC
+2018-08-23 21:46:57		User mode [+RZi] by rydare
+2018-08-23 21:51:38		irc: disconnected from server
+2018-08-23 21:51:51		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:51:51		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:51:51		gnutls: receiving 1 certificate
+2018-08-23 21:51:51		 - certificate[1] info:
+2018-08-23 21:51:51		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:51:51	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:51:51	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:51:51	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:51:51		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:51:52		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 21:51:52		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 21:51:52		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 21:51:52		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 21:51:52		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 21:51:52		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 21:51:52		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 21:51:52		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 21:51:52		36 :IRC Operators online
+2018-08-23 21:51:52		51325 :channels formed
+2018-08-23 21:51:52		I have 4844 clients and 2 servers
+2018-08-23 21:51:52		4844 7978 :Current local users 4844, max 7978
+2018-08-23 21:51:52		82673 97718 :Current global users 82673, max 97718
+2018-08-23 21:51:52		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 21:51:52		You are now known as rydare
+2018-08-23 21:51:52		MOTD blocked by ZNC
+2018-08-23 21:51:52		User mode [+RZi] by rydare
+2018-08-23 22:21:59		irc: disconnected from server
+2018-08-23 22:22:34		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:22:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:22:34		gnutls: receiving 1 certificate
+2018-08-23 22:22:34		 - certificate[1] info:
+2018-08-23 22:22:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:22:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:22:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:22:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:22:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:22:34		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 22:22:34		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 22:22:34		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 22:22:34		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 22:22:34		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 22:22:34		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 22:22:34		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 22:22:34		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 22:22:34		36 :IRC Operators online
+2018-08-23 22:22:34		51325 :channels formed
+2018-08-23 22:22:34		I have 4844 clients and 2 servers
+2018-08-23 22:22:34		4844 7978 :Current local users 4844, max 7978
+2018-08-23 22:22:34		82673 97718 :Current global users 82673, max 97718
+2018-08-23 22:22:34		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 22:22:35		You are now known as rydare
+2018-08-23 22:22:35		MOTD blocked by ZNC
+2018-08-23 22:22:35		User mode [+RZi] by rydare
+2018-08-23 22:43:55		irc: disconnected from server
+2018-08-23 22:44:17		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:44:17		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:44:17		gnutls: receiving 1 certificate
+2018-08-23 22:44:17		 - certificate[1] info:
+2018-08-23 22:44:17		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:44:17	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:44:17	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:44:17	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:44:17		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:44:17		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 22:44:17		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 22:44:17		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 22:44:17		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 22:44:17		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 22:44:17		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 22:44:17		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 22:44:17		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 22:44:17		36 :IRC Operators online
+2018-08-23 22:44:17		51325 :channels formed
+2018-08-23 22:44:17		I have 4844 clients and 2 servers
+2018-08-23 22:44:17		4844 7978 :Current local users 4844, max 7978
+2018-08-23 22:44:17		82673 97718 :Current global users 82673, max 97718
+2018-08-23 22:44:17		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 22:44:17		You are now known as rydare
+2018-08-23 22:44:17		MOTD blocked by ZNC
+2018-08-23 22:44:17		User mode [+RZi] by rydare
+2018-08-23 22:45:47		irc: disconnected from server
+2018-08-23 22:46:26		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:46:26		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:46:26		gnutls: receiving 1 certificate
+2018-08-23 22:46:26		 - certificate[1] info:
+2018-08-23 22:46:26		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:46:26	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:46:26	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:46:26	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:46:26		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:46:26		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 22:46:27		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 22:46:27		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 22:46:27		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 22:46:27		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 22:46:27		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 22:46:27		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 22:46:27		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 22:46:27		36 :IRC Operators online
+2018-08-23 22:46:27		51325 :channels formed
+2018-08-23 22:46:27		I have 4844 clients and 2 servers
+2018-08-23 22:46:27		4844 7978 :Current local users 4844, max 7978
+2018-08-23 22:46:27		82673 97718 :Current global users 82673, max 97718
+2018-08-23 22:46:27		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 22:46:27		You are now known as rydare
+2018-08-23 22:46:27		MOTD blocked by ZNC
+2018-08-23 22:46:27		User mode [+RZi] by rydare
+2018-08-23 23:08:58		irc: disconnected from server
+2018-08-23 23:11:46		irc: connecting to server home/8080 (SSL)...
+2018-08-23 23:11:46		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 23:11:46		gnutls: receiving 1 certificate
+2018-08-23 23:11:46		 - certificate[1] info:
+2018-08-23 23:11:46		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 23:11:46	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 23:11:46	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 23:11:46	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 23:11:46		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 23:11:46		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 23:11:46		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 23:11:46		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 23:11:46		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 23:11:46		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 23:11:46		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 23:11:46		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 23:11:46		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 23:11:46		36 :IRC Operators online
+2018-08-23 23:11:46		51325 :channels formed
+2018-08-23 23:11:46		I have 4844 clients and 2 servers
+2018-08-23 23:11:46		4844 7978 :Current local users 4844, max 7978
+2018-08-23 23:11:46		82673 97718 :Current global users 82673, max 97718
+2018-08-23 23:11:46		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 23:11:46		You are now known as rydare
+2018-08-23 23:11:46		MOTD blocked by ZNC
+2018-08-23 23:11:46		User mode [+RZi] by rydare
+2018-08-23 23:48:32		irc: disconnected from server
+2018-08-23 23:55:18		irc: connecting to server home/8080 (SSL)...
+2018-08-23 23:55:18		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 23:55:18		gnutls: receiving 1 certificate
+2018-08-23 23:55:18		 - certificate[1] info:
+2018-08-23 23:55:18		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 23:55:18	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 23:55:18	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 23:55:18	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 23:55:18		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 23:55:18		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-23 23:55:18		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-23 23:55:18		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-23 23:55:18		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-23 23:55:18		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-23 23:55:18		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-23 23:55:18		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-23 23:55:18		There are 117 users and 82556 invisible on 34 servers
+2018-08-23 23:55:18		36 :IRC Operators online
+2018-08-23 23:55:18		51325 :channels formed
+2018-08-23 23:55:18		I have 4844 clients and 2 servers
+2018-08-23 23:55:18		4844 7978 :Current local users 4844, max 7978
+2018-08-23 23:55:18		82673 97718 :Current global users 82673, max 97718
+2018-08-23 23:55:18		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-23 23:55:18		You are now known as rydare
+2018-08-23 23:55:18		MOTD blocked by ZNC
+2018-08-23 23:55:18		User mode [+RZi] by rydare
+2018-08-24 11:20:42		irc: disconnected from server
+2018-08-24 12:01:34		irc: connecting to server home/8080 (SSL)...
+2018-08-24 12:01:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 12:01:34		gnutls: receiving 1 certificate
+2018-08-24 12:01:34		 - certificate[1] info:
+2018-08-24 12:01:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 12:01:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 12:01:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 12:01:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 12:01:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 12:01:34		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 12:01:34		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 12:01:34		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 12:01:34		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 12:01:34		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 12:01:34		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 12:01:34		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 12:01:34		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 12:01:34		36 :IRC Operators online
+2018-08-24 12:01:34		51325 :channels formed
+2018-08-24 12:01:34		I have 4844 clients and 2 servers
+2018-08-24 12:01:34		4844 7978 :Current local users 4844, max 7978
+2018-08-24 12:01:34		82673 97718 :Current global users 82673, max 97718
+2018-08-24 12:01:34		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 12:01:34		You are now known as rydare
+2018-08-24 12:01:34		MOTD blocked by ZNC
+2018-08-24 12:01:34		User mode [+RZi] by rydare
+2018-08-24 12:31:45		irc: disconnected from server
+2018-08-24 12:32:06		irc: connecting to server home/8080 (SSL)...
+2018-08-24 12:32:06		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 12:32:06		gnutls: receiving 1 certificate
+2018-08-24 12:32:06		 - certificate[1] info:
+2018-08-24 12:32:06		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 12:32:06	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 12:32:06	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 12:32:06	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 12:32:06		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 12:32:06		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 12:32:06		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 12:32:06		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 12:32:06		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 12:32:06		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 12:32:06		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 12:32:06		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 12:32:06		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 12:32:06		36 :IRC Operators online
+2018-08-24 12:32:06		51325 :channels formed
+2018-08-24 12:32:06		I have 4844 clients and 2 servers
+2018-08-24 12:32:06		4844 7978 :Current local users 4844, max 7978
+2018-08-24 12:32:06		82673 97718 :Current global users 82673, max 97718
+2018-08-24 12:32:06		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 12:32:06		You are now known as rydare
+2018-08-24 12:32:06		MOTD blocked by ZNC
+2018-08-24 12:32:06		User mode [+RZi] by rydare
+2018-08-24 16:26:17		irc: disconnected from server
+2018-08-24 16:39:12		irc: connecting to server home/8080 (SSL)...
+2018-08-24 16:39:12		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 16:39:12		gnutls: receiving 1 certificate
+2018-08-24 16:39:12		 - certificate[1] info:
+2018-08-24 16:39:12		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 16:39:12	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 16:39:12	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 16:39:12	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 16:39:12		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 16:39:12		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 16:39:12		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 16:39:12		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 16:39:12		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 16:39:12		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 16:39:12		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 16:39:12		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 16:39:12		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 16:39:12		36 :IRC Operators online
+2018-08-24 16:39:12		51325 :channels formed
+2018-08-24 16:39:12		I have 4844 clients and 2 servers
+2018-08-24 16:39:12		4844 7978 :Current local users 4844, max 7978
+2018-08-24 16:39:12		82673 97718 :Current global users 82673, max 97718
+2018-08-24 16:39:12		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 16:39:12		You are now known as rydare
+2018-08-24 16:39:12		MOTD blocked by ZNC
+2018-08-24 16:39:12		User mode [+RZi] by rydare
+2018-08-24 20:14:19		irc: disconnected from server
+2018-08-24 20:14:26		irc: connecting to server home/8080 (SSL)...
+2018-08-24 20:14:26		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 20:14:26		gnutls: receiving 1 certificate
+2018-08-24 20:14:26		 - certificate[1] info:
+2018-08-24 20:14:26		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 20:14:26	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 20:14:26	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 20:14:26	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 20:14:26		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 20:14:26		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 20:14:26		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 20:14:26		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 20:14:26		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 20:14:27		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 20:14:27		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 20:14:27		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 20:14:27		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 20:14:27		36 :IRC Operators online
+2018-08-24 20:14:27		51325 :channels formed
+2018-08-24 20:14:27		I have 4844 clients and 2 servers
+2018-08-24 20:14:27		4844 7978 :Current local users 4844, max 7978
+2018-08-24 20:14:27		82673 97718 :Current global users 82673, max 97718
+2018-08-24 20:14:27		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 20:14:27		You are now known as rydare
+2018-08-24 20:14:27		MOTD blocked by ZNC
+2018-08-24 20:14:27		User mode [+RZi] by rydare
+2018-08-24 20:34:45		irc: disconnected from server
+2018-08-24 20:37:01		irc: connecting to server home/8080 (SSL)...
+2018-08-24 20:37:01		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 20:37:01		gnutls: receiving 1 certificate
+2018-08-24 20:37:01		 - certificate[1] info:
+2018-08-24 20:37:01		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 20:37:01	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 20:37:01	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 20:37:01	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 20:37:01		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 20:37:01		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 20:37:01		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 20:37:01		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 20:37:01		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 20:37:01		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 20:37:01		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 20:37:01		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 20:37:01		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 20:37:01		36 :IRC Operators online
+2018-08-24 20:37:01		51325 :channels formed
+2018-08-24 20:37:01		I have 4844 clients and 2 servers
+2018-08-24 20:37:01		4844 7978 :Current local users 4844, max 7978
+2018-08-24 20:37:01		82673 97718 :Current global users 82673, max 97718
+2018-08-24 20:37:01		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 20:37:01		You are now known as rydare
+2018-08-24 20:37:01		MOTD blocked by ZNC
+2018-08-24 20:37:01		User mode [+RZi] by rydare
+2018-08-24 22:07:25		irc: disconnected from server
+2018-08-24 22:12:07		irc: connecting to server home/8080 (SSL)...
+2018-08-24 22:12:07		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 22:12:07		gnutls: receiving 1 certificate
+2018-08-24 22:12:07		 - certificate[1] info:
+2018-08-24 22:12:07		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 22:12:07	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 22:12:07	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 22:12:07	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 22:12:07		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 22:12:07		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 22:12:07		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 22:12:07		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 22:12:07		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 22:12:07		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 22:12:07		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 22:12:07		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 22:12:07		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 22:12:07		36 :IRC Operators online
+2018-08-24 22:12:07		51325 :channels formed
+2018-08-24 22:12:07		I have 4844 clients and 2 servers
+2018-08-24 22:12:07		4844 7978 :Current local users 4844, max 7978
+2018-08-24 22:12:07		82673 97718 :Current global users 82673, max 97718
+2018-08-24 22:12:07		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 22:12:07		You are now known as rydare
+2018-08-24 22:12:07		MOTD blocked by ZNC
+2018-08-24 22:12:07		User mode [+RZi] by rydare
+2018-08-24 22:26:17		irc: disconnected from server
+2018-08-24 22:30:38		irc: connecting to server home/8080 (SSL)...
+2018-08-24 22:30:38		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 22:30:38		gnutls: receiving 1 certificate
+2018-08-24 22:30:38		 - certificate[1] info:
+2018-08-24 22:30:38		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 22:30:38	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 22:30:38	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 22:30:38	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 22:30:38		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 22:30:38		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 22:30:38		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 22:30:38		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 22:30:38		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 22:30:38		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 22:30:38		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 22:30:38		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 22:30:38		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 22:30:38		36 :IRC Operators online
+2018-08-24 22:30:38		51325 :channels formed
+2018-08-24 22:30:38		I have 4844 clients and 2 servers
+2018-08-24 22:30:38		4844 7978 :Current local users 4844, max 7978
+2018-08-24 22:30:38		82673 97718 :Current global users 82673, max 97718
+2018-08-24 22:30:38		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 22:30:38		You are now known as rydare
+2018-08-24 22:30:38		MOTD blocked by ZNC
+2018-08-24 22:30:38		User mode [+RZi] by rydare
+2018-08-24 22:31:53		irc: disconnected from server
+2018-08-24 23:38:44		irc: connecting to server home/8080 (SSL)...
+2018-08-24 23:38:44		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 23:38:44		gnutls: receiving 1 certificate
+2018-08-24 23:38:44		 - certificate[1] info:
+2018-08-24 23:38:44		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 23:38:44	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 23:38:44	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 23:38:44	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 23:38:44		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 23:38:44		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-24 23:38:44		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-24 23:38:44		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-24 23:38:44		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-24 23:38:44		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-24 23:38:44		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-24 23:38:44		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-24 23:38:44		There are 117 users and 82556 invisible on 34 servers
+2018-08-24 23:38:44		36 :IRC Operators online
+2018-08-24 23:38:44		51325 :channels formed
+2018-08-24 23:38:44		I have 4844 clients and 2 servers
+2018-08-24 23:38:44		4844 7978 :Current local users 4844, max 7978
+2018-08-24 23:38:44		82673 97718 :Current global users 82673, max 97718
+2018-08-24 23:38:44		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-24 23:38:44		You are now known as rydare
+2018-08-24 23:38:44		MOTD blocked by ZNC
+2018-08-24 23:38:44		User mode [+RZi] by rydare
+2018-08-25 12:01:04		#sed: ##sed :Forwarding to another channel
+2018-08-25 13:19:26		irc: disconnected from server
+2018-08-25 13:19:30		irc: connecting to server home/8080 (SSL)...
+2018-08-25 13:19:30		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 13:19:30		gnutls: receiving 1 certificate
+2018-08-25 13:19:30		 - certificate[1] info:
+2018-08-25 13:19:30		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 13:19:30	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 13:19:30	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 13:19:30	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 13:19:30		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 13:19:30		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-25 13:19:30		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-25 13:19:30		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-25 13:19:30		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-25 13:19:30		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-25 13:19:30		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-25 13:19:30		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-25 13:19:30		There are 117 users and 82556 invisible on 34 servers
+2018-08-25 13:19:30		36 :IRC Operators online
+2018-08-25 13:19:30		51325 :channels formed
+2018-08-25 13:19:30		I have 4844 clients and 2 servers
+2018-08-25 13:19:30		4844 7978 :Current local users 4844, max 7978
+2018-08-25 13:19:30		82673 97718 :Current global users 82673, max 97718
+2018-08-25 13:19:30		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-25 13:19:30		You are now known as rydare
+2018-08-25 13:19:30		MOTD blocked by ZNC
+2018-08-25 13:19:30		User mode [+RZi] by rydare
+2018-08-25 13:32:56		irc: disconnected from server
+2018-08-25 08:43:55		irc: connecting to server home/8080 (SSL)...
+2018-08-25 08:43:55		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 08:43:55		gnutls: receiving 1 certificate
+2018-08-25 08:43:55		 - certificate[1] info:
+2018-08-25 08:43:55		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 08:43:55	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 08:43:55	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 08:43:55	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 08:43:55		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 08:43:56		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-25 08:43:56		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-25 08:43:56		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-25 08:43:56		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-25 08:43:56		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-25 08:43:56		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-25 08:43:56		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-25 08:43:56		There are 117 users and 82556 invisible on 34 servers
+2018-08-25 08:43:56		36 :IRC Operators online
+2018-08-25 08:43:56		51325 :channels formed
+2018-08-25 08:43:56		I have 4844 clients and 2 servers
+2018-08-25 08:43:56		4844 7978 :Current local users 4844, max 7978
+2018-08-25 08:43:56		82673 97718 :Current global users 82673, max 97718
+2018-08-25 08:43:56		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-25 08:43:56		You are now known as rydare
+2018-08-25 08:43:56		MOTD blocked by ZNC
+2018-08-25 08:43:56		User mode [+RZi] by rydare
+2018-08-25 09:40:23		irc: disconnected from server
+2018-08-25 09:42:18		irc: connecting to server home/8080 (SSL)...
+2018-08-25 09:42:18		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 09:42:18		gnutls: receiving 1 certificate
+2018-08-25 09:42:18		 - certificate[1] info:
+2018-08-25 09:42:18		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 09:42:18	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 09:42:18	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 09:42:18	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 09:42:18		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 09:42:18		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-25 09:42:18		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-25 09:42:19		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-25 09:42:19		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-25 09:42:19		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-25 09:42:19		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-25 09:42:19		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-25 09:42:19		There are 117 users and 82556 invisible on 34 servers
+2018-08-25 09:42:19		36 :IRC Operators online
+2018-08-25 09:42:19		51325 :channels formed
+2018-08-25 09:42:19		I have 4844 clients and 2 servers
+2018-08-25 09:42:19		4844 7978 :Current local users 4844, max 7978
+2018-08-25 09:42:19		82673 97718 :Current global users 82673, max 97718
+2018-08-25 09:42:19		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-25 09:42:19		You are now known as rydare
+2018-08-25 09:42:19		MOTD blocked by ZNC
+2018-08-25 09:42:19		User mode [+RZi] by rydare
+2018-08-25 16:53:11		irc: disconnected from server
+2018-08-25 16:57:50		irc: connecting to server home/8080 (SSL)...
+2018-08-25 16:57:50		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 16:57:50		gnutls: receiving 1 certificate
+2018-08-25 16:57:50		 - certificate[1] info:
+2018-08-25 16:57:50		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 16:57:50	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 16:57:50	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 16:57:50	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 16:57:50		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 16:57:50		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-25 16:57:50		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-25 16:57:50		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-25 16:57:50		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-25 16:57:50		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-25 16:57:50		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-25 16:57:50		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-25 16:57:50		There are 117 users and 82556 invisible on 34 servers
+2018-08-25 16:57:50		36 :IRC Operators online
+2018-08-25 16:57:50		51325 :channels formed
+2018-08-25 16:57:50		I have 4844 clients and 2 servers
+2018-08-25 16:57:50		4844 7978 :Current local users 4844, max 7978
+2018-08-25 16:57:50		82673 97718 :Current global users 82673, max 97718
+2018-08-25 16:57:50		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-25 16:57:50		You are now known as rydare
+2018-08-25 16:57:50		MOTD blocked by ZNC
+2018-08-25 16:57:50		User mode [+RZi] by rydare
+2018-08-25 17:08:13		irc: disconnected from server
+2018-08-25 17:12:08		irc: connecting to server home/8080 (SSL)...
+2018-08-25 17:12:08		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 17:12:08		gnutls: receiving 1 certificate
+2018-08-25 17:12:08		 - certificate[1] info:
+2018-08-25 17:12:08		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 17:12:08	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 17:12:08	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 17:12:08	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 17:12:08		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 17:12:08		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-25 17:12:08		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-25 17:12:08		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-25 17:12:08		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-25 17:12:08		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-25 17:12:08		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-25 17:12:08		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-25 17:12:08		There are 117 users and 82556 invisible on 34 servers
+2018-08-25 17:12:08		36 :IRC Operators online
+2018-08-25 17:12:08		51325 :channels formed
+2018-08-25 17:12:08		I have 4844 clients and 2 servers
+2018-08-25 17:12:08		4844 7978 :Current local users 4844, max 7978
+2018-08-25 17:12:08		82673 97718 :Current global users 82673, max 97718
+2018-08-25 17:12:08		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-25 17:12:08		You are now known as rydare
+2018-08-25 17:12:08		MOTD blocked by ZNC
+2018-08-25 17:12:08		User mode [+RZi] by rydare
+2018-08-26 00:26:38		irc: disconnected from server
+2018-08-26 00:26:41		irc: connecting to server home/8080 (SSL)...
+2018-08-26 00:26:41		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 00:26:41		gnutls: receiving 1 certificate
+2018-08-26 00:26:41		 - certificate[1] info:
+2018-08-26 00:26:41		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 00:26:41	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 00:26:41	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 00:26:41	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 00:26:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 00:26:41		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-26 00:26:41		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-26 00:26:41		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-26 00:26:41		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-26 00:26:41		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-26 00:26:41		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-26 00:26:41		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-26 00:26:41		There are 117 users and 82556 invisible on 34 servers
+2018-08-26 00:26:41		36 :IRC Operators online
+2018-08-26 00:26:41		51325 :channels formed
+2018-08-26 00:26:41		I have 4844 clients and 2 servers
+2018-08-26 00:26:41		4844 7978 :Current local users 4844, max 7978
+2018-08-26 00:26:41		82673 97718 :Current global users 82673, max 97718
+2018-08-26 00:26:41		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-26 00:26:41		You are now known as rydare
+2018-08-26 00:26:41		MOTD blocked by ZNC
+2018-08-26 00:26:41		User mode [+RZi] by rydare
+2018-08-26 00:43:52		irc: disconnected from server
+2018-08-26 00:45:05		irc: connecting to server home/8080 (SSL)...
+2018-08-26 00:45:05		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 00:45:05		gnutls: receiving 1 certificate
+2018-08-26 00:45:05		 - certificate[1] info:
+2018-08-26 00:45:05		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 00:45:05	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 00:45:05	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 00:45:05	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 00:45:05		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 00:45:05		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-26 00:45:05		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-26 00:45:05		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-26 00:45:05		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-26 00:45:05		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-26 00:45:05		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-26 00:45:05		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-26 00:45:05		There are 117 users and 82556 invisible on 34 servers
+2018-08-26 00:45:05		36 :IRC Operators online
+2018-08-26 00:45:05		51325 :channels formed
+2018-08-26 00:45:05		I have 4844 clients and 2 servers
+2018-08-26 00:45:05		4844 7978 :Current local users 4844, max 7978
+2018-08-26 00:45:05		82673 97718 :Current global users 82673, max 97718
+2018-08-26 00:45:05		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-26 00:45:05		You are now known as rydare
+2018-08-26 00:45:05		MOTD blocked by ZNC
+2018-08-26 00:45:05		User mode [+RZi] by rydare
+2018-08-26 08:36:16		irc: disconnected from server
+2018-08-26 08:48:23		irc: connecting to server home/8080 (SSL)...
+2018-08-26 08:48:23		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 08:48:23		gnutls: receiving 1 certificate
+2018-08-26 08:48:23		 - certificate[1] info:
+2018-08-26 08:48:23		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 08:48:23	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 08:48:23	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 08:48:23	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 08:48:23		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 08:48:23		Welcome to the freenode Internet Relay Chat Network rydare
+2018-08-26 08:48:23		Your host is verne.freenode.net[185.30.166.37/6697], running version ircd-seven-1.1.4
+2018-08-26 08:48:23		This server was created Sat Jan 7 2017 at 11:53:54 EST
+2018-08-26 08:48:23		verne.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2018-08-26 08:48:23		CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2018-08-26 08:48:23		CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+2018-08-26 08:48:23		CPRIVMSG CNOTICE SAFELIST ELIST=CTU :are supported by this server
+2018-08-26 08:48:23		There are 117 users and 82556 invisible on 34 servers
+2018-08-26 08:48:23		36 :IRC Operators online
+2018-08-26 08:48:23		51325 :channels formed
+2018-08-26 08:48:23		I have 4844 clients and 2 servers
+2018-08-26 08:48:23		4844 7978 :Current local users 4844, max 7978
+2018-08-26 08:48:23		82673 97718 :Current global users 82673, max 97718
+2018-08-26 08:48:23		Highest connection count: 7980 (7978 clients) (6721728 connections received)
+2018-08-26 08:48:23		You are now known as rydare
+2018-08-26 08:48:23		MOTD blocked by ZNC
+2018-08-26 08:48:23		User mode [+RZi] by rydare

@@ -1,0 +1,53 @@
+2018-08-23 14:17:06	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #alacritty
+2018-08-23 14:17:14		irc: disconnected from server
+2018-08-23 14:28:22	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #alacritty
+2018-08-23 14:28:53	rydare	are fallback fonts implemented?
+2018-08-23 14:29:03	rydare	in linux i mean
+2018-08-23 14:31:03	UndeadLeech	rydare: Yeah, fallback fonts follow your system's fontconfig fallback.
+2018-08-23 14:32:13	rydare	so i have it set to prefer the Noto Color Emoji font, and it works in termite and xfce4-terminal
+2018-08-23 14:32:24	rydare	urxvt doesn't display any emoji no matter what i do
+2018-08-23 14:32:35	rydare	but alacritty displays black and white emoji
+2018-08-23 14:33:20	UndeadLeech	I don't think Alacritty supports colored emojis at all at this point.
+2018-08-23 14:33:31	rydare	😀 😁 😂 🤣 😃 😄 😅 😆 😉 😊 😋 😎 😍 😘 😗 😙 😚
+2018-08-23 14:33:37	UndeadLeech	I've never really looked into it myself though.
+2018-08-23 14:33:40	@jwilm	UndeadLeech: it *kind of* supports colored emoji on macOS
+2018-08-23 14:33:53	UndeadLeech	Well macos doesn't exist. :)
+2018-08-23 14:34:10	@jwilm	FreeType isn't a full SVG rasterizer which is why this doesn't work on Linux
+2018-08-23 14:34:48	UndeadLeech	I don't actually know how colored emojis work. But I think there are some details in the emoji issue.
+2018-08-23 14:35:07	@jwilm	I think other applications where this works rely on something like Pango
+2018-08-23 14:35:17	@jwilm	whereas we kind of have our own font stack
+2018-08-23 14:36:27	UndeadLeech	Cells with multiple different colors also could need a few changes to Alacritty.
+2018-08-23 14:48:01		irc: disconnected from server
+2018-08-23 14:49:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #alacritty
+2018-08-23 14:55:23	➡️	diwr (~manjaro-u@unaffiliated/diwr) has joined #alacritty
+2018-08-23 14:58:17	diwr	hello, does anyone knows of a quake-style alacritty plugin or something like that?
+2018-08-23 14:58:51	UndeadLeech	diwr: Do you mean like a drop-down terminal.
+2018-08-23 14:59:18	diwr	yes
+2018-08-23 15:00:58	UndeadLeech	The only way to get that with Alacritty right now is by making use of your window manager.
+2018-08-23 15:03:37	diwr	ok, thats what ive been doing for now, works weird for now tho :( thanks
+2018-08-23 15:07:08	diwr	Just made a kwin script to position the window in the top, and bound a key to hide/unhide it
+2018-08-23 15:15:19	UndeadLeech	Yeah it's just less overhead to do it through your window manager at this point. Otherwise it introduces a bunch of extra complexity.
+2018-08-23 16:20:58	@jwilm	UndeadLeech: I may have missed some of the discussion that happened around this, but why is it we need to send both ClearHistory and an escape sequence on C-k binding?
+2018-08-23 16:27:31	UndeadLeech	I believe that's what iTerm or/and Terminal.app do when Ctrl+K is pressed.
+2018-08-23 16:27:41	UndeadLeech	ClearHistory just clears the history, without clearing the visible region.
+2018-08-23 16:28:08	@jwilm	gotcha; thanks for the clarification
+2018-08-23 16:28:15	UndeadLeech	I don't have any apple devices, so I don't actually know if it's true. But from what I understood the desired behavior is to truncate history and visible area.
+2018-08-23 16:30:07	UndeadLeech	jwilm: Was there any specific reason why you only made use of the first binding for each entry? It looked like you just used `return true` because it's the shorter/easier way to return true when any binding was found, but I'm not sure if you intentionally didn't allow multiple bindings to the same keys.
+2018-08-23 16:31:02	@jwilm	I didn't anticipate wanting to do 2 things intentionally on the same binding. Also nice to avoid processing the whole list for each key.
+2018-08-23 16:31:21	@jwilm	Also nice to prevent people from accidentally having duplicates
+2018-08-23 16:32:11	UndeadLeech	Oh yeah the latter makes sense. But currently when there are duplicates you might not have something execute without knowing what's going on. So there's no warning or anything on duplicate bindings, so I thought it might actually confuse people that do have things bound twice because one thing will silently fail.
+2018-08-23 16:36:46	@jwilm	To be clear, I'm 100% ok with changing this behavior
+2018-08-23 16:37:20	@jwilm	I don't actually think it's necessary for what we're doing here -- The action could easily emit the sequence in addition to clearing internal state.
+2018-08-23 16:37:39	UndeadLeech	Yeah just like explaining my thought process to make sure I'm not missing anything. My rubber duck is broken. :D
+2018-08-23 16:38:24	UndeadLeech	And yeah it would be possible to have a `ClearEverything` command, but I thought like this it would actually allow just clearing the history for people that are interested in that.
+2018-08-23 16:38:40	UndeadLeech	Maybe I'm overcomplicating things, but I thought that would give the user more freedom.
+2018-08-23 16:41:07	UndeadLeech	I think this issue isn't super critical though. If you have some time I think this issue: https://github.com/jwilm/alacritty/pull/1516 should have higher priority. It's a small thing, but I'm not actually sure of the design behind this.
+2018-08-23 16:44:08	@jwilm	Can you ping me on that so it shows back up in my notifciation feed?
+2018-08-23 16:44:15	@jwilm	GH notifications are so broken >.>
+2018-08-23 16:45:15	UndeadLeech	I have, hopefully that worked.
+2018-08-23 16:45:20	@jwilm	thanks!
+2018-08-23 16:45:29	@jwilm	yep, right back on top
+2018-08-23 16:46:04	UndeadLeech	Nice, I don't think I'd want to switch notifications with you. Having unread anything gives me anxiety. :D
+2018-08-23 17:00:27	@jwilm	hah, I would love to have inbox zero on GitHub
+2018-08-23 17:01:01	UndeadLeech	I'm living the dream. :D
+2018-08-23 17:04:18	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 255 seconds)

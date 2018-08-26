@@ -1,0 +1,2706 @@
+2018-08-22 11:21:10	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 11:21:10	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 11:21:10	--	gnutls: receiving 1 certificate
+2018-08-22 11:21:10	--	 - certificate[1] info:
+2018-08-22 11:21:10	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 11:21:10	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 11:21:10	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 11:21:10	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 11:21:10	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 11:21:10	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 11:21:10	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 11:21:10	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 11:21:10	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 11:21:10	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 11:21:10	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 11:21:10	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 11:21:10	--	62 :IRC Operators online
+2018-08-22 11:21:10	--	12007 :channels formed
+2018-08-22 11:21:10	--	I have 14664 clients and 20 servers
+2018-08-22 11:21:10	--	Current local users: 14664  Max: 19605
+2018-08-22 11:21:10	--	Current global users: 14664  Max: 19605
+2018-08-22 11:21:10	--	You are now known as rdr
+2018-08-22 11:21:10	--	- magnet.rizon.net Message of the Day -
+2018-08-22 11:21:10	--	-          oo                            
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 11:21:10	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 11:21:10	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 11:21:10	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- Rules:
+2018-08-22 11:21:10	--	- o No spamming or flooding
+2018-08-22 11:21:10	--	- o No clones or malicious bots
+2018-08-22 11:21:10	--	- o No takeovers
+2018-08-22 11:21:10	--	- o No distribution of child pornography
+2018-08-22 11:21:10	--	- o Clients must respond to VERSION requests
+2018-08-22 11:21:10	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- First steps:
+2018-08-22 11:21:10	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 11:21:10	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 11:21:10	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 11:21:10	--	- o For other help with Rizon: /join #help
+2018-08-22 11:21:10	--	-
+2018-08-22 11:21:10	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 11:21:10	--	- transit provider, therefore no person or entity involved with
+2018-08-22 11:21:10	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 11:21:10	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 11:21:10	--	End of /MOTD command.
+2018-08-22 11:21:10	--	User mode [+Sirx] by rdr
+2018-08-22 11:21:10	--	You have been marked as being away
+2018-08-22 11:21:10	--	You are no longer marked as being away
+2018-08-22 14:23:39	--	irc: disconnected from server
+2018-08-22 14:29:07	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 14:29:07	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 14:29:07	--	gnutls: receiving 1 certificate
+2018-08-22 14:29:07	--	 - certificate[1] info:
+2018-08-22 14:29:07	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 14:29:07	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 14:29:07	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 14:29:07	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 14:29:07	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 14:29:07	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 14:29:07	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 14:29:07	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 14:29:07	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 14:29:07	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 14:29:07	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 14:29:07	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 14:29:07	--	62 :IRC Operators online
+2018-08-22 14:29:07	--	12007 :channels formed
+2018-08-22 14:29:07	--	I have 14664 clients and 20 servers
+2018-08-22 14:29:07	--	Current local users: 14664  Max: 19605
+2018-08-22 14:29:07	--	Current global users: 14664  Max: 19605
+2018-08-22 14:29:07	--	You are now known as rdr
+2018-08-22 14:29:07	--	- magnet.rizon.net Message of the Day -
+2018-08-22 14:29:07	--	-          oo                            
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 14:29:07	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 14:29:07	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 14:29:07	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- Rules:
+2018-08-22 14:29:07	--	- o No spamming or flooding
+2018-08-22 14:29:07	--	- o No clones or malicious bots
+2018-08-22 14:29:07	--	- o No takeovers
+2018-08-22 14:29:07	--	- o No distribution of child pornography
+2018-08-22 14:29:07	--	- o Clients must respond to VERSION requests
+2018-08-22 14:29:07	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- First steps:
+2018-08-22 14:29:07	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 14:29:07	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 14:29:07	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 14:29:07	--	- o For other help with Rizon: /join #help
+2018-08-22 14:29:07	--	-
+2018-08-22 14:29:07	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 14:29:07	--	- transit provider, therefore no person or entity involved with
+2018-08-22 14:29:07	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 14:29:07	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 14:29:07	--	End of /MOTD command.
+2018-08-22 14:29:07	--	User mode [+Sirx] by rdr
+2018-08-22 14:29:07	--	You have been marked as being away
+2018-08-22 14:29:07	--	You are no longer marked as being away
+2018-08-22 16:06:17	--	irc: disconnected from server
+2018-08-22 16:07:49	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 16:07:49	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 16:07:49	--	gnutls: receiving 1 certificate
+2018-08-22 16:07:49	--	 - certificate[1] info:
+2018-08-22 16:07:49	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 16:07:49	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 16:07:49	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 16:07:49	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 16:07:49	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 16:07:49	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 16:07:49	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 16:07:49	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 16:07:49	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 16:07:49	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 16:07:49	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 16:07:49	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 16:07:49	--	62 :IRC Operators online
+2018-08-22 16:07:49	--	12007 :channels formed
+2018-08-22 16:07:49	--	I have 14664 clients and 20 servers
+2018-08-22 16:07:49	--	Current local users: 14664  Max: 19605
+2018-08-22 16:07:49	--	Current global users: 14664  Max: 19605
+2018-08-22 16:07:49	--	You are now known as rdr
+2018-08-22 16:07:49	--	- magnet.rizon.net Message of the Day -
+2018-08-22 16:07:49	--	-          oo                            
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 16:07:49	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 16:07:49	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 16:07:49	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- Rules:
+2018-08-22 16:07:49	--	- o No spamming or flooding
+2018-08-22 16:07:49	--	- o No clones or malicious bots
+2018-08-22 16:07:49	--	- o No takeovers
+2018-08-22 16:07:49	--	- o No distribution of child pornography
+2018-08-22 16:07:49	--	- o Clients must respond to VERSION requests
+2018-08-22 16:07:49	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- First steps:
+2018-08-22 16:07:49	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 16:07:49	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 16:07:49	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 16:07:49	--	- o For other help with Rizon: /join #help
+2018-08-22 16:07:49	--	-
+2018-08-22 16:07:49	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 16:07:49	--	- transit provider, therefore no person or entity involved with
+2018-08-22 16:07:49	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 16:07:49	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 16:07:49	--	End of /MOTD command.
+2018-08-22 16:07:49	--	User mode [+Sirx] by rdr
+2018-08-22 16:07:49	--	You have been marked as being away
+2018-08-22 16:07:49	--	You are no longer marked as being away
+2018-08-22 16:11:06	--	irc: disconnected from server
+2018-08-22 16:11:58	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 16:11:58	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 16:11:58	--	gnutls: receiving 1 certificate
+2018-08-22 16:11:58	--	 - certificate[1] info:
+2018-08-22 16:11:58	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 16:11:58	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 16:11:58	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 16:11:58	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 16:11:58	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 16:11:58	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 16:11:58	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 16:11:58	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 16:11:58	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 16:11:58	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 16:11:58	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 16:11:58	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 16:11:58	--	62 :IRC Operators online
+2018-08-22 16:11:58	--	12007 :channels formed
+2018-08-22 16:11:58	--	I have 14664 clients and 20 servers
+2018-08-22 16:11:58	--	Current local users: 14664  Max: 19605
+2018-08-22 16:11:58	--	Current global users: 14664  Max: 19605
+2018-08-22 16:11:58	--	You are now known as rdr
+2018-08-22 16:11:58	--	- magnet.rizon.net Message of the Day -
+2018-08-22 16:11:58	--	-          oo                            
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 16:11:58	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 16:11:58	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 16:11:58	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- Rules:
+2018-08-22 16:11:58	--	- o No spamming or flooding
+2018-08-22 16:11:58	--	- o No clones or malicious bots
+2018-08-22 16:11:58	--	- o No takeovers
+2018-08-22 16:11:58	--	- o No distribution of child pornography
+2018-08-22 16:11:58	--	- o Clients must respond to VERSION requests
+2018-08-22 16:11:58	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- First steps:
+2018-08-22 16:11:58	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 16:11:58	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 16:11:58	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 16:11:58	--	- o For other help with Rizon: /join #help
+2018-08-22 16:11:58	--	-
+2018-08-22 16:11:58	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 16:11:58	--	- transit provider, therefore no person or entity involved with
+2018-08-22 16:11:58	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 16:11:58	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 16:11:58	--	End of /MOTD command.
+2018-08-22 16:11:58	--	User mode [+Sirx] by rdr
+2018-08-22 19:12:23	--	irc: disconnected from server
+2018-08-22 19:12:52	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 19:12:52	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 19:12:52	--	gnutls: receiving 1 certificate
+2018-08-22 19:12:52	--	 - certificate[1] info:
+2018-08-22 19:12:52	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 19:12:52	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 19:12:52	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 19:12:52	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 19:12:52	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 19:12:52	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 19:12:52	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 19:12:52	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 19:12:52	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 19:12:52	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 19:12:52	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 19:12:52	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 19:12:52	--	62 :IRC Operators online
+2018-08-22 19:12:52	--	12007 :channels formed
+2018-08-22 19:12:52	--	I have 14664 clients and 20 servers
+2018-08-22 19:12:52	--	Current local users: 14664  Max: 19605
+2018-08-22 19:12:52	--	Current global users: 14664  Max: 19605
+2018-08-22 19:12:52	--	You are now known as rdr
+2018-08-22 19:12:52	--	- magnet.rizon.net Message of the Day -
+2018-08-22 19:12:52	--	-          oo                            
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 19:12:52	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 19:12:52	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 19:12:52	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- Rules:
+2018-08-22 19:12:52	--	- o No spamming or flooding
+2018-08-22 19:12:52	--	- o No clones or malicious bots
+2018-08-22 19:12:52	--	- o No takeovers
+2018-08-22 19:12:52	--	- o No distribution of child pornography
+2018-08-22 19:12:52	--	- o Clients must respond to VERSION requests
+2018-08-22 19:12:52	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- First steps:
+2018-08-22 19:12:52	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 19:12:52	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 19:12:52	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 19:12:52	--	- o For other help with Rizon: /join #help
+2018-08-22 19:12:52	--	-
+2018-08-22 19:12:52	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 19:12:52	--	- transit provider, therefore no person or entity involved with
+2018-08-22 19:12:52	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 19:12:52	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 19:12:52	--	End of /MOTD command.
+2018-08-22 19:12:52	--	User mode [+Sirx] by rdr
+2018-08-22 19:44:22	--	irc: disconnected from server
+2018-08-22 19:44:27	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 19:44:27	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 19:44:27	--	gnutls: receiving 1 certificate
+2018-08-22 19:44:27	--	 - certificate[1] info:
+2018-08-22 19:44:27	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 19:44:27	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 19:44:27	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 19:44:27	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 19:44:27	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 19:44:27	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 19:44:27	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 19:44:27	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 19:44:27	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 19:44:27	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 19:44:27	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 19:44:27	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 19:44:27	--	62 :IRC Operators online
+2018-08-22 19:44:27	--	12007 :channels formed
+2018-08-22 19:44:27	--	I have 14664 clients and 20 servers
+2018-08-22 19:44:27	--	Current local users: 14664  Max: 19605
+2018-08-22 19:44:27	--	Current global users: 14664  Max: 19605
+2018-08-22 19:44:27	--	You are now known as rdr
+2018-08-22 19:44:27	--	- magnet.rizon.net Message of the Day -
+2018-08-22 19:44:27	--	-          oo                            
+2018-08-22 19:44:27	--	-
+2018-08-22 19:44:27	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 19:44:27	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 19:44:27	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 19:44:27	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 19:44:27	--	-
+2018-08-22 19:44:27	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 19:44:28	--	-
+2018-08-22 19:44:28	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 19:44:28	--	-
+2018-08-22 19:44:28	--	- Rules:
+2018-08-22 19:44:28	--	- o No spamming or flooding
+2018-08-22 19:44:28	--	- o No clones or malicious bots
+2018-08-22 19:44:28	--	- o No takeovers
+2018-08-22 19:44:28	--	- o No distribution of child pornography
+2018-08-22 19:44:28	--	- o Clients must respond to VERSION requests
+2018-08-22 19:44:28	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 19:44:28	--	-
+2018-08-22 19:44:28	--	- First steps:
+2018-08-22 19:44:28	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 19:44:28	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 19:44:28	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 19:44:28	--	- o For other help with Rizon: /join #help
+2018-08-22 19:44:28	--	-
+2018-08-22 19:44:28	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 19:44:28	--	- transit provider, therefore no person or entity involved with
+2018-08-22 19:44:28	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 19:44:28	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 19:44:28	--	End of /MOTD command.
+2018-08-22 19:44:28	--	User mode [+Sirx] by rdr
+2018-08-22 20:21:27	--	irc: disconnected from server
+2018-08-22 20:25:47	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:25:47	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:25:47	--	gnutls: receiving 1 certificate
+2018-08-22 20:25:47	--	 - certificate[1] info:
+2018-08-22 20:25:47	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:25:47	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:25:47	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:25:47	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:25:47	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:25:47	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 20:25:47	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 20:25:47	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 20:25:47	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 20:25:47	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 20:25:47	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 20:25:47	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 20:25:47	--	62 :IRC Operators online
+2018-08-22 20:25:47	--	12007 :channels formed
+2018-08-22 20:25:47	--	I have 14664 clients and 20 servers
+2018-08-22 20:25:47	--	Current local users: 14664  Max: 19605
+2018-08-22 20:25:47	--	Current global users: 14664  Max: 19605
+2018-08-22 20:25:47	--	You are now known as rdr
+2018-08-22 20:25:47	--	- magnet.rizon.net Message of the Day -
+2018-08-22 20:25:47	--	-          oo                            
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 20:25:47	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 20:25:47	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 20:25:47	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- Rules:
+2018-08-22 20:25:47	--	- o No spamming or flooding
+2018-08-22 20:25:47	--	- o No clones or malicious bots
+2018-08-22 20:25:47	--	- o No takeovers
+2018-08-22 20:25:47	--	- o No distribution of child pornography
+2018-08-22 20:25:47	--	- o Clients must respond to VERSION requests
+2018-08-22 20:25:47	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- First steps:
+2018-08-22 20:25:47	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 20:25:47	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 20:25:47	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 20:25:47	--	- o For other help with Rizon: /join #help
+2018-08-22 20:25:47	--	-
+2018-08-22 20:25:47	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 20:25:47	--	- transit provider, therefore no person or entity involved with
+2018-08-22 20:25:47	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 20:25:47	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 20:25:47	--	End of /MOTD command.
+2018-08-22 20:25:47	--	User mode [+Sirx] by rdr
+2018-08-22 20:25:47	--	You have been marked as being away
+2018-08-22 20:25:47	--	You are no longer marked as being away
+2018-08-22 20:25:52	--	irc: disconnected from server
+2018-08-22 20:27:51	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:27:51	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:27:51	--	gnutls: receiving 1 certificate
+2018-08-22 20:27:51	--	 - certificate[1] info:
+2018-08-22 20:27:51	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:27:51	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:27:51	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:27:51	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:27:51	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:27:51	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 20:27:51	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 20:27:51	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 20:27:51	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 20:27:51	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 20:27:51	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 20:27:51	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 20:27:51	--	62 :IRC Operators online
+2018-08-22 20:27:51	--	12007 :channels formed
+2018-08-22 20:27:51	--	I have 14664 clients and 20 servers
+2018-08-22 20:27:51	--	Current local users: 14664  Max: 19605
+2018-08-22 20:27:51	--	Current global users: 14664  Max: 19605
+2018-08-22 20:27:51	--	You are now known as rdr
+2018-08-22 20:27:51	--	- magnet.rizon.net Message of the Day -
+2018-08-22 20:27:51	--	-          oo                            
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 20:27:51	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 20:27:51	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 20:27:51	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- Rules:
+2018-08-22 20:27:51	--	- o No spamming or flooding
+2018-08-22 20:27:51	--	- o No clones or malicious bots
+2018-08-22 20:27:51	--	- o No takeovers
+2018-08-22 20:27:51	--	- o No distribution of child pornography
+2018-08-22 20:27:51	--	- o Clients must respond to VERSION requests
+2018-08-22 20:27:51	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- First steps:
+2018-08-22 20:27:51	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 20:27:51	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 20:27:51	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 20:27:51	--	- o For other help with Rizon: /join #help
+2018-08-22 20:27:51	--	-
+2018-08-22 20:27:51	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 20:27:51	--	- transit provider, therefore no person or entity involved with
+2018-08-22 20:27:51	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 20:27:51	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 20:27:51	--	End of /MOTD command.
+2018-08-22 20:27:51	--	User mode [+Sirx] by rdr
+2018-08-22 20:27:51	--	You have been marked as being away
+2018-08-22 20:27:51	--	You are no longer marked as being away
+2018-08-22 20:30:07	--	irc: disconnected from server
+2018-08-22 20:32:06	--	irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:32:06	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:32:06	--	gnutls: receiving 1 certificate
+2018-08-22 20:32:06	--	 - certificate[1] info:
+2018-08-22 20:32:06	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:32:06	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:32:06	=!=	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:32:06	=!=	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:32:06	--	irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:32:06	--	Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 20:32:06	--	Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 20:32:06	--	This server was created Sep 15 2017 at 22:17:12
+2018-08-22 20:32:06	--	magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 20:32:06	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 20:32:06	--	CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 20:32:06	--	There are 27 users and 14637 invisible on 20 servers
+2018-08-22 20:32:06	--	62 :IRC Operators online
+2018-08-22 20:32:06	--	12007 :channels formed
+2018-08-22 20:32:06	--	I have 14664 clients and 20 servers
+2018-08-22 20:32:06	--	Current local users: 14664  Max: 19605
+2018-08-22 20:32:06	--	Current global users: 14664  Max: 19605
+2018-08-22 20:32:06	--	You are now known as rdr
+2018-08-22 20:32:06	--	- magnet.rizon.net Message of the Day -
+2018-08-22 20:32:06	--	-          oo                            
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 20:32:06	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 20:32:06	--	- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 20:32:06	--	- dP       dP d888888P `88888P' dP    dP
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- Rizon Chat Network -- http://rizon.net
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- Rules:
+2018-08-22 20:32:06	--	- o No spamming or flooding
+2018-08-22 20:32:06	--	- o No clones or malicious bots
+2018-08-22 20:32:06	--	- o No takeovers
+2018-08-22 20:32:06	--	- o No distribution of child pornography
+2018-08-22 20:32:06	--	- o Clients must respond to VERSION requests
+2018-08-22 20:32:06	--	- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- First steps:
+2018-08-22 20:32:06	--	- o To register your nick: /msg NickServ HELP
+2018-08-22 20:32:06	--	- o To register your channel: /msg ChanServ HELP
+2018-08-22 20:32:06	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 20:32:06	--	- o For other help with Rizon: /join #help
+2018-08-22 20:32:06	--	-
+2018-08-22 20:32:06	--	- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 20:32:06	--	- transit provider, therefore no person or entity involved with
+2018-08-22 20:32:06	--	- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 20:32:06	--	- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 20:32:06	--	End of /MOTD command.
+2018-08-22 20:32:06	--	User mode [+Sirx] by rdr
+2018-08-22 20:32:06	--	You have been marked as being away
+2018-08-22 20:32:06	--	You are no longer marked as being away
+2018-08-22 20:50:42		irc: disconnected from server
+2018-08-22 20:50:45		irc: connecting to server home/8080 (SSL)...
+2018-08-22 20:50:45		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 20:50:45		gnutls: receiving 1 certificate
+2018-08-22 20:50:45		 - certificate[1] info:
+2018-08-22 20:50:45		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 20:50:45	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 20:50:45	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 20:50:45	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 20:50:45		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 20:50:45		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 20:50:45		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 20:50:45		This server was created Sep 15 2017 at 22:17:12
+2018-08-22 20:50:45		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 20:50:45		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 20:50:45		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 20:50:45		There are 27 users and 14637 invisible on 20 servers
+2018-08-22 20:50:45		62 :IRC Operators online
+2018-08-22 20:50:45		12007 :channels formed
+2018-08-22 20:50:45		I have 14664 clients and 20 servers
+2018-08-22 20:50:45		Current local users: 14664  Max: 19605
+2018-08-22 20:50:45		Current global users: 14664  Max: 19605
+2018-08-22 20:50:45		You are now known as rdr
+2018-08-22 20:50:45		- magnet.rizon.net Message of the Day -
+2018-08-22 20:50:45		-          oo                            
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 20:50:45		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 20:50:45		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 20:50:45		- dP       dP d888888P `88888P' dP    dP
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- Rizon Chat Network -- http://rizon.net
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- Rules:
+2018-08-22 20:50:45		- o No spamming or flooding
+2018-08-22 20:50:45		- o No clones or malicious bots
+2018-08-22 20:50:45		- o No takeovers
+2018-08-22 20:50:45		- o No distribution of child pornography
+2018-08-22 20:50:45		- o Clients must respond to VERSION requests
+2018-08-22 20:50:45		- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- First steps:
+2018-08-22 20:50:45		- o To register your nick: /msg NickServ HELP
+2018-08-22 20:50:45		- o To register your channel: /msg ChanServ HELP
+2018-08-22 20:50:45		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 20:50:45		- o For other help with Rizon: /join #help
+2018-08-22 20:50:45		-
+2018-08-22 20:50:45		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 20:50:45		- transit provider, therefore no person or entity involved with
+2018-08-22 20:50:45		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 20:50:45		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 20:50:45		End of /MOTD command.
+2018-08-22 20:50:45		User mode [+Sirx] by rdr
+2018-08-22 21:31:39		irc: disconnected from server
+2018-08-22 21:31:40		irc: connecting to server home/8080 (SSL)...
+2018-08-22 21:31:41		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 21:31:41		gnutls: receiving 1 certificate
+2018-08-22 21:31:41		 - certificate[1] info:
+2018-08-22 21:31:41		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 21:31:41	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 21:31:41	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 21:31:41	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 21:31:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 21:31:41		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 21:31:41		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 21:31:41		This server was created Sep 15 2017 at 22:17:12
+2018-08-22 21:31:41		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 21:31:41		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 21:31:41		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 21:31:41		There are 27 users and 14637 invisible on 20 servers
+2018-08-22 21:31:41		62 :IRC Operators online
+2018-08-22 21:31:41		12007 :channels formed
+2018-08-22 21:31:41		I have 14664 clients and 20 servers
+2018-08-22 21:31:41		Current local users: 14664  Max: 19605
+2018-08-22 21:31:41		Current global users: 14664  Max: 19605
+2018-08-22 21:31:41		You are now known as rdr
+2018-08-22 21:31:41		- magnet.rizon.net Message of the Day -
+2018-08-22 21:31:41		-          oo                            
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 21:31:41		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 21:31:41		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 21:31:41		- dP       dP d888888P `88888P' dP    dP
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- Rizon Chat Network -- http://rizon.net
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- Rules:
+2018-08-22 21:31:41		- o No spamming or flooding
+2018-08-22 21:31:41		- o No clones or malicious bots
+2018-08-22 21:31:41		- o No takeovers
+2018-08-22 21:31:41		- o No distribution of child pornography
+2018-08-22 21:31:41		- o Clients must respond to VERSION requests
+2018-08-22 21:31:41		- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- First steps:
+2018-08-22 21:31:41		- o To register your nick: /msg NickServ HELP
+2018-08-22 21:31:41		- o To register your channel: /msg ChanServ HELP
+2018-08-22 21:31:41		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 21:31:41		- o For other help with Rizon: /join #help
+2018-08-22 21:31:41		-
+2018-08-22 21:31:41		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 21:31:41		- transit provider, therefore no person or entity involved with
+2018-08-22 21:31:41		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 21:31:41		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 21:31:41		End of /MOTD command.
+2018-08-22 21:31:41		User mode [+Sirx] by rdr
+2018-08-22 21:44:30		irc: disconnected from server
+2018-08-22 21:44:31		irc: connecting to server home/8080 (SSL)...
+2018-08-22 21:44:31		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 21:44:31		gnutls: receiving 1 certificate
+2018-08-22 21:44:31		 - certificate[1] info:
+2018-08-22 21:44:31		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 21:44:31	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 21:44:31	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 21:44:31	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 21:44:31		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 21:44:31		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 21:44:31		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 21:44:31		This server was created Sep 15 2017 at 22:17:12
+2018-08-22 21:44:31		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 21:44:31		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 21:44:31		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 21:44:31		There are 27 users and 14637 invisible on 20 servers
+2018-08-22 21:44:31		62 :IRC Operators online
+2018-08-22 21:44:31		12007 :channels formed
+2018-08-22 21:44:31		I have 14664 clients and 20 servers
+2018-08-22 21:44:31		Current local users: 14664  Max: 19605
+2018-08-22 21:44:31		Current global users: 14664  Max: 19605
+2018-08-22 21:44:31		You are now known as rdr
+2018-08-22 21:44:31		- magnet.rizon.net Message of the Day -
+2018-08-22 21:44:31		-          oo                            
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 21:44:31		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 21:44:31		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 21:44:31		- dP       dP d888888P `88888P' dP    dP
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- Rizon Chat Network -- http://rizon.net
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- Rules:
+2018-08-22 21:44:31		- o No spamming or flooding
+2018-08-22 21:44:31		- o No clones or malicious bots
+2018-08-22 21:44:31		- o No takeovers
+2018-08-22 21:44:31		- o No distribution of child pornography
+2018-08-22 21:44:31		- o Clients must respond to VERSION requests
+2018-08-22 21:44:31		- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- First steps:
+2018-08-22 21:44:31		- o To register your nick: /msg NickServ HELP
+2018-08-22 21:44:31		- o To register your channel: /msg ChanServ HELP
+2018-08-22 21:44:31		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 21:44:31		- o For other help with Rizon: /join #help
+2018-08-22 21:44:31		-
+2018-08-22 21:44:31		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 21:44:31		- transit provider, therefore no person or entity involved with
+2018-08-22 21:44:31		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 21:44:31		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 21:44:31		End of /MOTD command.
+2018-08-22 21:44:31		User mode [+Sirx] by rdr
+2018-08-22 23:55:44		irc: disconnected from server
+2018-08-22 23:56:41		irc: connecting to server home/8080 (SSL)...
+2018-08-22 23:56:41		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-22 23:56:41		gnutls: receiving 1 certificate
+2018-08-22 23:56:41		 - certificate[1] info:
+2018-08-22 23:56:41		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-22 23:56:41	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-22 23:56:41	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-22 23:56:41	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-22 23:56:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-22 23:56:41		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-22 23:56:41		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-22 23:56:41		This server was created Sep 15 2017 at 22:17:12
+2018-08-22 23:56:41		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-22 23:56:41		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-22 23:56:41		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-22 23:56:41		There are 27 users and 14637 invisible on 20 servers
+2018-08-22 23:56:41		62 :IRC Operators online
+2018-08-22 23:56:41		12007 :channels formed
+2018-08-22 23:56:41		I have 14664 clients and 20 servers
+2018-08-22 23:56:41		Current local users: 14664  Max: 19605
+2018-08-22 23:56:41		Current global users: 14664  Max: 19605
+2018-08-22 23:56:41		You are now known as rdr
+2018-08-22 23:56:41		- magnet.rizon.net Message of the Day -
+2018-08-22 23:56:41		-          oo                            
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-22 23:56:41		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-22 23:56:41		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-22 23:56:41		- dP       dP d888888P `88888P' dP    dP
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- Rizon Chat Network -- http://rizon.net
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- Rules:
+2018-08-22 23:56:41		- o No spamming or flooding
+2018-08-22 23:56:41		- o No clones or malicious bots
+2018-08-22 23:56:41		- o No takeovers
+2018-08-22 23:56:41		- o No distribution of child pornography
+2018-08-22 23:56:41		- o Clients must respond to VERSION requests
+2018-08-22 23:56:41		- o Rizon staff may disconnect clients for any or no reason
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- First steps:
+2018-08-22 23:56:41		- o To register your nick: /msg NickServ HELP
+2018-08-22 23:56:41		- o To register your channel: /msg ChanServ HELP
+2018-08-22 23:56:41		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-22 23:56:41		- o For other help with Rizon: /join #help
+2018-08-22 23:56:41		-
+2018-08-22 23:56:41		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-22 23:56:41		- transit provider, therefore no person or entity involved with
+2018-08-22 23:56:41		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-22 23:56:41		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-22 23:56:41		End of /MOTD command.
+2018-08-22 23:56:41		User mode [+Sirx] by rdr
+2018-08-23 01:04:00		irc: disconnected from server
+2018-08-23 01:04:05		irc: connecting to server home/8080 (SSL)...
+2018-08-23 01:04:05		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 01:04:05		gnutls: receiving 1 certificate
+2018-08-23 01:04:05		 - certificate[1] info:
+2018-08-23 01:04:05		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 01:04:05	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 01:04:05	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 01:04:05	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 01:04:05		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 01:04:05		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 01:04:05		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 01:04:05		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 01:04:05		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 01:04:05		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 01:04:05		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 01:04:05		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 01:04:05		62 :IRC Operators online
+2018-08-23 01:04:05		12007 :channels formed
+2018-08-23 01:04:05		I have 14664 clients and 20 servers
+2018-08-23 01:04:05		Current local users: 14664  Max: 19605
+2018-08-23 01:04:05		Current global users: 14664  Max: 19605
+2018-08-23 01:04:05		You are now known as rdr
+2018-08-23 01:04:05		- magnet.rizon.net Message of the Day -
+2018-08-23 01:04:05		-          oo                            
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 01:04:05		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 01:04:05		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 01:04:05		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- Rizon Chat Network -- http://rizon.net
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- Rules:
+2018-08-23 01:04:05		- o No spamming or flooding
+2018-08-23 01:04:05		- o No clones or malicious bots
+2018-08-23 01:04:05		- o No takeovers
+2018-08-23 01:04:05		- o No distribution of child pornography
+2018-08-23 01:04:05		- o Clients must respond to VERSION requests
+2018-08-23 01:04:05		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- First steps:
+2018-08-23 01:04:05		- o To register your nick: /msg NickServ HELP
+2018-08-23 01:04:05		- o To register your channel: /msg ChanServ HELP
+2018-08-23 01:04:05		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 01:04:05		- o For other help with Rizon: /join #help
+2018-08-23 01:04:05		-
+2018-08-23 01:04:05		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 01:04:05		- transit provider, therefore no person or entity involved with
+2018-08-23 01:04:05		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 01:04:05		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 01:04:05		End of /MOTD command.
+2018-08-23 01:04:05		User mode [+Sirx] by rdr
+2018-08-23 11:42:20		irc: disconnected from server
+2018-08-23 11:42:34		irc: connecting to server home/8080 (SSL)...
+2018-08-23 11:42:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 11:42:34		gnutls: receiving 1 certificate
+2018-08-23 11:42:34		 - certificate[1] info:
+2018-08-23 11:42:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 11:42:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 11:42:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 11:42:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 11:42:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 11:42:34		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 11:42:34		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 11:42:34		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 11:42:34		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 11:42:34		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 11:42:34		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 11:42:34		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 11:42:34		62 :IRC Operators online
+2018-08-23 11:42:34		12007 :channels formed
+2018-08-23 11:42:34		I have 14664 clients and 20 servers
+2018-08-23 11:42:34		Current local users: 14664  Max: 19605
+2018-08-23 11:42:34		Current global users: 14664  Max: 19605
+2018-08-23 11:42:34		You are now known as rdr
+2018-08-23 11:42:34		- magnet.rizon.net Message of the Day -
+2018-08-23 11:42:34		-          oo                            
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 11:42:34		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 11:42:34		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 11:42:34		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- Rizon Chat Network -- http://rizon.net
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- Rules:
+2018-08-23 11:42:34		- o No spamming or flooding
+2018-08-23 11:42:34		- o No clones or malicious bots
+2018-08-23 11:42:34		- o No takeovers
+2018-08-23 11:42:34		- o No distribution of child pornography
+2018-08-23 11:42:34		- o Clients must respond to VERSION requests
+2018-08-23 11:42:34		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- First steps:
+2018-08-23 11:42:34		- o To register your nick: /msg NickServ HELP
+2018-08-23 11:42:34		- o To register your channel: /msg ChanServ HELP
+2018-08-23 11:42:34		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 11:42:34		- o For other help with Rizon: /join #help
+2018-08-23 11:42:34		-
+2018-08-23 11:42:34		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 11:42:34		- transit provider, therefore no person or entity involved with
+2018-08-23 11:42:34		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 11:42:34		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 11:42:34		End of /MOTD command.
+2018-08-23 11:42:34		User mode [+Sirx] by rdr
+2018-08-23 12:34:23		irc: disconnected from server
+2018-08-23 12:34:50		irc: connecting to server home/8080 (SSL)...
+2018-08-23 12:34:50		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 12:34:50		gnutls: receiving 1 certificate
+2018-08-23 12:34:50		 - certificate[1] info:
+2018-08-23 12:34:50		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 12:34:50	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 12:34:50	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 12:34:50	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 12:34:50		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 12:34:50		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 12:34:50		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 12:34:50		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 12:34:50		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 12:34:50		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 12:34:50		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 12:34:50		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 12:34:50		62 :IRC Operators online
+2018-08-23 12:34:50		12007 :channels formed
+2018-08-23 12:34:50		I have 14664 clients and 20 servers
+2018-08-23 12:34:50		Current local users: 14664  Max: 19605
+2018-08-23 12:34:50		Current global users: 14664  Max: 19605
+2018-08-23 12:34:50		You are now known as rdr
+2018-08-23 12:34:50		- magnet.rizon.net Message of the Day -
+2018-08-23 12:34:50		-          oo                            
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 12:34:50		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 12:34:50		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 12:34:50		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- Rizon Chat Network -- http://rizon.net
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- Rules:
+2018-08-23 12:34:50		- o No spamming or flooding
+2018-08-23 12:34:50		- o No clones or malicious bots
+2018-08-23 12:34:50		- o No takeovers
+2018-08-23 12:34:50		- o No distribution of child pornography
+2018-08-23 12:34:50		- o Clients must respond to VERSION requests
+2018-08-23 12:34:50		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- First steps:
+2018-08-23 12:34:50		- o To register your nick: /msg NickServ HELP
+2018-08-23 12:34:50		- o To register your channel: /msg ChanServ HELP
+2018-08-23 12:34:50		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 12:34:50		- o For other help with Rizon: /join #help
+2018-08-23 12:34:50		-
+2018-08-23 12:34:50		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 12:34:50		- transit provider, therefore no person or entity involved with
+2018-08-23 12:34:50		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 12:34:50		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 12:34:50		End of /MOTD command.
+2018-08-23 12:34:50		User mode [+Sirx] by rdr
+2018-08-23 13:09:52		irc: disconnected from server
+2018-08-23 13:10:36		irc: connecting to server home/8080 (SSL)...
+2018-08-23 13:10:36		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 13:10:36		gnutls: receiving 1 certificate
+2018-08-23 13:10:36		 - certificate[1] info:
+2018-08-23 13:10:36		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 13:10:36	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 13:10:36	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 13:10:36	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 13:10:36		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 13:10:36		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 13:10:36		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 13:10:36		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 13:10:36		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 13:10:36		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 13:10:36		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 13:10:36		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 13:10:36		62 :IRC Operators online
+2018-08-23 13:10:36		12007 :channels formed
+2018-08-23 13:10:36		I have 14664 clients and 20 servers
+2018-08-23 13:10:36		Current local users: 14664  Max: 19605
+2018-08-23 13:10:36		Current global users: 14664  Max: 19605
+2018-08-23 13:10:36		You are now known as rdr
+2018-08-23 13:10:36		- magnet.rizon.net Message of the Day -
+2018-08-23 13:10:36		-          oo                            
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 13:10:36		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 13:10:36		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 13:10:36		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- Rizon Chat Network -- http://rizon.net
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- Rules:
+2018-08-23 13:10:36		- o No spamming or flooding
+2018-08-23 13:10:36		- o No clones or malicious bots
+2018-08-23 13:10:36		- o No takeovers
+2018-08-23 13:10:36		- o No distribution of child pornography
+2018-08-23 13:10:36		- o Clients must respond to VERSION requests
+2018-08-23 13:10:36		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- First steps:
+2018-08-23 13:10:36		- o To register your nick: /msg NickServ HELP
+2018-08-23 13:10:36		- o To register your channel: /msg ChanServ HELP
+2018-08-23 13:10:36		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 13:10:36		- o For other help with Rizon: /join #help
+2018-08-23 13:10:36		-
+2018-08-23 13:10:36		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 13:10:36		- transit provider, therefore no person or entity involved with
+2018-08-23 13:10:36		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 13:10:36		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 13:10:36		End of /MOTD command.
+2018-08-23 13:10:36		User mode [+Sirx] by rdr
+2018-08-23 14:05:48		irc: disconnected from server
+2018-08-23 14:05:57		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:05:57		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:05:57		gnutls: receiving 1 certificate
+2018-08-23 14:05:57		 - certificate[1] info:
+2018-08-23 14:05:57		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:05:57	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:05:57	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:05:57	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:05:57		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:05:57		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 14:05:57		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 14:05:57		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 14:05:57		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 14:05:57		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 14:05:57		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 14:05:57		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 14:05:57		62 :IRC Operators online
+2018-08-23 14:05:57		12007 :channels formed
+2018-08-23 14:05:57		I have 14664 clients and 20 servers
+2018-08-23 14:05:57		Current local users: 14664  Max: 19605
+2018-08-23 14:05:57		Current global users: 14664  Max: 19605
+2018-08-23 14:05:57		You are now known as rdr
+2018-08-23 14:05:57		- magnet.rizon.net Message of the Day -
+2018-08-23 14:05:57		-          oo                            
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 14:05:57		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 14:05:57		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 14:05:57		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- Rizon Chat Network -- http://rizon.net
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- Rules:
+2018-08-23 14:05:57		- o No spamming or flooding
+2018-08-23 14:05:57		- o No clones or malicious bots
+2018-08-23 14:05:57		- o No takeovers
+2018-08-23 14:05:57		- o No distribution of child pornography
+2018-08-23 14:05:57		- o Clients must respond to VERSION requests
+2018-08-23 14:05:57		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- First steps:
+2018-08-23 14:05:57		- o To register your nick: /msg NickServ HELP
+2018-08-23 14:05:57		- o To register your channel: /msg ChanServ HELP
+2018-08-23 14:05:57		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 14:05:57		- o For other help with Rizon: /join #help
+2018-08-23 14:05:57		-
+2018-08-23 14:05:57		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 14:05:57		- transit provider, therefore no person or entity involved with
+2018-08-23 14:05:57		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 14:05:57		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 14:05:57		End of /MOTD command.
+2018-08-23 14:05:57		User mode [+Sirx] by rdr
+2018-08-23 14:17:13		irc: disconnected from server
+2018-08-23 14:28:22		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:28:22		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:28:22		gnutls: receiving 1 certificate
+2018-08-23 14:28:22		 - certificate[1] info:
+2018-08-23 14:28:22		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:28:22	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:28:22	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:28:22	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:28:22		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:28:22		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 14:28:22		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 14:28:22		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 14:28:22		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 14:28:22		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 14:28:22		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 14:28:22		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 14:28:22		62 :IRC Operators online
+2018-08-23 14:28:22		12007 :channels formed
+2018-08-23 14:28:22		I have 14664 clients and 20 servers
+2018-08-23 14:28:22		Current local users: 14664  Max: 19605
+2018-08-23 14:28:22		Current global users: 14664  Max: 19605
+2018-08-23 14:28:22		You are now known as rdr
+2018-08-23 14:28:22		- magnet.rizon.net Message of the Day -
+2018-08-23 14:28:22		-          oo                            
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 14:28:22		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 14:28:22		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 14:28:22		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- Rizon Chat Network -- http://rizon.net
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- Rules:
+2018-08-23 14:28:22		- o No spamming or flooding
+2018-08-23 14:28:22		- o No clones or malicious bots
+2018-08-23 14:28:22		- o No takeovers
+2018-08-23 14:28:22		- o No distribution of child pornography
+2018-08-23 14:28:22		- o Clients must respond to VERSION requests
+2018-08-23 14:28:22		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- First steps:
+2018-08-23 14:28:22		- o To register your nick: /msg NickServ HELP
+2018-08-23 14:28:22		- o To register your channel: /msg ChanServ HELP
+2018-08-23 14:28:22		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 14:28:22		- o For other help with Rizon: /join #help
+2018-08-23 14:28:22		-
+2018-08-23 14:28:22		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 14:28:22		- transit provider, therefore no person or entity involved with
+2018-08-23 14:28:22		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 14:28:22		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 14:28:22		End of /MOTD command.
+2018-08-23 14:28:22		User mode [+Sirx] by rdr
+2018-08-23 14:28:22		You have been marked as being away
+2018-08-23 14:28:22		You are no longer marked as being away
+2018-08-23 14:48:01		irc: disconnected from server
+2018-08-23 14:49:56		irc: connecting to server home/8080 (SSL)...
+2018-08-23 14:49:56		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 14:49:56		gnutls: receiving 1 certificate
+2018-08-23 14:49:56		 - certificate[1] info:
+2018-08-23 14:49:56		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 14:49:56	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 14:49:56	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 14:49:56	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 14:49:56		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 14:49:56		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 14:49:56		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 14:49:56		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 14:49:56		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 14:49:56		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 14:49:56		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 14:49:56		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 14:49:56		62 :IRC Operators online
+2018-08-23 14:49:56		12007 :channels formed
+2018-08-23 14:49:56		I have 14664 clients and 20 servers
+2018-08-23 14:49:56		Current local users: 14664  Max: 19605
+2018-08-23 14:49:56		Current global users: 14664  Max: 19605
+2018-08-23 14:49:56		You are now known as rdr
+2018-08-23 14:49:56		- magnet.rizon.net Message of the Day -
+2018-08-23 14:49:56		-          oo                            
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 14:49:56		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 14:49:56		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 14:49:56		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- Rizon Chat Network -- http://rizon.net
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- Rules:
+2018-08-23 14:49:56		- o No spamming or flooding
+2018-08-23 14:49:56		- o No clones or malicious bots
+2018-08-23 14:49:56		- o No takeovers
+2018-08-23 14:49:56		- o No distribution of child pornography
+2018-08-23 14:49:56		- o Clients must respond to VERSION requests
+2018-08-23 14:49:56		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- First steps:
+2018-08-23 14:49:56		- o To register your nick: /msg NickServ HELP
+2018-08-23 14:49:56		- o To register your channel: /msg ChanServ HELP
+2018-08-23 14:49:56		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 14:49:56		- o For other help with Rizon: /join #help
+2018-08-23 14:49:56		-
+2018-08-23 14:49:56		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 14:49:56		- transit provider, therefore no person or entity involved with
+2018-08-23 14:49:56		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 14:49:56		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 14:49:56		End of /MOTD command.
+2018-08-23 14:49:56		User mode [+Sirx] by rdr
+2018-08-23 14:49:56		You have been marked as being away
+2018-08-23 14:49:56		You are no longer marked as being away
+2018-08-23 17:33:34		irc: disconnected from server
+2018-08-23 17:33:52		irc: connecting to server home/8080 (SSL)...
+2018-08-23 17:33:52		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 17:33:52		gnutls: receiving 1 certificate
+2018-08-23 17:33:52		 - certificate[1] info:
+2018-08-23 17:33:52		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 17:33:52	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 17:33:52	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 17:33:52	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 17:33:52		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 17:33:52		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 17:33:52		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 17:33:52		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 17:33:52		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 17:33:52		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 17:33:52		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 17:33:52		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 17:33:52		62 :IRC Operators online
+2018-08-23 17:33:52		12007 :channels formed
+2018-08-23 17:33:52		I have 14664 clients and 20 servers
+2018-08-23 17:33:52		Current local users: 14664  Max: 19605
+2018-08-23 17:33:52		Current global users: 14664  Max: 19605
+2018-08-23 17:33:52		You are now known as rdr
+2018-08-23 17:33:52		- magnet.rizon.net Message of the Day -
+2018-08-23 17:33:52		-          oo                            
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 17:33:52		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 17:33:52		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 17:33:52		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- Rizon Chat Network -- http://rizon.net
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- Rules:
+2018-08-23 17:33:52		- o No spamming or flooding
+2018-08-23 17:33:52		- o No clones or malicious bots
+2018-08-23 17:33:52		- o No takeovers
+2018-08-23 17:33:52		- o No distribution of child pornography
+2018-08-23 17:33:52		- o Clients must respond to VERSION requests
+2018-08-23 17:33:52		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- First steps:
+2018-08-23 17:33:52		- o To register your nick: /msg NickServ HELP
+2018-08-23 17:33:52		- o To register your channel: /msg ChanServ HELP
+2018-08-23 17:33:52		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 17:33:52		- o For other help with Rizon: /join #help
+2018-08-23 17:33:52		-
+2018-08-23 17:33:52		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 17:33:52		- transit provider, therefore no person or entity involved with
+2018-08-23 17:33:52		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 17:33:52		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 17:33:52		End of /MOTD command.
+2018-08-23 17:33:52		User mode [+Sirx] by rdr
+2018-08-23 18:26:29		irc: disconnected from server
+2018-08-23 18:29:52		irc: connecting to server home/8080 (SSL)...
+2018-08-23 18:29:52		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 18:29:52		gnutls: receiving 1 certificate
+2018-08-23 18:29:52		 - certificate[1] info:
+2018-08-23 18:29:52		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 18:29:52	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 18:29:52	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 18:29:52	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 18:29:52		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 18:29:52		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 18:29:52		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 18:29:52		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 18:29:52		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 18:29:52		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 18:29:52		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 18:29:52		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 18:29:52		62 :IRC Operators online
+2018-08-23 18:29:52		12007 :channels formed
+2018-08-23 18:29:52		I have 14664 clients and 20 servers
+2018-08-23 18:29:52		Current local users: 14664  Max: 19605
+2018-08-23 18:29:52		Current global users: 14664  Max: 19605
+2018-08-23 18:29:52		You are now known as rdr
+2018-08-23 18:29:52		- magnet.rizon.net Message of the Day -
+2018-08-23 18:29:52		-          oo                            
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 18:29:52		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 18:29:52		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 18:29:52		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- Rizon Chat Network -- http://rizon.net
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- Rules:
+2018-08-23 18:29:52		- o No spamming or flooding
+2018-08-23 18:29:52		- o No clones or malicious bots
+2018-08-23 18:29:52		- o No takeovers
+2018-08-23 18:29:52		- o No distribution of child pornography
+2018-08-23 18:29:52		- o Clients must respond to VERSION requests
+2018-08-23 18:29:52		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- First steps:
+2018-08-23 18:29:52		- o To register your nick: /msg NickServ HELP
+2018-08-23 18:29:52		- o To register your channel: /msg ChanServ HELP
+2018-08-23 18:29:52		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 18:29:52		- o For other help with Rizon: /join #help
+2018-08-23 18:29:52		-
+2018-08-23 18:29:52		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 18:29:52		- transit provider, therefore no person or entity involved with
+2018-08-23 18:29:52		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 18:29:52		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 18:29:52		End of /MOTD command.
+2018-08-23 18:29:52		User mode [+Sirx] by rdr
+2018-08-23 18:29:52		You have been marked as being away
+2018-08-23 18:29:52		You are no longer marked as being away
+2018-08-23 20:15:52		irc: lag is high, reconnecting to server Rizon
+2018-08-23 20:15:52		irc: disconnected from server
+2018-08-23 20:15:52		irc: reconnecting to server in 10 seconds
+2018-08-23 20:16:02		irc: reconnecting to server...
+2018-08-23 20:16:02		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:16:02	⚠️	irc: connection refused
+2018-08-23 20:16:02		irc: reconnecting to server in 20 seconds
+2018-08-23 20:16:22		irc: reconnecting to server...
+2018-08-23 20:16:22		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:16:22	⚠️	irc: connection refused
+2018-08-23 20:16:22		irc: reconnecting to server in 40 seconds
+2018-08-23 20:17:02		irc: reconnecting to server...
+2018-08-23 20:17:02		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:17:02		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 20:17:02		gnutls: receiving 1 certificate
+2018-08-23 20:17:02		 - certificate[1] info:
+2018-08-23 20:17:02		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 20:17:02	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 20:17:02	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 20:17:02	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 20:17:02		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 20:17:02		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 20:17:02		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 20:17:02		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 20:17:02		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 20:17:02		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 20:17:02		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 20:17:02		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 20:17:02		62 :IRC Operators online
+2018-08-23 20:17:02		12007 :channels formed
+2018-08-23 20:17:02		I have 14664 clients and 20 servers
+2018-08-23 20:17:02		Current local users: 14664  Max: 19605
+2018-08-23 20:17:02		Current global users: 14664  Max: 19605
+2018-08-23 20:17:02		- magnet.rizon.net Message of the Day -
+2018-08-23 20:17:02		-          oo                            
+2018-08-23 20:17:02		-
+2018-08-23 20:17:02		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 20:17:02		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 20:17:03		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 20:17:03		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 20:17:03		-
+2018-08-23 20:17:03		- Rizon Chat Network -- http://rizon.net
+2018-08-23 20:17:03		-
+2018-08-23 20:17:03		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 20:17:03		-
+2018-08-23 20:17:03		- Rules:
+2018-08-23 20:17:03		- o No spamming or flooding
+2018-08-23 20:17:03		- o No clones or malicious bots
+2018-08-23 20:17:03		- o No takeovers
+2018-08-23 20:17:03		- o No distribution of child pornography
+2018-08-23 20:17:03		- o Clients must respond to VERSION requests
+2018-08-23 20:17:03		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 20:17:03		-
+2018-08-23 20:17:03		- First steps:
+2018-08-23 20:17:03		- o To register your nick: /msg NickServ HELP
+2018-08-23 20:17:03		- o To register your channel: /msg ChanServ HELP
+2018-08-23 20:17:03		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 20:17:03		- o For other help with Rizon: /join #help
+2018-08-23 20:17:03		-
+2018-08-23 20:17:03		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 20:17:03		- transit provider, therefore no person or entity involved with
+2018-08-23 20:17:03		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 20:17:03		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 20:17:03		End of /MOTD command.
+2018-08-23 20:17:03		User mode [+Sirx] by rdr
+2018-08-23 20:17:03		You have been marked as being away
+2018-08-23 20:17:03		You are no longer marked as being away
+2018-08-23 20:24:34	⚠️	irc: reading data on socket: error -54 Error in the pull function.
+2018-08-23 20:24:34		irc: disconnecting from server...
+2018-08-23 20:24:34		irc: disconnected from server
+2018-08-23 20:24:34		irc: reconnecting to server in 10 seconds
+2018-08-23 20:24:44		irc: reconnecting to server...
+2018-08-23 20:24:44		irc: connecting to server home/8080 (SSL)...
+2018-08-23 20:24:44		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 20:24:44		gnutls: receiving 1 certificate
+2018-08-23 20:24:44		 - certificate[1] info:
+2018-08-23 20:24:44		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 20:24:44	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 20:24:44	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 20:24:44	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 20:24:44		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 20:24:44		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 20:24:44		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 20:24:44		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 20:24:44		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 20:24:44		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 20:24:44		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 20:24:44		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 20:24:44		62 :IRC Operators online
+2018-08-23 20:24:44		12007 :channels formed
+2018-08-23 20:24:44		I have 14664 clients and 20 servers
+2018-08-23 20:24:44		Current local users: 14664  Max: 19605
+2018-08-23 20:24:44		Current global users: 14664  Max: 19605
+2018-08-23 20:24:44		- magnet.rizon.net Message of the Day -
+2018-08-23 20:24:44		-          oo                            
+2018-08-23 20:24:44		-
+2018-08-23 20:24:44		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 20:24:44		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 20:24:44		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 20:24:44		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 20:24:44		-
+2018-08-23 20:24:44		- Rizon Chat Network -- http://rizon.net
+2018-08-23 20:24:44		-
+2018-08-23 20:24:44		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 20:24:44		-
+2018-08-23 20:24:44		- Rules:
+2018-08-23 20:24:44		- o No spamming or flooding
+2018-08-23 20:24:44		- o No clones or malicious bots
+2018-08-23 20:24:44		- o No takeovers
+2018-08-23 20:24:44		- o No distribution of child pornography
+2018-08-23 20:24:44		- o Clients must respond to VERSION requests
+2018-08-23 20:24:44		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 20:24:44		-
+2018-08-23 20:24:44		- First steps:
+2018-08-23 20:24:44		- o To register your nick: /msg NickServ HELP
+2018-08-23 20:24:44		- o To register your channel: /msg ChanServ HELP
+2018-08-23 20:24:44		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 20:24:44		- o For other help with Rizon: /join #help
+2018-08-23 20:24:45		-
+2018-08-23 20:24:45		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 20:24:45		- transit provider, therefore no person or entity involved with
+2018-08-23 20:24:45		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 20:24:45		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 20:24:45		End of /MOTD command.
+2018-08-23 20:24:45		User mode [+Sirx] by rdr
+2018-08-23 20:24:45		You have been marked as being away
+2018-08-23 20:24:45		You are no longer marked as being away
+2018-08-23 21:30:52		irc: disconnected from server
+2018-08-23 21:39:19		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:39:19		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:39:19		gnutls: receiving 1 certificate
+2018-08-23 21:39:19		 - certificate[1] info:
+2018-08-23 21:39:19		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:39:19	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:39:19	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:39:19	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:39:19		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:39:19		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 21:39:19		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 21:39:19		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 21:39:19		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 21:39:19		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 21:39:19		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 21:39:19		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 21:39:19		62 :IRC Operators online
+2018-08-23 21:39:19		12007 :channels formed
+2018-08-23 21:39:19		I have 14664 clients and 20 servers
+2018-08-23 21:39:19		Current local users: 14664  Max: 19605
+2018-08-23 21:39:19		Current global users: 14664  Max: 19605
+2018-08-23 21:39:19		You are now known as rdr
+2018-08-23 21:39:19		- magnet.rizon.net Message of the Day -
+2018-08-23 21:39:19		-          oo                            
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 21:39:19		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 21:39:19		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 21:39:19		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- Rizon Chat Network -- http://rizon.net
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- Rules:
+2018-08-23 21:39:19		- o No spamming or flooding
+2018-08-23 21:39:19		- o No clones or malicious bots
+2018-08-23 21:39:19		- o No takeovers
+2018-08-23 21:39:19		- o No distribution of child pornography
+2018-08-23 21:39:19		- o Clients must respond to VERSION requests
+2018-08-23 21:39:19		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- First steps:
+2018-08-23 21:39:19		- o To register your nick: /msg NickServ HELP
+2018-08-23 21:39:19		- o To register your channel: /msg ChanServ HELP
+2018-08-23 21:39:19		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 21:39:19		- o For other help with Rizon: /join #help
+2018-08-23 21:39:19		-
+2018-08-23 21:39:19		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 21:39:19		- transit provider, therefore no person or entity involved with
+2018-08-23 21:39:19		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 21:39:19		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 21:39:19		End of /MOTD command.
+2018-08-23 21:39:19		User mode [+Sirx] by rdr
+2018-08-23 21:39:19		You have been marked as being away
+2018-08-23 21:39:20		You are no longer marked as being away
+2018-08-23 21:41:59		irc: disconnected from server
+2018-08-23 21:46:57		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:46:57		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:46:57		gnutls: receiving 1 certificate
+2018-08-23 21:46:57		 - certificate[1] info:
+2018-08-23 21:46:57		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:46:57	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:46:57	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:46:57	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:46:57		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:46:57		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 21:46:57		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 21:46:57		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 21:46:57		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 21:46:57		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 21:46:57		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 21:46:57		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 21:46:57		62 :IRC Operators online
+2018-08-23 21:46:57		12007 :channels formed
+2018-08-23 21:46:57		I have 14664 clients and 20 servers
+2018-08-23 21:46:57		Current local users: 14664  Max: 19605
+2018-08-23 21:46:57		Current global users: 14664  Max: 19605
+2018-08-23 21:46:57		You are now known as rdr
+2018-08-23 21:46:57		- magnet.rizon.net Message of the Day -
+2018-08-23 21:46:57		-          oo                            
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 21:46:57		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 21:46:57		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 21:46:57		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- Rizon Chat Network -- http://rizon.net
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- Rules:
+2018-08-23 21:46:57		- o No spamming or flooding
+2018-08-23 21:46:57		- o No clones or malicious bots
+2018-08-23 21:46:57		- o No takeovers
+2018-08-23 21:46:57		- o No distribution of child pornography
+2018-08-23 21:46:57		- o Clients must respond to VERSION requests
+2018-08-23 21:46:57		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- First steps:
+2018-08-23 21:46:57		- o To register your nick: /msg NickServ HELP
+2018-08-23 21:46:57		- o To register your channel: /msg ChanServ HELP
+2018-08-23 21:46:57		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 21:46:57		- o For other help with Rizon: /join #help
+2018-08-23 21:46:57		-
+2018-08-23 21:46:57		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 21:46:57		- transit provider, therefore no person or entity involved with
+2018-08-23 21:46:57		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 21:46:57		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 21:46:57		End of /MOTD command.
+2018-08-23 21:46:57		User mode [+Sirx] by rdr
+2018-08-23 21:46:57		You have been marked as being away
+2018-08-23 21:46:57		You are no longer marked as being away
+2018-08-23 21:51:38		irc: disconnected from server
+2018-08-23 21:51:51		irc: connecting to server home/8080 (SSL)...
+2018-08-23 21:51:51		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 21:51:51		gnutls: receiving 1 certificate
+2018-08-23 21:51:51		 - certificate[1] info:
+2018-08-23 21:51:51		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 21:51:51	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 21:51:51	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 21:51:51	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 21:51:51		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 21:51:51		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 21:51:52		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 21:51:52		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 21:51:52		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 21:51:52		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 21:51:52		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 21:51:52		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 21:51:52		62 :IRC Operators online
+2018-08-23 21:51:52		12007 :channels formed
+2018-08-23 21:51:52		I have 14664 clients and 20 servers
+2018-08-23 21:51:52		Current local users: 14664  Max: 19605
+2018-08-23 21:51:52		Current global users: 14664  Max: 19605
+2018-08-23 21:51:52		You are now known as rdr
+2018-08-23 21:51:52		- magnet.rizon.net Message of the Day -
+2018-08-23 21:51:52		-          oo                            
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 21:51:52		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 21:51:52		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 21:51:52		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- Rizon Chat Network -- http://rizon.net
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- Rules:
+2018-08-23 21:51:52		- o No spamming or flooding
+2018-08-23 21:51:52		- o No clones or malicious bots
+2018-08-23 21:51:52		- o No takeovers
+2018-08-23 21:51:52		- o No distribution of child pornography
+2018-08-23 21:51:52		- o Clients must respond to VERSION requests
+2018-08-23 21:51:52		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- First steps:
+2018-08-23 21:51:52		- o To register your nick: /msg NickServ HELP
+2018-08-23 21:51:52		- o To register your channel: /msg ChanServ HELP
+2018-08-23 21:51:52		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 21:51:52		- o For other help with Rizon: /join #help
+2018-08-23 21:51:52		-
+2018-08-23 21:51:52		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 21:51:52		- transit provider, therefore no person or entity involved with
+2018-08-23 21:51:52		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 21:51:52		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 21:51:52		End of /MOTD command.
+2018-08-23 21:51:52		User mode [+Sirx] by rdr
+2018-08-23 22:21:59		irc: disconnected from server
+2018-08-23 22:22:34		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:22:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:22:34		gnutls: receiving 1 certificate
+2018-08-23 22:22:34		 - certificate[1] info:
+2018-08-23 22:22:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:22:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:22:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:22:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:22:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:22:34		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 22:22:34		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 22:22:34		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 22:22:34		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 22:22:34		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 22:22:34		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 22:22:34		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 22:22:34		62 :IRC Operators online
+2018-08-23 22:22:34		12007 :channels formed
+2018-08-23 22:22:34		I have 14664 clients and 20 servers
+2018-08-23 22:22:34		Current local users: 14664  Max: 19605
+2018-08-23 22:22:34		Current global users: 14664  Max: 19605
+2018-08-23 22:22:35		You are now known as rdr
+2018-08-23 22:22:35		- magnet.rizon.net Message of the Day -
+2018-08-23 22:22:35		-          oo                            
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 22:22:35		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 22:22:35		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 22:22:35		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- Rizon Chat Network -- http://rizon.net
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- Rules:
+2018-08-23 22:22:35		- o No spamming or flooding
+2018-08-23 22:22:35		- o No clones or malicious bots
+2018-08-23 22:22:35		- o No takeovers
+2018-08-23 22:22:35		- o No distribution of child pornography
+2018-08-23 22:22:35		- o Clients must respond to VERSION requests
+2018-08-23 22:22:35		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- First steps:
+2018-08-23 22:22:35		- o To register your nick: /msg NickServ HELP
+2018-08-23 22:22:35		- o To register your channel: /msg ChanServ HELP
+2018-08-23 22:22:35		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 22:22:35		- o For other help with Rizon: /join #help
+2018-08-23 22:22:35		-
+2018-08-23 22:22:35		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 22:22:35		- transit provider, therefore no person or entity involved with
+2018-08-23 22:22:35		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 22:22:35		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 22:22:35		End of /MOTD command.
+2018-08-23 22:22:35		User mode [+Sirx] by rdr
+2018-08-23 22:43:55		irc: disconnected from server
+2018-08-23 22:44:17		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:44:17		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:44:17		gnutls: receiving 1 certificate
+2018-08-23 22:44:17		 - certificate[1] info:
+2018-08-23 22:44:17		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:44:17	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:44:17	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:44:17	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:44:17		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:44:17		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 22:44:17		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 22:44:17		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 22:44:17		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 22:44:17		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 22:44:17		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 22:44:17		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 22:44:17		62 :IRC Operators online
+2018-08-23 22:44:17		12007 :channels formed
+2018-08-23 22:44:17		I have 14664 clients and 20 servers
+2018-08-23 22:44:17		Current local users: 14664  Max: 19605
+2018-08-23 22:44:17		Current global users: 14664  Max: 19605
+2018-08-23 22:44:17		You are now known as rdr
+2018-08-23 22:44:17		- magnet.rizon.net Message of the Day -
+2018-08-23 22:44:17		-          oo                            
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 22:44:17		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 22:44:17		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 22:44:17		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- Rizon Chat Network -- http://rizon.net
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- Rules:
+2018-08-23 22:44:17		- o No spamming or flooding
+2018-08-23 22:44:17		- o No clones or malicious bots
+2018-08-23 22:44:17		- o No takeovers
+2018-08-23 22:44:17		- o No distribution of child pornography
+2018-08-23 22:44:17		- o Clients must respond to VERSION requests
+2018-08-23 22:44:17		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- First steps:
+2018-08-23 22:44:17		- o To register your nick: /msg NickServ HELP
+2018-08-23 22:44:17		- o To register your channel: /msg ChanServ HELP
+2018-08-23 22:44:17		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 22:44:17		- o For other help with Rizon: /join #help
+2018-08-23 22:44:17		-
+2018-08-23 22:44:17		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 22:44:17		- transit provider, therefore no person or entity involved with
+2018-08-23 22:44:17		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 22:44:17		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 22:44:17		End of /MOTD command.
+2018-08-23 22:44:17		User mode [+Sirx] by rdr
+2018-08-23 22:45:47		irc: disconnected from server
+2018-08-23 22:46:26		irc: connecting to server home/8080 (SSL)...
+2018-08-23 22:46:26		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 22:46:26		gnutls: receiving 1 certificate
+2018-08-23 22:46:26		 - certificate[1] info:
+2018-08-23 22:46:26		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 22:46:26	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 22:46:26	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 22:46:26	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 22:46:26		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 22:46:26		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 22:46:26		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 22:46:26		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 22:46:26		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 22:46:27		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 22:46:27		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 22:46:27		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 22:46:27		62 :IRC Operators online
+2018-08-23 22:46:27		12007 :channels formed
+2018-08-23 22:46:27		I have 14664 clients and 20 servers
+2018-08-23 22:46:27		Current local users: 14664  Max: 19605
+2018-08-23 22:46:27		Current global users: 14664  Max: 19605
+2018-08-23 22:46:27		You are now known as rdr
+2018-08-23 22:46:27		- magnet.rizon.net Message of the Day -
+2018-08-23 22:46:27		-          oo                            
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 22:46:27		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 22:46:27		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 22:46:27		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- Rizon Chat Network -- http://rizon.net
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- Rules:
+2018-08-23 22:46:27		- o No spamming or flooding
+2018-08-23 22:46:27		- o No clones or malicious bots
+2018-08-23 22:46:27		- o No takeovers
+2018-08-23 22:46:27		- o No distribution of child pornography
+2018-08-23 22:46:27		- o Clients must respond to VERSION requests
+2018-08-23 22:46:27		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- First steps:
+2018-08-23 22:46:27		- o To register your nick: /msg NickServ HELP
+2018-08-23 22:46:27		- o To register your channel: /msg ChanServ HELP
+2018-08-23 22:46:27		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 22:46:27		- o For other help with Rizon: /join #help
+2018-08-23 22:46:27		-
+2018-08-23 22:46:27		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 22:46:27		- transit provider, therefore no person or entity involved with
+2018-08-23 22:46:27		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 22:46:27		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 22:46:27		End of /MOTD command.
+2018-08-23 22:46:27		User mode [+Sirx] by rdr
+2018-08-23 23:08:58		irc: disconnected from server
+2018-08-23 23:11:46		irc: connecting to server home/8080 (SSL)...
+2018-08-23 23:11:46		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 23:11:46		gnutls: receiving 1 certificate
+2018-08-23 23:11:46		 - certificate[1] info:
+2018-08-23 23:11:46		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 23:11:46	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 23:11:46	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 23:11:46	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 23:11:46		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 23:11:46		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 23:11:46		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 23:11:46		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 23:11:46		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 23:11:46		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 23:11:46		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 23:11:46		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 23:11:46		62 :IRC Operators online
+2018-08-23 23:11:46		12007 :channels formed
+2018-08-23 23:11:46		I have 14664 clients and 20 servers
+2018-08-23 23:11:46		Current local users: 14664  Max: 19605
+2018-08-23 23:11:46		Current global users: 14664  Max: 19605
+2018-08-23 23:11:46		You are now known as rdr
+2018-08-23 23:11:46		- magnet.rizon.net Message of the Day -
+2018-08-23 23:11:46		-          oo                            
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 23:11:46		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 23:11:46		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 23:11:46		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- Rizon Chat Network -- http://rizon.net
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- Rules:
+2018-08-23 23:11:46		- o No spamming or flooding
+2018-08-23 23:11:46		- o No clones or malicious bots
+2018-08-23 23:11:46		- o No takeovers
+2018-08-23 23:11:46		- o No distribution of child pornography
+2018-08-23 23:11:46		- o Clients must respond to VERSION requests
+2018-08-23 23:11:46		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- First steps:
+2018-08-23 23:11:46		- o To register your nick: /msg NickServ HELP
+2018-08-23 23:11:46		- o To register your channel: /msg ChanServ HELP
+2018-08-23 23:11:46		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 23:11:46		- o For other help with Rizon: /join #help
+2018-08-23 23:11:46		-
+2018-08-23 23:11:46		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 23:11:46		- transit provider, therefore no person or entity involved with
+2018-08-23 23:11:46		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 23:11:46		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 23:11:46		End of /MOTD command.
+2018-08-23 23:11:46		User mode [+Sirx] by rdr
+2018-08-23 23:11:46		You have been marked as being away
+2018-08-23 23:11:47		You are no longer marked as being away
+2018-08-23 23:48:32		irc: disconnected from server
+2018-08-23 23:55:18		irc: connecting to server home/8080 (SSL)...
+2018-08-23 23:55:18		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-23 23:55:18		gnutls: receiving 1 certificate
+2018-08-23 23:55:18		 - certificate[1] info:
+2018-08-23 23:55:18		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-23 23:55:18	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-23 23:55:18	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-23 23:55:18	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-23 23:55:18		irc: connected to home/8080 (192.168.1.69)
+2018-08-23 23:55:18		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-23 23:55:18		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-23 23:55:18		This server was created Sep 15 2017 at 22:17:12
+2018-08-23 23:55:18		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-23 23:55:18		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-23 23:55:18		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-23 23:55:18		There are 27 users and 14637 invisible on 20 servers
+2018-08-23 23:55:18		62 :IRC Operators online
+2018-08-23 23:55:18		12007 :channels formed
+2018-08-23 23:55:18		I have 14664 clients and 20 servers
+2018-08-23 23:55:18		Current local users: 14664  Max: 19605
+2018-08-23 23:55:18		Current global users: 14664  Max: 19605
+2018-08-23 23:55:18		You are now known as rdr
+2018-08-23 23:55:18		- magnet.rizon.net Message of the Day -
+2018-08-23 23:55:18		-          oo                            
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-23 23:55:18		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-23 23:55:18		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-23 23:55:18		- dP       dP d888888P `88888P' dP    dP
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- Rizon Chat Network -- http://rizon.net
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- Rules:
+2018-08-23 23:55:18		- o No spamming or flooding
+2018-08-23 23:55:18		- o No clones or malicious bots
+2018-08-23 23:55:18		- o No takeovers
+2018-08-23 23:55:18		- o No distribution of child pornography
+2018-08-23 23:55:18		- o Clients must respond to VERSION requests
+2018-08-23 23:55:18		- o Rizon staff may disconnect clients for any or no reason
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- First steps:
+2018-08-23 23:55:18		- o To register your nick: /msg NickServ HELP
+2018-08-23 23:55:18		- o To register your channel: /msg ChanServ HELP
+2018-08-23 23:55:18		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-23 23:55:18		- o For other help with Rizon: /join #help
+2018-08-23 23:55:18		-
+2018-08-23 23:55:18		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-23 23:55:18		- transit provider, therefore no person or entity involved with
+2018-08-23 23:55:18		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-23 23:55:18		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-23 23:55:18		End of /MOTD command.
+2018-08-23 23:55:18		User mode [+Sirx] by rdr
+2018-08-23 23:55:18		You have been marked as being away
+2018-08-23 23:55:18		You are no longer marked as being away
+2018-08-24 11:20:42		irc: disconnected from server
+2018-08-24 12:01:34		irc: connecting to server home/8080 (SSL)...
+2018-08-24 12:01:34		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 12:01:34		gnutls: receiving 1 certificate
+2018-08-24 12:01:34		 - certificate[1] info:
+2018-08-24 12:01:34		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 12:01:34	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 12:01:34	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 12:01:34	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 12:01:34		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 12:01:34		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 12:01:34		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 12:01:34		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 12:01:34		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 12:01:34		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 12:01:34		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 12:01:34		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 12:01:34		62 :IRC Operators online
+2018-08-24 12:01:34		12007 :channels formed
+2018-08-24 12:01:34		I have 14664 clients and 20 servers
+2018-08-24 12:01:34		Current local users: 14664  Max: 19605
+2018-08-24 12:01:34		Current global users: 14664  Max: 19605
+2018-08-24 12:01:34		You are now known as rdr
+2018-08-24 12:01:34		- magnet.rizon.net Message of the Day -
+2018-08-24 12:01:34		-          oo                            
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 12:01:34		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 12:01:34		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 12:01:34		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- Rizon Chat Network -- http://rizon.net
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- Rules:
+2018-08-24 12:01:34		- o No spamming or flooding
+2018-08-24 12:01:34		- o No clones or malicious bots
+2018-08-24 12:01:34		- o No takeovers
+2018-08-24 12:01:34		- o No distribution of child pornography
+2018-08-24 12:01:34		- o Clients must respond to VERSION requests
+2018-08-24 12:01:34		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- First steps:
+2018-08-24 12:01:34		- o To register your nick: /msg NickServ HELP
+2018-08-24 12:01:34		- o To register your channel: /msg ChanServ HELP
+2018-08-24 12:01:34		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 12:01:34		- o For other help with Rizon: /join #help
+2018-08-24 12:01:34		-
+2018-08-24 12:01:34		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 12:01:34		- transit provider, therefore no person or entity involved with
+2018-08-24 12:01:34		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 12:01:34		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 12:01:34		End of /MOTD command.
+2018-08-24 12:01:34		User mode [+Sirx] by rdr
+2018-08-24 12:01:34		You have been marked as being away
+2018-08-24 12:01:34		You are no longer marked as being away
+2018-08-24 12:31:45		irc: disconnected from server
+2018-08-24 12:32:06		irc: connecting to server home/8080 (SSL)...
+2018-08-24 12:32:06		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 12:32:06		gnutls: receiving 1 certificate
+2018-08-24 12:32:06		 - certificate[1] info:
+2018-08-24 12:32:06		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 12:32:06	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 12:32:06	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 12:32:06	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 12:32:06		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 12:32:06		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 12:32:06		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 12:32:06		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 12:32:06		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 12:32:06		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 12:32:06		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 12:32:06		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 12:32:06		62 :IRC Operators online
+2018-08-24 12:32:06		12007 :channels formed
+2018-08-24 12:32:06		I have 14664 clients and 20 servers
+2018-08-24 12:32:06		Current local users: 14664  Max: 19605
+2018-08-24 12:32:06		Current global users: 14664  Max: 19605
+2018-08-24 12:32:06		You are now known as rdr
+2018-08-24 12:32:06		- magnet.rizon.net Message of the Day -
+2018-08-24 12:32:06		-          oo                            
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 12:32:06		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 12:32:06		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 12:32:06		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- Rizon Chat Network -- http://rizon.net
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- Rules:
+2018-08-24 12:32:06		- o No spamming or flooding
+2018-08-24 12:32:06		- o No clones or malicious bots
+2018-08-24 12:32:06		- o No takeovers
+2018-08-24 12:32:06		- o No distribution of child pornography
+2018-08-24 12:32:06		- o Clients must respond to VERSION requests
+2018-08-24 12:32:06		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- First steps:
+2018-08-24 12:32:06		- o To register your nick: /msg NickServ HELP
+2018-08-24 12:32:06		- o To register your channel: /msg ChanServ HELP
+2018-08-24 12:32:06		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 12:32:06		- o For other help with Rizon: /join #help
+2018-08-24 12:32:06		-
+2018-08-24 12:32:06		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 12:32:06		- transit provider, therefore no person or entity involved with
+2018-08-24 12:32:06		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 12:32:06		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 12:32:06		End of /MOTD command.
+2018-08-24 12:32:06		User mode [+Sirx] by rdr
+2018-08-24 16:26:17		irc: disconnected from server
+2018-08-24 16:39:12		irc: connecting to server home/8080 (SSL)...
+2018-08-24 16:39:12		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 16:39:12		gnutls: receiving 1 certificate
+2018-08-24 16:39:12		 - certificate[1] info:
+2018-08-24 16:39:12		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 16:39:12	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 16:39:12	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 16:39:12	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 16:39:12		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 16:39:12		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 16:39:12		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 16:39:12		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 16:39:12		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 16:39:12		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 16:39:12		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 16:39:12		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 16:39:12		62 :IRC Operators online
+2018-08-24 16:39:12		12007 :channels formed
+2018-08-24 16:39:12		I have 14664 clients and 20 servers
+2018-08-24 16:39:12		Current local users: 14664  Max: 19605
+2018-08-24 16:39:12		Current global users: 14664  Max: 19605
+2018-08-24 16:39:12		You are now known as rdr
+2018-08-24 16:39:12		- magnet.rizon.net Message of the Day -
+2018-08-24 16:39:12		-          oo                            
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 16:39:12		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 16:39:12		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 16:39:12		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- Rizon Chat Network -- http://rizon.net
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- Rules:
+2018-08-24 16:39:12		- o No spamming or flooding
+2018-08-24 16:39:12		- o No clones or malicious bots
+2018-08-24 16:39:12		- o No takeovers
+2018-08-24 16:39:12		- o No distribution of child pornography
+2018-08-24 16:39:12		- o Clients must respond to VERSION requests
+2018-08-24 16:39:12		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- First steps:
+2018-08-24 16:39:12		- o To register your nick: /msg NickServ HELP
+2018-08-24 16:39:12		- o To register your channel: /msg ChanServ HELP
+2018-08-24 16:39:12		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 16:39:12		- o For other help with Rizon: /join #help
+2018-08-24 16:39:12		-
+2018-08-24 16:39:12		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 16:39:12		- transit provider, therefore no person or entity involved with
+2018-08-24 16:39:12		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 16:39:12		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 16:39:12		End of /MOTD command.
+2018-08-24 16:39:12		User mode [+Sirx] by rdr
+2018-08-24 16:39:12		You have been marked as being away
+2018-08-24 16:39:12		You are no longer marked as being away
+2018-08-24 20:14:19		irc: disconnected from server
+2018-08-24 20:14:26		irc: connecting to server home/8080 (SSL)...
+2018-08-24 20:14:26		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 20:14:26		gnutls: receiving 1 certificate
+2018-08-24 20:14:26		 - certificate[1] info:
+2018-08-24 20:14:26		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 20:14:26	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 20:14:26	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 20:14:26	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 20:14:26		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 20:14:26		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 20:14:27		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 20:14:27		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 20:14:27		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 20:14:27		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 20:14:27		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 20:14:27		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 20:14:27		62 :IRC Operators online
+2018-08-24 20:14:27		12007 :channels formed
+2018-08-24 20:14:27		I have 14664 clients and 20 servers
+2018-08-24 20:14:27		Current local users: 14664  Max: 19605
+2018-08-24 20:14:27		Current global users: 14664  Max: 19605
+2018-08-24 20:14:27		You are now known as rdr
+2018-08-24 20:14:27		- magnet.rizon.net Message of the Day -
+2018-08-24 20:14:27		-          oo                            
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 20:14:27		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 20:14:27		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 20:14:27		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- Rizon Chat Network -- http://rizon.net
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- Rules:
+2018-08-24 20:14:27		- o No spamming or flooding
+2018-08-24 20:14:27		- o No clones or malicious bots
+2018-08-24 20:14:27		- o No takeovers
+2018-08-24 20:14:27		- o No distribution of child pornography
+2018-08-24 20:14:27		- o Clients must respond to VERSION requests
+2018-08-24 20:14:27		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- First steps:
+2018-08-24 20:14:27		- o To register your nick: /msg NickServ HELP
+2018-08-24 20:14:27		- o To register your channel: /msg ChanServ HELP
+2018-08-24 20:14:27		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 20:14:27		- o For other help with Rizon: /join #help
+2018-08-24 20:14:27		-
+2018-08-24 20:14:27		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 20:14:27		- transit provider, therefore no person or entity involved with
+2018-08-24 20:14:27		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 20:14:27		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 20:14:27		End of /MOTD command.
+2018-08-24 20:14:27		User mode [+Sirx] by rdr
+2018-08-24 20:34:45		irc: disconnected from server
+2018-08-24 20:37:01		irc: connecting to server home/8080 (SSL)...
+2018-08-24 20:37:01		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 20:37:01		gnutls: receiving 1 certificate
+2018-08-24 20:37:01		 - certificate[1] info:
+2018-08-24 20:37:01		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 20:37:01	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 20:37:01	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 20:37:01	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 20:37:01		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 20:37:01		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 20:37:01		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 20:37:01		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 20:37:01		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 20:37:01		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 20:37:01		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 20:37:01		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 20:37:01		62 :IRC Operators online
+2018-08-24 20:37:01		12007 :channels formed
+2018-08-24 20:37:01		I have 14664 clients and 20 servers
+2018-08-24 20:37:01		Current local users: 14664  Max: 19605
+2018-08-24 20:37:01		Current global users: 14664  Max: 19605
+2018-08-24 20:37:01		You are now known as rdr
+2018-08-24 20:37:01		- magnet.rizon.net Message of the Day -
+2018-08-24 20:37:01		-          oo                            
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 20:37:01		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 20:37:01		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 20:37:01		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- Rizon Chat Network -- http://rizon.net
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- Rules:
+2018-08-24 20:37:01		- o No spamming or flooding
+2018-08-24 20:37:01		- o No clones or malicious bots
+2018-08-24 20:37:01		- o No takeovers
+2018-08-24 20:37:01		- o No distribution of child pornography
+2018-08-24 20:37:01		- o Clients must respond to VERSION requests
+2018-08-24 20:37:01		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- First steps:
+2018-08-24 20:37:01		- o To register your nick: /msg NickServ HELP
+2018-08-24 20:37:01		- o To register your channel: /msg ChanServ HELP
+2018-08-24 20:37:01		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 20:37:01		- o For other help with Rizon: /join #help
+2018-08-24 20:37:01		-
+2018-08-24 20:37:01		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 20:37:01		- transit provider, therefore no person or entity involved with
+2018-08-24 20:37:01		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 20:37:01		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 20:37:01		End of /MOTD command.
+2018-08-24 20:37:01		User mode [+Sirx] by rdr
+2018-08-24 20:37:01		You have been marked as being away
+2018-08-24 20:37:01		You are no longer marked as being away
+2018-08-24 22:07:25		irc: disconnected from server
+2018-08-24 22:12:07		irc: connecting to server home/8080 (SSL)...
+2018-08-24 22:12:07		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 22:12:07		gnutls: receiving 1 certificate
+2018-08-24 22:12:07		 - certificate[1] info:
+2018-08-24 22:12:07		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 22:12:07	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 22:12:07	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 22:12:07	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 22:12:07		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 22:12:07		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 22:12:07		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 22:12:07		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 22:12:07		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 22:12:07		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 22:12:07		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 22:12:07		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 22:12:07		62 :IRC Operators online
+2018-08-24 22:12:07		12007 :channels formed
+2018-08-24 22:12:07		I have 14664 clients and 20 servers
+2018-08-24 22:12:07		Current local users: 14664  Max: 19605
+2018-08-24 22:12:07		Current global users: 14664  Max: 19605
+2018-08-24 22:12:07		You are now known as rdr
+2018-08-24 22:12:07		- magnet.rizon.net Message of the Day -
+2018-08-24 22:12:07		-          oo                            
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 22:12:07		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 22:12:07		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 22:12:07		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- Rizon Chat Network -- http://rizon.net
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- Rules:
+2018-08-24 22:12:07		- o No spamming or flooding
+2018-08-24 22:12:07		- o No clones or malicious bots
+2018-08-24 22:12:07		- o No takeovers
+2018-08-24 22:12:07		- o No distribution of child pornography
+2018-08-24 22:12:07		- o Clients must respond to VERSION requests
+2018-08-24 22:12:07		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- First steps:
+2018-08-24 22:12:07		- o To register your nick: /msg NickServ HELP
+2018-08-24 22:12:07		- o To register your channel: /msg ChanServ HELP
+2018-08-24 22:12:07		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 22:12:07		- o For other help with Rizon: /join #help
+2018-08-24 22:12:07		-
+2018-08-24 22:12:07		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 22:12:07		- transit provider, therefore no person or entity involved with
+2018-08-24 22:12:07		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 22:12:07		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 22:12:07		End of /MOTD command.
+2018-08-24 22:12:07		User mode [+Sirx] by rdr
+2018-08-24 22:12:07		You have been marked as being away
+2018-08-24 22:12:08		You are no longer marked as being away
+2018-08-24 22:26:17		irc: disconnected from server
+2018-08-24 22:30:38		irc: connecting to server home/8080 (SSL)...
+2018-08-24 22:30:38		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 22:30:38		gnutls: receiving 1 certificate
+2018-08-24 22:30:38		 - certificate[1] info:
+2018-08-24 22:30:38		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 22:30:38	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 22:30:38	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 22:30:38	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 22:30:38		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 22:30:38		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 22:30:38		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 22:30:38		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 22:30:38		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 22:30:38		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 22:30:38		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 22:30:38		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 22:30:38		62 :IRC Operators online
+2018-08-24 22:30:38		12007 :channels formed
+2018-08-24 22:30:38		I have 14664 clients and 20 servers
+2018-08-24 22:30:38		Current local users: 14664  Max: 19605
+2018-08-24 22:30:38		Current global users: 14664  Max: 19605
+2018-08-24 22:30:38		You are now known as rdr
+2018-08-24 22:30:38		- magnet.rizon.net Message of the Day -
+2018-08-24 22:30:38		-          oo                            
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 22:30:38		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 22:30:38		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 22:30:38		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- Rizon Chat Network -- http://rizon.net
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- Rules:
+2018-08-24 22:30:38		- o No spamming or flooding
+2018-08-24 22:30:38		- o No clones or malicious bots
+2018-08-24 22:30:38		- o No takeovers
+2018-08-24 22:30:38		- o No distribution of child pornography
+2018-08-24 22:30:38		- o Clients must respond to VERSION requests
+2018-08-24 22:30:38		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- First steps:
+2018-08-24 22:30:38		- o To register your nick: /msg NickServ HELP
+2018-08-24 22:30:38		- o To register your channel: /msg ChanServ HELP
+2018-08-24 22:30:38		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 22:30:38		- o For other help with Rizon: /join #help
+2018-08-24 22:30:38		-
+2018-08-24 22:30:38		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 22:30:38		- transit provider, therefore no person or entity involved with
+2018-08-24 22:30:38		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 22:30:38		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 22:30:38		End of /MOTD command.
+2018-08-24 22:30:38		User mode [+Sirx] by rdr
+2018-08-24 22:30:38		You have been marked as being away
+2018-08-24 22:30:38		You are no longer marked as being away
+2018-08-24 22:31:53		irc: disconnected from server
+2018-08-24 23:38:44		irc: connecting to server home/8080 (SSL)...
+2018-08-24 23:38:44		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-24 23:38:44		gnutls: receiving 1 certificate
+2018-08-24 23:38:44		 - certificate[1] info:
+2018-08-24 23:38:44		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-24 23:38:44	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-24 23:38:44	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-24 23:38:44	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-24 23:38:44		irc: connected to home/8080 (192.168.1.69)
+2018-08-24 23:38:44		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-24 23:38:44		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-24 23:38:44		This server was created Sep 15 2017 at 22:17:12
+2018-08-24 23:38:44		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-24 23:38:44		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-24 23:38:44		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-24 23:38:44		There are 27 users and 14637 invisible on 20 servers
+2018-08-24 23:38:44		62 :IRC Operators online
+2018-08-24 23:38:44		12007 :channels formed
+2018-08-24 23:38:44		I have 14664 clients and 20 servers
+2018-08-24 23:38:44		Current local users: 14664  Max: 19605
+2018-08-24 23:38:44		Current global users: 14664  Max: 19605
+2018-08-24 23:38:44		You are now known as rdr
+2018-08-24 23:38:44		- magnet.rizon.net Message of the Day -
+2018-08-24 23:38:44		-          oo                            
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-24 23:38:44		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-24 23:38:44		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-24 23:38:44		- dP       dP d888888P `88888P' dP    dP
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- Rizon Chat Network -- http://rizon.net
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- Rules:
+2018-08-24 23:38:44		- o No spamming or flooding
+2018-08-24 23:38:44		- o No clones or malicious bots
+2018-08-24 23:38:44		- o No takeovers
+2018-08-24 23:38:44		- o No distribution of child pornography
+2018-08-24 23:38:44		- o Clients must respond to VERSION requests
+2018-08-24 23:38:44		- o Rizon staff may disconnect clients for any or no reason
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- First steps:
+2018-08-24 23:38:44		- o To register your nick: /msg NickServ HELP
+2018-08-24 23:38:44		- o To register your channel: /msg ChanServ HELP
+2018-08-24 23:38:44		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-24 23:38:44		- o For other help with Rizon: /join #help
+2018-08-24 23:38:44		-
+2018-08-24 23:38:44		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-24 23:38:44		- transit provider, therefore no person or entity involved with
+2018-08-24 23:38:44		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-24 23:38:44		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-24 23:38:44		End of /MOTD command.
+2018-08-24 23:38:44		User mode [+Sirx] by rdr
+2018-08-24 23:38:44		You have been marked as being away
+2018-08-24 23:38:45		You are no longer marked as being away
+2018-08-25 13:19:26		irc: disconnected from server
+2018-08-25 13:19:30		irc: connecting to server home/8080 (SSL)...
+2018-08-25 13:19:30		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 13:19:30		gnutls: receiving 1 certificate
+2018-08-25 13:19:30		 - certificate[1] info:
+2018-08-25 13:19:30		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 13:19:30	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 13:19:30	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 13:19:30	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 13:19:30		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 13:19:30		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-25 13:19:30		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-25 13:19:30		This server was created Sep 15 2017 at 22:17:12
+2018-08-25 13:19:30		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-25 13:19:30		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-25 13:19:30		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-25 13:19:30		There are 27 users and 14637 invisible on 20 servers
+2018-08-25 13:19:30		62 :IRC Operators online
+2018-08-25 13:19:30		12007 :channels formed
+2018-08-25 13:19:30		I have 14664 clients and 20 servers
+2018-08-25 13:19:30		Current local users: 14664  Max: 19605
+2018-08-25 13:19:30		Current global users: 14664  Max: 19605
+2018-08-25 13:19:30		You are now known as rdr
+2018-08-25 13:19:30		- magnet.rizon.net Message of the Day -
+2018-08-25 13:19:30		-          oo                            
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-25 13:19:30		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-25 13:19:30		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-25 13:19:30		- dP       dP d888888P `88888P' dP    dP
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- Rizon Chat Network -- http://rizon.net
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- Rules:
+2018-08-25 13:19:30		- o No spamming or flooding
+2018-08-25 13:19:30		- o No clones or malicious bots
+2018-08-25 13:19:30		- o No takeovers
+2018-08-25 13:19:30		- o No distribution of child pornography
+2018-08-25 13:19:30		- o Clients must respond to VERSION requests
+2018-08-25 13:19:30		- o Rizon staff may disconnect clients for any or no reason
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- First steps:
+2018-08-25 13:19:30		- o To register your nick: /msg NickServ HELP
+2018-08-25 13:19:30		- o To register your channel: /msg ChanServ HELP
+2018-08-25 13:19:30		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-25 13:19:30		- o For other help with Rizon: /join #help
+2018-08-25 13:19:30		-
+2018-08-25 13:19:30		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-25 13:19:30		- transit provider, therefore no person or entity involved with
+2018-08-25 13:19:30		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-25 13:19:30		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-25 13:19:30		End of /MOTD command.
+2018-08-25 13:19:30		User mode [+Sirx] by rdr
+2018-08-25 13:32:56		irc: disconnected from server
+2018-08-25 08:43:55		irc: connecting to server home/8080 (SSL)...
+2018-08-25 08:43:55		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 08:43:55		gnutls: receiving 1 certificate
+2018-08-25 08:43:55		 - certificate[1] info:
+2018-08-25 08:43:55		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 08:43:55	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 08:43:55	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 08:43:55	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 08:43:55		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 08:43:56		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-25 08:43:56		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-25 08:43:56		This server was created Sep 15 2017 at 22:17:12
+2018-08-25 08:43:56		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-25 08:43:56		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-25 08:43:56		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-25 08:43:56		There are 27 users and 14637 invisible on 20 servers
+2018-08-25 08:43:56		62 :IRC Operators online
+2018-08-25 08:43:56		12007 :channels formed
+2018-08-25 08:43:56		I have 14664 clients and 20 servers
+2018-08-25 08:43:56		Current local users: 14664  Max: 19605
+2018-08-25 08:43:56		Current global users: 14664  Max: 19605
+2018-08-25 08:43:56		You are now known as rdr
+2018-08-25 08:43:56		- magnet.rizon.net Message of the Day -
+2018-08-25 08:43:56		-          oo                            
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-25 08:43:56		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-25 08:43:56		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-25 08:43:56		- dP       dP d888888P `88888P' dP    dP
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- Rizon Chat Network -- http://rizon.net
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- Rules:
+2018-08-25 08:43:56		- o No spamming or flooding
+2018-08-25 08:43:56		- o No clones or malicious bots
+2018-08-25 08:43:56		- o No takeovers
+2018-08-25 08:43:56		- o No distribution of child pornography
+2018-08-25 08:43:56		- o Clients must respond to VERSION requests
+2018-08-25 08:43:56		- o Rizon staff may disconnect clients for any or no reason
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- First steps:
+2018-08-25 08:43:56		- o To register your nick: /msg NickServ HELP
+2018-08-25 08:43:56		- o To register your channel: /msg ChanServ HELP
+2018-08-25 08:43:56		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-25 08:43:56		- o For other help with Rizon: /join #help
+2018-08-25 08:43:56		-
+2018-08-25 08:43:56		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-25 08:43:56		- transit provider, therefore no person or entity involved with
+2018-08-25 08:43:56		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-25 08:43:56		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-25 08:43:56		End of /MOTD command.
+2018-08-25 08:43:56		User mode [+Sirx] by rdr
+2018-08-25 08:43:56		You have been marked as being away
+2018-08-25 08:43:56		You are no longer marked as being away
+2018-08-25 09:40:23		irc: disconnected from server
+2018-08-25 09:42:18		irc: connecting to server home/8080 (SSL)...
+2018-08-25 09:42:18		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 09:42:18		gnutls: receiving 1 certificate
+2018-08-25 09:42:18		 - certificate[1] info:
+2018-08-25 09:42:18		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 09:42:18	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 09:42:18	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 09:42:18	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 09:42:18		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 09:42:19		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-25 09:42:19		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-25 09:42:19		This server was created Sep 15 2017 at 22:17:12
+2018-08-25 09:42:19		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-25 09:42:19		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-25 09:42:19		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-25 09:42:19		There are 27 users and 14637 invisible on 20 servers
+2018-08-25 09:42:19		62 :IRC Operators online
+2018-08-25 09:42:19		12007 :channels formed
+2018-08-25 09:42:19		I have 14664 clients and 20 servers
+2018-08-25 09:42:19		Current local users: 14664  Max: 19605
+2018-08-25 09:42:19		Current global users: 14664  Max: 19605
+2018-08-25 09:42:19		You are now known as rdr
+2018-08-25 09:42:19		- magnet.rizon.net Message of the Day -
+2018-08-25 09:42:19		-          oo                            
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-25 09:42:19		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-25 09:42:19		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-25 09:42:19		- dP       dP d888888P `88888P' dP    dP
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- Rizon Chat Network -- http://rizon.net
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- Rules:
+2018-08-25 09:42:19		- o No spamming or flooding
+2018-08-25 09:42:19		- o No clones or malicious bots
+2018-08-25 09:42:19		- o No takeovers
+2018-08-25 09:42:19		- o No distribution of child pornography
+2018-08-25 09:42:19		- o Clients must respond to VERSION requests
+2018-08-25 09:42:19		- o Rizon staff may disconnect clients for any or no reason
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- First steps:
+2018-08-25 09:42:19		- o To register your nick: /msg NickServ HELP
+2018-08-25 09:42:19		- o To register your channel: /msg ChanServ HELP
+2018-08-25 09:42:19		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-25 09:42:19		- o For other help with Rizon: /join #help
+2018-08-25 09:42:19		-
+2018-08-25 09:42:19		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-25 09:42:19		- transit provider, therefore no person or entity involved with
+2018-08-25 09:42:19		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-25 09:42:19		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-25 09:42:19		End of /MOTD command.
+2018-08-25 09:42:19		User mode [+Sirx] by rdr
+2018-08-25 09:42:19		You have been marked as being away
+2018-08-25 09:42:19		You are no longer marked as being away
+2018-08-25 16:53:11		irc: disconnected from server
+2018-08-25 16:57:50		irc: connecting to server home/8080 (SSL)...
+2018-08-25 16:57:50		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 16:57:50		gnutls: receiving 1 certificate
+2018-08-25 16:57:50		 - certificate[1] info:
+2018-08-25 16:57:50		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 16:57:50	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 16:57:50	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 16:57:50	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 16:57:50		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 16:57:50		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-25 16:57:50		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-25 16:57:50		This server was created Sep 15 2017 at 22:17:12
+2018-08-25 16:57:50		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-25 16:57:50		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-25 16:57:50		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-25 16:57:50		There are 27 users and 14637 invisible on 20 servers
+2018-08-25 16:57:50		62 :IRC Operators online
+2018-08-25 16:57:50		12007 :channels formed
+2018-08-25 16:57:50		I have 14664 clients and 20 servers
+2018-08-25 16:57:50		Current local users: 14664  Max: 19605
+2018-08-25 16:57:50		Current global users: 14664  Max: 19605
+2018-08-25 16:57:50		You are now known as rdr
+2018-08-25 16:57:50		- magnet.rizon.net Message of the Day -
+2018-08-25 16:57:50		-          oo                            
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-25 16:57:50		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-25 16:57:50		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-25 16:57:50		- dP       dP d888888P `88888P' dP    dP
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- Rizon Chat Network -- http://rizon.net
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- Rules:
+2018-08-25 16:57:50		- o No spamming or flooding
+2018-08-25 16:57:50		- o No clones or malicious bots
+2018-08-25 16:57:50		- o No takeovers
+2018-08-25 16:57:50		- o No distribution of child pornography
+2018-08-25 16:57:50		- o Clients must respond to VERSION requests
+2018-08-25 16:57:50		- o Rizon staff may disconnect clients for any or no reason
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- First steps:
+2018-08-25 16:57:50		- o To register your nick: /msg NickServ HELP
+2018-08-25 16:57:50		- o To register your channel: /msg ChanServ HELP
+2018-08-25 16:57:50		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-25 16:57:50		- o For other help with Rizon: /join #help
+2018-08-25 16:57:50		-
+2018-08-25 16:57:50		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-25 16:57:50		- transit provider, therefore no person or entity involved with
+2018-08-25 16:57:50		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-25 16:57:50		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-25 16:57:50		End of /MOTD command.
+2018-08-25 16:57:50		User mode [+Sirx] by rdr
+2018-08-25 16:57:50		You have been marked as being away
+2018-08-25 16:57:50		You are no longer marked as being away
+2018-08-25 17:08:13		irc: disconnected from server
+2018-08-25 17:12:08		irc: connecting to server home/8080 (SSL)...
+2018-08-25 17:12:08		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-25 17:12:08		gnutls: receiving 1 certificate
+2018-08-25 17:12:08		 - certificate[1] info:
+2018-08-25 17:12:08		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-25 17:12:08	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-25 17:12:08	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-25 17:12:08	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-25 17:12:08		irc: connected to home/8080 (192.168.1.69)
+2018-08-25 17:12:08		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-25 17:12:08		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-25 17:12:08		This server was created Sep 15 2017 at 22:17:12
+2018-08-25 17:12:08		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-25 17:12:08		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-25 17:12:08		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-25 17:12:08		There are 27 users and 14637 invisible on 20 servers
+2018-08-25 17:12:08		62 :IRC Operators online
+2018-08-25 17:12:08		12007 :channels formed
+2018-08-25 17:12:08		I have 14664 clients and 20 servers
+2018-08-25 17:12:08		Current local users: 14664  Max: 19605
+2018-08-25 17:12:08		Current global users: 14664  Max: 19605
+2018-08-25 17:12:08		You are now known as rdr
+2018-08-25 17:12:08		- magnet.rizon.net Message of the Day -
+2018-08-25 17:12:08		-          oo                            
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-25 17:12:08		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-25 17:12:08		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-25 17:12:08		- dP       dP d888888P `88888P' dP    dP
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- Rizon Chat Network -- http://rizon.net
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- Rules:
+2018-08-25 17:12:08		- o No spamming or flooding
+2018-08-25 17:12:08		- o No clones or malicious bots
+2018-08-25 17:12:08		- o No takeovers
+2018-08-25 17:12:08		- o No distribution of child pornography
+2018-08-25 17:12:08		- o Clients must respond to VERSION requests
+2018-08-25 17:12:08		- o Rizon staff may disconnect clients for any or no reason
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- First steps:
+2018-08-25 17:12:08		- o To register your nick: /msg NickServ HELP
+2018-08-25 17:12:08		- o To register your channel: /msg ChanServ HELP
+2018-08-25 17:12:08		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-25 17:12:08		- o For other help with Rizon: /join #help
+2018-08-25 17:12:08		-
+2018-08-25 17:12:08		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-25 17:12:08		- transit provider, therefore no person or entity involved with
+2018-08-25 17:12:08		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-25 17:12:08		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-25 17:12:08		End of /MOTD command.
+2018-08-25 17:12:08		User mode [+Sirx] by rdr
+2018-08-25 17:12:08		You have been marked as being away
+2018-08-25 17:12:08		You are no longer marked as being away
+2018-08-26 00:26:38		irc: disconnected from server
+2018-08-26 00:26:41		irc: connecting to server home/8080 (SSL)...
+2018-08-26 00:26:41		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 00:26:41		gnutls: receiving 1 certificate
+2018-08-26 00:26:41		 - certificate[1] info:
+2018-08-26 00:26:41		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 00:26:41	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 00:26:41	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 00:26:41	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 00:26:41		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 00:26:41		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-26 00:26:41		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-26 00:26:41		This server was created Sep 15 2017 at 22:17:12
+2018-08-26 00:26:41		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-26 00:26:41		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-26 00:26:41		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-26 00:26:41		There are 27 users and 14637 invisible on 20 servers
+2018-08-26 00:26:41		62 :IRC Operators online
+2018-08-26 00:26:41		12007 :channels formed
+2018-08-26 00:26:41		I have 14664 clients and 20 servers
+2018-08-26 00:26:41		Current local users: 14664  Max: 19605
+2018-08-26 00:26:41		Current global users: 14664  Max: 19605
+2018-08-26 00:26:41		You are now known as rdr
+2018-08-26 00:26:41		- magnet.rizon.net Message of the Day -
+2018-08-26 00:26:41		-          oo                            
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-26 00:26:41		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-26 00:26:41		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-26 00:26:41		- dP       dP d888888P `88888P' dP    dP
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- Rizon Chat Network -- http://rizon.net
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- Rules:
+2018-08-26 00:26:41		- o No spamming or flooding
+2018-08-26 00:26:41		- o No clones or malicious bots
+2018-08-26 00:26:41		- o No takeovers
+2018-08-26 00:26:41		- o No distribution of child pornography
+2018-08-26 00:26:41		- o Clients must respond to VERSION requests
+2018-08-26 00:26:41		- o Rizon staff may disconnect clients for any or no reason
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- First steps:
+2018-08-26 00:26:41		- o To register your nick: /msg NickServ HELP
+2018-08-26 00:26:41		- o To register your channel: /msg ChanServ HELP
+2018-08-26 00:26:41		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-26 00:26:41		- o For other help with Rizon: /join #help
+2018-08-26 00:26:41		-
+2018-08-26 00:26:41		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-26 00:26:41		- transit provider, therefore no person or entity involved with
+2018-08-26 00:26:41		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-26 00:26:41		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-26 00:26:41		End of /MOTD command.
+2018-08-26 00:26:41		User mode [+Sirx] by rdr
+2018-08-26 00:43:52		irc: disconnected from server
+2018-08-26 00:45:05		irc: connecting to server home/8080 (SSL)...
+2018-08-26 00:45:05		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 00:45:05		gnutls: receiving 1 certificate
+2018-08-26 00:45:05		 - certificate[1] info:
+2018-08-26 00:45:05		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 00:45:05	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 00:45:05	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 00:45:05	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 00:45:05		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 00:45:05		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-26 00:45:05		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-26 00:45:05		This server was created Sep 15 2017 at 22:17:12
+2018-08-26 00:45:05		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-26 00:45:05		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-26 00:45:05		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-26 00:45:05		There are 27 users and 14637 invisible on 20 servers
+2018-08-26 00:45:05		62 :IRC Operators online
+2018-08-26 00:45:05		12007 :channels formed
+2018-08-26 00:45:05		I have 14664 clients and 20 servers
+2018-08-26 00:45:05		Current local users: 14664  Max: 19605
+2018-08-26 00:45:05		Current global users: 14664  Max: 19605
+2018-08-26 00:45:05		You are now known as rdr
+2018-08-26 00:45:05		- magnet.rizon.net Message of the Day -
+2018-08-26 00:45:05		-          oo                            
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-26 00:45:05		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-26 00:45:05		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-26 00:45:05		- dP       dP d888888P `88888P' dP    dP
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- Rizon Chat Network -- http://rizon.net
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- Rules:
+2018-08-26 00:45:05		- o No spamming or flooding
+2018-08-26 00:45:05		- o No clones or malicious bots
+2018-08-26 00:45:05		- o No takeovers
+2018-08-26 00:45:05		- o No distribution of child pornography
+2018-08-26 00:45:05		- o Clients must respond to VERSION requests
+2018-08-26 00:45:05		- o Rizon staff may disconnect clients for any or no reason
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- First steps:
+2018-08-26 00:45:05		- o To register your nick: /msg NickServ HELP
+2018-08-26 00:45:05		- o To register your channel: /msg ChanServ HELP
+2018-08-26 00:45:05		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-26 00:45:05		- o For other help with Rizon: /join #help
+2018-08-26 00:45:05		-
+2018-08-26 00:45:05		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-26 00:45:05		- transit provider, therefore no person or entity involved with
+2018-08-26 00:45:05		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-26 00:45:05		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-26 00:45:05		End of /MOTD command.
+2018-08-26 00:45:05		User mode [+Sirx] by rdr
+2018-08-26 00:45:05		You have been marked as being away
+2018-08-26 00:45:05		You are no longer marked as being away
+2018-08-26 08:36:16		irc: disconnected from server
+2018-08-26 08:48:23		irc: connecting to server home/8080 (SSL)...
+2018-08-26 08:48:23		gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2018-08-26 08:48:23		gnutls: receiving 1 certificate
+2018-08-26 08:48:23		 - certificate[1] info:
+2018-08-26 08:48:23		   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2018-08-26 08:48:23	⚠️	gnutls: the hostname in the certificate does NOT match "home"
+2018-08-26 08:48:23	⚠️	gnutls: peer's certificate is NOT trusted
+2018-08-26 08:48:23	⚠️	gnutls: peer's certificate issuer is unknown
+2018-08-26 08:48:23		irc: connected to home/8080 (192.168.1.69)
+2018-08-26 08:48:23		Welcome to the Rizon Internet Relay Chat Network rdr
+2018-08-26 08:48:23		Your host is magnet.rizon.net, running version plexus-4(hybrid-8.1.20)
+2018-08-26 08:48:23		This server was created Sep 15 2017 at 22:17:12
+2018-08-26 08:48:23		magnet.rizon.net plexus-4(hybrid-8.1.20) CDGNRSUWagilopqrswxyz BCIMNORSabcehiklmnopqstvz Iabehkloqv
+2018-08-26 08:48:23		CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=180 MODES=4 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ EXCEPTS=e INVEX=I NICKLEN=30 NETWORK=Rizon MAXLIST=beI:250 MAXTARGETS=4 :are supported by this server
+2018-08-26 08:48:23		CHANTYPES=# CHANLIMIT=#:250 CHANNELLEN=50 TOPICLEN=390 CHANMODES=beI,k,l,BCMNORScimnpstz WATCH=60 ELIST=CMNTU SAFELIST AWAYLEN=180 KNOCK NAMESX UHNAMES :are supported by this server
+2018-08-26 08:48:23		There are 27 users and 14637 invisible on 20 servers
+2018-08-26 08:48:23		62 :IRC Operators online
+2018-08-26 08:48:23		12007 :channels formed
+2018-08-26 08:48:23		I have 14664 clients and 20 servers
+2018-08-26 08:48:23		Current local users: 14664  Max: 19605
+2018-08-26 08:48:23		Current global users: 14664  Max: 19605
+2018-08-26 08:48:23		You are now known as rdr
+2018-08-26 08:48:23		- magnet.rizon.net Message of the Day -
+2018-08-26 08:48:23		-          oo                            
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- 88d888b. dP d888888b .d8888b. 88d888b. 
+2018-08-26 08:48:23		- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2018-08-26 08:48:23		- 88       88  .Y8P    88.  .88 88    88 
+2018-08-26 08:48:23		- dP       dP d888888P `88888P' dP    dP
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- Rizon Chat Network -- http://rizon.net
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- Rules:
+2018-08-26 08:48:23		- o No spamming or flooding
+2018-08-26 08:48:23		- o No clones or malicious bots
+2018-08-26 08:48:23		- o No takeovers
+2018-08-26 08:48:23		- o No distribution of child pornography
+2018-08-26 08:48:23		- o Clients must respond to VERSION requests
+2018-08-26 08:48:23		- o Rizon staff may disconnect clients for any or no reason
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- First steps:
+2018-08-26 08:48:23		- o To register your nick: /msg NickServ HELP
+2018-08-26 08:48:23		- o To register your channel: /msg ChanServ HELP
+2018-08-26 08:48:23		- o To get a vHost: /msg HostServ HELP REQUEST
+2018-08-26 08:48:23		- o For other help with Rizon: /join #help
+2018-08-26 08:48:23		-
+2018-08-26 08:48:23		- Usage of this network is a privilege, not a right. Rizon is a
+2018-08-26 08:48:23		- transit provider, therefore no person or entity involved with
+2018-08-26 08:48:23		- *.rizon.net or magnet.rizon.net takes any responsibility for
+2018-08-26 08:48:23		- users' actions. Absolutely no warranty is expressed or implied.
+2018-08-26 08:48:23		End of /MOTD command.
+2018-08-26 08:48:23		User mode [+Sirx] by rdr
+2018-08-26 08:48:23		You have been marked as being away
+2018-08-26 08:48:23		You are no longer marked as being away

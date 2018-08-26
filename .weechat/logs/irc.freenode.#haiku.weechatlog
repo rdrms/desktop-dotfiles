@@ -1,0 +1,2093 @@
+2018-08-22 11:21:47	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 11:21:47	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 11:21:47	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 11:21:47	--	Channel #haiku: 110 nicks (10 ops, 2 voices, 98 normals)
+2018-08-22 11:21:47	***	Buffer Playback...
+2018-08-22 11:21:47	roiredX	[10:02:32] i'll try with other soft i need this weekend
+2018-08-22 11:21:47	@PulkoMandy	[10:02:46] leorize: can you make a patch? as I can't test 64bit :(
+2018-08-22 11:21:47	Vidrep	[10:04:21] Once we create a Beta branch, will there be any test images created or do we continue as usual?
+2018-08-22 11:21:47	roiredX	[10:04:38] what info do you need from the log?
+2018-08-22 11:21:47	roiredX	[10:07:05] can send  you as text file
+2018-08-22 11:21:47	leorize	[10:11:15] roiredX: all of it :P
+2018-08-22 11:21:47	roiredX	[10:11:42] I can't paste it here, I have it on a file
+2018-08-22 11:21:47	roiredX	[10:11:58] I mean, the outcome of "haikuporter godot"
+2018-08-22 11:21:47	roiredX	[10:12:00] ;)
+2018-08-22 11:21:47	leorize	[10:12:23] I figured out what's wrong with `hp godot` :P
+2018-08-22 11:21:47	leorize	[10:12:33] PulkoMandy: I can't test one rn :(
+2018-08-22 11:21:47	leorize	[10:13:44] roiredX: we typically paste them to a pastebin then share the url here
+2018-08-22 11:21:47	roiredX	[10:14:14] well, as I am a bit ignorant, I am going to dare to ask, what is a pastebin?
+2018-08-22 11:21:47	@PulkoMandy	[10:14:17] no hurry, but we should upstream the changes if possible
+2018-08-22 11:21:47	@PulkoMandy	[10:14:30] roiredX: http://paste.debian.net for example
+2018-08-22 11:21:47	 *	humdinger [10:14:36] plugs Clipdinger shamelessly
+2018-08-22 11:21:47	@PulkoMandy	[10:14:40] it's a website where you can share text with others
+2018-08-22 11:21:47	@PulkoMandy	[10:14:58] and right, Clipdinger on Haiku makes this super easy
+2018-08-22 11:21:47	@humdinger	[10:15:02] PulkoMandy: you figured out the webkit build failure yet?
+2018-08-22 11:21:47	@PulkoMandy	[10:15:29] yes, testing a fix but it takes a full rebuild of course :)
+2018-08-22 11:21:47	@humdinger	[10:15:56] hours go by... :)
+2018-08-22 11:21:47	@humdinger	[10:17:50] let's eat
+2018-08-22 11:21:47	 *	humdinger [10:17:52] is idle: dinner
+2018-08-22 11:21:47	roiredX	[10:19:26] haikuporter godot <outcome> -> http://paste.debian.net/1038898/
+2018-08-22 11:21:47	roiredX	[10:19:52] anyway, not in a hurry, as PulkoMandy said
+2018-08-22 11:21:47	roiredX	[10:37:15] by the way, USBaudio is not yet supported, right?
+2018-08-22 11:21:47	Begasus	[10:42:12] sh: g++-x86: command not found ... that's you're blocker
+2018-08-22 11:21:47	Begasus	[10:43:32] not familiar with the source, does it use a configure.ac file?
+2018-08-22 11:21:47	roiredX	[10:44:18] no idea Begasus, just started today using haikuporter
+2018-08-22 11:21:47	roiredX	[10:44:25] and did not check that
+2018-08-22 11:21:47	roiredX	[10:44:52] right now I'm trying to get Musescore through haikuporter
+2018-08-22 11:21:47	roiredX	[10:44:55] and so far, so good
+2018-08-22 11:21:47	Begasus	[10:45:01] if I check something new I usualy start out with checking the source in Terminal (not with haikuporter)
+2018-08-22 11:21:47	roiredX	[10:45:06] plenty of warnings
+2018-08-22 11:21:47	Begasus	[10:45:19] wouldn't be the first :)
+2018-08-22 11:21:47	roiredX	[10:45:58] yep, I've got a tasklist.... long... XD
+2018-08-22 11:21:47	leorize	[10:47:45] Begasus: look at the link I gave PulkoMandy above
+2018-08-22 11:21:47	Begasus	[10:48:03] yeah saw it :)
+2018-08-22 11:21:47	leorize	[10:48:43] You could rip off the code from x11/detect.py to replace it :P
+2018-08-22 11:21:47	@PulkoMandy	[10:49:02] roiredX: we have a driver for usb audio, but it only works if you have OHCI USB ports (some specific PCI to USB1 cards only)
+2018-08-22 11:21:47	Begas_VBox	[10:49:05] configure: error: 'autoconf-archive' missing
+2018-08-22 11:21:47	Begas_VBox	[10:49:14] this is a new one to me ... 
+2018-08-22 11:21:47	roiredX	[10:49:41] I see PulkoMandy, that is why my hardware does not work
+2018-08-22 11:21:47	roiredX	[10:49:43] :D
+2018-08-22 11:21:47	leorize	[10:49:55] Begas_VBox: I guess, uh, autoreconf it ;)
+2018-08-22 11:21:47	Begas_VBox	[10:50:10] been there leorize :)
+2018-08-22 11:21:47	Begas_VBox	[10:50:38] autoreconf: running: automake --add-missing --copy --force-missing
+2018-08-22 11:21:47	Begas_VBox	[10:52:34] checking if autogen.sh does something to it .. 
+2018-08-22 11:21:47	Begas_VBox	[10:55:31] nope ... 
+2018-08-22 11:21:47	roiredX	[11:01:10] take care, bye
+2018-08-22 11:21:47	***	Playback Complete.
+2018-08-22 11:21:49	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 11:25:24	<--	eschatologist (~chanson@c-73-202-69-90.hsd1.ca.comcast.net) has quit (*.net *.split)
+2018-08-22 11:25:48	<--	puck (~puck@puckipedia.com) has quit (*.net *.split)
+2018-08-22 11:25:48	<--	FireFly (znc@freenode/staff/firefly) has quit (*.net *.split)
+2018-08-22 11:25:48	<--	pisculichi (pisculichi@unaffiliated/pisculichi) has quit (*.net *.split)
+2018-08-22 11:27:28	<--	malbx (~malbx00@unaffiliated/malbx) has quit (Ping timeout: 240 seconds)
+2018-08-22 11:29:52	 *	humdinger has returned
+2018-08-22 11:30:31	<--	liuyb (~liuyb@111.196.22.100) has quit (Ping timeout: 264 seconds)
+2018-08-22 11:30:33	@humdinger	 ** PSA: Some apps need more/updated translations
+2018-08-22 11:30:33	@humdinger	 ** See https://i18n.kacperkasper.pl - Log in with your github account.
+2018-08-22 11:30:42	@humdinger	esp. the newly added wpa_supplicant
+2018-08-22 11:35:41	-->	mchasard (~mchasard@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has joined #haiku
+2018-08-22 11:39:09	<--	leszek (~leszek@p200300C65BD29E00AE9C354F1B6FFBDE.dip0.t-ipconnect.de) has quit (Quit: WeeChat 1.6)
+2018-08-22 11:42:14	Vidrep	Hey humdinger 
+2018-08-22 11:42:34	@humdinger	Vidrep!
+2018-08-22 11:45:03	Vidrep	Been reading a bit about clipdinger. Never tried it, but now I may do so
+2018-08-22 11:45:37	@humdinger	cool. someone reading up on an app first! :)
+2018-08-22 11:45:44	Vidrep	The interesting part was that you can paste code easily 
+2018-08-22 11:45:46	@humdinger	you're a unique guy... :)
+2018-08-22 11:46:01	@humdinger	yep. the uploading is handy
+2018-08-22 11:46:13	Vidrep	Does that mean it is preset to paste to a specific url?
+2018-08-22 11:46:20	@humdinger	yes.
+2018-08-22 11:46:46	@humdinger	making it  configurable wouldn't be easy for the regular user
+2018-08-22 11:46:53	Vidrep	Sounds like an app I need to have
+2018-08-22 11:47:05	@humdinger	You sure do!
+2018-08-22 11:47:14	@humdinger	and it's very cheap, too!
+2018-08-22 11:47:47	Vidrep	Accepting donations are you? lol
+2018-08-22 11:48:03	@humdinger	nah. 
+2018-08-22 11:48:09	+Not-e85f	[haiku/webkit] pulkomandy pushed 1 commit to rebased [+0/-0/±1] https://git.io/fAkic
+2018-08-22 11:48:11	+Not-e85f	[haiku/webkit] pulkomandy bef4dfe - Make JavaScriptCore a shared library again.
+2018-08-22 11:48:51	Vidrep	Earlier I asked how the Beta testing process was going to function. Does anyone know yet?
+2018-08-22 11:50:00	@PulkoMandy	we still don't really have a QA team
+2018-08-22 11:50:11	@PulkoMandy	get in touch with DCatt and start organizing things if you want
+2018-08-22 11:50:28	@humdinger	But there'll be test images from the build bots according to waddlesplash's blog
+2018-08-22 11:50:33	@PulkoMandy	tell us what you need to do good testing
+2018-08-22 11:51:23	Vidrep	First, is having something that isn't going to change by the hour
+2018-08-22 11:53:39	Vidrep	I'm probably going to be laid off from work as soon as the project we're working on is complete. Then I'll have planty of time on my hands to help out.
+2018-08-22 11:54:15	Vidrep	Mid-September-ish
+2018-08-22 11:54:45	@humdinger	bit late for the published beta-timeline
+2018-08-22 11:55:05	@humdinger	try to get fired sooner...
+2018-08-22 11:55:26	Vidrep	There are thousands of bug reports in trac, but many of them were reported on hrevs from years ago
+2018-08-22 11:56:18	Vidrep	I'd think creating bug reports on a fixed build that doesn't change all the time
+2018-08-22 11:57:05	@humdinger	not sure with what frequency the RCs will be released
+2018-08-22 11:57:22	Vidrep	i.e. a bug reporting system for the beta branch
+2018-08-22 11:57:29	@humdinger	seems like only two weeks are set aside for that.
+2018-08-22 11:57:46	Vidrep	Way too optimistic
+2018-08-22 11:58:09	@PulkoMandy	well, if you had bug to reports, you shoud have done it earlier :)
+2018-08-22 11:58:18	@humdinger	there will probably be a tag for beta tickets
+2018-08-22 11:58:34	Vidrep	I have a ton already - take your pick :)
+2018-08-22 11:58:41	@PulkoMandy	there is a "version" field for this already
+2018-08-22 11:58:46	<--	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 265 seconds)
+2018-08-22 11:58:52	@humdinger	Vidrep: good thing: all are still valid for the beta...
+2018-08-22 11:59:00	@PulkoMandy	people just forgot about it since no one would dare to report a bug from alpha4 nowadays ;)
+2018-08-22 11:59:12	@humdinger	PulkoMandy: yes, but the Beta/1 entry is missing atm
+2018-08-22 11:59:23	@PulkoMandy	yes, we don't have an image yet
+2018-08-22 11:59:31	@PulkoMandy	we will add it as we start shipping images
+2018-08-22 12:00:32	@humdinger	with two weeks RC testing time, I guess there won't be more that 2 or three RC images built.
+2018-08-22 12:01:10	@humdinger	BTW, I still have to blacklist xhci or my mouse will die after a while... nothing in syslog.
+2018-08-22 12:01:15	@humdinger	too bad.
+2018-08-22 12:02:28	@humdinger	Will there be a forum thread for e.g. the intel_extreme hardware that doesn't work? To get the IDs that need to be cut from the driver.
+2018-08-22 12:02:58	<--	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Ping timeout: 252 seconds)
+2018-08-22 12:04:52	<--	OmniMancer (~Paul@101.100.137.239) has quit (Quit: Leaving.)
+2018-08-22 12:07:43	-->	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-22 12:08:29	-->	maxxcan (~maxxcan@178.156.59.66) has joined #haiku
+2018-08-22 12:09:51	<--	Begasus (~begasus@ptr-4p6jpiopgwmymd9kv3g.18120a2.ip6.access.telenet.be) has quit (Quit: Ex-Chat)
+2018-08-22 12:10:08	<--	maxxcan (~maxxcan@178.156.59.66) has quit (Client Quit)
+2018-08-22 12:13:48	<--	mchasard (~mchasard@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has quit (Remote host closed the connection)
+2018-08-22 12:17:26	<--	Romanson (~Romanson@202.70.70.252) has quit (Read error: Connection reset by peer)
+2018-08-22 12:25:59	+Not-e85f	[haikuports/haikuports] pulkomandy pushed 1 commit to master [+0/-0/±1] https://git.io/fAk1d
+2018-08-22 12:26:00	+Not-e85f	[haikuports/haikuports] pulkomandy 1dbf7d2 - haikuwebkit: fix build.
+2018-08-22 12:30:53	@humdinger	yay. new webit... probably...
+2018-08-22 12:31:04	@humdinger	let's see if the buildbots like the recipe...
+2018-08-22 12:41:54	-->	eschatologist (~chanson@c-73-202-69-90.hsd1.ca.comcast.net) has joined #haiku
+2018-08-22 12:41:56	-->	Effilry (znc@freenode/staff/firefly) has joined #haiku
+2018-08-22 12:43:08	<--	lorglas (~lorglas@p200300E413C5D1005B5AF5A7C46D36CF.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-08-22 12:43:56	--	Effilry is now known as FireFly
+2018-08-22 12:52:52	-->	echelog (~echelog@108.61.103.42) has joined #haiku
+2018-08-22 12:53:22	--	Mode #haiku [+v echelog] by ChanServ
+2018-08-22 12:54:09	<--	echelog (~echelog@108.61.103.42) has quit (Quit: Ctrl-C at console.)
+2018-08-22 12:55:03	-->	Mazon (~Mazon@37.205.127.168) has joined #haiku
+2018-08-22 13:01:58	-->	echelog (~echelog@108.61.103.42) has joined #haiku
+2018-08-22 13:02:48	--	Mode #haiku [+v echelog] by ChanServ
+2018-08-22 13:03:59	<--	humdinger (~humdinger@dslb-094-216-053-191.094.216.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-22 13:10:08	miqlas	waddlesplash: i do the wx bump
+2018-08-22 13:32:11	<--	ClaudioM (~ClaudioM@168.221.158.55) has quit (Quit: leaving)
+2018-08-22 14:15:08	<--	Sir_Designer (~Sir_Desig@unaffiliated/sir-designer/x-5975211) has quit (Ping timeout: 255 seconds)
+2018-08-22 14:18:08	-->	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-22 14:18:08	--	Mode #haiku [+o tqh] by ChanServ
+2018-08-22 14:23:39	--	irc: disconnected from server
+2018-08-22 14:29:07	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 14:29:07	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 14:29:07	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 14:29:07	--	Channel #haiku: 101 nicks (10 ops, 3 voices, 88 normals)
+2018-08-22 14:29:07	***	Buffer Playback...
+2018-08-22 14:29:07	@waddlesplash	[14:24:56] thnx
+2018-08-22 14:29:07	***	Playback Complete.
+2018-08-22 14:29:09	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 14:31:27	<--	DKnoto (~DKnoto_W3@77.79.212.94) has quit (Ping timeout: 240 seconds)
+2018-08-22 14:33:08	-->	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-22 14:33:08	--	Mode #haiku [+o mmu_man] by ChanServ
+2018-08-22 14:47:07	-->	DKnoto (~DKnoto_W3@public-gprs642220.centertel.pl) has joined #haiku
+2018-08-22 15:04:38	-->	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has joined #haiku
+2018-08-22 15:04:52	<--	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has quit (Remote host closed the connection)
+2018-08-22 15:05:58	-->	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has joined #haiku
+2018-08-22 15:06:45	cb88	So I tried checking out the last build that the nightlies got built for and still see the issue with libresolv
+2018-08-22 15:07:28	cb88	hrev52249
+2018-08-22 15:11:39	-->	Dariost (~Dariost@151.20.237.155) has joined #haiku
+2018-08-22 15:15:37	<--	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-22 15:16:05	-->	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-22 15:17:23	-->	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-22 15:18:41	-->	gouchi (~gouchi@unaffiliated/gouchi) has joined #haiku
+2018-08-22 15:24:04	--	puckipedia is now known as puck
+2018-08-22 15:30:04	<--	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has quit (Ping timeout: 272 seconds)
+2018-08-22 15:31:12	<--	axeld (~Thunderbi@dyndsl-089-166-242-052.ewe-ip-backbone.de) has quit (Quit: axeld)
+2018-08-22 15:37:42	<--	CompanionCube (samis@unaffiliated/drmushroom) has quit (Ping timeout: 260 seconds)
+2018-08-22 15:40:41	<--	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-22 15:52:23	<--	Dariost (~Dariost@151.20.237.155) has quit (Quit: Dariost)
+2018-08-22 15:53:53	-->	Dariost (~Dariost@151.20.237.155) has joined #haiku
+2018-08-22 15:57:35	-->	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has joined #haiku
+2018-08-22 16:06:17	--	irc: disconnected from server
+2018-08-22 16:07:49	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 16:07:49	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 16:07:49	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 16:07:49	--	Channel #haiku: 103 nicks (9 ops, 3 voices, 91 normals)
+2018-08-22 16:07:51	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 16:08:34	-->	c-sanchez (~c-sanchez@190.79.157.157) has joined #haiku
+2018-08-22 16:11:06	--	irc: disconnected from server
+2018-08-22 16:11:58	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 16:11:58	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 16:11:58	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 16:11:58	--	Channel #haiku: 104 nicks (9 ops, 3 voices, 92 normals)
+2018-08-22 16:12:00	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 16:39:02	<--	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Quit: Page closed)
+2018-08-22 16:41:31	<--	Freenoodle (~Freenoodl@p549142DC.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2018-08-22 16:55:13	<--	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Quit: Leaving)
+2018-08-22 17:04:57	<--	gouchi (~gouchi@unaffiliated/gouchi) has quit (Remote host closed the connection)
+2018-08-22 17:13:22	<--	Not-e85f (~notifico@ec2-52-3-50-241.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2018-08-22 17:15:18	-->	samis (~samis@unaffiliated/drmushroom) has joined #haiku
+2018-08-22 17:33:30	<--	eschatologist (~chanson@c-73-202-69-90.hsd1.ca.comcast.net) has quit (Ping timeout: 264 seconds)
+2018-08-22 17:33:51	-->	eschatologist (~chanson@2601:646:8400:8e92:4275:802b:a10f:1358) has joined #haiku
+2018-08-22 17:44:58	<--	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 260 seconds)
+2018-08-22 17:53:49	-->	_Dario_ (dario@181.46.221.188) has joined #haiku
+2018-08-22 18:18:12	--	samis is now known as CompanionCube
+2018-08-22 18:26:35	<--	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 240 seconds)
+2018-08-22 18:35:04	-->	Romanson (~Romanson@113.199.180.117) has joined #haiku
+2018-08-22 18:35:07	<--	Romanson (~Romanson@113.199.180.117) has quit (Read error: Connection reset by peer)
+2018-08-22 18:35:24	-->	Romanson (~Romanson@113.199.180.117) has joined #haiku
+2018-08-22 18:57:23	-->	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has joined #haiku
+2018-08-22 19:10:03	-->	swift110 (~swift110@unaffiliated/swift110) has joined #haiku
+2018-08-22 19:12:23	--	irc: disconnected from server
+2018-08-22 19:12:52	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 19:12:52	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 19:12:52	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 19:12:52	--	Channel #haiku: 102 nicks (8 ops, 2 voices, 92 normals)
+2018-08-22 19:12:54	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 19:20:36	<--	c-sanchez (~c-sanchez@190.79.157.157) has quit (Ping timeout: 272 seconds)
+2018-08-22 19:28:59	<--	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-22 19:34:02	-->	liuyb (~liuyb@222.131.156.209) has joined #haiku
+2018-08-22 19:41:50	<--	Romanson (~Romanson@113.199.180.117) has quit (Ping timeout: 268 seconds)
+2018-08-22 19:41:50	-->	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has joined #haiku
+2018-08-22 19:43:49	-->	Romanson (~Romanson@202.70.70.249) has joined #haiku
+2018-08-22 19:44:22	--	irc: disconnected from server
+2018-08-22 19:44:27	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 19:44:28	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 19:44:28	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 19:44:28	--	Channel #haiku: 102 nicks (8 ops, 2 voices, 92 normals)
+2018-08-22 19:44:29	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 19:50:55	◥	sorch (~sorch@unaffiliated/sorch) has joined #haiku
+2018-08-22 20:05:55	<--	sorch (~sorch@unaffiliated/sorch) has quit (Quit: Leaving)
+2018-08-22 20:14:49	<--	Dariost (~Dariost@151.20.237.155) has quit (Quit: Dariost)
+2018-08-22 20:18:31	cb88	waddlesplash: I may have tracked down that build breakage
+2018-08-22 20:18:57	cb88	PulkoMandy: can you comment? https://github.com/haiku/haiku/commit/8d1f13817f33276a94a48396dbd3aa9f5634118d#diff-a82fe5730dfe0c72a83991020c4cd456
+2018-08-22 20:19:06	<--	eschatologist (~chanson@2601:646:8400:8e92:4275:802b:a10f:1358) has quit (Ping timeout: 264 seconds)
+2018-08-22 20:20:03	cb88	https://dev.haiku-os.org/ticket/14386
+2018-08-22 20:20:57	cb88	I included the relevant snippet of the build log there also, if I revert PulkoMandy's last change it builds...but that might not be the correct solution of course
+2018-08-22 20:21:27	--	irc: disconnected from server
+2018-08-22 20:25:47	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 20:25:47	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 20:25:47	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 20:25:47	--	Channel #haiku: 101 nicks (8 ops, 2 voices, 91 normals)
+2018-08-22 20:25:47	***	Buffer Playback...
+2018-08-22 20:25:47	@waddlesplash	[20:24:27] cb88: nope
+2018-08-22 20:25:47	@waddlesplash	[20:24:45] it looks like your system is not defining haiku_host
+2018-08-22 20:25:47	@waddlesplash	[20:24:49] that will be the issue here
+2018-08-22 20:25:47	cb88	[20:25:02] why would that happen?
+2018-08-22 20:25:47	@waddlesplash	[20:25:13] no clue
+2018-08-22 20:25:47	@waddlesplash	[20:25:18] it definitely shouldn't
+2018-08-22 20:25:47	***	Playback Complete.
+2018-08-22 20:25:49	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 20:25:52	--	irc: disconnected from server
+2018-08-22 20:27:51	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 20:27:51	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 20:27:51	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 20:27:51	--	Channel #haiku: 101 nicks (8 ops, 2 voices, 91 normals)
+2018-08-22 20:27:51	***	Buffer Playback...
+2018-08-22 20:27:51	cb88	[20:26:10] That's automatically detected isn't it either ./configure or jam right?
+2018-08-22 20:27:51	***	Playback Complete.
+2018-08-22 20:27:53	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 20:28:26	@waddlesplash	yes
+2018-08-22 20:29:51	<--	Adcock (adcockmatr@gateway/shell/matrix.org/x-paxcdcgdbzfpypau) has quit (*.net *.split)
+2018-08-22 20:29:51	<--	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has quit (*.net *.split)
+2018-08-22 20:29:51	<--	PulkoMandy (~pulkomand@126.233.146.77.rev.sfr.net) has quit (*.net *.split)
+2018-08-22 20:29:51	<--	rEv9 (~rEv9@unaffiliated/rev9) has quit (*.net *.split)
+2018-08-22 20:29:51	<--	DerRaiden (~quassel@serv.veatnet.de) has quit (*.net *.split)
+2018-08-22 20:30:07	--	irc: disconnected from server
+2018-08-22 20:32:06	-->	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 20:32:06	--	Topic for #haiku is "An open-source operating system that specifically targets personal computing. | Sorry about the spammers... | https://haiku-os.org | Nightlies: https://download.haiku-os.org | Bugtracker: https://dev.haiku-os.org | SCM: https://git.haiku-os.org/ | Channel logs: https://echelog.com/?haiku"
+2018-08-22 20:32:06	--	Topic set by waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) on Sat, 04 Aug 2018 22:03:57
+2018-08-22 20:32:06	--	Channel #haiku: 96 nicks (7 ops, 2 voices, 87 normals)
+2018-08-22 20:32:06	***	Buffer Playback...
+2018-08-22 20:32:06	cb88	[20:31:52] actually what makes you think haiku_host isn't defined?
+2018-08-22 20:32:06	***	Playback Complete.
+2018-08-22 20:32:06	--	Channel created on Sat, 25 Nov 2006 23:42:49
+2018-08-22 20:33:27	<--	Mazon (~Mazon@37.205.127.168) has quit (Ping timeout: 240 seconds)
+2018-08-22 20:33:57	-->	Mazon (~Mazon@37.205.127.168) has joined #haiku
+2018-08-22 20:35:45	<--	_Dario_ (dario@181.46.221.188) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-22 20:37:35	➡️	Adcock (adcockmatr@gateway/shell/matrix.org/x-gakwhluceywmdrmh) has joined #haiku
+2018-08-22 20:43:41	⬅️	liuyb (~liuyb@222.131.156.209) has quit (Ping timeout: 252 seconds)
+2018-08-22 20:47:03	cb88	Seems like alot more stuff would break if the HOST_PLATFORM wasn't set...
+2018-08-22 20:50:42		irc: disconnected from server
+2018-08-22 20:50:45	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 20:54:54	cb88	waddlesplash: I just checked HOST_PLATFORM=haiku_host is actually set in the libsolv Jamfile
+2018-08-22 20:55:17	@waddlesplash	no it's checked there
+2018-08-22 20:55:20	@waddlesplash	it's not set
+2018-08-22 20:55:44	cb88	I printed it out from the Jamfile... it was set
+2018-08-22 20:56:10	cb88	already... 
+2018-08-22 20:59:00	cb88	echo "$(HOST_PLATFORM)" ; prints haiku_host... sorry for the confusion
+2018-08-22 21:01:10	➡️	c-sanchez (~c-sanchez@190.79.157.157) has joined #haiku
+2018-08-22 21:03:22	⬅️	c-sanchez (~c-sanchez@190.79.157.157) has quit (Client Quit)
+2018-08-22 21:04:17	cb88	waddlesplash: HAVE_STRCHRNUL isn't defined for haiku_host... 
+2018-08-22 21:05:06	cb88	it is defined for every other case though....
+2018-08-22 21:05:39	cb88	err, well linux and freebsd not darwin or haiku
+2018-08-22 21:10:18	cb88	addin HAVE_STRCHRNUL to the haiku_host case of the switch statment in the jamfile seems to fix the build... I also added back PulkoMandy's _GNU_SOURCE before rebuilding
+2018-08-22 21:10:19	➡️	liuyb (~liuyb@222.131.156.209) has joined #haiku
+2018-08-22 21:10:52	⬅️	Romanson (~Romanson@202.70.70.249) has quit (Ping timeout: 260 seconds)
+2018-08-22 21:15:38	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-22 21:16:06	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-22 21:31:39		irc: disconnected from server
+2018-08-22 21:31:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 21:34:48	@waddlesplash	aha
+2018-08-22 21:34:53	@waddlesplash	ok that will be the issue then
+2018-08-22 21:34:57	@waddlesplash	I'll take a look later
+2018-08-22 21:44:30		irc: disconnected from server
+2018-08-22 21:44:31	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-22 22:30:26	⬅️	TK-313 (~vkovalev@46.164.246.73) has quit (Ping timeout: 240 seconds)
+2018-08-22 23:55:44		irc: disconnected from server
+2018-08-22 23:56:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 00:37:07	➡️	axeld (~Thunderbi@89.233.77.198) has joined #haiku
+2018-08-23 00:37:07		Mode #haiku [+o axeld] by ChanServ
+2018-08-23 00:39:54	➡️	stippi (~Thunderbi@p54824887.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 00:39:54		Mode #haiku [+o stippi] by ChanServ
+2018-08-23 00:45:56	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-23 00:46:24	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-23 01:04:00		irc: disconnected from server
+2018-08-23 01:04:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 01:14:08	⬅️	liuyb (~liuyb@222.131.156.209) has quit (Ping timeout: 260 seconds)
+2018-08-23 01:17:56	➡️	liuyb (~liuyb@222.131.156.209) has joined #haiku
+2018-08-23 01:20:20	⬅️	DKnoto (~DKnoto_W3@public-gprs642220.centertel.pl) has quit (Ping timeout: 272 seconds)
+2018-08-23 01:20:58	➡️	DKnoto (~DKnoto_W3@77.79.212.94) has joined #haiku
+2018-08-23 01:35:59	➡️	leszek (~leszek@p4FE238DD.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 02:09:58	➡️	lorglas (~lorglas@p200300E413C4BA0033E65576D758018A.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 02:30:08	➡️	lorglas_ (~lorglas@p200300E413C4BA0033E65576D758018A.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 02:30:24	⬅️	lorglas (~lorglas@p200300E413C4BA0033E65576D758018A.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2018-08-23 02:32:53	⬅️	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-08-23 03:02:54	➡️	mchasard (~mchasard@80.215.169.9) has joined #haiku
+2018-08-23 03:03:21	⬅️	mchasard (~mchasard@80.215.169.9) has quit (Client Quit)
+2018-08-23 03:03:37	➡️	mchasard (~mchasard@80.215.169.9) has joined #haiku
+2018-08-23 03:04:41	➡️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has joined #haiku
+2018-08-23 03:15:41	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-23 03:16:09	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-23 03:17:58	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-23 03:17:58		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-23 03:21:52	⬅️	mchasard (~mchasard@80.215.169.9) has quit (Quit: Quit)
+2018-08-23 03:23:09	⬅️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2018-08-23 03:26:43	➡️	gouchi (~gouchi@unaffiliated/gouchi) has joined #haiku
+2018-08-23 03:49:38	➡️	mchasard (~mchasard@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has joined #haiku
+2018-08-23 03:51:28	⬅️	DKnoto (~DKnoto_W3@77.79.212.94) has quit (Ping timeout: 268 seconds)
+2018-08-23 03:55:22	mchasard	hi apparently vision is ok new version is out thanks for all
+2018-08-23 03:57:31	Scarecrow	I wonder if it'll replace the version I built from source
+2018-08-23 04:00:04	mchasard	yes ok
+2018-08-23 04:07:25	➡️	DKnoto (~DKnoto_W3@public-gprs642220.centertel.pl) has joined #haiku
+2018-08-23 04:07:26	Scarecrow	It's a lot faster to connect, either way.
+2018-08-23 04:08:22	⬅️	lorglas_ (~lorglas@p200300E413C4BA0033E65576D758018A.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-08-23 04:09:49	mchasard	may be i did't have this feeling but .. 
+2018-08-23 04:24:51	⬅️	DKnoto (~DKnoto_W3@public-gprs642220.centertel.pl) has quit (Quit: Leaving)
+2018-08-23 04:25:37	⬅️	mchasard (~mchasard@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-23 04:26:11	➡️	mchasard (~quassel@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has joined #haiku
+2018-08-23 04:29:05	⬅️	gouchi (~gouchi@unaffiliated/gouchi) has quit (Remote host closed the connection)
+2018-08-23 04:31:59	⬅️	mchasard (~quassel@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-08-23 04:48:52	⬅️	ugen (uid218792@gateway/web/irccloud.com/x-fyakifseafnctwvg) has quit (Quit: Connection closed for inactivity)
+2018-08-23 04:54:16	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-23 04:59:50	⬅️	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 255 seconds)
+2018-08-23 05:22:03	➡️	Tsesarevich (sid83162@fluxbuntu/founder/joejaxx) has joined #haiku
+2018-08-23 05:27:49	➡️	GeneralDuke (~Thunderbi@pdi29.internetdsl.tpnet.pl) has joined #haiku
+2018-08-23 05:28:46	➡️	Dariost (~Dariost@151.30.159.170) has joined #haiku
+2018-08-23 05:37:08	➡️	Romanson (~Romanson@113.199.178.115) has joined #haiku
+2018-08-23 05:51:53	⬅️	Dariost (~Dariost@151.30.159.170) has quit (Quit: Dariost)
+2018-08-23 06:13:37	⬅️	liuyb (~liuyb@222.131.156.209) has quit (Ping timeout: 256 seconds)
+2018-08-23 06:24:45	➡️	kurain (~kurain@115.60.177.101) has joined #haiku
+2018-08-23 06:43:33	⬅️	Cenbe (~cenbe@unaffiliated/cenbe) has quit (Read error: Connection reset by peer)
+2018-08-23 06:44:12	➡️	Cenbe (~cenbe@unaffiliated/cenbe) has joined #haiku
+2018-08-23 06:47:17	⬅️	Romanson (~Romanson@113.199.178.115) has quit (Ping timeout: 264 seconds)
+2018-08-23 07:04:53	➡️	Maturion (~Maturion@p200300EDE3D2BD006914D82E44BC8336.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 07:07:57	➡️	ClaudioM (~ClaudioM@168.221.158.55) has joined #haiku
+2018-08-23 07:28:43	➡️	Romanson (~Romanson@103.95.16.102) has joined #haiku
+2018-08-23 07:32:52	➡️	liuyb (~liuyb@111.196.22.100) has joined #haiku
+2018-08-23 07:43:28	⬅️	leszek (~leszek@p4FE238DD.dip0.t-ipconnect.de) has quit (Quit: WeeChat 1.6)
+2018-08-23 07:48:47	➡️	leszek (~leszek@p200300C65BD29E00AE9C354F1B6FFBDE.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 08:03:21	➡️	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has joined #haiku
+2018-08-23 08:33:14	➡️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has joined #haiku
+2018-08-23 08:33:14		Mode #haiku [+o humdinger] by ChanServ
+2018-08-23 08:33:34	➡️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has joined #haiku
+2018-08-23 08:33:55	Vidrep	Good morning
+2018-08-23 08:34:05	@humdinger	G'day!
+2018-08-23 08:35:29	Vidrep	I saw some comment in the forum (I think) about the first test image being ready for this Saturday. True or not?
+2018-08-23 08:36:43	@humdinger	doubt it. we haven't branched yet...
+2018-08-23 08:37:13	Vidrep	First things first...
+2018-08-23 08:37:39	Vidrep	Question: How to use libroot_debug?
+2018-08-23 08:37:56	leorize	LD_PRELOAD=libroot_debug.so <your program here>
+2018-08-23 08:38:08	Vidrep	Piece of cake
+2018-08-23 08:38:14	Vidrep	Thanks leorize 
+2018-08-23 08:39:29	Vidrep	leorize: did I see somewhere that you're leaving us soon?
+2018-08-23 08:39:44	leorize	no?
+2018-08-23 08:39:55	leorize	I'm not leaving anytime soon
+2018-08-23 08:40:33	@humdinger	Vidrep has a new job at the rumour mill... :)
+2018-08-23 08:40:41	Vidrep	lol
+2018-08-23 08:41:21	Vidrep	I thought I read somewhere that you were writing exams or going back to school
+2018-08-23 08:41:31	Vidrep	Maybe someone else?
+2018-08-23 08:41:41	leorize	I'm writing exam report rn :P
+2018-08-23 08:42:17	leorize	currently uni is quite lax, I still have plenty of time to work on ports
+2018-08-23 08:42:38	leorize	I do have to postpone work when exams show up however
+2018-08-23 08:44:00	leorize	after the 28th I should be back with porting :)
+2018-08-23 08:44:18	@humdinger	Sept. ?
+2018-08-23 08:44:32	leorize	August
+2018-08-23 08:44:41	@humdinger	oh! 2018?
+2018-08-23 08:44:50	leorize	my uni life started since July :(
+2018-08-23 08:45:31	@humdinger	it'll get worse. after uni, jobs lurk...
+2018-08-23 08:45:39	@humdinger	try to resist!
+2018-08-23 08:46:28	leorize	yea :)
+2018-08-23 08:55:38	➡️	Dariost (~Dariost@151.30.159.170) has joined #haiku
+2018-08-23 08:58:00	➡️	Guma (~Guma@35.128.60.54) has joined #haiku
+2018-08-23 08:59:31	⬅️	GeneralDuke (~Thunderbi@pdi29.internetdsl.tpnet.pl) has quit (Quit: GeneralDuke)
+2018-08-23 09:00:05	Vidrep	humdinger: yesterday I was trying to remember a ticket that impacted BurnItNow: https://dev.haiku-os.org/ticket/12534
+2018-08-23 09:01:02	@humdinger	quite a few annoyances hang on that bug
+2018-08-23 09:01:32	Vidrep	Apparently several apps are affectd
+2018-08-23 09:02:21	@humdinger	yes. esp. some apps when trying to launch with quicklaunch. which is the most annoing part for me...
+2018-08-23 09:05:37	@humdinger	Vidrep: you're an old rocker... whatcha think of old Iron Santa here: https://www.youtube.com/watch?v=KF_0Jgm7JHg
+2018-08-23 09:06:03	@humdinger	Cool dude. Wonder if he adopts...
+2018-08-23 09:06:26	⬅️	Romanson (~Romanson@103.95.16.102) has quit (Ping timeout: 256 seconds)
+2018-08-23 09:08:34	Vidrep	For me, Iron Maiden is "new" stuff
+2018-08-23 09:08:36	➡️	Romanson (~Romanson@202.70.70.196) has joined #haiku
+2018-08-23 09:08:56	@humdinger	correction: you're a very old rocker...
+2018-08-23 09:09:27	@humdinger	Iron Maiden "Killers" was my 1st album IIRC.
+2018-08-23 09:09:58	@humdinger	kept hearing it end-to-end for hours at a time while playing Paradroid with a friend.
+2018-08-23 09:10:33	Vidrep	My first album...hmmmm...Black sabbath Vol. 4
+2018-08-23 09:10:38	@humdinger	still my favorite album
+2018-08-23 09:10:59	@humdinger	sabbath... hmmmm 
+2018-08-23 09:11:21	@humdinger	(^ that's a Homer "hmmm")
+2018-08-23 09:12:36	@humdinger	sadly, the latest web+ didn't fix the to me most annoying bugs.
+2018-08-23 09:12:41	Vidrep	As a kid my friends and I were into Black Sabbath, Deep Purple, ZZ Top, Uriah Heep, Alice Cooper etc
+2018-08-23 09:13:18	@humdinger	Yeah. ZZtop! the first 3 or 4 albums.
+2018-08-23 09:15:43	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-23 09:16:11	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-23 09:25:57	Vidrep	humdinger: janus2 has requested a look at a particular bug for a while now, so he can proceed with fixing a couple of apps
+2018-08-23 09:26:37	➡️	tombhadAC (~root@x4e37f7a4.dyn.telefonica.de) has joined #haiku
+2018-08-23 09:26:49	Vidrep	Hopefully, these will get looked at. Haiku needs apps that work properly
+2018-08-23 09:27:00	@humdinger	well... I filed the bug 3 years ago... so
+2018-08-23 09:27:15	@humdinger	doesn't seem to be an easy fix.
+2018-08-23 09:27:35	Vidrep	Now is the time to stop kicking the can down the road
+2018-08-23 09:27:59	@humdinger	If I knew how to fix, I'd have done it already
+2018-08-23 09:28:09	Vidrep	Of course...
+2018-08-23 09:28:32	⬅️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2018-08-23 09:32:47	➡️	PulkoMandy (~pulkomand@126.233.146.77.rev.sfr.net) has joined #haiku
+2018-08-23 09:32:47		Mode #haiku [+o PulkoMandy] by ChanServ
+2018-08-23 09:34:22	➡️	kevans91 (~kevans91@freebsd/developer/kevans) has joined #haiku
+2018-08-23 09:35:53	⬅️	Maturion (~Maturion@p200300EDE3D2BD006914D82E44BC8336.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2018-08-23 09:36:03	Vidrep	PulkoMandy: I'll try the libroot_debug of webkit tonight when I get home from work
+2018-08-23 09:36:25	@PulkoMandy	k, thanks
+2018-08-23 09:36:45	@humdinger	Any idea where these come from: KERN: acquire_advisory_lock(vnode = 0xd604cc30, flock = 0xcceb7efc, wait = no)
+2018-08-23 09:36:56	Vidrep	What's strange is that it just quits, without any debugger prompt or option to save a debug report
+2018-08-23 09:36:57	@humdinger	I see them quite often lately in the syslog
+2018-08-23 09:37:32	Vidrep	humdinger: I see them too
+2018-08-23 09:38:00	@PulkoMandy	Vidrep: according to your syslog, I think debug_server does not manage to attach
+2018-08-23 09:38:19	@PulkoMandy	which is possible if memory is really badly corrupt, enough to prevent starting the debug thread, I think
+2018-08-23 09:38:26	Vidrep	So, is that a debugger issue?
+2018-08-23 09:39:56	Vidrep	I'm working off of a fresh install with only a couple of pkgman updates
+2018-08-23 09:41:02	@PulkoMandy	it's more a flaw in the design of our debugging system
+2018-08-23 09:41:15	@PulkoMandy	basically, debugger needs to run code inside the application it's debugging
+2018-08-23 09:41:27	@PulkoMandy	this can only work if the application is not too much corrupt, of course
+2018-08-23 09:42:09	@PulkoMandy	a better approach would be to do everything using code running outside the application, but it would need more collaboration from the kernel (because one app is not allowed to peek at another's memory, even if the app is Debugger)
+2018-08-23 09:43:55	leorize	basically adding ptrace support?
+2018-08-23 09:44:33	⬅️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2018-08-23 09:44:55	@PulkoMandy	leorize: I don't know what gdb uses on Linux
+2018-08-23 09:45:00	@PulkoMandy	(or elsewhere, for that matter)
+2018-08-23 09:45:02	⬅️	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-23 09:45:29	leorize	I think it uses ptrace on *nix
+2018-08-23 09:45:42	leorize	https://linux.die.net/man/2/ptrace
+2018-08-23 09:46:08	leorize	seems like just about everything you'd need for debugging is supported by ptrace
+2018-08-23 09:53:17	➡️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has joined #haiku
+2018-08-23 09:53:18		Mode #haiku [+o humdinger] by ChanServ
+2018-08-23 09:58:12	⬅️	Romanson (~Romanson@202.70.70.196) has quit (Read error: Connection reset by peer)
+2018-08-23 10:00:40	➡️	Romanson (~Romanson@202.70.70.246) has joined #haiku
+2018-08-23 10:05:54	⬅️	bbjimmy (~bbjimmy@host-67-44-193-4.hnremote.net) has quit (Read error: Connection reset by peer)
+2018-08-23 10:12:47	⬅️	kurain (~kurain@115.60.177.101) has quit (Quit: kurain)
+2018-08-23 10:20:20	➡️	bbjimmy (~bbjimmy@host-67-44-193-4.hnremote.net) has joined #haiku
+2018-08-23 10:24:36	➡️	ziomatto (~ziomatto@93-36-186-56.ip61.fastwebnet.it) has joined #haiku
+2018-08-23 10:25:32	⬅️	ziomatto (~ziomatto@93-36-186-56.ip61.fastwebnet.it) has left #haiku
+2018-08-23 10:37:07	⬅️	stippi (~Thunderbi@p54824887.dip0.t-ipconnect.de) has quit (Quit: stippi)
+2018-08-23 10:39:06	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-23 10:39:06		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-23 10:45:26	⬅️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 240 seconds)
+2018-08-23 10:56:43	➡️	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has joined #haiku
+2018-08-23 10:57:27	➡️	gouchi (~gouchi@unaffiliated/gouchi) has joined #haiku
+2018-08-23 10:58:51	cb88	kallisti5: radeon_hd does work by adding the PCI ID 0x9808 however, VGA and HDMI don't only the LCD of my laotop. syslog attached https://dev.haiku-os.org/ticket/14379
+2018-08-23 11:06:37	⬅️	leszek (~leszek@p200300C65BD29E00AE9C354F1B6FFBDE.dip0.t-ipconnect.de) has quit (Quit: WeeChat 1.6)
+2018-08-23 11:08:04	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-23 11:08:04		Mode #haiku [+o tqh] by ChanServ
+2018-08-23 11:15:48	➡️	janus2 (~janus2@82.84.142.161) has joined #haiku
+2018-08-23 11:17:15	janus2	hi all
+2018-08-23 11:17:59	Vidrep	Hi janus2 
+2018-08-23 11:18:59	janus2	humdinger did you have a chance to test #14037?
+2018-08-23 11:19:26	@humdinger	I built an image with that change. How quickest to test?
+2018-08-23 11:20:59	janus2	touch ~/config/data/xyz
+2018-08-23 11:21:46	@humdinger	ok. I'll have to reboot then... :)
+2018-08-23 11:21:51	@humdinger	gimme a minute
+2018-08-23 11:32:42	⬅️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-23 11:34:10	➡️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has joined #haiku
+2018-08-23 11:34:11		Mode #haiku [+o humdinger] by ChanServ
+2018-08-23 11:34:32	@humdinger	janus2: sorry. Hammer time...
+2018-08-23 11:34:37	@humdinger	"can't touch this"
+2018-08-23 11:35:14	janus2	ls -latr ~/config/data
+2018-08-23 11:35:51	@humdinger	damn. let me reboot and stay in the image then... :)
+2018-08-23 11:35:56	⬅️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has quit (Client Quit)
+2018-08-23 11:37:00	janus2	sorry better ls -latr ~/config
+2018-08-23 11:37:30	➡️	Maturion (~Maturion@p200300EDE3D2BD006914D82E44BC8336.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 11:37:32	⬅️	liuyb (~liuyb@111.196.22.100) has quit (Ping timeout: 260 seconds)
+2018-08-23 11:37:46	⬅️	Maturion (~Maturion@p200300EDE3D2BD006914D82E44BC8336.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-08-23 11:38:56	➡️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has joined #haiku
+2018-08-23 11:38:56		Mode #haiku [+o humdinger] by ChanServ
+2018-08-23 11:39:47	@humdinger	janus2: http://ix.io/1l2H
+2018-08-23 11:40:34	janus2	there isn't the data directory
+2018-08-23 11:40:51	@humdinger	nope
+2018-08-23 11:41:54	janus2	did you build haiku near 15:00?
+2018-08-23 11:42:20		irc: disconnected from server
+2018-08-23 11:42:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 11:42:34	***	Buffer Playback...
+2018-08-23 11:42:34	@humdinger	[11:42:28] iso created 15:01
+2018-08-23 11:42:34	***	Playback Complete.
+2018-08-23 11:42:59	janus2	frak
+2018-08-23 11:42:59	@humdinger	took me forever, because Haiku KDLs, things crash etc. when building with j >1
+2018-08-23 11:43:12	janus2	so strange
+2018-08-23 11:44:36	@humdinger	might be an Installer issue?
+2018-08-23 11:44:50	@humdinger	I mounted the created ISO. there's a ~/config/data there.
+2018-08-23 11:45:00	@humdinger	maybe it doesn't get copied?
+2018-08-23 11:45:06	cb88	interesting I acutally haven't had a single kdl during building  in the past 2 days... the build itself was broken but no crashes
+2018-08-23 11:45:42	@humdinger	cb88: I also got failures left and right until I build from scratch. with j1
+2018-08-23 11:45:56	➡️	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has joined #haiku
+2018-08-23 11:46:12	@humdinger	arfonzo!
+2018-08-23 11:46:19	@humdinger	a rare appearance
+2018-08-23 11:48:03	arfonzo	ahoy strangers! :)
+2018-08-23 11:48:10	arfonzo	how's things?
+2018-08-23 11:48:54	@humdinger	beta fever broken out...
+2018-08-23 11:49:28	➡️	KrChaos (defe12a0@gateway/web/freenode/ip.222.254.18.160) has joined #haiku
+2018-08-23 11:52:28	@humdinger	janus2: btw, "findpaths B_FIND_PATH_DATA_DIRECTORY" shows among others /boot/home/config/data
+2018-08-23 11:52:41	arfonzo	lovely! need to upgrade my laptop install with the latest
+2018-08-23 11:55:46	janus2	that works in every installation, the directory is defined but nobody creates it.
+2018-08-23 11:56:09	@humdinger	aha
+2018-08-23 11:58:13	janus2	very strange system/data is present, but is not created in that file
+2018-08-23 12:04:21	✴️	janus2 sad
+2018-08-23 12:05:04	✴️	humdinger angry
+2018-08-23 12:05:11	@humdinger	and.... green?!
+2018-08-23 12:05:20	janus2	why?
+2018-08-23 12:05:27	✴️	humdinger hulk
+2018-08-23 12:05:52	janus2	why angry?
+2018-08-23 12:05:52	@humdinger	clothes shreddered again
+2018-08-23 12:06:07	@humdinger	I tried my hand at a little joke
+2018-08-23 12:06:19	@humdinger	unsuccessful
+2018-08-23 12:06:31	✴️	janus2 lol
+2018-08-23 12:07:31	janus2	Beta without a place for application to save their data
+2018-08-23 12:07:39	janus2	*applications*
+2018-08-23 12:11:27	cb88	humdinger well waddlesplash has commited a fix for the issue I was running into
+2018-08-23 12:12:39	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-23 12:12:40		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-23 12:12:45	➡️	sambagirl (~leftist@unaffiliated/sambagirl) has joined #haiku
+2018-08-23 12:12:59	sambagirl	afternoon. is haiku touchscreen capable?
+2018-08-23 12:13:29	sambagirl	secondly there was a internet radio broadcast software that was using i think zeta. does anyone recall the name of the prouct?
+2018-08-23 12:13:46	@PulkoMandy	TuneTracker Systems, they are using Haiku now
+2018-08-23 12:13:57	sambagirl	ahh ok
+2018-08-23 12:14:02	sambagirl	i remember it now
+2018-08-23 12:14:05	sambagirl	thanks
+2018-08-23 12:14:15	@PulkoMandy	we have drivers for touchscreens, but our UI is designed for use with a mouse
+2018-08-23 12:14:38	janus2	humdinger did you use the installer?
+2018-08-23 12:14:45	@humdinger	yes
+2018-08-23 12:14:54	sambagirl	ahh i see
+2018-08-23 12:15:47	janus2	As I can see the home/config is present in the copyengine
+2018-08-23 12:16:01	@humdinger	janus2: I'd put writable data of an app into /boot/home/data/appname
+2018-08-23 12:16:09	sambagirl	is haiku based off beos?
+2018-08-23 12:16:14	sambagirl	or is this fresh?
+2018-08-23 12:16:33	sambagirl	i meant a from scratch effort
+2018-08-23 12:16:46	@humdinger	fresh as a 17 year old. :)
+2018-08-23 12:16:53	sambagirl	haha
+2018-08-23 12:17:10	janus2	there is a directory for that...
+2018-08-23 12:17:33	@humdinger	janus2: as we've seen, there isn't :)
+2018-08-23 12:17:53	janus2	if you ask haiku there is ;)
+2018-08-23 12:18:20	@humdinger	the lying basterd
+2018-08-23 12:18:27	@waddlesplash	sambagirl: from scratch indeed
+2018-08-23 12:19:20	janus2	waddlesplash, PulkoMandy did you know why a directory is missing from the installation even if is present in the iso=?
+2018-08-23 12:19:56	@PulkoMandy	the installer skips some things on purpose. And it may have bugs
+2018-08-23 12:20:29	janus2	I just look into the code and the parent directory is present in the copyengine
+2018-08-23 12:20:55	janus2	all the siblings are present
+2018-08-23 12:20:58	@waddlesplash	PulkoMandy: your most recent commit seems to have some unrelated changes
+2018-08-23 12:21:06	@PulkoMandy	yes, I saw that :(
+2018-08-23 12:21:14	@waddlesplash	PulkoMandy: the new traces look ok but the net80211 one should get reverted
+2018-08-23 12:21:22	@waddlesplash	11N debug is probably pretty spammy
+2018-08-23 12:21:24	@PulkoMandy	ok, let's do that
+2018-08-23 12:26:54		sambagirl is now known as taking
+2018-08-23 12:27:14	⬅️	KrChaos (defe12a0@gateway/web/freenode/ip.222.254.18.160) has quit (Quit: Page closed)
+2018-08-23 12:29:14	Vidrep	janus2: time flies...https://www.freelists.org/post/haiku-development/Proposal-for-commit-access-to-Janus,9
+2018-08-23 12:31:05	janus2	A bad decision... ;-)
+2018-08-23 12:31:34	@humdinger	we're still waiting on something useful... :) :) :P
+2018-08-23 12:31:48	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-23 12:32:28	⬅️	taking (~leftist@unaffiliated/sambagirl) has quit (Quit: Konversation terminated!)
+2018-08-23 12:33:36	janus2	one day...
+2018-08-23 12:34:23		irc: disconnected from server
+2018-08-23 12:34:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 12:36:35	janus2	The code of the installer doesn't suggest anything wrong with that directory
+2018-08-23 12:37:36	@humdinger	I could try installing once more with Installer started from Terminal. maybe there's some output
+2018-08-23 12:38:18	janus2	You have installed over an old installation so the other directories are already present
+2018-08-23 12:38:36	@humdinger	I did a clean install before
+2018-08-23 12:38:52	janus2	cool
+2018-08-23 12:39:02	janus2	WHHHHHYYYYY!
+2018-08-23 12:39:19	@humdinger	thought it was the right thing...
+2018-08-23 12:39:40	janus2	why doesn't work
+2018-08-23 12:39:52	janus2	:-P
+2018-08-23 12:40:21	@humdinger	let me try again from terminal. It'll only be a few minutes.
+2018-08-23 12:40:24	@humdinger	hang on
+2018-08-23 12:40:25	⬅️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-23 12:45:19	➡️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has joined #haiku
+2018-08-23 12:45:19		Mode #haiku [+o humdinger] by ChanServ
+2018-08-23 12:45:27	@humdinger	janus2: the darndest thing!
+2018-08-23 12:45:40	@humdinger	when I boot the test image, there's no ~/config/data
+2018-08-23 12:45:55	@humdinger	when I oot my regular image and mount the test image, there is!
+2018-08-23 12:47:27	⬅️	cb88 (~Vision@rrcs-74-218-245-90.se.biz.rr.com) has quit (Remote host closed the connection)
+2018-08-23 12:52:41	janus2	the plot thickens!
+2018-08-23 12:53:35	➡️	lorglas (~lorglas@pD9E1DBF7.dip0.t-ipconnect.de) has joined #haiku
+2018-08-23 12:53:36	@PulkoMandy	mh, but ~/config is a package mount point
+2018-08-23 12:53:48	@PulkoMandy	so, you may have a "data" there, but it will be hidden when you mount the packagefs
+2018-08-23 12:53:55	@PulkoMandy	and it is not a shine-through directory
+2018-08-23 12:54:15	@PulkoMandy	so if you want a config/data, you need a package installed in config/packages with a data dir in it
+2018-08-23 12:54:20	⬅️	lorglas (~lorglas@pD9E1DBF7.dip0.t-ipconnect.de) has quit (Client Quit)
+2018-08-23 12:55:10	janus2	Is settings in a package?
+2018-08-23 12:56:20	⬅️	Megaf (~Megaf@unaffiliated/megaf) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-08-23 12:59:01	@PulkoMandy	no, settings is a shine-through directory
+2018-08-23 12:59:13	@PulkoMandy	the packagefs knows it should be writable, so it lets the underlying FS handle it
+2018-08-23 13:00:37	janus2	data should be handled the same
+2018-08-23 13:01:13	janus2	find_path return that directory, someone didn't include that directory in the process
+2018-08-23 13:03:45	@humdinger	how do you make it shine-thru? rub a burger on it?
+2018-08-23 13:04:22	@PulkoMandy	we don't want it to be shine through
+2018-08-23 13:04:35	@PulkoMandy	this directory will be provided by packages if they need to
+2018-08-23 13:04:40	@PulkoMandy	otherwise it just doesn't exist
+2018-08-23 13:04:58	@PulkoMandy	if this is a problem for your app, use BPathFinder or find_path, which both allow to filter non-existing directories
+2018-08-23 13:07:58	janus2	it doesn't
+2018-08-23 13:09:36	janus2	there is another problem if the data is in the package when you mount the partition you cannot have your data available or I miss something
+2018-08-23 13:09:52		irc: disconnected from server
+2018-08-23 13:10:36	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 13:10:36	***	Buffer Playback...
+2018-08-23 13:10:36	@PulkoMandy	[13:10:30] yes, this is data contained in the packages only
+2018-08-23 13:10:36	***	Playback Complete.
+2018-08-23 13:10:37	@PulkoMandy	otherwise it would be in config/non-packaged/data
+2018-08-23 13:11:41	janus2	humdinger at this point we must use non-package
+2018-08-23 13:11:52	janus2	non-packaged
+2018-08-23 13:12:59	@humdinger	yes. or do it like some: misuse the ~/config/settings folder :)
+2018-08-23 13:14:03	janus2	almost all applications do that,,,
+2018-08-23 13:15:16	@PulkoMandy	you can use config/cache I think
+2018-08-23 13:15:40	@humdinger	I'm off for today to get some reading done.
+2018-08-23 13:15:47	@humdinger	see y'all tomorow
+2018-08-23 13:15:53	✴️	humdinger waves
+2018-08-23 13:15:55	⬅️	humdinger (~humdinger@dslb-094-216-062-187.094.216.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-23 13:16:13	janus2	it uses that but in other operating system the cache is not preserved
+2018-08-23 13:16:31	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-23 13:16:37	janus2	the content is the archive of the application
+2018-08-23 13:17:35	Vidrep	janus2: I believe BurnItNow uses the cache for iso creation, and the contents preserved after a reboot
+2018-08-23 13:18:13	Vidrep	Maybe look at the code there
+2018-08-23 13:18:49	⬅️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Read error: Connection reset by peer)
+2018-08-23 13:18:57	janus2	yes but the cache should be used only for data the application can recreate.
+2018-08-23 13:19:19	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-23 13:20:03	janus2	if you read the guideline of other os the cache is not backuped or installed and can be cleaned if the system is low on space
+2018-08-23 13:20:58	janus2	At the moment Haiku doesn't do anything with the cache
+2018-08-23 13:21:07	✴️	janus2 bye all
+2018-08-23 13:21:12	⬅️	janus2 (~janus2@82.84.142.161) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-23 13:36:42	⬅️	AlaskanEmily (~EmilyLol@2602:306:31c4:2820:683b:a7c0:42c2:103a) has quit (Ping timeout: 265 seconds)
+2018-08-23 13:48:00	➡️	ngc (~bernd@2001-4dd0-2030-1-c397-8ccd-14fe-1ad3.ipv6dyn.netcologne.de) has joined #haiku
+2018-08-23 13:50:25	ngc	Hello, after upgrading my haiku installation my atheros ar9285 wifi driver does not find the wifi networks anymore. I am wondering if that could be a regression with the recently updated wifi stack from freebsd 11.1.
+2018-08-23 13:51:35	ngc	I don't know the exact version I am coming from, but have not updated the installation for a few months before.
+2018-08-23 13:55:21	⬅️	tombhadAC (~root@x4e37f7a4.dyn.telefonica.de) has quit (Ping timeout: 260 seconds)
+2018-08-23 13:57:36	@Diver	ngc: check /system/packages/administrative folder
+2018-08-23 13:57:53	@Diver	it's most likely a regression
+2018-08-23 13:58:37	miqlas	ngc: have you tried to cold boot?
+2018-08-23 13:59:11	ngc	version before seems to be from may 25
+2018-08-23 13:59:23	ngc	I will try a cold reboot
+2018-08-23 14:00:09	⬅️	Guma (~Guma@35.128.60.54) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-08-23 14:02:17	ngc	cold boot sadly has not resolved the issue. is there a way to boot into the state before the upgrade to double check?
+2018-08-23 14:03:24	Vidrep	ngc: hit space bar during boot (before icons)
+2018-08-23 14:03:26	miqlas	hols space at boot
+2018-08-23 14:03:59	miqlas	space doesn't works well with some computers.
+2018-08-23 14:04:01	miqlas	test both
+2018-08-23 14:04:52	Vidrep	If you have Haiku BootManager installed, hit Shift+Enter
+2018-08-23 14:05:48		irc: disconnected from server
+2018-08-23 14:05:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 14:05:57	***	Buffer Playback...
+2018-08-23 14:05:57	@PulkoMandy	[14:05:55] or just hold shift, this should work
+2018-08-23 14:05:57	***	Playback Complete.
+2018-08-23 14:07:06	ngc	shift was the way to go
+2018-08-23 14:07:25	ngc	that's kind of a cool feature :-)
+2018-08-23 14:10:17	Vidrep	When you break things as often as we do, it's a VERY cool feature :)
+2018-08-23 14:10:50	Vidrep	Hopefully, soon, we won't be using this feature so often
+2018-08-23 14:12:27	Vidrep	PulkoMandy: I haven't tested yet, but does the new webkit fix the issue with not being able to attach documents in GitHub?
+2018-08-23 14:14:37	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-23 14:17:13		irc: disconnected from server
+2018-08-23 14:28:22	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 14:28:22	***	Buffer Playback...
+2018-08-23 14:28:22	ngc	[14:18:30] so my findings are that with the version from may the ar9285 works from power on until the first reboot. with the current version a sadly can not get it to work.
+2018-08-23 14:28:22	ngc	[14:19:34] the driver seems to be loaded but can not enumerate the wifi networks
+2018-08-23 14:28:22	ngc	[14:21:01] luckily the marvel yukon ethernet driver seems to work. in the past that was a little bit unstable.
+2018-08-23 14:28:22	***	Playback Complete.
+2018-08-23 14:32:46	➡️	Romanson (~Romanson@202.70.70.246) has joined #haiku
+2018-08-23 14:33:41	⬅️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has quit (Quit: Leaving)
+2018-08-23 14:48:01		irc: disconnected from server
+2018-08-23 14:49:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 15:02:17	➡️	swerner (~swerner@ipbcc2bd2a.dynamic.kabel-deutschland.de) has joined #haiku
+2018-08-23 15:06:41	⬅️	axeld (~Thunderbi@89.233.77.198) has quit (Quit: axeld)
+2018-08-23 15:09:20	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-23 15:09:20		Mode #haiku [+o tqh] by ChanServ
+2018-08-23 15:13:22	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 265 seconds)
+2018-08-23 15:15:44	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-23 15:16:13	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-23 15:16:36	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-23 15:20:12	⬅️	jrra (~jrra@jrra.zone) has quit (Quit: quit)
+2018-08-23 15:20:52	➡️	jrra (~jrra@jrra.zone) has joined #haiku
+2018-08-23 15:26:00	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-23 15:46:00	⬅️	gouchi (~gouchi@unaffiliated/gouchi) has quit (Remote host closed the connection)
+2018-08-23 15:50:49	⬅️	return0xe (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2018-08-23 16:03:53	⬅️	swerner (~swerner@ipbcc2bd2a.dynamic.kabel-deutschland.de) has quit
+2018-08-23 16:28:05	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 268 seconds)
+2018-08-23 16:38:37	⬅️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Quit: Page closed)
+2018-08-23 17:02:54	➡️	c-sanchez (~c-sanchez@186-88-59-168.genericrev.cantv.net) has joined #haiku
+2018-08-23 17:18:29	⬅️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Quit: Leaving)
+2018-08-23 17:18:53	⬅️	ngc (~bernd@2001-4dd0-2030-1-c397-8ccd-14fe-1ad3.ipv6dyn.netcologne.de) has quit (Quit: Konversation terminated!)
+2018-08-23 17:29:37	➡️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-23 17:33:34		irc: disconnected from server
+2018-08-23 17:33:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 17:35:25	⬅️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2018-08-23 17:53:55	➡️	Nit-00 (Nit-00@cm-84.208.136.53.getinternet.no) has joined #haiku
+2018-08-23 17:58:47	⬅️	Nit-00 (Nit-00@cm-84.208.136.53.getinternet.no) has quit (Quit: Unnux Isn�t A Triune O.S. -> https://medium.com/@email_46476/ynnyx-is-no-trinity-o-s-4e6d72140ba1)
+2018-08-23 17:59:45	⬅️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Ping timeout: 260 seconds)
+2018-08-23 18:07:19	@waddlesplash	we really don't need every single email from gerrit cced to haiku-commits
+2018-08-23 18:07:24	@waddlesplash	or ... maybe we do?
+2018-08-23 18:07:31	@waddlesplash	at any rate it throws a ton of other emails in the cc line
+2018-08-23 18:08:12	⬅️	DHowett (~dustin@velocitylimitless/awesome/ultraviolet/DHowett) has quit (Ping timeout: 255 seconds)
+2018-08-23 18:08:12	@waddlesplash	PulkoMandy: ^^ can you take a look?
+2018-08-23 18:26:29		irc: disconnected from server
+2018-08-23 18:29:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 19:20:57	⬅️	waddlesplash (sid58358@gateway/web/irccloud.com/x-ckknqkqabjkqgper) has quit
+2018-08-23 19:21:03	➡️	rennj (~rennj@174-22-174-51.clsp.qwest.net) has joined #haiku
+2018-08-23 19:21:40	➡️	waddlesplash (sid58358@gateway/web/irccloud.com/x-lmtevqqlcsagprfy) has joined #haiku
+2018-08-23 19:21:40		Mode #haiku [+o waddlesplash] by ChanServ
+2018-08-23 19:23:51	⬅️	Dariost (~Dariost@151.30.159.170) has quit (Remote host closed the connection)
+2018-08-23 19:25:19	➡️	DCatt (~DCatt@pool-71-253-159-3.rcmdva.east.verizon.net) has joined #haiku
+2018-08-23 19:30:52	⬅️	Romanson (~Romanson@202.70.70.246) has quit (Read error: Connection reset by peer)
+2018-08-23 19:37:11	➡️	Romanson (~Romanson@113.199.210.182) has joined #haiku
+2018-08-23 19:38:57	⬅️	DCatt (~DCatt@pool-71-253-159-3.rcmdva.east.verizon.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-23 19:40:28	⬅️	c-sanchez (~c-sanchez@186-88-59-168.genericrev.cantv.net) has quit (Ping timeout: 268 seconds)
+2018-08-23 19:46:21	⬅️	e1z0 (~null@netlinux/founder/e1z0) has quit (*.net *.split)
+2018-08-23 19:46:53	⬅️	miqlas (~Haiku@80.211.224.29) has quit (*.net *.split)
+2018-08-23 19:46:53	⬅️	duo__ (~duo@131.ip-149-202-52.eu) has quit (*.net *.split)
+2018-08-23 19:46:53	⬅️	ksx4system (~ksx4syste@aura.mgst.eu) has quit (*.net *.split)
+2018-08-23 19:48:54	⬅️	Romanson (~Romanson@113.199.210.182) has quit (Ping timeout: 240 seconds)
+2018-08-23 19:49:28	➡️	Romanson (~Romanson@113.199.210.182) has joined #haiku
+2018-08-23 19:49:56	➡️	AlienSoldier (c05fc920@gateway/web/freenode/ip.192.95.201.32) has joined #haiku
+2018-08-23 19:50:36	AlienSoldier	what can cause vision to not being able to connect to freenode, i am using the web interface right now
+2018-08-23 19:51:16	AlienSoldier	here is what i get:
+2018-08-23 19:51:20	AlienSoldier	Vision 0.10.3 built on Aug 21 2018 18:09:21 This agent goes by the name of Smith... err Freenode Have fun! [@] Attempting to connect (attempt 1 of 47) [@] Attempting a connection to weber.freenode.net:6667… [@] Connection open, waiting for reply from server [@] Could not establish a connection to the server. Sorry.
+2018-08-23 19:51:50	➡️	swift110 (~swift110@unaffiliated/swift110) has joined #haiku
+2018-08-23 19:58:15	⬅️	AlienSoldier (c05fc920@gateway/web/freenode/ip.192.95.201.32) has quit (Quit: Page closed)
+2018-08-23 19:58:38	➡️	AlienSoldier (AlienSoldi@192.95.201.32) has joined #haiku
+2018-08-23 19:59:11	AlienSoldier	finaly loged
+2018-08-23 19:59:17	AlienSoldier	logged
+2018-08-23 20:00:12	⬅️	AlienSoldier (AlienSoldi@192.95.201.32) has quit (Client Quit)
+2018-08-23 20:00:27	➡️	AlienSoldier (AlienSoldi@192.95.201.32) has joined #haiku
+2018-08-23 20:00:37	⬅️	Romanson (~Romanson@113.199.210.182) has quit (Ping timeout: 268 seconds)
+2018-08-23 20:01:33	AlienSoldier	somehow it seem that the port changed in the vision update
+2018-08-23 20:01:41	AlienSoldier	i guess this was it
+2018-08-23 20:04:21	AlienSoldier	medai player seem to have a regression, crash on closing if a video is in it, and can also crash without closing it but dropping another video in it.
+2018-08-23 20:04:26	AlienSoldier	*media
+2018-08-23 20:05:15	@waddlesplash	AlienSoldier: report a bug pls
+2018-08-23 20:06:13	AlienSoldier	does not crash on exit on all video
+2018-08-23 20:06:25	AlienSoldier	yes, i should do a report
+2018-08-23 20:07:27	AlienSoldier	currently doing a bunch of things to see if i don<t notice something else
+2018-08-23 20:08:47	AlienSoldier	seem fine with mp3
+2018-08-23 20:15:52		irc: disconnected from server
+2018-08-23 20:17:02	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 20:19:15	➡️	Romanson (~Romanson@113.199.215.78) has joined #haiku
+2018-08-23 20:24:34		irc: disconnected from server
+2018-08-23 20:24:44	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 20:28:42	⬅️	echelog (~echelog@108.61.103.42) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	gbonvehi (~gbonvehi@unaffiliated/gbonvehi) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	dopplergange (dopplergan@bitcoinshell.mooo.com) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	yosafbridge (~yosafbrid@68.ip-149-56-14.net) has quit (*.net *.split)
+2018-08-23 20:29:58	➡️	echelog (~echelog@108.61.103.42) has joined #haiku
+2018-08-23 20:29:58	➡️	gbonvehi (~gbonvehi@unaffiliated/gbonvehi) has joined #haiku
+2018-08-23 20:29:58	➡️	dopplergange (dopplergan@bitcoinshell.mooo.com) has joined #haiku
+2018-08-23 20:29:58	➡️	yosafbridge (~yosafbrid@68.ip-149-56-14.net) has joined #haiku
+2018-08-23 20:29:58		Mode #haiku [+v echelog] by verne.freenode.net
+2018-08-23 20:30:38	AlienSoldier	waddlesplash done https://dev.haiku-os.org/ticket/14395
+2018-08-23 20:30:59	⬅️	dopplergange (dopplergan@bitcoinshell.mooo.com) has quit (Max SendQ exceeded)
+2018-08-23 20:31:09	➡️	dopplergange (dopplergan@bitcoinshell.mooo.com) has joined #haiku
+2018-08-23 20:31:35	AlienSoldier	Nice the Vision scroller when we type work
+2018-08-23 20:31:55	⬅️	kevans91 (~kevans91@freebsd/developer/kevans) has quit (*.net *.split)
+2018-08-23 20:31:57	⬅️	ryaxnb21 (~ryaxnb@c-67-164-98-226.hsd1.ca.comcast.net) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	nekron (~nekron@noordsee.de) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	Kernel86 (~Kernel86@cpe-69-23-104-66.new.res.rr.com) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	Scarecrow (~Scarecrow@210-1-218-92-cpe.spintel.net.au) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	nohit (~nohit__@62-113-164-93.bb.dnainternet.fi) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	Bryanstein (~Bryanstei@shellium/admin/bryanstein) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	geist (~geist@tkgeisel.com) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	pebble` (~pebble@unaffiliated/espiral) has quit (*.net *.split)
+2018-08-23 20:32:06	AlienSoldier	was not only a problem with Vision
+2018-08-23 20:33:10	⬅️	Mazon (~Mazon@37.205.127.168) has quit (Ping timeout: 260 seconds)
+2018-08-23 20:33:38	AlienSoldier	Typing this iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii in the text box look weird, the kerning seem variable
+2018-08-23 20:35:19	AlienSoldier	some "i" are larger than other, so font seem unstable
+2018-08-23 20:35:19	AlienSoldier	same with l
+2018-08-23 20:36:22	AlienSoldier	Something is bogus, not all character are the same each time they are typed
+2018-08-23 20:39:28	⬅️	Romanson (~Romanson@113.199.215.78) has quit (Ping timeout: 240 seconds)
+2018-08-23 20:41:33	AlienSoldier	found the setting that is causing this "glyph hinting" need to be at ON, monspaced or Off cause the problemo
+2018-08-23 20:41:52	AlienSoldier	and now my cursor in vision got borked :)
+2018-08-23 20:42:12	AlienSoldier	test test
+2018-08-23 20:42:32	AlienSoldier	now it is back ok, seem doing enter solved it
+2018-08-23 20:43:17	AlienSoldier	test ssjsjss
+2018-08-23 20:43:27	AlienSoldier	jjhhihuiuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunnnnn
+2018-08-23 20:45:03	AlienSoldier	when i press a character and stick the key down, the distance between the last typed and the position of the cursor increase!
+2018-08-23 20:45:14	AlienSoldier	both get out of phase
+2018-08-23 20:46:18	AlienSoldier	Does not do it on monospaced or off
+2018-08-23 20:46:51	AlienSoldier	grayscale or LCD does not make a difference
+2018-08-23 20:54:44	AlienSoldier	So it i a choice between "bar code" looking "l" or having the curson get out of phase with the text.  Seem another ticket is comming.
+2018-08-23 21:04:24	➡️	liuyb (~liuyb@222.131.156.209) has joined #haiku
+2018-08-23 21:05:47	⬅️	Ptrus (Vision@67.219.239.116) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has quit (*.net *.split)
+2018-08-23 21:05:49	⬅️	CompanionCube (~samis@unaffiliated/drmushroom) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	Malmis (~malmis@h-190-139.A486.priv.bahnhof.se) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	leorize (~leorize@2001:ee0:4101:bc35::7be) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	AD_MOS2 (~JohnN@2a02:c7f:b264:e400:5904:4caa:c2d9:d433) has quit (*.net *.split)
+2018-08-23 21:05:57	⬅️	Adcock (adcockmatr@gateway/shell/matrix.org/x-gakwhluceywmdrmh) has quit (*.net *.split)
+2018-08-23 21:05:57	⬅️	eschatologist (~chanson@c-73-202-69-90.hsd1.ca.comcast.net) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	puck (~puck@puckipedia.com) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	s-mutin (~s-mutin@85.234.114.134) has quit (*.net *.split)
+2018-08-23 21:06:00	⬅️	trn (jhj@prone.ws) has quit (*.net *.split)
+2018-08-23 21:06:27	IIsi50MHz	That sounds familiar.
+2018-08-23 21:06:32	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-23 21:06:32	➡️	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has joined #haiku
+2018-08-23 21:06:32	➡️	CompanionCube (~samis@unaffiliated/drmushroom) has joined #haiku
+2018-08-23 21:06:32	➡️	Malmis (~malmis@h-190-139.A486.priv.bahnhof.se) has joined #haiku
+2018-08-23 21:06:32	➡️	leorize (~leorize@2001:ee0:4101:bc35::7be) has joined #haiku
+2018-08-23 21:06:32	➡️	AD_MOS2 (~JohnN@2a02:c7f:b264:e400:5904:4caa:c2d9:d433) has joined #haiku
+2018-08-23 21:06:38	✴️	IIsi50MHz boots an old Haiku 
+2018-08-23 21:06:53	➡️	puckipedia (~puck@puckipedia.com) has joined #haiku
+2018-08-23 21:06:54		Mode #haiku [+o puckipedia] by ChanServ
+2018-08-23 21:07:54	➡️	Adcock (adcockmatr@gateway/shell/matrix.org/x-gakwhluceywmdrmh) has joined #haiku
+2018-08-23 21:07:54	➡️	eschatologist (~chanson@c-73-202-69-90.hsd1.ca.comcast.net) has joined #haiku
+2018-08-23 21:07:54	➡️	s-mutin (~s-mutin@85.234.114.134) has joined #haiku
+2018-08-23 21:07:54	➡️	trn (jhj@prone.ws) has joined #haiku
+2018-08-23 21:08:15	AlienSoldier	i don<t kno if this as a regression, just noticed it
+2018-08-23 21:08:30	AlienSoldier	*this is
+2018-08-23 21:09:37	IIsi50MHz	Glyph:on. Antialias:grey.
+2018-08-23 21:09:45	✴️	IIsi50MHz checks Vision
+2018-08-23 21:10:19	AlienSoldier	does it in any text entry box here
+2018-08-23 21:14:31	IIsi50MHz	Works with these settings. LCD subpixel causes cursor position mismatch. Glyph off with greyscale causes irregular spacing.
+2018-08-23 21:14:55	IIsi50MHz	hrev51146
+2018-08-23 21:15:46	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-23 21:15:46	IIsi50MHz	So...seems not new?
+2018-08-23 21:16:14	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-23 21:16:16	IIsi50MHz	I actually don't remember any time when it worked.
+2018-08-23 21:16:31	AlienSoldier	like i said i don't think it is a regresstion i would have to dig if a ticket already exist
+2018-08-23 21:17:18	AlienSoldier	i put that into polishing bug
+2018-08-23 21:26:41	✴️	IIsi50MHz plugs the other router in, watches the old hrev connect to #haiku-forwarding
+2018-08-23 21:27:04	IIsi50MHz	Lot more people there than I expected! 
+2018-08-23 21:28:49	IIsi50MHz	Maybe a Services reset.
+2018-08-23 21:28:50	AlienSoldier	i think a detailed article shoul be made on the haiku website to explain how to get in #haiku
+2018-08-23 21:29:14	IIsi50MHz	It's on the forum. |-:
+2018-08-23 21:30:31	IIsi50MHz	https://discuss.haiku-os.org/t/anti-spam-measure-for-irc-haiku/7216
+2018-08-23 21:30:52		irc: disconnected from server
+2018-08-23 21:39:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 21:39:19	***	Buffer Playback...
+2018-08-23 21:39:19	AlienSoldier	[21:31:23] i think once we get in beta this place will fill up
+2018-08-23 21:39:19	***	Playback Complete.
+2018-08-23 21:41:59		irc: disconnected from server
+2018-08-23 21:46:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 21:51:38		irc: disconnected from server
+2018-08-23 21:51:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 21:59:07	AlienSoldier	ho ho, progress with webkit, i have a page that was not displaying the login at one point
+2018-08-23 21:59:27	⬅️	rennj (~rennj@174-22-174-51.clsp.qwest.net) has quit (Ping timeout: 260 seconds)
+2018-08-23 22:03:54	rydare	nice
+2018-08-23 22:03:58	rydare	did you update the version
+2018-08-23 22:16:52	AlienSoldier	rydare i updated just today to 1.6.6
+2018-08-23 22:19:03	AlienSoldier	youtube still play better in otter that said
+2018-08-23 22:19:26	rydare	nice AlienSoldier 
+2018-08-23 22:19:38	rydare	do you run Haiku on bare metal or virtualize it
+2018-08-23 22:21:59		irc: disconnected from server
+2018-08-23 22:22:35	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 22:37:12	AlienSoldier	bare metal
+2018-08-23 22:43:54	rydare	oh nice
+2018-08-23 22:43:55		irc: disconnected from server
+2018-08-23 22:44:17	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 22:45:47		irc: disconnected from server
+2018-08-23 22:46:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 22:59:35	➡️	AlaskanEmily (~EmilyLol@2602:306:31c4:2820:740d:1d07:7b57:affd) has joined #haiku
+2018-08-23 23:01:01	➡️	rennj (~rennj@174-22-174-51.clsp.qwest.net) has joined #haiku
+2018-08-23 23:08:58		irc: disconnected from server
+2018-08-23 23:11:46	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-23 23:15:53	rydare	OK I HAVe it installed in virtualbox
+2018-08-23 23:15:56	rydare	what now lol
+2018-08-23 23:16:20	AlienSoldier	fun? what else :)
+2018-08-23 23:25:39	⬅️	leorize (~leorize@2001:ee0:4101:bc35::7be) has quit (Ping timeout: 252 seconds)
+2018-08-23 23:26:34	➡️	miqlas (~Haiku@80.211.224.29) has joined #haiku
+2018-08-23 23:34:45	➡️	Scarecrow (~Scarecrow@210-1-218-92-cpe.spintel.net.au) has joined #haiku
+2018-08-23 23:48:32		irc: disconnected from server
+2018-08-23 23:55:18	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 00:00:10	➡️	OmniMancer (~Paul@101.100.137.239) has joined #haiku
+2018-08-24 00:14:42	⬅️	AlienSoldier (AlienSoldi@192.95.201.32) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-24 00:28:20	➡️	axeld (~Thunderbi@dyndsl-082-149-179-214.ewe-ip-backbone.de) has joined #haiku
+2018-08-24 00:28:21		Mode #haiku [+o axeld] by ChanServ
+2018-08-24 00:29:24	➡️	stippi (~Thunderbi@p4FE6A1EF.dip0.t-ipconnect.de) has joined #haiku
+2018-08-24 00:29:24		Mode #haiku [+o stippi] by ChanServ
+2018-08-24 00:57:25	➡️	nohit (~nohit__@62-113-164-93.bb.dnainternet.fi) has joined #haiku
+2018-08-24 01:06:33	➡️	ksx4system (~ksx4syste@aura.mgst.eu) has joined #haiku
+2018-08-24 01:07:02	➡️	leszek (~leszek@p200300C65BD29E00AE9C354F1B6FFBDE.dip0.t-ipconnect.de) has joined #haiku
+2018-08-24 01:13:27	➡️	KrChaos (764681b9@gateway/web/freenode/ip.118.70.129.185) has joined #haiku
+2018-08-24 01:15:35	➡️	ugen (uid218792@gateway/web/irccloud.com/x-mhlsiaickhccrhno) has joined #haiku
+2018-08-24 01:22:49	➡️	GeneralDuke (~Thunderbi@pdi29.internetdsl.tpnet.pl) has joined #haiku
+2018-08-24 01:46:57	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-24 01:52:06	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-24 01:52:06		Mode #haiku [+o tqh] by ChanServ
+2018-08-24 02:21:14	➡️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-24 02:57:54	➡️	roiredX (~vision@114.red-79-148-231.staticip.rima-tde.net) has joined #haiku
+2018-08-24 02:58:10	roiredX	good day
+2018-08-24 03:00:36	⬅️	leorize (~leorize@118.70.233.217) has quit (Ping timeout: 268 seconds)
+2018-08-24 03:01:32	⬅️	KrChaos (764681b9@gateway/web/freenode/ip.118.70.129.185) has quit (Ping timeout: 252 seconds)
+2018-08-24 03:03:04	⬅️	roiredX (~vision@114.red-79-148-231.staticip.rima-tde.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-24 03:15:43	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-24 03:15:50	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-24 03:46:35	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Quit: Ça va couper chérie…)
+2018-08-24 03:50:01	⬅️	AD_MOS2 (~JohnN@2a02:c7f:b264:e400:5904:4caa:c2d9:d433) has quit (Ping timeout: 252 seconds)
+2018-08-24 03:56:15	⬅️	ugen (uid218792@gateway/web/irccloud.com/x-mhlsiaickhccrhno) has quit (Quit: Connection closed for inactivity)
+2018-08-24 04:08:29	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-24 04:43:55	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-24 05:00:44	⬅️	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 252 seconds)
+2018-08-24 05:34:09	⬅️	liuyb (~liuyb@222.131.156.209) has quit (Ping timeout: 268 seconds)
+2018-08-24 05:45:00	➡️	Dariost (~Dariost@151.20.145.216) has joined #haiku
+2018-08-24 06:03:53	➡️	leorize (~leorize@2001:ee0:4101:bc35::2ec) has joined #haiku
+2018-08-24 06:21:58	➡️	lorglas (~lorglas@pD9E1D682.dip0.t-ipconnect.de) has joined #haiku
+2018-08-24 06:26:16	lorglas	hi, if i want to run apache from haikudepot, which user must be in the httpd.conf, because i get an error AH00543 bad user name 
+2018-08-24 06:26:39	lorglas	i test root / user / www-data nothing is working
+2018-08-24 06:28:47	➡️	Romanson (~Romanson@113.199.159.182) has joined #haiku
+2018-08-24 06:29:46	@axeld	lorglas: I'd  guess it must be a user that actually exists on your system
+2018-08-24 06:30:30	@axeld	"$ cat /etc/passwd" in a Terminal should list them
+2018-08-24 06:38:43	lorglas	ok, i use as User user and Group x, but i get the next error AH00526. Do you have a working config file, so i can see what is wrong 
+2018-08-24 06:39:11	➡️	humdinger (~humdinger@dslb-188-110-175-135.188.110.pools.vodafone-ip.de) has joined #haiku
+2018-08-24 06:39:11		Mode #haiku [+o humdinger] by ChanServ
+2018-08-24 06:43:37	⬅️	Romanson (~Romanson@113.199.159.182) has quit (Ping timeout: 272 seconds)
+2018-08-24 06:45:15	➡️	Romanson (~Romanson@103.95.16.25) has joined #haiku
+2018-08-24 06:49:36	IIsi50MHz	Which Apache version is this?
+2018-08-24 06:51:34	lorglas	apache2 
+2018-08-24 06:51:35	lorglas	 Server version: Apache/2.4.34 (Unix)
+2018-08-24 06:51:35	lorglas	 Server built:   Jul 19 2018 22:10:58
+2018-08-24 06:52:37	IIsi50MHz	Are you using "require"? 2.2 directives won't work.
+2018-08-24 06:54:14	lorglas	i don't unsterstand, is a clean installation on haiku 64bit
+2018-08-24 07:00:57	IIsi50MHz	What's the whole error message? ^_^;
+2018-08-24 07:01:41	lorglas	AH00526: Syntax error on line 164 of /packages/apache-2.4.34-1/.settings/httpd.conf: Error:\tApache has not been designed to serve pages while\n\trunning as root.  There are known race conditions that\n\twill allow any local user to read any file on the system.\n\tIf you still desire to serve pages as root then\n\tadd -DBIG_SECURITY_HOLE to the CFLAGS env variable\n\tand then rebuild the server.\n\tIt is strongly suggested that you
+2018-08-24 07:01:41	lorglas	 instead modify the User\n\tdirective in your httpd.conf file to list a non-root\n\tuser.\n
+2018-08-24 07:02:07	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-24 07:02:12		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-24 07:02:49	✴️	IIsi50MHz ponders
+2018-08-24 07:07:24	leorize	create a new user with useradd
+2018-08-24 07:07:41	leorize	then specify it in apache configuration
+2018-08-24 07:12:59	IIsi50MHz	That was my first thought, then I considered that I know almost nothing.
+2018-08-24 07:13:16	✴️	IIsi50MHz bows to leorize's wisdom 
+2018-08-24 07:14:09	leorize	I wonder why it wasn't done automatically :/
+2018-08-24 07:14:26	leorize	lorglas: please file an issue on HaikuPorts at https://github.com/haikuports/haikuports
+2018-08-24 07:17:41	lorglas	ok, next error : [Fri Aug 24 15:16:55.232715 2018] [core:emerg] [pid 2183:tid 2099870397568] (70023)This function has not been implemented on this platform: AH00023: Couldn't create the mpm-accept mutex  (70023)This function has not been implemented on this platform: could not create accept mutex AH00015: Unable to open logs
+2018-08-24 07:27:25	➡️	swerner (~swerner@ipbcc2bd2a.dynamic.kabel-deutschland.de) has joined #haiku
+2018-08-24 07:35:43	leorize	lorglas: Please file all bugs you've found on HaikuPorts issue tracker, linked above
+2018-08-24 07:41:44	lorglas	i do so
+2018-08-24 08:02:21	⬅️	swerner (~swerner@ipbcc2bd2a.dynamic.kabel-deutschland.de) has quit
+2018-08-24 08:03:00	➡️	ClaudioM (~ClaudioM@168.221.158.55) has joined #haiku
+2018-08-24 08:11:25	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-24 08:12:23	➡️	Nach0z (~nach0z@unaffiliated/nach0z) has joined #haiku
+2018-08-24 08:17:03	⬅️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Remote host closed the connection)
+2018-08-24 08:17:33	➡️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-24 08:23:42	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-24 08:33:51	⬅️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has quit (Ping timeout: 244 seconds)
+2018-08-24 08:34:56	⬅️	Dariost (~Dariost@151.20.145.216) has quit (Quit: Dariost)
+2018-08-24 08:41:16	leorize	lorglas: thanks for reporting! for now can you try lighttpd?
+2018-08-24 08:50:55	⬅️	Romanson (~Romanson@103.95.16.25) has quit (Ping timeout: 272 seconds)
+2018-08-24 08:52:28	➡️	Romanson (~Romanson@113.199.159.182) has joined #haiku
+2018-08-24 08:56:45	➡️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has joined #haiku
+2018-08-24 08:56:53	Vidrep	Good morning
+2018-08-24 09:00:46	⬅️	GeneralDuke (~Thunderbi@pdi29.internetdsl.tpnet.pl) has quit (Quit: GeneralDuke)
+2018-08-24 09:09:45	➡️	ugen (uid218792@gateway/web/irccloud.com/x-gjbedvysvnasiwbq) has joined #haiku
+2018-08-24 09:14:51	➡️	Dariost (~Dariost@151.20.145.216) has joined #haiku
+2018-08-24 09:16:24	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-24 09:18:42	Vidrep	humdinger: shouldn't this be obsoleted with a new page on pgkgman and softwareupdater?
+2018-08-24 09:18:48	Vidrep	https://www.haiku-os.org/guides/daily-tasks/installoptionalpackage
+2018-08-24 09:21:24	Vidrep	Serial debugging link is dead on this page: https://www.haiku-os.org/guides/troubleshooting
+2018-08-24 09:21:50	Vidrep	https://www.haiku-os.org/guides/serial
+2018-08-24 09:24:42	Vidrep	This page still referencing gcc4: https://www.haiku-os.org/guides/building/configure
+2018-08-24 09:26:06	leorize	make PR! :P
+2018-08-24 09:26:14	leorize	https://github.com/haiku/website
+2018-08-24 09:29:56	@humdinger	Vidrep: I'm on it
+2018-08-24 09:30:59	@humdinger	the page on optional-packages isn't referenced anywhere. not sure if I should just delete it, or if it should lie dormant for archeological reasons.
+2018-08-24 09:33:40	⬅️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Ping timeout: 252 seconds)
+2018-08-24 09:34:39	@PulkoMandy	humdinger: if we keep it, at least add a warning that it is obsolete?
+2018-08-24 09:35:00	@humdinger	just did exatly that :)
+2018-08-24 09:36:24	Scarecrow	any particular reason dd'ing an iso to a flash drive isn't working?
+2018-08-24 09:36:37	Scarecrow	dd: error writing /dev/disk/usb/0/0/raw: initialization failed
+2018-08-24 09:37:33	@PulkoMandy	hardware or driver problems
+2018-08-24 09:37:36	@PulkoMandy	check your syslog
+2018-08-24 09:37:44	Scarecrow	oh that's a good sign
+2018-08-24 09:38:42	➡️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has joined #haiku
+2018-08-24 09:39:04	➡️	AD_MOS (~JohnN@2a02:c7f:b264:e400:56b:cfe5:497e:b91b) has joined #haiku
+2018-08-24 09:42:21	➡️	roiredX (~Vision@52.165.117.91.dynamic.reverse-mundo-r.com) has joined #haiku
+2018-08-24 09:42:38	roiredX	good day
+2018-08-24 09:44:12	⬅️	Romanson (~Romanson@113.199.159.182) has quit (Ping timeout: 252 seconds)
+2018-08-24 09:45:21	@humdinger	hullo
+2018-08-24 09:47:27	Vidrep	humdinger: did the instructions for serila debugging get relocated somewhere?
+2018-08-24 09:47:34	Vidrep	*serial
+2018-08-24 09:47:48	@humdinger	it's in the troubleshooting subfolder
+2018-08-24 09:48:10	@humdinger	link should work now
+2018-08-24 09:48:12	roiredX	is there any fortran compiler available?
+2018-08-24 09:48:31	roiredX	this afternoon is 100% Haiku devoted
+2018-08-24 09:49:26	Vidrep	The first link works now, but the second one at the bottom under "reporting" is still dead
+2018-08-24 09:49:44	@humdinger	grr... I missed that one...
+2018-08-24 09:50:19	Vidrep	It seems redundant
+2018-08-24 09:50:43	Vidrep	Two "Reporting" headers with the same link?
+2018-08-24 09:53:38	@humdinger	Every item on that page has three sub-items: the problem, mitigation and reporting. so it's OK I think.
+2018-08-24 09:54:36	leorize	roiredX: we have gfortran I think
+2018-08-24 09:54:42	leorize	try pkgman install cmd:gfortran
+2018-08-24 09:54:56	roiredX	yes... i did
+2018-08-24 09:54:57	roiredX	;)
+2018-08-24 09:55:08	roiredX	pkgman is nice
+2018-08-24 09:55:17	roiredX	though I am more used to apt
+2018-08-24 09:55:58	roiredX	:D
+2018-08-24 09:56:47	@PulkoMandy	apt doesn't handle cmd: and the like. What were they thinking? And it's the third attempt at improving the package CLI at Debian :/
+2018-08-24 09:57:01	➡️	KrChaos (defe12a0@gateway/web/freenode/ip.222.254.18.160) has joined #haiku
+2018-08-24 09:57:02	roiredX	XD
+2018-08-24 09:57:38	roiredX	well, actually I find pkgman easy, though there is no manpage
+2018-08-24 09:57:44	roiredX	;)
+2018-08-24 09:58:02	leorize	Arch's pacman decided to solve everything with -F :p
+2018-08-24 09:59:49	roiredX	when I used Gentoo back in the days I "loved" the "emerge" thing
+2018-08-24 09:59:57	roiredX	emerge this and that
+2018-08-24 09:59:59	roiredX	XD
+2018-08-24 10:00:08	@PulkoMandy	we don't do much manpages. Most commands have a --help however
+2018-08-24 10:00:29	roiredX	well, I never tried that with pkgman XD
+2018-08-24 10:00:37	roiredX	is the heat
+2018-08-24 10:00:47	@PulkoMandy	I find that the Terminal is an unsuitable place to read docs. I would prefer "man foo" to open a web browser (as "git help" does for example)
+2018-08-24 10:01:13	@PulkoMandy	well, I'm used to --help and often on Linux I face an unhelpful result
+2018-08-24 10:01:20	roiredX	heat breaks my guitars' strings as well as my braincells
+2018-08-24 10:01:23	roiredX	:D
+2018-08-24 10:01:27	@PulkoMandy	like, a list of 1 letter flags I can enable, but no description of what they do
+2018-08-24 10:01:36	roiredX	agree on that one
+2018-08-24 10:01:48	➡️	Romanson (~Romanson@103.95.16.74) has joined #haiku
+2018-08-24 10:01:58	roiredX	many times there is not a 1 letter flag that does what you need to do
+2018-08-24 10:02:23	Vidrep	PulkoMandy: were the libroot_debug logs of any use to you (web+)?
+2018-08-24 10:02:55	@PulkoMandy	maybe, I did look while at work but didn't have time to dig into it yet
+2018-08-24 10:02:58	@PulkoMandy	after dinner :)
+2018-08-24 10:03:12	Vidrep	Just curious
+2018-08-24 10:03:24	@PulkoMandy	quite possibly I fixed an earlier crash and now it crashes a few lines later in a different way…
+2018-08-24 10:03:35	Vidrep	I really haven't had time to check if any other sites cause issues
+2018-08-24 10:03:57	leorize	I think one letter flags are designed for a "consistent" feel between CLI apps
+2018-08-24 10:04:04	Vidrep	Will review my open tickets with new webkit this weekend
+2018-08-24 10:04:10	leorize	it worked great until that flag don't do what you expect :)
+2018-08-24 10:05:23	⬅️	humdinger (~humdinger@dslb-188-110-175-135.188.110.pools.vodafone-ip.de) has quit (Read error: Connection reset by peer)
+2018-08-24 10:07:37	➡️	humdinger- (~humdinger@dslb-188-110-175-135.188.110.pools.vodafone-ip.de) has joined #haiku
+2018-08-24 10:07:38		Mode #haiku [+o humdinger-] by ChanServ
+2018-08-24 10:08:38	@humdinger-	PulkoMandy: blinky patch updated. thanks for the handholding...
+2018-08-24 10:10:17	@humdinger-	ah. had to hit "reply"... oh, gerrit... :)
+2018-08-24 10:13:07	➡️	maxxcan (~maxxcan@178.156.59.66) has joined #haiku
+2018-08-24 10:13:34	Vidrep	humdinger-: I have some suggestions for this page - will email you later https://www.haiku-os.org/guides/troubleshooting/serial
+2018-08-24 10:14:51	@humdinger-	Vidrep: sure you don't wanna learn to PR? :)
+2018-08-24 10:14:59	⬅️	maxxcan (~maxxcan@178.156.59.66) has left #haiku
+2018-08-24 10:16:43	@humdinger-	we can guide you thru it.... after dinner.
+2018-08-24 10:16:47	✴️	humdinger- is idle: dinner
+2018-08-24 10:16:57	➡️	maxxcan (~Thunderbi@178.156.59.66) has joined #haiku
+2018-08-24 10:18:13	⬅️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Ping timeout: 252 seconds)
+2018-08-24 10:18:39	➡️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has joined #haiku
+2018-08-24 10:19:25	Vidrep	qwebirc is a little flakey today....lots of disconnects
+2018-08-24 10:19:37	⬅️	maxxcan (~Thunderbi@178.156.59.66) has left #haiku
+2018-08-24 10:19:41	Vidrep	humdinger is happy
+2018-08-24 10:21:27	Vidrep	Tried to subscribe to the mailing list today, to let DCatt know I'l in on QA if needed
+2018-08-24 10:21:49	Vidrep	Some issue there with authentication
+2018-08-24 10:21:59	Vidrep	Try again from home
+2018-08-24 10:33:40	⬅️	leszek (~leszek@p200300C65BD29E00AE9C354F1B6FFBDE.dip0.t-ipconnect.de) has quit (Quit: WeeChat 1.6)
+2018-08-24 10:34:57	➡️	Skipp_OSX (~textual@67.129.32.54) has joined #haiku
+2018-08-24 10:34:57		Mode #haiku [+o Skipp_OSX] by ChanServ
+2018-08-24 10:45:35	➡️	AlienSoldier (AlienSoldi@192.95.201.32) has joined #haiku
+2018-08-24 10:49:15	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 268 seconds)
+2018-08-24 10:57:53	⬅️	lorglas (~lorglas@pD9E1D682.dip0.t-ipconnect.de) has quit (Ping timeout: 268 seconds)
+2018-08-24 11:01:34	Scarecrow	can I use bitmapped fonts?
+2018-08-24 11:02:20	roiredX	why would you want to use bitmapped fonts?
+2018-08-24 11:02:34	Scarecrow	I like SGI Screen 9px for terminals
+2018-08-24 11:02:57	roiredX	I presume you can search for a freetype or truetype or opentype equivalent
+2018-08-24 11:03:11	Scarecrow	on a tiny low-res screen a bitmapped font is a lot nicer than a scalable one
+2018-08-24 11:03:27	roiredX	I see... :)
+2018-08-24 11:03:46	Scarecrow	this laptop has a 10" 1024x576 screen
+2018-08-24 11:03:52	roiredX	wow
+2018-08-24 11:04:02	roiredX	that is tiny
+2018-08-24 11:04:10	Scarecrow	yeah man it's also half as powerful as the desktop I was using in 2005
+2018-08-24 11:04:20	Scarecrow	it's terrible
+2018-08-24 11:04:22	Scarecrow	I love it
+2018-08-24 11:04:27	roiredX	XD
+2018-08-24 11:04:48	Scarecrow	I'll try terminus_ttf
+2018-08-24 11:05:44	Scarecrow	does not work as well as bitmapped fonts at small sizes
+2018-08-24 11:05:58	Scarecrow	skinny and blurred
+2018-08-24 11:06:14	roiredX	you could try some sort of bitmapped ttf
+2018-08-24 11:06:20	roiredX	there are some available
+2018-08-24 11:06:27	roiredX	if i recall correctly
+2018-08-24 11:07:31	roiredX	for terminal I also like larabiefont
+2018-08-24 11:07:42	roiredX	but that is not what i meant before
+2018-08-24 11:08:21	Scarecrow	I'll see if this TTF conversion works
+2018-08-24 11:09:08	Scarecrow	https://njr.sabi.net/2015/11/01/sgi-screen-fonts-converted-for-os-x/
+2018-08-24 11:09:45	roiredX	proggyfonts.net
+2018-08-24 11:09:58	roiredX	you can get them bitmapped and ttf
+2018-08-24 11:10:03	roiredX	maybe is what you need
+2018-08-24 11:10:55	Scarecrow	Interesting, I'll take a look
+2018-08-24 11:20:37	⬅️	AlienSoldier (AlienSoldi@192.95.201.32) has quit (Ping timeout: 252 seconds)
+2018-08-24 11:20:42		irc: disconnected from server
+2018-08-24 12:01:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 12:01:34	***	Buffer Playback...
+2018-08-24 12:01:34	IIsi50MHz	[11:29:21] Terminus? I am using something else on Haiku.
+2018-08-24 12:01:34	✴️	IIsi50MHz [11:29:29] tries to remember
+2018-08-24 12:01:34	IIsi50MHz	[11:30:34] Consolas? No, maybe not. I'll have to check when I get home.
+2018-08-24 12:01:34	IIsi50MHz	[11:31:12] I, too, am a fan of typefaces easily readable at small font sizes.
+2018-08-24 12:01:34	Scarecrow	[11:31:58] Settled on Fira Mono for now
+2018-08-24 12:01:34	Scarecrow	[11:32:10] I used it before I discovered SGI Screen
+2018-08-24 12:01:34	Scarecrow	[11:32:22] I can't believe I used this laptop for two years for actual work
+2018-08-24 12:01:34	Scarecrow	[11:32:27] LaTeX and Blender and stuff
+2018-08-24 12:01:34	IIsi50MHz	[11:35:05] Vaio B100B at home for Haiku. Sadly, its the 1024×768 version instead of 1280×1024.
+2018-08-24 12:01:34	IIsi50MHz	[11:35:21] "#largepixels" (-:
+2018-08-24 12:01:34	@PulkoMandy	[11:44:01] we have one bitmap font actually. The one we use for KDL
+2018-08-24 12:01:34	@PulkoMandy	[11:44:22] we used to have a second one that worked in app_server
+2018-08-24 12:01:34	@PulkoMandy	[11:44:30] not sure which format should be used however
+2018-08-24 12:01:34	Scarecrow	[11:44:34] Not the bitmap font you want to see, eh?
+2018-08-24 12:01:34	@PulkoMandy	[11:45:08] well, KDL is a thousand times more helpful than window's blue screen or Linux "let's just blink the keyboard leds"
+2018-08-24 12:01:34	✴️	Scarecrow [11:45:18] nods
+2018-08-24 12:01:34	@PulkoMandy	[11:45:33] but right, userland feels safer and cosier :>
+2018-08-24 12:01:34	Scarecrow	[11:45:55] It's *usually* not what you want to see
+2018-08-24 12:01:34	@PulkoMandy	[11:49:17] Vidrep: should I close https://dev.haiku-os.org/ticket/13267 and track the new problem in https://dev.haiku-os.org/ticket/14385
+2018-08-24 12:01:34	✴️	PulkoMandy [11:49:27] wonders how the same website can trigger so many different crashes
+2018-08-24 12:01:34	Vidrep	[11:53:01] PulkoMandy: makes sense to do so, especially if its the same website and we're testing a newer webkit build
+2018-08-24 12:01:34	@PulkoMandy	[11:53:34] it doesn't crash for me so far
+2018-08-24 12:01:34	@PulkoMandy	[11:53:42] I see graphics glitches however
+2018-08-24 12:01:34	Vidrep	[11:53:45] So, 13267 would then become a blocker?
+2018-08-24 12:01:34	Vidrep	[11:54:12] I was testing on 64 bit. It crashes 100% of the time
+2018-08-24 12:01:34	Vidrep	[11:56:02] There's a handful of websites (like Yahoo News) that give Web+ problems. 
+2018-08-24 12:01:34	@PulkoMandy	[11:56:40] seems stable on 32bit. That's progress, in past versions it always crashed
+2018-08-24 12:01:34	@PulkoMandy	[11:56:56] but the graphics glitches look worrying, I should look into that
+2018-08-24 12:01:34	Vidrep	[11:57:40] Kijiji also crashes Web+, but I haven't tested yet with new webkit. Usually it takes a few minutes of navigating the ads to cause a crash
+2018-08-24 12:01:34	@PulkoMandy	[12:00:43] ok, I manage to crash it by hovering the mouse over the first news items
+2018-08-24 12:01:34	@PulkoMandy	[12:00:49] but scrolling down the page is ok
+2018-08-24 12:01:34	***	Playback Complete.
+2018-08-24 12:01:40	⬅️	KrChaos (defe12a0@gateway/web/freenode/ip.222.254.18.160) has quit (Quit: Page closed)
+2018-08-24 12:04:24	Vidrep	PulkoMandy: how useful would it be to run Web+ with libroot_debug during every test? Unnecessary?
+2018-08-24 12:18:20	⬅️	Romanson (~Romanson@103.95.16.74) has quit (Remote host closed the connection)
+2018-08-24 12:18:48	➡️	Romanson (~Romanson@103.95.16.74) has joined #haiku
+2018-08-24 12:31:45		irc: disconnected from server
+2018-08-24 12:32:06	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 12:54:15	⬅️	OmniMancer (~Paul@101.100.137.239) has quit (Quit: Leaving.)
+2018-08-24 13:18:43	⬅️	roiredX (~Vision@52.165.117.91.dynamic.reverse-mundo-r.com) has quit (Quit: Vision[0.10.3]: #haikunaut travels faster than the speed of light and crashes accordingly!!)
+2018-08-24 13:18:49	➡️	Megaf (~Megaf@unaffiliated/megaf) has joined #haiku
+2018-08-24 13:22:42	@PulkoMandy	Vidrep: it only helps for memory corruption bugs
+2018-08-24 13:23:02	@PulkoMandy	usually with a backtrace I can see more or less where the problem is, and moreover the issues tend to be easy to reproduce
+2018-08-24 13:23:27	@PulkoMandy	I'm trying to minimize the yahoo page so I can more easily see what's causing problems (removing items one at a time...)=
+2018-08-24 13:30:49	⬅️	Romanson (~Romanson@103.95.16.74) has quit (Ping timeout: 268 seconds)
+2018-08-24 13:36:04	➡️	Romanson (~Romanson@103.95.16.74) has joined #haiku
+2018-08-24 13:59:06	⬅️	johndrinkwater (~beta@steamdb/johndrinkwater.name) has quit (Ping timeout: 260 seconds)
+2018-08-24 14:03:38	➡️	johndrinkwater (~beta@steamdb/johndrinkwater.name) has joined #haiku
+2018-08-24 14:08:29	➡️	axeld1 (~Thunderbi@dyndsl-089-166-130-023.ewe-ip-backbone.de) has joined #haiku
+2018-08-24 14:08:29		Mode #haiku [+o axeld1] by ChanServ
+2018-08-24 14:09:41	⬅️	axeld (~Thunderbi@dyndsl-082-149-179-214.ewe-ip-backbone.de) has quit (Ping timeout: 244 seconds)
+2018-08-24 14:09:41		axeld1 is now known as axeld
+2018-08-24 14:12:13	⬅️	ClaudioM (~ClaudioM@168.221.158.55) has quit (Quit: leaving)
+2018-08-24 14:31:34	➡️	tombhadAC (~tombhadAC@x4db44c4b.dyn.telefonica.de) has joined #haiku
+2018-08-24 14:54:14	⬅️	axeld (~Thunderbi@dyndsl-089-166-130-023.ewe-ip-backbone.de) has quit (Quit: axeld)
+2018-08-24 15:15:41	⬅️	Maylay (~gren@108-198-59-230.lightspeed.miamfl.sbcglobal.net) has quit (Quit: Pipe Terminated)
+2018-08-24 15:33:32	⬅️	Vidrep (b846db82@gateway/web/freenode/ip.184.70.219.130) has quit (Quit: Page closed)
+2018-08-24 15:42:52	➡️	Maylay (~gren@2600:1700:90f1:3828:428d:5cff:feae:ce7) has joined #haiku
+2018-08-24 16:06:31	⬅️	stippi (~Thunderbi@p4FE6A1EF.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2018-08-24 16:24:05	➡️	zachk (~zachk@unaffiliated/zachk) has joined #haiku
+2018-08-24 16:26:17		irc: disconnected from server
+2018-08-24 16:39:12	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 17:04:39	⬅️	Romanson (~Romanson@103.95.16.74) has quit (Ping timeout: 264 seconds)
+2018-08-24 17:05:41	⬅️	Skipp_OSX (~textual@67.129.32.54) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-08-24 17:08:57	➡️	Romanson (~Romanson@103.95.16.74) has joined #haiku
+2018-08-24 17:09:56	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-24 17:10:44	⬅️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has quit (Client Quit)
+2018-08-24 17:11:01	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-24 17:14:16	⬅️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Quit: Leaving)
+2018-08-24 17:19:13	⬅️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has quit (Read error: Connection reset by peer)
+2018-08-24 17:29:27	⬅️	rennj (~rennj@174-22-174-51.clsp.qwest.net) has quit (Ping timeout: 268 seconds)
+2018-08-24 17:38:55	⬅️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 244 seconds)
+2018-08-24 18:01:34	➡️	_Dario_ (dario@181.46.226.76) has joined #haiku
+2018-08-24 18:12:39	⬅️	pixdamix (~pix@unaffiliated/pixdamix) has quit (Quit: WeeChat 1.5)
+2018-08-24 18:18:24	@waddlesplash	well, let's try removing the +r
+2018-08-24 18:18:41		Mode #haiku [-r] by ChanServ
+2018-08-24 18:19:18	⬅️	Romanson (~Romanson@103.95.16.74) has quit (Ping timeout: 252 seconds)
+2018-08-24 18:19:33		Mode #haiku [-g] by ChanServ
+2018-08-24 18:20:10	@waddlesplash	hopefully that's not a mistake...
+2018-08-24 18:21:18	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-24 18:26:26	➡️	Romanson (~Romanson@113.199.129.93) has joined #haiku
+2018-08-24 18:28:39	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 268 seconds)
+2018-08-24 18:31:57	⬅️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Ping timeout: 252 seconds)
+2018-08-24 18:37:25	✴️	IIsi50MHz crosses spinlocks and fingers
+2018-08-24 18:39:04	IIsi50MHz	I vaguelly recall some channels that used +i, a sidechannel, and a bot and/or op to let recognised nicks in, regardless of registration.
+2018-08-24 18:40:10	IIsi50MHz	But that'sa bit ugh. 
+2018-08-24 18:40:31	✴️	IIsi50MHz receives a baby
+2018-08-24 18:40:57	IIsi50MHz	Too many people round the house tonight. ^_^;
+2018-08-24 18:52:32	⬅️	Romanson (~Romanson@113.199.129.93) has quit (Read error: Connection reset by peer)
+2018-08-24 18:58:28	➡️	Romanson (~Romanson@113.199.129.93) has joined #haiku
+2018-08-24 19:01:41	➡️	mounty1 (~mounty@n106-71-220-50.rdl2.qld.optusnet.com.au) has joined #haiku
+2018-08-24 19:20:34	➡️	pixdamix (~pix@unaffiliated/pixdamix) has joined #haiku
+2018-08-24 19:32:14	⬅️	zachk (~zachk@unaffiliated/zachk) has quit (Quit: Leaving)
+2018-08-24 19:46:45	⬅️	Romanson (~Romanson@113.199.129.93) has quit (Ping timeout: 252 seconds)
+2018-08-24 19:54:56	➡️	acerbic19 (~acerbic@89-178-237-192.broadband.corbina.ru) has joined #haiku
+2018-08-24 19:54:59	acerbic19	       _.+._
+2018-08-24 19:55:01	acerbic19	     (^\/^\/^)
+2018-08-24 19:55:03	acerbic19	      \@*@*@/
+2018-08-24 19:55:05	acerbic19	      {_____}
+2018-08-24 19:55:08	acerbic19	    /)))))))))
+2018-08-24 19:55:08	⬅️	acerbic19 (~acerbic@89-178-237-192.broadband.corbina.ru) has quit (Killed (Sigyn (Spam is off topic on freenode.)))
+2018-08-24 20:00:11	➡️	Romanson (~Romanson@103.95.16.21) has joined #haiku
+2018-08-24 20:10:46	⬅️	Dariost (~Dariost@151.20.145.216) has quit (Remote host closed the connection)
+2018-08-24 20:14:19		irc: disconnected from server
+2018-08-24 20:14:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 20:19:05	⬅️	Romanson (~Romanson@103.95.16.21) has quit (Ping timeout: 244 seconds)
+2018-08-24 20:22:19	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-24 20:23:46	➡️	Romanson (~Romanson@103.95.16.23) has joined #haiku
+2018-08-24 20:31:59	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 268 seconds)
+2018-08-24 20:34:45		irc: disconnected from server
+2018-08-24 20:37:01	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 20:38:09	⬅️	Romanson (~Romanson@103.95.16.23) has quit (Ping timeout: 268 seconds)
+2018-08-24 20:40:20	➡️	Romanson (~Romanson@103.95.16.68) has joined #haiku
+2018-08-24 20:40:54	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-24 20:48:21	⬅️	Romanson (~Romanson@103.95.16.68) has quit (Ping timeout: 252 seconds)
+2018-08-24 20:51:43	⬅️	mounty1 (~mounty@n106-71-220-50.rdl2.qld.optusnet.com.au) has quit (Ping timeout: 268 seconds)
+2018-08-24 20:53:48	➡️	mounty1 (~mounty@n106-71-220-50.rdl2.qld.optusnet.com.au) has joined #haiku
+2018-08-24 20:54:07	➡️	Romanson (~Romanson@113.199.173.174) has joined #haiku
+2018-08-24 21:14:45	leorize	waddlesplash: looks like the spam is back
+2018-08-24 21:15:55	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-24 21:16:24	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-24 21:22:32	@waddlesplash	leorize: if that's the extent of it, lulz
+2018-08-24 21:22:49	@waddlesplash	I'll do the quiet flag if it gets worse
+2018-08-24 21:23:54	leorize	I thought freenode said they got ppl investigating
+2018-08-24 21:36:03	⬅️	_Dario_ (dario@181.46.226.76) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-24 21:38:24	⬅️	Romanson (~Romanson@113.199.173.174) has quit (Ping timeout: 252 seconds)
+2018-08-24 21:43:01	➡️	Romanson (~Romanson@113.199.149.252) has joined #haiku
+2018-08-24 21:46:33	⬅️	mounty1 (~mounty@n106-71-220-50.rdl2.qld.optusnet.com.au) has quit (Quit: Konversation terminated!)
+2018-08-24 21:56:53	➡️	tombhad-AC (~tombhadAC@x4e358f5f.dyn.telefonica.de) has joined #haiku
+2018-08-24 22:00:46	⬅️	tombhadAC (~tombhadAC@x4db44c4b.dyn.telefonica.de) has quit (Ping timeout: 268 seconds)
+2018-08-24 22:07:25		irc: disconnected from server
+2018-08-24 22:12:07	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 22:26:17		irc: disconnected from server
+2018-08-24 22:30:38	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 22:31:53		irc: disconnected from server
+2018-08-24 23:38:44	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-24 23:43:45	⬅️	Tumbtack (~tumbtack@2600:8801:1f00:132c:4c5f:d88b:dd50:94a6) has quit (Remote host closed the connection)
+2018-08-24 23:44:18	➡️	Tumbtack (~tumbtack@2600:8801:1f00:132c:4c5f:d88b:dd50:94a6) has joined #haiku
+2018-08-24 23:48:36	⬅️	Tumbtack (~tumbtack@2600:8801:1f00:132c:4c5f:d88b:dd50:94a6) has quit (Ping timeout: 252 seconds)
+2018-08-25 00:01:57	➡️	Begasus (~begasus@ptr-4p6jpimggu7gaythsvw.18120a2.ip6.access.telenet.be) has joined #haiku
+2018-08-25 00:02:20	Begasus	g'morning peeps
+2018-08-25 00:05:56	leorize	hi Begasus :)
+2018-08-25 00:06:08	Begasus	hi leorize
+2018-08-25 00:06:16	leorize	about autoconf-archive, it's actually a thing lol
+2018-08-25 00:06:24	leorize	gnu.org/software/autoconf-archive
+2018-08-25 00:08:32	Begasus	yeah, had been looking into it, but thought someone at haikuports already find it and thought it wasn't needed :)
+2018-08-25 00:09:47	Begasus	hmm didn't see that download page, it's actualy recent too :)
+2018-08-25 00:14:09	➡️	Begas_VBox (~Begasus@d54c3c8c2.access.telenet.be) has joined #haiku
+2018-08-25 00:18:48	➡️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has joined #haiku
+2018-08-25 00:18:48		Mode #haiku [+o humdinger] by ChanServ
+2018-08-25 00:21:00	Begas_VBox	moin humdinger
+2018-08-25 00:21:33	Begas_VBox	leorize, the autoconf-archive contains over 500 m4 files
+2018-08-25 00:21:34	@humdinger	morning!
+2018-08-25 00:21:50	➡️	Tumbtack (~tumbtack@2600:8801:1f00:132c:60b9:8b40:f261:a7da) has joined #haiku
+2018-08-25 00:21:53	leorize	that's certainly lots
+2018-08-25 00:22:14	Begas_VBox	not sure it would contribute something for Haiku?
+2018-08-25 00:22:42	leorize	we should only package it once some programs around need it
+2018-08-25 00:25:09	Begas_VBox	latest gobject-introspection source is calling for it
+2018-08-25 00:25:50	leorize	then it is needed :P
+2018-08-25 00:26:06	leorize	unless you can walkaround that ofc
+2018-08-25 00:26:18	leorize	but I think for a devel: package, it's fine
+2018-08-25 00:26:52	Begas_VBox	just went over the configure option, no mention there
+2018-08-25 00:28:25	Tumbtack	helo
+2018-08-25 00:29:46	⬅️	leorize (~leorize@2001:ee0:4101:bc35::2ec) has quit (Quit: WeeChat 2.2)
+2018-08-25 00:30:02	Begasus	hi Tumbtack
+2018-08-25 00:30:12	➡️	leorize (~leorize@2001:ee0:4101:bc35::2ec) has joined #haiku
+2018-08-25 00:37:08	⬅️	Romanson (~Romanson@113.199.149.252) has quit (Ping timeout: 252 seconds)
+2018-08-25 00:38:52	⬅️	Tumbtack (~tumbtack@2600:8801:1f00:132c:60b9:8b40:f261:a7da) has quit (Remote host closed the connection)
+2018-08-25 00:39:37	➡️	Romanson (~Romanson@103.95.16.69) has joined #haiku
+2018-08-25 00:44:47	➡️	Tumbtack (~tumbtack@2600:8801:1f00:132c:60b9:8b40:f261:a7da) has joined #haiku
+2018-08-25 00:56:51	⬅️	s-mutin (~s-mutin@85.234.114.134) has quit (Read error: Connection reset by peer)
+2018-08-25 00:57:13	➡️	s-mutin (~s-mutin@2a0a:6f40:2:6001:1b5:13f0:5285:2090) has joined #haiku
+2018-08-25 01:07:28	Begas_VBox	do we include all the names mentione in AUTHORS in the COPYRIGHT section?
+2018-08-25 01:07:35	Begas_VBox	mentioned*
+2018-08-25 01:16:40	leorize	It's actually kinda hard
+2018-08-25 01:17:00	leorize	since we don't know how much legal stuffs applies to that variable
+2018-08-25 01:17:36	Begas_VBox	list is about +300 names I think :)
+2018-08-25 01:17:52	leorize	well if more then 3 authors then just name the main one then "et al." :P
+2018-08-25 01:18:05	leorize	we don't even comply with MIT license actually
+2018-08-25 01:18:21	leorize	so I don't think that variable have any legal aspect to it
+2018-08-25 01:19:25	Begas_VBox	the actual AUTHORS file is also included in the package :)
+2018-08-25 01:21:19	leorize	go with the "et al." route :)
+2018-08-25 01:22:18	Begas_VBox	done ... kept the ones in where they mentioned a year (4)
+2018-08-25 01:33:59	⬅️	Tumbtack (~tumbtack@2600:8801:1f00:132c:60b9:8b40:f261:a7da) has quit
+2018-08-25 01:44:45	➡️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-25 01:58:02	⬅️	Begas_VBox (~Begasus@d54c3c8c2.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2018-08-25 01:58:02	⬅️	Begasus (~begasus@ptr-4p6jpimggu7gaythsvw.18120a2.ip6.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2018-08-25 02:14:47	⬅️	Romanson (~Romanson@103.95.16.69) has quit (Read error: Connection reset by peer)
+2018-08-25 02:16:01	➡️	prettymuchbryce5 (~prettymuc@zaqdb738851.zaq.ne.jp) has joined #haiku
+2018-08-25 02:16:01	prettymuchbryce5	                                                                                
+2018-08-25 02:16:01	prettymuchbryce5	                                                                     
+2018-08-25 02:16:01	⬅️	prettymuchbryce5 (~prettymuc@zaqdb738851.zaq.ne.jp) has quit (Killed (Sigyn (Spam is off topic on freenode.)))
+2018-08-25 02:16:48	➡️	Romanson (~Romanson@113.199.184.117) has joined #haiku
+2018-08-25 02:22:50	➡️	Begasus (~begasus@ptr-4p6jpip0x9701po3m36.18120a2.ip6.access.telenet.be) has joined #haiku
+2018-08-25 02:23:19	⬅️	Romanson (~Romanson@113.199.184.117) has quit (Ping timeout: 244 seconds)
+2018-08-25 02:25:57	➡️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has joined #haiku
+2018-08-25 02:34:58	➡️	baimafeima (~baimafeim@176.199.56.90) has joined #haiku
+2018-08-25 02:49:09	➡️	stippi (~Thunderbi@p4FE6A14B.dip0.t-ipconnect.de) has joined #haiku
+2018-08-25 02:49:09		Mode #haiku [+o stippi] by ChanServ
+2018-08-25 02:49:35	➡️	Romanson (~Romanson@103.95.16.33) has joined #haiku
+2018-08-25 02:50:42	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 272 seconds)
+2018-08-25 02:52:09	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-25 02:54:13	⬅️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-25 02:57:57	➡️	axeld (~Thunderbi@dyndsl-089-166-202-119.ewe-ip-backbone.de) has joined #haiku
+2018-08-25 02:57:57		Mode #haiku [+o axeld] by ChanServ
+2018-08-25 03:06:01	⬅️	Romanson (~Romanson@103.95.16.33) has quit (Ping timeout: 268 seconds)
+2018-08-25 03:06:34	➡️	Romanson (~Romanson@113.199.159.244) has joined #haiku
+2018-08-25 03:09:49	⬅️	tombhad-AC (~tombhadAC@x4e358f5f.dyn.telefonica.de) has quit (Quit: Client exiting)
+2018-08-25 03:15:56	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-25 03:16:25	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-25 03:21:47	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 03:24:41	➡️	premoboss (~utente@2001:b07:a15:9ecb:236:76ff:fea1:a965) has joined #haiku
+2018-08-25 03:29:43	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 03:30:19	premoboss	hi, i recall many years ago was avaiable dor haiku TORCS, a car racin game. Now it is not present in HaikuDepot. Any clue about?
+2018-08-25 03:31:12	@PulkoMandy	we probably need to write/update a recipe for it
+2018-08-25 03:46:04	premoboss	ok.
+2018-08-25 03:46:44	premoboss	Im excited by announcement of beta. I still has no white air last time a release was done (alpha 4.1)
+2018-08-25 03:46:53	premoboss	:-)
+2018-08-25 03:48:47	premoboss	im using last rolling now into a virtual machine and is quite ok. but wehen beta wuill vame out, i will try onto a real hardware.
+2018-08-25 03:55:46	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-25 03:55:46		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-25 03:56:49	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 252 seconds)
+2018-08-25 04:00:03	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 04:10:32	⬅️	Romanson (~Romanson@113.199.159.244) has quit (Ping timeout: 252 seconds)
+2018-08-25 04:13:01	➡️	Romanson (~Romanson@202.70.70.212) has joined #haiku
+2018-08-25 04:14:55	⬅️	baimafeima (~baimafeim@176.199.56.90) has quit (Ping timeout: 244 seconds)
+2018-08-25 04:32:13	➡️	return0xe (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-25 04:33:34	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-25 04:33:34		Mode #haiku [+o tqh] by ChanServ
+2018-08-25 04:34:11	⬅️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Ping timeout: 268 seconds)
+2018-08-25 04:34:34	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 272 seconds)
+2018-08-25 04:36:55	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 04:43:20	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 244 seconds)
+2018-08-25 04:48:19	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-25 04:52:55	⬅️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has quit (Ping timeout: 252 seconds)
+2018-08-25 05:00:29	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 05:01:48	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Excess Flood)
+2018-08-25 05:02:28	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 05:04:19	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Excess Flood)
+2018-08-25 05:20:14	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 05:46:33	➡️	Dariost (~Dariost@151.20.145.216) has joined #haiku
+2018-08-25 05:56:30	➡️	tombhadAC (~tombhadAC@x4e358f5f.dyn.telefonica.de) has joined #haiku
+2018-08-25 05:57:13	⬅️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has quit (Read error: No route to host)
+2018-08-25 05:58:33	⬅️	Begasus (~begasus@ptr-4p6jpip0x9701po3m36.18120a2.ip6.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2018-08-25 05:58:37	➡️	Begasus_ (~begasus@ptr-4p6jpimnafbnjgw2hxr.18120a2.ip6.access.telenet.be) has joined #haiku
+2018-08-25 06:03:27	➡️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has joined #haiku
+2018-08-25 06:07:02	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 272 seconds)
+2018-08-25 06:10:50	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 272 seconds)
+2018-08-25 06:27:07	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 06:44:28	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 06:47:26	➡️	Konrad77 (~konrad197@c83-253-253-106.bredband.comhem.se) has joined #haiku
+2018-08-25 06:53:33	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 252 seconds)
+2018-08-25 06:55:44	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 06:55:44	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Client Quit)
+2018-08-25 06:56:08	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 07:12:40	⬅️	Romanson (~Romanson@202.70.70.212) has quit (Ping timeout: 268 seconds)
+2018-08-25 07:14:08	➡️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has joined #haiku
+2018-08-25 07:15:39	➡️	Romanson (~Romanson@113.199.169.178) has joined #haiku
+2018-08-25 07:29:42	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-25 08:02:33	⬅️	premoboss (~utente@2001:b07:a15:9ecb:236:76ff:fea1:a965) has quit (Quit: Leaving)
+2018-08-25 08:09:13	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 252 seconds)
+2018-08-25 08:09:42	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 08:13:27	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-25 08:19:16	⬅️	Romanson (~Romanson@113.199.169.178) has quit (Ping timeout: 268 seconds)
+2018-08-25 08:24:12	⬅️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Ping timeout: 268 seconds)
+2018-08-25 08:37:22	⬅️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-08-25 08:39:41	➡️	DCatt_ (~DCatt@pool-71-253-161-239.rcmdva.east.verizon.net) has joined #haiku
+2018-08-25 08:42:07	➡️	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has joined #haiku
+2018-08-25 08:53:26	➡️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has joined #haiku
+2018-08-25 08:57:11	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-25 09:00:23	➡️	Romanson (~Romanson@103.95.16.99) has joined #haiku
+2018-08-25 09:00:24	⬅️	Konrad77 (~konrad197@c83-253-253-106.bredband.comhem.se) has quit (Read error: Connection reset by peer)
+2018-08-25 09:00:35	bbjimmy	How is the beta1 branch going?
+2018-08-25 09:02:13	matthewstar	is there a ideal modern tower computer  compatible with haiku?
+2018-08-25 09:03:09	matthewstar	i have to buy a new one... =0)
+2018-08-25 09:04:11	➡️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has joined #haiku
+2018-08-25 09:04:11		Mode #haiku [+o humdinger] by ChanServ
+2018-08-25 09:06:12	⬅️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has left #haiku
+2018-08-25 09:10:24	@waddlesplash	PulkoMandy: I guess you're working on WebKit bugs?
+2018-08-25 09:12:04	@waddlesplash	kallisti5: ping me whenever you're around
+2018-08-25 09:13:01	@waddlesplash	I intend to do some cleanup at HaikuPorts and then branch later today
+2018-08-25 09:13:32	@waddlesplash	but I'll probably not fork the buildmaster until after WebKit is finalized
+2018-08-25 09:14:20	@humdinger	waddlesplash: will there be a beta1 branch at haikuports, too?
+2018-08-25 09:14:37	@waddlesplash	yes
+2018-08-25 09:14:40	leorize	waddlesplash: if you need my help, I'll be around
+2018-08-25 09:14:42	@humdinger	good!
+2018-08-25 09:15:14	IIsi50MHz	bbjimmy: Not much new since yesterday. https://discuss.haiku-os.org/t/r1-beta1-release-plans-at-last-haiku-project/
+2018-08-25 09:15:15	@waddlesplash	leorize: yes, just start reviewing old PRs or merge whatever looks appropriate to
+2018-08-25 09:15:55	@waddlesplash	I am a little hesitant to branch without jessicahs changes but she said they would be ready within a few days
+2018-08-25 09:15:58	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-25 09:15:59	✴️	IIsi50MHz reads new messages after pasting, dons the Cone Of Shame
+2018-08-25 09:16:07	@waddlesplash	so I think we should just get started without them
+2018-08-25 09:16:14	leorize	Begasus_: are your PRs up to shape yet?
+2018-08-25 09:16:27	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-25 09:16:45	leorize	I think we can still wait a bit, as I still haven't done with my report...
+2018-08-25 09:16:53	leorize	These things take forever to finish
+2018-08-25 09:21:53	➡️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has joined #haiku
+2018-08-25 09:23:29	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-25 09:23:55	➡️	HAIKU-irker310 (~irker@maui.haiku-os.org) has joined #haiku
+2018-08-25 09:23:55	HAIKU-irker310	haiku.master:  * hrev52274 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=992ba1a5ceea+%5Eb2e0398cd4e9
+2018-08-25 09:23:55	HAIKU-irker310	    992ba1a5ceea: Media Kit: Fix -Wmismatched-tags
+2018-08-25 09:23:55		Mode #haiku [+v HAIKU-irker310] by ChanServ
+2018-08-25 09:24:25	cb88	so I was just poking around with haikuports and running a gcc2hybrid I can't seem to actually build any recent mesa is that normal? I thought as long as I set x86 as the haikuports primary target that would work
+2018-08-25 09:25:10	leorize	Please don't set x86 as primary target unless you're running an x86 gcc7 build
+2018-08-25 09:25:51	cb88	hmm... then why is that a setting?
+2018-08-25 09:26:53	leorize	so you can override it if it's wrong :P
+2018-08-25 09:27:11	cb88	lol... 
+2018-08-25 09:27:15	Vidrep_gcc2h	Good morning
+2018-08-25 09:27:18	leorize	there's a setting for everything, but most requires that you know what you are doing
+2018-08-25 09:27:25	⬅️	Romanson (~Romanson@103.95.16.99) has quit (Read error: Connection reset by peer)
+2018-08-25 09:27:36	@humdinger	evening, Vidrep_gcc2h
+2018-08-25 09:27:51	cb88	well it makes sense I guess but is non obivous
+2018-08-25 09:28:20	leorize	to actually compile things with gcc7 on hybrid
+2018-08-25 09:28:38	leorize	uncomment the secondary_arch in haikuports.conf
+2018-08-25 09:28:46	cb88	yes I just did that
+2018-08-25 09:28:55	leorize	then run haikuports <package>_x86
+2018-08-25 09:29:54	cb88	ah
+2018-08-25 09:32:21	leorize	Begas_VBox:  can you clean this up for the merge? https://github.com/haikuports/haikuports/pull/2778
+2018-08-25 09:34:34	leorize	waddlesplash: I think this can be merged https://github.com/haikuports/haikuports/pull/2298
+2018-08-25 09:35:13	leorize	But I can't check the structure of the hpkg without building it :/
+2018-08-25 09:35:20	@waddlesplash	leorize: no
+2018-08-25 09:35:32	@waddlesplash	we are not switching llvm versions this close to release
+2018-08-25 09:40:46	➡️	Romanson (~Romanson@202.70.70.251) has joined #haiku
+2018-08-25 09:50:01	➡️	Barrett (~barrett@unaffiliated/barrett) has joined #haiku
+2018-08-25 09:51:13	⬅️	Romanson (~Romanson@202.70.70.251) has quit (Ping timeout: 272 seconds)
+2018-08-25 09:52:08	⬅️	Barrett (~barrett@unaffiliated/barrett) has left #haiku
+2018-08-25 09:52:12	➡️	Barrett (~barrett@unaffiliated/barrett) has joined #haiku
+2018-08-25 10:07:26	⬅️	tombhadAC (~tombhadAC@x4e358f5f.dyn.telefonica.de) has quit (Quit: System rebooting)
+2018-08-25 10:07:36	Vidrep_gcc2h	Hey humdinger
+2018-08-25 10:07:49	@humdinger	hullo Vidrep_gcc2h.
+2018-08-25 10:08:11	@humdinger	I'm currently working over the FilWip docs to update them a bit before the release...
+2018-08-25 10:08:11	Vidrep_gcc2h	About serial logging in the guide, no change needed. Read it through, it's ok
+2018-08-25 10:08:25	@humdinger	I'm relieved
+2018-08-25 10:08:29	Vidrep_gcc2h	I bet
+2018-08-25 10:09:09	Vidrep_gcc2h	I thought I would have time today for Haiku stuff, but real life and the wife intervened
+2018-08-25 10:09:26	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-25 10:09:26		Mode #haiku [+o tqh] by ChanServ
+2018-08-25 10:09:57	@humdinger	those two... always meddling :)
+2018-08-25 10:10:22	➡️	allowh (5e3fe48d@gateway/web/freenode/ip.94.63.228.141) has joined #haiku
+2018-08-25 10:10:26	allowh	hi
+2018-08-25 10:10:34	@humdinger	hullo allowh
+2018-08-25 10:10:46	Vidrep_gcc2h	Talking about SerialConnect...why isn't the default baud rate set at 115200?
+2018-08-25 10:10:46	allowh	when I shutdown haiku os on aspire one it shows a blank scree
+2018-08-25 10:10:49	allowh	when I shutdown haiku os on aspire one it shows a blank screen
+2018-08-25 10:11:09	allowh	if I reset it shows a black screen and doesn't shutdown!!!
+2018-08-25 10:11:25	@humdinger	allowh: sounds like a acpi issue.
+2018-08-25 10:11:25	allowh	there is now an ACPI problem!
+2018-08-25 10:11:33	@humdinger	see
+2018-08-25 10:11:42	allowh	ya, but it was working some months ago!
+2018-08-25 10:11:55	Vidrep_gcc2h	I have a Dell desktop that stopped shutting down recently too
+2018-08-25 10:12:22	allowh	I think developpers made mistakes changing ACPI code :)
+2018-08-25 10:12:47	Begasus_	leorize, will look into your latest comments :)
+2018-08-25 10:13:07	@humdinger	apparently. you could binary search the commit that broke it for you.
+2018-08-25 10:13:25	@humdinger	maybe provide the syslogs of it working/not-working.
+2018-08-25 10:13:46	allowh	humdinger is not only for me, it isn't working in other machines that have ACPI
+2018-08-25 10:14:00	allowh	humdinger it will be hard to do that
+2018-08-25 10:14:34	Vidrep_gcc2h	allowh, does it behave like this? https://dev.haiku-os.org/ticket/14205
+2018-08-25 10:14:36	@humdinger	sure. but with no info, fixing is quite impossible
+2018-08-25 10:15:14	allowh	humdinger I think the problem was that developpers changed something it was working, or they where fixing something for some machines and create a bug for others!
+2018-08-25 10:15:37	@humdinger	obviously.
+2018-08-25 10:15:57	leorize	I think tqh would be interested in your ACPI problems
+2018-08-25 10:16:02	Vidrep_gcc2h	Problem was narrowed down (for me) to between hrev52009 - 52012
+2018-08-25 10:16:28	allowh	Vidrep_gcc2h well, shutdown -r doesn't reboot
+2018-08-25 10:16:49	Vidrep_gcc2h	Mine reboots OK, just won't shut down
+2018-08-25 10:16:57	➡️	HaikuUser (~palikka@83-245-252-159-nat-p.elisa-mobile.fi) has joined #haiku
+2018-08-25 10:17:30	Vidrep_gcc2h	allowh, try 52009 or earlier
+2018-08-25 10:17:35	allowh	mine doesn't reboot and shows a black screen also doesn't shutdown and shows a blank screen.
+2018-08-25 10:17:42	Vidrep_gcc2h	Maybe symtoms of the same problem
+2018-08-25 10:17:51	Vidrep_gcc2h	*symptoms
+2018-08-25 10:18:00	allowh	could be
+2018-08-25 10:18:06	allowh	not sure
+2018-08-25 10:19:21	allowh	but without this fix, should not have a main release, this is a serious issue.
+2018-08-25 10:20:54	allowh	to have a release all bugs that doesn't allow people to access desktop, wifi and use internet, and reboot, shutdown, they all should be fixed
+2018-08-25 10:21:15	➡️	cull (~cull@2607:fb90:897:81f2:fa73:9c33:3c72:4f94) has joined #haiku
+2018-08-25 10:21:24	allowh	when i say wifi, i mean also ethernet
+2018-08-25 10:21:30	allowh	:)
+2018-08-25 10:22:16	@humdinger	yeah, we should halt beta until all bugs are fixed.
+2018-08-25 10:22:35	allowh	ACPI should be marked as yellow on the ticket list ;)
+2018-08-25 10:23:35	@humdinger	there are many hardware related tickets that can only be fixed if a dev is found that has time, motivation and the same hardware.
+2018-08-25 10:23:55	@humdinger	a rare combination.
+2018-08-25 10:24:16	@humdinger	we'll have to live with Haiku not running optmall on every piece of hardware
+2018-08-25 10:24:26	@humdinger	*optimally
+2018-08-25 10:24:37	Scarecrow	optically
+2018-08-25 10:24:43	Scarecrow	sometimes it won't display :^)
+2018-08-25 10:25:10	@humdinger	then you can only hope your audio is working
+2018-08-25 10:25:29	➡️	Romanson (~Romanson@103.95.16.23) has joined #haiku
+2018-08-25 10:27:01	allowh	humdinger, you need to create a section on haiku website telling developpers how to make money developping haiku :)
+2018-08-25 10:27:46	@humdinger	you mean an empty page?
+2018-08-25 10:27:55	allowh	humdinger ya :)
+2018-08-25 10:28:15	Begas_VBox	;)
+2018-08-25 10:28:29	cull	Lol
+2018-08-25 10:28:30	allowh	humdinger well, or how to spare free time doing something usefull :)
+2018-08-25 10:28:45	Vidrep_gcc2h	Gotta go...bbl
+2018-08-25 10:28:55	@humdinger	cu Vidrep_gcc2h
+2018-08-25 10:29:22	Begas_VBox	cu Vidrep_gcc2h
+2018-08-25 10:30:24	⬅️	allowh (5e3fe48d@gateway/web/freenode/ip.94.63.228.141) has quit (Quit: Page closed)
+2018-08-25 10:30:30	@tqh	hrev52009 - 12 has no changes in ACPI, but maybe mem protection afffects it.
+2018-08-25 10:30:56	@tqh	I'll take a look in the next few days anyway.
+2018-08-25 10:33:23	➡️	WikiPuppies3 (~WikiPuppi@186.61.140.55) has joined #haiku
+2018-08-25 10:33:25	WikiPuppies3	               .======.
+2018-08-25 10:33:28	WikiPuppies3	               | INRI |
+2018-08-25 10:33:30	WikiPuppies3	               |  LOL |
+2018-08-25 10:33:32	WikiPuppies3	               |      |
+2018-08-25 10:33:35	WikiPuppies3	      .========'      '========.
+2018-08-25 10:33:37	WikiPuppies3	      |   _      xxxx      _   | "JEWS DID JESUS
+2018-08-25 10:33:40	WikiPuppies3	      |  /_;-.__ / _\  _.-;_\  |  LOL JEWS"
+2018-08-25 10:33:42	WikiPuppies3	      |     `-._`'`_/'`.-'     |
+2018-08-25 10:33:44	WikiPuppies3	      '========.`\   /`========'
+2018-08-25 10:33:47	WikiPuppies3	               | |  / |
+2018-08-25 10:33:49	WikiPuppies3	               |/-.(  |
+2018-08-25 10:33:51	WikiPuppies3	               |\_._\ |
+2018-08-25 10:33:54	WikiPuppies3	               | \ \`;|
+2018-08-25 10:33:54	⬅️	humdinger has kicked WikiPuppies3 (Ouch!)
+2018-08-25 10:34:17	@humdinger	bloody spammers
+2018-08-25 10:34:32	@waddlesplash	...
+2018-08-25 10:34:38	Scarecrow	that's a new one
+2018-08-25 10:35:42	cull	Is this a freenode problem or specific to #haiku?
+2018-08-25 10:37:22	@humdinger	freenode is overrun
+2018-08-25 10:37:55	cull	That sucks.
+2018-08-25 10:38:30	@humdinger	up until yesterday we only allowed registered users in the channel because of that.
+2018-08-25 10:38:37	@humdinger	we may have to go back to that.
+2018-08-25 10:40:08	cull	Ever think about moving to Rizon or something?
+2018-08-25 10:41:10	@humdinger	Not me. I like IRC in general, esp. using Vision in Haiku.
+2018-08-25 10:41:21	@waddlesplash	ok I think I'll add the q flag
+2018-08-25 10:41:25	@waddlesplash	that will ban non registered users from speaking
+2018-08-25 10:41:25	@waddlesplash	but it will still allow registered users to talk
+2018-08-25 10:41:43	Maylay	that's probably a better idea
+2018-08-25 10:41:49	leorize	humdinger: you might want to deop if you don't like the spam :P
+2018-08-25 10:41:49	cull	Oh humdinger  rizon is an irc network
+2018-08-25 10:41:57	Maylay	kind of annoying getting bumped to an unreged channel
+2018-08-25 10:42:03	@humdinger	waddlesplash: will those be informed why they are muted and how to register a nick?
+2018-08-25 10:42:35	leorize	unfortunately no, unless we have a bot to tell them
+2018-08-25 10:42:42	@humdinger	cull: I see.... dunno
+2018-08-25 10:43:02	leorize	waddlesplash: add +z so mods can see unregistered users
+2018-08-25 10:43:10	leorize	s/mods/ops/
+2018-08-25 10:43:19	@humdinger	let me eat on it.
+2018-08-25 10:43:22	✴️	humdinger is idle: dinner
+2018-08-25 10:43:33	cull	I mean there are other IRC networks I guess is my point but if freenode works than it works
+2018-08-25 10:43:48	Maylay	rizon gets spammed occasinally too
+2018-08-25 10:43:56	cull	True.
+2018-08-25 10:44:10	leorize	it's a problem with the nature IRC in general
+2018-08-25 10:45:50	Maylay	IRC is 30 years old today
+2018-08-25 10:46:12	Maylay	I think we have enough tools made in that time to deal with spammers
+2018-08-25 10:46:30	⬅️	HaikuUser (~palikka@83-245-252-159-nat-p.elisa-mobile.fi) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-25 10:46:42	➡️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has joined #haiku
+2018-08-25 10:46:55	leorize	freenode have this thing called Sigyn 
+2018-08-25 10:47:11	leorize	except it can only kick once the spam has reached the channel
+2018-08-25 10:47:47	Maylay	I think that's good enough
+2018-08-25 10:47:58	leorize	it wasn't
+2018-08-25 10:48:20	⬅️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has quit (Client Quit)
+2018-08-25 10:48:22	Maylay	it'll be impossible to block everything 
+2018-08-25 10:49:41	Maylay	it's mostly annoying when it startes highlighting the while channel...
+2018-08-25 10:49:55	Maylay	whole
+2018-08-25 10:50:48	leorize	you probably haven't seen how they wrecked freenode the first day this spamfest happens
+2018-08-25 10:51:23	⬅️	Barrett (~barrett@unaffiliated/barrett) has quit (Ping timeout: 272 seconds)
+2018-08-25 10:52:01	Maylay	that's what im talking about
+2018-08-25 10:52:12	Maylay	I'm surprised that went on for as long as it did
+2018-08-25 10:52:17	@waddlesplash	leorize: I'll look into that
+2018-08-25 10:52:19	@waddlesplash	out shopping at so I won't be doing this till slightly later anywau
+2018-08-25 10:52:45	@waddlesplash	leorize: if you can ping Freenode admins about that spam above that'd be great
+2018-08-25 10:52:55	@waddlesplash	so they can add it to Sigyn 
+2018-08-25 10:53:08	➡️	cocobean (633c1263@gateway/web/freenode/ip.99.60.18.99) has joined #haiku
+2018-08-25 10:53:27	leorize	I'm going to bed now :P
+2018-08-25 10:55:17	@waddlesplash	K
+2018-08-25 11:05:21	Begas_VBox	g'night leorize :)
+2018-08-25 11:17:34	✴️	humdinger has returned
+2018-08-25 11:19:00	➡️	hailst0rm (52289b2e@gateway/web/freenode/ip.82.40.155.46) has joined #haiku
+2018-08-25 11:19:24	➡️	bone (~bone@unaffiliated/bone) has joined #haiku
+2018-08-25 11:20:25	➡️	mahrain (55cb2c7e@gateway/web/freenode/ip.85.203.44.126) has joined #haiku
+2018-08-25 11:21:54	➡️	zaberdampfer (~zaberdamp@79-66-38-99.dynamic.dsl.as9105.com) has joined #haiku
+2018-08-25 11:21:54	zaberdampfer	                     _..._
+2018-08-25 11:21:54	zaberdampfer	                  .-'     '-.
+2018-08-25 11:21:54	zaberdampfer	                 /     _    _\
+2018-08-25 11:21:54	zaberdampfer	                /':.  (o)  /__)
+2018-08-25 11:21:56	zaberdampfer	               /':. .,_    |  |
+2018-08-25 11:21:57	zaberdampfer	              /': ; /  \   /_/
+2018-08-25 11:22:00	zaberdampfer	             /  ;  `"`"    }
+2018-08-25 11:22:02	zaberdampfer	            /'::.   ;\     {
+2018-08-25 11:22:03	⬅️	humdinger has kicked zaberdampfer (Ouch!)
+2018-08-25 11:23:04	✴️	mahrain is looking for Beta1 RC images ;-)
+2018-08-25 11:27:23	⬅️	mahrain (55cb2c7e@gateway/web/freenode/ip.85.203.44.126) has quit (Quit: Page closed)
+2018-08-25 11:41:07	⬅️	hailst0rm (52289b2e@gateway/web/freenode/ip.82.40.155.46) has quit (Ping timeout: 252 seconds)
+2018-08-25 11:49:28	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-25 11:52:28	➡️	hailst0rm (52289b2e@gateway/web/freenode/ip.82.40.155.46) has joined #haiku
+2018-08-25 11:59:17	⬅️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-08-25 11:59:44	➡️	illwieckz_ (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 12:00:48	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 252 seconds)
+2018-08-25 12:03:34	➡️	shaka (~vision@ool-4354d0c0.dyn.optonline.net) has joined #haiku
+2018-08-25 12:05:19	shaka	Hi all. Is the beta branch live? If so do I need to reconfigure pkgman to enable it?
+2018-08-25 12:14:04	IIsi50MHz	https://discuss.haiku-os.org/t/r1-beta1-release-plans-at-last-haiku-project/
+2018-08-25 12:14:09	@humdinger	not yet
+2018-08-25 12:14:59	IIsi50MHz	Waa, lag=lag*lag++
+2018-08-25 12:15:37	@humdinger	Lag: 0.112 here
+2018-08-25 12:16:16	IIsi50MHz	Was fine again when I whinged. (-:
+2018-08-25 12:16:58	@humdinger	Have a t-shirt: https://0x0.st/syyD.jpg
+2018-08-25 12:17:24	⬅️	Romanson (~Romanson@103.95.16.23) has quit (Read error: Connection reset by peer)
+2018-08-25 12:18:35	➡️	Romanson (~Romanson@103.95.16.54) has joined #haiku
+2018-08-25 12:22:16	Begasus_	At this moment a polo shirt would be better humdinger ;)
+2018-08-25 12:22:39	@humdinger	not here any longer. today max. 15°C
+2018-08-25 12:22:51	@humdinger	drizzle
+2018-08-25 12:23:00	Begasus_	hence a polo (it's warmer then a t-shirt) ;)
+2018-08-25 12:23:22	@humdinger	is it?
+2018-08-25 12:23:28	@humdinger	since I had to sell the horse...
+2018-08-25 12:23:29	Begasus_	yep
+2018-08-25 12:23:38	Begasus_	:O
+2018-08-25 12:23:47	Begasus_	:P
+2018-08-25 12:23:56	⬅️	HAIKU-irker310 (~irker@maui.haiku-os.org) has quit (Quit: transmission timeout)
+2018-08-25 12:29:37	⬅️	hailst0rm (52289b2e@gateway/web/freenode/ip.82.40.155.46) has quit (Quit: Page closed)
+2018-08-25 12:33:07	⬅️	OmniMancer (~Paul@101.100.137.239) has quit (Quit: Leaving.)
+2018-08-25 12:36:09	➡️	zachk (~zachk@pool-108-26-42-245.syrcny.east.verizon.net) has joined #haiku
+2018-08-25 12:40:08	@waddlesplash	shaka: you can report bugs already
+2018-08-25 12:40:20	@waddlesplash	the beta branch will not be "magically different" than master
+2018-08-25 12:43:03	➡️	HaikuUser (~vision@188.68.107.124) has joined #haiku
+2018-08-25 12:44:26	shaka	ok waddlesplash so I just updated to hrev52273 does this mean I'm in what we are calling beta (candidate)?
+2018-08-25 12:44:36	@waddlesplash	not just yet
+2018-08-25 12:44:49	@waddlesplash	but, really, the beta branch will be identical to master at time of branch
+2018-08-25 12:44:55	@waddlesplash	it won't be somehow magically different
+2018-08-25 12:45:22	shaka	understood
+2018-08-25 12:46:49	⬅️	HaikuUser (~vision@188.68.107.124) has quit (Client Quit)
+2018-08-25 12:50:15	➡️	HAIKU-irker691 (~irker@maui.haiku-os.org) has joined #haiku
+2018-08-25 12:50:15	HAIKU-irker691	haiku.master:  * hrev52275 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=6d99295f4128+%5E992ba1a5ceea
+2018-08-25 12:50:15	HAIKU-irker691	    6d99295f4128: bus_managers/pci: Fix -Wmismatched-tags
+2018-08-25 12:50:15		Mode #haiku [+v HAIKU-irker691] by ChanServ
+2018-08-25 12:50:24	+HAIKU-irker691	haiku.master:  * hrev52276 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=df8b692ac0ba+%5E6d99295f4128
+2018-08-25 12:50:25	+HAIKU-irker691	    df8b692ac0ba: Revive unit tests
+2018-08-25 12:50:35	+HAIKU-irker691	haiku.master:  * hrev52277 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=8f30879b9878+%5Edf8b692ac0ba
+2018-08-25 12:50:36	+HAIKU-irker691	    8f30879b9878: Support : Validation for Host Portion of URL
+2018-08-25 12:51:27	+HAIKU-irker691	haiku.master:  * hrev52278 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=c0bbce07c8f9+%5E8f30879b9878
+2018-08-25 12:51:28	+HAIKU-irker691	    c0bbce07c8f9: Terminal: Make blinking cursor settings live
+2018-08-25 12:52:31	+HAIKU-irker691	haiku.master:  * hrev52279 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=c2d37953f3bb+%5Ec0bbce07c8f9
+2018-08-25 12:52:32	+HAIKU-irker691	    c2d37953f3bb: Rework PLL calculations for Iron Lake
+2018-08-25 12:52:54	shaka	so I guess the question really is- when I run SoftwareUpdater once beta is ready, will I be pulling the beta from the same URL (packages.haiku-os.org/haiku/master/x86_64/current)
+2018-08-25 12:53:31	+HAIKU-irker691	haiku.master:  * hrev52280 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=3bee8ef61de0+%5Ec2d37953f3bb
+2018-08-25 12:53:32	+HAIKU-irker691	    3bee8ef61de0: Package Kit: Fix -Wmismatched-tags
+2018-08-25 13:05:00	⬅️	shaka (~vision@ool-4354d0c0.dyn.optonline.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-25 13:08:48	⬅️	zachk (~zachk@pool-108-26-42-245.syrcny.east.verizon.net) has quit (Changing host)
+2018-08-25 13:08:48	➡️	zachk (~zachk@unaffiliated/zachk) has joined #haiku
+2018-08-25 13:15:27	⬅️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-25 13:19:26		irc: disconnected from server
+2018-08-25 13:19:30	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-25 13:32:56		irc: disconnected from server
+2018-08-25 08:43:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-25 08:43:56	***	Buffer Playback...
+2018-08-25 08:43:56	cb88	[13:38:58] waddlesplash: can we get the PCIE id for may x131e GPU in? it works with vesa without it... but I have tested it and running it with the radeon_hd driver now.
+2018-08-25 08:43:56	@waddlesplash	[13:40:03] sure
+2018-08-25 08:43:56	@waddlesplash	[13:40:09] what ticket?
+2018-08-25 08:43:56	cb88	[13:41:57] It's a one liner so I just pasted the line in the ticket.. I put it just below the 0x9806 line https://dev.haiku-os.org/ticket/14379
+2018-08-25 08:43:56	cb88	[13:42:43] And as I said in the ticket.. VGA and HDMI don't work (don't think they work with Vesa either so it's not like I lost anything).
+2018-08-25 08:43:56	@waddlesplash	[13:43:30] they would not indeed
+2018-08-25 08:43:56	@waddlesplash	[13:43:45] ok, I'll add it
+2018-08-25 08:43:56	cb88	[13:44:33] thanks
+2018-08-25 08:43:56	cb88	[13:45:57] now I just need to see if I can find that realtek wifi card I bought for this thing... the broadcom doesn't work of course
+2018-08-25 08:43:56	@waddlesplash	[13:46:14] what broadcom?
+2018-08-25 08:43:56	@waddlesplash	[13:46:20] I think mmu_man fixed part of that
+2018-08-25 08:43:56	cb88	[13:48:21] lemme check I'm running git from last night and no dice?e
+2018-08-25 08:43:56	@waddlesplash	[13:48:43] you will need to run install-wifi-firmwares.sh
+2018-08-25 08:43:56	cb88	[13:52:17] BCM43228 vendor:14e4  device: 4359
+2018-08-25 08:43:56	cb88	[13:53:13] rebooting
+2018-08-25 08:43:56	@waddlesplash	[13:53:17] ah
+2018-08-25 08:43:56	IIsi50MHz	[13:53:51] Buildbot in #haiku-forwarding btw
+2018-08-25 08:43:56	@waddlesplash	[13:54:19] IIsi50MHz: yea, whatever
+2018-08-25 08:43:56	@waddlesplash	[13:54:26] it'll eventually straighten itself out
+2018-08-25 08:43:56	IIsi50MHz	[13:55:10] When it gets disconnected, you mean? (-:
+2018-08-25 08:43:56	✴️	IIsi50MHz [14:00:00] takes the rebuff, and checks the mower battery's charge instead
+2018-08-25 08:43:56	cb88	[14:03:35] I'm not sure the install firmware script is working correctly for one... it says 2 of the files it tries to download failed but when I manually wget the link it shows it seems fine
+2018-08-25 08:43:56	@waddlesplash	[14:03:44] weird...
+2018-08-25 08:43:56	cb88	[14:05:38] the script doesn't act like if failed to build b43-fwcutter though so dunno
+2018-08-25 08:43:56	cb88	[14:06:23] in any case the wifi on here is flakey anyway... so off to hunt down what I did with that realtek card ha!
+2018-08-25 08:43:56	Begasus_	[14:15:00] going down, g'night peeps
+2018-08-25 08:43:56	Vidrep_gcc2h	[14:29:13] waddlesplash, how's progress coming along towards beta branching?
+2018-08-25 08:43:56	@waddlesplash	[14:30:08] it goes...
+2018-08-25 08:43:56	Vidrep_gcc2h	[14:30:39] Stll a few loose ends, I presume?
+2018-08-25 08:43:56	@waddlesplash	[14:38:43] yep
+2018-08-25 08:43:56	@waddlesplash	[14:39:10] jessicah's work, jackburton's FFmpeg breakage, PulkoMandy and webkit
+2018-08-25 08:43:56	***	Playback Complete.
+2018-08-25 09:04:29	Vidrep_gcc2h	What broke on ffmpeg?
+2018-08-25 09:04:49	Vidrep_gcc2h	I have a couple of issues, but not sure if related to the breakage
+2018-08-25 09:15:27	@waddlesplash	encoding doesn't work in a variety of scenarios
+2018-08-25 09:15:31	@waddlesplash	memory corruption
+2018-08-25 09:16:06	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-25 09:16:34	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-25 09:19:32	➡️	swift110 (~swift110@unaffiliated/swift110) has joined #haiku
+2018-08-25 09:26:37	⬅️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-25 09:39:21	cb88	is there a way with haikuporter to see what packages depend on another package like libftdi
+2018-08-25 09:40:23		irc: disconnected from server
+2018-08-25 09:42:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-25 09:44:07	➡️	tombhadAC (~root@x4e358f5f.dyn.telefonica.de) has joined #haiku
+2018-08-25 09:45:15	miqlas	cb88: inrecipe libftdi
+2018-08-25 09:47:09	cb88	tks
+2018-08-25 09:53:41	⬅️	HAIKU-irker691 (~irker@maui.haiku-os.org) has quit (Quit: transmission timeout)
+2018-08-25 09:54:17	cb88	so I put inrecipe in my ~/config/settings/profile and sourced it.... then I got this > inrecipe libftdi ; bash: /bin/grep: Argument too big
+2018-08-25 09:54:43	cb88	I also had set my path to haikuports also
+2018-08-25 09:54:48	➡️	_Dario_ (~dario@181.47.129.79) has joined #haiku
+2018-08-25 09:56:33	cb88	in the inrecipe function
+2018-08-25 10:02:24	⬅️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has quit (Quit: Leaving)
+2018-08-25 10:08:28	cb88	waddlesplash: another oddity I just noticed I just ran find /  and it said ‘/boot/system/data/firmware/broadcom43xx’: No such file or directory
+2018-08-25 10:14:11	⬅️	Romanson (~Romanson@103.95.16.54) has quit (Ping timeout: 244 seconds)
+2018-08-25 10:15:00	➡️	Romanson (~Romanson@103.95.16.54) has joined #haiku
+2018-08-25 10:23:12	⬅️	leorize (~leorize@2001:ee0:4101:bc35::2ec) has quit (Ping timeout: 252 seconds)
+2018-08-25 10:32:10	cb88	and that was after I ran the firmware install script and rebooted
+2018-08-25 10:38:03	⬅️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 252 seconds)
+2018-08-25 10:42:05	➡️	HaikuUser (~vision@174-084-005-111.dhcp.chtrptr.net) has joined #haiku
+2018-08-25 10:42:05		HaikuUser is now known as slandon51
+2018-08-25 10:42:23		slandon51 is now known as slandonr51
+2018-08-25 10:42:35		slandonr51 is now known as phr34kHaiku
+2018-08-25 16:44:08	⬅️	phr34kHaiku (~vision@174-084-005-111.dhcp.chtrptr.net) has quit (Client Quit)
+2018-08-25 16:53:11		irc: disconnected from server
+2018-08-25 16:57:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-25 17:08:13		irc: disconnected from server
+2018-08-25 17:12:08	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-25 17:19:33	⬅️	Romanson (~Romanson@103.95.16.54) has quit (Ping timeout: 268 seconds)
+2018-08-25 17:20:43	➡️	Romanson (~Romanson@103.95.16.75) has joined #haiku
+2018-08-25 17:23:42	⬅️	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 252 seconds)
+2018-08-25 17:24:41	⬅️	tombhadAC (~root@x4e358f5f.dyn.telefonica.de) has quit (Quit: Client exiting)
+2018-08-25 17:25:35	➡️	MikeoftheEast (~Mikeofthe@host-92-0-149-212.as43234.net) has joined #haiku
+2018-08-25 17:25:37	MikeoftheEast	|             _.--"""""--._
+2018-08-25 17:25:39	MikeoftheEast	|           .'             '.
+2018-08-25 17:25:39	⬅️	MikeoftheEast (~Mikeofthe@host-92-0-149-212.as43234.net) has quit (Killed (Sigyn (Spam is off topic on freenode.)))
+2018-08-25 17:35:00	Maylay	:-)
+2018-08-25 17:35:22	@waddlesplash	hooray, Sigyn is doing its job
+2018-08-25 17:35:50		Mode #haiku [-nf] by ChanServ
+2018-08-25 17:35:58	@waddlesplash	...
+2018-08-25 17:36:22		Mode #haiku [+n] by ChanServ
+2018-08-25 17:36:36	Maylay	haha
+2018-08-25 17:37:06	✴️	waddlesplash should read the docs before trying to set MLOCK
+2018-08-25 17:45:27	➡️	swift110 (~swift110@unaffiliated/swift110) has joined #haiku
+2018-08-25 17:51:58	➡️	HAIKU-irker313 (~irker@maui.haiku-os.org) has joined #haiku
+2018-08-25 17:51:59	HAIKU-irker313	haiku.master:  * hrev52281 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=1c2518b407b0+%5E3bee8ef61de0
+2018-08-25 17:51:59	HAIKU-irker313	    1c2518b407b0: Mandelbrot: Implement incremental rendering and other improvements.
+2018-08-25 17:51:59		Mode #haiku [+v HAIKU-irker313] by ChanServ
+2018-08-25 18:07:42	⬅️	swift110 (~swift110@unaffiliated/swift110) has quit (Ping timeout: 252 seconds)
+2018-08-25 18:27:40	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-25 18:28:05	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 18:31:47	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-25 18:32:11	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 18:45:12	➡️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has joined #haiku
+2018-08-25 19:02:06	⬅️	Romanson (~Romanson@103.95.16.75) has quit (Ping timeout: 244 seconds)
+2018-08-25 19:03:07	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-25 19:03:07	➡️	Romanson (~Romanson@113.199.144.243) has joined #haiku
+2018-08-25 19:03:09	⬅️	illwieckz_ (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 268 seconds)
+2018-08-25 19:06:38	⬅️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has quit (Quit: leaving)
+2018-08-25 19:19:44	➡️	leorize (~leorize@2001:ee0:4101:e96::ad0) has joined #haiku
+2018-08-25 19:27:33	⬅️	zachk (~zachk@unaffiliated/zachk) has quit (Quit: Leaving)
+2018-08-25 19:29:07	⬅️	Romanson (~Romanson@113.199.144.243) has quit (Read error: Connection reset by peer)
+2018-08-25 19:31:17	➡️	Romanson (~Romanson@113.199.144.243) has joined #haiku
+2018-08-25 19:32:11	+HAIKU-irker313	haiku.master:  * hrev52282 [3 commits] https://git.haiku-os.org/haiku/log/?qt=range&q=427edfcf0ddc+%5E1c2518b407b0
+2018-08-25 19:32:12	+HAIKU-irker313	    7426861a9385: radeon_hd: Add another working device ID.
+2018-08-25 19:32:13	+HAIKU-irker313	    99158cceddac: makefile-engine docs: Fix app_name_catalog_entry.
+2018-08-25 19:32:14	+HAIKU-irker313	    427edfcf0ddc: Makefile Engine template: Whitespace cleanup and synchronization.
+2018-08-25 19:40:38	➡️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has joined #haiku
+2018-08-25 19:48:26	⬅️	ClaudioM (~ClaudioM@c-75-74-74-51.hsd1.fl.comcast.net) has quit (Quit: leaving)
+2018-08-25 19:49:48	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Quit: Connection reset by beer)
+2018-08-25 19:51:31	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 19:54:22	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-25 19:55:04	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 19:56:34	➡️	gorbypark (~gorbypark@S01060014bf807555.vn.shawcable.net) has joined #haiku
+2018-08-25 20:00:29	⬅️	Romanson (~Romanson@113.199.144.243) has quit (Ping timeout: 244 seconds)
+2018-08-25 20:01:01	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-25 20:01:25	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 20:01:46	➡️	Romanson (~Romanson@113.199.157.103) has joined #haiku
+2018-08-25 20:04:59	➡️	shaka (~vision@ool-4354d0c0.dyn.optonline.net) has joined #haiku
+2018-08-25 20:06:25	⬅️	shaka (~vision@ool-4354d0c0.dyn.optonline.net) has quit (Client Quit)
+2018-08-25 20:16:32	⬅️	Romanson (~Romanson@113.199.157.103) has quit (Ping timeout: 268 seconds)
+2018-08-25 20:17:40	➡️	Romanson (~Romanson@113.199.177.95) has joined #haiku
+2018-08-25 20:18:59	⬅️	Dariost (~Dariost@151.20.145.216) has quit (Quit: Dariost)
+2018-08-25 20:24:46	⬅️	Romanson (~Romanson@113.199.177.95) has quit (Ping timeout: 244 seconds)
+2018-08-25 20:26:31	➡️	Romanson (~Romanson@103.95.16.58) has joined #haiku
+2018-08-25 20:42:41	cb88	waddlesplash: thanks thats one less thing to do when I upgrade from git :D
+2018-08-25 20:46:56	cb88	its good to see fixes going into the unit tests too
+2018-08-25 21:04:02	➡️	Kernel86 (~Kernel86@cpe-69-23-104-66.new.res.rr.com) has joined #haiku
+2018-08-25 21:13:23	➡️	stippi1 (~Thunderbi@p4FE6A783.dip0.t-ipconnect.de) has joined #haiku
+2018-08-25 21:13:23		Mode #haiku [+o stippi1] by ChanServ
+2018-08-25 21:15:24	⬅️	stippi (~Thunderbi@p4FE6A14B.dip0.t-ipconnect.de) has quit (Ping timeout: 244 seconds)
+2018-08-25 21:15:24		stippi1 is now known as stippi
+2018-08-25 21:15:36	➡️	dgtlchlk (~uhmm@znc.oxytoc.in) has joined #haiku
+2018-08-25 21:16:08	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-25 21:16:39	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-25 21:28:10	⬅️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has quit (Remote host closed the connection)
+2018-08-25 21:28:52	➡️	DepositePirate (~dpirate@gateway/tor-sasl/depositepirate) has joined #haiku
+2018-08-25 21:29:56	⬅️	bbjimmy (~bbjimmy@host-67-44-193-4.hnremote.net) has quit (Quit: Vision[0.10.2]: i've been blurred!)
+2018-08-25 21:30:23	➡️	bbjimmy (~bbjimmy@host-67-44-193-4.hnremote.net) has joined #haiku
+2018-08-25 21:52:09	➡️	Stenley (4db6835e@gateway/web/cgi-irc/kiwiirc.com/ip.77.182.131.94) has joined #haiku
+2018-08-25 21:53:27	⬅️	Stenley (4db6835e@gateway/web/cgi-irc/kiwiirc.com/ip.77.182.131.94) has quit (Client Quit)
+2018-08-25 21:59:29	➡️	OmniMancer (~Paul@101.100.137.239) has joined #haiku
+2018-08-25 22:10:24	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 272 seconds)
+2018-08-25 22:18:45	⬅️	DCatt_ (~DCatt@pool-71-253-161-239.rcmdva.east.verizon.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-25 22:26:11	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 22:29:17	⬅️	Romanson (~Romanson@103.95.16.58) has quit (Ping timeout: 244 seconds)
+2018-08-25 22:29:48	⬅️	return0xe (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has quit (Ping timeout: 244 seconds)
+2018-08-25 22:30:36	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 252 seconds)
+2018-08-25 22:30:45	⬅️	cocobean (633c1263@gateway/web/freenode/ip.99.60.18.99) has quit (Ping timeout: 252 seconds)
+2018-08-25 22:31:20	➡️	Romanson (~Romanson@103.95.16.58) has joined #haiku
+2018-08-25 22:32:19	⬅️	HAIKU-irker313 (~irker@maui.haiku-os.org) has quit (Quit: transmission timeout)
+2018-08-25 22:35:11	➡️	return0e (~return0e@host86-191-163-175.range86-191.btcentralplus.com) has joined #haiku
+2018-08-25 22:39:17	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 23:01:48	⬅️	Romanson (~Romanson@103.95.16.58) has quit (Ping timeout: 268 seconds)
+2018-08-25 23:08:01	⬅️	_Dario_ (~dario@181.47.129.79) has quit (Quit: Leaving)
+2018-08-25 23:08:28	➡️	Romanson (~Romanson@113.199.177.95) has joined #haiku
+2018-08-25 23:18:10	➡️	Begasus (~begasus@ptr-4p6jpio3h2zi5m15w3v.18120a2.ip6.access.telenet.be) has joined #haiku
+2018-08-25 23:18:20	Begasus	g'morning peeps
+2018-08-25 23:20:29	➡️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has joined #haiku
+2018-08-25 23:22:18	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 252 seconds)
+2018-08-25 23:24:19	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-25 23:30:09	➡️	HAIKU-irker905 (~irker@maui.haiku-os.org) has joined #haiku
+2018-08-25 23:30:09	HAIKU-irker905	haiku.master:  * hrev52283 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=21909dacd234+%5E427edfcf0ddc
+2018-08-25 23:30:09	HAIKU-irker905	    21909dacd234: HaikuPorts: Update build-packages set.
+2018-08-25 23:30:09		Mode #haiku [+v HAIKU-irker905] by ChanServ
+2018-08-25 23:31:15	@waddlesplash	Begasus: https://github.com/haikuports/haikuports/issues/2933#issuecomment-416015069
+2018-08-25 23:31:18	@waddlesplash	in case you want to take a look
+2018-08-25 23:31:23	@waddlesplash	1:30AM here, I'm off to bed
+2018-08-25 23:31:33	@waddlesplash	the beta branch will have to wait till later today, when I get some sleep...
+2018-08-25 23:33:12	Begasus	what should I be looking into waddlesplash? (before you head of) :)
+2018-08-25 23:35:24	Begasus	np, will look into what I can xerces-c is due for an update anyway 
+2018-08-25 23:35:50	leorize	look into everything! :P
+2018-08-25 23:36:32	leorize	anyone know s good grammar checker?
+2018-08-25 23:37:56	Begas_VBox	hi leorize :)
+2018-08-25 23:38:02	leorize	hi Begas_VBox :)
+2018-08-25 23:42:38	Begasus	jikes, conflicts on xerces-c
+2018-08-25 23:47:08	Begas_VBox	I think someone added some changes to the previous version?
+2018-08-25 23:50:49	@waddlesplash	yes korli reordered sections
+2018-08-25 23:51:02	@waddlesplash	leorize: yes, everything that's failed
+2018-08-25 23:52:42	Begas_VBox	hmm  .... closing the current PR for xerces-c (and reopen a new one in a bit)
+2018-08-25 23:57:11	Begasus	leorize, could you have a look at https://github.com/haikuports/haikuports/pull/2734
+2018-08-25 23:57:35	Begasus	merged master into that branch, not sure if it's ok that way (first time here) :)
+2018-08-26 00:00:18	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 252 seconds)
+2018-08-26 00:00:23	leorize	you should rebase it with master :P
+2018-08-26 00:00:49	leorize	it's fine to merge master to the branch, a squash merge will solve it :)
+2018-08-26 00:01:14	Begasus	so it should be ok so far? then I'll leave it
+2018-08-26 00:01:55	leorize	looks fine t
+2018-08-26 00:01:57	leorize	to me
+2018-08-26 00:02:01	miqlas	hi
+2018-08-26 00:02:19	Begasus	hi miqlas!
+2018-08-26 00:02:20	miqlas	waddlesplash: i check my recipes.
+2018-08-26 00:02:33	miqlas	Hi Begasus, not in vbox today?
+2018-08-26 00:02:44	Begas_VBox	yep :P
+2018-08-26 00:02:45	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-26 00:02:50	@waddlesplash	miqlas: thnx
+2018-08-26 00:03:16	miqlas	send me choklates pls.
+2018-08-26 00:03:36	Begas_VBox	Belgian chocolats?
+2018-08-26 00:03:58	miqlas	Begas_VBox: that would also do the trick i think
+2018-08-26 00:04:57	Begas_VBox	;)
+2018-08-26 00:05:08	Begas_VBox	ale builds ok here (x86_gcc2)
+2018-08-26 00:06:20	Begasus	hmm think I need to swith to x86_64 for most of them 
+2018-08-26 00:06:45	miqlas	oh, the haiku bug wich i haven't reported yet is solved somewhere along the recent commits.
+2018-08-26 00:06:48	miqlas	Nice.
+2018-08-26 00:07:49	johnny_b	miqlas: demands, always just demands...
+2018-08-26 00:08:36	leorize	waddlesplash: forgot to ask, what is the "new software policy" of the beta branch?
+2018-08-26 00:08:44	leorize	can I just add more softwares?
+2018-08-26 00:09:07	miqlas	It was basically this: i have workspaces replicant on the desktop, and i use the mouse scroll to change worspaces. Haiku was able to change between the workspaces buttersmooth if there were no open windows. If one desktop had any window, during the switch the desktop icons blinked. I assume there were a complete desktop redraw or something like that.
+2018-08-26 00:09:14	miqlas	It seems to be solved now.
+2018-08-26 00:10:34	miqlas	i sometimes just sit before the computer and scrolling trough my workspaces and watch how does the screen content changes. That's how i noticed it.
+2018-08-26 00:11:00	miqlas	yep, seems to be solved, my icons are steady.
+2018-08-26 00:12:08	➡️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has joined #haiku
+2018-08-26 00:12:08		Mode #haiku [+o humdinger] by ChanServ
+2018-08-26 00:12:17	Begasus	moin humdinger!
+2018-08-26 00:12:29	@humdinger	morning everyone!
+2018-08-26 00:15:27	@humdinger	Begasus: waddlesplash mentioned to look into the build failures at https://build.haiku-os.org/buildmaster/master/x86_64/?buildrunDir=1904&viewMode=expanded if you look for work for the beta.
+2018-08-26 00:15:30	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 264 seconds)
+2018-08-26 00:15:47	Begasus	hmm do I need to bump revision for an updated checksum?
+2018-08-26 00:15:56	➡️	liuyb (~liuyb@221.218.37.33) has joined #haiku
+2018-08-26 00:15:58	Begasus	already into it humdinger :)
+2018-08-26 00:16:05	@humdinger	great!
+2018-08-26 00:16:35	➡️	mchasard (~pierre@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has joined #haiku
+2018-08-26 00:16:36	Begasus	but dogschool in a bit, so probably will have some time this afternoon
+2018-08-26 00:17:19	@humdinger	they've been to school for a long time now. when ever will they graduate?
+2018-08-26 00:17:24	Begasus	for buildbot maybe the revision should be upped (for ibm_plex)?
+2018-08-26 00:17:39	⬅️	Romanson (~Romanson@113.199.177.95) has quit (Ping timeout: 268 seconds)
+2018-08-26 00:17:43	Begasus	with a Husky humdinger ... nah, way to stubborn for that :P
+2018-08-26 00:17:48	⬅️	mchasard (~pierre@i19-les01-ntr-176-186-41-167.sfr.lns.abo.bbox.fr) has left #haiku
+2018-08-26 00:23:46	⬅️	liuyb (~liuyb@221.218.37.33) has quit (Ping timeout: 252 seconds)
+2018-08-26 00:25:38	➡️	orealis (~cre8or@178.51-174-179.customer.lyse.net) has joined #haiku
+2018-08-26 00:26:38		irc: disconnected from server
+2018-08-26 00:26:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-26 00:27:58	➡️	liuyb (~liuyb@221.218.36.162) has joined #haiku
+2018-08-26 00:37:11	➡️	Romanson (~Romanson@103.95.16.43) has joined #haiku
+2018-08-26 00:37:59	Begas_VBox		devel:libcddb$secondaryArchSuffix = $portVersion ... not correct ... 
+2018-08-26 00:38:09	Begas_VBox	(dependency for vcdimager)
+2018-08-26 00:42:33	Begas_VBox	libcddb missing dependency for libcdio also
+2018-08-26 00:43:52		irc: disconnected from server
+2018-08-26 00:45:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-26 00:48:44	⬅️	liuyb (~liuyb@221.218.36.162) has quit (Ping timeout: 272 seconds)
+2018-08-26 00:49:41	Begas_VBox	k, heading out, cu later
+2018-08-26 00:49:52	miqlas	i'm actually not a big friend of portPackageLinksDir
+2018-08-26 00:51:00	⬅️	Romanson (~Romanson@103.95.16.43) has quit (Read error: Connection reset by peer)
+2018-08-26 00:51:19	miqlas	can't we have nice constants like with finddir? Finddir can be changed to get aware if it is started by haikuporter to pass back those strange paths. that would be helpful.
+2018-08-26 00:53:09	➡️	Romanson (~Romanson@103.95.16.23) has joined #haiku
+2018-08-26 00:57:38	⬅️	stippi (~Thunderbi@p4FE6A783.dip0.t-ipconnect.de) has quit (Quit: stippi)
+2018-08-26 01:04:24	leorize	what we need is a getPackagePrefix() for "devel~" deps
+2018-08-26 01:07:21	➡️	lorglas (~lorglas@p4FF5C001.dip0.t-ipconnect.de) has joined #haiku
+2018-08-26 01:10:04	➡️	HaikuUser (~vision@173.216.255.177) has joined #haiku
+2018-08-26 01:11:13	⬅️	HaikuUser (~vision@173.216.255.177) has quit (Client Quit)
+2018-08-26 01:13:06	⬅️	Romanson (~Romanson@103.95.16.23) has quit (Ping timeout: 264 seconds)
+2018-08-26 01:14:11	➡️	Romanson (~Romanson@103.95.16.23) has joined #haiku
+2018-08-26 01:20:36	⬅️	lorglas (~lorglas@p4FF5C001.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2018-08-26 01:22:36	⬅️	humdinger (~humdinger@dslb-092-075-033-050.092.075.pools.vodafone-ip.de) has quit (Quit:  Vision[0.10.3]: Oi, with the poodles at BeGeistert 031: https://discuss.haiku-os.org/t/begeistert-031)
+2018-08-26 01:28:39	➡️	HaikuUser (~vision@ip-62-235-60-121.dsl.scarlet.be) has joined #haiku
+2018-08-26 01:31:05	➡️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has joined #haiku
+2018-08-26 01:31:51	⬅️	HaikuUser (~vision@ip-62-235-60-121.dsl.scarlet.be) has quit (Client Quit)
+2018-08-26 01:57:54	➡️	HaikuUser (~vision@ip-62-235-60-121.dsl.scarlet.be) has joined #haiku
+2018-08-26 01:59:29	⬅️	HaikuUser (~vision@ip-62-235-60-121.dsl.scarlet.be) has quit (Client Quit)
+2018-08-26 01:59:49	miqlas	any idea what am i doing wrong? http://0x0.st/sts8.png
+2018-08-26 02:05:00	leorize	nm -D /boot/system/lib/libbsd.so | grep login_tty
+2018-08-26 02:05:52	leorize	I think the symbol of login_tty was mangled by C++ compiler, but I'll have to dig the source first
+2018-08-26 02:08:04	leorize	miqlas: file a ticket for libbsd
+2018-08-26 02:08:14	leorize	that symbol was mangled by the C++ compiler
+2018-08-26 02:17:54	miqlas	leorize https://dev.haiku-os.org/ticket/14403
+2018-08-26 02:20:56	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-26 02:20:56		Mode #haiku [+o tqh] by ChanServ
+2018-08-26 02:28:44	leorize	miqlas: thanks, can you build Haiku?
+2018-08-26 02:29:00	leorize	I've a patch but I can't test it yet
+2018-08-26 02:29:20	➡️	mounty1 (~mounty@n106-71-220-50.rdl2.qld.optusnet.com.au) has joined #haiku
+2018-08-26 02:30:11	⬅️	HAIKU-irker905 (~irker@maui.haiku-os.org) has quit (Quit: transmission timeout)
+2018-08-26 02:32:24	⬅️	Maturion (~Maturion@p200300EDE3D2BD0005FE9446CA5140A9.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2018-08-26 02:32:24	⬅️	cb88 (~Vision@cpe-172-73-115-88.carolina.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-08-26 02:36:43	miqlas	leorize: i would dismiss, if it is possible :)
+2018-08-26 02:37:06	leorize	:p I will try to build it then
+2018-08-26 02:37:41	leorize	96 tabs closed, hopefully I'll have enough RAM now
+2018-08-26 03:12:24	leorize	miqlas: https://review.haiku-os.org/#/c/haiku/+/487/
+2018-08-26 03:12:35	leorize	it was a typo lol
+2018-08-26 03:13:01	leorize	someone wrote login_pty when they meant login_tty :)
+2018-08-26 03:15:41	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-26 03:16:10	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-26 03:16:40	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-26 03:20:10	⬅️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has quit (Ping timeout: 244 seconds)
+2018-08-26 03:26:04	miqlas	leorize: while it is just a type, your patchset seems to change plnety other things. are they necessary?
+2018-08-26 03:26:08	miqlas	*typo
+2018-08-26 03:26:36	leorize	maybe :P
+2018-08-26 03:26:50	leorize	I just cleaned up some dust in it, that's all
+2018-08-26 03:27:14	miqlas	ok, thanks.
+2018-08-26 03:27:47	miqlas	i should wake up already
+2018-08-26 03:27:55	miqlas	have to clean the flat and stuff
+2018-08-26 03:43:31	➡️	liuyb (~liuyb@221.218.36.162) has joined #haiku
+2018-08-26 03:53:03	⬅️	Romanson (~Romanson@103.95.16.23) has quit (Read error: Connection reset by peer)
+2018-08-26 03:58:26	➡️	_taos_ (~taos@dslb-188-099-060-051.188.099.pools.vodafone-ip.de) has joined #haiku
+2018-08-26 04:03:25	➡️	HAIKU-irker634 (~irker@maui.haiku-os.org) has joined #haiku
+2018-08-26 04:03:25	HAIKU-irker634	haiku.master:  * hrev52284 [1 commit] https://git.haiku-os.org/haiku/log/?qt=range&q=546fafa0a1d5+%5E21909dacd234
+2018-08-26 04:03:25	HAIKU-irker634	    546fafa0a1d5: pty.h: fix typo.
+2018-08-26 04:03:25		Mode #haiku [+v HAIKU-irker634] by ChanServ
+2018-08-26 04:08:44	⬅️	liuyb (~liuyb@221.218.36.162) has quit (Ping timeout: 244 seconds)
+2018-08-26 04:25:06	➡️	Romanson (~Romanson@103.95.16.115) has joined #haiku
+2018-08-26 04:25:35	➡️	liuyb (~liuyb@221.218.36.162) has joined #haiku
+2018-08-26 04:30:24	_taos_	Whenever I try to `git push` to haikuports from haiku (linux works) I get a "remote: fatal: early EOF" error. Any ideas?
+2018-08-26 04:30:30	⬅️	liuyb (~liuyb@221.218.36.162) has quit (Ping timeout: 264 seconds)
+2018-08-26 04:31:08	leorize	can you give us the entire log?
+2018-08-26 04:32:25	_taos_	 git push
+2018-08-26 04:32:25	_taos_	 Password for 'https://taosxx@github.com': 
+2018-08-26 04:32:26	_taos_	 Counting objects: 6181, done.
+2018-08-26 04:32:26	_taos_	 Delta compression using up to 2 threads.
+2018-08-26 04:32:27	_taos_	 Compressing objects: 100% (2813/2813), done.
+2018-08-26 04:32:28	_taos_	 Writing objects: 100% (6181/6181), 1.87 MiB | 9.58 MiB/s, done.
+2018-08-26 04:32:28	_taos_	 Total 6181 (delta 3251), reused 5591 (delta 2918)
+2018-08-26 04:32:29	_taos_	 remote: fatal: early EOF
+2018-08-26 04:37:17	➡️	baimafeima (~baimafeim@ip-176-199-56-90.hsi06.unitymediagroup.de) has joined #haiku
+2018-08-26 04:46:15	➡️	liuyb (~liuyb@221.218.36.162) has joined #haiku
+2018-08-26 04:50:54	⬅️	liuyb (~liuyb@221.218.36.162) has quit (Ping timeout: 264 seconds)
+2018-08-26 05:03:01	Begasus	re, how's the status on the failed packages?
+2018-08-26 05:05:50	➡️	euver (~Thunderbi@p4FC36431.dip0.t-ipconnect.de) has joined #haiku
+2018-08-26 05:06:54	miqlas	Begasus: i did some fixes here and there
+2018-08-26 05:06:58	miqlas	mostly in my recipes
+2018-08-26 05:07:44	Begasus	yeah saw the emails passing by miqlas, just when looking at the current buildrun I don't see any errors? https://build.haiku-os.org/buildmaster/master/x86_64/?buildrunDir=&viewMode=expanded
+2018-08-26 05:09:04	miqlas	better check here: https://build.haiku-os.org/buildmaster/master/x86_64/?buildrunDir=1904&viewMode=compact
+2018-08-26 05:10:41	Begasus	most of them mention "
+2018-08-26 05:10:42	Begasus	some packages already exist, revision bump required
+2018-08-26 05:10:42	Begasus	"
+2018-08-26 05:11:57	Begasus	https://build.haiku-os.org/buildmaster/master/x86_64/?buildrunDir=1904&viewMode=expanded ... more acurate I think :)
+2018-08-26 05:12:39	⬅️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-26 05:12:59	Begasus	switching to x86_64
+2018-08-26 05:17:51	➡️	liuyb (~liuyb@221.218.36.162) has joined #haiku
+2018-08-26 05:24:00	➡️	Dariost (~Dariost@151.20.145.216) has joined #haiku
+2018-08-26 05:27:25	⬅️	tqh (~frho@82-183-10-104.customers.ownit.se) has quit (Quit: Lämnar)
+2018-08-26 05:31:07	➡️	Begas_VBox_64 (~Begasus@d54C3C8C2.access.telenet.be) has joined #haiku
+2018-08-26 05:52:00	leorize	Begasus: if you happen to be running gcc2, can you check my PRs?
+2018-08-26 05:52:25	Begas_VBox_64	just switched to x86_64 leorize :P
+2018-08-26 05:57:58	Begas_VBox_64	I'm short on hardware (could use a second build PC) :)
+2018-08-26 06:07:19	Begas_VBox_64	lets see if we can revive the old laptop :)
+2018-08-26 06:07:20	miqlas	Begas_VBox_64: i'm working on HPC support, slowly we will be able to use Haiku on supercomputers.
+2018-08-26 06:07:25	⬅️	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has quit (Remote host closed the connection)
+2018-08-26 06:07:48	Begas_VBox_64	don't have supercomputers here miqlas ;)
+2018-08-26 06:08:05	➡️	arfonzo (~arfonzo@2a03:b0c0:1:a1::54f:1001) has joined #haiku
+2018-08-26 06:08:13	miqlas	Begas_VBox_64: yet.
+2018-08-26 06:08:16	Begas_VBox_64	but sound great!
+2018-08-26 06:08:40	miqlas	yep, the big iron guys would surely like the packages and stuff.
+2018-08-26 06:09:00	miqlas	no left behind on their boot partition :)
+2018-08-26 06:10:21	Begas_VBox_64	with any luck the older laptop could use wifi (no LAN cable around atm to hook it up)
+2018-08-26 06:10:55	⬅️	_taos_ (~taos@dslb-188-099-060-051.188.099.pools.vodafone-ip.de) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-26 06:12:03	Begas_VBox_64	eeps,  laptop hasn't booted in a while it seem (still running 14.04 LTS) :D
+2018-08-26 06:19:03	arfonzo	Ahoy friends! Have we got a beta RC image for testing?
+2018-08-26 06:19:55	Begas_VBox_64	I think the current status is as good as it gets atm (working on some fixes by the devs)
+2018-08-26 06:23:57	arfonzo	How do I upgrade/switch from my nightly (using the .../current Haiku and HaikuPorts repo paths) to the beta RC?
+2018-08-26 06:24:39	Begas_VBox_64	I gues running "pkgman full-sync" should keep you on par
+2018-08-26 06:28:57	➡️	ugen (uid218792@gateway/web/irccloud.com/x-dcfvfpfodeilongh) has joined #haiku
+2018-08-26 06:29:26	⬅️	Begas_VBox_64 (~Begasus@d54C3C8C2.access.telenet.be) has quit (Read error: No route to host)
+2018-08-26 06:30:45	⬅️	Begasus (~begasus@ptr-4p6jpio3h2zi5m15w3v.18120a2.ip6.access.telenet.be) has quit (Ping timeout: 252 seconds)
+2018-08-26 06:33:34	arfonzo	ah great, so we're not making another branch or anything, for now? All beta changes are reflected in our nightly images? Cool
+2018-08-26 06:38:37	➡️	MrHuggy (~MrHuggy@adsl-178-78-88-138.karoo.kcom.com) has joined #haiku
+2018-08-26 06:51:08	➡️	Begasus (~begasus@ptr-4p6jpinfc76k4dklq37.18120a2.ip6.access.telenet.be) has joined #haiku
+2018-08-26 06:51:57	➡️	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #haiku
+2018-08-26 06:51:58		Mode #haiku [+o mmu_man] by ChanServ
+2018-08-26 07:03:26	⬅️	HAIKU-irker634 (~irker@maui.haiku-os.org) has quit (Quit: transmission timeout)
+2018-08-26 07:04:32	Begasus	bugger ... all the icons light up on the other laptop, but it's not booting into the Desktop :/
+2018-08-26 07:05:34	⬅️	Romanson (~Romanson@103.95.16.115) has quit (Ping timeout: 272 seconds)
+2018-08-26 07:07:21	➡️	Romanson (~Romanson@113.199.210.215) has joined #haiku
+2018-08-26 07:20:04	@waddlesplash	arfonzo: there will be a branch but it's not ready just yet
+2018-08-26 07:20:08	@waddlesplash	it will later today
+2018-08-26 07:20:17	@waddlesplash	but it also will not really be different from master
+2018-08-26 07:21:54	arfonzo	cool, thanks waddlesplash. It would be good to know exactly how end users can test the beta RC branch, including migrate/upgrade/prefer to install fresh, that kind of thing. Great work everyone!
+2018-08-26 07:29:20	➡️	swift110 (~swift110@unaffiliated/swift110) has joined #haiku
+2018-08-26 07:38:22	➡️	tombhadAC (~root@x4d00e863.dyn.telefonica.de) has joined #haiku
+2018-08-26 07:40:28	miqlas	Begasus, we both did th eplex fix :D
+2018-08-26 07:40:44	miqlas	the diff is absolutely the same. Nice job ;)
+2018-08-26 07:47:53	Begasus	eplex?
+2018-08-26 07:48:34	Begasus	thanks anyway ;) (probably a while back)
+2018-08-26 07:49:01	Begasus	ah, you mean the ibm_plex fix?
+2018-08-26 07:50:16	Begasus	just wondering why on the other laptop Haiku boots perfecly with the USB stick, after install it keeps hanging on the last icon ... 
+2018-08-26 07:50:33	Begasus	even wifi shows up with the USB stick
+2018-08-26 07:53:03	➡️	Dariost_ (~Dariost@151.20.234.151) has joined #haiku
+2018-08-26 07:53:54	⬅️	Dariost (~Dariost@151.20.145.216) has quit (Ping timeout: 264 seconds)
+2018-08-26 07:53:55		Dariost_ is now known as Dariost
+2018-08-26 08:10:02	➡️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has joined #haiku
+2018-08-26 08:20:12	⬅️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has quit (Ping timeout: 252 seconds)
+2018-08-26 08:21:02	➡️	illwieckz (~illwieckz@unvanquished/developer/illwieckz) has joined #haiku
+2018-08-26 08:22:57	⬅️	swift110 (~swift110@unaffiliated/swift110) has quit (Quit: Leaving)
+2018-08-26 08:31:08	miqlas	btw, what is the point to having portPackageLinksDir?
+2018-08-26 08:32:06	miqlas	It is an abstraction, where i don't really see the point.
+2018-08-26 08:34:09	Begas_VBox	never used it (yet) :)
+2018-08-26 08:36:08	leorize	miqlas: since in the future an user can either install a package in the global scope or local scope
+2018-08-26 08:36:16		irc: disconnected from server
+2018-08-26 08:48:23	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #haiku
+2018-08-26 08:48:23	***	Buffer Playback...
+2018-08-26 08:48:23	miqlas	[08:36:18] Begas_VBox: the cmake fFindSoemthing.cmake files were a pain in the butt as they cannot find the header and/or the libs. Somebody pointed i can actually pass theese variables to cmake, and since then i use $portPackageLinksDir extensively.
+2018-08-26 08:48:23	miqlas	[08:37:31] for an example: cmake complains LIBXY_INCLUDE_DIR is undefined. I nthis case you can add -DLIBXY_INCLUDE_DIR="here_comes_the_path", so you don't have to fix all the FindXY.cmake files.
+2018-08-26 08:48:23	miqlas	[08:37:38] nice thing if you asks me.
+2018-08-26 08:48:23	Begas_VBox	[08:42:50] still not a big fan of cmake here :)
+2018-08-26 08:48:23	Begas_VBox	[08:43:01] and glad to! :D
+2018-08-26 08:48:23	leorize	[08:43:08] I like meson more :P
+2018-08-26 08:48:23	Begas_VBox	[08:44:01] first time was for the proto files here leorize, so not really knowlidge about it :)
+2018-08-26 08:48:23	miqlas	[08:45:38] i'm actually a firend of every build systems, but i don't like the mess waht auto* can make
+2018-08-26 08:48:23	leorize	[08:46:08] don't worry, everyone hate auto*hell
+2018-08-26 08:48:23	miqlas	[08:46:34] if you try to reconfigure something old, you will have a hard time with aclocal, autoreconf, automake, autopoint, autoidontknowwhatelse
+2018-08-26 08:48:23	leorize	[08:47:40] autoreconf was definitely their attempt to make life easier
+2018-08-26 08:48:23	miqlas	[08:47:50] technically it isn't bad, but the fact, that it is a really big bash script wich depend on bash, but i nthe same time on defined version of auto*, that makes my life sometimes pretty hard.
+2018-08-26 08:48:23	leorize	[08:47:52] that's until you hit the cases where autoreconf wouldn't work
+2018-08-26 08:48:23	miqlas	[08:48:18] If i get AC_SOMETHING needs to be defined, i just delete the complete source folder and start to drink.
+2018-08-26 08:48:23	***	Playback Complete.
+2018-08-26 08:48:29	➡️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has joined #haiku
+2018-08-26 08:48:34	miqlas	daddy drinks because you cries.
+2018-08-26 08:48:38	leorize	to this day I still don't know why libtool was a thing
+2018-08-26 08:49:00	Begasus	bumped PR for ibm_plex ... 
+2018-08-26 08:49:12	miqlas	i actually downloaded the auto* handbook and studied it, but no dice.
+2018-08-26 08:49:13	➡️	torad_ (uid314296@gateway/web/irccloud.com/x-qsqftgukfhmfoaez) has joined #haiku
+2018-08-26 08:49:20	Begasus	;)
+2018-08-26 08:49:36	torad_	How's it going?
+2018-08-26 08:49:52	miqlas	but today auto* is less pain. In the BeOS times it was a nightmare for me at least.
+2018-08-26 08:50:01	matthewstar	peace and love =0)
+2018-08-26 08:50:16	miqlas	matthewstar: long time no sea! how doing mate?!
+2018-08-26 08:50:18	⬅️	cull (~cull@2607:fb90:897:81f2:fa73:9c33:3c72:4f94) has quit (Ping timeout: 264 seconds)
+2018-08-26 08:50:32	Begasus	I'm in favor for the autotools (if needed) :)
+2018-08-26 08:51:07	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-26 08:51:11	matthewstar	well now, thanks ... a lot of sleep : becouse medicine
+2018-08-26 08:51:34	➡️	tqh (~frho@82-183-10-104.customers.ownit.se) has joined #haiku
+2018-08-26 08:51:34		Mode #haiku [+o tqh] by ChanServ
+2018-08-26 08:52:18	miqlas	matthewstar: oh, yeah, you told us you are ill. Hope it will be better soon. Keep going, mate.
+2018-08-26 08:52:33	➡️	cull (~cull@2607:fb90:67b:40a2:7e19:4dec:97d1:6c39) has joined #haiku
+2018-08-26 08:52:49	matthewstar	thanks ... =0)
+2018-08-26 08:53:01	leorize	Begasus: I see you've switched back to 32bit :) Can you help me test my PRs? :P
+2018-08-26 08:54:08	matthewstar	mikedld: thanks, mate =0)
+2018-08-26 08:54:16	matthewstar	ops
+2018-08-26 08:54:30	matthewstar	miqlas:   thanks, mate =0)
+2018-08-26 08:56:55	matthewstar	see you all later ...
+2018-08-26 08:57:00	matthewstar	=0)
+2018-08-26 08:57:05	⬅️	matthewstar (02251db8@gateway/web/cgi-irc/kiwiirc.com/ip.2.37.29.184) has left #haiku
+2018-08-26 09:09:11	Vidrep_gcc2h	Hi
+2018-08-26 09:09:29	Vidrep_gcc2h	How does Haiku get it's VESA resolutions?
+2018-08-26 09:10:49	Vidrep_gcc2h	I'm having an issue where after swapping monitors (of different resolutions) the old resolution is no longer available
+2018-08-26 09:11:45	➡️	kurain (~kurain@115.60.176.81) has joined #haiku
+2018-08-26 09:15:49	Begasus	bugger busted leorize :P
+2018-08-26 09:15:56	Begasus	hi Vidrep_gcc2h!
+2018-08-26 09:16:13	⬅️	Ptrus (Vision@67.219.239.116) has quit (Remote host closed the connection)
+2018-08-26 09:16:42	➡️	Ptrus (Vision@67.219.239.116) has joined #haiku
+2018-08-26 09:16:42	Vidrep_gcc2h	need to reboot
+2018-08-26 09:16:44	⬅️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-26 09:17:22	leorize	Begasus: ;)
+2018-08-26 09:17:33	Begasus	leorize, busy atm (looking to rehome one of our dogs) :/
+2018-08-26 09:17:41	leorize	no worries :)
+2018-08-26 09:18:00	leorize	we're not branching today :p
+2018-08-26 09:18:09	Begasus	not sure  I'll get around to it today, but I'll keep an eye on it
+2018-08-26 09:20:02	Begasus	sometimes I just need to get back online on FB ;)
+2018-08-26 09:24:47	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-26 09:25:20	Vidrep_gcc2h	Hi Begas_VBox
+2018-08-26 09:25:32	Vidrep_gcc2h	Having screen issues
+2018-08-26 09:29:02	⬅️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has quit (Client Quit)
+2018-08-26 09:33:11	⬅️	euver (~Thunderbi@p4FC36431.dip0.t-ipconnect.de) has quit (Quit: euver)
+2018-08-26 09:38:02	➡️	Vidrep_64 (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-26 09:42:00	⬅️	Vidrep_64 (~vision@d108-173-60-61.abhsia.telus.net) has quit (Client Quit)
+2018-08-26 09:50:00	➡️	Vidrep_gcc2h (~vision@d108-173-60-61.abhsia.telus.net) has joined #haiku
+2018-08-26 09:51:44	⬅️	Romanson (~Romanson@113.199.210.215) has quit (Ping timeout: 252 seconds)
+2018-08-26 09:58:52	➡️	shaka (~vision@ool-4354d0c0.dyn.optonline.net) has joined #haiku
+2018-08-26 10:03:02	Vidrep_gcc2h	Is there a simple stupid solution to this issue? https://dev.haiku-os.org/ticket/14406
+2018-08-26 10:04:37	shaka	Vidrep_gcc2h I recently had an issue like that and the fix for me was to do an auto adjust on the monitor itself, then was able to adjust properly
+2018-08-26 10:05:24	⬅️	Begas_VBox (~Begasus@d54C3C8C2.access.telenet.be) has quit (Quit: Vision[0.10.3]: i've been blurred!)
+2018-08-26 10:05:28	shaka	If you have a button on your monitor for settings/auto adjust

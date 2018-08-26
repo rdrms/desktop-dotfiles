@@ -1,0 +1,1743 @@
+2018-08-22 22:46:31	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-22 22:46:54	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-22 22:46:54	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-22 22:47:25	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-22 22:47:26	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-22 22:47:44	rydare	anyone around to explain to me the basics?  I would like to have two vertically split windows on one side, and the same on the other side
+2018-08-22 22:47:56	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-22 22:47:56	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-22 22:48:10	rydare	do i have to hit $mod+v for that
+2018-08-22 22:48:15	rydare	i got it to work just now
+2018-08-22 22:48:18	@squigzy	https://i3wm.org/docs/userguide.html
+2018-08-22 22:48:27	@squigzy	Read that, along with the config file, and watch the video in /topic
+2018-08-22 22:49:08	rydare	ok thanks, sorry to bother y'all
+2018-08-22 22:49:12		Topic for #i3 is "i3 v4.15 released | i3status 2.12 released | i3lock 2.10 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2018-08-22 22:49:12		Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Fri, 11 May 2018 04:14:03
+2018-08-22 22:49:40	@squigzy	we're here to help
+2018-08-22 22:50:39	rydare	SPOONFEED ME
+2018-08-22 22:50:41	rydare	lololol jk
+2018-08-22 22:50:46	rydare	i'll hang out
+2018-08-22 22:50:49	rydare	really liking this wm
+2018-08-22 22:51:25	saptech	that's pretty much how it work, $mod+v
+2018-08-22 22:51:28	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-22 22:51:28	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-22 22:51:45	saptech	I'm liking i3 alot more now then when I tried it in the past
+2018-08-22 22:51:59	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-22 22:52:00	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-22 22:57:12	rydare	yeah i feel like i know a lot more and it's a lot easier
+2018-08-22 23:00:00	⬅️	halbeno (~halbeno@S0106ac202ecc7933.ed.shawcable.net) has quit (Quit: Leaving)
+2018-08-22 23:00:58	@squigzy	We discourage spoonfeeding here, and encourage pointing you to where you need to go
+2018-08-22 23:01:10	@squigzy	in the general direction, that is
+2018-08-22 23:07:09	rydare	that video was helpful
+2018-08-22 23:07:17	rydare	i didn't realize that's what the yellow border meant
+2018-08-22 23:08:56	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 240 seconds)
+2018-08-22 23:09:34	➡️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has joined #i3
+2018-08-22 23:09:53	➡️	halbeno (~halbeno@d50-93-37-115.abhsia.telus.net) has joined #i3
+2018-08-22 23:12:21	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-22 23:17:43	pjs	Is there an easy way to get a window title (when I don't have titles)? Ie, say I want to put keepassx in the scratchpad, how do I get it's title?
+2018-08-22 23:27:47	rydare	you can use xprop
+2018-08-22 23:28:10	rydare	gives you tons of information about the window you click on after running it
+2018-08-22 23:28:47	pjs	ah thank you. This is very useful. I had found xwininfo as well
+2018-08-22 23:31:54	➡️	mmfood2 (~mmfood@46.246.88.99) has joined #i3
+2018-08-22 23:37:19	pjs	rydare: Found this awesome script: https://faq.i3wm.org/question/2172/how-do-i-find-the-criteria-for-use-with-i3-config-commands-like-for_window-eg-to-force-splashscreens-and-dialogs-to-show-in-floating-mode.1.html
+2018-08-22 23:38:43	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-22 23:41:37	⬅️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 276 seconds)
+2018-08-22 23:44:41	⬅️	mmfood2 (~mmfood@46.246.88.99) has quit (Ping timeout: 272 seconds)
+2018-08-22 23:46:12	➡️	mmfood2 (~mmfood@46.246.88.100) has joined #i3
+2018-08-22 23:54:42	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-22 23:55:44		irc: disconnected from server
+2018-08-22 23:56:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-22 23:56:51	⬅️	s7k (504e0568@gateway/web/freenode/ip.80.78.5.104) has quit (Ping timeout: 252 seconds)
+2018-08-22 23:58:06	⬅️	mmfood2 (~mmfood@46.246.88.100) has quit (Ping timeout: 264 seconds)
+2018-08-23 00:00:58	➡️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has joined #i3
+2018-08-23 00:05:17	⬅️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has quit (Quit: No windows for this server)
+2018-08-23 00:05:42	➡️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has joined #i3
+2018-08-23 00:05:52	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 00:07:04	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-23 00:08:30	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 00:14:42	⬅️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has quit (Remote host closed the connection)
+2018-08-23 00:14:57	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 240 seconds)
+2018-08-23 00:18:12	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 00:20:36	⬅️	mmfood2 (~mmfood@178.73.196.98) has quit (Ping timeout: 256 seconds)
+2018-08-23 00:25:09	➡️	max_m (~max_m@gateway/tor-sasl/maxm/x-47377621) has joined #i3
+2018-08-23 00:27:22	⬅️	max_m (~max_m@gateway/tor-sasl/maxm/x-47377621) has quit (Client Quit)
+2018-08-23 00:29:38	➡️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has joined #i3
+2018-08-23 00:35:05	➡️	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2018-08-23 00:38:28	➡️	mmfood2 (~mmfood@178.73.197.100) has joined #i3
+2018-08-23 00:41:45	➡️	max_m (~max_m@gateway/tor-sasl/maxm/x-47377621) has joined #i3
+2018-08-23 00:44:31	➡️	manzerbredes (~loic@myriads-lg.irisa.fr) has joined #i3
+2018-08-23 00:51:14	colin969	Is there a way to have arguments automatically attached to programs run through the dmenu?
+2018-08-23 00:51:53	colin969	I'm trying to get chrome to scale properly but the version Linux Mint uses doesn't have a persistent flags config. :(
+2018-08-23 00:54:01	⬅️	SergeantBiggs (reinejo@login.zedat.fu-berlin.de) has quit (Quit: Lost terminal)
+2018-08-23 00:56:53	rydare	i think it uses .desktop files in /usr/share/applications
+2018-08-23 00:57:04	rydare	you could add the arguments to the exec line in there
+2018-08-23 00:57:20	rydare	you can also copy them to ~/.local/share/applications/
+2018-08-23 00:57:23	rydare	and edit them there
+2018-08-23 00:57:33	rydare	since they'll get overwritten on updates if you go /usr/share/applications
+2018-08-23 00:59:37	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-23 01:01:28	colin969	Works that way with Cinnamon, but doesn't seem to work here.
+2018-08-23 01:01:45	colin969	Same goes for spotify, but that's easy enough to fix.
+2018-08-23 01:02:51	rydare	are you using i3
+2018-08-23 01:02:58	colin969	Yeah
+2018-08-23 01:03:11	rydare	this might help maybe https://build.i3wm.org/docs/i3-dmenu-desktop.html
+2018-08-23 01:04:00		irc: disconnected from server
+2018-08-23 01:04:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 01:04:38	colin969	Ah, that works, nice.
+2018-08-23 01:07:21	➡️	Godoshian (~armankoca@188.119.39.48) has joined #i3
+2018-08-23 01:08:35	➡️	clemens3 (~clemens@mx.eniso-partners.com) has joined #i3
+2018-08-23 01:13:06	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2018-08-23 01:14:19	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-23 01:15:30	⬅️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2018-08-23 01:20:07	⬅️	kernal_ (~kernal_@202.153.71.40) has quit (Quit: Byyeeeee)
+2018-08-23 01:21:44	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-23 01:22:53	⬅️	mmfood2 (~mmfood@178.73.197.100) has quit (Ping timeout: 260 seconds)
+2018-08-23 01:23:15	⬅️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has quit (Quit: ZNC 1.7.1 - https://znc.in)
+2018-08-23 01:24:04	➡️	Obs3rv3r (~Obs3rv3r@185.216.50.242) has joined #i3
+2018-08-23 01:24:09	➡️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has joined #i3
+2018-08-23 01:25:31	⬅️	Obs3rv3r (~Obs3rv3r@185.216.50.242) has quit (Read error: Connection reset by peer)
+2018-08-23 01:26:48	➡️	Obs3rv3r (~Obs3rv3r@185.216.50.242) has joined #i3
+2018-08-23 01:27:25	➡️	somis (~somis@149.56.153.181) has joined #i3
+2018-08-23 01:29:09	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-23 01:35:43	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 260 seconds)
+2018-08-23 01:37:49	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 01:51:04	⬅️	Obs3rv3r (~Obs3rv3r@185.216.50.242) has quit (Quit: leaving)
+2018-08-23 01:54:21	⬅️	alephnull (~alephnull@node-yf.pool-118-173.dynamic.totbb.net) has quit (Read error: Connection reset by peer)
+2018-08-23 01:54:51	➡️	alephnull (~alephnull@node-6pi.pool-125-27.dynamic.totbb.net) has joined #i3
+2018-08-23 02:05:04	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-23 02:11:05	⬅️	freon32 (~freon@gateway/tor-sasl/freon32) has quit (Ping timeout: 250 seconds)
+2018-08-23 02:17:57	➡️	freon32 (~freon@gateway/tor-sasl/freon32) has joined #i3
+2018-08-23 02:18:47	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-23 02:22:50	➡️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has joined #i3
+2018-08-23 02:24:39	⬅️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has quit (Quit: ZNC - http://znc.in)
+2018-08-23 02:26:08	➡️	Panter (~Panter@dhcp-077-251-172-036.chello.nl) has joined #i3
+2018-08-23 02:26:45	➡️	apetresc_ (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has joined #i3
+2018-08-23 02:29:29	Panter	Hey all! I've been using i3 for years now, and think it is great.
+2018-08-23 02:29:36	Panter	That said, I
+2018-08-23 02:30:30	⬅️	guther (~dummy@unaffiliated/guther) has quit (Ping timeout: 264 seconds)
+2018-08-23 02:31:15		apetresc_ is now known as apetresc
+2018-08-23 02:31:46	Panter	That said, I find myself struggling to configure "bindsym $mod+Shift+q kill" the way I want. I find myself mashing that key combination sometimes to clean my workspace, but would like to implement a sort of 'blacklist' where certain processes can't be killed with that combination (so I will only ever quit out of them manually).
+2018-08-23 02:32:44	Panter	Does anyone have any suggestions? I've tried a few things already, but none worked the way I wanted.
+2018-08-23 02:39:25	⬅️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has quit (Ping timeout: 256 seconds)
+2018-08-23 02:39:41	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Remote host closed the connection)
+2018-08-23 02:43:51	➡️	guther (~dummy@unaffiliated/guther) has joined #i3
+2018-08-23 02:49:37	Panter	So, moments after asking that I came across this repository: https://github.com/Igrom/i3-persist
+2018-08-23 02:50:04	Panter	I had been looking for pretty much exactly this for three days now :P I'm going to try this now :)
+2018-08-23 02:52:43	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:52:44	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:53:02	➡️	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2018-08-23 02:53:40	⬅️	netvor (~amahdal@unaffiliated/netvor) has quit (Client Quit)
+2018-08-23 02:53:45	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:53:45	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:54:16	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:54:16	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:55:47	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:55:47	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:56:48	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:56:49	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:57:20	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 02:57:20	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 02:58:20	⬅️	amosbird (~amosbird@123.206.66.49) has quit (Quit: ZNC 1.7.0 - https://znc.in)
+2018-08-23 02:58:50	➡️	amosbird (~amosbird@123.206.66.49) has joined #i3
+2018-08-23 02:59:12	nimaje	you could also use command criteria for that, but not sure how easy it is to get the negative matches right
+2018-08-23 03:00:18	Panter	nimaje: Command criteria in the config? Would you have examples of that?
+2018-08-23 03:03:04	⬅️	Natrick (pnawracay@nat/suse/x-zaaijhlhgxseideu) has quit (Ping timeout: 240 seconds)
+2018-08-23 03:03:13	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 03:05:27	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 03:06:24	nimaje	command criteria in the config apply like in any other way to execute i3 commands
+2018-08-23 03:15:15	➡️	Natrick (pnawracay@nat/novell/x-nzvlxzbdjlypzsaw) has joined #i3
+2018-08-23 03:17:33	⬅️	mmfood2 (~mmfood@178.73.196.98) has quit (Ping timeout: 268 seconds)
+2018-08-23 03:18:13	Panter	nimaje: Sorry, yes, I read that completely wrong.
+2018-08-23 03:18:52	➡️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has joined #i3
+2018-08-23 03:23:50	⬅️	Trieste (~T@unaffiliated/trieste) has quit (Ping timeout: 272 seconds)
+2018-08-23 03:24:56	⬅️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has quit (Remote host closed the connection)
+2018-08-23 03:25:53	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 03:26:45	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 03:27:36	➡️	mmfood2 (~mmfood@46.246.17.98) has joined #i3
+2018-08-23 03:30:17	➡️	Trieste (~T@unaffiliated/trieste) has joined #i3
+2018-08-23 03:31:46	⬅️	Godoshian (~armankoca@188.119.39.48) has quit (Read error: Connection reset by peer)
+2018-08-23 03:34:56	➡️	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2018-08-23 03:44:24	➡️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2018-08-23 03:47:08	⬅️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Client Quit)
+2018-08-23 03:49:15	➡️	segurb (~segurb@unaffiliated/segurb) has joined #i3
+2018-08-23 03:49:27	segurb	hello, I am trying to do the following bind: bindsym Control+Down exec python ~/scripts/system/kb-light.py - 1
+2018-08-23 03:49:33	segurb	but it does not work
+2018-08-23 03:49:41	segurb	if I run just the python script on the side, it works perfectly
+2018-08-23 04:01:04	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 240 seconds)
+2018-08-23 04:02:54	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 04:19:23	➡️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2018-08-23 04:21:57	⬅️	netvor (~amahdal@unaffiliated/netvor) has quit (Quit: WeeChat 2.2)
+2018-08-23 04:26:38	michaelrose	segurb, shouldn't it be down not Down
+2018-08-23 04:27:48	michaelrose	nope it seems
+2018-08-23 04:27:53	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 252 seconds)
+2018-08-23 04:30:00	michaelrose	segurb, perhaps pastebin the python script in question
+2018-08-23 04:30:30	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 04:32:01	⬅️	segurb (~segurb@unaffiliated/segurb) has quit (Quit: https://i.imgur.com/xrUtDu3.gif)
+2018-08-23 04:51:07	➡️	le_frogballs (~amilkov@cpc76462-belc9-2-0-cust278.2-1.cable.virginm.net) has joined #i3
+2018-08-23 04:52:05	le_frogballs	hey was wondering in tabbed layout if there's a way to move the actual tabs around (like have one tab trade places with another lets say)
+2018-08-23 04:55:36	➡️	kernal_ (kernal_@gateway/vpn/privateinternetaccess/kernal/x-12724317) has joined #i3
+2018-08-23 04:55:46	@squigzy	https://i3wm.org/docs/userguide.html#_swapping_containers
+2018-08-23 05:00:11	⬅️	fp7 (~fp7@unaffiliated/fp7) has quit (Quit: fp7)
+2018-08-23 05:02:22	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 268 seconds)
+2018-08-23 05:02:54	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 05:04:08	le_frogballs	squigzy: thanks
+2018-08-23 05:05:12	➡️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has joined #i3
+2018-08-23 05:11:49	⬅️	le_frogballs (~amilkov@cpc76462-belc9-2-0-cust278.2-1.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-23 05:15:18	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Ping timeout: 272 seconds)
+2018-08-23 05:16:06	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-23 05:19:52	⬅️	bgardner (~bgardner@fsf/member/bgardner) has quit (Quit: leaving)
+2018-08-23 05:21:08	➡️	eboladoc (~chris@p57AEC83B.dip0.t-ipconnect.de) has joined #i3
+2018-08-23 05:22:45	➡️	bgardner (~bgardner@fsf/member/bgardner) has joined #i3
+2018-08-23 05:27:56	⬅️	Jellyg00se (~Jellyg00s@host81-149-124-93.in-addr.btopenworld.com) has quit (Remote host closed the connection)
+2018-08-23 05:29:24	⬅️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has quit (Quit: No windows for this server)
+2018-08-23 05:30:36	⬅️	bgardner (~bgardner@fsf/member/bgardner) has quit (Quit: leaving)
+2018-08-23 05:31:54	➡️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has joined #i3
+2018-08-23 05:34:21	➡️	bgardner (~bgardner@fsf/member/bgardner) has joined #i3
+2018-08-23 05:34:48	➡️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has joined #i3
+2018-08-23 05:37:48	⬅️	eboladoc (~chris@p57AEC83B.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-23 05:38:12	➡️	nuth (uid280430@gateway/web/irccloud.com/x-mjuzcickwhvgqpfk) has joined #i3
+2018-08-23 05:39:49	➡️	MisoM (~miroslav@x4d077dfb.dyn.telefonica.de) has joined #i3
+2018-08-23 05:42:45	➡️	Forlorn_ (~Forlorn@unaffiliated/forlorn) has joined #i3
+2018-08-23 05:48:29	⬅️	bgardner (~bgardner@fsf/member/bgardner) has quit (Ping timeout: 264 seconds)
+2018-08-23 05:54:47	⬅️	rouji (~rouji@x0.at) has quit (Ping timeout: 268 seconds)
+2018-08-23 05:54:57	⬅️	kernal_ (kernal_@gateway/vpn/privateinternetaccess/kernal/x-12724317) has quit (Remote host closed the connection)
+2018-08-23 05:55:10	➡️	bgardner (~bgardner@fsf/member/bgardner) has joined #i3
+2018-08-23 05:56:20	➡️	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2018-08-23 06:06:15	⬅️	Forlorn_ (~Forlorn@unaffiliated/forlorn) has quit (Ping timeout: 256 seconds)
+2018-08-23 06:17:02	➡️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has joined #i3
+2018-08-23 06:17:24	colin969	I installed on top of Linux Mint, and I seem to have been able to sort out DPI for most things
+2018-08-23 06:18:01	colin969	But the text in the system applications it came with can't seem to change text size?
+2018-08-23 06:21:08	mbarrin	 /go ju
+2018-08-23 06:21:10	mbarrin	oops
+2018-08-23 06:22:48	➡️	cookiebow (~master@185-157-160-62.pool.ovpn.com) has joined #i3
+2018-08-23 06:25:31	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 06:28:28	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 06:41:17	⬅️	mmfood2 (~mmfood@46.246.17.98) has quit (Ping timeout: 264 seconds)
+2018-08-23 06:42:58	➡️	mmfood2 (~mmfood@46.246.88.98) has joined #i3
+2018-08-23 06:51:27	➡️	Vonter (~Vonter@49.206.11.150) has joined #i3
+2018-08-23 06:52:43	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 06:55:13	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 06:58:55	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 06:58:56	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 06:59:26	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 06:59:26	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 07:00:27	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 07:00:27	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 07:00:58	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 07:00:58	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 07:01:30	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 07:01:30	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 07:03:32	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 07:03:32	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 07:12:38	➡️	nast (~nast@217.23.3.171) has joined #i3
+2018-08-23 07:14:02	⬅️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has quit (Ping timeout: 260 seconds)
+2018-08-23 07:18:04	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 240 seconds)
+2018-08-23 07:18:52	⬅️	colin969 (~colin@cpc112850-wiga15-2-0-cust791.18-3.cable.virginm.net) has quit (Remote host closed the connection)
+2018-08-23 07:19:03	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 07:30:02	➡️	pnwise (~pnwise@unaffiliated/pnwise) has joined #i3
+2018-08-23 07:32:57	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 07:36:07	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 07:43:19	⬅️	IRCsum (~IRCsum@75-136-203-236.dhcp.kgpt.tn.charter.com) has quit (Ping timeout: 268 seconds)
+2018-08-23 07:44:31	⬅️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has quit (Ping timeout: 255 seconds)
+2018-08-23 07:45:47	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-23 07:54:18	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-23 07:55:45	➡️	marcosmoyano (~user@181.95.230.113) has joined #i3
+2018-08-23 07:58:10	➡️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has joined #i3
+2018-08-23 08:02:04	⬅️	max_m (~max_m@gateway/tor-sasl/maxm/x-47377621) has quit (Ping timeout: 250 seconds)
+2018-08-23 08:11:01	➡️	IRCsum (~IRCsum@2600-6c5c-6d00-017a-a392-f763-ba72-6e9f.dhcp6.chtrptr.net) has joined #i3
+2018-08-23 08:11:59	⬅️	mmfood2 (~mmfood@46.246.88.98) has quit (Ping timeout: 272 seconds)
+2018-08-23 08:16:46	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-23 08:25:01	➡️	Vonter_ (~Vonter@49.206.15.112) has joined #i3
+2018-08-23 08:25:04	⬅️	Vonter (~Vonter@49.206.11.150) has quit (Ping timeout: 240 seconds)
+2018-08-23 08:28:20	⬅️	HappyLoaf (~HappyLoaf@happyloaf.com) has quit (Ping timeout: 268 seconds)
+2018-08-23 08:29:33	➡️	HappyLoaf (~HappyLoaf@happyloaf.com) has joined #i3
+2018-08-23 08:33:33	⬅️	languitar (~languitar@semipol.de) has quit (Quit: I'm done ;))
+2018-08-23 08:34:26	➡️	languitar (~languitar@semipol.de) has joined #i3
+2018-08-23 08:35:16	⬅️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has quit (Ping timeout: 256 seconds)
+2018-08-23 08:37:06	ChunkzZ	how can I get thunar to show icons with i3-wm?
+2018-08-23 08:40:40	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 260 seconds)
+2018-08-23 08:41:24	ChunkzZ	nvm, I install lxappearance and it's fine. :)
+2018-08-23 08:41:28	ChunkzZ	installed*
+2018-08-23 08:42:56	⬅️	HappyLoaf (~HappyLoaf@happyloaf.com) has quit (Ping timeout: 240 seconds)
+2018-08-23 08:43:07	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 08:44:00	⬅️	marcosmoyano (~user@181.95.230.113) has quit (Remote host closed the connection)
+2018-08-23 08:48:07	➡️	HappyLoaf (~HappyLoaf@happyloaf.com) has joined #i3
+2018-08-23 08:48:13	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-23 08:53:04	⬅️	Trieste (~T@unaffiliated/trieste) has quit (Ping timeout: 240 seconds)
+2018-08-23 08:56:40	➡️	Trieste (~T@unaffiliated/trieste) has joined #i3
+2018-08-23 08:57:42	⬅️	manzerbredes (~loic@myriads-lg.irisa.fr) has quit (Quit: WeeChat 2.2)
+2018-08-23 09:02:15	⬅️	Trieste (~T@unaffiliated/trieste) has quit (Ping timeout: 268 seconds)
+2018-08-23 09:02:52	➡️	Trieste (~T@unaffiliated/trieste) has joined #i3
+2018-08-23 09:08:03	➡️	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has joined #i3
+2018-08-23 09:08:40	⬅️	nast (~nast@217.23.3.171) has quit (Quit: Leaving)
+2018-08-23 09:09:43	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 276 seconds)
+2018-08-23 09:11:16	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 09:12:14	➡️	segurb (~segurb@unaffiliated/segurb) has joined #i3
+2018-08-23 09:12:27	segurb	michaelrose: yo
+2018-08-23 09:12:33	segurb	remmeber me?
+2018-08-23 09:14:49	➡️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has joined #i3
+2018-08-23 09:24:58	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-23 09:29:40	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 09:30:15	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 09:37:53	➡️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has joined #i3
+2018-08-23 09:38:48	➡️	Achylles (~Achylles@2804:431:d725:5183:ffc1:e04b:6934:cc4a) has joined #i3
+2018-08-23 09:51:53	⬅️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.2)
+2018-08-23 09:52:20	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 256 seconds)
+2018-08-23 09:54:52	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 09:55:25	⬅️	voidead (~voidead@unaffiliated/voidead) has quit (Quit: dead)
+2018-08-23 09:56:21	➡️	armin (~armin@x86.li) has joined #i3
+2018-08-23 09:57:08	⬅️	mmfood2 (~mmfood@178.73.196.98) has quit (Ping timeout: 268 seconds)
+2018-08-23 09:57:59	➡️	voidead (~voidead@unaffiliated/voidead) has joined #i3
+2018-08-23 09:58:34	⬅️	segurb (~segurb@unaffiliated/segurb) has quit (Ping timeout: 256 seconds)
+2018-08-23 10:06:31	d1rewolf	how does one set the default pdf reader in i3?
+2018-08-23 10:08:39	➡️	segurb (~segurb@unaffiliated/segurb) has joined #i3
+2018-08-23 10:09:52	nimaje	i3 doesn't manage default programs, it only manages windows, maybe you want to configure xdg-open
+2018-08-23 10:13:40	d1rewolf	nimaje: yes, that's what i was looking for. thx
+2018-08-23 10:13:52	➡️	mmfood2 (~mmfood@46.246.16.99) has joined #i3
+2018-08-23 10:19:31	⬅️	clemens3 (~clemens@mx.eniso-partners.com) has quit (Remote host closed the connection)
+2018-08-23 10:22:10	➡️	indeedwatson (~yama@181.95.210.248) has joined #i3
+2018-08-23 10:23:12	indeedwatson	I need to figure out what is the best area to spawn rofi, i'm tired of having it in the middle of the screen
+2018-08-23 10:26:27	tshirtman	i put it top-center
+2018-08-23 10:26:53	dRbiG	rofi is newer than dmenu?
+2018-08-23 10:27:30	tshirtman	it certainly does look like it, more configurable and potentially much nicer
+2018-08-23 10:27:49	tshirtman	it has css-like *themes*
+2018-08-23 10:28:31	⬅️	MisoM (~miroslav@x4d077dfb.dyn.telefonica.de) has left #i3 ("bye")
+2018-08-23 10:29:27	⬅️	qgTG (~qgTG@unaffiliated/qgtg) has quit (Remote host closed the connection)
+2018-08-23 10:29:29	dRbiG	I see, so dmenu it is for me :)
+2018-08-23 10:30:35	@squigzy	rofi is much more powerful than dmenu
+2018-08-23 10:30:37	@squigzy	and yes, has themes
+2018-08-23 10:31:53	➡️	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2018-08-23 10:32:21	dRbiG	over the years I've settled on a setup that just works for me
+2018-08-23 10:32:35	dRbiG	I'm more reluctant to try out new shiny things
+2018-08-23 10:32:45	dRbiG	though, I had a couple of months I've switched to cwm
+2018-08-23 10:34:41	dRbiG	only thing I miss in dmenu is lack of tab completion for stuff from $PATH
+2018-08-23 10:34:44	dRbiG	prolly fixable
+2018-08-23 10:37:30	dRbiG	huh
+2018-08-23 10:38:35	dRbiG	:D fixed
+2018-08-23 10:38:48	dRbiG	and that's why I stick with linSux
+2018-08-23 10:39:07	dRbiG	it may suck, it does, it does much less so than alternatives
+2018-08-23 10:40:31	dRbiG	btw. with my ssd dying I did a clean install + most of /home from backup (arch linux)
+2018-08-23 10:40:50	dRbiG	I think I can now recommend even more xfce4 base + i3
+2018-08-23 10:41:06	⬅️	Achylles (~Achylles@2804:431:d725:5183:ffc1:e04b:6934:cc4a) has quit (Remote host closed the connection)
+2018-08-23 10:41:16	dRbiG	and by base I mean running some infra from there and i3, as opposed to xfce with the wm replaced by i3
+2018-08-23 10:49:48	@squigzy	I start with an effectively empty Debian installation and then install i3 and rofi :P
+2018-08-23 10:51:51	dRbiG	and that's te beauty of this ecosystem :)
+2018-08-23 10:55:19	nuth	I used fluxbox up until last week, but always wanted to try a tiling wm and someone recommended i3, and I must say I'm impressed
+2018-08-23 10:56:27	nuth	the only thing I'm missing is the ability to split the config into smaller files... just for organization
+2018-08-23 10:56:52	nuth	though i just remembered vim has nice folding ability... so maybe I can make due with that
+2018-08-23 10:59:10	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-23 11:01:59	➡️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has joined #i3
+2018-08-23 11:06:29	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:06:29	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:08:00	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:08:01	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:09:02	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:09:02	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:10:03	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:10:03	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:10:34	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:10:34	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:11:35	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 11:11:35	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 11:12:09	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 268 seconds)
+2018-08-23 11:14:36	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 11:23:08	➡️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has joined #i3
+2018-08-23 11:25:10	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-jyglqlvbibqciabt) has joined #i3
+2018-08-23 11:26:03	⬅️	thegala_ (~mirko@78-2-206-96.adsl.net.t-com.hr) has quit (Ping timeout: 240 seconds)
+2018-08-23 11:26:33	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (Ping timeout: 268 seconds)
+2018-08-23 11:28:15	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 11:31:06	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-23 11:31:44	⬅️	cookiebow (~master@185-157-160-62.pool.ovpn.com) has quit (Ping timeout: 252 seconds)
+2018-08-23 11:42:20		irc: disconnected from server
+2018-08-23 11:42:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 11:43:24	indeedwatson	i mapped , to fold/unfold in vim
+2018-08-23 11:45:28	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-23 11:51:27	➡️	cookiebow (~master@185-157-160-62.pool.ovpn.com) has joined #i3
+2018-08-23 12:09:14	⬅️	im0nde (~im0nde@2a0a-a540-9b72-0-2558-f5b1-70e1-c054.ipv6dyn.netcologne.de) has quit (Quit: im0nde)
+2018-08-23 12:11:33	➡️	rouji (~rouji@x0.at) has joined #i3
+2018-08-23 12:12:15	bgardner	Any suggestions for an i3-friendly file manager?
+2018-08-23 12:12:28	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2018-08-23 12:12:54	cookiebow	the terminal ;)
+2018-08-23 12:13:35	bgardner	Any useful suggestions for an i3-friendly file manager?  :)
+2018-08-23 12:13:47	bgardner	Although mc is not a bad idea
+2018-08-23 12:16:26	bgardner	cookiebow: I take back my snark, mc behaves great.  Thanks for the notion!
+2018-08-23 12:18:44	cookiebow	bgardner: <3
+2018-08-23 12:18:46	eyeoh	I have mc installed but tend to more often use fish shell and nautilus.
+2018-08-23 12:18:58	eyeoh	Nothing perfect exists
+2018-08-23 12:19:47	michaelrose	segurb, only from a cnversation hours ago )
+2018-08-23 12:20:40	michaelrose	d1rewolf, you can use any configuration utility from another desktop if you like
+2018-08-23 12:21:46	michaelrose	or if you prefer the cli xdg-mime gvfs-mime alternatively gio mime
+2018-08-23 12:23:25	⬅️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has quit (Quit: WeeChat 2.2)
+2018-08-23 12:30:43	➡️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2018-08-23 12:34:23		irc: disconnected from server
+2018-08-23 12:34:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 12:39:29	segurb	michaelrose: exactly, the script is not a problem, but I can share it
+2018-08-23 12:39:45	segurb	michaelrose: https://ptpb.pw/ef76
+2018-08-23 12:39:53	➡️	mduk (uid317175@gateway/web/irccloud.com/x-yxbvpogwbinuxgfl) has joined #i3
+2018-08-23 12:40:42	michaelrose	what do you get for python --version
+2018-08-23 12:41:13	michaelrose	also wondering why call it via python /path/to/script instead of just exec /path/to/script
+2018-08-23 12:41:44	segurb	3.7.0
+2018-08-23 12:41:53	segurb	because I am a newb
+2018-08-23 12:42:13	michaelrose	make sure its set executable chmod +x /my/file
+2018-08-23 12:42:35	michaelrose	and try it without an unneeded step and tell me if it works
+2018-08-23 12:45:19	segurb	its executable but
+2018-08-23 12:45:23	segurb	doesnt work without python call
+2018-08-23 12:45:37	michaelrose	I've always wondered why python doesn't just run main if it exists instead of making you do if __name__ ==  '__main__':
+2018-08-23 12:46:04	michaelrose	that is truly weird
+2018-08-23 12:46:18	michaelrose	is your hashbang screwed up?
+2018-08-23 12:46:51	michaelrose	logically you ought to have python3 in path
+2018-08-23 12:47:39	segurb	no its not
+2018-08-23 12:47:50	segurb	/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2018-08-23 12:47:52	segurb	its not in the PATH
+2018-08-23 12:47:56	segurb	and its not hasbang
+2018-08-23 12:48:03	segurb	like, if I run just the script in terminal it works
+2018-08-23 12:48:09	segurb	its only tourgh i3 bind that it does not
+2018-08-23 12:48:39	michaelrose	ok so running /path/to/my/script works without the python call?
+2018-08-23 12:49:16	michaelrose	but not if you bind a key to it
+2018-08-23 12:50:16	segurb	yes
+2018-08-23 12:50:44	segurb	https://0x0.st/sywd.jpg
+2018-08-23 12:50:46	segurb	see :D
+2018-08-23 12:51:58	michaelrose	as an aside kid of weird that it takes + 1 instead of +1
+2018-08-23 12:53:29	mduk	unusual certainly, but it does make sense, $operation and $argument. :D
+2018-08-23 12:53:44	mduk	(please forgive the intrusion)
+2018-08-23 12:53:44	michaelrose	seems like it ought to check if the argument string begins with + or - and if some add or subtract from current or if not set to value
+2018-08-23 12:53:59	michaelrose	then it would always take a singular argument
+2018-08-23 12:56:04	michaelrose	ok does it work if you spell out the path instead of using ~
+2018-08-23 12:59:21	segurb	michaelrose: already tried that, nope
+2018-08-23 13:01:46	segurb	michaelrose: do you want to know what was wrong?
+2018-08-23 13:01:48	segurb	it was me
+2018-08-23 13:01:55	segurb	I have thinkpad, i replaced in UEFI FN with CTRL
+2018-08-23 13:01:59	segurb	and I was clicking on what says to be CTRL
+2018-08-23 13:02:01	segurb	instead of FN
+2018-08-23 13:02:03	segurb	XD
+2018-08-23 13:02:04	michaelrose	haha
+2018-08-23 13:02:11	segurb	it works with full path, with and without python,m and with ~
+2018-08-23 13:02:13	segurb	sooooo yeah
+2018-08-23 13:02:20	michaelrose	I have found when something doesn't work its better than average something I'm doing wrong
+2018-08-23 13:02:48	mduk	segurb: nice one, i love it when that happens. that's an easy fix! :D
+2018-08-23 13:07:39	segurb	Thanks for mental help guys :D
+2018-08-23 13:07:44	segurb	really needed it
+2018-08-23 13:09:51	➡️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has joined #i3
+2018-08-23 13:09:52		irc: disconnected from server
+2018-08-23 13:10:36	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 13:12:29	⬅️	segurb (~segurb@unaffiliated/segurb) has quit (Quit: https://i.imgur.com/xrUtDu3.gif)
+2018-08-23 13:17:45	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-23 13:18:16	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-23 13:19:25	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Client Quit)
+2018-08-23 13:21:26	⬅️	qgTG (~qgTG@unaffiliated/qgtg) has quit (Remote host closed the connection)
+2018-08-23 13:21:30	⬅️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has quit (Client Quit)
+2018-08-23 13:21:51	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-23 13:22:19	➡️	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2018-08-23 13:32:54	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-23 13:33:17	⬅️	eyeoh (~eyeoh@unaffiliated/eyeoh) has quit (Quit: new colonel)
+2018-08-23 13:34:12	⬅️	qgTG (~qgTG@unaffiliated/qgtg) has quit (Remote host closed the connection)
+2018-08-23 13:34:29	➡️	eyeoh (~eyeoh@unaffiliated/eyeoh) has joined #i3
+2018-08-23 13:36:08	➡️	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2018-08-23 13:38:52	⬅️	saptech (~saptech@unaffiliated/saptech) has quit (Quit: Leaving)
+2018-08-23 13:47:26	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-23 13:53:18	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 268 seconds)
+2018-08-23 14:04:51	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-jyglqlvbibqciabt) has quit (Quit: Connection closed for inactivity)
+2018-08-23 14:05:48		irc: disconnected from server
+2018-08-23 14:05:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 14:17:14		irc: disconnected from server
+2018-08-23 14:28:22	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 14:29:22	➡️	kaiec (~kaiec@92.116.170.223) has joined #i3
+2018-08-23 14:39:15	⬅️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has quit (Ping timeout: 276 seconds)
+2018-08-23 14:48:01		irc: disconnected from server
+2018-08-23 14:49:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 14:51:37	➡️	saptech (~saptech@unaffiliated/saptech) has joined #i3
+2018-08-23 14:52:52	⬅️	lompik (~lompik@unaffiliated/lompik) has quit (Ping timeout: 272 seconds)
+2018-08-23 14:53:36	⬅️	squigzy (~squigz@i3/op/squigzy) has quit (Remote host closed the connection)
+2018-08-23 14:53:47	➡️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #i3
+2018-08-23 14:54:11	➡️	squigzy (~squigz@i3/op/squigzy) has joined #i3
+2018-08-23 14:54:11		Mode #i3 [+o squigzy] by ChanServ
+2018-08-23 14:54:54	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-xxuwytxzrmlwqobk) has joined #i3
+2018-08-23 15:00:00	⬅️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has quit (Quit: Leaving.)
+2018-08-23 15:00:28	⬅️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has quit (Ping timeout: 264 seconds)
+2018-08-23 15:03:22	➡️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #i3
+2018-08-23 15:07:37	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Quit: Leaving)
+2018-08-23 15:09:17	➡️	pnwise (~pnwise@unaffiliated/pnwise) has joined #i3
+2018-08-23 15:10:14	⬅️	mmfood2 (~mmfood@46.246.16.99) has quit (Ping timeout: 256 seconds)
+2018-08-23 15:10:36	⬅️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 260 seconds)
+2018-08-23 15:12:19	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:12:19	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:12:50	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:12:51	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:13:21	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:13:22	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:14:23	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:14:23	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:15:55	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:15:55	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:16:26	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 15:16:26	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 15:21:54	⬅️	squigzy (~squigz@i3/op/squigzy) has quit (Remote host closed the connection)
+2018-08-23 15:23:01	➡️	squigzy (~squigz@i3/op/squigzy) has joined #i3
+2018-08-23 15:23:01		Mode #i3 [+o squigzy] by ChanServ
+2018-08-23 15:25:17	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 252 seconds)
+2018-08-23 15:27:06	⬅️	kaiec (~kaiec@92.116.170.223) has quit (Quit: kaiec)
+2018-08-23 15:31:24	⬅️	eagle (~eagle@unaffiliated/eagle) has quit (Quit: bye)
+2018-08-23 15:31:38	➡️	eagle (~eagle@unaffiliated/eagle) has joined #i3
+2018-08-23 15:34:54	➡️	kernal_ (~kernal_@202.153.71.40) has joined #i3
+2018-08-23 15:40:07	⬅️	Jesin (~Jesin@2601:152:4603:cb81::577f) has quit (Quit: Leaving)
+2018-08-23 15:47:05	➡️	kaiec (~kaiec@92.116.170.223) has joined #i3
+2018-08-23 15:47:12	⬅️	kaiec (~kaiec@92.116.170.223) has quit (Quit: kaiec)
+2018-08-23 15:47:23	➡️	kaiec (~kaiec@92.116.170.223) has joined #i3
+2018-08-23 15:47:48	pjs	Do I use a comma or semicolon to separate multiple directives on a single line in the config file?
+2018-08-23 15:48:39	okraits	It's explained in the userguide
+2018-08-23 15:49:02	nimaje	both can seperate commands
+2018-08-23 15:49:12	pjs	nimaje: thanks
+2018-08-23 15:49:18	okraits	https://i3wm.org/docs/userguide.html#command_chaining
+2018-08-23 15:50:43	➡️	Jesin (~Jesin@2601:152:4603:cb81::577f) has joined #i3
+2018-08-23 15:51:58	pjs	okraits: thanks. There is a difference for semicolon and comma, so that's good to know. I missed it in the userguide some how
+2018-08-23 15:52:42	okraits	pjs: No problem, you're welcome.
+2018-08-23 15:52:59	➡️	stef204 (~stef204@unaffiliated/stef-204/x-384198) has joined #i3
+2018-08-23 15:54:51	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Remote host closed the connection)
+2018-08-23 16:05:12	⬅️	kaiec (~kaiec@92.116.170.223) has quit (Quit: kaiec)
+2018-08-23 16:12:36	⬅️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.1)
+2018-08-23 16:49:17	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-23 16:52:19	➡️	ArsenArsen (~Arsen@kshare/developer/ArsenArsen) has joined #i3
+2018-08-23 16:55:54	⬅️	hammer065 (~hammer065@unaffiliated/hammer065) has quit (Max SendQ exceeded)
+2018-08-23 16:56:07	➡️	hammer065 (~hammer065@unaffiliated/hammer065) has joined #i3
+2018-08-23 17:04:18	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 255 seconds)
+2018-08-23 17:04:37	⬅️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has quit (Ping timeout: 252 seconds)
+2018-08-23 17:06:03	rydare	so I've got transparent window borders and they look amazing on terminals... but on programs such as Firefox and Discord they don't show correctly
+2018-08-23 17:11:19	⬅️	stef204 (~stef204@unaffiliated/stef-204/x-384198) has quit (Quit: WeeChat 2.2)
+2018-08-23 17:31:04	rydare	does anyone know what the pixel borders that i3 draws are called?  I'm guessing they're not i3-frame anymore
+2018-08-23 17:33:34		irc: disconnected from server
+2018-08-23 17:33:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 17:35:54	⬅️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has quit (Quit: bye)
+2018-08-23 17:40:21	➡️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has joined #i3
+2018-08-23 17:41:11	⬅️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has quit (Remote host closed the connection)
+2018-08-23 18:02:42	⬅️	eagle (~eagle@unaffiliated/eagle) has quit (Ping timeout: 276 seconds)
+2018-08-23 18:09:00	➡️	eagle (~eagle@unaffiliated/eagle) has joined #i3
+2018-08-23 18:14:40	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-xxuwytxzrmlwqobk) has quit (Quit: Connection closed for inactivity)
+2018-08-23 18:22:10	⬅️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has quit (Ping timeout: 268 seconds)
+2018-08-23 18:26:29		irc: disconnected from server
+2018-08-23 18:29:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 18:31:18	➡️	tecepe (~tcpaiva@173-9-9-33-New-England.hfc.comcastbusiness.net) has joined #i3
+2018-08-23 18:35:35	⬅️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Ping timeout: 252 seconds)
+2018-08-23 18:36:28	⬅️	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2018-08-23 18:42:25	⬅️	curiousx (~curiousx@unaffiliated/curiousx) has quit (Quit: leaving)
+2018-08-23 18:45:29	➡️	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has joined #i3
+2018-08-23 18:54:46	➡️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #i3
+2018-08-23 19:07:06	⬅️	voidead (~voidead@unaffiliated/voidead) has quit (*.net *.split)
+2018-08-23 19:07:06	⬅️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has quit (*.net *.split)
+2018-08-23 19:07:12	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (*.net *.split)
+2018-08-23 19:07:26	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 19:07:41	➡️	voidead (~voidead@unaffiliated/voidead) has joined #i3
+2018-08-23 19:07:41	➡️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has joined #i3
+2018-08-23 19:09:25	⬅️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Ping timeout: 240 seconds)
+2018-08-23 19:18:10	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:18:11	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:18:41	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:18:41	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:19:12	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:19:12	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:20:12	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-nmdwotlsqhnrwrtd) has joined #i3
+2018-08-23 19:23:44	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:23:45	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:25:06	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Quit: WeeChat 2.2)
+2018-08-23 19:26:20	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:26:21	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:26:21	➡️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #i3
+2018-08-23 19:27:42	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-23 19:31:01	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:31:01	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:33:02	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:33:03	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:34:34	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:34:34	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:36:06	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:36:06	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:36:37	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:36:37	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:40:17	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:40:18	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:41:23	⬅️	nuth (uid280430@gateway/web/irccloud.com/x-mjuzcickwhvgqpfk) has quit (Quit: Connection closed for inactivity)
+2018-08-23 19:42:54	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:42:54	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:44:56	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:44:56	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-23 19:46:14	⬅️	endre (znc@end.re) has quit (*.net *.split)
+2018-08-23 19:46:53	⬅️	KuerbisKern (yerodins@unaffiliated/kuerbiskern) has quit (*.net *.split)
+2018-08-23 19:46:53	⬅️	johnny56 (~johnny56@unaffiliated/johnny56) has quit (*.net *.split)
+2018-08-23 19:47:57	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-23 19:49:45	➡️	endre (znc@end.re) has joined #i3
+2018-08-23 19:59:05	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Quit: Leaving)
+2018-08-23 20:00:21	⬅️	asdil12 (~asdil12@188.194.212.208) has quit (Read error: Connection reset by peer)
+2018-08-23 20:02:20	➡️	asdil12 (~asdil12@ipbcc2d4d0.dynamic.kabel-deutschland.de) has joined #i3
+2018-08-23 20:04:14	⬅️	tschan (~tschan@pD95E2D4C.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2018-08-23 20:06:26	➡️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has joined #i3
+2018-08-23 20:09:46	➡️	tschan (~tschan@pD95E2D26.dip0.t-ipconnect.de) has joined #i3
+2018-08-23 20:15:52		irc: disconnected from server
+2018-08-23 20:17:03	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 20:24:34		irc: disconnected from server
+2018-08-23 20:24:45	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 20:28:41	⬅️	eagle (~eagle@unaffiliated/eagle) has quit (*.net *.split)
+2018-08-23 20:28:42	⬅️	Vonter_ (~Vonter@49.206.15.112) has quit (*.net *.split)
+2018-08-23 20:28:42	⬅️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has quit (*.net *.split)
+2018-08-23 20:28:42	⬅️	ulili (~quassel@p200300C96F139000EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	lord| (~solenodic@unaffiliated/solenodic) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	bitonic (sid61915@gateway/web/irccloud.com/x-ukweqsikjubajvbd) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	HalfEatenPie (~HalfEaten@unaffiliated/halfeatenpie) has quit (*.net *.split)
+2018-08-23 20:28:45	⬅️	dopplergange (dopplergan@bitcoinshell.mooo.com) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	Attoy (~attoy@ybox.io) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	bpeak (~bpeak@unaffiliated/bpeak) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	schelcj (~schelcj@75-133-49-210.dhcp.trcy.mi.charter.com) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	rem (~rem@165.227.172.58) has quit (*.net *.split)
+2018-08-23 20:28:46	⬅️	nielsk (~nielsk@2001:1560:a000:2:24ba:7353:ff0a:5130) has quit (*.net *.split)
+2018-08-23 20:28:47	⬅️	modin (~modin@h-146-160.A444.priv.bahnhof.se) has quit (*.net *.split)
+2018-08-23 20:28:47	⬅️	voiceftp (~voiceftp@host-85-118-226-104.academ.org) has quit (*.net *.split)
+2018-08-23 20:29:58	➡️	eagle (~eagle@unaffiliated/eagle) has joined #i3
+2018-08-23 20:29:58	➡️	Vonter_ (~Vonter@49.206.15.112) has joined #i3
+2018-08-23 20:29:58	➡️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has joined #i3
+2018-08-23 20:29:58	➡️	ulili (~quassel@p200300C96F139000EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has joined #i3
+2018-08-23 20:29:58	➡️	schelcj (~schelcj@75-133-49-210.dhcp.trcy.mi.charter.com) has joined #i3
+2018-08-23 20:29:58	➡️	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2018-08-23 20:29:58	➡️	bitonic (sid61915@gateway/web/irccloud.com/x-ukweqsikjubajvbd) has joined #i3
+2018-08-23 20:29:59	➡️	HalfEatenPie (~HalfEaten@unaffiliated/halfeatenpie) has joined #i3
+2018-08-23 20:29:59	➡️	dopplergange (dopplergan@bitcoinshell.mooo.com) has joined #i3
+2018-08-23 20:29:59	➡️	Attoy (~attoy@ybox.io) has joined #i3
+2018-08-23 20:29:59	➡️	bpeak (~bpeak@unaffiliated/bpeak) has joined #i3
+2018-08-23 20:29:59	➡️	rem (~rem@165.227.172.58) has joined #i3
+2018-08-23 20:29:59	➡️	nielsk (~nielsk@2001:1560:a000:2:24ba:7353:ff0a:5130) has joined #i3
+2018-08-23 20:29:59	➡️	modin (~modin@h-146-160.A444.priv.bahnhof.se) has joined #i3
+2018-08-23 20:29:59	➡️	voiceftp (~voiceftp@host-85-118-226-104.academ.org) has joined #i3
+2018-08-23 20:30:58	⬅️	lord| (~solenodic@unaffiliated/solenodic) has quit (Max SendQ exceeded)
+2018-08-23 20:30:59	⬅️	dopplergange (dopplergan@bitcoinshell.mooo.com) has quit (Max SendQ exceeded)
+2018-08-23 20:31:00	⬅️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has quit (Excess Flood)
+2018-08-23 20:31:09	➡️	dopplergange (dopplergan@bitcoinshell.mooo.com) has joined #i3
+2018-08-23 20:31:14	➡️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has joined #i3
+2018-08-23 20:31:44	➡️	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2018-08-23 20:31:53	⬅️	Trieste (~T@unaffiliated/trieste) has quit (*.net *.split)
+2018-08-23 20:31:53	⬅️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	tesu (~tesu@107.170.91.14) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	Ferus (~anonymous@qutebrowser/user/Ferus) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	Hund (~Hund@ubuntu/member/hund) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	piLON (~piLON@c-4f1ee255.08-221-6c756e3.cust.ownit.se) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	migy_ (~migy@static.59.240.9.5.clients.your-server.de) has quit (*.net *.split)
+2018-08-23 20:31:54	⬅️	olis_ (~olis@ec2-34-251-43-63.eu-west-1.compute.amazonaws.com) has quit (*.net *.split)
+2018-08-23 20:31:55	⬅️	bebbet (~bebbet@51.15.38.57) has quit (*.net *.split)
+2018-08-23 20:31:55	⬅️	TyrfingMjolnir (~Tyrfing@62.92.82.250) has quit (*.net *.split)
+2018-08-23 20:31:55	⬅️	theoceaniscool (~theoceani@244.red-95-120-214.dynamicip.rima-tde.net) has quit (*.net *.split)
+2018-08-23 20:31:55	⬅️	ducasse (~petter@unaffiliated/ducasse) has quit (*.net *.split)
+2018-08-23 20:31:55	⬅️	traumschule (~traumschu@mehl.schokokeks.org) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	sydney_untangle (~sydney@supertux/sydney) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	indigoblue (~invaderzi@unaffiliated/indigoblue) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	TheBrayn (~TheBrayn@unaffiliated/thebrayn) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	Rasi (~carnager@archlinux/support/rasi) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	haasn (~haasn@HSI-KBW-5-56-186-133.hsi16.kabel-badenwuerttemberg.de) has quit (*.net *.split)
+2018-08-23 20:31:56	⬅️	blackbeard420 (~blackbear@blackbeard420.me) has quit (*.net *.split)
+2018-08-23 20:31:57	⬅️	batdog (~batdog@li829-207.members.linode.com) has quit (*.net *.split)
+2018-08-23 20:31:57	⬅️	tyll (~till@fedora/tyll) has quit (*.net *.split)
+2018-08-23 20:31:57	⬅️	ollien (~ollien@ollien.com) has quit (*.net *.split)
+2018-08-23 20:31:57	⬅️	iNs (~ins@krowkirobia.mooo.com) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	defect_ (~rebel@unaffiliated/defect/x-1708235) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	ScottE (~ScottE@unaffiliated/scotte) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	timewalker (~timewalke@eth0.nu) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	nicoulaj (~nicoulaj@nicoulaj.net) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	y0sh (~y0sh@unaffiliated/y0sh) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	backwardspy (~backwards@142.93.35.30) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	sdk__ (~x@codevoid.de) has quit (*.net *.split)
+2018-08-23 20:31:58	⬅️	sur5r (sur5r@x3650.sur5r.net) has quit (*.net *.split)
+2018-08-23 20:31:59	⬅️	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (*.net *.split)
+2018-08-23 20:31:59	⬅️	virmin (~virmin@46.101.54.154) has quit (*.net *.split)
+2018-08-23 20:31:59	⬅️	lstanley (liam@znc.liam.sh) has quit (*.net *.split)
+2018-08-23 20:32:00	⬅️	hahuang65 (~hahuang65@104-50-0-198.lightspeed.sntcca.sbcglobal.net) has quit (*.net *.split)
+2018-08-23 20:32:00	⬅️	craigger (~cwhipp@184.101.162.16) has quit (*.net *.split)
+2018-08-23 20:32:00	⬅️	mniip (mniip@freenode/staff/mniip) has quit (*.net *.split)
+2018-08-23 20:32:00	⬅️	minnesotags (~herbgarci@c-24-118-22-254.hsd1.mn.comcast.net) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	potatoe (~potatoe@unaffiliated/potatoe5) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	malm (~nil@static.162.75.130.94.clients.your-server.de) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	Xnybre (~Xnybre@xnybre.dk) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	ludocode (~quassel@135-23-114-9.cpe.pppoe.ca) has quit (*.net *.split)
+2018-08-23 20:32:01	⬅️	inara (~inara@68.ip-149-56-14.net) has quit (*.net *.split)
+2018-08-23 20:32:02	⬅️	nku (~nku@unaffiliated/nku) has quit (*.net *.split)
+2018-08-23 20:32:02	⬅️	awal (~awal@awalgarg.me) has quit (*.net *.split)
+2018-08-23 20:32:02	⬅️	OliverUv (~ubuntu@ec2-13-124-169-156.ap-northeast-2.compute.amazonaws.com) has quit (*.net *.split)
+2018-08-23 20:32:02	⬅️	milkii (~milk@thingsandstuff.org) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	hellslinger (~quassel@159.65.169.107) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	languitar_ (~languitar@78.47.28.106) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	steven (~steven@unaffiliated/steven) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	butlerx (~butlerx@notthe.cloud) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	qwertydvorak (~qwertydvo@c-76-103-98-74.hsd1.ca.comcast.net) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	jpwgarrison (~jpwgarris@unaffiliated/jpwgarrison) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	sentriz (~sentriz@unaffiliated/sentriz) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	snackattack_ (~snackatta@ec2-54-67-108-192.us-west-1.compute.amazonaws.com) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	shell- (~shell@tonatiuh.pc-spinnt.de) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	carlf (carlf@gateway/shell/suchznc/x-petdswrqnqibnzgc) has quit (*.net *.split)
+2018-08-23 20:32:03	⬅️	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (*.net *.split)
+2018-08-23 20:32:04	⬅️	cmm11 (~cmm11@ns3039773.ip-87-98-216.eu) has quit (*.net *.split)
+2018-08-23 20:32:04	➡️	TyrfingMjolnir (~Tyrfing@62.92.82.250) has joined #i3
+2018-08-23 20:33:56	➡️	defect_ (~rebel@unaffiliated/defect/x-1708235) has joined #i3
+2018-08-23 20:35:19	➡️	craigger (~cwhipp@184.101.162.16) has joined #i3
+2018-08-23 20:35:19	➡️	bebbet (~bebbet@2001:bc8:4700:2300::10:f07) has joined #i3
+2018-08-23 20:35:19	⬅️	shachaf (~shachaf@unaffiliated/shachaf) has quit (Quit: Reconnecting)
+2018-08-23 20:35:56	➡️	cmm11 (~cmm11@ns3039773.ip-87-98-216.eu) has joined #i3
+2018-08-23 20:36:30	➡️	malm (~nil@static.162.75.130.94.clients.your-server.de) has joined #i3
+2018-08-23 20:37:12	⬅️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has quit (Remote host closed the connection)
+2018-08-23 20:49:18	➡️	blackbeard420 (~blackbear@2600:3c03:e000:297::420) has joined #i3
+2018-08-23 20:49:35	➡️	sentriz (~sentriz@unaffiliated/sentriz) has joined #i3
+2018-08-23 20:50:04	➡️	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #i3
+2018-08-23 20:50:28	➡️	nicoulaj (~nicoulaj@nicoulaj.net) has joined #i3
+2018-08-23 20:50:32	➡️	lstanley (liam@znc.liam.sh) has joined #i3
+2018-08-23 20:51:04	➡️	snackattack (~snackatta@ec2-54-67-108-192.us-west-1.compute.amazonaws.com) has joined #i3
+2018-08-23 20:51:31	➡️	olis (~olis@ec2-34-251-43-63.eu-west-1.compute.amazonaws.com) has joined #i3
+2018-08-23 20:51:41	➡️	tesu (~tesu@107.170.91.14) has joined #i3
+2018-08-23 20:51:44	➡️	steven (~steven@unaffiliated/steven) has joined #i3
+2018-08-23 20:52:05	➡️	traumschule (~traumschu@mehl.schokokeks.org) has joined #i3
+2018-08-23 20:52:05	➡️	timewalker (~timewalke@eth0.nu) has joined #i3
+2018-08-23 20:52:15	➡️	nku (~nku@unaffiliated/nku) has joined #i3
+2018-08-23 20:52:30	➡️	sydney_untangle (~sydney@supertux/sydney) has joined #i3
+2018-08-23 20:52:53	➡️	ulilili (~quassel@p200300C96F0CEB00EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has joined #i3
+2018-08-23 20:52:59	⬅️	ulili (~quassel@p200300C96F139000EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2018-08-23 20:55:16	➡️	OliverUv (~ubuntu@ec2-13-124-169-156.ap-northeast-2.compute.amazonaws.com) has joined #i3
+2018-08-23 20:58:20	➡️	justan0theruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2018-08-23 21:00:52	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-23 21:01:30		justan0theruser is now known as justanotheruser
+2018-08-23 21:05:09	⬅️	dddddd (~dddddd@unaffiliated/dddddd) has quit (Remote host closed the connection)
+2018-08-23 21:05:47	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-nmdwotlsqhnrwrtd) has quit (*.net *.split)
+2018-08-23 21:05:47	⬅️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has quit (*.net *.split)
+2018-08-23 21:05:47	⬅️	ArsenArsen (~Arsen@kshare/developer/ArsenArsen) has quit (*.net *.split)
+2018-08-23 21:05:47	⬅️	mduk (uid317175@gateway/web/irccloud.com/x-yxbvpogwbinuxgfl) has quit (*.net *.split)
+2018-08-23 21:05:47	⬅️	IRCsum (~IRCsum@2600-6c5c-6d00-017a-a392-f763-ba72-6e9f.dhcp6.chtrptr.net) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	Natrick (pnawracay@nat/novell/x-nzvlxzbdjlypzsaw) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	dellavg (dellavg@gateway/shell/firrre/x-nrwracaahjwpfqca) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	raid (macbookpro@irc.coding4coffee.org) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	souther (~souther@2605:6400:1:fed5:22:1ac:61c0:e24e) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	jp (ayy@cpe-76-173-133-37.hawaii.res.rr.com) has quit (*.net *.split)
+2018-08-23 21:05:48	⬅️	nimaje (~nimaje@bureaucracy.bureaucracy.de) has quit (*.net *.split)
+2018-08-23 21:05:49	⬅️	cspack (~cspack@193.37.252.111) has quit (*.net *.split)
+2018-08-23 21:05:49	⬅️	michaelrose (~michaelro@c-24-16-161-245.hsd1.wa.comcast.net) has quit (*.net *.split)
+2018-08-23 21:05:49	⬅️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (*.net *.split)
+2018-08-23 21:05:49	⬅️	sistematico (~lucas@freebsd/lover/sistematico) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	chrko (~ck@rhea.hosts.c9n.de) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	haro (~haro@96-2-16-211-dynamic.midco.net) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	frolv (~frolv@CPE00fc8d4905d3-CM00fc8d4905d0.cpe.net.cable.rogers.com) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	r00tobo (~r00tobo@unaffiliated/r00tobo) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	davewongillies (uid451@gateway/web/irccloud.com/x-lkimiyesnxjhaqwu) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	rodgzilla (~rodgzilla@46.212.195.35.bc.googleusercontent.com) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	i3bot (~i3@2a02:2528:fa:2d0:0:242:ac11:a) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	CryDeTaan (~CryDeTaan@unaffiliated/crydetaan) has quit (*.net *.split)
+2018-08-23 21:05:50	⬅️	Eyo (~i3@2a02:2528:fa:2d0:0:242:ac11:5) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	stfn (~stfn@unaffiliated/stfn) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	riposte (~finalripo@chat.staringintotheabyss.com) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	eleksir (~UNIX@195.91.173.49) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	PyroLagus (PyroLagus@i.have.ipv6.on.coding4coffee.org) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	strmpnk (sid2261@gateway/web/irccloud.com/x-dujmjiapkzvoshyz) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	Nnavd (~Nnavd@ec2-18-236-168-137.us-west-2.compute.amazonaws.com) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	armin (~armin@x86.li) has quit (*.net *.split)
+2018-08-23 21:05:51	⬅️	Panter (~Panter@dhcp-077-251-172-036.chello.nl) has quit (*.net *.split)
+2018-08-23 21:05:52	⬅️	KaosCreator (~KaosCreat@unaffiliated/kaoscreator) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	Jesin (~Jesin@2601:152:4603:cb81::577f) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	kernal_ (~kernal_@202.153.71.40) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	saptech (~saptech@unaffiliated/saptech) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	qgTG (~qgTG@unaffiliated/qgtg) has quit (*.net *.split)
+2018-08-23 21:05:56	⬅️	eyeoh (~eyeoh@unaffiliated/eyeoh) has quit (*.net *.split)
+2018-08-23 21:05:57	⬅️	mbarrin (mbarrin@nat/dcunetworkingsociety/x-lkyaynenvgkzmdgb) has quit (*.net *.split)
+2018-08-23 21:05:57	⬅️	norg (~andi@2001:41d0:a:f689::1) has quit (*.net *.split)
+2018-08-23 21:05:57	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	craftyguy (~craftyguy@qutebrowser/dev/craftyguy) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	labelette (~belette@reverse-177-123.fdn.fr) has quit (*.net *.split)
+2018-08-23 21:05:58	⬅️	andyrtr (~andyrtr@archlinux/developer/andyrtr) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	lupinix (~quassel@fedora/lupinix) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	d1rewolf (sid312924@gateway/web/irccloud.com/x-myqmqzaniypvtzxn) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	regulus_ (~regulus-@185-84-232-39.cust.avonet.cz) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	jej (~jej@rbx1-fr.quadhost.net) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	Zauberfisch (~Zauberfis@nellis.ncc-501.starfleet.zauberfisch.at) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	syndikate (~syndikate@188.166.218.60) has quit (*.net *.split)
+2018-08-23 21:05:59	⬅️	sphalerite (~An_Ony_Mo@lugn.soundray.org) has quit (*.net *.split)
+2018-08-23 21:06:00	⬅️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has quit (*.net *.split)
+2018-08-23 21:06:00	⬅️	GinjaNinja32 (~nyx@thanatos.gn32.uk) has quit (*.net *.split)
+2018-08-23 21:06:00	⬅️	gardar (~gardar@bnc.giraffi.net) has quit (*.net *.split)
+2018-08-23 21:06:01	⬅️	CrazedProgrammer (~CrazedPro@vmi166174.contaboserver.net) has quit (*.net *.split)
+2018-08-23 21:06:33	➡️	jab416171 (~jab416171@c-174-52-63-79.hsd1.ut.comcast.net) has joined #i3
+2018-08-23 21:06:33	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-nmdwotlsqhnrwrtd) has joined #i3
+2018-08-23 21:06:33	➡️	ArsenArsen (~Arsen@kshare/developer/ArsenArsen) has joined #i3
+2018-08-23 21:06:33	➡️	mduk (uid317175@gateway/web/irccloud.com/x-yxbvpogwbinuxgfl) has joined #i3
+2018-08-23 21:06:33	➡️	armin (~armin@x86.li) has joined #i3
+2018-08-23 21:06:33	➡️	IRCsum (~IRCsum@2600-6c5c-6d00-017a-a392-f763-ba72-6e9f.dhcp6.chtrptr.net) has joined #i3
+2018-08-23 21:06:33	➡️	Kowalczyk (~kowalczyk@cm-84.214.179.48.getinternet.no) has joined #i3
+2018-08-23 21:06:33	➡️	Natrick (pnawracay@nat/novell/x-nzvlxzbdjlypzsaw) has joined #i3
+2018-08-23 21:06:33	➡️	Panter (~Panter@dhcp-077-251-172-036.chello.nl) has joined #i3
+2018-08-23 21:06:33	➡️	dellavg (dellavg@gateway/shell/firrre/x-nrwracaahjwpfqca) has joined #i3
+2018-08-23 21:06:33	➡️	raid (macbookpro@irc.coding4coffee.org) has joined #i3
+2018-08-23 21:06:33	➡️	souther (~souther@2605:6400:1:fed5:22:1ac:61c0:e24e) has joined #i3
+2018-08-23 21:06:33	➡️	nimaje (~nimaje@bureaucracy.bureaucracy.de) has joined #i3
+2018-08-23 21:06:33	➡️	cspack (~cspack@193.37.252.111) has joined #i3
+2018-08-23 21:06:33	➡️	michaelrose (~michaelro@c-24-16-161-245.hsd1.wa.comcast.net) has joined #i3
+2018-08-23 21:06:33	➡️	davewongillies (uid451@gateway/web/irccloud.com/x-lkimiyesnxjhaqwu) has joined #i3
+2018-08-23 21:06:33	➡️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-23 21:06:33	➡️	sistematico (~lucas@freebsd/lover/sistematico) has joined #i3
+2018-08-23 21:06:33	➡️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has joined #i3
+2018-08-23 21:06:33	➡️	chrko (~ck@rhea.hosts.c9n.de) has joined #i3
+2018-08-23 21:06:33	➡️	haro (~haro@96-2-16-211-dynamic.midco.net) has joined #i3
+2018-08-23 21:06:33	➡️	frolv (~frolv@CPE00fc8d4905d3-CM00fc8d4905d0.cpe.net.cable.rogers.com) has joined #i3
+2018-08-23 21:06:33	➡️	r00tobo (~r00tobo@unaffiliated/r00tobo) has joined #i3
+2018-08-23 21:06:33	➡️	riposte (~finalripo@chat.staringintotheabyss.com) has joined #i3
+2018-08-23 21:06:33	➡️	rodgzilla (~rodgzilla@46.212.195.35.bc.googleusercontent.com) has joined #i3
+2018-08-23 21:06:33	➡️	i3bot (~i3@2a02:2528:fa:2d0:0:242:ac11:a) has joined #i3
+2018-08-23 21:06:33	➡️	CryDeTaan (~CryDeTaan@unaffiliated/crydetaan) has joined #i3
+2018-08-23 21:06:33	➡️	Eyo (~i3@2a02:2528:fa:2d0:0:242:ac11:5) has joined #i3
+2018-08-23 21:06:33	➡️	stfn (~stfn@unaffiliated/stfn) has joined #i3
+2018-08-23 21:06:33	➡️	eleksir (~UNIX@195.91.173.49) has joined #i3
+2018-08-23 21:06:33	➡️	PyroLagus (PyroLagus@i.have.ipv6.on.coding4coffee.org) has joined #i3
+2018-08-23 21:06:33	➡️	strmpnk (sid2261@gateway/web/irccloud.com/x-dujmjiapkzvoshyz) has joined #i3
+2018-08-23 21:06:33	➡️	Nnavd (~Nnavd@ec2-18-236-168-137.us-west-2.compute.amazonaws.com) has joined #i3
+2018-08-23 21:06:33	➡️	KaosCreator (~KaosCreat@unaffiliated/kaoscreator) has joined #i3
+2018-08-23 21:06:53	➡️	jp (ayy@cpe-76-173-133-37.hawaii.res.rr.com) has joined #i3
+2018-08-23 21:07:01	⬅️	armin (~armin@x86.li) has quit (Max SendQ exceeded)
+2018-08-23 21:07:54	➡️	heinrich5991 (~hein5991@unaffiliated/heinrich5991) has joined #i3
+2018-08-23 21:07:54	➡️	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has joined #i3
+2018-08-23 21:07:54	➡️	Jesin (~Jesin@2601:152:4603:cb81::577f) has joined #i3
+2018-08-23 21:07:54	➡️	kernal_ (~kernal_@202.153.71.40) has joined #i3
+2018-08-23 21:07:54	➡️	saptech (~saptech@unaffiliated/saptech) has joined #i3
+2018-08-23 21:07:54	➡️	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2018-08-23 21:07:54	➡️	eyeoh (~eyeoh@unaffiliated/eyeoh) has joined #i3
+2018-08-23 21:07:54	➡️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2018-08-23 21:07:54	➡️	mbarrin (mbarrin@nat/dcunetworkingsociety/x-lkyaynenvgkzmdgb) has joined #i3
+2018-08-23 21:07:54	➡️	norg (~andi@2001:41d0:a:f689::1) has joined #i3
+2018-08-23 21:07:54	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-23 21:07:54	➡️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has joined #i3
+2018-08-23 21:07:54	➡️	craftyguy (~craftyguy@qutebrowser/dev/craftyguy) has joined #i3
+2018-08-23 21:07:54	➡️	labelette (~belette@reverse-177-123.fdn.fr) has joined #i3
+2018-08-23 21:07:54	➡️	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #i3
+2018-08-23 21:07:54	➡️	lupinix (~quassel@fedora/lupinix) has joined #i3
+2018-08-23 21:07:54	➡️	d1rewolf (sid312924@gateway/web/irccloud.com/x-myqmqzaniypvtzxn) has joined #i3
+2018-08-23 21:07:54	➡️	regulus_ (~regulus-@185-84-232-39.cust.avonet.cz) has joined #i3
+2018-08-23 21:07:54	➡️	jej (~jej@rbx1-fr.quadhost.net) has joined #i3
+2018-08-23 21:07:54	➡️	Zauberfisch (~Zauberfis@nellis.ncc-501.starfleet.zauberfisch.at) has joined #i3
+2018-08-23 21:07:54	➡️	syndikate (~syndikate@188.166.218.60) has joined #i3
+2018-08-23 21:07:54	➡️	sphalerite (~An_Ony_Mo@lugn.soundray.org) has joined #i3
+2018-08-23 21:07:54	➡️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has joined #i3
+2018-08-23 21:07:54	➡️	GinjaNinja32 (~nyx@thanatos.gn32.uk) has joined #i3
+2018-08-23 21:07:54	➡️	gardar (~gardar@bnc.giraffi.net) has joined #i3
+2018-08-23 21:07:54	➡️	CrazedProgrammer (~CrazedPro@vmi166174.contaboserver.net) has joined #i3
+2018-08-23 21:10:24	⬅️	SCHAPiE (~schapie@unaffiliated/schaap137) has quit (Ping timeout: 265 seconds)
+2018-08-23 21:16:28	➡️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #i3
+2018-08-23 21:19:12	➡️	SCHAPiE (~schapie@unaffiliated/schaap137) has joined #i3
+2018-08-23 21:21:38	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-23 21:30:52		irc: disconnected from server
+2018-08-23 21:39:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 21:41:59		irc: disconnected from server
+2018-08-23 21:46:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 21:51:38		irc: disconnected from server
+2018-08-23 21:51:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 21:51:56	➡️	Rasi (~carnager@archlinux/support/rasi) has joined #i3
+2018-08-23 21:55:06	⬅️	craftyguy (~craftyguy@qutebrowser/dev/craftyguy) has quit (Ping timeout: 264 seconds)
+2018-08-23 21:58:00	➡️	craftyguy (~craftyguy@qutebrowser/dev/craftyguy) has joined #i3
+2018-08-23 22:03:54	➡️	carlf (carlf@gateway/shell/suchznc/x-vfanmdqforydpbfh) has joined #i3
+2018-08-23 22:15:08	⬅️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has quit (Quit: WeeChat 2.2)
+2018-08-23 22:21:59		irc: disconnected from server
+2018-08-23 22:22:35	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 22:29:10	➡️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has joined #i3
+2018-08-23 22:31:06	➡️	mmfood2 (~mmfood@46.246.17.98) has joined #i3
+2018-08-23 22:33:13	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Ping timeout: 265 seconds)
+2018-08-23 22:43:55		irc: disconnected from server
+2018-08-23 22:44:17	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 22:45:47		irc: disconnected from server
+2018-08-23 22:46:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 22:57:25	⬅️	mmfood2 (~mmfood@46.246.17.98) has quit (Ping timeout: 252 seconds)
+2018-08-23 22:58:33	➡️	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2018-08-23 23:08:58		irc: disconnected from server
+2018-08-23 23:11:46	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 23:30:26	➡️	haasn (~haasn@HSI-KBW-5-56-186-133.hsi16.kabel-badenwuerttemberg.de) has joined #i3
+2018-08-23 23:38:17	➡️	rememberYou (~user@unaffiliated/rememberyou) has joined #i3
+2018-08-23 23:41:34	➡️	awal (~awal@52.165.155.232) has joined #i3
+2018-08-23 23:47:17	⬅️	rememberYou (~user@unaffiliated/rememberyou) has quit (Ping timeout: 252 seconds)
+2018-08-23 23:48:32		irc: disconnected from server
+2018-08-23 23:55:18	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-23 23:57:38	⬅️	Vonter_ (~Vonter@49.206.15.112) has quit (Ping timeout: 276 seconds)
+2018-08-23 23:59:22	➡️	Vonter_ (~Vonter@49.206.12.238) has joined #i3
+2018-08-23 23:59:59	⬅️	Eyo (~i3@2a02:2528:fa:2d0:0:242:ac11:5) has quit (Remote host closed the connection)
+2018-08-24 00:00:00	⬅️	i3bot (~i3@2a02:2528:fa:2d0:0:242:ac11:a) has quit (Remote host closed the connection)
+2018-08-24 00:02:29	➡️	i3bot (~i3@2a02:2528:fa:2d0:0:242:ac11:4) has joined #i3
+2018-08-24 00:02:35	➡️	Eyo (~i3@2a02:2528:fa:2d0:0:242:ac11:a) has joined #i3
+2018-08-24 00:04:18	⬅️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2018-08-24 00:10:36	➡️	ducasse (~petter@unaffiliated/ducasse) has joined #i3
+2018-08-24 00:12:08	⬅️	hfp (~hfp@2607:fea8:520:1300:5054:ff:fe81:8d0) has quit (Quit: bye)
+2018-08-24 00:15:30	➡️	hfp (~hfp@2607:fea8:520:1300:5054:ff:fe81:8d0) has joined #i3
+2018-08-24 00:16:57	⬅️	cyphase (~cyphase@unaffiliated/cyphase) has quit (Ping timeout: 240 seconds)
+2018-08-24 00:17:33	➡️	TheBrayn (~TheBrayn@unaffiliated/thebrayn) has joined #i3
+2018-08-24 00:24:42	➡️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has joined #i3
+2018-08-24 00:26:54	➡️	cyphase (~cyphase@unaffiliated/cyphase) has joined #i3
+2018-08-24 00:42:30	⬅️	mmfood2 (~mmfood@178.73.197.99) has quit (Ping timeout: 264 seconds)
+2018-08-24 00:42:35	➡️	manzerbredes (~loic@myriads-lg.irisa.fr) has joined #i3
+2018-08-24 00:46:18	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-24 00:47:13	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 00:51:15	➡️	sdk__ (~x@codevoid.de) has joined #i3
+2018-08-24 00:59:01	➡️	kaiec (~kaiec@92.116.169.124) has joined #i3
+2018-08-24 01:00:59	⬅️	kernal_ (~kernal_@202.153.71.40) has quit (Quit: Byyeeeee)
+2018-08-24 01:05:50	⬅️	lompik (~lompik@unaffiliated/lompik) has quit (Quit: WeeChat 2.2)
+2018-08-24 01:10:34	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 244 seconds)
+2018-08-24 01:12:14	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 01:23:54	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Ping timeout: 264 seconds)
+2018-08-24 01:24:05	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-24 01:44:52	➡️	clemens3 (~clemens@mx.eniso-partners.com) has joined #i3
+2018-08-24 01:44:52	➡️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has joined #i3
+2018-08-24 01:50:51	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-24 01:52:52	➡️	backwardspy (~backwards@142.93.35.30) has joined #i3
+2018-08-24 01:57:11	➡️	alephnull_ (~alephnull@node-kl3.pool-125-27.dynamic.totbb.net) has joined #i3
+2018-08-24 01:57:49	➡️	gigamo (~gigamo@s91904461.blix.com) has joined #i3
+2018-08-24 01:58:16	⬅️	backwardspy (~backwards@142.93.35.30) has quit (Quit: mi tawa)
+2018-08-24 01:58:27	⬅️	alephnull (~alephnull@node-6pi.pool-125-27.dynamic.totbb.net) has quit (Ping timeout: 240 seconds)
+2018-08-24 01:58:27		alephnull_ is now known as alephnull
+2018-08-24 01:58:32	➡️	backwardspy (~backwards@142.93.35.30) has joined #i3
+2018-08-24 01:59:32	⬅️	backwardspy (~backwards@142.93.35.30) has quit (Client Quit)
+2018-08-24 01:59:53	➡️	backwardspy (~backwards@142.93.35.30) has joined #i3
+2018-08-24 02:04:42	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-nmdwotlsqhnrwrtd) has quit (Quit: Connection closed for inactivity)
+2018-08-24 02:11:00	➡️	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2018-08-24 02:13:03	➡️	mmfood2 (~mmfood@46.246.88.98) has joined #i3
+2018-08-24 02:17:37	➡️	kaiec_ (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:17:46	⬅️	kaiec (~kaiec@92.116.169.124) has quit (Quit: kaiec)
+2018-08-24 02:18:01	⬅️	kaiec_ (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Client Quit)
+2018-08-24 02:18:28	➡️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:20:14	⬅️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Client Quit)
+2018-08-24 02:20:43	➡️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:22:01	⬅️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Client Quit)
+2018-08-24 02:23:13	➡️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:30:15	⬅️	guther (~dummy@unaffiliated/guther) has quit (Ping timeout: 256 seconds)
+2018-08-24 02:32:18	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-24 02:34:14	⬅️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Quit: WeeChat 2.2)
+2018-08-24 02:34:36	➡️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:38:14	⬅️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Client Quit)
+2018-08-24 02:38:35	➡️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has joined #i3
+2018-08-24 02:43:54	➡️	guther (~dummy@unaffiliated/guther) has joined #i3
+2018-08-24 02:44:20	⬅️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has quit (Ping timeout: 252 seconds)
+2018-08-24 02:47:43	⬅️	kaiec (~kaiec@wissbox1.iuk.hdm-stuttgart.de) has quit (Changing host)
+2018-08-24 02:47:43	➡️	kaiec (~kaiec@unaffiliated/kaiec) has joined #i3
+2018-08-24 02:52:17	⬅️	kaiec (~kaiec@unaffiliated/kaiec) has quit (Quit: WeeChat 2.2)
+2018-08-24 02:52:40	➡️	kaiec (~kaiec@unaffiliated/kaiec) has joined #i3
+2018-08-24 03:06:23	⬅️	steven (~steven@unaffiliated/steven) has quit (Quit: ZNC - http://znc.in)
+2018-08-24 03:06:55	➡️	iderik (~idk@h-235-101.A147.priv.bahnhof.se) has joined #i3
+2018-08-24 03:10:58	➡️	Hund (~Hund@ubuntu/member/hund) has joined #i3
+2018-08-24 03:14:23	⬅️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has quit (Quit: ZNC - http://znc.in)
+2018-08-24 03:15:48	➡️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has joined #i3
+2018-08-24 03:27:39	⬅️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has quit (Ping timeout: 252 seconds)
+2018-08-24 03:28:43	➡️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has joined #i3
+2018-08-24 03:36:00	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-24 03:44:01	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 244 seconds)
+2018-08-24 03:46:04	➡️	s7k (504e0568@gateway/web/freenode/ip.80.78.5.104) has joined #i3
+2018-08-24 04:04:19	⬅️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Ping timeout: 252 seconds)
+2018-08-24 04:06:01	➡️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-24 04:09:57	➡️	steven (~steven@unaffiliated/steven) has joined #i3
+2018-08-24 04:10:12	⬅️	freon32 (~freon@gateway/tor-sasl/freon32) has quit (Remote host closed the connection)
+2018-08-24 04:10:58	➡️	freon32 (~freon@gateway/tor-sasl/freon32) has joined #i3
+2018-08-24 04:13:48	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-24 04:19:35	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-24 04:26:39	➡️	kernal_ (kernal_@gateway/vpn/privateinternetaccess/kernal/x-12724317) has joined #i3
+2018-08-24 04:32:50	⬅️	steven (~steven@unaffiliated/steven) has quit (Quit: ZNC - http://znc.in)
+2018-08-24 04:33:35	➡️	steven (~steven@unaffiliated/steven) has joined #i3
+2018-08-24 04:36:47	⬅️	steven (~steven@unaffiliated/steven) has quit (Client Quit)
+2018-08-24 04:38:32	➡️	steven (~steven@unaffiliated/steven) has joined #i3
+2018-08-24 04:46:03	⬅️	mmfood2 (~mmfood@46.246.88.98) has quit (Ping timeout: 268 seconds)
+2018-08-24 04:49:55	➡️	armin (~armin@x86.li) has joined #i3
+2018-08-24 04:50:15	⬅️	Vonter_ (~Vonter@49.206.12.238) has quit (Ping timeout: 272 seconds)
+2018-08-24 04:52:17	➡️	mniip (mniip@freenode/staff/mniip) has joined #i3
+2018-08-24 05:10:24	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Remote host closed the connection)
+2018-08-24 05:11:42	➡️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has joined #i3
+2018-08-24 05:13:11	➡️	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2018-08-24 05:19:05	➡️	knidos (~knidos@78.167.160.14) has joined #i3
+2018-08-24 05:21:30	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-24 05:26:56	thegala	hello i have a basic problem i have 2x2 grid of windows and when moving let's say from left to right container i want to go not to last window focused but to window right to currently focuesd window
+2018-08-24 05:28:55	⬅️	tecepe (~tcpaiva@173-9-9-33-New-England.hfc.comcastbusiness.net) has quit (Quit: Leaving.)
+2018-08-24 05:46:59	⬅️	mmfood2 (~mmfood@178.73.196.98) has quit (Ping timeout: 244 seconds)
+2018-08-24 05:48:50	➡️	mmfood2 (~mmfood@46.246.16.99) has joined #i3
+2018-08-24 05:57:23	⬅️	mmfood2 (~mmfood@46.246.16.99) has quit (Ping timeout: 272 seconds)
+2018-08-24 06:01:00	➡️	mmfood2 (~mmfood@46.246.17.98) has joined #i3
+2018-08-24 06:20:24	➡️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has joined #i3
+2018-08-24 06:21:15	➡️	txgl3mos (~matheus@189.6.19.144) has joined #i3
+2018-08-24 06:24:18	⬅️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Ping timeout: 268 seconds)
+2018-08-24 06:37:41	➡️	kaiec_ (~kaiec@unaffiliated/kaiec) has joined #i3
+2018-08-24 06:38:33	⬅️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has quit (Ping timeout: 272 seconds)
+2018-08-24 06:41:05	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Remote host closed the connection)
+2018-08-24 06:42:17	➡️	ralpheee1 (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-24 06:43:04	⬅️	kernal_ (kernal_@gateway/vpn/privateinternetaccess/kernal/x-12724317) has quit (Remote host closed the connection)
+2018-08-24 06:43:15	alex``	How to pop-up an empty container?
+2018-08-24 06:44:19	@qball	don't think you can
+2018-08-24 06:44:22		Mode #i3 [-o qball] by qball
+2018-08-24 06:44:26	qball	arg.. how did that get there
+2018-08-24 06:49:30	alex``	qball: I found `open`
+2018-08-24 06:49:33	alex``	> i3-msg open
+2018-08-24 06:50:59	➡️	howden-- (~simon.how@5.148.84.42) has joined #i3
+2018-08-24 06:51:25	howden--	hey, anyone use hsetroot for background on bsd by any chance? got a problem where if i resize a vm window, background image stays same res and tiles
+2018-08-24 06:51:44	howden--	tried adding hsetroot -fill to i3 config and .xinitrc, didnt help
+2018-08-24 06:51:57	howden--	i can fix it for now just running that command in terminal
+2018-08-24 07:04:20	➡️	Vonter_ (~Vonter@2406:7400:73:1019::3) has joined #i3
+2018-08-24 07:06:06	⬅️	kaiec_ (~kaiec@unaffiliated/kaiec) has quit (Quit: kaiec_)
+2018-08-24 07:11:47	➡️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has joined #i3
+2018-08-24 07:23:02	➡️	pnwise (~pnwise@unaffiliated/pnwise) has joined #i3
+2018-08-24 07:28:58	➡️	Jellyg00se (~Jellyg00s@host81-149-124-93.in-addr.btopenworld.com) has joined #i3
+2018-08-24 07:32:56	➡️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has joined #i3
+2018-08-24 07:33:09	⬅️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has quit (Ping timeout: 268 seconds)
+2018-08-24 07:33:42	➡️	nuth (uid280430@gateway/web/irccloud.com/x-mvivaftnrbkkwdwe) has joined #i3
+2018-08-24 07:37:26	➡️	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2018-08-24 07:37:39	➡️	Ferus (~anonymous@qutebrowser/user/Ferus) has joined #i3
+2018-08-24 07:46:25	➡️	zerotech (~zerotech@BSN-143-56-16.dynamic.siol.net) has joined #i3
+2018-08-24 07:57:18	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 07:57:36	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 07:57:43	⬅️	ralpheee1 (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Ping timeout: 272 seconds)
+2018-08-24 07:57:43	⬅️	mmfood2 (~mmfood@46.246.17.98) has quit (Ping timeout: 272 seconds)
+2018-08-24 07:58:45	⬅️	s7k (504e0568@gateway/web/freenode/ip.80.78.5.104) has quit (Quit: Page closed)
+2018-08-24 07:59:10	⬅️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has quit (Quit: ZNC 1.7.1 - https://znc.in)
+2018-08-24 08:00:01	➡️	shinanyenzo (~boox@41.72.203.38) has joined #i3
+2018-08-24 08:00:02	➡️	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has joined #i3
+2018-08-24 08:01:11	shinanyenzo	hello
+2018-08-24 08:01:14	Eyo	Hello! Please be patient, as it may be some time before someone is around who can answer your question :)
+2018-08-24 08:05:09	➡️	ralpheee1 (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-24 08:06:21	⬅️	netvor (~amahdal@unaffiliated/netvor) has quit (Quit: WeeChat 2.2)
+2018-08-24 08:06:27	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 268 seconds)
+2018-08-24 08:08:46	➡️	tyll (~till@fedora/tyll) has joined #i3
+2018-08-24 08:09:56	⬅️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has quit (Ping timeout: 252 seconds)
+2018-08-24 08:11:31	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-24 08:11:38	⬅️	ralpheee1 (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Ping timeout: 244 seconds)
+2018-08-24 08:12:00	⬅️	steven (~steven@unaffiliated/steven) has quit (Ping timeout: 268 seconds)
+2018-08-24 08:12:51	➡️	steven (~steven@unaffiliated/steven) has joined #i3
+2018-08-24 08:13:48	⬅️	sdk__ (~x@codevoid.de) has quit (Remote host closed the connection)
+2018-08-24 08:16:07		shinanyenzo is now known as Shinanyenzo
+2018-08-24 08:19:15	➡️	sdK__ (~x@codevoid.de) has joined #i3
+2018-08-24 08:19:52		sdK__ is now known as sdk__
+2018-08-24 08:22:32	➡️	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2018-08-24 08:25:06	➡️	joemaro (~joemaro@42.red-2-140-49.dynamicip.rima-tde.net) has joined #i3
+2018-08-24 08:25:33	⬅️	joemaro (~joemaro@42.red-2-140-49.dynamicip.rima-tde.net) has left #i3
+2018-08-24 08:26:25	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-24 08:27:45	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-xpdqszslgmtwhvqa) has joined #i3
+2018-08-24 08:28:10	⬅️	zerotech (~zerotech@BSN-143-56-16.dynamic.siol.net) has quit (Ping timeout: 244 seconds)
+2018-08-24 08:45:50	➡️	hahuang65 (~hahuang65@104-50-0-198.lightspeed.sntcca.sbcglobal.net) has joined #i3
+2018-08-24 08:51:38	➡️	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #i3
+2018-08-24 08:52:44	➡️	indeedwatson (~yama@host57.190-229-58.telecom.net.ar) has joined #i3
+2018-08-24 08:54:37	➡️	joemaro (~joemaro@42.red-2-140-49.dynamicip.rima-tde.net) has joined #i3
+2018-08-24 09:00:25	⬅️	clemens3 (~clemens@mx.eniso-partners.com) has quit (Ping timeout: 272 seconds)
+2018-08-24 09:13:58	⬅️	andyrtr (~andyrtr@archlinux/developer/andyrtr) has quit (Quit: ZNC 1.7.1 - https://znc.in)
+2018-08-24 09:14:38	➡️	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #i3
+2018-08-24 09:15:05	⬅️	Shinanyenzo (~boox@41.72.203.38) has quit (Quit: Leaving, talk to you later.)
+2018-08-24 09:22:37	➡️	thegala (~mirko@93-142-173-14.adsl.net.t-com.hr) has joined #i3
+2018-08-24 09:26:38	⬅️	manzerbredes (~loic@myriads-lg.irisa.fr) has quit (Quit: WeeChat 2.2)
+2018-08-24 09:32:34	➡️	bonestorm (~bonestorm@ip-178-201-19-192.hsi08.unitymediagroup.de) has joined #i3
+2018-08-24 09:38:13	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-24 09:41:47	➡️	eboladoc (~chris@p57AEC777.dip0.t-ipconnect.de) has joined #i3
+2018-08-24 09:46:21	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-24 09:47:51	➡️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has joined #i3
+2018-08-24 09:54:03	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 09:54:20	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 09:57:40	➡️	manzerbredes (~loic@2a01cb0885e31500cfc30bb534d5bc37.ipv6.abo.wanadoo.fr) has joined #i3
+2018-08-24 10:00:24	⬅️	howden-- (~simon.how@5.148.84.42) has quit (Read error: Connection reset by peer)
+2018-08-24 10:00:30	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Remote host closed the connection)
+2018-08-24 10:05:40	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 10:09:26	⬅️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has quit (Ping timeout: 244 seconds)
+2018-08-24 10:10:44	⬅️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has quit (Quit: WeeChat 2.2)
+2018-08-24 10:17:04	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 10:29:10	⬅️	joemaro (~joemaro@42.red-2-140-49.dynamicip.rima-tde.net) has quit (Quit: Leaving)
+2018-08-24 10:30:02	⬅️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has quit (Ping timeout: 252 seconds)
+2018-08-24 10:34:00	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Quit: WeeChat 2.2)
+2018-08-24 10:36:02	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2018-08-24 10:43:26	⬅️	charims (~quassel@wsip-24-234-28-130.lv.lv.cox.net) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-08-24 10:43:34	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 10:44:09	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 10:44:16	➡️	charims (~quassel@wsip-24-234-28-130.lv.lv.cox.net) has joined #i3
+2018-08-24 10:49:20	➡️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has joined #i3
+2018-08-24 10:51:21	➡️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has joined #i3
+2018-08-24 10:54:03	⬅️	voidead (~voidead@unaffiliated/voidead) has quit (Quit: dead)
+2018-08-24 10:54:43	➡️	voidead (~voidead@unaffiliated/voidead) has joined #i3
+2018-08-24 10:58:28	➡️	enemabandit (~enemaband@16.77.54.77.rev.vodafone.pt) has joined #i3
+2018-08-24 11:00:06	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 11:05:35	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 11:07:58	⬅️	eboladoc (~chris@p57AEC777.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-24 11:11:45	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Quit: Leaving)
+2018-08-24 11:12:22	➡️	eboladoc (~chris@p57AEC777.dip0.t-ipconnect.de) has joined #i3
+2018-08-24 11:12:47	Hund	Hey
+2018-08-24 11:12:50	Eyo	Hello! Please be patient, as it may be some time before someone is around who can answer your question :)
+2018-08-24 11:13:33	Hund	Silly bot. :P
+2018-08-24 11:13:56	@squigzy	Is it silly? I'm getting tired of people leaving within 5 mins of not getting an answer, 'cause they assume we're always around :P
+2018-08-24 11:20:42		irc: disconnected from server
+2018-08-24 12:01:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 12:01:34	***	Buffer Playback...
+2018-08-24 12:01:34	Hund	[11:21:23] I was sarcastic.
+2018-08-24 12:01:34	Hund	[11:21:34] I called it silly for telling me it when I said hello to the other guy. :P
+2018-08-24 12:01:34	@squigzy	[11:22:01] Ah
+2018-08-24 12:01:34	Hund	[11:22:05] :)
+2018-08-24 12:01:34	@squigzy	[11:22:22] They've left, it seems
+2018-08-24 12:01:34	Hund	[11:22:35] They always do. :)
+2018-08-24 12:01:34	Hund	[11:23:43] It's like observing the attention span of a sugar high kid in a toys store.
+2018-08-24 12:01:34	pjs	[11:32:51] LOL
+2018-08-24 12:01:34	***	Playback Complete.
+2018-08-24 12:04:42	➡️	fuzzbox (~fuzzbox@AAubervilliers-653-1-66-102.w86-198.abo.wanadoo.fr) has joined #i3
+2018-08-24 12:05:20	⬅️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has quit (Ping timeout: 272 seconds)
+2018-08-24 12:07:09	➡️	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has joined #i3
+2018-08-24 12:10:19	➡️	sdK__ (~x@codevoid.de) has joined #i3
+2018-08-24 12:11:02	➡️	ahvth (~ahvth@178-164-243-121.pool.digikabel.hu) has joined #i3
+2018-08-24 12:11:19		sdK__ is now known as sdk__
+2018-08-24 12:11:23	⬅️	ahvth (~ahvth@178-164-243-121.pool.digikabel.hu) has quit (Remote host closed the connection)
+2018-08-24 12:12:34	⬅️	sdk__ (~x@codevoid.de) has quit (Client Quit)
+2018-08-24 12:15:50	➡️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2018-08-24 12:16:13	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-24 12:21:14	➡️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2018-08-24 12:22:54	➡️	CopperTube (p@unaffiliated/drbig/bot/coppertube) has joined #i3
+2018-08-24 12:23:19	dRbiG	squigzy: CopperTube ^ is my utility bot, very quite one; Not sure if will be useful, but shouldn't hurt at least for a trail period
+2018-08-24 12:23:22	dRbiG	CopperTube: help
+2018-08-24 12:23:23	CopperTube	dRbiG: I can reply to: facts [...], help, help [command], links [...], log [...], memo [...], plugins, quote [...], rule [...], seen [nick], source, time from [(yyyy-mm-dd) hh:mm(:ss) where|zone] to [where|zone], time in [where|zone], uptime, version
+2018-08-24 12:23:33	➡️	sdk__ (~x@codevoid.de) has joined #i3
+2018-08-24 12:23:38	dRbiG	(log doesn't work btw.)
+2018-08-24 12:23:41	⬅️	tecepe (~tcpaiva@1x-vl908-128-119-225-126.wireless.umass.edu) has quit (Ping timeout: 252 seconds)
+2018-08-24 12:24:57	dRbiG	quiet*, doesn't speak unless spoken to
+2018-08-24 12:26:10	@squigzy	Provided it's not used to spam the channel in any way, it's fine
+2018-08-24 12:27:39	⬅️	Jesin (~Jesin@2601:152:4603:cb81::577f) has quit (Quit: Leaving)
+2018-08-24 12:28:22	dRbiG	well, one can easily use it to "spam" by repeatedly asking it `help`... but not sure how much of an amplification it is ;D
+2018-08-24 12:30:01	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 12:31:45		irc: disconnected from server
+2018-08-24 12:32:06	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 12:32:56	⬅️	michaelrose (~michaelro@c-24-16-161-245.hsd1.wa.comcast.net) has quit (Quit: Leaving)
+2018-08-24 12:33:44	⬅️	eboladoc (~chris@p57AEC777.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-24 12:37:41	⬅️	CopperTube (p@unaffiliated/drbig/bot/coppertube) has quit (Quit: Time to leave...)
+2018-08-24 12:41:09	➡️	CopperTube (p@unaffiliated/drbig/bot/coppertube) has joined #i3
+2018-08-24 12:43:56	dRbiG	fixed a bug, apologies for the artifical traffic
+2018-08-24 13:02:13	⬅️	iderik (~idk@h-235-101.A147.priv.bahnhof.se) has quit (Quit: iderik)
+2018-08-24 13:07:10	➡️	mmfood2 (~mmfood@46.246.17.98) has joined #i3
+2018-08-24 13:09:31	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 252 seconds)
+2018-08-24 13:13:43	➡️	eboladoc (~chris@p200300758F4DD3C3A6DB30FFFE9BFDBF.dip0.t-ipconnect.de) has joined #i3
+2018-08-24 13:18:07	➡️	Damni (~daniele@host115-16-dynamic.40-79-r.retail.telecomitalia.it) has joined #i3
+2018-08-24 13:20:16	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Ping timeout: 264 seconds)
+2018-08-24 13:26:23	⬅️	Damni (~daniele@host115-16-dynamic.40-79-r.retail.telecomitalia.it) has quit (Quit: WeeChat 2.2)
+2018-08-24 13:30:34	⬅️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has quit (Ping timeout: 252 seconds)
+2018-08-24 13:32:46	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-xpdqszslgmtwhvqa) has quit (Quit: Connection closed for inactivity)
+2018-08-24 13:35:51	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 13:36:37	⬅️	lompik (~lompik@unaffiliated/lompik) has quit (Ping timeout: 244 seconds)
+2018-08-24 13:37:00	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-24 13:37:29	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-24 13:37:36	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Client Quit)
+2018-08-24 13:37:57	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-24 13:41:47	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 244 seconds)
+2018-08-24 13:43:09	⬅️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 268 seconds)
+2018-08-24 13:56:19	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-24 14:04:31	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 244 seconds)
+2018-08-24 14:08:29	➡️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has joined #i3
+2018-08-24 14:09:26	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-24 14:14:35	⬅️	Jellyg00se (~Jellyg00s@host81-149-124-93.in-addr.btopenworld.com) has quit (Ping timeout: 268 seconds)
+2018-08-24 14:15:21	⬅️	saptech (~saptech@unaffiliated/saptech) has quit (Quit: Leaving)
+2018-08-24 14:19:46	➡️	minnesotags (~herbgarci@63.225.131.221) has joined #i3
+2018-08-24 14:22:36	⬅️	txgl3mos (~matheus@189.6.19.144) has quit (Ping timeout: 268 seconds)
+2018-08-24 14:27:30	➡️	Jellyg00se (~Jellyg00s@host81-149-124-93.in-addr.btopenworld.com) has joined #i3
+2018-08-24 14:39:24	qball	CopperTube: tea
+2018-08-24 14:39:32	qball	good
+2018-08-24 14:41:49	⬅️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has quit (Quit: WeeChat 2.2)
+2018-08-24 14:42:09	⬅️	eboladoc (~chris@p200300758F4DD3C3A6DB30FFFE9BFDBF.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-24 14:44:36	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-24 14:49:44	⬅️	thegala_ (~mirko@89-172-77-52.adsl.net.t-com.hr) has quit (Ping timeout: 268 seconds)
+2018-08-24 14:50:45	➡️	saptech (~saptech@unaffiliated/saptech) has joined #i3
+2018-08-24 14:58:20	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-24 15:03:46	⬅️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has quit (Read error: No route to host)
+2018-08-24 15:14:25	⬅️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.2)
+2018-08-24 15:17:34	➡️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has joined #i3
+2018-08-24 15:24:49	⬅️	knidos (~knidos@78.167.160.14) has quit (Quit: WeeChat 1.9.1)
+2018-08-24 15:38:40	⬅️	indeedwatson (~yama@host57.190-229-58.telecom.net.ar) has quit (Quit: WeeChat 2.2)
+2018-08-24 15:39:49	⬅️	mmfood2 (~mmfood@46.246.17.98) has quit (Ping timeout: 252 seconds)
+2018-08-24 15:40:51	➡️	migy (~migy@static.59.240.9.5.clients.your-server.de) has joined #i3
+2018-08-24 15:42:25	➡️	terminal1 (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-24 15:42:51	⬅️	terminal1 (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Client Quit)
+2018-08-24 15:43:01	➡️	terminal1 (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-24 15:43:31	⬅️	terminal1 (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Client Quit)
+2018-08-24 15:43:40	➡️	terminal1 (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-24 15:44:44	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Ping timeout: 244 seconds)
+2018-08-24 15:46:27		terminal1 is now known as terminalator
+2018-08-24 15:55:26	➡️	mmfood2 (~mmfood@178.73.197.100) has joined #i3
+2018-08-24 16:04:14	⬅️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.1)
+2018-08-24 16:19:21	⬅️	bonestorm (~bonestorm@ip-178-201-19-192.hsi08.unitymediagroup.de) has quit (Quit: leaving)
+2018-08-24 16:19:56	⬅️	minnesotags (~herbgarci@63.225.131.221) has quit (Ping timeout: 272 seconds)
+2018-08-24 16:22:46	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Quit: Bye)
+2018-08-24 16:26:17		irc: disconnected from server
+2018-08-24 16:39:12	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 16:40:34	➡️	zp2133 (zukeprime@pdpc/supporter/active/zukeprime) has joined #i3
+2018-08-24 16:52:25	⬅️	mmfood2 (~mmfood@178.73.196.98) has quit (Ping timeout: 244 seconds)
+2018-08-24 16:59:21	⬅️	gigamo (~gigamo@s91904461.blix.com) has quit (Quit: none)
+2018-08-24 17:00:05	➡️	CPrompt^ (~CPrompt^@cpe-45-36-165-193.triad.res.rr.com) has joined #i3
+2018-08-24 17:31:54	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-24 17:33:35	⬅️	fuzzbox (~fuzzbox@AAubervilliers-653-1-66-102.w86-198.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2018-08-24 18:00:37	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2018-08-24 18:21:07	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Quit: Leaving)
+2018-08-24 18:35:45	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Ping timeout: 244 seconds)
+2018-08-24 18:46:34	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-24 19:06:18	➡️	hillbear (~hillbear@71-10-94-74.dhcp.roch.mn.charter.com) has joined #i3
+2018-08-24 19:21:03	➡️	minnesotags (~herbgarci@c-24-118-22-254.hsd1.mn.comcast.net) has joined #i3
+2018-08-24 19:31:44	⬅️	tyll (~till@fedora/tyll) has quit (Remote host closed the connection)
+2018-08-24 19:32:35	➡️	tyll_ (~till@fedora/tyll) has joined #i3
+2018-08-24 19:50:16	⬅️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has quit (Ping timeout: 252 seconds)
+2018-08-24 19:55:02	➡️	nebunez (~nebunez@2603:3010:1707:9f0:ae7:112a:38ff:e69d) has joined #i3
+2018-08-24 20:00:29	⬅️	asdil12 (~asdil12@ipbcc2d4d0.dynamic.kabel-deutschland.de) has quit (Read error: Connection reset by peer)
+2018-08-24 20:01:48	➡️	asdil12 (~asdil12@ipbcc2d4d0.dynamic.kabel-deutschland.de) has joined #i3
+2018-08-24 20:03:41	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Quit: terminalator)
+2018-08-24 20:04:06	⬅️	tschan (~tschan@pD95E2D26.dip0.t-ipconnect.de) has quit (Ping timeout: 244 seconds)
+2018-08-24 20:09:14	➡️	tschan (~tschan@pD95E224E.dip0.t-ipconnect.de) has joined #i3
+2018-08-24 20:14:19		irc: disconnected from server
+2018-08-24 20:14:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 20:34:45		irc: disconnected from server
+2018-08-24 20:37:01	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 20:48:30	⬅️	dddddd (~dddddd@unaffiliated/dddddd) has quit (Remote host closed the connection)
+2018-08-24 20:51:08	➡️	ulili (~quassel@p200300C96F34A600EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has joined #i3
+2018-08-24 20:51:26	⬅️	ulilili (~quassel@p200300C96F0CEB00EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2018-08-24 20:55:39	⬅️	nebunez (~nebunez@2603:3010:1707:9f0:ae7:112a:38ff:e69d) has quit (Ping timeout: 264 seconds)
+2018-08-24 20:57:45	➡️	jp (ayy@cpe-76-173-133-37.hawaii.res.rr.com) has joined #i3
+2018-08-24 21:18:53	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:18:53	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:19:03	⬅️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has quit (Ping timeout: 264 seconds)
+2018-08-24 21:19:27	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:19:27	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:19:54	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:19:54	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:20:24	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:20:25	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:20:57	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:20:57	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:21:29	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-24 21:21:30	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-24 21:25:48	➡️	txgl3mos (~matheus@189.6.19.144) has joined #i3
+2018-08-24 21:27:06	➡️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #i3
+2018-08-24 21:59:01	⬅️	txgl3mos (~matheus@189.6.19.144) has quit (Quit: BitchX Official WWW Site -- http://www.bitchx.org/)
+2018-08-24 22:07:25		irc: disconnected from server
+2018-08-24 22:12:08	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 22:15:20	➡️	curiousx (~curiousx@unaffiliated/curiousx) has joined #i3
+2018-08-24 22:26:17		irc: disconnected from server
+2018-08-24 22:30:38	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 22:30:44	⬅️	curiousx (~curiousx@unaffiliated/curiousx) has quit (Quit: leaving)
+2018-08-24 22:31:53		irc: disconnected from server
+2018-08-24 23:38:45	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-24 23:44:18	⬅️	amosbird (~amosbird@123.206.66.49) has quit (Quit: ZNC 1.7.0 - https://znc.in)
+2018-08-24 23:44:30	➡️	amosbird (~amosbird@123.206.66.49) has joined #i3
+2018-08-24 23:45:09	⬅️	amosbird (~amosbird@123.206.66.49) has quit (Max SendQ exceeded)
+2018-08-24 23:48:37	➡️	amosbird (~amosbird@123.206.66.49) has joined #i3
+2018-08-24 23:54:11	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-24 23:55:45	⬅️	kernal_ (kernal_@gateway/vpn/privateinternetaccess/kernal/x-12724317) has quit (Remote host closed the connection)
+2018-08-25 00:03:25	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-25 00:17:14	➡️	Confusdus (~Votan-X@gateway/tor-sasl/votan-x) has joined #i3
+2018-08-25 00:18:54	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 268 seconds)
+2018-08-25 00:20:33	➡️	mmfood2 (~mmfood@46.246.16.98) has joined #i3
+2018-08-25 00:25:30	⬅️	Confusdus (~Votan-X@gateway/tor-sasl/votan-x) has left #i3 ("WeeChat 2.0.1")
+2018-08-25 00:45:56	⬅️	lompik (~lompik@unaffiliated/lompik) has quit (Ping timeout: 252 seconds)
+2018-08-25 00:47:29	➡️	knidos (~knidos@78.167.160.14) has joined #i3
+2018-08-25 01:06:12	⬅️	mmfood2 (~mmfood@46.246.16.98) has quit (Ping timeout: 272 seconds)
+2018-08-25 01:08:39	➡️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has joined #i3
+2018-08-25 01:13:00	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-25 01:18:23	⬅️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Ping timeout: 252 seconds)
+2018-08-25 01:22:17	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:22:17	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:22:47	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:22:48	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:22:56	➡️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has joined #i3
+2018-08-25 01:23:19	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:23:19	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:24:51	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:24:52	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:25:54	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:25:55	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:26:25	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 01:26:25	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 01:32:13	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-25 01:44:17	➡️	michaelrose (~michaelro@c-24-16-161-245.hsd1.wa.comcast.net) has joined #i3
+2018-08-25 01:57:26	⬅️	alephnull (~alephnull@node-kl3.pool-125-27.dynamic.totbb.net) has quit (Ping timeout: 264 seconds)
+2018-08-25 01:57:48	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-25 01:58:58	➡️	iderik (~idk@h-235-101.A147.priv.bahnhof.se) has joined #i3
+2018-08-25 02:00:13	➡️	alephnull (~alephnull@node-1cl7.pool-101-51.dynamic.totbb.net) has joined #i3
+2018-08-25 02:26:12	➡️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-25 02:30:59	⬅️	guther (~dummy@unaffiliated/guther) has quit (Ping timeout: 252 seconds)
+2018-08-25 02:35:45	➡️	mmfood2 (~mmfood@46.246.17.98) has joined #i3
+2018-08-25 02:44:44	➡️	guther (~dummy@unaffiliated/guther) has joined #i3
+2018-08-25 02:46:54	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 268 seconds)
+2018-08-25 02:58:52	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-25 03:04:57	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-25 03:11:39	➡️	MisoM (~miroslav@p2E53232F.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 03:50:56	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-25 04:13:26	➡️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has joined #i3
+2018-08-25 04:22:38	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-25 04:22:56	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-25 04:23:10	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-25 04:27:24	⬅️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has quit (Ping timeout: 268 seconds)
+2018-08-25 04:28:18	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-25 04:28:38	⬅️	mmfood2 (~mmfood@46.246.17.98) has quit (Ping timeout: 268 seconds)
+2018-08-25 04:36:09	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-25 04:37:46	➡️	c0c0 (~coco@2a02:a442:b563:1:539b:98d5:cb46:e4f4) has joined #i3
+2018-08-25 04:51:24		rj1 is now known as rj11
+2018-08-25 04:52:53	➡️	mmfood2 (~mmfood@178.73.197.99) has joined #i3
+2018-08-25 04:53:39	➡️	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2018-08-25 05:01:36	➡️	clemens3 (~clemens@80-218-38-71.dclient.hispeed.ch) has joined #i3
+2018-08-25 05:07:01	⬅️	rj11 (~rj1@unaffiliated/rj1) has quit (Quit: Leaving)
+2018-08-25 05:22:02	⬅️	mmfood2 (~mmfood@178.73.197.99) has quit (Ping timeout: 252 seconds)
+2018-08-25 05:28:10	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:28:11	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:29:07	⬅️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has quit (Read error: No route to host)
+2018-08-25 05:29:43	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:29:44	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:30:04	⬅️	cspack (~cspack@193.37.252.111) has quit (K-Lined)
+2018-08-25 05:31:16	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:31:16	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:31:18	➡️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2018-08-25 05:31:48	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:31:49	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:33:21	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:33:22	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:35:24	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:35:24	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:36:26	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:36:27	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:37:43	➡️	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2018-08-25 05:38:28	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:38:28	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:40:01	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:40:02	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:41:03	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:41:04	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:41:35	➡️	felixsanz (~felixsanz@unaffiliated/felixsanz) has joined #i3
+2018-08-25 05:41:35	⬅️	felixsanz (~felixsanz@unaffiliated/felixsanz) has quit (Excess Flood)
+2018-08-25 05:43:56	⬅️	bgardner (~bgardner@fsf/member/bgardner) has quit (Quit: leaving)
+2018-08-25 05:52:35	➡️	mmfood2 (~mmfood@46.246.16.98) has joined #i3
+2018-08-25 05:54:29	➡️	eboladoc (~chris@p54AA588F.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 05:55:51	➡️	thy0 (~thy0@23.106.36.226) has joined #i3
+2018-08-25 05:58:25	➡️	dbmikus__ (~dbmikus@ec2-52-1-79-1.compute-1.amazonaws.com) has joined #i3
+2018-08-25 06:03:36	⬅️	dbmikus__ (~dbmikus@ec2-52-1-79-1.compute-1.amazonaws.com) has quit (Ping timeout: 268 seconds)
+2018-08-25 06:06:02	➡️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has joined #i3
+2018-08-25 06:14:39	⬅️	eboladoc (~chris@p54AA588F.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-25 06:15:22	⬅️	thy0 (~thy0@23.106.36.226) has quit (Quit: TTFN)
+2018-08-25 06:16:54	➡️	thy0 (~thy0@185.245.86.85) has joined #i3
+2018-08-25 06:27:36	➡️	txgl3mos (~matheus@189.6.19.144) has joined #i3
+2018-08-25 06:28:51	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Quit: WeeChat 2.2)
+2018-08-25 06:29:24	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-25 06:32:14	➡️	KuerbisKern (yerodins@unaffiliated/kuerbiskern) has joined #i3
+2018-08-25 06:34:48	➡️	mzigora (~mzigora@197.91.139.208) has joined #i3
+2018-08-25 06:45:51	⬅️	mmfood2 (~mmfood@46.246.16.98) has quit (Ping timeout: 252 seconds)
+2018-08-25 06:54:21	➡️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has joined #i3
+2018-08-25 06:55:38	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Ping timeout: 264 seconds)
+2018-08-25 07:02:47	⬅️	e2k (~e2k@dsl-hkibng11-50dc46-20.dhcp.inet.fi) has quit (Remote host closed the connection)
+2018-08-25 07:24:09	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-kobpzkpnvdfozvfe) has joined #i3
+2018-08-25 07:25:45	⬅️	mzigora (~mzigora@197.91.139.208) has quit (Read error: Connection reset by peer)
+2018-08-25 07:31:00	➡️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has joined #i3
+2018-08-25 07:32:00	➡️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has joined #i3
+2018-08-25 07:36:57	⬅️	dbmikus__ (~dbmikus@ec2-52-0-158-42.compute-1.amazonaws.com) has quit (Ping timeout: 272 seconds)
+2018-08-25 07:39:27	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-25 07:44:21	➡️	SergeantBiggs (reinejo@login.zedat.fu-berlin.de) has joined #i3
+2018-08-25 07:52:37	⬅️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Ping timeout: 264 seconds)
+2018-08-25 08:03:08	➡️	jpwgarrison (~jpwgarris@unaffiliated/jpwgarrison) has joined #i3
+2018-08-25 08:10:41	⬅️	kjoke (~kjoke@ipb21b5612.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.2)
+2018-08-25 08:30:08	⬅️	enckse (~enckse@znc.epiphyte.network) has left #i3 ("WeeChat 2.2")
+2018-08-25 08:48:14	➡️	tecepe (~tcpaiva@c-71-192-27-179.hsd1.ma.comcast.net) has joined #i3
+2018-08-25 08:57:42	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-25 08:58:12	➡️	fromBeyond (~void@tm.84.52.141.52.dc.cable.static.telemach.net) has joined #i3
+2018-08-25 08:58:30	fromBeyond	Hi, is there a way to add a bit of padding on the top/bottom of the statusbar?
+2018-08-25 09:03:48	fromBeyond	?
+2018-08-25 09:08:37	⬅️	KuerbisKern (yerodins@unaffiliated/kuerbiskern) has quit (Ping timeout: 252 seconds)
+2018-08-25 09:15:59	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-25 09:17:07	⬅️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has quit (Remote host closed the connection)
+2018-08-25 09:20:02	➡️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has joined #i3
+2018-08-25 09:21:59	⬅️	logzet (~quassel@unaffiliated/logzet) has quit (Remote host closed the connection)
+2018-08-25 09:27:44	⬅️	ralpheeee (~ralpheeee@cable-78-34-49-87.netcologne.de) has quit (Quit: WeeChat 2.2)
+2018-08-25 09:29:34	⬅️	txgl3mos (~matheus@189.6.19.144) has quit (Ping timeout: 268 seconds)
+2018-08-25 09:29:51	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-kobpzkpnvdfozvfe) has quit (Quit: Connection closed for inactivity)
+2018-08-25 09:30:35	⬅️	SergeantBiggs (reinejo@login.zedat.fu-berlin.de) has quit (Quit: leaving)
+2018-08-25 09:37:54	⬅️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has quit (Read error: Connection reset by peer)
+2018-08-25 09:39:43	➡️	gigamo (~gigamo@s91904461.blix.com) has joined #i3
+2018-08-25 09:39:56	➡️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has joined #i3
+2018-08-25 09:49:28	⬅️	saptech (~saptech@unaffiliated/saptech) has quit (Quit: Leaving)
+2018-08-25 10:10:46	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-25 10:14:45	⬅️	fflam (~mdt@ip70-179-20-127.sd.sd.cox.net) has quit (Quit: WeeChat 2.2)
+2018-08-25 10:15:03	➡️	fflam (~mdt@ip70-179-20-127.sd.sd.cox.net) has joined #i3
+2018-08-25 10:15:32	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-25 10:30:55	➡️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has joined #i3
+2018-08-25 10:35:10	⬅️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has quit (Ping timeout: 244 seconds)
+2018-08-25 10:36:16	➡️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has joined #i3
+2018-08-25 10:37:38	➡️	Jesin (~Jesin@2601:152:4603:cb81::577f) has joined #i3
+2018-08-25 10:39:51	⬅️	Jesin (~Jesin@2601:152:4603:cb81::577f) has quit (Remote host closed the connection)
+2018-08-25 10:45:09	➡️	Jesin (~Jesin@2601:152:4603:cb81::577f) has joined #i3
+2018-08-25 10:45:17	➡️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2018-08-25 11:09:37	⬅️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Ping timeout: 252 seconds)
+2018-08-25 11:10:17	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-25 11:11:49	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Ping timeout: 252 seconds)
+2018-08-25 11:20:23	➡️	virmin (~virmin@46.101.54.154) has joined #i3
+2018-08-25 11:24:23	➡️	kjoke (kjoke@gateway/vpn/privateinternetaccess/kjoke) has joined #i3
+2018-08-25 11:38:36	➡️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has joined #i3
+2018-08-25 11:43:56	⬅️	craftyguy (~craftyguy@qutebrowser/dev/craftyguy) has quit (Quit: ZNC - https://znc.in)
+2018-08-25 11:47:30	⬅️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Ping timeout: 244 seconds)
+2018-08-25 11:49:01	⬅️	virmin (~virmin@46.101.54.154) has quit (Quit: ZNC 1.7.1 - https://znc.in)
+2018-08-25 11:49:34	⬅️	zp2133 (zukeprime@pdpc/supporter/active/zukeprime) has quit (Quit: Leaving)
+2018-08-25 11:50:10	➡️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-25 12:07:06	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-25 12:08:54	okraits	fromBeyond: With default i3: no. With i3-gaps you can set the i3bar height I think.
+2018-08-25 12:15:37	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2018-08-25 12:16:14	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-25 12:16:25	➡️	KuerbisKern (yerodins@unaffiliated/kuerbiskern) has joined #i3
+2018-08-25 12:18:47	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-25 12:19:01	➡️	Bob_Vance (~Bob_Vance@209-15-80-219.resi.cgocable.ca) has joined #i3
+2018-08-25 12:28:40	⬅️	kjoke (kjoke@gateway/vpn/privateinternetaccess/kjoke) has quit (Ping timeout: 252 seconds)
+2018-08-25 12:39:18	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 252 seconds)
+2018-08-25 12:43:50	➡️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2018-08-25 12:45:04	⬅️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has quit (Quit: WeeChat 2.2)
+2018-08-25 12:45:18	➡️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2018-08-25 12:47:01	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-25 12:48:59	⬅️	Bob_Vance (~Bob_Vance@209-15-80-219.resi.cgocable.ca) has quit (Remote host closed the connection)
+2018-08-25 12:52:39	fromBeyond	okraits: do you know how to? I cannot find the setting
+2018-08-25 12:54:38	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-25 12:59:31	➡️	bgardner (~bgardner@fsf/member/bgardner) has joined #i3
+2018-08-25 13:02:27	➡️	kjoke (kjoke@gateway/vpn/privateinternetaccess/kjoke) has joined #i3
+2018-08-25 13:15:08	➡️	Damni (~daniele@host115-16-dynamic.40-79-r.retail.telecomitalia.it) has joined #i3
+2018-08-25 13:19:26		irc: disconnected from server
+2018-08-25 13:19:30	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-25 13:28:26	⬅️	iderik (~idk@h-235-101.A147.priv.bahnhof.se) has quit (Quit: iderik)
+2018-08-25 13:30:16	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 252 seconds)
+2018-08-25 13:30:48	@squigzy	https://github.com/Airblader/i3
+2018-08-25 13:30:55	@squigzy	Aint hard to find on this page
+2018-08-25 13:32:56		irc: disconnected from server
+2018-08-25 08:43:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-25 08:43:56	***	Buffer Playback...
+2018-08-25 08:43:56	CannedSpinach	[14:33:24] anyone here use dolphin with i3? I can't get it to work with a dark theme.
+2018-08-25 08:43:56	CannedSpinach	[14:34:44] dolphin file manager btw, not dolphin emu.
+2018-08-25 08:43:56	okraits	[14:35:31] i3 has nothing to do with the qt theme, maybe you need some kde service
+2018-08-25 08:43:56	CannedSpinach	[14:36:06] okraits: I set the QT theme already using qt5ct. it still looks awful in i3.
+2018-08-25 08:43:56	CannedSpinach	[14:37:49] it's purely a dolphin problem too, other Qt5 programs (such as keepassxc) seem to work fine.
+2018-08-25 08:43:56	okraits	[14:39:25] CannedSpinach: Maybe some of these tipps help: https://wiki.archlinux.org/index.php/Dolphin#Troubleshooting
+2018-08-25 08:43:56	CannedSpinach	[14:43:50] okraits: last one was the problem. thanks for that.
+2018-08-25 08:43:56	***	Playback Complete.
+2018-08-25 08:44:31	okraits	CannedSpinach: You're welcome
+2018-08-25 08:45:22	@squigzy	:)
+2018-08-25 08:47:09	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Quit: terminalator)
+2018-08-25 08:47:36	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-25 08:49:46	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Client Quit)
+2018-08-25 08:51:38	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-25 08:54:12	➡️	e2k (~e2k@dsl-hkibng11-50dca5-129.dhcp.inet.fi) has joined #i3
+2018-08-25 08:54:46	okraits	Hey squigzy :-)
+2018-08-25 08:56:18	⬅️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has quit (Ping timeout: 264 seconds)
+2018-08-25 09:05:28	⬅️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 244 seconds)
+2018-08-25 09:06:08	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-25 09:13:17	⬅️	baloona (~baloona@2a02:8070:4c0:cf00:6207:5470:a373:dda8) has quit (Quit: WeeChat 2.2)
+2018-08-25 09:22:33	⬅️	MisoM (~miroslav@p2E53232F.dip0.t-ipconnect.de) has quit (Quit: leaving)
+2018-08-25 09:27:39	@squigzy	okraits: How's it goin' bud?
+2018-08-25 09:32:14	⬅️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.2)
+2018-08-25 09:34:33	➡️	pnwise (~pnwise@unaffiliated/pnwise) has joined #i3
+2018-08-25 09:39:13	⬅️	c0c0 (~coco@2a02:a442:b563:1:539b:98d5:cb46:e4f4) has quit (Quit: WeeChat 2.2)
+2018-08-25 09:39:27	okraits	squigzy: Everything good, just came back from a 2 week vacation with my family - and you?
+2018-08-25 09:40:23		irc: disconnected from server
+2018-08-25 09:42:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-25 09:46:21	⬅️	lompik (~lompik@unaffiliated/lompik) has quit (Ping timeout: 252 seconds)
+2018-08-25 10:03:35	➡️	eboladoc (~chris@p4FE76534.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 10:05:03	⬅️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2018-08-25 10:06:29	➡️	nuth (uid280430@gateway/web/irccloud.com/x-mcvslmarynbovusa) has joined #i3
+2018-08-25 10:07:31	nuth	Hund: don't I know you from somewhere?
+2018-08-25 10:08:00	⬅️	nicoulaj (~nicoulaj@nicoulaj.net) has quit (Quit: quit)
+2018-08-25 10:08:04	Hund	nuth: I'm famous from Japanese game shows.
+2018-08-25 10:08:08	nuth	Efnet #css or #php
+2018-08-25 10:08:22	Hund	Then it's the wrong Hund. :)
+2018-08-25 10:08:38	nuth	Ahh
+2018-08-25 10:09:08	nuth	Bummer
+2018-08-25 10:09:25	⬅️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has quit (Quit: WeeChat 1.9.1)
+2018-08-25 10:09:33	Hund	Hund means dog in a few languages. :) But I own the nick here though.
+2018-08-25 10:10:28	nuth	Yes, my Language for instance :-)
+2018-08-25 10:10:45	Hund	Ah. :D
+2018-08-25 10:11:18	Hund	I never thought about it until I got into gaming some years ago and everyone started talking German to me. :P
+2018-08-25 10:11:41	⬅️	saptech (~saptech@unaffiliated/saptech) has quit (Quit: Leaving)
+2018-08-25 10:11:47	nuth	Japanese game shows was a joke or?
+2018-08-25 10:12:06	Hund	Yes. :)
+2018-08-25 10:12:17	nuth	:-P
+2018-08-25 10:13:11	nuth	Didn't know it was dog in  German... Only scandinavia
+2018-08-25 10:13:22	Hund	Where are you from?
+2018-08-25 10:13:34	nuth	Norway
+2018-08-25 10:13:51	Hund	Hej granne! :D
+2018-08-25 10:14:23	nuth	Hei nabo!
+2018-08-25 10:14:51	Hund	My sister visited the Norwegian fjords a few days ago. Those areas is magical!
+2018-08-25 10:16:26	nuth	Yes, but through the years I've realized it's not unique
+2018-08-25 10:16:44	Hund	There's multiple Norways?
+2018-08-25 10:17:22	nuth	Hehe, no but there's a lot of beautiful nature out there
+2018-08-25 10:17:36	nuth	Croatia for instance
+2018-08-25 10:18:08	Hund	Oh, yeah sure. But Norway is unique, just like most other places are unique in their own way.
+2018-08-25 10:18:14	⬅️	SCHAPiE (~schapie@unaffiliated/schaap137) has quit (Quit: ZNC - https://znc.in)
+2018-08-25 10:18:20	nuth	Such beauty. Much love
+2018-08-25 10:18:41	Hund	:D
+2018-08-25 10:18:44	nuth	Suppose that's true
+2018-08-25 10:18:55	nuth	Doge
+2018-08-25 10:21:14	Hund	( ͡° ͜ʖ ͡°)
+2018-08-25 10:21:45	@squigzy	▼・ᴥ・▼
+2018-08-25 10:25:09	➡️	SCHAPiE (~schapie@unaffiliated/schaap137) has joined #i3
+2018-08-25 10:25:23	Hund	Cool. :D
+2018-08-25 10:26:16	Hund	I got myk URxvt to show those characters today.
+2018-08-25 10:26:18	Hund	my*
+2018-08-25 10:26:40	Hund	Apparently I had compiled it without support for ISO-14755.
+2018-08-25 10:33:51	➡️	nejni-marji (~nejni-mar@unaffiliated/nejni-marji) has joined #i3
+2018-08-25 10:35:07	@squigzy	okraits: :D I'm okay, no vacation for me though :(
+2018-08-25 10:36:24	➡️	enemabandit (~enemaband@16.77.54.77.rev.vodafone.pt) has joined #i3
+2018-08-25 10:36:36	⬅️	enemabandit (~enemaband@16.77.54.77.rev.vodafone.pt) has quit (Remote host closed the connection)
+2018-08-25 10:39:25	⬅️	CannedSpinach (~admin@2601:702:1:e5b0:eab1:fcff:fecc:92cd) has quit (Quit: WeeChat 2.2)
+2018-08-25 16:43:52	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Quit: terminalator)
+2018-08-25 16:44:42	⬅️	migy (~migy@static.59.240.9.5.clients.your-server.de) has quit (Quit: migy)
+2018-08-25 16:47:11	➡️	migy (~migy@static.59.240.9.5.clients.your-server.de) has joined #i3
+2018-08-25 16:50:06	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-25 16:53:11		irc: disconnected from server
+2018-08-25 16:57:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-25 17:05:57	⬅️	gigamo (~gigamo@s91904461.blix.com) has quit (Quit: none)
+2018-08-25 17:08:13		irc: disconnected from server
+2018-08-25 17:12:08	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-25 17:13:55	➡️	saptech (~saptech@unaffiliated/saptech) has joined #i3
+2018-08-25 17:15:08	⬅️	eboladoc (~chris@p4FE76534.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-25 17:16:28	⬅️	minnesotags (~herbgarci@c-24-118-22-254.hsd1.mn.comcast.net) has quit (Ping timeout: 268 seconds)
+2018-08-25 17:18:44	➡️	cspack (~cspack@193.37.252.74) has joined #i3
+2018-08-25 17:32:54	➡️	minnesotags (~herbgarci@c-24-118-1-208.hsd1.mn.comcast.net) has joined #i3
+2018-08-25 17:37:27	⬅️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 252 seconds)
+2018-08-25 17:40:56	➡️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-25 17:41:51	⬅️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Ping timeout: 252 seconds)
+2018-08-25 17:58:21	⬅️	clemens3 (~clemens@80-218-38-71.dclient.hispeed.ch) has quit (Ping timeout: 252 seconds)
+2018-08-25 18:17:58	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Ping timeout: 272 seconds)
+2018-08-25 18:31:32	⬅️	knidos (~knidos@78.167.160.14) has quit (Quit: WeeChat 1.9.1)
+2018-08-25 18:31:42	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Ping timeout: 268 seconds)
+2018-08-25 18:56:07	➡️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-25 18:56:57	⬅️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-08-25 19:08:17	➡️	eboladoc (~chris@p54AA588F.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 19:09:10	➡️	pnwise (~pnwise@unaffiliated/pnwise) has joined #i3
+2018-08-25 19:11:49	⬅️	CPrompt^ (~CPrompt^@cpe-45-36-165-193.triad.res.rr.com) has quit (Remote host closed the connection)
+2018-08-25 19:19:31	➡️	TheEbolaDoc (~chris@p54AA575D.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 19:22:30	⬅️	eboladoc (~chris@p54AA588F.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2018-08-25 19:25:00	⬅️	nuth (uid280430@gateway/web/irccloud.com/x-mcvslmarynbovusa) has quit (Quit: Connection closed for inactivity)
+2018-08-25 19:56:50	➡️	mohabaks (~mohabaks@gateway/tor-sasl/mohabaks) has joined #i3
+2018-08-25 19:57:41	⬅️	TheEbolaDoc (~chris@p54AA575D.dip0.t-ipconnect.de) has quit (Quit: Cure for an obsession: get another one)
+2018-08-25 20:04:10	⬅️	tschan (~tschan@pD95E224E.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2018-08-25 20:07:32	⬅️	dddddd (~dddddd@unaffiliated/dddddd) has quit (Remote host closed the connection)
+2018-08-25 20:07:55	⬅️	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.1)
+2018-08-25 20:08:22	⬅️	minnesotags (~herbgarci@c-24-118-1-208.hsd1.mn.comcast.net) has left #i3
+2018-08-25 20:08:34	⬅️	pnwise (~pnwise@unaffiliated/pnwise) has quit (Quit: Leaving)
+2018-08-25 20:09:03	➡️	tschan (~tschan@pD95E2981.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 20:21:41	⬅️	thy0 (~thy0@199.241.120.86) has quit (Quit: TTFN)
+2018-08-25 20:25:32	⬅️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has quit (Remote host closed the connection)
+2018-08-25 20:38:50	➡️	shakey_snake (~shakey_sn@unaffiliated/s-snake/x-1506435) has joined #i3
+2018-08-25 20:50:18	⬅️	ulili (~quassel@p200300C96F34A600EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2018-08-25 20:50:23	➡️	ulilili (~quassel@p200300C96F463000EA9A8FFFFEBD3E0F.dip0.t-ipconnect.de) has joined #i3
+2018-08-25 21:03:34	⬅️	hfp (~hfp@2607:fea8:520:1300:5054:ff:fe81:8d0) has quit (Quit: bye)
+2018-08-25 21:19:21	➡️	HumanGeek (~HumanG33k@62.147.242.8) has joined #i3
+2018-08-25 21:23:20	⬅️	Human_G33k (~HumanG33k@62.147.242.8) has quit (Ping timeout: 268 seconds)
+2018-08-25 21:43:33	➡️	qwertydvorak (~qwertydvo@c-76-103-98-74.hsd1.ca.comcast.net) has joined #i3
+2018-08-25 22:07:00	➡️	minnesotags (~herbgarci@c-24-118-22-254.hsd1.mn.comcast.net) has joined #i3
+2018-08-25 22:13:41	➡️	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2018-08-25 22:14:18	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Disconnected by services)
+2018-08-25 22:14:24		eremitah_ is now known as eremitah
+2018-08-25 22:33:46	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-25 22:43:12	➡️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-25 22:44:20	⬅️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Read error: Connection reset by peer)
+2018-08-25 22:45:52	⬅️	cspack (~cspack@193.37.252.74) has quit (Quit: WeeChat 2.2)
+2018-08-25 22:47:05	➡️	cspack (~cspack@193.37.252.74) has joined #i3
+2018-08-25 23:02:01	➡️	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2018-08-25 23:02:22	⬅️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has quit (Ping timeout: 252 seconds)
+2018-08-25 23:05:45	➡️	iderik (~idk@h-235-101.A147.priv.bahnhof.se) has joined #i3
+2018-08-25 23:44:24	⬅️	batman_nair (~batman_na@111.92.73.61) has quit (Remote host closed the connection)
+2018-08-25 23:59:53	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-fqfjlzzzrmthqtlz) has joined #i3
+2018-08-26 00:05:54	⬅️	regulus_ (~regulus-@185-84-232-39.cust.avonet.cz) has quit (Ping timeout: 264 seconds)
+2018-08-26 00:07:15	➡️	regulus_ (~regulus-@185-84-232-39.cust.avonet.cz) has joined #i3
+2018-08-26 00:26:38		irc: disconnected from server
+2018-08-26 00:26:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-26 00:43:52		irc: disconnected from server
+2018-08-26 00:45:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-26 00:57:30	⬅️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has quit (Ping timeout: 264 seconds)
+2018-08-26 01:21:03	➡️	dh (dh@bsd.ee) has joined #i3
+2018-08-26 01:26:16	➡️	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 01:26:32	➡️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has joined #i3
+2018-08-26 01:28:40	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 252 seconds)
+2018-08-26 01:28:40		eremitah_ is now known as eremitah
+2018-08-26 01:38:42	⬅️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has quit (Read error: No route to host)
+2018-08-26 01:47:53	➡️	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 01:48:55	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 268 seconds)
+2018-08-26 01:48:55		eremitah_ is now known as eremitah
+2018-08-26 01:49:13	⬅️	mohabaks (~mohabaks@gateway/tor-sasl/mohabaks) has left #i3
+2018-08-26 01:53:22	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 244 seconds)
+2018-08-26 01:55:00	⬅️	alephnull (~alephnull@node-1cl7.pool-101-51.dynamic.totbb.net) has quit (Read error: Connection reset by peer)
+2018-08-26 01:56:40	➡️	alephnull (~alephnull@118.174.204.93) has joined #i3
+2018-08-26 01:56:58	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 02:00:29	➡️	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 02:01:48	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 252 seconds)
+2018-08-26 02:01:49		eremitah_ is now known as eremitah
+2018-08-26 02:11:20	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-26 02:31:22	⬅️	guther (~dummy@unaffiliated/guther) has quit (Ping timeout: 252 seconds)
+2018-08-26 02:31:25	➡️	clemens3 (~clemens@80-218-38-71.dclient.hispeed.ch) has joined #i3
+2018-08-26 02:32:03	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 252 seconds)
+2018-08-26 02:38:24	➡️	coldpresent (~coldprese@bb119-74-92-122.singnet.com.sg) has joined #i3
+2018-08-26 02:38:31	coldpresent	is it common for i3 to hang?
+2018-08-26 02:40:34	coldpresent	suddenly my keyboard doesn't pass inputs into i3wm, and applets in i3bar cannot be clicked on
+2018-08-26 02:40:48	coldpresent	refreshing i3 fixes it
+2018-08-26 02:44:30	➡️	guther (~dummy@unaffiliated/guther) has joined #i3
+2018-08-26 02:50:42	➡️	Tibertiues (~Tibertiue@jalava.cc.jyu.fi) has joined #i3
+2018-08-26 02:54:39	Tibertiues	Hi all, I'm having a question. I used to be able to tile fullscreen windows to left or right in plasma/kwin setup by binding a shortcut to "tile window to left/right", it would stay fullscreen but only took half of the screen. If I am correct, i3 does not support this functionality?
+2018-08-26 02:55:48	Tibertiues	brb
+2018-08-26 02:55:52	⬅️	Tibertiues (~Tibertiue@jalava.cc.jyu.fi) has quit (Quit: Lost terminal)
+2018-08-26 02:56:50	➡️	Tibertiues (~Tibertiue@jalava.cc.jyu.fi) has joined #i3
+2018-08-26 02:58:18	Tibertiues	back
+2018-08-26 03:08:02	➡️	ford (~ford@2a01:4f8:c0c:2e13::2) has joined #i3
+2018-08-26 03:08:06	ford	hey
+2018-08-26 03:08:09	Eyo	Hello! Please be patient, as it may be some time before someone is around who can answer your question :)
+2018-08-26 03:08:14	ford	i am configuring i3status
+2018-08-26 03:08:18	eyeoh	coldpresent: I don't ever recall i3 hanging for me (although other things might cause my system to hang) - do you have a complicated configuration?
+2018-08-26 03:08:33	ford	and i am wondering if there is no variable for the weekday
+2018-08-26 03:09:17	eyeoh	coldpresent: although yeah, my i3status has hung before but only because of weird applets - as you said, mod+shift+r almost always fixes it.
+2018-08-26 03:10:42	⬅️	coldpresent (~coldprese@bb119-74-92-122.singnet.com.sg) has quit (Ping timeout: 264 seconds)
+2018-08-26 03:11:14	➡️	logzet (~quassel@unaffiliated/logzet) has joined #i3
+2018-08-26 03:13:16	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 03:16:01	nimaje	Tibertiues: yes, i3 doesn't support that
+2018-08-26 03:18:12	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 272 seconds)
+2018-08-26 03:19:57	nimaje	ford: i3status just uses some time formatting function (from libc) and lets you specify the format string, afaik weekday should be supported you can look up in the i3status man page which function it is and then read that man page
+2018-08-26 03:20:43	➡️	sur5r (sur5r@x3650.sur5r.net) has joined #i3
+2018-08-26 03:20:43		Mode #i3 [+o sur5r] by ChanServ
+2018-08-26 03:22:13	➡️	DVS[1] (~r3-s0urce@cablep-219-187-125.cablep.bezeqint.net) has joined #i3
+2018-08-26 03:23:53	⬅️	DVS[1] (~r3-s0urce@cablep-219-187-125.cablep.bezeqint.net) has quit (Remote host closed the connection)
+2018-08-26 03:28:18	➡️	alex`` (~alex@APuteaux-651-1-128-224.w86-249.abo.wanadoo.fr) has joined #i3
+2018-08-26 03:28:24	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-26 03:28:47	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Client Quit)
+2018-08-26 03:28:57	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-26 03:29:20	ford	ok ty
+2018-08-26 03:29:34	ford	and can i set the grey standard colour to white?
+2018-08-26 03:38:54	⬅️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 264 seconds)
+2018-08-26 03:39:50	➡️	plexigras (~plexigras@p200300DD07125B8BDEC08E85770FB5F2.dip0.t-ipconnect.de) has joined #i3
+2018-08-26 03:54:56	⬅️	r00tobo (~r00tobo@unaffiliated/r00tobo) has quit (Remote host closed the connection)
+2018-08-26 04:02:50	⬅️	plexigras (~plexigras@p200300DD07125B8BDEC08E85770FB5F2.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2018-08-26 04:02:51	Tibertiues	nimaje: Thank you :)
+2018-08-26 04:05:18	⬅️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 264 seconds)
+2018-08-26 04:13:23	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Ping timeout: 244 seconds)
+2018-08-26 04:13:26	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-26 04:15:49	➡️	r00tobo (~r00tobo@unaffiliated/r00tobo) has joined #i3
+2018-08-26 04:18:33	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 244 seconds)
+2018-08-26 04:22:41	⬅️	Dreamer3_ (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has quit (Ping timeout: 244 seconds)
+2018-08-26 04:23:43	➡️	Dreamer3 (~dreamer3@cpe-96-28-189-235.kya.res.rr.com) has joined #i3
+2018-08-26 04:34:07	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 04:34:26	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-26 04:39:20	➡️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2018-08-26 04:41:10	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 252 seconds)
+2018-08-26 04:50:12	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-26 04:55:59	➡️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has joined #i3
+2018-08-26 04:56:02	➡️	knidos (~knidos@78.167.160.14) has joined #i3
+2018-08-26 04:58:12	➡️	bonestorm (~bonestorm@ip-178-201-19-192.hsi08.unitymediagroup.de) has joined #i3
+2018-08-26 05:01:00	➡️	enemabandit (~enemaband@16.77.54.77.rev.vodafone.pt) has joined #i3
+2018-08-26 05:17:59	⬅️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has quit (Quit: WeeChat 2.2)
+2018-08-26 05:19:00	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-fqfjlzzzrmthqtlz) has quit (Quit: Connection closed for inactivity)
+2018-08-26 05:19:06	⬅️	ardevd (~ardevd@115.88.95.88.customer.cdi.no) has quit (Ping timeout: 264 seconds)
+2018-08-26 05:21:33	➡️	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2018-08-26 05:27:47	⬅️	KuerbisKern (yerodins@unaffiliated/kuerbiskern) has quit (Ping timeout: 244 seconds)
+2018-08-26 05:34:09	➡️	thy0 (~thy0@82.102.30.28) has joined #i3
+2018-08-26 05:37:50	➡️	blscoe (727d6799@gateway/web/cgi-irc/kiwiirc.com/ip.114.125.103.153) has joined #i3
+2018-08-26 05:40:26	alex``	Do we need a lib for IPC manipulation / events ?
+2018-08-26 05:41:47	➡️	NerdTheThird (~NerdTheTh@unaffiliated/nerdthethird) has joined #i3
+2018-08-26 05:44:22	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 05:45:11	➡️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2018-08-26 05:48:58	⬅️	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 244 seconds)
+2018-08-26 05:49:22	⬅️	blscoe (727d6799@gateway/web/cgi-irc/kiwiirc.com/ip.114.125.103.153) has left #i3
+2018-08-26 05:50:50	➡️	hfp (~hfp@2607:fea8:520:1300:5054:ff:fe81:8d0) has joined #i3
+2018-08-26 05:58:40	ford	chromium bring the cpu in i3 very high
+2018-08-26 05:58:50	ford	i have sometimes 90%
+2018-08-26 05:59:14	ford	which the same chromium (same tabs, ect) i have on dwm the problem not
+2018-08-26 05:59:37	ford	so i doubt that its chromiums fault but i dont know
+2018-08-26 06:03:15	⬅️	NerdTheThird (~NerdTheTh@unaffiliated/nerdthethird) has quit (Ping timeout: 252 seconds)
+2018-08-26 06:08:00	ford	i created shorcourts for programms
+2018-08-26 06:09:08	ford	can i say that thunderbird which is mod+t comes every time on window 3?
+2018-08-26 06:12:14	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Ping timeout: 268 seconds)
+2018-08-26 06:13:00	➡️	gigamo (~gigamo@s91904461.blix.com) has joined #i3
+2018-08-26 06:16:48	bgardner	ford: Yes, see docs for 'assign'
+2018-08-26 06:17:14	bgardner	Example for firefox: "assign [class="Firefox"] $workspace3"
+2018-08-26 06:17:32	ford	ty
+2018-08-26 06:21:37	⬅️	enemabandit (~enemaband@16.77.54.77.rev.vodafone.pt) has quit (Quit: Lost terminal)
+2018-08-26 06:22:52	⬅️	voidead (~voidead@unaffiliated/voidead) has quit (Quit: dead)
+2018-08-26 06:25:03	ford	is i3lock eqaul secure than slock?
+2018-08-26 06:25:47	➡️	batman_nair (~batman_na@111.92.73.61) has joined #i3
+2018-08-26 06:27:34	➡️	nicoulaj (~nicoulaj@nicoulaj.net) has joined #i3
+2018-08-26 06:29:32	➡️	voidead (~voidead@unaffiliated/voidead) has joined #i3
+2018-08-26 06:31:55		tomeaton17 is now known as tomeaton
+2018-08-26 06:32:53	ford	and where is the config file?
+2018-08-26 06:34:09	ford	ah ok, there are only parameters
+2018-08-26 06:38:32	ford	with bindsym $mod+l exec i3lock -b or not?
+2018-08-26 06:38:52	ford	i mean with bindsym $mod+l exec i3lock -b there should be a beep on a wrong pw
+2018-08-26 06:43:05	armin	ford: out of curiosity: the unlock indicator isn't enough?
+2018-08-26 06:44:18	ford	armin what do you mean?
+2018-08-26 06:44:42	armin	ford: there's a circle in the middle of the screen when typing your password in i3lock as long as you don't use -u
+2018-08-26 06:44:49	⬅️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Quit: ChrisLane)
+2018-08-26 06:44:55	armin	ford: that shows keypresses and errors
+2018-08-26 06:45:02	ford	yes
+2018-08-26 06:45:07	ford	but there is no bell
+2018-08-26 06:45:18	armin	that's why i asked
+2018-08-26 06:45:26	armin	sure you want your computer to punish you?
+2018-08-26 06:45:31	➡️	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2018-08-26 06:45:48	ford	armin: i think that these is very useful on hacker events
+2018-08-26 06:45:53	ford	like c3
+2018-08-26 06:46:00	armin	ford: why so?
+2018-08-26 06:46:36	ford	because when someone is trying get in my notebook and it beeps he goes away
+2018-08-26 06:47:13	armin	wow, securing my computer is that easy actually? i just have to make it beep and am unhackable?
+2018-08-26 06:47:20	armin	tell me more.
+2018-08-26 06:47:39	ford	no but it is a very little bonus
+2018-08-26 06:47:53	armin	hardly so. especially on a hacker event.
+2018-08-26 06:48:48	ford	ok, maybe he goes just to another login prompt
+2018-08-26 06:49:19	armin	maybe you just forgot the root shell on tty2, too.
+2018-08-26 06:49:20	ford	but why there is the beep option?
+2018-08-26 06:49:40	armin	to give you, the user, an alternative way of indicating that someone went wrong.
+2018-08-26 06:49:56	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-26 06:50:02	armin	i bet it won't even beep at all on most setups without further configuration.
+2018-08-26 06:50:40	ford	but there is a visual thing
+2018-08-26 06:51:06	armin	yeah, that makes the whole screen flash madly. i've actually left meetings where speakers refused to switch that off asap.
+2018-08-26 06:51:33	ford	ok
+2018-08-26 06:52:02	➡️	kjoke (kjoke@gateway/vpn/privateinternetaccess/kjoke) has joined #i3
+2018-08-26 06:52:04	armin	talking about the visual bell feature present in some terminal emulators
+2018-08-26 06:52:09	armin	probably the worst thing ever
+2018-08-26 06:54:42	ford	i dont know if these is possible but is there a option, like in dwm, that when i have 2 program it comes one left, one right and if i have 3 program that the program right goes on the right corner down and above on the right corner up is the another old program
+2018-08-26 06:54:53	⬅️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has quit (Quit: WeeChat 2.2)
+2018-08-26 06:55:15	ford	like these https://blog.zerial.org/wp-content/uploads/2009/08/dwm.png
+2018-08-26 06:59:27	➡️	zerotech (~zerotech@BSN-143-56-16.dynamic.siol.net) has joined #i3
+2018-08-26 07:03:15	tshirtman	i think you can code custom layouts
+2018-08-26 07:03:28	tshirtman	that would be one way to support that
+2018-08-26 07:19:45	➡️	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2018-08-26 07:27:55	⬅️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has quit (Quit: terminalator)
+2018-08-26 07:30:19	⬅️	ralpheeee (ralpheeee@gateway/vpn/privateinternetaccess/ralpheeee) has quit (Quit: WeeChat 2.2)
+2018-08-26 07:30:36	⬅️	voidead (~voidead@unaffiliated/voidead) has quit (Quit: dead)
+2018-08-26 07:32:02	⬅️	KaosCreator (~KaosCreat@unaffiliated/kaoscreator) has quit (Ping timeout: 252 seconds)
+2018-08-26 07:33:45	➡️	c0c0 (~coco@2a02:a442:b563:1:539b:98d5:cb46:e4f4) has joined #i3
+2018-08-26 07:34:34	➡️	KaosCreator (~KaosCreat@unaffiliated/kaoscreator) has joined #i3
+2018-08-26 07:35:40	➡️	voidead (~voidead@unaffiliated/voidead) has joined #i3
+2018-08-26 07:43:37	➡️	anon28 (uid281558@gateway/web/irccloud.com/x-gtpglsqdbdquyeke) has joined #i3
+2018-08-26 07:51:50	➡️	hgrsd (~daniel@cpc110797-lewi20-2-0-cust197.2-4.cable.virginm.net) has joined #i3
+2018-08-26 07:55:51	⬅️	tecepe (~tcpaiva@c-71-192-27-179.hsd1.ma.comcast.net) has quit (Quit: Leaving.)
+2018-08-26 08:06:30	⬅️	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Ping timeout: 264 seconds)
+2018-08-26 08:08:03	alex``	squigzy: How about a full-screen mode which take a width and height parameter?
+2018-08-26 08:08:45	alex``	I would like something like:
+2018-08-26 08:08:46	alex``	https://github.com/alexherbo2/i3-distraction-free
+2018-08-26 08:08:52	alex``	but implemented cleanly
+2018-08-26 08:09:03	alex``	https://github.com/Airblader/i3/issues/232
+2018-08-26 08:09:29	alex``	That could be useful to have a Reader-like mode like in Mac
+2018-08-26 08:10:03	alex``	So that fullscreen enable [100] [100] by default
+2018-08-26 08:10:07	➡️	tecepe (~tcpaiva@50-247-232-1-static.hfc.comcastbusiness.net) has joined #i3
+2018-08-26 08:10:09	alex``	but coule be
+2018-08-26 08:10:27	alex``	> fullscreen toggle 60 90
+2018-08-26 08:10:35	alex``	(percentage points)
+2018-08-26 08:14:59	➡️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has joined #i3
+2018-08-26 08:25:45	⬅️	tureba (~tureba@tureba.org) has quit (Quit: leaving)
+2018-08-26 08:35:07	⬅️	knidos (~knidos@78.167.160.14) has quit (Quit: WeeChat 1.9.1)
+2018-08-26 08:35:36	tecepe	hi, guys. i had a crazy idea here and i wanted to check if that is something of interest. how about having floating windows that could be able to tile other windows?
+2018-08-26 08:36:16		irc: disconnected from server
+2018-08-26 08:48:23	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #i3
+2018-08-26 08:48:23	***	Buffer Playback...
+2018-08-26 08:48:23	tecepe	[08:36:20] for example, i have 3 instances of the same program that i'd be willing to bring up in different moments, without changing the workspace
+2018-08-26 08:48:23	tecepe	[08:37:46] i could have them in a floating container and just bring them up with a key using scratchpads
+2018-08-26 08:48:23	tecepe	[08:38:16] (to do that now, i need to use 3 keys, and i have to remember each one is each)
+2018-08-26 08:48:23	tecepe	[08:39:07] any other idea to workaround is welcome as well =)
+2018-08-26 08:48:23	eyeoh	[08:44:17] which program is it?
+2018-08-26 08:48:23	tecepe	[08:46:12] hi, eyoh. well, in this exact moment i'm thinking of zim. but i had this feeling with other programs as well.
+2018-08-26 08:48:23	tecepe	[08:47:57] eyeoh* hehe
+2018-08-26 08:48:23	***	Playback Complete.
+2018-08-26 08:51:59	⬅️	kjoke (kjoke@gateway/vpn/privateinternetaccess/kjoke) has quit (Quit: WeeChat 2.2)
+2018-08-26 08:59:02	➡️	Disco-Dave (~DiscoDave@2601:981:4300:1f0:34e7:6775:dd95:9c92) has joined #i3
+2018-08-26 09:01:49	⬅️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has quit (Ping timeout: 268 seconds)
+2018-08-26 09:05:43	➡️	tureba (~tureba@tureba.org) has joined #i3
+2018-08-26 09:09:22	➡️	Copenhagen_Bram (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #i3
+2018-08-26 09:14:27	➡️	mmfood2 (~mmfood@178.73.196.98) has joined #i3
+2018-08-26 09:25:35	➡️	terminalator (terminalat@gateway/vpn/privateinternetaccess/terminalator) has joined #i3
+2018-08-26 09:27:04	➡️	NerdTheThird (~NerdTheTh@unaffiliated/nerdthethird) has joined #i3
+2018-08-26 09:30:24	⬅️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has quit (Read error: No route to host)
+2018-08-26 09:34:25	tshirtman	you can make a container float
+2018-08-26 09:34:42	tshirtman	you first have to split and arrange stuff, then make it float, but you can
+2018-08-26 09:38:46	➡️	n35xdxb0 (~n35xdxb0@cpc130684-camd16-2-0-cust846.know.cable.virginm.net) has joined #i3
+2018-08-26 09:39:53	Hund	Is it possible to be more exakt than using ppt when resizing a client?
+2018-08-26 09:39:56	Hund	exact
+2018-08-26 09:47:56	⬅️	craigger (~cwhipp@184.101.162.16) has quit (Quit: bye)
+2018-08-26 09:48:43	➡️	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2018-08-26 09:52:13	⬅️	anon28 (uid281558@gateway/web/irccloud.com/x-gtpglsqdbdquyeke) has quit (Quit: Connection closed for inactivity)
+2018-08-26 09:52:22	➡️	dellavg_ (~dellavg@host242-34-dynamic.4-87-r.retail.telecomitalia.it) has joined #i3
+2018-08-26 09:53:24	➡️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has joined #i3
+2018-08-26 10:02:30	⬅️	_thelion_ (~matthias@193-81-168-158.hdsl.highway.telekom.at) has quit (Quit: WeeChat 2.2)
+2018-08-26 10:06:47	➡️	craigger (~cwhipp@184.101.162.16) has joined #i3
