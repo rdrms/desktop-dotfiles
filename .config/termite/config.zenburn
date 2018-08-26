@@ -1,6 +1,6 @@
 [options]
 #allow_bold = true
-audible_bell = true
+#audible_bell = false
 #clickable_url = true
 #dynamic_title = true
 font = Meslo LG S DZ for Powerline 9
@@ -14,7 +14,7 @@ font = Meslo LG S DZ for Powerline 9
 # and setting it to a negative value means "infinite scrollback"
 scrollback_lines = 10000
 #search_wrap = true
-urgent_on_bell = false
+#urgent_on_bell = true
 #hyperlinks = false
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
@@ -41,48 +41,48 @@ urgent_on_bell = false
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #2176c7
-cursor_foreground = #FFFFFF
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
 
-foreground = #000000
-foreground_bold = #000000
-#background = #FFFFFF
+#foreground = #dcdccc
+#foreground_bold = #ffffff
+#background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = rgba(255, 255, 255, 0.6)
+background = rgba(63, 63, 63, 0.6)
 
 # If unset, will reverse foreground and background
-highlight = #2176c7
+highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #002831
-color1 = #d11c24
-color2 = #738a05
-color3 = #a57706
-color4 = #2176c7
-color5 = #c61c6f
-color6 = #259286
-color7 = #a1babc
-color8 = #001e27
-color9 = #d11c24
-color10 = #475b62
-color11 = #536870
-color12 = #2176c7
-color13 = #5956ba
-color14 = #819090
-color15 = #fcf4dc
-colorBD = #475b62
+color0 = #3f3f3f
+color1 = #cc9393
+color2 = #7f9f7f
+color3 = #d0bf8f
+color4 = #6ca0a3
+color5 = #dc8cc3
+color6 = #93e0e3
+color7 = #dcdccc
+color8 = #000000
+color9 = #dca3a3
+color10 = #bfebbf
+color11 = #f0dfaf
+color12 = #8cd0d3
+color13 = #dc8cc3
+color14 = #93e0e3
+color15 = #ffffff
+
 
 
 [hints]
-#foreground = #3f3f3f
+#foreground = #dcdccc
 font = "Meslo LG S DZ for Powerline" 9
 #font = Monospace 9
-#background = #FFFFFF
+#background = #3f3f3f
 #active_foreground = #e68080
-#active_background = #FFFFFF
+#active_background = #3f3f3f
 padding = 30
-#border = #FFFFFF
+#border = #3f3f3f
 border_width = 10
 #roundness = 2.0
 
