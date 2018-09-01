@@ -1,0 +1,685 @@
+2018-08-30 16:46:18	rydare	hey i probably am not supposed to say this in the channel
+2018-08-30 16:46:27	rydare	but you might be better served by Manjaro
+2018-08-30 16:46:35	rydare	it's based on Arch so it has the latest drivers and packages
+2018-08-30 16:46:57	deicide-	i was told fedora is cutting edge
+2018-08-30 16:47:10	rydare	and the installer lets you toggle to the proprietary driver during the install and automatically installs it
+2018-08-30 16:47:32	rydare	fedora has fairly new packages, but they're really anal about non-free stuff, you have to add RPMfusion and get the drivers from there
+2018-08-30 16:47:54	rydare	i installed it not too long ago and it was fairly simple
+2018-08-30 16:48:02	rydare	but for me debian was easy too
+2018-08-30 16:48:54	rydare	sorry for PMing you I just didn't want to recommend a different distro in the #debian channel
+2018-08-30 16:51:54	deicide-	never saw anyone recommending that os
+2018-08-30 16:52:15	rydare	if you go on distrowatch.com it's the top one in terms of traffic
+2018-08-30 16:52:32	rydare	those statistics can be manipulated though
+2018-08-30 16:52:39	rydare	i really liked manjaro though
+2018-08-30 16:52:50	deicide-	its good for gaming?
+2018-08-30 16:53:01	rydare	well it has the latest verisons of everything
+2018-08-30 16:53:11	rydare	so the absolute newest driver available
+2018-08-30 16:53:17	deicide-	are the commands somewhat the same?
+2018-08-30 16:53:38	rydare	apt install x -> pacman -S x
+2018-08-30 16:53:49	rydare	apt upgrade -> pacman -Syu
+2018-08-30 16:54:02	rydare	although if you do go that route, i suggest using yay
+2018-08-30 16:54:03	deicide-	somewhat the same ok
+2018-08-30 16:54:10	deicide-	i'll look into it
+2018-08-30 16:54:21	rydare	i think it would suit you
+2018-08-30 16:54:30	rydare	maybe try updating your Debian to testing first
+2018-08-30 16:54:33	rydare	see if that's new enough
+2018-08-30 16:54:42	deicide-	going back to windows
+2018-08-30 16:54:46	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Quit: Leaving)
+2018-08-30 16:54:47	rydare	but if it isn't, manjaro/arch is the absolute cutting edge of Linux
+2018-08-30 16:54:47	--	deicide-: No such nick/channel
+2018-08-30 16:59:16	deicide-	back
+2018-08-30 16:59:30	rydare	pfft i'm not talking to no windows user
+2018-08-30 16:59:32	rydare	lolol
+2018-08-30 16:59:38	rydare	jk i have a windows drive
+2018-08-30 16:59:42	deicide-	manjarp?
+2018-08-30 16:59:49	deicide-	manjaro
+2018-08-30 16:59:50	rydare	manjaro is the name
+2018-08-30 16:59:51	rydare	yeah
+2018-08-30 16:59:56	rydare	it comes in various flavours
+2018-08-30 17:00:02	rydare	do you know what desktop you like/
+2018-08-30 17:00:08	deicide-	xfce
+2018-08-30 17:00:13	deicide-	its the most windows like
+2018-08-30 17:00:26	rydare	i think that's the first one listed on the downloads link
+2018-08-30 17:01:10	rydare	tip: swap out the default Xfce compositor for compton with the opengl backend to stop screen tearing
+2018-08-30 17:01:20	deicide-	Today at 02:00
+2018-08-30 17:01:20	deicide-	i was told fedora is aids when it comes to non-free
+2018-08-30 17:01:24	deicide-	Ordy Holy VirginToday at 02:01
+2018-08-30 17:01:24	deicide-	nah fedora is fine
+2018-08-30 17:01:24	deicide-	just add repo and there you go
+2018-08-30 17:01:42	rydare	yeah you add a repo
+2018-08-30 17:01:45	rydare	it's not too hard
+2018-08-30 17:01:54	rydare	but it doesn't come out of the box with the nvidia driver like manjaro does
+2018-08-30 17:01:57	deicide-	thats somewhat the problem with linux community everyone have different opinion\experience
+2018-08-30 17:02:09	rydare	well, everyone likes different things
+2018-08-30 17:02:19	rydare	fedora is good because when you update, you only download the change
+2018-08-30 17:02:36	rydare	like if a package is 150mb, but only 2mb has changed from the last version, you download 2mb
+2018-08-30 17:02:59	deicide-	thats nice
+2018-08-30 17:03:07	rydare	manjaro/arch is good because if a package isn't in the repos, it's almost guaranteed to be in the AUR, so you can very easily compile and install it using the package manager
+2018-08-30 17:03:27	deicide-	"i don't because i have never tried. I am a nab also. What i can say is what you might easily find googling, being that it's not the stablest and also don't expect arch to be the best place to go when you have to find a solution to a problem
+2018-08-30 17:03:27	deicide-	"
+2018-08-30 17:03:47	rydare	ubuntu is good because there's usually a PPA you can install from, but I find the AUR is better for weird versions of software
+2018-08-30 17:03:48	deicide-	i agree with him arch community doesn't look like good place for noob like me
+2018-08-30 17:03:55	rydare	the wiki is really good
+2018-08-30 17:04:02	rydare	i use it all the time no matter what distro i'm using
+2018-08-30 17:04:10	rydare	never posted on the forums though
+2018-08-30 17:04:15	rydare	or been in arch irc
+2018-08-30 17:06:23	deicide-	dunno sometimes human input is much better than googling
+2018-08-30 17:06:30	deicide-	alot of times*
+2018-08-30 17:06:31	deicide-	well
+2018-08-30 17:06:34	deicide-	99% of the time
+2018-08-30 17:06:35	deicide-	lol
+2018-08-30 17:08:10	rydare	haha
+2018-08-30 17:08:19	rydare	i don't mind asking if i can't find tha answer googling
+2018-08-30 17:08:27	rydare	but i feel dumb when i ask and continue googling and find the answer
+2018-08-30 17:08:31	deicide-	so fedora vs manjaro
+2018-08-30 17:09:02	rydare	https://www.slant.co/versus/2688/2706/~fedora_vs_manjaro-linux  check this out
+2018-08-30 17:09:09	rydare	might be a little out of date
+2018-08-30 17:09:27	rydare	https://distrowatch.com/table.php?distribution=manjaro
+2018-08-30 17:09:33	rydare	https://distrowatch.com/table.php?distribution=fedora
+2018-08-30 17:09:42	rydare	it lists the packages like the kernel and nvidia driver
+2018-08-30 17:09:59	rydare	but for some stuff that's not free it doesn't list it for fedora
+2018-08-30 17:10:06	rydare	since they don't include it and you have to go to a third party repo
+2018-08-30 17:10:24	rydare	green means latest
+2018-08-30 17:10:29	rydare	red means beta/allpha
+2018-08-30 17:10:34	rydare	black means not latest
+2018-08-30 17:11:29	rydare	i'd totally say fedora if you were going to use GNOME
+2018-08-30 17:11:33	rydare	it's the best GNOME distro
+2018-08-30 17:11:42	deicide-	xfce
+2018-08-30 17:11:44	rydare	not that their Xfce version is bad
+2018-08-30 17:11:50	rydare	it's just not their main focus
+2018-08-30 17:11:52	deicide-	i just want stuff to work
+2018-08-30 17:12:10	deicide-	with as little fiddle as possible
+2018-08-30 17:12:23	deicide-	as much windows as it can i guess'
+2018-08-30 17:15:27	deicide-	manjaro has no irc chan here :O
+2018-08-30 17:15:35	deicide-	fedora does
+2018-08-30 17:18:05	rydare	#manjaro doesn't work?
+2018-08-30 17:18:27	deicide-	oh it doesn't show up in search
+2018-08-30 17:18:36	deicide-	1\5 of users
+2018-08-30 17:19:03	deicide-	oh man this is so hard to pick between
+2018-08-30 17:19:11	deicide-	especially when xfce is main on manjaro
+2018-08-30 17:20:02	rydare	Xubuntu is also an option
+2018-08-30 17:20:08	rydare	great for beginners
+2018-08-30 17:20:16	rydare	because there's so much help available
+2018-08-30 17:20:35	rydare	like discord for example, just publishes a .deb for ubuntu and a .tar.gz for everything else
+2018-08-30 17:20:44	rydare	but you can usually find a package in your distro
+2018-08-30 17:21:19	deicide-	yea couldn't install discord or steam in debian
+2018-08-30 17:22:55	rydare	you can get the latest nvidia in ubuntu
+2018-08-30 17:23:01	rydare	it's just a case of adding a repo
+2018-08-30 17:23:05	deicide-	ubuntu is a no go
+2018-08-30 17:23:13	deicide-	might aswell stay on windows
+2018-08-30 17:24:41	rydare	hmm
+2018-08-30 17:25:01	rydare	ubuntu is fine for me, i just wanted something different
+2018-08-30 17:25:08	rydare	so i switched to various distros
+2018-08-30 17:25:16	deicide-	telemtry
+2018-08-30 17:25:58	rydare	fedora, elementary OS, openSUSE, Arch, Manjaro, Mint, Solus, KDE Neon, FreeBSD
+2018-08-30 17:26:22	rydare	like almost half of those are based on Ubuntu
+2018-08-30 17:26:26	rydare	and Ubuntu is based on Debian
+2018-08-30 17:26:30	rydare	so i figured i'd go to the source
+2018-08-30 17:26:39	rydare	and Debian is perfect for me
+2018-08-30 17:26:45	rydare	but it's not for everyone
+2018-08-30 17:26:54	rydare	especially if you want the latest software and drivers
+2018-08-30 17:26:58	rydare	which is why i said manjaro
+2018-08-30 17:27:12	rydare	it's like Arch with an easy install
+2018-08-30 17:27:23	rydare	and preconfigured desktop environments
+2018-08-30 17:27:29	rydare	instead of having to edit the time zone file yourself
+2018-08-30 17:27:36	rydare	and install the nvidia drivers
+2018-08-30 17:27:47	rydare	it has a little wizard to check what you're running and what hardware you have
+2018-08-30 17:27:47	deicide-	debian is perfect on my laptop
+2018-08-30 17:27:54	rydare	intel graphics?
+2018-08-30 17:28:15	deicide-	aye
+2018-08-30 17:28:19	deicide-	thinkpad too
+2018-08-30 17:28:25	rydare	nice, what model/
+2018-08-30 17:28:26	rydare	?
+2018-08-30 17:28:31	deicide-	so it meant to be runing with linux
+2018-08-30 17:28:33	deicide-	t470
+2018-08-30 17:28:40	rydare	ah ok
+2018-08-30 17:28:47	rydare	i'm thinking of getting an x230
+2018-08-30 17:29:25	deicide-	14" is my bare minimum
+2018-08-30 17:29:57	deicide-	hard to get used to 14" once you've used 27 for years
+2018-08-30 17:43:09	deicide-	ok i'm leaning towards manjora
+2018-08-30 17:43:26	rydare	newer packages and a rolling release
+2018-08-30 17:43:35	rydare	fedora is more stable because the packages dont change
+2018-08-30 17:43:35	deicide-	https://www.slant.co/versus/2688/2706/~fedora_vs_manjaro-linux
+2018-08-30 17:43:49	rydare	but if you want stable debian stable can't be beat
+2018-08-30 17:43:54	deicide-	lol it has like 2x the pros
+2018-08-30 17:44:18	rydare	lots of that depend on what you're using it for
+2018-08-30 17:44:20	deicide-	what does it mean by stable on linux?
+2018-08-30 17:44:26	deicide-	freezes and "bsod"?
+2018-08-30 17:44:36	rydare	well most linux distros are stable... they don't crash
+2018-08-30 17:44:55	rydare	but debian stable's GIMP for example is stable... it is version 2.8 and wont change except for security fixes
+2018-08-30 17:44:58	deicide-	what i use it for? windows replacment
+2018-08-30 17:45:15	rydare	Manjaro's GIMP is unstable... today it's 2.8, tomorrow it's 2.10 and has brand new features
+2018-08-30 17:45:36	rydare	maybe it's useful, maybe it breaks your workflow
+2018-08-30 17:45:45	rydare	which is why debian stable is better for servers
+2018-08-30 17:45:54	rydare	and manjaro is not so great for servers since it can break easier
+2018-08-30 17:46:03	rydare	since you're constantly changing things
+2018-08-30 17:46:07	deicide-	debian is unstable for me sincei have new hardware
+2018-08-30 17:46:13	rydare	but on a desktop you usually want the latest software
+2018-08-30 17:46:14	deicide-	i already had it freeze on me
+2018-08-30 17:47:38	rydare	ah, it's been rock solid for me
+2018-08-30 17:47:39	rydare	and i'm on testing
+2018-08-30 17:47:46	rydare	but so was manjaro
+2018-08-30 17:47:55	rydare	fedora had some hiccups for me, i don't know why
+2018-08-30 17:48:01	deicide-	never had anything worng with it with my laptop
+2018-08-30 17:48:02	rydare	i think it was this one program
+2018-08-30 17:49:33	rydare	mpDris2 exposes mpd to the protocol desktops use for media control, but it's sort of buggy
+2018-08-30 17:49:40	rydare	had problems with GNOME after it was installed
+2018-08-30 17:49:56	deicide-	hows wine in manjora?
+2018-08-30 17:50:12	rydare	you get the latest verison, just like everything else
+2018-08-30 17:50:18	deicide-	and steam?, do you run steam under any of them?
+2018-08-30 17:50:34	rydare	i have run steam on almost every distro
+2018-08-30 17:50:40	rydare	works about the same
+2018-08-30 17:50:57	deicide-	btw can i add u to steam?
+2018-08-30 17:51:00	rydare	i think you just do pacman -S steam
+2018-08-30 17:51:02	rydare	if you want
+2018-08-30 17:51:06	rydare	rdr2point0
+2018-08-30 17:51:32	deicide-	nice avatar
+2018-08-30 17:51:54	deicide-	i wonder why its not working on my debian desktop
+2018-08-30 17:52:18	deicide-	"Pro
+2018-08-30 17:52:18	deicide-	Steam installed by default"
+2018-08-30 17:52:22	deicide-	fuck yeah
+2018-08-30 17:55:10	deicide-	downloading it
+2018-08-30 17:57:33	deicide-	thank you
+2018-08-30 18:10:13	--	irc: disconnected from server
+2018-08-30 22:05:30	deicide-	test
+2018-08-30 22:05:43	rydare	hi
+2018-08-30 22:05:47	deicide-	here we go
+2018-08-30 22:06:38	deicide-	i just saw during the installation these
+2018-08-30 22:07:26	deicide-	 0:38.98 TelemetryEventEnums.h
+2018-08-30 22:07:26	deicide-	 0:39.19 TelemetryHistogramData.inc
+2018-08-30 22:07:26	deicide-	 0:39.59 TelemetryHistogramEnums.h
+2018-08-30 22:07:26	deicide-	 0:39.82 TelemetryScalarData.h
+2018-08-30 22:07:26	deicide-	 0:40.05 TelemetryScalarEnums.h
+2018-08-30 22:08:14	deicide-	the mili second that it showed up i saw it
+2018-08-30 22:08:19	deicide-	quite funny tbh
+2018-08-30 22:08:56	deicide-	privacy is dead anyway
+2018-08-30 22:09:59	rydare	your ISP knows what porn you like
+2018-08-30 22:10:08	rydare	your cell carrier knows where you are at all timees
+2018-08-30 22:10:19	deicide-	yep
+2018-08-30 22:10:29	deicide-	well kinda
+2018-08-30 22:10:34	deicide-	i downloaded my porn
+2018-08-30 22:10:43	deicide-	8^)
+2018-08-30 22:13:24	deicide-	ok i got 52 working
+2018-08-30 22:13:41	deicide-	i wish  there was something between 52 and 60
+2018-08-30 22:13:48	deicide-	but 52 is good enough
+2018-08-30 22:17:01	deicide-	thank you for everything so far btw
+2018-08-30 22:19:52	deicide-	whats the sources list again?
+2018-08-30 22:20:47	rydare	https://www.archlinux.org/pacman/pacman.conf.5.html
+2018-08-30 22:21:25	rydare	you shouldn't need to edit it
+2018-08-30 22:21:30	rydare	it will have the latest packages
+2018-08-30 22:21:52	rydare	https://wiki.archlinux.org/index.php/pacman
+2018-08-30 22:22:24	deicide-	==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+2018-08-30 22:22:29	deicide-	always go with none?
+2018-08-30 22:22:42	deicide-	i need to edit it for my vpn thingy
+2018-08-30 22:22:47	rydare	is it showing you a liste of packages
+2018-08-30 22:22:51	rydare	or diffs
+2018-08-30 22:23:17	deicide-	Cloning into 'discord'...
+2018-08-30 22:23:18	deicide-	  2 libc++ (libc++abi libc++)                (Build Files Exist)
+2018-08-30 22:23:18	deicide-	  1 discord                                  (Build Files Exist)
+2018-08-30 22:23:18	deicide-	==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+2018-08-30 22:23:46	rydare	that's diff files, so nnone
+2018-08-30 22:23:47	rydare	none
+2018-08-30 22:23:48	rydare	N
+2018-08-30 22:24:04	deicide-	yea i did before i asked
+2018-08-30 22:26:52	deicide-	i have nothing here /usr/local/etc/
+2018-08-30 22:27:09	rydare	what are you trying to do
+2018-08-30 22:27:35	deicide-	i want to install vpn software
+2018-08-30 22:27:43	rydare	what's the vpn software
+2018-08-30 22:27:48	deicide-	eddie
+2018-08-30 22:28:15	rydare	https://aur.archlinux.org/packages/airvpn-bin/
+2018-08-30 22:28:23	rydare	yay -S airvpn-bin
+2018-08-30 22:28:59	rydare	you can also get an official arch package
+2018-08-30 22:29:04	rydare	and download it
+2018-08-30 22:29:12	rydare	see the first comment in that link
+2018-08-30 22:29:47	deicide-	sudo pacman -U "/path/to/file/eddie-ui_(version.number)_linux_x64_arch.tar.xz" ?
+2018-08-30 22:30:13	rydare	yeah so if it's in Downloads/eddie-ui_9.9_etc
+2018-08-30 22:30:35	rydare	sudo pacman -U ~/Downloads/eddiewhatever.tar.gz
+2018-08-30 22:31:46	deicide-	i have it in my desktop
+2018-08-30 22:32:01	deicide-	is it still -U if i added it through the file?
+2018-08-30 22:32:15	rydare	-U is installing from a local package
+2018-08-30 22:33:50	deicide-	yea thank you
+2018-08-30 22:38:10	deicide-	yeah i have no idea how to run steam
+2018-08-30 22:38:52	rydare	is it not in the xfce4 menu?
+2018-08-30 22:38:56	rydare	under games
+2018-08-30 22:39:07	deicide-	i open it and nothing happens
+2018-08-30 22:39:19	rydare	check and see if it's running in the system tray
+2018-08-30 22:39:26	rydare	then open a terminal
+2018-08-30 22:39:32	rydare	'ps aux | grep steam'  
+2018-08-30 22:39:33	deicide-	in terminal when i type steam this is all i get
+2018-08-30 22:39:35	deicide-	steam
+2018-08-30 22:39:35	deicide-	Running Steam on manjarolinux 17.1.12 64-bit
+2018-08-30 22:39:35	deicide-	STEAM_RUNTIME is enabled automatically
+2018-08-30 22:39:35	deicide-	Pins up-to-date!
+2018-08-30 22:39:36	deicide-	Installing breakpad exception handler for appid(steam)/version(0)
+2018-08-30 22:39:53	rydare	this will see if it's running
+2018-08-30 22:40:12	deicide-	alpha    21522  0.0  0.0  11276  3524 ?        S    07:39   0:00 bash /usr/bin/steam
+2018-08-30 22:40:12	deicide-	alpha    21533  0.0  0.0  11408  3704 ?        S    07:39   0:00 bash /home/alpha/.local/share/Steam/steam.sh
+2018-08-30 22:40:12	deicide-	alpha    21617  1.0  0.0  49324 29544 ?        S    07:39   0:00 /home/alpha/.local/share/Steam/ubuntu12_32/steam
+2018-08-30 22:40:12	deicide-	alpha    21619  0.0  0.0   8188  2300 pts/0    S+   07:40   0:00 grep --colour=auto steam
+2018-08-30 22:40:24	rydare	kill 21533
+2018-08-30 22:40:28	rydare	kill 21522
+2018-08-30 22:40:31	rydare	run both of those
+2018-08-30 22:40:47	rydare	then try running steam from the terminal again
+2018-08-30 22:41:26	deicide-	Running Steam on manjarolinux 17.1.12 64-bit
+2018-08-30 22:41:27	deicide-	STEAM_RUNTIME is enabled automatically
+2018-08-30 22:41:27	deicide-	Pins up-to-date!
+2018-08-30 22:41:27	deicide-	Installing breakpad exception handler for appid(steam)/version(0)
+2018-08-30 22:41:30	deicide-	nothing
+2018-08-30 22:41:41	deicide-	i had the same thing with debian
+2018-08-30 22:41:47	deicide-	different output
+2018-08-30 22:41:53	deicide-	but same thing it never opened
+2018-08-30 22:42:19	rydare	try doing 'yay -Syu'
+2018-08-30 22:42:49	deicide-	:: Synchronizing package databases...
+2018-08-30 22:42:49	deicide-	 core is up to date
+2018-08-30 22:42:49	deicide-	 extra is up to date
+2018-08-30 22:42:49	deicide-	 community is up to date
+2018-08-30 22:42:49	deicide-	 multilib is up to date
+2018-08-30 22:42:50	deicide-	:: Starting full system upgrade...
+2018-08-30 22:42:52	deicide-	 there is nothing to do
+2018-08-30 22:42:54	deicide-	:: Searching databases for updates...
+2018-08-30 22:42:56	deicide-	:: Searching AUR for updates...
+2018-08-30 22:42:58	deicide-	 there is nothing to do
+2018-08-30 22:43:23	rydare	try 'yay -S lib32-nvidia-utils'
+2018-08-30 22:43:31	rydare	steam needs these if you have an nvidia card
+2018-08-30 22:45:12	deicide-	same output i think
+2018-08-30 22:45:28	deicide-	Running Steam on manjarolinux 17.1.12 64-bit
+2018-08-30 22:45:28	deicide-	STEAM_RUNTIME is enabled automatically
+2018-08-30 22:45:28	deicide-	Pins up-to-date!
+2018-08-30 22:45:28	deicide-	Installing breakpad exception handler for appid(steam)/version(0)
+2018-08-30 22:45:39	rydare	do the 'ps aux | grep steam'  again
+2018-08-30 22:45:40	deicide-	ah woops
+2018-08-30 22:45:44	deicide-	pastebin
+2018-08-30 22:46:37	deicide-	https://paste.debian.net/hidden/8a7db8e9/
+2018-08-30 22:47:03	deicide-	alpha    22131  0.0  0.0   8188  2308 pts/0    S+   07:46   0:00 grep --colour=auto steam
+2018-08-30 22:47:21	rydare	try removing your user's steam folder
+2018-08-30 22:47:27	rydare	unless you copied it from another computer
+2018-08-30 22:47:31	deicide-	nope
+2018-08-30 22:47:40	deicide-	where is it?
+2018-08-30 22:47:48	rydare	'rm -r ~/.local/share/Steam'
+2018-08-30 22:48:31	deicide-	no output
+2018-08-30 22:48:38	rydare	good
+2018-08-30 22:48:42	rydare	that means it was successful
+2018-08-30 22:48:49	deicide-	lol
+2018-08-30 22:48:51	rydare	now 'steam' in sterminal again
+2018-08-30 22:49:16	deicide-	it opened window
+2018-08-30 22:49:21	deicide-	i clicked reinstall
+2018-08-30 22:49:34	deicide-	there was reinstall or search
+2018-08-30 22:49:42	rydare	reinstall is probably what we want
+2018-08-30 22:49:57	deicide-	Gtk-Message: 07:48:55.402: GtkDialog mapped without a transient parent. This is discouraged.
+2018-08-30 22:49:57	deicide-	Setting up Steam content in /home/alpha/.local/share/Steam
+2018-08-30 22:49:57	deicide-	Running Steam on manjarolinux 17.1.12 64-bit
+2018-08-30 22:49:57	deicide-	STEAM_RUNTIME is enabled automatically
+2018-08-30 22:49:57	deicide-	Pins potentially out-of-date, rebuilding...
+2018-08-30 22:49:59	deicide-	Installing breakpad exception handler for appid(steam)/version(0)
+2018-08-30 22:50:06	deicide-	same..
+2018-08-30 22:50:24	deicide-	let me reset
+2018-08-30 22:51:32	rydare	let me know when your'e back
+2018-08-30 22:51:32	--	deicide-: No such nick/channel
+2018-08-30 22:53:15	deicide-	t
+2018-08-30 22:53:26	deicide-	k  lets see
+2018-08-30 22:53:40	rydare	For 32-bit (Multilib must be enabled) applications support on 64-bit machines, install:
+2018-08-30 22:53:40	rydare	    lib32-virtualgl - A render/display bridge for 32 bit applications.
+2018-08-30 22:53:40	rydare	    lib32-nvidia-utils or lib32-nvidia-340xx-utils or lib32-nvidia-304xx-utils - match the version of the 64 bit package.
+2018-08-30 22:53:40	rydare	    lib32-mesa-libgl and make sure that lib32-nvidia-libgl is not installed
+2018-08-30 22:53:53	deicide-	the fucking black magic of restarting
+2018-08-30 22:53:58	rydare	oh it worked?
+2018-08-30 22:54:06	deicide-	ofcourse it works
+2018-08-30 22:54:10	deicide-	its fucking black magic
+2018-08-30 22:54:17	deicide-	lol
+2018-08-30 22:54:54	deicide-	i have no idea what exactly restarting do but its legit magic
+2018-08-30 22:55:06	rydare	probably just needed to kill the steam pids again
+2018-08-30 22:55:09	rydare	but restarting works
+2018-08-30 22:55:26	deicide-	i couldn't find that one pid it showed
+2018-08-30 22:55:28	deicide-	brb
+2018-08-30 22:55:33	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Client Quit)
+2018-08-30 22:56:31	-->	deicide- (~deicide-@unaffiliated/deicide-) is back on server
+2018-08-30 22:57:03	deicide-	oh no
+2018-08-30 22:57:14	rydare	hmm?
+2018-08-30 22:57:25	deicide-	it asks for code
+2018-08-30 22:57:31	rydare	steam/
+2018-08-30 22:57:32	rydare	?
+2018-08-30 22:57:49	deicide-	i don't have smart phone, i have vm of android and has steam guard in there
+2018-08-30 22:57:53	deicide-	its in vmware
+2018-08-30 22:58:01	deicide-	which is pirated lol
+2018-08-30 22:58:08	rydare	yikes
+2018-08-30 22:58:11	deicide-	:D
+2018-08-30 22:58:14	rydare	i just get it in my email
+2018-08-30 22:58:35	deicide-	i need to get smartphone for steam guard..
+2018-08-30 22:58:50	deicide-	i heard there was free version of vmware on linux
+2018-08-30 22:59:02	deicide-	vmware gaming something
+2018-08-30 22:59:34	deicide-	hey we got steam working, progress !!!
+2018-08-30 22:59:44	rydare	yeah and i only led you astray twice
+2018-08-30 22:59:57	deicide-	nah its fine
+2018-08-30 23:00:41	deicide-	especially when it runs so much better than debian
+2018-08-30 23:02:35	deicide-	just in case, how do i auto mount drives again at boot
+2018-08-30 23:03:53	deicide-	in the meantime i'm going t o get some food
+2018-08-30 23:04:07	rydare	you have to edit the /etc/fstab file
+2018-08-31 00:09:55	--	irc: disconnected from server
+2018-08-31 00:15:59	deicide-	its manually?
+2018-08-31 00:16:28	rydare	i think that's the best way
+2018-08-31 00:16:49	deicide-	how do i know what to write?
+2018-08-31 00:18:12	rydare	well
+2018-08-31 00:18:17	rydare	the first column is the device
+2018-08-31 00:18:33	rydare	you can find out which one you want by doing 'sudo fdisk -l'
+2018-08-31 00:18:37	rydare	it will list your disks
+2018-08-31 00:18:58	rydare	for example, my Storage device is the first hard drive, second partition
+2018-08-31 00:19:03	rydare	so it becomes /dev/sda2
+2018-08-31 00:20:42	rydare	did you find the drive you want to mount?  is it NTFS?
+2018-08-31 00:21:23	deicide-	its 8 drives..
+2018-08-31 00:21:34	rydare	do you want to mount them all?
+2018-08-31 00:22:05	deicide-	ye
+2018-08-31 00:22:09	rydare	you probably shouldn't mount your windows partition
+2018-08-31 00:22:19	deicide-	why
+2018-08-31 00:22:38	rydare	if it's windows 8 or higher windows doesn't really shut down
+2018-08-31 00:22:44	rydare	so you get errors when trying to mount
+2018-08-31 00:22:54	deicide-	sadly its 10
+2018-08-31 00:23:13	rydare	but did you do 'sudo fdisk -l' 
+2018-08-31 00:23:25	deicide-	ye
+2018-08-31 00:24:01	rydare	ok, so decide which ones you want to mount, and take note / copy the drive name
+2018-08-31 00:24:18	deicide-	i want to have my linux on as much as possible with windows being booted barely never
+2018-08-31 00:24:37	deicide-	i'm an heavy torrent user and i want to seed my torrents forever
+2018-08-31 00:24:46	rydare	 /dev/sdxX  where x is a letter signifying the physical device, and X is the number of the partition
+2018-08-31 00:28:36	deicide-	theres ton of lines and its scarring\discouraging 
+2018-08-31 00:28:47	deicide-	especially in that file
+2018-08-31 00:29:31	rydare	well you do have 8 drives that it has to display
+2018-08-31 00:29:53	rydare	fstab should only have three lines, and some #comments
+2018-08-31 00:30:09	rydare	unless you made it more complicated
+2018-08-31 00:32:17	deicide-	life is complicated
+2018-08-31 00:34:09	rydare	tell you what
+2018-08-31 00:34:41	rydare	send me a paste of 'sudo fdisk -l' and your /etc/fstab and i think i figure it out
+2018-08-31 00:35:19	deicide-	i'm trying to find how to do it automaticly on google
+2018-08-31 00:36:39	deicide-	https://paste.debian.net/hidden/dd15890e/
+2018-08-31 00:37:23	rydare	ok /dev/sdc is your 500GB Linux partition, we dont worry about that
+2018-08-31 00:38:05	rydare	sdb is your windows drive, we can mount the 5.3TB partition but we shouldn't mount the 128GB Windows partition
+2018-08-31 00:38:21	rydare	sdd is 3.7TB, just storage
+2018-08-31 00:38:27	rydare	same with sde
+2018-08-31 00:38:38	rydare	sdf is a 1TB drive
+2018-08-31 00:38:44	deicide-	one of the 6tb drives is the windows
+2018-08-31 00:38:53	rydare	right /dev/sdb
+2018-08-31 00:39:15	deicide-	well windows is 128gb partition
+2018-08-31 00:39:26	rydare	right we shouldn't mount that
+2018-08-31 00:39:36	rydare	but we can mount the 5.3TB partition on there
+2018-08-31 00:40:22	rydare	do you know what you want to call the drives
+2018-08-31 00:40:31	rydare	they need a place to mount in your filesystem
+2018-08-31 00:40:43	deicide-	they all have names
+2018-08-31 00:40:55	deicide-	download and backup
+2018-08-31 00:41:00	deicide-	most of them
+2018-08-31 00:41:19	rydare	ok we might have to play around with them
+2018-08-31 00:41:22	rydare	if the names are wrong
+2018-08-31 00:41:33	rydare	start with, what's the 5.3TB on your windows drive called?
+2018-08-31 00:41:42	rydare	we'll mount it in /mnt/something
+2018-08-31 00:41:45	rydare	what's the something
+2018-08-31 00:42:55	deicide-	backup2(1tb) backup1(1tb) ssd games(1tb) downloads(4tb) war(4tb) downloads(6tb) downloads(6tb)
+2018-08-31 00:43:51	deicide-	well the last one should bedownloads but right now its new volume cause i changed it and got windows on that drive
+2018-08-31 00:44:00	rydare	ok
+2018-08-31 00:44:18	rydare	the thing is, i dont get the labels from fdisk
+2018-08-31 00:44:32	rydare	except war
+2018-08-31 00:44:40	deicide-	:X
+2018-08-31 00:44:48	rydare	but we can change them later
+2018-08-31 00:44:52	rydare	if they turn out wrong
+2018-08-31 00:45:13	rydare	open up Xfce file manager (Thunar)
+2018-08-31 00:45:16	rydare	do they have names there
+2018-08-31 00:45:27	deicide-	yes
+2018-08-31 00:45:36	rydare	right click and get info
+2018-08-31 00:45:44	rydare	does it show you the device?  (/dev/sdxX)
+2018-08-31 00:46:20	deicide-	checking backup2
+2018-08-31 00:46:23	deicide-	nope
+2018-08-31 00:47:22	deicide-	non of them show device
+2018-08-31 00:50:07	rydare	ok
+2018-08-31 00:50:20	rydare	so unmount all of them for now
+2018-08-31 00:50:40	rydare	i had to add numbers to the multiple downloads and backup
+2018-08-31 00:51:33	deicide-	done
+2018-08-31 00:51:37	rydare	https://paste.debian.net/hidden/1ff78216/
+2018-08-31 00:51:45	rydare	see those filepaths?
+2018-08-31 00:51:54	rydare	/mnt/downloads .... etc
+2018-08-31 00:52:11	rydare	these are where we're going to mount the drives
+2018-08-31 00:52:19	rydare	but we need to create the folders 
+2018-08-31 00:52:55	rydare	mkdir means "make directory"
+2018-08-31 00:52:59	rydare	so go through the list
+2018-08-31 00:53:12	rydare	and go 'sudo mkdir /mnt/downloads'
+2018-08-31 00:53:20	rydare	then 'sudo mkdir /mnt/downloads2'
+2018-08-31 00:53:26	rydare	all the way down the list
+2018-08-31 00:56:34	deicide-	i made mistake how do i delete folder?
+2018-08-31 00:56:51	rydare	be very careful, because you can delete system files
+2018-08-31 00:57:00	rydare	'sudo rm -r /mnt/mistake'
+2018-08-31 00:57:12	rydare	the -r means it deletes folders
+2018-08-31 00:57:42	rydare	Linux is powerful, if you as the root user tell it to delete the root directory, it will
+2018-08-31 00:57:52	rydare	it will keep deleting until it deletes the delete program
+2018-08-31 00:58:28	deicide-	LOL
+2018-08-31 00:58:41	deicide-	this is better than delete system32
+2018-08-31 00:59:11	deicide-	umm can i change drive name in linux?
+2018-08-31 00:59:52	rydare	you can name the drive anything you want
+2018-08-31 01:00:04	rydare	i was just using your old names
+2018-08-31 01:00:05	deicide-	yea but how? 
+2018-08-31 01:00:14	deicide-	gparted?
+2018-08-31 01:00:24	rydare	i think that tool will do it
+2018-08-31 01:00:43	rydare	but you could just mount it to a different location
+2018-08-31 01:01:02	deicide-	awesome it comes with linux!
+2018-08-31 01:01:58	rydare	yeah manjaro comes with lots of stuff
+2018-08-31 01:02:02	rydare	some people don't like that
+2018-08-31 01:02:58	deicide-	oh with it i can tell you which is which
+2018-08-31 01:03:12	rydare	nice
+2018-08-31 01:04:49	deicide-	 /dev/sdb5 downloads
+2018-08-31 01:05:11	deicide-	 /dev/sdc2 downloads
+2018-08-31 01:05:25	deicide-	 /dev/ssd1 war
+2018-08-31 01:05:47	deicide-	 /dev/sde2 downloads
+2018-08-31 01:06:01	deicide-	 /dev/sdf2 ssd games
+2018-08-31 01:06:15	deicide-	 /dev/sdg2 backup1
+2018-08-31 01:06:27	deicide-	 /dev/sdh2 backup2
+2018-08-31 01:06:42	deicide-	first two are 5tb
+2018-08-31 01:06:46	deicide-	6*
+2018-08-31 01:06:49	rydare	ok, so only one was wrong
+2018-08-31 01:06:50	rydare	cool
+2018-08-31 01:06:55	rydare	i've changed them
+2018-08-31 01:07:00	rydare	kept the same mount points
+2018-08-31 01:07:04	rydare	did you make them all?
+2018-08-31 01:08:06	deicide-	made them all
+2018-08-31 01:08:09	rydare	nice
+2018-08-31 01:08:10	rydare	ok
+2018-08-31 01:08:23	rydare	so here's the updated fstab entries https://paste.debian.net/hidden/ecab1414
+2018-08-31 01:08:29	deicide-	what was the one wrong?
+2018-08-31 01:08:42	rydare	downloads3 and war were confused
+2018-08-31 01:09:05	rydare	you're going to want to add those lines to your /etc/fstab file
+2018-08-31 01:09:10	rydare	couple of options
+2018-08-31 01:09:19	rydare	'sudo mousepad /etc/fstab' for gui
+2018-08-31 01:09:27	rydare	'sudo nano /etc/fstab' for terminal
+2018-08-31 01:10:02	rydare	make sure you do not touch the lines above, just add those ones
+2018-08-31 01:12:45	deicide-	press ctrl+f
+2018-08-31 01:12:49	deicide-	hexchat closed
+2018-08-31 01:12:51	deicide-	wth?
+2018-08-31 01:13:05	rydare	hmm not sure
+2018-08-31 01:14:49	deicide-	sudo mousepad /etc/fstab to the config file?
+2018-08-31 01:15:08	rydare	it will open /etc/fstab
+2018-08-31 01:15:12	rydare	the file we want to edit
+2018-08-31 01:15:25	deicide-	ah i already wrote it with nano
+2018-08-31 01:15:31	rydare	oh that's fine
+2018-08-31 01:15:32	rydare	save it
+2018-08-31 01:15:36	rydare	then do 'sudo mount -a'
+2018-08-31 01:16:04	deicide-	sudo: mount-a: command not found
+2018-08-31 01:16:12	rydare	space between mount and -a
+2018-08-31 01:17:07	rydare	shouldn't show anything
+2018-08-31 01:17:08	deicide-	how do i unmount them 1 mistake
+2018-08-31 01:17:23	rydare	hmm
+2018-08-31 01:17:30	rydare	what was the mistake
+2018-08-31 01:17:48	deicide-	downloads 6tb and downloads 6tb2
+2018-08-31 01:17:57	deicide-	the main is secondary
+2018-08-31 01:18:16	rydare	you can do 'sudo umount /mnt/downloads' and 'sudo umount /mnt/downloads2'
+2018-08-31 01:18:44	rydare	and then 'sudo nano /etc/fstab'  and swap out sdb5 for sdc2 and vice versa, or move the 2 to the first line
+2018-08-31 01:19:21	deicide-	great
+2018-08-31 01:19:42	deicide-	thank you
+2018-08-31 01:19:49	rydare	no problem
+2018-08-31 01:20:26	deicide-	yeah #manjaro is pretty daed
+2018-08-31 01:20:29	deicide-	dead
+2018-08-31 01:20:50	deicide-	its a shadow in comparison to how great #debian is
+2018-08-31 01:22:12	rydare	yeah you can try arch
+2018-08-31 01:22:18	rydare	but sometimes they get pissy
+2018-08-31 01:22:34	rydare	same with getting support in #ubuntu for distros based on it
+2018-08-31 01:22:42	rydare	even if the problems/solutions are the same
+2018-08-31 01:23:18	deicide-	you sure its a good idea to let a noob into arch irc chan?
+2018-08-31 01:23:38	rydare	lol
+2018-08-31 01:23:41	deicide-	i saw some of the linux elitism
+2018-08-31 01:23:45	deicide-	its not pretty
+2018-08-31 01:24:36	deicide-	saw mods on reddit leaving their role becuase of harassment and stuff
+2018-08-31 01:24:48	rydare	on the arch subreddit?  
+2018-08-31 01:24:57	deicide-	not arch
+2018-08-31 01:25:02	deicide-	cant remember which
+2018-08-31 01:25:13	deicide-	few years ago
+2018-08-31 01:40:51	rydare	anyways, time for bed
+2018-08-31 01:40:54	rydare	see ya
+2018-08-31 01:46:21	deicide-	gn
+2018-08-31 01:46:25	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Remote host closed the connection)
+2018-08-31 03:32:37	-->	deicide- (~deicide-@unaffiliated/deicide-) is back on server
+2018-08-31 03:59:43	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Quit: Leaving)
+2018-08-31 04:03:01	-->	deicide- (~deicide-@unaffiliated/deicide-) is back on server
+2018-08-31 05:16:04	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Ping timeout: 240 seconds)
+2018-08-31 12:06:15	--	irc: disconnected from server
+2018-08-31 22:40:57	deicide-	hello
+2018-08-31 22:41:03	rydare	sup
+2018-08-31 22:41:18	deicide-	https://youtu.be/DlOntdKG0qE?t=138
+2018-08-31 22:41:24	deicide-	do you agree with this?
+2018-08-31 22:42:46	rydare	looks to be an old tutorial
+2018-08-31 22:42:48	deicide-	like these commands
+2018-08-31 22:42:59	deicide-	9months is the newest
+2018-08-31 22:43:09	rydare	i dont know about /etc/init.d
+2018-08-31 22:43:17	deicide-	also its the only one
+2018-08-31 22:43:21	rydare	you want to use manjaro as a host for other operating systems right?
+2018-08-31 22:43:30	deicide-	i want to get into steam
+2018-08-31 22:43:43	deicide-	my steam guard is in android vm
+2018-08-31 22:45:11	deicide-	yea i know its retarded
+2018-08-31 22:45:21	rydare	i've only ever used virtualbox
+2018-08-31 22:45:31	deicide-	but i refuse to put 200$ on used android phone
+2018-08-31 22:45:37	rydare	but you could basically get away with just 'yay -S vmware-workstation'
+2018-08-31 22:45:47	rydare	the phone i'm using cost $100 Canadian dollars
+2018-08-31 22:45:58	deicide-	well not even 100
+2018-08-31 22:46:12	rydare	https://wiki.archlinux.org/index.php/VMware#Package_build_for_x86_64
+2018-08-31 22:46:37	rydare	so 'yay -S vmware-workstation linux-headers'
+2018-08-31 22:46:38	deicide-	i have it downloaded from their site
+2018-08-31 22:46:41	deicide-	just -U?
+2018-08-31 22:46:45	deicide-	pacman -U
+2018-08-31 22:46:49	rydare	it's better to get it from the AUR
+2018-08-31 22:46:57	deicide-	ok
+2018-08-31 22:46:59	rydare	that way it's updatable with pacman/yay
+2018-08-31 22:47:09	deicide-	i want workstation-player cause its free
+2018-08-31 22:47:19	deicide-	yay -S vmware-workstation-player
+2018-08-31 22:47:19	deicide-	==> Error: Could not find all required packages:
+2018-08-31 22:47:19	deicide-	    vmware-workstation-player (Target)
+2018-08-31 22:47:32	rydare	https://aur.archlinux.org/packages/vmware-workstation/
+2018-08-31 22:47:37	rydare	is regular workstation not free?
+2018-08-31 22:47:59	deicide-	no idea
+2018-08-31 22:48:03	deicide-	doubt it
+2018-08-31 22:48:46	deicide-	thats why i downloaded from their site
+2018-08-31 22:49:09	deicide-	i only need it to do simple vm'ing of android vm
+2018-08-31 22:49:40	rydare	you should use virtualbox, it's a free program that does the same thing
+2018-08-31 22:49:59	rydare	vmware workstation player 14 is $149 it says
+2018-08-31 22:50:37	deicide-	no
+2018-08-31 22:50:39	deicide-	its free
+2018-08-31 22:51:05	deicide-	and no i'm not going to use virtualbox because i don't want to make new vm
+2018-08-31 22:51:14	rydare	well the AUR page for vmware-workstation links to workstation player
+2018-08-31 22:51:18	rydare	so it's probably the same thing
+2018-08-31 22:51:23	deicide-	ok
+2018-08-31 22:51:33	rydare	i see a download link but it says you can buy it for $150
+2018-08-31 22:51:44	rydare	do you have a license or something
+2018-08-31 22:51:56	deicide-	when i loooked and downloaded it didn't say buy anywhere
+2018-08-31 22:52:02	deicide-	also its Known to be free
+2018-08-31 22:52:27	rydare	well do 'yay -S vmware-workstation'
+2018-08-31 22:52:27	deicide-	you need license if you want it for not personal use
+2018-08-31 22:52:36	rydare	it'll install all the necessary stuff to make it work
+2018-08-31 22:52:39	deicide-	no headers?
+2018-08-31 22:52:48	rydare	the package will install headers
+2018-08-31 22:52:51	rydare	as a dependency
+2018-08-31 22:54:09	deicide-	stupid question but can i close terminal after i started steam?
+2018-08-31 22:54:16	deicide-	or its has to has terminal with it
+2018-08-31 22:54:23	rydare	try closing the terminal
+2018-08-31 22:54:26	rydare	and if steam closes
+2018-08-31 22:54:29	rydare	launch it from the menu
+2018-08-31 22:54:39	deicide-	yea it closed
+2018-08-31 22:54:45	rydare	there's a way to "disown" stuff you launch from the terminal
+2018-08-31 22:55:00	deicide-	oh it works now without terminal
+2018-08-31 22:55:04	rydare	like say you want to launch steam.. you do 'steam &'
+2018-08-31 22:55:12	rydare	and steam will run in the background
+2018-08-31 22:55:22	rydare	then you can do 'disown' and it will no longer depend on that terminal
+2018-08-31 22:57:54	deicide-	lolwut
+2018-08-31 22:58:20	rydare	that's just a way to launch things from terminal
+2018-08-31 22:58:23	deicide-	the package manager says i have 32 updates, i already updated and when i open it it says up to date
+2018-08-31 22:58:32	deicide-	then why are you red??
+2018-08-31 22:58:42	rydare	did you do 'yay -Syu' ?
+2018-08-31 22:58:46	deicide-	aye
+2018-08-31 22:58:55	deicide-	i saved that command
+2018-08-31 22:59:02	deicide-	like you recommended
+2018-08-31 22:59:22	rydare	hmm i dunno
+2018-08-31 22:59:32	rydare	did you install vmware
+2018-08-31 22:59:37	rydare	there's a few steps to do
+2018-08-31 23:00:02	deicide-	its still going
+2018-08-31 23:00:40	deicide-	i should just go to windows and disable steam guard
+2018-08-31 23:00:48	deicide-	ah just finished
+2018-08-31 23:01:19	rydare	ok, so enable network for vms 'sudo systemctl enable vmware-networks.service'
+2018-08-31 23:01:41	deicide-	Created symlink /etc/systemd/system/multi-user.target.wants/vmware-networks.service → /usr/lib/systemd/system/vmware-networks.service.
+2018-08-31 23:01:46	rydare	perfect
+2018-08-31 23:02:03	rydare	your vm doens't need to directly connect to USB devices right?
+2018-08-31 23:02:17	deicide-	nope
+2018-08-31 23:02:29	rydare	ok, then just do 'sudo modprobe -a vmw_vmci vmmon'
+2018-08-31 23:02:47	deicide-	modprobe: WARNING: Module vmw_vmci not found in directory /lib/modules/4.14.66-1-MANJARO
+2018-08-31 23:02:47	deicide-	modprobe: WARNING: Module vmmon not found in directory /lib/modules/4.14.66-1-MANJARO
+2018-08-31 23:05:05	deicide-	i kinda feel bad that i don't do any research and just rely on you
+2018-08-31 23:05:16	deicide-	thats a bad habit
+2018-08-31 23:05:24	rydare	hmm
+2018-08-31 23:05:28	rydare	yeah
+2018-08-31 23:05:36	rydare	i dont know i dont' mind helping to some extent
+2018-08-31 23:05:43	rydare	bored waiting to move tomorrow
+2018-08-31 23:05:55	deicide-	although you've been great support so far and helped me a ton
+2018-08-31 23:06:21	deicide-	any idea about the files not found?
+2018-08-31 23:06:38	rydare	can you scroll up to where it's installing vmware
+2018-08-31 23:06:48	deicide-	yes
+2018-08-31 23:07:00	rydare	does it say anything about No kernel #.##.#-#-ARCH modules
+2018-08-31 23:07:04	deicide-	wall of text
+2018-08-31 23:07:18	rydare	copy it to mousepad and search for "modules"
+2018-08-31 23:07:55	rydare	ok
+2018-08-31 23:07:55	rydare	wiat
+2018-08-31 23:07:58	rydare	just reboot
+2018-08-31 23:08:06	rydare	i think you got a new kernel with the upgrade you did
+2018-08-31 23:08:14	rydare	so it installed the modules for the new kernel
+2018-08-31 23:08:30	rydare	#justarchthings
+2018-08-31 23:09:46	deicide-	says somewhere in there i need to boot
+2018-08-31 23:09:50	deicide-	==> Before using VMware, you need to reboot or load vmw_vmci and vmmon kernel modules (in a terminal on root: modprobe -a vmw_vmci vmmon)
+2018-08-31 23:09:51	deicide-	==> You may also need to enable some of these services:
+2018-08-31 23:10:09	rydare	yeah try rebooting
+2018-08-31 23:10:37	deicide-	just in case
+2018-08-31 23:11:39	deicide-	https://pastebin.com/ZtSPZAYd
+2018-08-31 23:12:12	rydare	what does 'uname -a' say
+2018-08-31 23:12:30	deicide-	Linux alpha-pc 4.14.66-1-MANJARO #1 SMP PREEMPT Wed Aug 22 21:45:26 UTC 2018 x86_64 GNU/Linux
+2018-08-31 23:12:40	deicide-	btw
+2018-08-31 23:12:50	deicide-	manjaro logo is Awful!
+2018-08-31 23:13:32	rydare	lol
+2018-08-31 23:13:37	deicide-	seriously
+2018-08-31 23:13:40	deicide-	look at it
+2018-08-31 23:13:43	rydare	debian logo is my favourite
+2018-08-31 23:13:48	deicide-	same
+2018-08-31 23:14:20	deicide-	ubuntu  is nice too i guess
+2018-08-31 23:15:07	deicide-	"puppy linux"
+2018-08-31 23:15:13	rydare	we'll have to reinstall vmware once you've rebooted
+2018-08-31 23:15:16	deicide-	https://4.bp.blogspot.com/_rHu2sH2wLX0/TCQ_EzKaA0I/AAAAAAAAAEU/E3YuMwkX9xs/s1600/linux_logo4.jpg
+2018-08-31 23:15:19	rydare	so it builds the modules
+2018-08-31 23:15:23	rydare	shouldn't take long
+2018-08-31 23:15:26	deicide-	ok
+2018-08-31 23:15:28	deicide-	brb
+2018-08-31 23:15:31	<--	deicide- (~deicide-@unaffiliated/deicide-) has quit (Remote host closed the connection)
+2018-08-31 23:17:38	-->	deicide- (~deicide-@unaffiliated/deicide-) is back on server
+2018-08-31 23:18:45	deicide-	bk
+2018-08-31 23:19:03	rydare	so 'yay -R vmware-workstation'
+2018-08-31 23:19:11	rydare	and then 'yay -S vmware-workstation'
+2018-08-31 23:19:29	rydare	take note of step one where it builds the modules, hopefully it does it this time
+2018-08-31 23:19:58	deicide-	there are some downgrades from debian tbh
+2018-08-31 23:20:22	deicide-	first grub has no gui(minimal downgrade) and the borders at windows
+2018-08-31 23:20:37	deicide-	they are like 1-2 pixels so its really really hard to resize
+2018-08-31 23:20:46	rydare	just go into appearance settings
+2018-08-31 23:20:50	rydare	tons of themes for Xfwm
+2018-08-31 23:20:59	rydare	more to download
+2018-08-31 23:21:08	rydare	i have thicc borders right now
+2018-08-31 23:39:42	deicide-	any idea what went wrong?
+2018-08-31 23:40:06	rydare	your kernel was upgraded
+2018-08-31 23:40:12	rydare	you installed the header files for the new kernel
+2018-08-31 23:40:26	rydare	and then i tried to build for your current old kernel
+2018-08-31 23:40:28	rydare	and failed
+2018-08-31 23:42:23	rydare	but if you reinstall vmware-workstation it should work
+2018-08-31 23:42:42	rydare	'yay -S vmware-workstation'
+2018-09-01 00:23:19	rydare	how'd it go?

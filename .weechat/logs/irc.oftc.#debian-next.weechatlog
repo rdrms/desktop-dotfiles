@@ -1,0 +1,718 @@
+2018-08-30 02:32:10	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-30 02:32:10	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-30 02:32:10	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-30 02:32:10	--	Channel #debian-next: 222 nicks (0 ops, 0 voices, 222 normals)
+2018-08-30 02:32:10	--	PvNotice(ChanServ): Welcome to #debian-next! This channel is for supporting users of debian's upcoming releases. Please make sure you have checked the bug tracking system (http://bugs.debian.org/) to see if your problem is already known.
+2018-08-30 02:32:12	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-30 02:34:07	-->	mestia (~sysadm@141.30.193.8) has joined #debian-next
+2018-08-30 02:36:37	-->	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-30 02:37:40	-->	Darcidride (~Darcidrid@qbuissondebon.info) has joined #debian-next
+2018-08-30 02:43:55	<--	Darcidride (~Darcidrid@qbuissondebon.info) has quit
+2018-08-30 02:45:01	-->	Volley (~worf@hexen.cgv.tugraz.at) has joined #debian-next
+2018-08-30 02:56:37	<--	Delta-One (~delta@00023074.user.oftc.net) has quit (Read error: Connection reset by peer)
+2018-08-30 02:57:57	-->	Delta-One (~delta@00023074.user.oftc.net) has joined #debian-next
+2018-08-30 02:58:42	<--	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2018-08-30 03:00:32	<--	dfceaef[m] (~dfceaefma@2001:470:1af1:101::fde) has quit (Remote host closed the connection)
+2018-08-30 03:00:32	<--	uhoreg (~uhoregmat@2001:470:1af1:101::7) has quit (Write error: connection closed)
+2018-08-30 03:00:32	<--	qobi[m] (~qobimatri@2001:470:1af1:101::1726) has quit (Remote host closed the connection)
+2018-08-30 03:01:26	-->	dfceaef[m] (~dfceaefma@2001:470:1af1:101::fde) has joined #debian-next
+2018-08-30 03:01:27	dfceaef[m]	chele: if your 3rd projects do not use any env, i believe the easiest way is to modify their build file
+2018-08-30 03:15:47	-->	qobi[m] (~qobimatri@2001:470:1af1:101::1726) has joined #debian-next
+2018-08-30 03:17:42	chele	dfceaef[m] that's what i wanted to avoid by trying to set up link using update-alternatives. I cannot inspect all makefiles/configure in the third party libs...
+2018-08-30 03:22:07	dfceaef[m]	chele: is those build files called by your top build file? if so i think maybe it's the top file which does not correctly pass the CC/CXX env
+2018-08-30 03:22:11	-->	jirka (~Thunderbi@gw1.globalcom.cz) has joined #debian-next
+2018-08-30 03:23:56	<--	jirka (~Thunderbi@gw1.globalcom.cz) has quit
+2018-08-30 03:25:41	-->	simula (~simula@000277b2.user.oftc.net) has joined #debian-next
+2018-08-30 03:25:53	chele	dfceaef[m] there several levels of abstraction. my top one call a module's top one which get's third parties, unpacks them and calls autoreconf, configure, make ...
+2018-08-30 03:26:06	-->	thescientist (~thescient@a109-50-137-24.cpe.netcabo.pt) has joined #debian-next
+2018-08-30 03:29:29	chele	maybe with another level of abs..
+2018-08-30 03:29:44	chele	basically i will finish faster if i change links in /usr/bin manually 
+2018-08-30 03:32:26	-->	Darcidride (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has joined #debian-next
+2018-08-30 03:33:25	-->	libregeekingkid (~libregeek@111.93.193.54) has joined #debian-next
+2018-08-30 03:38:14	-->	pamaury_ (~pamaury@dhcp-175-18.mpi-sws.org) has joined #debian-next
+2018-08-30 03:39:04	<--	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has quit (Quit: Leaving)
+2018-08-30 03:39:29	<--	RadoQ (~cheater@rzssh1.informatik.uni-hamburg.de) has quit (Quit: re-connect registered)
+2018-08-30 03:39:46	-->	RadoQ (~cheater@rzssh1.informatik.uni-hamburg.de) has joined #debian-next
+2018-08-30 03:40:19	<--	thescientist (~thescient@a109-50-137-24.cpe.netcabo.pt) has quit (Quit: Leaving)
+2018-08-30 03:41:19	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Remote host closed the connection)
+2018-08-30 03:45:43	<--	simula (~simula@000277b2.user.oftc.net) has quit (Quit: simula)
+2018-08-30 03:51:06	-->	simula (~simula@000277b2.user.oftc.net) has joined #debian-next
+2018-08-30 04:10:02	<--	dselect (~dselect@dselect.bot.oftc.net) has quit (Quit: ouch... that hurt)
+2018-08-30 04:11:16	-->	dselect (~dselect@dselect.bot.oftc.net) has joined #debian-next
+2018-08-30 04:15:15	-->	aielima (~aielima@0001c204.user.oftc.net) has joined #debian-next
+2018-08-30 04:23:30	bremner	ugh.
+2018-08-30 04:23:49	bremner	non-existent warranty is void...
+2018-08-30 04:44:39	<--	Brigo_ (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Quit: Byes)
+2018-08-30 04:44:56	-->	Brigo_ (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 04:53:58	-->	xet7 (~xet7@dytkndj0l6vv52zwmch-t-4.rev.dnainternet.fi) has joined #debian-next
+2018-08-30 05:01:14	<--	libregeekingkid (~libregeek@111.93.193.54) has quit (Ping timeout: 480 seconds)
+2018-08-30 05:05:01	<--	dpkg (~dpkg@dpkg.bot.oftc.net) has quit (Quit: buh bye!)
+2018-08-30 05:06:13	-->	dpkg (~dpkg@dpkg.bot.oftc.net) has joined #debian-next
+2018-08-30 05:18:14	<--	aielima (~aielima@0001c204.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 05:20:34	<--	wargreen (~wargreen@109.176.9.169) has quit (Quit: wargreen)
+2018-08-30 05:28:25	-->	wargreen (~wargreen@109.176.9.169) has joined #debian-next
+2018-08-30 05:28:46	<--	wargreen (~wargreen@109.176.9.169) has quit
+2018-08-30 05:34:21	<--	simula (~simula@000277b2.user.oftc.net) has quit (Quit: simula)
+2018-08-30 05:36:23	-->	Isolatio1 (~Isolation@212.92.122.46) has joined #debian-next
+2018-08-30 05:41:29	-->	Blacker47 (~Blacker47@00014f22.user.oftc.net) has joined #debian-next
+2018-08-30 05:56:43	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit (Ping timeout: 480 seconds)
+2018-08-30 05:57:30	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-30 06:04:50	<--	kwork (~quassel@bnc.ee) has quit (Remote host closed the connection)
+2018-08-30 06:06:02	-->	kwork (~quassel@bnc.ee) has joined #debian-next
+2018-08-30 06:16:40	<--	pamaury_ (~pamaury@dhcp-175-18.mpi-sws.org) has quit (Quit: this->disconnect())
+2018-08-30 06:23:30	-->	pamaury_ (~pamaury@dhcp-175-18.mpi-sws.org) has joined #debian-next
+2018-08-30 06:25:04	<--	pamaury_ (~pamaury@dhcp-175-18.mpi-sws.org) has quit
+2018-08-30 06:29:18	<--	gtristan (~tristanva@114.207.54.40) has quit (Ping timeout: 480 seconds)
+2018-08-30 06:30:48	-->	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has joined #debian-next
+2018-08-30 06:31:30	-->	micki (~cms@141-53-255-10.ip.uni-greifswald.de) has joined #debian-next
+2018-08-30 06:32:05	<--	Brigo_ (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-08-30 06:32:51	-->	uhoreg (~uhoregmat@2001:470:1af1:101::7) has joined #debian-next
+2018-08-30 06:36:41	<--	kenoby_ (~kenoby@host72-17-dynamic.248-95-r.retail.telecomitalia.it) has quit (Quit: Leaving)
+2018-08-30 06:42:00	-->	zyley (~zyley@dsl-lhtbng11-54fa60-244.dhcp.inet.fi) has joined #debian-next
+2018-08-30 06:45:17	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 06:48:26	<--	micki (~cms@141-53-255-10.ip.uni-greifswald.de) has quit (Quit: leaving)
+2018-08-30 06:52:41	-->	jasc (~jasc@p578E7CE0.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-30 06:54:39	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-30 06:58:38	-->	simula (~simula@000277b2.user.oftc.net) has joined #debian-next
+2018-08-30 07:09:46	<--	Isolatio1 (~Isolation@212.92.122.46) has quit (Ping timeout: 480 seconds)
+2018-08-30 07:10:29	<--	avar (avar@u.nix.is) has quit (Ping timeout: 480 seconds)
+2018-08-30 07:14:47	<--	jasc (~jasc@p578E7CE0.dip0.t-ipconnect.de) has quit
+2018-08-30 07:25:55	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-30 07:37:28	<--	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has quit (Quit: this->disconnect())
+2018-08-30 07:41:45	-->	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has joined #debian-next
+2018-08-30 07:43:19	<--	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has quit
+2018-08-30 07:43:21	-->	Jing (~Jing@00025398.user.oftc.net) has joined #debian-next
+2018-08-30 07:44:23	-->	SpinSys1 (~mosst@host109-146-125-229.range109-146.btcentralplus.com) has joined #debian-next
+2018-08-30 07:44:46	<--	SpinSys1 (~mosst@host109-146-125-229.range109-146.btcentralplus.com) has left #debian-next
+2018-08-30 07:46:06	<--	SpinSys (~mosst@host109-146-125-229.range109-146.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2018-08-30 07:50:38	-->	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has joined #debian-next
+2018-08-30 07:56:27	-->	saptech (~saptech@000218ee.user.oftc.net) has joined #debian-next
+2018-08-30 08:01:39	<--	Seeder (~Seeder@00021624.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 08:10:48	-->	libregee1ingkid (~libregeek@111.93.193.54) has joined #debian-next
+2018-08-30 08:12:56	<--	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 08:14:36	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Quit: Byes)
+2018-08-30 08:14:53	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 08:15:03	-->	zerkalo (myricae@ny1.hashbang.sh) has joined #debian-next
+2018-08-30 08:15:03	<--	zerkalo (myricae@ny1.hashbang.sh) has quit (Read error: Connection reset by peer)
+2018-08-30 08:17:20	-->	avar (avar@u.nix.is) has joined #debian-next
+2018-08-30 08:21:07	-->	Seeder (~Seeder@00021624.user.oftc.net) has joined #debian-next
+2018-08-30 08:24:11	-->	cerbere (~cerbere@2a02-8428-0005-ed01-286e-1a78-2627-9ea4.rev.sfr.net) has joined #debian-next
+2018-08-30 08:24:47	<--	Jing (~Jing@00025398.user.oftc.net) has quit (Quit: Jing)
+2018-08-30 08:26:31	-->	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has joined #debian-next
+2018-08-30 08:34:18	<--	saptech (~saptech@000218ee.user.oftc.net) has quit (Quit: Leaving)
+2018-08-30 08:41:46	<--	simula (~simula@000277b2.user.oftc.net) has quit (Quit: simula)
+2018-08-30 08:47:09	-->	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has joined #debian-next
+2018-08-30 08:49:09	cc	chromium is 100% reliably crashing a tab with "oh snap" when opening a twitch.tv livestream
+2018-08-30 08:49:34	cc	is this a known issue and is there anything that can be done?
+2018-08-30 08:50:19	cc	chromium is already the newest version (68.0.3440.75-2).
+2018-08-30 08:55:45	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-30 08:59:33	<--	introom (~introom@0001fc54.user.oftc.net) has quit (Quit: WeeChat 1.6)
+2018-08-30 08:59:37	-->	introom (~introom@2600:3c01::f03c:91ff:fe95:9f0f) has joined #debian-next
+2018-08-30 09:03:50	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit
+2018-08-30 09:05:53	<--	chele (~chele@00022067.user.oftc.net) has quit (Quit: Leaving)
+2018-08-30 09:14:39	-->	drakonis (~drakonis@2804:14d:7482:1de0:1408:392:793f:9bd0) has joined #debian-next
+2018-08-30 09:19:17	-->	jirka (~Thunderbi@gw1.globalcom.cz) has joined #debian-next
+2018-08-30 09:19:25	<--	jirka (~Thunderbi@gw1.globalcom.cz) has quit
+2018-08-30 09:21:13	at0m	,v chromium
+2018-08-30 09:21:14	judd	Package: chromium on amd64 -- wheezy: 37.0.2062.120-1~deb7u1; wheezy-security: 37.0.2062.120-1~deb7u1; jessie: 57.0.2987.98-1~deb8u1; jessie-security: 57.0.2987.98-1~deb8u1; stretch: 62.0.3202.89-1~deb9u1; stretch-proposed-updates: 63.0.3239.84-1~deb9u1; stretch-security: 67.0.3396.87-1~deb9u1; buster: 68.0.3440.75-2; sid: 68.0.3440.75-2; experimental: 69.0.3497.12-1
+2018-08-30 09:25:17	petn-randall	cc: I haven't heard of this issue yet here, so first thing I'd check is the BTS.
+2018-08-30 09:27:15	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Quit: Leaving)
+2018-08-30 09:32:04	-->	towo` (~towo@00012f0f.user.oftc.net) has joined #debian-next
+2018-08-30 09:36:47	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-30 09:41:00	-->	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has joined #debian-next
+2018-08-30 09:45:42	<--	mandeepb (~mandeepb@ip-45-2-52-196.nyc.us.northamericancoax.com) has quit (Quit: Leaving)
+2018-08-30 09:47:04	<--	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has quit (Quit: Leaving)
+2018-08-30 09:47:49	-->	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has joined #debian-next
+2018-08-30 09:48:37	-->	mandeepb (~mandeepb@ip-93-2-52-196.nyc.us.northamericancoax.com) has joined #debian-next
+2018-08-30 09:49:23	mandeepb	pabs: i was able to change the wayland keyboard repeat interval using gsettings
+2018-08-30 09:49:49	mandeepb	not sure why gnome devs insist that the gui repeat interval remain slow
+2018-08-30 09:50:23	<--	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has quit (Read error: Connection reset by peer)
+2018-08-30 09:56:18	-->	cmacq2 (~prometheu@D9641C42.static.ziggozakelijk.nl) has joined #debian-next
+2018-08-30 09:57:11	-->	danopa_ (~gnome@172.92.112.218) has joined #debian-next
+2018-08-30 09:58:02	<--	danopa_ (~gnome@172.92.112.218) has quit
+2018-08-30 10:03:59	<--	danopa (~gnome@172.92.112.218) has quit (Ping timeout: 480 seconds)
+2018-08-30 10:04:27	<--	drakonis (~drakonis@2804:14d:7482:1de0:1408:392:793f:9bd0) has quit (Remote host closed the connection)
+2018-08-30 10:04:57	-->	drakonis (~drakonis@2804:14d:7482:1de0:1408:392:793f:9bd0) has joined #debian-next
+2018-08-30 10:05:20	<--	cmacq2 (~prometheu@D9641C42.static.ziggozakelijk.nl) has quit (Ping timeout: 480 seconds)
+2018-08-30 10:09:05	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-08-30 10:09:35	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 10:10:37	<--	grift (~grift@0001c5e3.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 10:11:49	<--	libregee1ingkid (~libregeek@111.93.193.54) has quit (Ping timeout: 480 seconds)
+2018-08-30 10:15:32	-->	grift (~grift@0001c5e3.user.oftc.net) has joined #debian-next
+2018-08-30 10:16:19	<--	grift (~grift@0001c5e3.user.oftc.net) has quit
+2018-08-30 10:20:22	-->	saptech (~saptech@000218ee.user.oftc.net) has joined #debian-next
+2018-08-30 10:21:58	-->	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-30 10:25:43	<--	mandeepb (~mandeepb@ip-93-2-52-196.nyc.us.northamericancoax.com) has quit (Quit: Leaving)
+2018-08-30 10:28:48	-->	grift (~grift@0001c5e3.user.oftc.net) has joined #debian-next
+2018-08-30 10:30:22	-->	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has joined #debian-next
+2018-08-30 10:37:30	-->	mandeepb (~mandeepb@ip-71-2-52-196.nyc.us.northamericancoax.com) has joined #debian-next
+2018-08-30 10:38:35	<--	saptech (~saptech@000218ee.user.oftc.net) has quit (Quit: Leaving)
+2018-08-30 10:55:01	<--	pamaury (~pamaury@dhcp-175-18.mpi-sws.org) has quit (Ping timeout: 480 seconds)
+2018-08-30 10:56:54	-->	faw (~faw@136.24.109.70) has joined #debian-next
+2018-08-30 10:59:02	<--	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2018-08-30 11:24:47	<--	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has quit (Quit: Leaving)
+2018-08-30 11:26:58	-->	kritzefitz (~kritzefit@dslb-084-062-178-155.084.062.pools.vodafone-ip.de) has joined #debian-next
+2018-08-30 11:31:03	-->	legion1511 (~legion@5.100.38.112.suec-dacor.de) has joined #debian-next
+2018-08-30 11:31:03	<--	legion151 (~legion@5.100.38.112.suec-dacor.de) has quit (Read error: Connection reset by peer)
+2018-08-30 11:37:22	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-30 11:39:05	<--	legion1511 (~legion@5.100.38.112.suec-dacor.de) has quit (Ping timeout: 480 seconds)
+2018-08-30 11:40:41	<--	hendrikL (~hhl@00012f3f.user.oftc.net) has quit (Quit: hendrikL)
+2018-08-30 11:40:43	<--	devil (~quassel@00012f05.user.oftc.net) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-08-30 11:40:47	-->	devil (~quassel@mail.g7y.de) has joined #debian-next
+2018-08-30 11:40:47	-->	hendrikL (~hhl@00012f3f.user.oftc.net) has joined #debian-next
+2018-08-30 11:50:22	-->	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has joined #debian-next
+2018-08-30 11:51:48	<--	bertbob (~bertbob@00012c9b.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 11:58:50	<--	nix64bit (~Thunderbi@197.155.4.163) has quit (Quit: nix64bit)
+2018-08-30 12:00:42	-->	bertbob (~bertbob@00012c9b.user.oftc.net) has joined #debian-next
+2018-08-30 12:02:43	-->	Jing (~Jing@00025398.user.oftc.net) has joined #debian-next
+2018-08-30 12:07:47	-->	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has joined #debian-next
+2018-08-30 12:09:04	-->	libregee1ingkid (~libregeek@103.95.122.146) has joined #debian-next
+2018-08-30 12:09:35	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Ping timeout: 480 seconds)
+2018-08-30 12:16:36	imperia	hello is ssd triming enabled by default 
+2018-08-30 12:16:51	rudi_s	imperia: No.
+2018-08-30 12:17:14	imperia	rudi_s: is there some predefined script in debian to do this. or i have to make my own cron task?
+2018-08-30 12:17:53	rudi_s	imperia: systemctl enable/start fstrim.timer should work in next.
+2018-08-30 12:18:03	imperia	rudi_s: thank you
+2018-08-30 12:18:07	rudi_s	It trims once per week.
+2018-08-30 12:18:08	rudi_s	np
+2018-08-30 12:18:26	rudi_s	But a simple fstrim -av cron job would do as well.
+2018-08-30 12:19:08	imperia	rudi_s: i prefer to use systemd services or scripts implemented already in debian
+2018-08-30 12:19:36	rudi_s	imperia: Sure. Just wanted to mention it ;-)
+2018-08-30 12:19:59	rdr	is the issue with root's path on testing alpha 3 reported?
+2018-08-30 12:21:36	bremner	you mean with "su"?
+2018-08-30 12:21:55	rdr	well if you su and then try to install packages
+2018-08-30 12:21:56	rdr	it fails
+2018-08-30 12:22:14	rdr	until you modify root's .bashrc to include sbin and stuff in the path
+2018-08-30 12:22:25	bremner	use "su -"
+2018-08-30 12:22:43	bremner	it's not clear to me if the old behaviour was really ever documented / supported.
+2018-08-30 12:23:19	imperia	rudi_s:  do you know what scheduler is best to use for kvm host and guests
+2018-08-30 12:25:34	bremner	I guess the old behaviour of su w.r.t. paths was indeed documented.
+2018-08-30 12:25:58	rdr	do you have a link
+2018-08-30 12:26:01	-->	jnavila (~jnavila@82-64-51-39.subs.proxad.net) has joined #debian-next
+2018-08-30 12:26:19	bremner	not authoritative, but http://man7.org/linux/man-pages/man1/su.1@@shadow-utils.html
+2018-08-30 12:26:24	mnuhmnuh	rdr: root's PATH always contained /sbin.  bare su doesn't get root's environment, su - clobbers user env w root's env.
+2018-08-30 12:27:10	rdr	ohhh ok
+2018-08-30 12:27:18	rdr	i just used su to setup sudo 
+2018-08-30 12:27:38	rdr	which wasn't set up because i had set a root password during install (?)
+2018-08-30 12:27:50	rdr	i guess i was just missing the -
+2018-08-30 12:28:08	mnuhmnuh	you're not the first to run into this.  it's happened to a lot of others recently.
+2018-08-30 12:28:19	rudi_s	imperia: io scheduler?
+2018-08-30 12:28:26	imperia	rudi_s:  yes
+2018-08-30 12:30:27	rdr	mnuhmnuh: ok good to know, yeah i saw a guy in freenode/#debian with the same issue
+2018-08-30 12:30:33	rdr	at least now i know the solution
+2018-08-30 12:30:38	rdr	brb
+2018-08-30 12:30:54	--	irc: disconnected from server
+2018-08-30 12:33:41	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-30 12:33:41	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-30 12:33:41	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-30 12:33:41	--	Channel #debian-next: 229 nicks (0 ops, 0 voices, 229 normals)
+2018-08-30 12:33:41	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-30 12:33:41	--	PvNotice(ChanServ): Welcome to #debian-next! This channel is for supporting users of debian's upcoming releases. Please make sure you have checked the bug tracking system (http://bugs.debian.org/) to see if your problem is already known.
+2018-08-30 12:55:13	<--	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has quit (Ping timeout: 480 seconds)
+2018-08-30 12:57:35	-->	nix64bit (~Thunderbi@197.155.4.163) has joined #debian-next
+2018-08-30 13:06:46	<--	Yst (~Yst@0001fe93.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 13:10:05	-->	jirka (~Thunderbi@gw1.globalcom.cz) has joined #debian-next
+2018-08-30 13:13:57	<--	jirka (~Thunderbi@gw1.globalcom.cz) has quit
+2018-08-30 13:14:47	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-30 13:20:47	-->	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next
+2018-08-30 13:22:17	-->	flappy (~flappy@88-113-149-197.elisa-laajakaista.fi) has joined #debian-next
+2018-08-30 13:24:39	-->	libregee2ingkid (~libregeek@106.199.97.184) has joined #debian-next
+2018-08-30 13:24:58	<--	flappy (~flappy@88-113-149-197.elisa-laajakaista.fi) has quit
+2018-08-30 13:26:18	<--	libregee1ingkid (~libregeek@103.95.122.146) has quit (Ping timeout: 480 seconds)
+2018-08-30 13:27:44	<--	Darcidride (~Darcidrid@2a01:e35:8b4a:ca10::719e:e3e1) has quit (Remote host closed the connection)
+2018-08-30 13:31:44	diederik	wrt to the 'su' issue, see bug #904988 and #833256
+2018-08-30 13:31:45	judd	Bug http://bugs.debian.org/833256 in util-linux (open): «util-linux: Please use login/passwd implementations provided by util-linux»; severity: normal; opened: 2016-08-02; last modified: 2018-08-07.
+2018-08-30 13:32:27	diederik	apparently judd only picks up one bug, so here goes #904988 again
+2018-08-30 13:33:25	sarnold	heh
+2018-08-30 13:34:43	diederik	bug 904988
+2018-08-30 13:35:42	annadane	bug #904988
+2018-08-30 13:35:48	annadane	sigh
+2018-08-30 13:35:58	annadane	judd: bug #904988
+2018-08-30 13:35:59	judd	Bug http://bugs.debian.org/904988 in util-linux (closed): «util-linux /bin/su $path is missing crucial dirs»; severity: important; opened: 2018-07-30; last modified: 2018-08-05.
+2018-08-30 13:36:14	diederik	in a query with judd it works. thanks annadane :)
+2018-08-30 13:36:26	 *	annadane kicks judd
+2018-08-30 13:47:38	-->	hph^ (~hph@ip72-195-187-57.mc.at.cox.net) has joined #debian-next
+2018-08-30 13:59:06	-->	cmacq2 (~prometheu@ip4da03f95.direct-adsl.nl) has joined #debian-next
+2018-08-30 14:04:03	<--	Blacker47 (~Blacker47@00014f22.user.oftc.net) has quit (Quit: Life is short. Get a V.90 modem fast!)
+2018-08-30 14:04:21	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-30 14:06:50	<--	Jing (~Jing@00025398.user.oftc.net) has quit (Quit: Jing)
+2018-08-30 14:15:10	<--	cmacq2 (~prometheu@ip4da03f95.direct-adsl.nl) has quit (Ping timeout: 480 seconds)
+2018-08-30 14:16:39	-->	legion151 (~legion@5.100.38.112.suec-dacor.de) has joined #debian-next
+2018-08-30 14:17:28	<--	libregee2ingkid (~libregeek@106.199.97.184) has quit (Ping timeout: 480 seconds)
+2018-08-30 14:17:57	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 14:27:12	<--	piper (~piper@00012f3a.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 14:28:56	<--	danopa (~gnome@172.92.112.218) has quit (Quit: Konversation terminated!)
+2018-08-30 14:29:53	-->	piper (~piper@00012f3a.user.oftc.net) has joined #debian-next
+2018-08-30 14:47:30	<--	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has quit (Quit: TristanBomb)
+2018-08-30 14:48:08	-->	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has joined #debian-next
+2018-08-30 14:49:28	-->	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has joined #debian-next
+2018-08-30 14:54:18	<--	kritzefitz (~kritzefit@dslb-084-062-178-155.084.062.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2018-08-30 14:59:56	-->	RedSoxFan07 (~Thunderbi@32.212.74.4) has joined #debian-next
+2018-08-30 15:00:51	<--	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 15:01:55	<--	ruipb (~ruipb@00012b82.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 15:04:40	-->	ruipb (~ruipb@194.187.249.190) has joined #debian-next
+2018-08-30 15:05:05	<--	jnavila (~jnavila@82-64-51-39.subs.proxad.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 15:16:48	-->	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has joined #debian-next
+2018-08-30 15:17:50	-->	libregee1ingkid (~libregeek@103.95.122.146) has joined #debian-next
+2018-08-30 15:23:23	-->	pamaury_ (~pamaury@46.235.183.63) has joined #debian-next
+2018-08-30 15:25:00	<--	mandeepb (~mandeepb@ip-71-2-52-196.nyc.us.northamericancoax.com) has quit (Quit: Leaving)
+2018-08-30 15:27:08	<--	Yst (~Yst@0001fe93.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 15:27:36	-->	RedSoxFan08 (~Thunderbi@32.212.74.4) has joined #debian-next
+2018-08-30 15:27:40	-->	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next
+2018-08-30 15:29:28	<--	RedSoxFan07 (~Thunderbi@32.212.74.4) has quit (Ping timeout: 480 seconds)
+2018-08-30 15:29:28	--	RedSoxFan08 is now known as RedSoxFan07
+2018-08-30 15:42:55	<--	pamaury_ (~pamaury@46.235.183.63) has quit (Ping timeout: 480 seconds)
+2018-08-30 15:58:07	<--	drakonis (~drakonis@2804:14d:7482:1de0:1408:392:793f:9bd0) has quit (Remote host closed the connection)
+2018-08-30 16:01:57	-->	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has joined #debian-next
+2018-08-30 16:04:13	-->	jnavila (~jnavila@2a01:e0a:d1:f360:33e:2802:50eb:d77d) has joined #debian-next
+2018-08-30 16:04:24	<--	jnavila (~jnavila@2a01:e0a:d1:f360:33e:2802:50eb:d77d) has quit
+2018-08-30 16:09:22	<--	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2018-08-30 16:09:43	-->	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has joined #debian-next
+2018-08-30 16:09:56	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-30 16:09:57	<--	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has quit
+2018-08-30 16:10:17	-->	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has joined #debian-next
+2018-08-30 16:14:20	<--	balrog (~balrog@000183c6.user.oftc.net) has quit (Quit: Bye)
+2018-08-30 16:22:12	-->	balrog (~balrog@pool-96-245-67-155.phlapa.fios.verizon.net) has joined #debian-next
+2018-08-30 16:34:00	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Ping timeout: 480 seconds)
+2018-08-30 16:41:09	-->	Jing (~Jing@00025398.user.oftc.net) has joined #debian-next
+2018-08-30 16:46:55	<--	Jing (~Jing@00025398.user.oftc.net) has quit (Quit: Jing)
+2018-08-30 16:48:26	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-30 16:59:13	-->	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has joined #debian-next
+2018-08-30 17:12:41	<--	xet7 (~xet7@dytkndj0l6vv52zwmch-t-4.rev.dnainternet.fi) has quit (Quit: Leaving)
+2018-08-30 17:16:24	-->	Strife89 (~quassel@adsl-98-67-63-190.mcn.bellsouth.net) has joined #debian-next
+2018-08-30 17:19:12	<--	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has quit (Remote host closed the connection)
+2018-08-30 17:20:13	<--	Strife1989 (~quassel@adsl-98-67-58-251.mcn.bellsouth.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 17:21:15	<--	Strife89 (~quassel@adsl-98-67-63-190.mcn.bellsouth.net) has quit (Quit: No Ping reply in 180 seconds.)
+2018-08-30 17:22:39	-->	Strife89 (~quassel@adsl-98-67-63-190.mcn.bellsouth.net) has joined #debian-next
+2018-08-30 17:28:02	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-30 17:48:22	-->	CME (~cme-oftc@ip5f5b16a4.dynamic.kabel-deutschland.de) has joined #debian-next
+2018-08-30 17:52:18	-->	Jing (~Jing@00025398.user.oftc.net) has joined #debian-next
+2018-08-30 17:52:45	<--	Jing (~Jing@00025398.user.oftc.net) has quit
+2018-08-30 17:53:09	<--	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has quit (Quit: Leaving)
+2018-08-30 18:10:13	--	irc: disconnected from server
+2018-08-30 18:13:50	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-30 18:13:50	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-30 18:13:50	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-30 18:13:50	--	Channel #debian-next: 229 nicks (0 ops, 0 voices, 229 normals)
+2018-08-30 18:13:50	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-30 18:13:57	<--	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has quit (Ping timeout: 480 seconds)
+2018-08-30 18:21:29	--	irc: disconnected from server
+2018-08-30 18:21:37	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-30 18:21:37	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-30 18:21:37	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-30 18:21:37	--	Channel #debian-next: 228 nicks (0 ops, 0 voices, 228 normals)
+2018-08-30 18:21:37	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-30 18:26:34	-->	awal1 (~awal1@197.115.112.60) has joined #debian-next
+2018-08-30 18:29:13	<--	rajeevn (~rajeevn@0001f1a3.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 18:31:48	<--	RedSoxFan07 (~Thunderbi@32.212.74.4) has quit (Ping timeout: 480 seconds)
+2018-08-30 18:34:25	-->	RedSoxFan07 (~Thunderbi@32.212.74.4) has joined #debian-next
+2018-08-30 18:38:16	-->	rajeevn (~rajeevn@0001f1a3.user.oftc.net) has joined #debian-next
+2018-08-30 18:41:07	<--	ChmEarl (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has quit (Quit: Leaving)
+2018-08-30 18:41:11	-->	ChmEarl (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has joined #debian-next
+2018-08-30 18:49:04	<--	RedSoxFan07 (~Thunderbi@32.212.74.4) has quit (Quit: Goodbye and [depending on the time] good night.)
+2018-08-30 18:53:51	<--	ChmEarl (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has quit (Quit: Leaving)
+2018-08-30 18:54:56	-->	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has joined #debian-next
+2018-08-30 18:57:02	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Ping timeout: 480 seconds)
+2018-08-30 19:07:52	<--	awal1 (~awal1@197.115.112.60) has quit (Quit: Leaving)
+2018-08-30 19:17:19	--	irc: disconnected from server
+2018-08-30 19:17:44	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-30 19:17:44	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-30 19:17:44	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-30 19:17:44	--	Channel #debian-next: 226 nicks (0 ops, 0 voices, 226 normals)
+2018-08-30 19:17:44	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-30 19:24:08	<--	Yst (~Yst@0001fe93.user.oftc.net) has quit (Quit: <https://y.st./>)
+2018-08-30 19:34:33	<--	faw (~faw@faw.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-30 19:53:07	-->	drakonis (~drakonis@2804:14d:7482:1de0:6c0d:4aaa:749a:8bf8) has joined #debian-next
+2018-08-30 20:01:29	<--	libregee1ingkid (~libregeek@103.95.122.146) has quit (Ping timeout: 480 seconds)
+2018-08-30 20:30:48	<--	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has quit (Quit: Leaving)
+2018-08-30 20:37:56	<--	gusnan (~gusnan@85.229.183.162) has quit (Ping timeout: 480 seconds)
+2018-08-30 21:04:26	<--	legion151 (~legion@5.100.38.112.suec-dacor.de) has quit (Ping timeout: 480 seconds)
+2018-08-30 21:29:59	<--	Graypup_ (Graypup@lfcode.ca) has quit (Quit: ZNC 1.6.1 - http://znc.in)
+2018-08-30 21:30:55	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-30 21:31:59	-->	Graypup_ (Graypup@lfcode.ca) has joined #debian-next
+2018-08-30 21:50:25	-->	legion151 (~legion@5.100.38.112.suec-dacor.de) has joined #debian-next
+2018-08-30 22:02:42	<--	NamcoPro (~ConvexEd@24.55.71.14) has quit (Quit: Leaving)
+2018-08-30 22:03:05	-->	ConvexEd (~ConvexEd@24.55.71.14) has joined #debian-next
+2018-08-30 22:09:26	<--	thomasross (~thomasros@69.17.174.21) has quit (Remote host closed the connection)
+2018-08-30 22:12:29	<--	drakonis (~drakonis@2804:14d:7482:1de0:6c0d:4aaa:749a:8bf8) has quit (Remote host closed the connection)
+2018-08-30 22:38:15	<--	trebmuh (~Olivier@trebmuh.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-30 22:38:40	-->	trebmuh (~Olivier@trebmuh.user.oftc.net) has joined #debian-next
+2018-08-30 22:57:56	-->	jnavila (~jnavila@82.64.51.39) has joined #debian-next
+2018-08-30 23:38:00	<--	jnavila (~jnavila@82.64.51.39) has quit (Ping timeout: 480 seconds)
+2018-08-30 23:55:33	<--	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has quit (Quit: Leaving)
+2018-08-31 00:00:08	-->	gtristan (~tristanva@110.11.179.72) has joined #debian-next
+2018-08-31 00:01:17	-->	libregee1ingkid (~libregeek@103.95.122.146) has joined #debian-next
+2018-08-31 00:02:38	<--	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has quit (Read error: Connection reset by peer)
+2018-08-31 00:09:55	--	irc: disconnected from server
+2018-08-31 00:10:16	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-31 00:10:16	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-31 00:10:16	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-31 00:10:16	--	Channel #debian-next: 219 nicks (0 ops, 0 voices, 219 normals)
+2018-08-31 00:10:16	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-31 00:12:49	-->	chele (~chele@00022067.user.oftc.net) has joined #debian-next
+2018-08-31 00:51:04	<--	libregee1ingkid (~libregeek@103.95.122.146) has quit (Ping timeout: 480 seconds)
+2018-08-31 00:51:08	<--	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-31 00:54:15	-->	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has joined #debian-next
+2018-08-31 01:02:52	-->	xet7 (~xet7@dytkndj4l7tlh108fvd0y-4.rev.dnainternet.fi) has joined #debian-next
+2018-08-31 01:04:53	-->	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has joined #debian-next
+2018-08-31 01:30:49	-->	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next
+2018-08-31 01:57:58	<--	gtristan (~tristanva@110.11.179.72) has quit (Ping timeout: 480 seconds)
+2018-08-31 01:57:58	<--	alephnull (~alephnull@113.53.57.18) has quit (Read error: Connection reset by peer)
+2018-08-31 01:58:12	-->	alephnull (~alephnull@node-poi.pool-125-27.dynamic.totbb.net) has joined #debian-next
+2018-08-31 02:01:43	-->	jirka (~Thunderbi@gw1.globalcom.cz) has joined #debian-next
+2018-08-31 02:02:18	-->	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has joined #debian-next
+2018-08-31 02:15:38	<--	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has quit (Quit: Leaving)
+2018-08-31 02:17:04	-->	gtristan (~tristanva@110.11.179.2) has joined #debian-next
+2018-08-31 02:37:10	<--	jirka (~Thunderbi@gw1.globalcom.cz) has quit (Quit: jirka)
+2018-08-31 02:52:54	-->	Darcidride (~Quentin@194.2.202.93) has joined #debian-next
+2018-08-31 02:53:14	<--	Darcidride (~Quentin@194.2.202.93) has quit (Remote host closed the connection)
+2018-08-31 03:11:49	<--	gtristan (~tristanva@110.11.179.2) has quit (Ping timeout: 480 seconds)
+2018-08-31 03:12:34	-->	Darcidride (~Quentin@194.2.202.93) has joined #debian-next
+2018-08-31 03:12:37	<--	Darcidride (~Quentin@194.2.202.93) has quit (Remote host closed the connection)
+2018-08-31 03:13:15	-->	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has joined #debian-next
+2018-08-31 03:14:03	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-31 03:16:50	-->	deltam (~deltam@00026634.user.oftc.net) has joined #debian-next
+2018-08-31 03:17:24	<--	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has quit
+2018-08-31 03:18:13	-->	bluewater (~nautics-c@14.2.164.192) has joined #debian-next
+2018-08-31 03:21:05	-->	mo1991_ (~mo1991@072-186-109-071.res.spectrum.com) has joined #debian-next
+2018-08-31 03:28:14	<--	mo1991 (~mo1991@173.169.14.19) has quit (Ping timeout: 480 seconds)
+2018-08-31 03:30:21	-->	Darcidride (~Quentin@194.2.202.93) has joined #debian-next
+2018-08-31 03:36:03	-->	Haudegen (~quassel@178.115.237.87.static.drei.at) has joined #debian-next
+2018-08-31 03:43:12	-->	gargaml (~js@80.12.59.230) has joined #debian-next
+2018-08-31 03:44:04	<--	Volley (~worf@hexen.cgv.tugraz.at) has quit (Quit: Konversation terminated!)
+2018-08-31 03:45:28	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Remote host closed the connection)
+2018-08-31 03:54:23	-->	Haudegen (~quassel@178.115.237.87.static.drei.at) has joined #debian-next
+2018-08-31 03:57:06	-->	pamaury (~pamaury@dhcp-175-50.mpi-sws.org) has joined #debian-next
+2018-08-31 03:59:29	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit (Ping timeout: 480 seconds)
+2018-08-31 04:00:04	-->	gtristan (~tristanva@114.207.54.40) has joined #debian-next
+2018-08-31 04:08:19	<--	Asara (asara@pool-96-232-202-151.nycmny.fios.verizon.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 04:08:58	-->	jasc (~jasc@p578E614B.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-31 04:10:01	<--	dselect (~dselect@dselect.bot.oftc.net) has quit (Quit: ouch... that hurt)
+2018-08-31 04:12:06	-->	dselect (~dselect@dselect.bot.oftc.net) has joined #debian-next
+2018-08-31 04:12:55	<--	Q-Master (~q-master@2.92.128.129) has quit (Ping timeout: 480 seconds)
+2018-08-31 04:28:05	-->	Q-Master (~q-master@2.94.169.31) has joined #debian-next
+2018-08-31 04:40:20	-->	gusnan (~gusnan@85.229.183.162) has joined #debian-next
+2018-08-31 04:41:37	 *	judd kicks back
+2018-08-31 05:05:01	<--	dpkg (~dpkg@dpkg.bot.oftc.net) has quit (Quit: buh bye!)
+2018-08-31 05:06:34	-->	dpkg (~dpkg@dpkg.bot.oftc.net) has joined #debian-next
+2018-08-31 05:10:08	-->	Blacker47 (~Blacker47@00014f22.user.oftc.net) has joined #debian-next
+2018-08-31 05:25:04	-->	zerkalo (myricae@ny1.hashbang.sh) has joined #debian-next
+2018-08-31 05:25:04	<--	zerkalo (myricae@ny1.hashbang.sh) has quit (Read error: Connection reset by peer)
+2018-08-31 05:27:11	<--	Delta-One (~delta@00023074.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 05:33:26	<--	nix64bit (~Thunderbi@197.155.4.163) has quit (Quit: nix64bit)
+2018-08-31 05:37:08	<--	silver (~hidden@00013ad2.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 05:37:50	-->	silver (~hidden@00013ad2.user.oftc.net) has joined #debian-next
+2018-08-31 05:40:03	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Remote host closed the connection)
+2018-08-31 06:15:04	-->	Asara (asara@pool-96-232-202-151.nycmny.fios.verizon.net) has joined #debian-next
+2018-08-31 06:15:07	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-31 06:29:01	<--	mestia (~sysadm@141.30.193.8) has quit (Remote host closed the connection)
+2018-08-31 06:32:19	<--	gtristan (~tristanva@114.207.54.40) has quit (Ping timeout: 480 seconds)
+2018-08-31 06:38:30	-->	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-31 06:39:28	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-31 06:44:00	-->	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has joined #debian-next
+2018-08-31 06:53:15	-->	drakonis (~drakonis@2804:14d:7482:1de0:8105:a61e:a8c9:31c6) has joined #debian-next
+2018-08-31 07:01:19	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Quit: Leaving)
+2018-08-31 07:10:35	bremner	any ideas for workarounds for #906189? other than installing 4.16 from snapshots, I guess
+2018-08-31 07:10:44	-->	Delta-One (~delta@00023074.user.oftc.net) has joined #debian-next
+2018-08-31 07:16:38	-->	libregee1ingkid (~libregeek@111.93.193.54) has joined #debian-next
+2018-08-31 07:17:53	bremner	I guess I'll try 4.18 from experimental. wish me luck ;)
+2018-08-31 07:19:50	<--	Delta-One (~delta@00023074.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 07:24:55	bremner	the bug seems to be there in 4.18 as well
+2018-08-31 07:33:52	-->	alexandru (~alexandru@188.24.32.24) has joined #debian-next
+2018-08-31 07:34:26	--	alexandru is now known as Guest2144
+2018-08-31 07:34:27	-->	broesel (~broesel@0002750c.user.oftc.net) has joined #debian-next
+2018-08-31 07:36:58	<--	libregee1ingkid (~libregeek@111.93.193.54) has quit (Ping timeout: 480 seconds)
+2018-08-31 07:39:51	bremner	s2idle (freeze) and disk seem to work, only mem is broken
+2018-08-31 07:57:34	-->	nix64bit (~Thunderbi@197.155.4.163) has joined #debian-next
+2018-08-31 07:59:42	<--	towo^work (~towo@00012f0f.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-31 08:03:28	<--	Guest2144 (~alexandru@188.24.32.24) has quit (Quit: Guest2144)
+2018-08-31 08:03:49	-->	alexandru_ (~alexandru@2a02:2f0e:1d0:ae8:aa2e:846d:3bb7:85) has joined #debian-next
+2018-08-31 08:13:14	<--	alexandru_ (~alexandru@2a02:2f0e:1d0:ae8:aa2e:846d:3bb7:85) has quit (Quit: alexandru_)
+2018-08-31 08:14:04	-->	Delta-One (~delta@00023074.user.oftc.net) has joined #debian-next
+2018-08-31 08:22:58	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-31 08:24:08	<--	broesel (~broesel@0002750c.user.oftc.net) has left #debian-next
+2018-08-31 08:26:12	<--	trebmuh (~Olivier@trebmuh.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 08:27:38	-->	trebmuh (~Olivier@trebmuh.user.oftc.net) has joined #debian-next
+2018-08-31 08:33:00	<--	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-31 08:46:47	-->	Ryushin (UNKNOWN@0001f4e5.user.oftc.net) has joined #debian-next
+2018-08-31 08:47:30	<--	pamaury (~pamaury@dhcp-175-50.mpi-sws.org) has quit (Ping timeout: 480 seconds)
+2018-08-31 08:54:28	bremner	bios upgrade seems to have fixed it
+2018-08-31 09:16:10	-->	qlum (~qlum@185.85.82.14) has joined #debian-next
+2018-08-31 09:23:55	<--	chele (~chele@00022067.user.oftc.net) has quit (Quit: Leaving)
+2018-08-31 09:26:05	<--	dreamer (~henk@melange.soleus.nu) has quit (Ping timeout: 480 seconds)
+2018-08-31 09:28:00	<--	qlum (~qlum@185.85.82.14) has quit (Remote host closed the connection)
+2018-08-31 09:28:51	-->	inkbottle (~inkbottle@AAubervilliers-654-1-9-34.w86-218.abo.wanadoo.fr) has joined #debian-next
+2018-08-31 09:38:08	-->	faw (~faw@136.24.109.70) has joined #debian-next
+2018-08-31 09:42:37	-->	dreamer (~henk@melange.soleus.nu) has joined #debian-next
+2018-08-31 09:51:41	-->	sidmo__ (~sidmo@00026de1.user.oftc.net) has joined #debian-next
+2018-08-31 09:52:53	-->	simula (~simula@000277b2.user.oftc.net) has joined #debian-next
+2018-08-31 09:55:28	-->	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has joined #debian-next
+2018-08-31 09:59:56	<--	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2018-08-31 10:01:25	-->	mandeepb (~mandeepb@ip-10-2-52-196.nyc.us.northamericancoax.com) has joined #debian-next
+2018-08-31 10:15:48	-->	danopa_ (~gnome@172.92.112.218) has joined #debian-next
+2018-08-31 10:18:29	<--	danopa_ (~gnome@172.92.112.218) has quit
+2018-08-31 10:20:45	-->	kch0 (~kch0@190.62.249.50) has joined #debian-next
+2018-08-31 10:20:59	<--	Delta-One (~delta@00023074.user.oftc.net) has quit
+2018-08-31 10:22:00	<--	kch0 (~kch0@190.62.249.50) has quit
+2018-08-31 10:22:34	<--	danopa (~gnome@172.92.112.218) has quit (Ping timeout: 480 seconds)
+2018-08-31 10:22:49	-->	kch0 (~kch0@190.62.249.50) has joined #debian-next
+2018-08-31 10:27:02	-->	kritzefitz (~kritzefit@dslb-178-010-040-206.178.010.pools.vodafone-ip.de) has joined #debian-next
+2018-08-31 10:28:12	-->	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has joined #debian-next
+2018-08-31 10:33:58	-->	pamaury_ (~pamaury@46.235.183.49) has joined #debian-next
+2018-08-31 10:34:28	-->	Delta-One (~delta@00023074.user.oftc.net) has joined #debian-next
+2018-08-31 10:35:19	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-31 10:39:16	<--	gargaml (~js@80.12.59.230) has quit (Ping timeout: 480 seconds)
+2018-08-31 10:41:49	-->	kch02 (~kch0@190.62.249.52) has joined #debian-next
+2018-08-31 10:41:57	<--	kch02 (~kch0@190.62.249.52) has quit
+2018-08-31 10:42:14	-->	kch02 (~kch0@190.62.249.52) has joined #debian-next
+2018-08-31 10:44:05	-->	jnavila (~jnavila@2a01:e0a:d1:f360:33e:2802:50eb:d77d) has joined #debian-next
+2018-08-31 10:45:49	<--	kch02 (~kch0@190.62.249.52) has quit
+2018-08-31 10:47:15	-->	kch02 (~kch0@190.62.249.52) has joined #debian-next
+2018-08-31 10:47:43	<--	kch0 (~kch0@190.62.249.50) has quit (Ping timeout: 480 seconds)
+2018-08-31 10:48:40	<--	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has quit (Quit: Leaving)
+2018-08-31 10:49:53	-->	gargaml (~js@92.184.108.75) has joined #debian-next
+2018-08-31 10:52:15	-->	johnjay (~paul@38.120.10.99) has joined #debian-next
+2018-08-31 10:52:28	johnjay	ok i have a proper client now
+2018-08-31 10:57:52	<--	faw (~faw@faw.user.oftc.net) has quit (Read error: Connection reset by peer)
+2018-08-31 10:58:08	-->	faw (~faw@faw.user.oftc.net) has joined #debian-next
+2018-08-31 10:59:50	<--	simula (~simula@000277b2.user.oftc.net) has quit (Quit: simula)
+2018-08-31 11:16:41	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-08-31 11:18:31	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-31 11:19:37	-->	wololoer (~user@170.79.53.202) has joined #debian-next
+2018-08-31 11:24:21	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-31 11:25:18	-->	Isolation (~Isolation@00027025.user.oftc.net) has joined #debian-next
+2018-08-31 11:31:00	-->	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has joined #debian-next
+2018-08-31 11:32:11	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-08-31 11:33:27	<--	Haudegen (~quassel@212-186-77-29.static.upcbusiness.at) has quit (Remote host closed the connection)
+2018-08-31 11:43:56	-->	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has joined #debian-next
+2018-08-31 11:45:04	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-31 11:46:25	<--	legion151 (~legion@5.100.38.112.suec-dacor.de) has quit (Ping timeout: 480 seconds)
+2018-08-31 11:54:32	-->	libregee1ingkid (~libregeek@103.95.122.146) has joined #debian-next
+2018-08-31 12:02:11	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Remote host closed the connection)
+2018-08-31 12:02:57	<--	inkbottle (~inkbottle@AAubervilliers-654-1-9-34.w86-218.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2018-08-31 12:03:13	-->	inkbottle (~inkbottle@AAubervilliers-654-1-9-34.w86-218.abo.wanadoo.fr) has joined #debian-next
+2018-08-31 12:06:16	--	irc: disconnected from server
+2018-08-31 12:06:59	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-31 12:06:59	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-31 12:06:59	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-31 12:06:59	--	Channel #debian-next: 239 nicks (0 ops, 0 voices, 239 normals)
+2018-08-31 12:06:59	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-31 12:10:25	-->	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has joined #debian-next
+2018-08-31 12:16:57	<--	drakonis (~drakonis@2804:14d:7482:1de0:8105:a61e:a8c9:31c6) has quit (Remote host closed the connection)
+2018-08-31 12:28:04	<--	libregee1ingkid (~libregeek@103.95.122.146) has quit (Ping timeout: 480 seconds)
+2018-08-31 12:31:54	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-31 12:36:08	<--	danopa (~gnome@172.92.112.218) has quit
+2018-08-31 12:36:20	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-31 12:37:58	-->	Jing (~Jing@00025398.user.oftc.net) has joined #debian-next
+2018-08-31 12:44:08	<--	Yst (~Yst@0001fe93.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 12:50:06	<--	wololoer (~user@170.79.53.202) has left #debian-next (WeeChat 2.1)
+2018-08-31 12:50:29	-->	jirka (~Thunderbi@gw1.globalcom.cz) has joined #debian-next
+2018-08-31 12:53:11	-->	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next
+2018-08-31 12:53:13	-->	Haudegen (~quassel@178.115.237.87.static.drei.at) has joined #debian-next
+2018-08-31 12:56:15	<--	jirka (~Thunderbi@gw1.globalcom.cz) has quit (Quit: jirka)
+2018-08-31 12:56:51	-->	fvb (~fvb@524B0A43.cm-4-4a.dynamic.ziggo.nl) has joined #debian-next
+2018-08-31 12:58:38	<--	annadane (~annadane@mtrlpq5302w-lp140-01-69-156-34-87.dsl.bell.ca) has quit (Quit: Leaving)
+2018-08-31 12:59:58	--	irc: disconnected from server
+2018-08-31 13:00:18	-->	rdr (~rdr@d162-157-33-88.abhsia.telus.net) has joined #debian-next
+2018-08-31 13:00:18	--	Topic for #debian-next is "buster is testing right now | avoid unstable and testing just after release if you don't like reporting/fixing bugs | faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian"
+2018-08-31 13:00:18	--	Topic set by jelly (jelly@00012145.user.oftc.net) on Wed, 15 Aug 2018 10:53:05
+2018-08-31 13:00:18	--	Channel #debian-next: 240 nicks (0 ops, 0 voices, 240 normals)
+2018-08-31 13:00:18	--	Channel created on Thu, 28 Jun 2018 18:40:34
+2018-08-31 13:00:19	-->	Achylles (~Achylles@2804:431:d725:2ffc:ae65:2b26:3486:65bd) has joined #debian-next
+2018-08-31 13:07:52	<--	gargaml (~js@92.184.108.75) has quit (Ping timeout: 480 seconds)
+2018-08-31 13:07:58	<--	nix64bit (~Thunderbi@197.155.4.163) has quit (Remote host closed the connection)
+2018-08-31 13:09:27	<--	danopa (~gnome@172.92.112.218) has quit (Quit: Konversation terminated!)
+2018-08-31 13:10:14	-->	nix64bit (~Thunderbi@197.155.4.163) has joined #debian-next
+2018-08-31 13:10:21	<--	nix64bit (~Thunderbi@197.155.4.163) has quit
+2018-08-31 13:20:21	-->	saptech (~saptech@000218ee.user.oftc.net) has joined #debian-next
+2018-08-31 13:22:27	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-31 13:24:02	<--	ruipb (~ruipb@00012b82.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 13:29:03	-->	ruipb (~ruipb@194.187.249.190) has joined #debian-next
+2018-08-31 13:38:43	-->	Renari (~Renari@75.97.175.72.res-cmts.bgr.ptd.net) has joined #debian-next
+2018-08-31 13:40:42	<--	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2018-08-31 13:44:01	-->	hashem (~hashem@pool-173-56-32-85.nycmny.fios.verizon.net) has joined #debian-next
+2018-08-31 13:51:39	-->	danopa (~gnome@172.92.112.218) has joined #debian-next
+2018-08-31 13:58:15	-->	drakonis (~drakonis@2804:14d:7482:1de0:c0dc:ccac:7704:28d3) has joined #debian-next
+2018-08-31 14:03:54	<--	Blacker47 (~Blacker47@00014f22.user.oftc.net) has quit (Quit: Life is short. Get a V.90 modem fast!)
+2018-08-31 14:05:49	<--	Achylles (~Achylles@2804:431:d725:2ffc:ae65:2b26:3486:65bd) has quit
+2018-08-31 14:12:51	-->	gargaml (~js@80.12.58.109) has joined #debian-next
+2018-08-31 14:21:17	-->	BCMM (~BCMM@00026736.user.oftc.net) has joined #debian-next
+2018-08-31 14:22:45	<--	BCMM (~BCMM@00026736.user.oftc.net) has quit
+2018-08-31 14:25:02	-->	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has joined #debian-next
+2018-08-31 14:30:05	<--	dwe (~frzn@p54AAB32A.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2018-08-31 14:35:20	-->	jacob_ (~jacob@145.87.244.77) has joined #debian-next
+2018-08-31 14:35:56	--	jacob_ is now known as Guest2169
+2018-08-31 14:41:48	<--	Renari (~Renari@75.97.175.72.res-cmts.bgr.ptd.net) has quit (Quit: Renari)
+2018-08-31 14:42:15	-->	Renari (~Renari@75.97.175.72.res-cmts.bgr.ptd.net) has joined #debian-next
+2018-08-31 14:49:36	<--	drakonis (~drakonis@2804:14d:7482:1de0:c0dc:ccac:7704:28d3) has quit (Remote host closed the connection)
+2018-08-31 14:54:15	-->	nix64bit (~Thunderbi@197.155.4.163) has joined #debian-next
+2018-08-31 14:55:23	<--	nix64bit (~Thunderbi@197.155.4.163) has quit
+2018-08-31 15:09:04	<--	mandeepb (~mandeepb@ip-10-2-52-196.nyc.us.northamericancoax.com) has quit (Quit: Leaving)
+2018-08-31 15:21:54	-->	mandeepb (~mandeepb@ip-53-2-52-196.nyc.us.northamericancoax.com) has joined #debian-next
+2018-08-31 15:25:02	-->	zerkalo (myricae@ny1.hashbang.sh) has joined #debian-next
+2018-08-31 15:25:02	<--	zerkalo (myricae@ny1.hashbang.sh) has quit (Read error: Connection reset by peer)
+2018-08-31 15:31:13	<--	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has quit (Read error: Connection reset by peer)
+2018-08-31 15:34:48	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-31 15:35:02	-->	zerkalo (myricae@ny1.hashbang.sh) has joined #debian-next
+2018-08-31 15:35:02	<--	zerkalo (myricae@ny1.hashbang.sh) has quit (Read error: Connection reset by peer)
+2018-08-31 15:36:20	<--	silver (~hidden@00013ad2.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 15:37:28	-->	silver (~hidden@00013ad2.user.oftc.net) has joined #debian-next
+2018-08-31 15:56:16	-->	drakonis (~drakonis@2804:14d:7482:1de0:65d2:755e:d243:af69) has joined #debian-next
+2018-08-31 15:58:28	<--	Jing (~Jing@00025398.user.oftc.net) has quit (Quit: Jing)
+2018-08-31 16:01:51	<--	gargaml (~js@80.12.58.109) has quit (Ping timeout: 480 seconds)
+2018-08-31 16:05:10	-->	legion151 (~legion@5.100.38.112.suec-dacor.de) has joined #debian-next
+2018-08-31 16:08:14	<--	johnjay (~paul@38.120.10.99) has quit (Ping timeout: 480 seconds)
+2018-08-31 16:16:01	<--	pamaury_ (~pamaury@46.235.183.49) has quit (Ping timeout: 480 seconds)
+2018-08-31 16:21:12	<--	jnavila (~jnavila@2a01:e0a:d1:f360:33e:2802:50eb:d77d) has quit (Ping timeout: 480 seconds)
+2018-08-31 16:39:11	-->	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has joined #debian-next
+2018-08-31 16:46:02	<--	danopa (~gnome@172.92.112.218) has quit (Quit: Konversation terminated!)
+2018-08-31 16:46:03	<--	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has quit (Read error: Connection reset by peer)
+2018-08-31 16:47:30	-->	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has joined #debian-next
+2018-08-31 16:52:25	<--	saptech (~saptech@000218ee.user.oftc.net) has quit (Quit: Leaving)
+2018-08-31 16:55:55	<--	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 16:57:07	-->	TristanBomb (~TristanBo@174-22-235-187.phnx.qwest.net) has joined #debian-next
+2018-08-31 17:00:11	<--	mandeepb (~mandeepb@ip-53-2-52-196.nyc.us.northamericancoax.com) has quit (Quit: Leaving)
+2018-08-31 17:02:01	-->	mandeepb (~mandeepb@ip-36-2-52-196.nyc.us.northamericancoax.com) has joined #debian-next
+2018-08-31 17:02:18	<--	kritzefitz (~kritzefit@dslb-178-010-040-206.178.010.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2018-08-31 17:07:00	<--	Guest2169 (~jacob@145.87.244.77) has quit (Quit: Guest2169)
+2018-08-31 17:08:42	<--	ttl- (~ttl@ptr-377wf32u5sr75xgab37v.18120a2.ip6.access.telenet.be) has quit (Quit: Leaving)
+2018-08-31 17:17:47	-->	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #debian-next
+2018-08-31 17:21:15	<--	absenta (~raoul@v2201801700760097.supersrv.de) has quit (Read error: Connection reset by peer)
+2018-08-31 17:25:30	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Remote host closed the connection)
+2018-08-31 17:28:14	mmu_man	plop
+2018-08-31 17:28:33	-->	tomg (~tomg@64-7-151-9.border7-dynamic.dsl.sentex.ca) has joined #debian-next
+2018-08-31 17:28:36	mmu_man	any reason for a package version available in official mirror to not show up in apt policy?
+2018-08-31 17:29:35	-->	absenta (~raoul@v2201801700760097.supersrv.de) has joined #debian-next
+2018-08-31 17:29:40	mmu_man	trying to clean some dmo stuff still around, but policy vlc-data only shows dmo versions, while it's definitely in the unstable mirror
+2018-08-31 17:33:35	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit (Ping timeout: 480 seconds)
+2018-08-31 17:42:28	abrock	I have a question about "lshw": at "*cpu" it shows "capacity: 3500MHz" and "clock: 100MHz", does that mean the CPU is running at 100MHz for power saving?
+2018-08-31 17:44:11	mmu_man	oh my, the french translation seems wrong
+2018-08-31 17:44:16	mmu_man	taille: 1939MHz
+2018-08-31 17:44:17	mmu_man	lol
+2018-08-31 17:45:04	mmu_man	abrock: I think it's rather the bus clock
+2018-08-31 17:45:57	mmu_man	I have 133 here
+2018-08-31 17:46:42	mmu_man	see dmidecode
+2018-08-31 17:46:51	mmu_man		External Clock: 133 MHz
+2018-08-31 17:46:51	mmu_man		Max Speed: 2660 MHz
+2018-08-31 17:47:40	<--	cerbere (~cerbere@2a02-8428-0005-ed01-286e-1a78-2627-9ea4.rev.sfr.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 17:48:02	-->	cerbere (~cerbere@2a02-8428-0005-ed01-286e-1a78-2627-9ea4.rev.sfr.net) has joined #debian-next
+2018-08-31 17:53:54	mmu_man	grep Filename'.*vlc-data' /var/lib/apt/lists/ftp.fr.debian.org_debian_dists_sid_main_binary-amd64_Packages
+2018-08-31 17:53:57	mmu_man	nothing
+2018-08-31 18:06:31	mmu_man	any reason it's not in http://cdn-fastly.deb.debian.org/debian/dists/unstable/main/binary-amd64/Packages.gz ?
+2018-08-31 18:08:13	mmu_man	it's listed in binary-all but not this one, although other -all packages are there
+2018-08-31 18:08:20	mmu_man	… except vlc-l10n
+2018-08-31 18:17:18	mmu_man	hmm, https://wiki.debian.org/DebianRepository/Format#No-Support-for-Architecture-all … could it be the french mirror messing up with that?
+2018-08-31 18:21:24	<--	Isolation (~Isolation@00027025.user.oftc.net) has quit (Quit: Isolation)
+2018-08-31 18:30:10	<--	Brigo (~Brigo@249.59.27.77.dynamic.reverse-mundo-r.com) has quit (Ping timeout: 480 seconds)
+2018-08-31 18:40:43	mnuhmnuh	abrock: try inxi -FI
+2018-08-31 18:43:14	mnuhmnuh	mmu_man: apt tells me to add -a to see full output, including dbo.
+2018-08-31 18:45:57	mmu_man	apt policy?
+2018-08-31 18:46:15	mmu_man	hmm I ended up downloading and dpkg -i but it probably was a very bad idea
+2018-08-31 18:49:40	mmu_man	shouldn't do those kind of things at 3am
+2018-08-31 19:13:45	<--	jasc (~jasc@p578E614B.dip0.t-ipconnect.de) has quit (Ping timeout: 480 seconds)
+2018-08-31 19:25:57	mmu_man	ok, managed to clean the mess, but had to remove a lot of stuff
+2018-08-31 19:26:15	mmu_man	down to 21 lest from dmo
+2018-08-31 19:26:17	mmu_man	left
+2018-08-31 19:29:51	mmu_man	19
+2018-08-31 19:30:06	mmu_man	16
+2018-08-31 19:31:17	-->	simula (~simula@000277b2.user.oftc.net) has joined #debian-next
+2018-08-31 19:36:15	mnuhmnuh	someone the other day said dmo stuff wasn't really all that bad and a lot was quite useful, fwiw.  deprecated, yes, but not much worth worrying about.
+2018-08-31 19:36:54	mmu_man	down to 6
+2018-08-31 19:37:23	mmu_man	well, the problem is more that other things depend on them and sometimes they fail to upgrade due to the versioning
+2018-08-31 19:37:59	-->	sidmo_ (~sidmo@00026de1.user.oftc.net) has joined #debian-next
+2018-08-31 19:38:24	pabs	weird, I have the vlc-data issue here too (no dmo in sources list)
+2018-08-31 19:38:58	pabs	`apt-cache madison vlc-data` does show it though
+2018-08-31 19:39:24	abrock	mnuhmnuh: thank you, I didn't know that program
+2018-08-31 19:40:10	sarnold	it is in binary-all/Packages.gz though
+2018-08-31 19:40:14	mnuhmnuh	abrock: i'm new to it too.  just trying to get through the manpage finally.
+2018-08-31 19:41:16	mmu_man	I ownder if it's just not this all as separated file transition that's breaking something
+2018-08-31 19:43:27	mmu_man	ok, rebooting, wish me luck
+2018-08-31 19:43:30	<--	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Quit: reboot)
+2018-08-31 19:43:43	mnuhmnuh	abrock: in theory, inxi is supposed to be usable to report in irc your system specs.  /exec inxi here is throttled and denied, by apparmor.
+2018-08-31 19:45:05	<--	sidmo__ (~sidmo@00026de1.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 19:49:11	-->	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #debian-next
+2018-08-31 19:49:47	mmu_man	wow, still boots
+2018-08-31 19:50:58	mnuhmnuh	that's what the other guy said, deprecated, useful, not system unsafe stuff.
+2018-08-31 19:53:07	<--	inkbottle (~inkbottle@AAubervilliers-654-1-9-34.w86-218.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)
+2018-08-31 19:53:56	pabs	btw, I'm asking #debian-ftp about the vlc-data issue
+2018-08-31 19:54:14	pabs	did anyone see the same issue with other packages?
+2018-08-31 19:54:59	mmu_man	vlc-l10n is also concerned
+2018-08-31 19:58:30	abrock	mnuhmnuh: /exec inxi doesn't help me, this irssi runs on a remote server not on my laptop
+2018-08-31 20:00:34	<--	cheapie (cheapie@cheapiesystems.com) has quit (Quit: Local host tripped over the cable)
+2018-08-31 20:01:03	mnuhmnuh	abrock: you don't have to run it in irssi.  it works at a cli to.
+2018-08-31 20:01:53	mnuhmnuh	abrock: just saying, apparmor needs to be tweaked for irssi to be allowed to run it.
+2018-08-31 20:02:17	-->	cheapie (cheapie@cheapiesystems.com) has joined #debian-next
+2018-08-31 20:07:44	mnuhmnuh	and how that's done, dunno.  tweak /etc/apparmor.d/usr.bin.irssi then restart irssi?  apparmor?
+2018-08-31 20:09:37	sarnold	just reload the apparmor profile, no need to restart irssi
+2018-08-31 20:09:56	sarnold	apparmor_parser --replace /etc/apparmor.d/usr.bin.irssi once you've allowed what you want to allow
+2018-08-31 20:13:38	mnuhmnuh	i just added "/usr/bin/inxi r," to the end of system wide scripts list.  is that correct, or should it be ix (like /usr/bin/dash has)?  i know very little about apparmor.
+2018-08-31 20:13:48	-->	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has joined #debian-next
+2018-08-31 20:14:28	sarnold	probably rix
+2018-08-31 20:14:33	sarnold	inxi is a shell script, right?
+2018-08-31 20:15:06	mnuhmnuh	yup, bash.
+2018-08-31 20:16:44	mnuhmnuh	permission denied
+2018-08-31 20:17:18	<--	faw (~faw@faw.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 20:17:57	sarnold	you can either use aa-logprof to skim the logs and get prompted, or read them by hand via dmesg and add rules as appropriate
+2018-08-31 20:19:48	mnuhmnuh	i run xconsole, says requested_mask="x" denied_mask="x"
+2018-08-31 20:22:40	sarnold	for which executable?
+2018-08-31 20:23:45	mnuhmnuh	profile="/usr/bin/irssi" name="/bin/bash"
+2018-08-31 20:25:53	sarnold	okay, add a /bin/bash mrix, rule as well
+2018-08-31 20:27:25	mnuhmnuh	that screamed a lot, but finally ran.
+2018-08-31 20:28:24	sarnold	haha
+2018-08-31 20:29:04	mnuhmnuh	looks like i need to add tty, ps, tr, dirname, whoami, readlink, ...
+2018-08-31 20:29:21	sarnold	*maybe* adding #include <abstractions/bash> would get a lot of those -- but take a look at it first to see if you want to give your irc client access to those things
+2018-08-31 20:30:51	mnuhmnuh	beginning to sound like that security regime from redhat/nsa that nobody wanted to enable.
+2018-08-31 20:32:43	sarnold	it can take a few minutes to figure out all the resources that your software will use and decide if you want to allow it or not.. if you trust inxi to be bug free you could always use Ux to execute it without apparmor confinement
+2018-08-31 20:33:00	<--	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 20:33:23	<--	kch02 (~kch0@190.62.249.52) has quit (Ping timeout: 480 seconds)
+2018-08-31 20:33:25	<--	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has quit (Quit: Everytime I think IQ's must have dropped recently, I remember that this is the internet)
+2018-08-31 20:33:50	mnuhmnuh	i prob. ought to learn more about apparmor.
+2018-08-31 20:34:56	sarnold	:D
+2018-08-31 20:38:13	-->	johnjay (~paul@38.120.10.99) has joined #debian-next
+2018-08-31 20:46:27	-->	legion1511 (~legion@5.100.38.112.suec-dacor.de) has joined #debian-next
+2018-08-31 20:52:55	<--	legion151 (~legion@5.100.38.112.suec-dacor.de) has quit (Ping timeout: 480 seconds)
+2018-08-31 21:01:28	<--	strugee (~strugee@216.160.72.225) has quit (Ping timeout: 480 seconds)
+2018-08-31 21:02:28	-->	xsTI85 (~lxuser@0001b0b3.user.oftc.net) has joined #debian-next
+2018-08-31 21:17:00	-->	Darcidride_ (~Quentin@194.2.202.93) has joined #debian-next
+2018-08-31 21:17:27	-->	Darcidride__ (~Quentin@194.2.202.93) has joined #debian-next
+2018-08-31 21:18:27	<--	Darcidride (~Quentin@194.2.202.93) has quit (Remote host closed the connection)
+2018-08-31 21:19:12	<--	Darcidride_ (~Quentin@194.2.202.93) has quit (Remote host closed the connection)
+2018-08-31 21:25:38	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-31 21:26:18	<--	johnjay (~paul@38.120.10.99) has quit (Ping timeout: 480 seconds)
+2018-08-31 21:26:32	-->	ssmith101 (~quassel@00027d5b.user.oftc.net) has joined #debian-next
+2018-08-31 21:36:25	<--	hexa- (~hexa-@0001bcc7.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 21:36:51	<--	Akronym (mschmitt@0001be93.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2018-08-31 21:39:38	-->	hexa- (~hexa-@0001bcc7.user.oftc.net) has joined #debian-next
+2018-08-31 21:40:17	-->	Akronym (mschmitt@booster.qnetp.net) has joined #debian-next
+2018-08-31 21:40:32	-->	johnjay (~paul@38.120.10.99) has joined #debian-next
+2018-08-31 21:57:40	<--	simula (~simula@000277b2.user.oftc.net) has quit (Quit: simula)
+2018-08-31 21:59:56	<--	Landev (~quassel@178-82-219-75.dynamic.hispeed.ch) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2018-08-31 22:00:10	-->	Landev (~quassel@178-82-219-75.dynamic.hispeed.ch) has joined #debian-next
+2018-08-31 22:03:16	<--	acald3ron (~acald3ron@189.202.75.149.cable.dyn.cableonline.com.mx) has quit (Remote host closed the connection)
+2018-08-31 22:07:41	<--	ssmith101 (~quassel@00027d5b.user.oftc.net) has quit (Quit: ssmith101)
+2018-08-31 22:13:11	<--	drakonis (~drakonis@2804:14d:7482:1de0:65d2:755e:d243:af69) has quit (Remote host closed the connection)
+2018-08-31 22:14:56	<--	johnjay (~paul@38.120.10.99) has quit (Remote host closed the connection)
+2018-08-31 22:20:03	<--	xsTI85 (~lxuser@0001b0b3.user.oftc.net) has quit (Remote host closed the connection)
+2018-08-31 22:37:29	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit
+2018-08-31 22:38:07	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-31 22:51:06	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit
+2018-08-31 22:52:55	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-31 22:59:58	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit
+2018-08-31 23:00:57	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-08-31 23:03:52	<--	erc (~erc@cable-52-53-149.b2b2c.ca) has quit (Remote host closed the connection)
+2018-08-31 23:34:52	-->	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has joined #debian-next
+2018-08-31 23:38:57	<--	PryMar56 (~prymar56@cpe-107-185-106-30.socal.res.rr.com) has quit (Quit: Leaving)
+2018-08-31 23:47:13	<--	BenNZ (~Ben@125-237-67-219-vdsl.sparkbb.co.nz) has quit (Quit: Everytime I think IQ's must have dropped recently, I remember that this is the internet)
+2018-08-31 23:47:37	-->	K0JIbKA (~K0JIbKA@188.124.242.77) has joined #debian-next
+2018-09-01 00:07:20	<--	boudicca (~boudiccas@31.185.147.10) has quit (Quit: Leaving)
+2018-09-01 00:09:27	-->	erc (~erc@cable-52-53-149.b2b2c.ca) has joined #debian-next
+2018-09-01 00:10:07	-->	HumanGeek (~HumanG33k@62.147.242.8) has joined #debian-next
+2018-09-01 00:13:50	-->	nix64bit (~Thunderbi@197.155.4.163) has joined #debian-next
+2018-09-01 00:16:35	-->	boudiccas (~boudiccas@31.185.147.10) has joined #debian-next
+2018-09-01 00:17:10	<--	Human_G33k (~HumanG33k@62.147.242.8) has quit (Ping timeout: 480 seconds)
+2018-09-01 00:35:42	-->	johnjay (~paul@38.120.10.99) has joined #debian-next
+2018-09-01 00:40:07	<--	Yst (~Yst@0001fe93.user.oftc.net) has quit (Remote host closed the connection)
+2018-09-01 00:45:07	-->	dutchfish (~wil@000128c9.user.oftc.net) has joined #debian-next
+2018-09-01 00:51:56	<--	K0JIbKA (~K0JIbKA@188.124.242.77) has quit (Quit: K0JIbKA)
+2018-09-01 00:54:16	-->	K0JIbKA (~K0JIbKA@188.124.242.77) has joined #debian-next
+2018-09-01 00:56:55	-->	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next

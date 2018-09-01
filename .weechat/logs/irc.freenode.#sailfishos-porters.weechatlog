@@ -1,1255 +1,559 @@
-2018-08-22 11:21:47	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 11:21:47	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 11:21:47	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 11:21:47	--	Channel #sailfishos-porters: 80 nicks (0 ops, 0 voices, 80 normals)
-2018-08-22 11:21:47	***	Buffer Playback...
-2018-08-22 11:21:47	mal	[09:59:48] how about removing the libwifi stuff from the spec
-2018-08-22 11:21:47	mal	[09:59:54] it should have clear
-2018-08-22 11:21:47	echo_salik	[10:00:38] ok...
-2018-08-22 11:21:47	echo_salik	[10:02:08] mal the libwifi part is alreay commented...
-2018-08-22 11:21:47	echo_salik	[10:02:23] with an # sign
-2018-08-22 11:21:47	echo_salik	[10:12:02] i just redownloaded the spec file and removed the libwifi but same error
-2018-08-22 11:21:47	vknecht	[10:28:32] echo_salik, what do your spec files look like now ?
-2018-08-22 11:21:47	echo_salik	[10:41:21] vknecht: https://hastebin.com/nilurinija.http
-2018-08-22 11:21:47	 *	echo_salik [10:59:37] sings: 99 little bugs in the code 99 little bugs... take one down patch it around... 127 little bugs in the code...
-2018-08-22 11:21:47	mal	[11:02:39] echo_salik: I just did a clean build of that libhybris branch against aosp 8.1 base without any errors, unless lineageos base is in some way different
-2018-08-22 11:21:47	mal	[11:04:04] echo_salik: how exactly did you clone it? like this "git clone https://github.com/krnlyng/libhybris-1.git -b android8-initial  --recurse-submodules"
-2018-08-22 11:21:47	echo_salik	[11:09:36] mal: yep
-2018-08-22 11:21:47	echo_salik	[11:09:45] exactly like that
-2018-08-22 11:21:47	echo_salik	[11:11:43] do i have to use asop base?
-2018-08-22 11:21:47	mal	[11:11:55] no, you can't use the same
-2018-08-22 11:21:47	mal	[11:12:10] show the whole build log from the libhybris.log
-2018-08-22 11:21:47	echo_salik	[11:12:26] in a moment
-2018-08-22 11:21:47	echo_salik	[11:13:19] mal: https://hastebin.com/wipomimuyi.coffeescript
-2018-08-22 11:21:47	mal	[11:15:02] how can that be if you have the libwifi commented out as it is by default in that branch
-2018-08-22 11:21:47	mal	[11:16:06] what local changes have you done currently?
-2018-08-22 11:21:47	mal	[11:16:08] run git diff
-2018-08-22 11:21:47	mal	[11:16:43] this whole thing should have been trivial to fix, no idea how you manage to break the build
-2018-08-22 11:21:47	echo_salik	[11:21:07] mal: as you said... we fail in mysterious ways...
-2018-08-22 11:21:47	***	Playback Complete.
-2018-08-22 11:21:53	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 11:25:22	<--	Sage___ (sage@kapsi.fi) has quit (*.net *.split)
-2018-08-22 11:25:48	<--	zama (~zama@unaffiliated/stryx/x-3871776) has quit (*.net *.split)
-2018-08-22 11:25:48	<--	xkr47 (xkr47@dsl-hkibng21-50dc5b-162.dhcp.inet.fi) has quit (*.net *.split)
-2018-08-22 11:25:48	<--	Thaodan (~Thaodan@v22017125432358271.powersrv.de) has quit (*.net *.split)
-2018-08-22 11:25:48	<--	sledges (~sleleiva@unaffiliated/sledgeas) has quit (*.net *.split)
-2018-08-22 11:25:48	<--	R-Z_ (~R-Zs@91-158-49-140.elisa-laajakaista.fi) has quit (*.net *.split)
-2018-08-22 11:26:05	echo_salik	mal: https://hastebin.com/pevimehame.sql
-2018-08-22 11:26:37	echo_salik	steps: downloaded spec from that link, deleted wifi listings
-2018-08-22 11:28:38	mal	those changes make very little sense, you removed libvibrator?
-2018-08-22 11:29:37	vknecht	echo_salik, what's the exact command you used ?
-2018-08-22 11:30:55	echo_salik	mal: nope... but isnt that diff with respect to that hybris-l repo?
-2018-08-22 11:31:17	echo_salik	vknecht: rpm/dhd/helpers/build_packages.sh -b hybris/mw/libhybris  my exact command
-2018-08-22 11:33:00	mal	echo_salik: based on that git fif you did remove it
-2018-08-22 11:33:05	mal	*git diff
-2018-08-22 11:35:13	echo_salik	wait that's not the whole git diff
-2018-08-22 11:36:04	echo_salik	my bad: https://hastebin.com/agerikicim.shell
-2018-08-22 11:37:24	echo_salik	what i mean to say is this git diff is referring all the changes that the new spec that i downloaded has... the only changes i manually made are removing wifi so things
-2018-08-22 11:38:12	echo_salik	i had not commited the libspec that i downloaded... so its showing those changes too
-2018-08-22 11:38:38	echo_salik	i not good at conveying what i mean...
-2018-08-22 11:39:12	mal	so why did you add libwifi back there manually, just look at your git diff
-2018-08-22 11:39:40	mal	I give up, you are telling one thing but git diff says something completely different
-2018-08-22 11:41:37	echo_salik	ok... what i'll do again is redownload that spec... commit it... then remove libwifi stuff then show you the git diff...
-2018-08-22 11:43:01	mal	what the hell are you doing, LIBWIFI IS ALREADY REMOVED FROM THE DAMN SPEC
-2018-08-22 11:43:34	mal	I'm not going to help anymore today, you have all the information you need, just fix it yourself
-2018-08-22 11:47:40	r0kk3rz	echo_salik: you dont need to commit anything, it seems like you misunderstand a few git fundamentals
-2018-08-22 11:47:47	echo_salik	mal: you gave me this file: https://github.com/mer-hybris/libhybris/blob/master/rpm/libhybris.spec, please look at line: 347
-2018-08-22 11:48:38	mal	echo_salik: WE WERE TALKING ABOUT LIBNFC WHEN I GAVE YOU THAT
-2018-08-22 11:48:39	echo_salik	r0kk3rz: mal gave me ^ link, it has libwifi.so uncommented
-2018-08-22 11:48:49	mal	NOT LIBWIFI
-2018-08-22 11:49:21	mal	there a thing called context, look it up from a dictionary
-2018-08-22 11:50:03	echo_salik	mal you gave me that spec, i am using that spec... how the hell am i supposed to know you mean a different spec when you told me to use THAT spec!?
-2018-08-22 11:51:19	mal	well with normal logic if your error was about libnfc then you search for things related to thatt from what I gave you, but that would require too much logic it seems
-2018-08-22 11:53:20	mal	I even said to look for the things in the error from the spec
-2018-08-22 11:54:02	mal	I will not comment anymore here because soon I will be kicked out for bad language
-2018-08-22 11:55:37	echo_salik	i'll leave the chat sorry for everything
-2018-08-22 11:55:39	<--	echo_salik (~salik@39.50.220.229) has quit (Quit: Leaving)
-2018-08-22 11:57:07	mal	oops :DD
-2018-08-22 12:24:24	r0kk3rz	oh dear mal :)
-2018-08-22 13:00:57	mal	maybe I should just stay silent for a few weeks
-2018-08-22 13:11:23	r0kk3rz	mal: just chill out, if people are frustrating you then ignore them
-2018-08-22 13:11:46	r0kk3rz	i certainly do that some times, especially if i think they have all the information they need
-2018-08-22 13:17:26	mal	I just get annoyed so easily nowaday so better I stop helping completely
-2018-08-22 14:13:27	<--	pseudodev (uid205973@gateway/web/irccloud.com/x-nqdfpzhzskvgddzt) has quit (Quit: Connection closed for inactivity)
-2018-08-22 14:23:39	--	irc: disconnected from server
-2018-08-22 14:29:07	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 14:29:07	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 14:29:07	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 14:29:07	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
-2018-08-22 14:29:13	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 14:30:36	-->	Sage__ (sage@kapsi.fi) has joined #sailfishos-porters
-2018-08-22 14:40:47	-->	wildlander (~wildlande@unaffiliated/wildlander) has joined #sailfishos-porters
-2018-08-22 15:03:55	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
-2018-08-22 15:04:09	-->	wildlander (~wildlande@unaffiliated/wildlander) has joined #sailfishos-porters
-2018-08-22 15:26:05	<--	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has quit (Quit: see ypu at meeting tomorrow ? :-))
-2018-08-22 16:06:17	--	irc: disconnected from server
-2018-08-22 16:07:49	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 16:07:49	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 16:07:49	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 16:07:49	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
-2018-08-22 16:07:55	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 16:08:47	-->	zotan (~zotan@16.34.155.90.in-addr.arpa) has joined #sailfishos-porters
-2018-08-22 16:10:51	<--	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
-2018-08-22 16:11:06	-->	SfietKonstantinW (b9c55541@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.85.65) has joined #sailfishos-porters
-2018-08-22 16:11:06	--	irc: disconnected from server
-2018-08-22 16:11:58	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 16:11:58	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 16:11:58	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 16:11:58	--	Channel #sailfishos-porters: 73 nicks (0 ops, 0 voices, 73 normals)
-2018-08-22 16:12:04	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 16:40:26	<--	murray (~murray@dyndsl-092-252-107-166.ewe-ip-backbone.de) has quit (Ping timeout: 276 seconds)
-2018-08-22 17:07:58	<--	birdzhang (~quassel@14.23.164.60) has quit (Read error: Connection reset by peer)
-2018-08-22 17:19:34	-->	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-22 17:52:50	<--	Zucca (~zucca@85-76-7-192-nat.elisa-mobile.fi) has quit (Ping timeout: 240 seconds)
-2018-08-22 19:12:23	--	irc: disconnected from server
-2018-08-22 19:12:52	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 19:12:52	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 19:12:52	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 19:12:52	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
-2018-08-22 19:12:58	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 19:13:22	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
-2018-08-22 19:33:24	-->	birdzhang (~quassel@14.23.164.60) has joined #sailfishos-porters
-2018-08-22 19:44:22	--	irc: disconnected from server
-2018-08-22 19:44:28	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 19:44:28	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 19:44:28	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 19:44:28	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
-2018-08-22 19:44:33	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 20:21:27	--	irc: disconnected from server
-2018-08-22 20:25:47	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 20:25:47	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 20:25:47	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 20:25:47	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
-2018-08-22 20:25:52	--	irc: disconnected from server
-2018-08-22 20:27:51	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 20:27:51	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 20:27:51	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 20:27:51	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
-2018-08-22 20:27:57	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 20:29:51	<--	eekkelund (eetukah@Maemo/community/council/eekkelund) has quit (*.net *.split)
-2018-08-22 20:30:07	--	irc: disconnected from server
-2018-08-22 20:32:06	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 20:32:06	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-22 20:32:06	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-22 20:32:06	--	Channel #sailfishos-porters: 70 nicks (0 ops, 0 voices, 70 normals)
-2018-08-22 20:32:10	--	Channel created on Mon, 26 May 2014 06:34:44
-2018-08-22 20:47:32	➡️	psachin (~psachin@103.51.233.51) has joined #sailfishos-porters
-2018-08-22 20:50:42		irc: disconnected from server
-2018-08-22 20:50:45	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 21:31:39		irc: disconnected from server
-2018-08-22 21:31:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 21:44:30		irc: disconnected from server
-2018-08-22 21:44:31	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 23:01:07	⬅️	spiiroin (~spiiroin@82-203-144-8.bb.dnainternet.fi) has quit (Ping timeout: 260 seconds)
-2018-08-22 23:20:17	⬅️	doniks (~doniks@2001:980:8522:1:2d7b:dcf8:113d:bc68) has quit (Ping timeout: 264 seconds)
-2018-08-22 23:32:08	➡️	echo_salik (~salik@39.50.144.194) has joined #sailfishos-porters
-2018-08-22 23:37:17	⬅️	echo_salik (~salik@39.50.144.194) has quit (Ping timeout: 260 seconds)
-2018-08-22 23:37:17	➡️	spiiroin (~spiiroin@2001:998:2a:dead:6d7a:2144:ebd4:1b4d) has joined #sailfishos-porters
-2018-08-22 23:37:32	➡️	echo_salik (~salik@39.50.210.34) has joined #sailfishos-porters
-2018-08-22 23:37:38	echo_salik	mal i felt bad the way i left. you did nothing but help me out. I am realy sorry for any problems, fustration or greviences i have caused. mal, you and r0kk3rz have helped me out a lot and i am sincerely thankful for that. I never meant to intentionally annoy you and i felt really bad. you guys were just helping.
-2018-08-22 23:42:10	Mister_Magister	XD
-2018-08-22 23:43:16	Mister_Magister	My theory got even more proof xD
-2018-08-22 23:44:26	➡️	lolek (~lolek@unaffiliated/marcin) has joined #sailfishos-porters
-2018-08-22 23:44:41	⬅️	echo_salik (~salik@39.50.210.34) has quit (Ping timeout: 272 seconds)
-2018-08-22 23:45:48	➡️	echo_salik (~salik@39.50.171.135) has joined #sailfishos-porters
-2018-08-22 23:50:53	⬅️	echo_salik (~salik@39.50.171.135) has quit (Ping timeout: 264 seconds)
-2018-08-22 23:52:14	➡️	echo_salik (~salik@39.50.251.18) has joined #sailfishos-porters
-2018-08-22 23:53:21	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-22 23:53:39	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-22 23:55:44		irc: disconnected from server
-2018-08-22 23:56:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-22 23:57:26	⬅️	echo_salik (~salik@39.50.251.18) has quit (Ping timeout: 255 seconds)
-2018-08-23 00:51:45	➡️	murray (~murray@dyndsl-089-166-168-055.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-23 01:04:00		irc: disconnected from server
-2018-08-23 01:04:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 01:07:26	➡️	Thaodan (~Thaodan@v22017125432358271.powersrv.de) has joined #sailfishos-porters
-2018-08-23 01:10:12	➡️	echo_salik (~salik@39.50.163.187) has joined #sailfishos-porters
-2018-08-23 01:12:09	echo_salik	after following through instructions (thanks mal and r0kk3rz) i have an installable zip which now i am installing via TWRP. Installtion completed as i wsa typing this. Rebooting/
-2018-08-23 01:13:31	echo_salik	i am mi logo and RNDIS (or whatever) is up.
-2018-08-23 01:16:16	T4	<abhishek_0> Can you telnet into device ?
-2018-08-23 01:16:37	echo_salik	no but when i try ssh it asks for password
-2018-08-23 01:17:00	T4	<abhishek_0> You must be able to telnet atleast
-2018-08-23 01:18:03	echo_salik	im getting no route to host... with this command: telnet 192.168.2.15 2323
-2018-08-23 01:18:48	echo_salik	pinging 192.168.2.15 returns Destination Host Unreachable
-2018-08-23 01:20:20	echo_salik	whereas pinging 192.168.2.1 succeeds
-2018-08-23 01:24:44	⬅️	echo_salik (~salik@39.50.163.187) has quit (Ping timeout: 255 seconds)
-2018-08-23 01:26:48	➡️	masya_ (~masya_@78.111.190.5) has joined #sailfishos-porters
-2018-08-23 01:31:25	⬅️	masya_ (~masya_@78.111.190.5) has quit (Ping timeout: 256 seconds)
-2018-08-23 01:36:26	➡️	echo_salik (~salik@39.50.233.44) has joined #sailfishos-porters
-2018-08-23 01:36:41	echo_salik	i get telnet but as soon as i do, it reboots
-2018-08-23 01:37:34	echo_salik	so i think this is the command to run: ln -s /dev/null /etc/systemd/system/ofono.service
-2018-08-23 01:37:37	echo_salik	and i ran it...
-2018-08-23 01:37:40	echo_salik	still reboots\
-2018-08-23 01:42:17	⬅️	echo_salik (~salik@39.50.233.44) has quit (Ping timeout: 255 seconds)
-2018-08-23 01:43:59	➡️	echo_salik (~salik@39.50.159.179) has joined #sailfishos-porters
-2018-08-23 01:44:35	echo_salik	when slight a drizzle causes my internet connection to fail again and again -.-
-2018-08-23 01:53:30	➡️	sledges (~sleleiva@unaffiliated/sledgeas) has joined #sailfishos-porters
-2018-08-23 01:59:37	echo_salik	ok... im in telnet now... no reboots... (reflashed)
-2018-08-23 02:01:41	sledges	dr_gogeta86: r0kk3rz: o/
-2018-08-23 02:02:32	r0kk3rz	echo_salik: ok so whats the current story?
-2018-08-23 02:03:05	echo_salik	well i am working through the document and allowing internet access to the device
-2018-08-23 02:03:22	r0kk3rz	any particular reason?
-2018-08-23 02:03:51	echo_salik	9.3.3 Get connected < is this optional?
-2018-08-23 02:03:57	r0kk3rz	more or less
-2018-08-23 02:04:15	echo_salik	oh...
-2018-08-23 02:05:12	echo_salik	well... i have internet on my device now...
-2018-08-23 02:05:17	➡️	ghosalmartin (~mgrover@90.216.150.198) has joined #sailfishos-porters
-2018-08-23 02:05:45	r0kk3rz	hooray
-2018-08-23 02:05:47	echo_salik	so i should now go to modifications and patches?
-2018-08-23 02:06:09	sledges	PSA: sfos community collab @ #mer-meeting happening ATM (at-the-moment)
-2018-08-23 02:06:30	r0kk3rz	echo_salik: well, do you have anything on the screen?
-2018-08-23 02:06:45	echo_salik	just mi logo
-2018-08-23 02:06:57	echo_salik	like when you get when booting
-2018-08-23 02:06:59	r0kk3rz	echo_salik: this is usually the time where the hadk stops being that useful, and we need to debug why stuff doesnt work
-2018-08-23 02:07:14	echo_salik	oh
-2018-08-23 02:07:39	⬅️	ghosalmartin (~mgrover@90.216.150.198) has quit (Read error: Connection reset by peer)
-2018-08-23 02:08:09	echo_salik	r0kk3rz: do i need to run tests? like test_gps etc?
-2018-08-23 02:08:46	r0kk3rz	start with the screen
-2018-08-23 02:09:06	r0kk3rz	so check journalctl and make sure droid-hal-init finished ok
-2018-08-23 02:09:34	r0kk3rz	and then test_hwcomposer, theres some env variables that need to be set for that
-2018-08-23 02:10:03	echo_salik	ok... testing journalctl
-2018-08-23 02:12:28	echo_salik	r0kk3rz, journalctl is big...should i use grep?
-2018-08-23 02:15:14	r0kk3rz	just reboot and grab it shortly after boot
-2018-08-23 02:15:59	echo_salik	ok... BTW greping showed it started but nothing related to finishing... rebooting
-2018-08-23 02:16:59	➡️	masya_ (~masya_@185.229.234.33) has joined #sailfishos-porters
-2018-08-23 02:17:40	masya_	Is it possible to enable support for CDMA networks in SFOS?
-2018-08-23 02:23:08	echo_salik	r0kk3rz: this is something i see repeatedly: https://hastebin.com/ezihafitez.sql
-2018-08-23 02:25:06	echo_salik	the ony finished words are for systemd saying: "Startup finished in 196ms" and "Startup finished in 7.130s (kernel) + 1min 929ms (userspace) = 1min 8.059s"
-2018-08-23 02:25:34	➡️	naidgel (~naidgel@95.47.252.126) has joined #sailfishos-porters
-2018-08-23 02:30:53	⬅️	murray (~murray@dyndsl-089-166-168-055.ewe-ip-backbone.de) has quit (Ping timeout: 255 seconds)
-2018-08-23 02:43:41	naidgel	Good afternoon! When building rpm, the problem "make [1]: *** No rule to make target` dsa_sig.o ', needed by `mkbootimg'. Stop." Full log https://pastebin.com/ChnrtN3x. How to fix it?
-2018-08-23 02:43:45	⬅️	echo_salik (~salik@39.50.159.179) has quit (Ping timeout: 252 seconds)
-2018-08-23 02:48:15	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-23 02:48:34	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-23 02:50:14	⬅️	masya_ (~masya_@185.229.234.33) has quit (Ping timeout: 255 seconds)
-2018-08-23 03:09:54	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 272 seconds)
-2018-08-23 03:12:32	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-23 03:17:25	➡️	aa13q (~aa13q@92.241.120.155) has joined #sailfishos-porters
-2018-08-23 03:28:13	➡️	echo_salik (~salik@39.50.133.96) has joined #sailfishos-porters
-2018-08-23 03:35:16	➡️	elros1 (~quassel@2a02:a315:e040:3a00:283a:fd72:dfdb:8602) has joined #sailfishos-porters
-2018-08-23 04:01:56	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Ping timeout: 268 seconds)
-2018-08-23 04:02:38	echo_salik	hey r0kk3rz...
-2018-08-23 04:03:47	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Ping timeout: 268 seconds)
-2018-08-23 04:06:13	r0kk3rz	echo_salik: whats up?
-2018-08-23 04:07:04	echo_salik	r0kk3rz: i dont see a finished hal-init
-2018-08-23 04:07:21	r0kk3rz	yeah that error you posted will be part of that
-2018-08-23 04:07:27	r0kk3rz	stop that dpmd service from starting
-2018-08-23 04:07:30	r0kk3rz	i dont think we need it
-2018-08-23 04:07:56	echo_salik	ok...
-2018-08-23 04:09:01	echo_salik	r0kk3rz: how do you stop services in this? using systemctl? because i am not able to use `service` cmd
-2018-08-23 04:10:09	echo_salik	r0kk3rz: Failed to stop dpmd.service: Unit dpmd.service not loaded.
-2018-08-23 04:10:50	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-23 04:11:25	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-23 04:12:56	r0kk3rz	dont stop it, stop it from starting
-2018-08-23 04:13:05	r0kk3rz	its clearly crashing, and so not running
-2018-08-23 04:13:16	r0kk3rz	its also an android service, so systemd knows nothing about it
-2018-08-23 04:13:53	echo_salik	oh... how'd i stop it from starting?
-2018-08-23 04:14:13	r0kk3rz	it'll be in the androidy stuff somewhere
-2018-08-23 04:15:08	echo_salik	in the device? (just confirming)
-2018-08-23 04:16:13	➡️	krnlyng_ (~frajo@mobile-access-5d6a45-140.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-23 04:17:51	➡️	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
-2018-08-23 04:17:58	echo_salik	r0kk3rz: sorry i dont follow that part...
-2018-08-23 04:26:49	eduardas_m	hello, does anyone know whether there is a usable fork of buteo-mtp without all the platform dependencies?
-2018-08-23 04:27:49	eduardas_m	so that it could be used as a simple stand-alone component I can put on my Yocto-based embedded Linux system
-2018-08-23 04:29:21	mal	r0kk3rz: echo_salik does he have detritus package and the .rc files from nile config repo, both are needed for droid-hal-init
-2018-08-23 04:40:58	echo_salik	mal: how can i check if i have detritus package?
-2018-08-23 04:43:33	mal	it should be in patterns, check the latest hadk pdf, the instruction for that was added back
-2018-08-23 04:46:06	echo_salik	mal: i had added this in adaptation-rolex: - droid-hal-rolex-detritus
-2018-08-23 04:46:18	echo_salik	does placement matter?
-2018-08-23 04:52:47	mal	usually best if it's next to the other droid-hal packages
-2018-08-23 04:52:59	mal	just for consistency
-2018-08-23 04:54:49	echo_salik	mal: i moved it up along with other hal stuff... also i saw sdutils disabled... should i enable it? my phone does support SDCard
-2018-08-23 05:00:49	elros1	you can replace it with udisks2. This is what we use in latest version
-2018-08-23 05:02:25	echo_salik	elros1: so just replace sdcard utils with udisks2?
-2018-08-23 05:03:02	elros1	yes
-2018-08-23 05:03:33	elros1	if you mean 'sd-utils'
-2018-08-23 05:03:53	echo_salik	thanks... and yes i meant sd-utils...
-2018-08-23 05:05:44	➡️	cybette (cybette@unaffiliated/cybette) has joined #sailfishos-porters
-2018-08-23 05:13:05	⬅️	spiiroin (~spiiroin@2001:998:2a:dead:6d7a:2144:ebd4:1b4d) has quit (Ping timeout: 264 seconds)
-2018-08-23 05:13:27	echo_salik	my droid-hal fails with error: File not found: /home/salik/hadk/installroot/usr/lib/libnfc_ndef_nxp.so, like libhybris.spec, do i need to enter this somewhere?
-2018-08-23 05:13:40	echo_salik	my phone doesnt have nfc btw
-2018-08-23 05:21:21	r0kk3rz	echo_salik: try not to cherry pick error, post full logs, it gives much needed context
-2018-08-23 05:36:36	mal	echo_salik: also sorry for yesterday, I was quite rude, I just had a very bad day
-2018-08-23 05:48:05	➡️	NeoChapay (~s.chuplig@85.26.170.34) has joined #sailfishos-porters
-2018-08-23 05:50:41	➡️	spiiroin (~spiiroin@82-203-144-8.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-23 05:54:47	⬅️	rouji (~rouji@x0.at) has quit (Ping timeout: 268 seconds)
-2018-08-23 06:00:21	➡️	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has joined #sailfishos-porters
-2018-08-23 06:37:38	⬅️	eduardas_m (~eduardas@213.197.143.19) has quit (Quit: Konversation terminated!)
-2018-08-23 06:42:38	echo_salik	mal: no dude i am sorry... and i understand im having a bad month... so yeah...
-2018-08-23 06:44:02	echo_salik	r0kk3rz: running this: rpm/dhd/helpers/build_packages.sh -d > https://hastebin.com/enipuqovar.cpp
-2018-08-23 06:45:25	r0kk3rz	echo_salik: what did you do?
-2018-08-23 06:48:03	mal	echo_salik: have you again added something to droid-hal spec that shouldn't be there, I remember you accidentially added the nfc stuff there yesterday, are you sure you removed those
-2018-08-23 06:54:13	echo_salik	mal & r0kk3rz: the last thing i did was with libhybris stuff... I'll post my hal spec
-2018-08-23 06:55:43	echo_salik	my hal spec: https://hastebin.com/fonoqatequ.shell
-2018-08-23 07:00:07	mal	that's not droid-hal spec that is droid-hal-version spec
-2018-08-23 07:00:20	mal	droid-hal spec is in $ANDROID_ROOT/rpm folder
-2018-08-23 07:03:23	➡️	birdzhang_pc (~quassel@223.73.56.236) has joined #sailfishos-porters
-2018-08-23 07:26:08	➡️	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
-2018-08-23 07:28:22	⬅️	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has quit (Quit: Leaving)
-2018-08-23 07:40:26	⬅️	psachin (~psachin@103.51.233.51) has quit (Ping timeout: 240 seconds)
-2018-08-23 07:51:02	➡️	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has joined #sailfishos-porters
-2018-08-23 07:56:43	➡️	murray (~murray@dyndsl-089-166-168-055.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-23 08:27:29	⬅️	segnior (segnior@gateway/shell/xshellz/x-zsuxvryuhmiizhqk) has quit (Ping timeout: 264 seconds)
-2018-08-23 08:28:48	➡️	segnior (segnior@gateway/shell/xshellz/x-ixemrcuihnjcvpmm) has joined #sailfishos-porters
-2018-08-23 08:35:25	⬅️	lolek (~lolek@unaffiliated/marcin) has quit (Ping timeout: 272 seconds)
-2018-08-23 08:39:50	➡️	pseudodev (uid205973@gateway/web/irccloud.com/x-eqgorgamnykuusre) has joined #sailfishos-porters
-2018-08-23 08:41:17	⬅️	segnior (segnior@gateway/shell/xshellz/x-ixemrcuihnjcvpmm) has quit (Ping timeout: 264 seconds)
-2018-08-23 08:44:33	echo_salik	oh
-2018-08-23 08:45:30	echo_salik	yep that was it... i had thoses files listed there... thanks mal
-2018-08-23 08:47:58	➡️	segnior (segnior@gateway/shell/xshellz/x-yofstipufdfcbxko) has joined #sailfishos-porters
-2018-08-23 08:52:51	➡️	ghosalmartin (~mgrover@90.216.134.194) has joined #sailfishos-porters
-2018-08-23 08:57:20	mal	echo_salik: the other things I mentioned are these https://github.com/mer-hybris/droid-config-sony-nile/tree/master/sparse/usr/libexec/droid-hybris/system/etc/init those go to $ANDROID_ROOT/hybris/droid-configs/sparse/usr/libexec/droid-hybris/system/etc/init
-2018-08-23 08:57:32	mal	after which you need to run build_packages.sh -c
-2018-08-23 08:57:35	⬅️	ghosalmartin (~mgrover@90.216.134.194) has quit (Ping timeout: 272 seconds)
-2018-08-23 09:02:27	echo_salik	ok.. thanks mal... :)
-2018-08-23 09:03:24	⬅️	naidgel (~naidgel@95.47.252.126) has quit (Quit: Ухожу я от вас (xchat 2.4.5 или старше))
-2018-08-23 09:03:56	echo_salik	mal forgot to ask, so should i use that init thing as it or edit it as per scenario?
-2018-08-23 09:03:58	mal	there are still some other things you need to get UI
-2018-08-23 09:04:09	mal	which one?
-2018-08-23 09:05:03	echo_salik	this > https://github.com/mer-hybris/droid-config-sony-nile/tree/master/sparse/usr/libexec/droid-hybris/system/etc/init
-2018-08-23 09:05:38	echo_salik	like should i just clone that edit it?
-2018-08-23 09:05:47	mal	you also need to edit the $ANDROID_ROOT/hybris/droid-configs/sparse/var/lib/environment/compositor/droid-hal-device.conf so that the EGL_PLATFORM and QT_QPA_PLATFORM are as defined here https://github.com/mer-hybris/droid-config-sony-nile/blob/master/sparse/var/lib/environment/compositor/droid-hal-device.conf
-2018-08-23 09:06:00	mal	just copy the files, do not clone the repo completelyt
-2018-08-23 09:06:47	echo_salik	ok...
-2018-08-23 09:07:56	mal	unless you clone it to somewhere else and use that local copy to copy the files
-2018-08-23 09:08:22	echo_salik	yeah planning on that...
-2018-08-23 09:09:28	⬅️	eduardas_m (~eduardas@213.197.143.19) has quit (Quit: Konversation terminated!)
-2018-08-23 09:10:04	echo_salik	so my EGL_Platform will be null?
-2018-08-23 09:11:16	echo_salik	and what are QT_QPA_EGLFS_PHYSICAL_WIDTH and height? do i need to change those?
-2018-08-23 09:11:48	mal	you can also set those, those are the physical dimensions of your display
-2018-08-23 09:11:56	mal	in millimeters
-2018-08-23 09:12:38	echo_salik	oh... nice... finally an SI unit
-2018-08-23 09:20:55	echo_salik	mal, r0kk3rz told me to disable service dpmd service becasue it was crashing... should i disable it now or try this bui.d and then disable it i fit fails?
-2018-08-23 09:21:05	echo_salik	*if it fails
-2018-08-23 09:21:17	mal	I have no idea what that is
-2018-08-23 09:22:15	echo_salik	oh... so I'll just build this as is and see
-2018-08-23 09:24:03	⬅️	birdzhang_pc (~quassel@223.73.56.236) has quit (Read error: Connection reset by peer)
-2018-08-23 09:28:54	r0kk3rz	if its still crashing, then disabled it
-2018-08-23 10:37:16	➡️	doniks (~doniks@a80-101-10-222.adsl.xs4all.nl) has joined #sailfishos-porters
-2018-08-23 10:59:11	⬅️	echo_salik (~salik@39.50.133.96) has quit (Ping timeout: 260 seconds)
-2018-08-23 11:01:53		Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
-2018-08-23 11:01:53		Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
-2018-08-23 11:02:00	➡️	XenoPL (~Xeno@159-205-141-228.adsl.inetia.pl) has joined #sailfishos-porters
-2018-08-23 11:08:40	➡️	ohyash (~ohyash@43.224.157.38) has joined #sailfishos-porters
-2018-08-23 11:16:23	⬅️	ohyash (~ohyash@43.224.157.38) has quit (Remote host closed the connection)
-2018-08-23 11:27:10	➡️	echo_salik (~salik@39.50.182.67) has joined #sailfishos-porters
-2018-08-23 11:28:25	echo_salik	mal: i think surfaceflinger is not supported, Available platform plugins are: hwcomposer, minimal, wayland-egl, wayland, so i should have kept it to hwcomposer in my spec or config
-2018-08-23 11:28:45	echo_salik	journal thing: https://hastebin.com/xejidorake.pl
-2018-08-23 11:28:54	r0kk3rz	you're using 15.1?
-2018-08-23 11:29:50	echo_salik	yep
-2018-08-23 11:31:04	mal	echo_salik: did you add the surfaceflinger package to patterns like this https://github.com/mer-hybris/droid-config-sony-nile/blob/master/patterns/jolla-hw-adaptation-h4113.yaml#L44
-2018-08-23 11:31:26	mal	I forgot to tell about that, sorry
-2018-08-23 11:31:29	echo_salik	nope i havent added
-2018-08-23 11:31:55	echo_salik	whats the differnece between them?
-2018-08-23 11:31:57	mal	echo_salik: is droid-hal-init running properly now on the device
-2018-08-23 11:32:11	echo_salik	i should google that -.-
-2018-08-23 11:32:12	mal	different method of communicating
-2018-08-23 11:32:16	echo_salik	oh
-2018-08-23 11:32:27	➡️	_gnus_ (2d785a4e@gateway/web/freenode/ip.45.120.90.78) has joined #sailfishos-porters
-2018-08-23 11:32:41	mal	if you mean qt5-qpa-hwcomposer-plugin and qt5-qpa-surfaceflinger-plugin
-2018-08-23 11:32:42	echo_salik	droid-hal-init - how'd i know about that?
-2018-08-23 11:32:52	mal	ps aux | grep droid-hal-init
-2018-08-23 11:33:12	mal	i.e. checking if the process is running
-2018-08-23 11:36:42	_gnus_	<mal> I could fetch the repository as mentioned in porting guide. Now as you said, I have add Lineage.dependencies to local_manifests. Do I need to add these dependencies to $device.xml?
-2018-08-23 11:36:55	⬅️	echo_salik (~salik@39.50.182.67) has quit (Ping timeout: 240 seconds)
-2018-08-23 11:37:12	_gnus_	* I have add = I have to add
-2018-08-23 11:37:31	➡️	echo_salik (~salik@39.50.182.67) has joined #sailfishos-porters
-2018-08-23 11:37:43	echo_salik	i hate my ISP -.-
-2018-08-23 11:38:21	mal	_gnus_: what? you add the repos mentioned in the dependencies files to your local manifest xml file
-2018-08-23 11:39:02	mal	you do not add the dependencies files anywhere
-2018-08-23 11:39:56	_gnus_	ok.
-2018-08-23 11:40:45	_gnus_	I am trying that, will keep you posted on in case of issues. Thanks.
-2018-08-23 11:42:20		irc: disconnected from server
-2018-08-23 11:42:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 11:47:19	echo_salik	mal i got this: root      2055 15.9  0.0  17352  1476 ?        Rs   15:56   0:05 /sbin/droid-hal-init
-2018-08-23 11:47:41	echo_salik	Rs means running right?
-2018-08-23 11:47:48	echo_salik	run state
-2018-08-23 11:47:54	echo_salik	i dont remember
-2018-08-23 11:48:17	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-23 11:48:38	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-23 11:48:41	mal	probably
-2018-08-23 11:48:47	echo_salik	it has top!
-2018-08-23 11:49:12	echo_salik	so it is using 31% cpu
-2018-08-23 11:52:22	echo_salik	oh this has zypper too
-2018-08-23 11:53:21	⬅️	doniks (~doniks@a80-101-10-222.adsl.xs4all.nl) has quit (Remote host closed the connection)
-2018-08-23 11:54:56	mal	output of dmesg, journalctl -a -n10000, systemctl and /usr/libexec/droid-hybris/system/bin/logcat might be useful
-2018-08-23 11:55:08	➡️	lynxis (~lunarius@unaffiliated/lynxis) has joined #sailfishos-porters
-2018-08-23 11:56:21	echo_salik	logcat read failure
-2018-08-23 11:56:56	➡️	doniks (~doniks@2001:980:8522:1:207f:54c9:e4e1:6bf1) has joined #sailfishos-porters
-2018-08-23 11:56:59	mal	ok, then it's not very nice
-2018-08-23 11:57:29	echo_salik	systemctl: https://hastebin.com/iwaqugoxov.cs
-2018-08-23 11:58:05	echo_salik	dpmd is failing
-2018-08-23 11:58:48	echo_salik	i think i'll disable that
-2018-08-23 11:59:42	mal	that looks ok
-2018-08-23 12:01:03	⬅️	greguu (~greguu@unaffiliated/greguu) has quit (Ping timeout: 240 seconds)
-2018-08-23 12:08:06	echo_salik	yaml changes are reflected after build_pachages.sh --config right?
-2018-08-23 12:08:13	mal	yes
-2018-08-23 12:11:33	➡️	rouji (~rouji@x0.at) has joined #sailfishos-porters
-2018-08-23 12:14:16	➡️	greguu (~greguu@unaffiliated/greguu) has joined #sailfishos-porters
-2018-08-23 12:18:16	echo_salik	thanks
-2018-08-23 12:22:18	_gnus_	I found following dependencies, added them to xml. and fetched repo.
-2018-08-23 12:22:19	_gnus_	CyanogenMod
-2018-08-23 12:23:19	_gnus_	./device/motorola/condor/cm.dependencies ./device/motorola/msm8610-common/cm.dependencies ./kernel/motorla/condor/cm.dependencies
-2018-08-23 12:24:00	Mister_Magister	motorola?
-2018-08-23 12:24:03	Mister_Magister	ohhhh which one?
-2018-08-23 12:24:50	_gnus_	condor - Moto E
-2018-08-23 12:26:06	Mister_Magister	first one?
-2018-08-23 12:27:04	echo_salik	mal: is this a troublesome error or just ignoreable? qemu: Unsupported syscall: 311 /sbin/nologin: invalid option -- 'c' Try 'nologin --help' for more information.
-2018-08-23 12:27:11	Mister_Magister	ignore
-2018-08-23 12:27:18	Mister_Magister	it
-2018-08-23 12:27:44	echo_salik	Mister_Magister: thanks...
-2018-08-23 12:27:58	echo_salik	Mister_Magister: BTW you name, ref to Harry Potter?
-2018-08-23 12:28:07	Mister_Magister	 How tf
-2018-08-23 12:28:37	Mister_Magister	i cant see any possible reference so how did you got that? (not that its true cause its not)
-2018-08-23 12:28:43	_gnus_	Mister_Magister - Yes, first one.
-2018-08-23 12:29:18	Mister_Magister	_gnus_: nice i was planning on getting every moto e and add them to my collection (there are LTE variants)
-2018-08-23 12:29:34	Mister_Magister	somewhere in the future ill make port for them :P
-2018-08-23 12:29:43	echo_salik	Minity of Magic's head was called Mr Magistrate (not the name, as in designation) i think... i might be wrong
-2018-08-23 12:29:54	Mister_Magister	ahh
-2018-08-23 12:30:01	Mister_Magister	but no no reference to harry
-2018-08-23 12:30:18	echo_salik	cool
-2018-08-23 12:30:20	_gnus_	Mister_Magister: :D
-2018-08-23 12:30:42	Mister_Magister	_gnus_: just simple question have you ever heard of me?
-2018-08-23 12:30:46	echo_salik	BTW what about this error: Unsupported ancillary data: 1/2
-2018-08-23 12:31:12	_gnus_	Mister_Magister: Ofcourse. I have used your port for MotoG2 .
-2018-08-23 12:31:32	Mister_Magister	oh nice then i dont have to explain why :P
-2018-08-23 12:31:51	Mister_Magister	ps wanna share opinion of that port? would like to add it to webpage
-2018-08-23 12:32:07	Mister_Magister	echo_salik: ignore
-2018-08-23 12:33:01	echo_salik	ok... thanks
-2018-08-23 12:33:26	_gnus_	IMister_Magister: It was excellent work. Which webpage? Should I add testimony to your website?
-2018-08-23 12:34:10	Mister_Magister	nah if you would like to write some opinion on PM i would be thankful. Website is verdanditeam.com
-2018-08-23 12:34:23		irc: disconnected from server
-2018-08-23 12:34:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 12:34:50	***	Buffer Playback...
-2018-08-23 12:34:50	echo_salik	[12:34:26] i have kind of an unrelated question: why is adb push way faster than mtp?
-2018-08-23 12:34:50	***	Playback Complete.
-2018-08-23 12:35:09	Mister_Magister	echo_salik:  cause mtp is shit
-2018-08-23 12:35:33	echo_salik	i lol'ed
-2018-08-23 12:35:52	Mister_Magister	thats true actually xD
-2018-08-23 12:36:04	Mister_Magister	on sfos i use sftp
-2018-08-23 12:36:20	echo_salik	oh so sfos has ssh as well?
-2018-08-23 12:36:33	Mister_Magister	 thats rather obvious?
-2018-08-23 12:36:54	Mister_Magister	mtp doesnt work well with anything. on windows it has tons of bugs on linux mostly doesnt work on osx even installation is hard
-2018-08-23 12:36:59	echo_salik	wrong punctuation: ? > !
-2018-08-23 12:37:15	Mister_Magister	but… thats obvious anyway
-2018-08-23 12:37:57	echo_salik	yeah... i agree
-2018-08-23 12:41:57	Mister_Magister	_gnus_: so… will ya write something on pm?
-2018-08-23 12:43:08	_gnus_	Mister_Magister: Yes. I would rather take some time to remember and articulate my experience. Give me a day. Is that fine?
-2018-08-23 12:43:24	Mister_Magister	sure just dont forget
-2018-08-23 12:43:31	Mister_Magister	i have znc running so any time is great
-2018-08-23 12:44:43	_gnus_	znc in your cellphone?
-2018-08-23 12:44:51	Mister_Magister	znc is irc bouncer
-2018-08-23 12:45:03	Mister_Magister	means im always online and your message will be saved for later view
-2018-08-23 12:45:08	Mister_Magister	so anytime is good :)
-2018-08-23 12:45:37	_gnus_	Ok
-2018-08-23 12:47:05	_gnus_	My ERC in emacs is painful.
-2018-08-23 12:47:33	Mister_Magister	ERC>
-2018-08-23 12:47:34	Mister_Magister	?
-2018-08-23 12:48:43	taixzo	erotic retro computing.
-2018-08-23 12:49:16	Mister_Magister	wut is this
-2018-08-23 12:49:55	taixzo	...erm, thought I was in a different channel there. Ignore me.
-2018-08-23 12:51:12	echo_salik	um... wow
-2018-08-23 12:51:46	⬅️	_gnus_ (2d785a4e@gateway/web/freenode/ip.45.120.90.78) has quit (Ping timeout: 252 seconds)
-2018-08-23 12:51:56	echo_salik	BTW does it use the already installed android i have?
-2018-08-23 12:55:55	echo_salik	because i think i can read my ResurectionRemix OS's prop file
-2018-08-23 12:57:29	Mister_Magister	sfos?
-2018-08-23 12:57:53	echo_salik	from telnet
-2018-08-23 12:58:23	echo_salik	ro.modversion=RR-O-v6.1.0-20180714-rolex-Official
-2018-08-23 12:58:24	Mister_Magister	are you talking about sfos?
-2018-08-23 13:00:18	echo_salik	in telnet after installing sailfish zip i ran: cat /system/build.prop (something like that: i cleared my screen)
-2018-08-23 13:00:33	mal	echo_salik: just to be sure, you do have the same android base version installed on the device as the one you are trying to build sailfish on?
-2018-08-23 13:00:43	Mister_Magister	mal: was about to say that
-2018-08-23 13:00:53	Mister_Magister	im sure he dont
-2018-08-23 13:00:59	echo_salik	nope i havent...
-2018-08-23 13:01:04	Mister_Magister	mal: i won
-2018-08-23 13:01:05	Mister_Magister	xD
-2018-08-23 13:01:22	Mister_Magister	mal: you owe me 5€ :P
-2018-08-23 13:01:29	echo_salik	sorry mal :)
-2018-08-23 13:01:54	mal	echo_salik: you do understand that sailfish uses libraries from the underlying android installation
-2018-08-23 13:02:21	echo_salik	yes... but i didnt read anywhere about installing the android zip...
-2018-08-23 13:02:42	Mister_Magister	isnt it like same thing?
-2018-08-23 13:02:53	Mister_Magister	how do you want to use libraries from not installed android
-2018-08-23 13:02:56	echo_salik	i was at first really confused about this as to why go through all that android stuff if it wont be using it
-2018-08-23 13:03:25	echo_salik	so that android zip will be in out folder?
-2018-08-23 13:03:43	echo_salik	i bet mal is really face-palming right now...
-2018-08-23 13:04:06	Mister_Magister	echo_salik: libssss
-2018-08-23 13:07:41	echo_salik	Mister_Magister: sorry... i dont get it... is there a cm zip file?
-2018-08-23 13:07:49	mal	echo_salik: you first flash the clean android zip you get from lineageos website or somewhere, then just install sailfish zip right after it
-2018-08-23 13:08:34	echo_salik	oh so our kernel changes?
-2018-08-23 13:08:44	echo_salik	oh now i get it
-2018-08-23 13:09:04	echo_salik	im sorry mal...
-2018-08-23 13:09:12	echo_salik	my bad
-2018-08-23 13:09:52		irc: disconnected from server
-2018-08-23 13:10:36	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 13:11:14	mal	echo_salik: you can also just install the android zip now, I think android zip doesn't format userdata parttion and that is where sailfish is
-2018-08-23 13:11:41	echo_salik	thanks... im downloading it
-2018-08-23 13:11:58	echo_salik	hopefully i wont have any dc's
-2018-08-23 13:12:15	Mister_Magister	mal: hi btw hows life going? :P any interesting projects?
-2018-08-23 13:14:26	echo_salik	btw mal wont the android zip flash over boot.img?
-2018-08-23 13:14:58	Mister_Magister	echo_salik: thats why you install cm zip first?
-2018-08-23 13:15:06	mal	echo_salik: good point
-2018-08-23 13:15:32	mal	Mister_Magister: life is bad, as usual
-2018-08-23 13:15:48	Mister_Magister	mal: well sad to hear that :/
-2018-08-23 13:16:17	Mister_Magister	mine is going quite well :P but i dont sleep enough (no time for that)
-2018-08-23 13:16:25	mal	Mister_Magister: I have been doing gnss (i.e. gps and other satellite systems) support for android 8 base
-2018-08-23 13:16:38	Mister_Magister	ahhh nice
-2018-08-23 13:16:42	Mister_Magister	modem still not working?
-2018-08-23 13:16:46	mal	it is
-2018-08-23 13:16:55	Mister_Magister	oh it is? you fixed it already?
-2018-08-23 13:17:35	mal	I didn't fix it, I don't do modem stuff much, you can easily guess who did it
-2018-08-23 13:17:50	echo_salik	Mister_Magister: less sleep has shown corelation to increasing risk of dementia and alzheimers, or early onset of it.
-2018-08-23 13:17:51	Mister_Magister	yeah i mean you in general guys who are working on it
-2018-08-23 13:17:59	Mister_Magister	i guess monich :P
-2018-08-23 13:18:05	mal	who does all ofono related things
-2018-08-23 13:18:41	✴️	Mister_Magister looks at himself and mal after what echo_salik said and its like "oh really?"
-2018-08-23 13:19:02	Mister_Magister	mal: monich
-2018-08-23 13:19:06	mal	ep
-2018-08-23 13:19:12	mal	yep
-2018-08-23 13:19:18	Mister_Magister	:P monich is nice guy
-2018-08-23 13:19:29	Mister_Magister	nice guy monich fixing small modems
-2018-08-23 13:19:50	mal	I just did't want to highlight him without reason
-2018-08-23 13:20:04	mal	now you did it many times :D
-2018-08-23 13:20:14	Mister_Magister	yeah xD
-2018-08-23 13:20:19	Mister_Magister	sorry monich :P
-2018-08-23 13:20:24	Mister_Magister	ooops i did that again xD
-2018-08-23 13:22:07	Mister_Magister	mal: i lately pushed some apps :P didnt worked on porting since some time. btw do you have some time soon to help me with anbox?
-2018-08-23 13:22:19	✴️	echo_salik sings: oops he did it again... he pinged that person... again and again... oh baby baby...
-2018-08-23 13:23:23	mal	Mister_Magister: depends on how I feel
-2018-08-23 13:23:49	Mister_Magister	mal: hmmm thats rather hard to tell
-2018-08-23 13:26:05	Mister_Magister	mal: so i should just ask everyday?
-2018-08-23 13:32:32	r0kk3rz	Mister_Magister: where are you at with anbox?
-2018-08-23 13:33:11	Mister_Magister	r0kk3rz: fixed lib problem but surfaceflinger is still segfaulting
-2018-08-23 13:33:27	r0kk3rz	oh nice
-2018-08-23 13:33:58	Mister_Magister	:P
-2018-08-23 13:34:45	r0kk3rz	i got it 'working' the other day on mine
-2018-08-23 13:34:52	Mister_Magister	:P
-2018-08-23 13:35:21	Mister_Magister	i want to get it working so my brother will be able to game on his phone so ill get back shitwei (huawei) p8lite :P
-2018-08-23 13:39:58	r0kk3rz	ah yes, the chinese puzzle box
-2018-08-23 13:40:35	Mister_Magister	with custom everyting and developers that cant make kernel
-2018-08-23 14:05:48		irc: disconnected from server
-2018-08-23 14:05:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 14:17:13		irc: disconnected from server
-2018-08-23 14:28:22	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 14:48:01		irc: disconnected from server
-2018-08-23 14:49:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 14:53:50	⬅️	pseudodev (uid205973@gateway/web/irccloud.com/x-eqgorgamnykuusre) has quit (Quit: Connection closed for inactivity)
-2018-08-23 15:03:58	⬅️	doniks (~doniks@2001:980:8522:1:207f:54c9:e4e1:6bf1) has quit (Quit: doniks)
-2018-08-23 15:36:27	⬅️	murray (~murray@dyndsl-089-166-168-055.ewe-ip-backbone.de) has quit (Ping timeout: 276 seconds)
-2018-08-23 15:37:19	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:283a:fd72:dfdb:8602) has quit (Remote host closed the connection)
-2018-08-23 17:02:12	⬅️	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Remote host closed the connection)
-2018-08-23 17:21:34	➡️	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-23 17:33:34		irc: disconnected from server
-2018-08-23 17:33:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 18:26:29		irc: disconnected from server
-2018-08-23 18:29:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 19:07:06	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (*.net *.split)
-2018-08-23 19:07:12	⬅️	greguu (~greguu@unaffiliated/greguu) has quit (*.net *.split)
-2018-08-23 19:07:41	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-23 19:07:56	➡️	greguu (~greguu@unaffiliated/greguu) has joined #sailfishos-porters
-2018-08-23 19:46:53	⬅️	redj (~quassel@bchmpq5707w-lp140-01-174-93-219-156.dsl.bell.ca) has quit (*.net *.split)
-2018-08-23 19:46:53	⬅️	kido (~kido@unaffiliated/kido) has quit (*.net *.split)
-2018-08-23 20:15:52		irc: disconnected from server
-2018-08-23 20:17:03	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 20:24:34		irc: disconnected from server
-2018-08-23 20:24:45	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 20:28:42	⬅️	zotan (~zotan@16.34.155.90.in-addr.arpa) has quit (*.net *.split)
-2018-08-23 20:28:44	⬅️	Mikaela (~Mikaela@unaffiliated/mikaela) has quit (*.net *.split)
-2018-08-23 20:28:44	⬅️	lbt (~lbt@Maemo/community/contributor/lbt) has quit (*.net *.split)
-2018-08-23 20:28:45	⬅️	pketo (~pketo@mobile-access-5d6ab8-42.dhcp.inet.fi) has quit (*.net *.split)
-2018-08-23 20:28:46	⬅️	keithzg (~keithzg@gmcl.com) has quit (*.net *.split)
-2018-08-23 20:29:59	➡️	zotan (~zotan@16.34.155.90.in-addr.arpa) has joined #sailfishos-porters
-2018-08-23 20:29:59	➡️	Mikaela (~Mikaela@unaffiliated/mikaela) has joined #sailfishos-porters
-2018-08-23 20:29:59	➡️	lbt (~lbt@Maemo/community/contributor/lbt) has joined #sailfishos-porters
-2018-08-23 20:29:59	➡️	pketo (~pketo@mobile-access-5d6ab8-42.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-23 20:29:59	➡️	keithzg (~keithzg@gmcl.com) has joined #sailfishos-porters
-2018-08-23 20:30:54	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Ping timeout: 240 seconds)
-2018-08-23 20:31:26	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-23 20:31:54	⬅️	SfietKonstantinW (b9c55541@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.85.65) has quit (*.net *.split)
-2018-08-23 20:31:54	⬅️	kimmoli (~kl@194.100.69.195) has quit (*.net *.split)
-2018-08-23 20:31:55	⬅️	jbadiapa (~jubapa@44.red-81-37-143.dynamicip.rima-tde.net) has quit (*.net *.split)
-2018-08-23 20:31:55	⬅️	mal (~mal@dsl-hkibng42-5673df-25.dhcp.inet.fi) has quit (*.net *.split)
-2018-08-23 20:31:56	⬅️	sydney_untangle (~sydney@supertux/sydney) has quit (*.net *.split)
-2018-08-23 20:31:56	⬅️	Dazzozo (~daz@sauria.dazzozo.com) has quit (*.net *.split)
-2018-08-23 20:31:57	⬅️	Gizmokid2005 (~Gizmokid2@dedi2.gizmokid2005.com) has quit (*.net *.split)
-2018-08-23 20:31:57	⬅️	merbot (~supybot@phost1.merproject.org) has quit (*.net *.split)
-2018-08-23 20:31:58	⬅️	nekron (~nekron@noordsee.de) has quit (*.net *.split)
-2018-08-23 20:31:59	⬅️	spiiroin (~spiiroin@82-203-144-8.bb.dnainternet.fi) has quit (*.net *.split)
-2018-08-23 20:32:00	⬅️	saidinesh5 (~quassel@minad.de) has quit (*.net *.split)
-2018-08-23 20:32:01	⬅️	gmoro_ (~gmoro@31.169.96.62) has quit (*.net *.split)
-2018-08-23 20:32:01	⬅️	NeKit (~TheKit@85-95-178-167.saransk.ru) has quit (*.net *.split)
-2018-08-23 20:32:02	⬅️	vup (~vup@46.101.193.235) has quit (*.net *.split)
-2018-08-23 20:32:02	⬅️	taaem_ (~taaem@unaffiliated/taaem) has quit (*.net *.split)
-2018-08-23 20:32:03	⬅️	entil (~mjt@nysv.org) has quit (*.net *.split)
-2018-08-23 20:32:03	⬅️	ced117 (~ced117@opensuse/member/ced117) has quit (*.net *.split)
-2018-08-23 20:32:52	➡️	Guest96408 (~daz@sauria.dazzozo.com) has joined #sailfishos-porters
-2018-08-23 20:42:00	➡️	redj (~quassel@bchmpq5707w-lp140-01-174-93-219-156.dsl.bell.ca) has joined #sailfishos-porters
-2018-08-23 20:49:28	➡️	vup (~vup@46.101.193.235) has joined #sailfishos-porters
-2018-08-23 20:51:35	echo_salik	so logcat is empty
-2018-08-23 20:52:03	echo_salik	i loose telnet as soon as i run any cmd and i cant connect it back
-2018-08-23 20:52:30	➡️	sydney_untangle (~sydney@supertux/sydney) has joined #sailfishos-porters
-2018-08-23 20:52:34	echo_salik	and then i get connection refused by host
-2018-08-23 20:52:40	echo_salik	on reconnect
-2018-08-23 21:02:41	echo_salik	i still get logcat read failiure... i guess the empty part was due to disconnect and reconnects
-2018-08-23 21:04:42	echo_salik	journal https://hastebin.com/lopobutana.coffeescript
-2018-08-23 21:05:48	⬅️	XenoPL (~Xeno@159-205-141-228.adsl.inetia.pl) has quit (*.net *.split)
-2018-08-23 21:05:56	⬅️	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (*.net *.split)
-2018-08-23 21:06:00	⬅️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has quit (*.net *.split)
-2018-08-23 21:06:01	⬅️	duncan^ (~duncan@edinhacklab/member/dguthrie) has quit (*.net *.split)
-2018-08-23 21:06:33	➡️	XenoPL (~Xeno@159-205-141-228.adsl.inetia.pl) has joined #sailfishos-porters
-2018-08-23 21:07:47	echo_salik	systemctl: https://hastebin.com/pamufefawi.cs
-2018-08-23 21:07:54	➡️	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-23 21:07:54	➡️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has joined #sailfishos-porters
-2018-08-23 21:07:54	➡️	duncan^ (~duncan@edinhacklab/member/dguthrie) has joined #sailfishos-porters
-2018-08-23 21:11:28	⬅️	echo_salik (~salik@39.50.182.67) has quit (Remote host closed the connection)
-2018-08-23 21:17:21	➡️	kimmoli (~kl@194.100.69.195) has joined #sailfishos-porters
-2018-08-23 21:30:52		irc: disconnected from server
-2018-08-23 21:39:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 21:41:59		irc: disconnected from server
-2018-08-23 21:46:57	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 21:51:38		irc: disconnected from server
-2018-08-23 21:51:52	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 21:57:39	⬅️	XenoPL (~Xeno@159-205-141-228.adsl.inetia.pl) has quit (Ping timeout: 252 seconds)
-2018-08-23 22:21:59		irc: disconnected from server
-2018-08-23 22:22:35	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 22:43:55		irc: disconnected from server
-2018-08-23 22:44:17	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 22:45:47		irc: disconnected from server
-2018-08-23 22:46:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 23:08:58		irc: disconnected from server
-2018-08-23 23:11:46	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-23 23:32:09	➡️	lolek (~lolek@unaffiliated/marcin) has joined #sailfishos-porters
-2018-08-23 23:39:55	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-23 23:40:14	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-23 23:48:32		irc: disconnected from server
-2018-08-23 23:55:18	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 00:02:39	➡️	naidgel (~naidgel@95.47.252.126) has joined #sailfishos-porters
-2018-08-24 00:03:49	naidgel	Hi! When assembling the libhybris, I get the error "wifi.c: 44: 39: error: conflicting types for 'wifi_command'. How to fix it? My device mako.
-2018-08-24 00:20:43	rydare	i probably won't be much help, but was there a section where you decided which wifi handler you were going to use
-2018-08-24 00:22:47	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-24 00:23:39	naidgel	Can not much more detail about this section?
-2018-08-24 00:25:51	rydare	i've never done this before so i can't really be much help
-2018-08-24 00:26:17	rydare	is there not prebuilt images for mako?  or are you trying to do it for experience
-2018-08-24 00:26:30	rydare	hopefully someone comes along that can help, like mal.  
-2018-08-24 00:26:39	rydare	should be time to wake up in europe soon
-2018-08-24 00:31:56	naidgel	Thank you! I'm trying to assemble for mako to gain experience for myself.
-2018-08-24 00:50:40	➡️	pseudodev (uid205973@gateway/web/irccloud.com/x-uyeprslwxnbvblrg) has joined #sailfishos-porters
-2018-08-24 00:52:05	➡️	saidinesh5 (~quassel@138.201.213.18) has joined #sailfishos-porters
-2018-08-24 01:03:37	⬅️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
-2018-08-24 01:16:29	➡️	spiiroin (~spiiroin@2001:998:2a:dead:6d7a:2144:ebd4:1b4d) has joined #sailfishos-porters
-2018-08-24 01:44:37	➡️	ghosalmartin (~mgrover@90.216.150.195) has joined #sailfishos-porters
-2018-08-24 01:49:41	⬅️	ghosalmartin (~mgrover@90.216.150.195) has quit (Ping timeout: 268 seconds)
-2018-08-24 01:52:08	➡️	murray (~murray@dyndsl-089-166-185-178.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-24 02:12:08	➡️	elros1 (~quassel@2a02:a315:e040:3a00:3d91:4a25:afb9:8763) has joined #sailfishos-porters
-2018-08-24 02:32:59	➡️	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
-2018-08-24 02:43:39	⬅️	duncan^ (~duncan@edinhacklab/member/dguthrie) has quit (Quit: K-lined: Don't email support.)
-2018-08-24 02:45:22	➡️	duncan^ (~duncan@edinhacklab/member/dguthrie) has joined #sailfishos-porters
-2018-08-24 02:45:56	⬅️	birdzhang (~quassel@14.23.164.60) has quit (Ping timeout: 240 seconds)
-2018-08-24 02:48:37	➡️	mal (~mal@dsl-hkibng42-5673df-25.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-24 03:05:23	⬅️	naidgel (~naidgel@95.47.252.126) has quit (Quit: Ухожу я от вас (xchat 2.4.5 или старше))
-2018-08-24 03:25:48	spiiroin	review/testing appreciated: https://git.merproject.org/mer-core/buteo-mtp/merge_requests/14 https://git.merproject.org/mer-core/usb-moded/merge_requests/36
-2018-08-24 03:25:48	spiiroin	^ configfs support for usb moded (xa2) & some generic fixes for mtp etc
-2018-08-24 03:44:02	➡️	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has joined #sailfishos-porters
-2018-08-24 03:44:19	➡️	birdzhang (~quassel@14.23.164.60) has joined #sailfishos-porters
-2018-08-24 03:45:38	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:3d91:4a25:afb9:8763) has quit (Remote host closed the connection)
-2018-08-24 03:45:53	➡️	ghosalmartin (~mgrover@90.216.150.198) has joined #sailfishos-porters
-2018-08-24 03:55:40	ghosalmartin	next device for sfos porting is pixel xl :P ive had enough of bashing my head for the mi mix 2
-2018-08-24 03:58:52	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 260 seconds)
-2018-08-24 04:03:42	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 04:17:24	Mister_Magister	ghosalmartin: only 100€ left for zenfone 5z :P
-2018-08-24 04:17:53	⬅️	aa13q (~aa13q@92.241.120.155) has quit (Ping timeout: 268 seconds)
-2018-08-24 04:18:21	ghosalmartin	Mister_Magister, I spent the same on the xl :P
-2018-08-24 04:18:46	Mister_Magister	ghosalmartin: what? :P
-2018-08-24 04:19:13	ghosalmartin	Mister_Magister, i spent 100 euros on the pixel xl..give or take :P
-2018-08-24 04:19:14	Mister_Magister	ghosalmartin: i mean this https://www.paypal.com/pools/c/85ElT8elau
-2018-08-24 04:19:21	Mister_Magister	only 100€ leeft to collect
-2018-08-24 04:19:23	Mister_Magister	device isnt 100€
-2018-08-24 04:20:09	ghosalmartin	ahhh :P
-2018-08-24 04:20:20	ghosalmartin	on the down side it seems google are rolling the recovery with the boot image *sigh*
-2018-08-24 04:20:26	✴️	Mister_Magister hopes ghosalmartin donates
-2018-08-24 04:26:50	ghosalmartin	we'll see
-2018-08-24 04:36:21	kimmoli	hah. can't donate... i would have given 10 PLN (whatever that is)
-2018-08-24 05:42:23	➡️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-24 05:45:09	⬅️	spiiroin (~spiiroin@2001:998:2a:dead:6d7a:2144:ebd4:1b4d) has quit (Quit: Leaving)
-2018-08-24 05:57:03	➡️	taaem (~taaem@unaffiliated/taaem) has joined #sailfishos-porters
-2018-08-24 06:07:36	➡️	spiiroin (~spiiroin@82-203-144-8.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-24 06:25:42	⬅️	pseudodev (uid205973@gateway/web/irccloud.com/x-uyeprslwxnbvblrg) has quit (Quit: Connection closed for inactivity)
-2018-08-24 06:27:05	⬅️	murray (~murray@dyndsl-089-166-185-178.ewe-ip-backbone.de) has quit (Ping timeout: 252 seconds)
-2018-08-24 06:30:19	⬅️	ghosalmartin (~mgrover@90.216.150.198) has quit (Ping timeout: 272 seconds)
-2018-08-24 06:32:04	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Quit: bye)
-2018-08-24 06:32:04	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Quit: I died, lol)
-2018-08-24 06:32:20	⬅️	eduardas_m (~eduardas@213.197.143.19) has quit (Quit: Konversation terminated!)
-2018-08-24 06:32:49	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 06:33:30	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 06:34:38	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Client Quit)
-2018-08-24 06:34:38	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Client Quit)
-2018-08-24 06:49:50	➡️	ghosalmartin (~mgrover@90.216.134.197) has joined #sailfishos-porters
-2018-08-24 06:51:12	ghosalmartin	anyone seen this error before when attempting to build hybris-15.1
-2018-08-24 06:51:18	ghosalmartin	error: bionic/libc/Android.bp:1142:20: unrecognized property "arch.arm64.kryo300"
-2018-08-24 06:51:32	ghosalmartin	is the repo just outta date and needs updating with upstream?
-2018-08-24 06:51:48	mal	could be
-2018-08-24 06:52:11	mal	rebase might be a good idea
-2018-08-24 06:52:58	ghosalmartin	ill give it a quick look ta :)
-2018-08-24 06:58:51	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 06:59:02	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Client Quit)
-2018-08-24 06:59:44	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:00:26	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:05:23	➡️	Gizmokid2005 (~Gizmokid2@dedi2.gizmokid2005.com) has joined #sailfishos-porters
-2018-08-24 07:10:23	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Quit: bye)
-2018-08-24 07:10:23	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Quit: I died, lol)
-2018-08-24 07:11:25	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:11:49	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:13:23	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 272 seconds)
-2018-08-24 07:17:54	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Ping timeout: 252 seconds)
-2018-08-24 07:17:55	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Ping timeout: 244 seconds)
-2018-08-24 07:18:14	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:18:48	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:23:36	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Quit: bye)
-2018-08-24 07:23:37	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Quit: I died, lol)
-2018-08-24 07:24:18	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:24:44	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 07:25:02	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:29:47	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-24 07:30:25	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 07:33:27	⬅️	Keij0 (~Keij0@znc.verdanditeam.com) has quit (Quit: I died, lol)
-2018-08-24 07:33:27	⬅️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has quit (Quit: bye)
-2018-08-24 07:34:09	➡️	Keij0 (~Keij0@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:34:50	➡️	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
-2018-08-24 07:34:53	➡️	Mister_Magister (~Mister_Ma@znc.verdanditeam.com) has joined #sailfishos-porters
-2018-08-24 07:35:17	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 264 seconds)
-2018-08-24 07:44:34	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 08:00:35	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-24 08:01:34	⬅️	lolek (~lolek@unaffiliated/marcin) has quit (Quit: Leaving.)
-2018-08-24 08:17:45	⬅️	eduardas_m (~eduardas@213.197.143.19) has quit (Quit: Konversation terminated!)
-2018-08-24 08:34:17	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 08:35:46	➡️	Piece_Maker (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 08:39:31	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 272 seconds)
-2018-08-24 08:43:27	⬅️	Piece_Maker (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 268 seconds)
-2018-08-24 08:44:42	➡️	murray (~murray@dyndsl-089-166-185-178.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-24 08:48:37	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 08:56:37	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 272 seconds)
-2018-08-24 09:01:38	⬅️	ghosalmartin (~mgrover@90.216.134.197) has quit (Ping timeout: 252 seconds)
-2018-08-24 09:06:14	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 09:10:59	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-24 09:14:34	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 09:15:40	➡️	Piece_Maker (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 09:19:14	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-24 09:19:14		Piece_Maker is now known as Acou_Bass
-2018-08-24 09:23:38	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-24 09:42:39	➡️	demonaxsh (uid301684@gateway/web/irccloud.com/x-awfplumzatgyuzqi) has joined #sailfishos-porters
-2018-08-24 09:53:22	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-24 10:09:19	➡️	_gnus_ (~user@117.247.51.7) has joined #sailfishos-porters
-2018-08-24 10:10:14	⬅️	_gnus_ (~user@117.247.51.7) has left #sailfishos-porters
-2018-08-24 10:12:54	➡️	wiktorek140 (~wiktorek1@ciy254.neoplus.adsl.tpnet.pl) has joined #sailfishos-porters
-2018-08-24 10:54:27	➡️	_gnus_ (75f73307@gateway/web/freenode/ip.117.247.51.7) has joined #sailfishos-porters
-2018-08-24 10:56:37	➡️	krnlyng (~frajo@mobile-access-5d6a45-140.dhcp.inet.fi) has joined #sailfishos-porters
-2018-08-24 11:14:33	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-24 11:14:56	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-24 11:20:42		irc: disconnected from server
-2018-08-24 12:01:34	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 12:01:34	***	Buffer Playback...
-2018-08-24 12:01:34	echo_salik	[11:26:53] um why are ther no log for today's chat?
-2018-08-24 12:01:34	mal	[11:27:28] echo_salik: because the logging bot dropped from the channel
-2018-08-24 12:01:34	echo_salik	[11:27:41] oh...
-2018-08-24 12:01:34	echo_salik	[11:27:49] so should i report my logs?
-2018-08-24 12:01:34	mal	[11:27:51] but there hasn't been much discussion today
-2018-08-24 12:01:34	kimmoli	[11:28:25] mal: btw, tbr used some other method than +r to prevent spam
-2018-08-24 12:01:34	echo_salik	[11:28:28] i posted them around 3 AM utc
-2018-08-24 12:01:34	mal	[11:30:36] echo_salik: at least I can't see the logs in my backlog, I also was away for some time because my irc client failed to join the channel
-2018-08-24 12:01:34	vknecht	[11:30:55] https://hastebin.com/lopobutana.coffeescript and https://hastebin.com/pamufefawi.cs ?
-2018-08-24 12:01:34	echo_salik	[11:31:01] yep
-2018-08-24 12:01:34	echo_salik	[11:32:21] pamu one is systemctl and lopo is journalctl
-2018-08-24 12:01:34	mal	[11:36:33] those don't work for me
-2018-08-24 12:01:34	echo_salik	[11:37:01] yep they dont work... i'll recreate
-2018-08-24 12:01:34	echo_salik	[11:44:45] is there a way to pull files from this shell?
-2018-08-24 12:01:34	echo_salik	[11:45:28] ok... my phone just rebooted thrice... after getting ssh
-2018-08-24 12:01:34	echo_salik	[11:45:36] *telnet
-2018-08-24 12:01:34	piggz	[11:46:27] mal: hopefully if what im trying works, i wont need to build from my own branch of libhybris
-2018-08-24 12:01:34	mal	[11:47:12] piggz: what are you trying to do?
-2018-08-24 12:01:34	piggz	[11:47:37] mal: simple, somone showed me this commit on another xiaomi device https://github.com/Loup-ROM/android_vendor_xiaomi_santoni/commit/a939ceea19dafce0b4e377497a22a1b55fe61271
-2018-08-24 12:01:34	piggz	[11:48:06] so, hopfully wont nee htc versions, and therfore, carry patches to hybris for the extra htc logging calls that these libs use
-2018-08-24 12:01:34	echo_salik	[11:48:18] mal systemctl: https://paste.ubuntu.com/p/z5DNfNbnPJ/
-2018-08-24 12:01:34	echo_salik	[11:49:17] mal: my phone's LED indicator was on...
-2018-08-24 12:01:34	piggz	[11:50:19] mal: those libs seem to do the trick, at least no worse, still no compass
-2018-08-24 12:01:34	echo_salik	[11:50:40] dmesg: https://paste.ubuntu.com/p/4DWrHzqygf/
-2018-08-24 12:01:34	mal	[11:51:13] binder errors look bad, are you sure you have the correct android base installed?
-2018-08-24 12:01:34	echo_salik	[11:51:59] yep LineageOS 15.1... wait... i'll share the link...
-2018-08-24 12:01:34	echo_salik	[11:52:27] journal: https://paste.ubuntu.com/p/jBtTTTknqc/
-2018-08-24 12:01:34	piggz	[11:53:07] rinigus: liking the smoothness of pure maps
-2018-08-24 12:01:34	echo_salik	[11:53:18] the rom im using: https://forum.xda-developers.com/redmi-4a/development/rom-lineageos-15-1-xiaomi-redmi-4a-t3778316
-2018-08-24 12:01:34	echo_salik	[11:53:59] ROM OS Version: 8.1 Oreo, ROM Kernel: Linux 3.18.71
-2018-08-24 12:01:34	echo_salik	[11:54:22] im using this rom's kernel and device stuff
-2018-08-24 12:01:34	mal	[11:55:06] echo_salik: you seem to have booted the device incorrectly, by using usb cable, it ended up in actdead mode i.e. charging mode
-2018-08-24 12:01:34	echo_salik	[11:55:47] wait... so that's wrong?
-2018-08-24 12:01:34	echo_salik	[11:55:58] i meant all this time im doing this
-2018-08-24 12:01:34	echo_salik	[11:56:09] plugging in the USB cable
-2018-08-24 12:01:34	piggz	[11:56:11] mal: libhybris master is considered safe these days correct?
-2018-08-24 12:01:34	echo_salik	[12:00:24] mal: i only have port 22 open after powering on
-2018-08-24 12:01:34	echo_salik	[12:00:48] i can ping 192.168.2.15
-2018-08-24 12:01:34	***	Playback Complete.
-2018-08-24 12:01:34	echo_salik	an i ran nmap -p- 192.168.2.15 when I could not connect to telnet
-2018-08-24 12:02:16	mal	echo_salik: you need to boot it properly, using power button
-2018-08-24 12:02:23	mal	piggz: should be
-2018-08-24 12:02:32	➡️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
-2018-08-24 12:04:34	echo_salik	ok...  powering off from twrp and then powering up worked.
-2018-08-24 12:04:42	echo_salik	so i should recreate logs?
-2018-08-24 12:06:23	mal	yes
-2018-08-24 12:09:46	⬅️	echo_salik (~salik@39.50.234.188) has quit (Ping timeout: 272 seconds)
-2018-08-24 12:15:42	⬅️	piggz (~piggz@95.151.134.47) has quit (Read error: No route to host)
-2018-08-24 12:20:43	⬅️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has quit (Ping timeout: 252 seconds)
-2018-08-24 12:22:23	➡️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-24 12:31:45		irc: disconnected from server
-2018-08-24 12:32:06	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 12:55:53	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-24 12:59:44	⬅️	krnlyng (~frajo@mobile-access-5d6a45-140.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
-2018-08-24 13:24:29	➡️	pseudodev (uid205973@gateway/web/irccloud.com/x-rvwaaussujcqqqzm) has joined #sailfishos-porters
-2018-08-24 13:39:38	➡️	piggz (~piggz@95.151.33.70) has joined #sailfishos-porters
-2018-08-24 13:40:09	piggz	mal: weird, compass worked for a moment then .... rebooted and now doesnt
-2018-08-24 13:40:16	piggz	still, no worse tho
-2018-08-24 13:41:38	mal	hmm
-2018-08-24 13:46:27	piggz	mal: a user once claimed it worked once for them too
-2018-08-24 13:53:51	➡️	nekron (~nekron@noordsee.de) has joined #sailfishos-porters
-2018-08-24 13:55:36	⬅️	vakkov_ (~vakko@84.40.90.59) has quit (Ping timeout: 260 seconds)
-2018-08-24 13:57:17	⬅️	piggz (~piggz@95.151.33.70) has quit (Ping timeout: 244 seconds)
-2018-08-24 14:07:20	ghosalmartin	anyone had any phones with 2 boot slots
-2018-08-24 14:07:26	ghosalmartin	cant seem to get kernel bootng
-2018-08-24 14:11:22	mal	two boot slots should't matter
-2018-08-24 14:15:12	ghosalmartin	i cant seem to make the sfos kernel flash and stay flashed :P
-2018-08-24 14:16:28	r0kk3rz	wont stay flashed?
-2018-08-24 14:16:52	ghosalmartin	the console-ramoops shows as the kernel before
-2018-08-24 14:16:59	ghosalmartin	is there nayway to clear it
-2018-08-24 14:17:12	ghosalmartin	havent had any luck recently with these devices
-2018-08-24 14:49:27	ghosalmartin	everyone loves a garbled dmesg :P
-2018-08-24 14:52:04	⬅️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Ping timeout: 264 seconds)
-2018-08-24 14:52:15	mal	I have successfully used a device with two boot slots
-2018-08-24 15:44:54	➡️	murray (~murray@dyndsl-089-166-185-178.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-24 15:48:52	⬅️	wiktorek140 (~wiktorek1@ciy254.neoplus.adsl.tpnet.pl) has quit (Remote host closed the connection)
-2018-08-24 16:26:17		irc: disconnected from server
-2018-08-24 16:39:12	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 16:39:12	***	Buffer Playback...
-2018-08-24 16:39:12	thardin	[16:36:51] hullo. I got a galaxy s5 from a friendo that I'm looking into liberating. reading up currently, might drop questions later
-2018-08-24 16:39:12	***	Playback Complete.
-2018-08-24 16:47:39	⬅️	pseudodev (uid205973@gateway/web/irccloud.com/x-rvwaaussujcqqqzm) has quit (Quit: Connection closed for inactivity)
-2018-08-24 17:36:20	⬅️	murray (~murray@dyndsl-089-166-185-178.ewe-ip-backbone.de) has quit (Ping timeout: 244 seconds)
-2018-08-24 19:29:55	⬅️	spiiroin (~spiiroin@82-203-144-8.bb.dnainternet.fi) has quit (Ping timeout: 272 seconds)
-2018-08-24 19:41:28	➡️	spiiroin (~spiiroin@82-203-154-217.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-24 20:14:19		irc: disconnected from server
-2018-08-24 20:14:27	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 20:28:42	⬅️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
-2018-08-24 20:34:45		irc: disconnected from server
-2018-08-24 20:37:01	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 22:07:25		irc: disconnected from server
-2018-08-24 22:12:07	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 22:26:17		irc: disconnected from server
-2018-08-24 22:30:38	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-24 22:31:53		irc: disconnected from server
-2018-08-24 23:38:44	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 00:04:09	➡️	greguu1 (~greguu@unaffiliated/greguu) has joined #sailfishos-porters
-2018-08-25 00:07:11	⬅️	greguu (~greguu@unaffiliated/greguu) has quit (Ping timeout: 268 seconds)
-2018-08-25 00:07:27		greguu1 is now known as greguu
-2018-08-25 01:02:59	⬅️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has quit (Ping timeout: 252 seconds)
-2018-08-25 01:05:06	➡️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-25 01:15:31	➡️	echo_salik (~salik@37.111.130.243) has joined #sailfishos-porters
-2018-08-25 01:16:12	echo_salik	so last night my internet died... and its still dead -.- im using my cellular data... i think i should change my ISP
-2018-08-25 01:21:37	echo_salik	mal: as soon as  i connect to telnet i get this: Connection closed by foreign host.
-2018-08-25 01:23:10	echo_salik	and upon retrying telnet i get: telnet: Unable to connect to remote host: Connection refused
-2018-08-25 01:25:50	➡️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
-2018-08-25 01:27:58	⬅️	echo_salik (~salik@37.111.130.243) has quit (Remote host closed the connection)
-2018-08-25 01:29:44	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-25 01:30:56	⬅️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Remote host closed the connection)
-2018-08-25 01:31:21	➡️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
-2018-08-25 01:50:02	➡️	echo_salik (~salik@39.50.162.213) has joined #sailfishos-porters
-2018-08-25 01:50:27	echo_salik	were there any replies during my disconnectivity?
-2018-08-25 01:51:06	echo_salik	BTW after a few minutes i get a blank screen...
-2018-08-25 01:57:40	➡️	murray (~murray@dyndsl-089-166-172-007.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-25 01:59:55	➡️	elros1 (~quassel@2a02:a315:e040:3a00:2c57:a084:650f:a906) has joined #sailfishos-porters
-2018-08-25 02:08:55	echo_salik	ok... this is new... the screen is off but i still have that RNDIS connection.
-2018-08-25 02:10:25	r0kk3rz	sounds like mce might be working
-2018-08-25 02:10:57	echo_salik	r0kk3rz: whats mce? i remember seeing it in the plugin
-2018-08-25 02:12:10	echo_salik	cool there is a wiki on it... didnt expect that...
-2018-08-25 02:12:40	echo_salik	btw r0kk3rz pwoer button doesnt wake screen up
-2018-08-25 02:12:43	echo_salik	*power
-2018-08-25 02:13:51	r0kk3rz	maybe not then :)
-2018-08-25 02:14:05	r0kk3rz	yeah mce is a core daemon that handles device state
-2018-08-25 02:14:47	r0kk3rz	but as per usual, logz plz
-2018-08-25 02:15:34	echo_salik	r0kk3rz: that's where it gets interesting... telent kicks me like 10 seconds after connectiong
-2018-08-25 02:15:52	echo_salik	im never going to type telenet correctly...
-2018-08-25 02:15:56	echo_salik	-.-
-2018-08-25 02:19:38	r0kk3rz	tlerenet
-2018-08-25 02:20:14	r0kk3rz	which telnet?
-2018-08-25 02:20:32	echo_salik	telnet 192.168.2.15 2323
-2018-08-25 02:20:39	r0kk3rz	ok, thats not so bad
-2018-08-25 02:21:10	r0kk3rz	try to quickly dump journalctl
-2018-08-25 02:21:23	echo_salik	also after getting kicked by telnet i cant even reconnect
-2018-08-25 02:22:24	echo_salik	Q: is there a way to run a bash script x seconds after boot? like cron?
-2018-08-25 02:23:14	echo_salik	if it has cron i can keep a script at root which makes the logs and i can get them from recovery?
-2018-08-25 02:24:26	r0kk3rz	yeah
-2018-08-25 02:24:45	echo_salik	it has cron?
-2018-08-25 02:24:46	r0kk3rz	you can schedule whatever you like with a systemd service file
-2018-08-25 02:24:59	echo_salik	oh systemd
-2018-08-25 02:25:28	echo_salik	but to enable that i'd need to be connected to telent long enough...
-2018-08-25 02:25:36	r0kk3rz	not exactly
-2018-08-25 02:25:44	r0kk3rz	'enabling' is just creating a symlink
-2018-08-25 02:26:00	echo_salik	oh yeah...
-2018-08-25 02:26:10	echo_salik	i can do that with recovry i think
-2018-08-25 02:26:14	echo_salik	*recovery
-2018-08-25 02:26:23	echo_salik	but would it be a bad idea?
-2018-08-25 02:28:05	r0kk3rz	seems ok, sometimes getting logs of misbehaving devices can be a pita
-2018-08-25 02:28:08	r0kk3rz	*off
-2018-08-25 02:28:56	r0kk3rz	for a while i added a line to my android init.rcs to dump logcat for the same reason
-2018-08-25 02:29:27	elros1	yeah, better just take live logs: journalctl -f, dmesg. You can also enable persistent journal in /etc/systemd/journald.conf
-2018-08-25 02:29:45	echo_salik	oh... cool... but i have now a stable telnet
-2018-08-25 02:30:07	echo_salik	nope... got disconnected...
-2018-08-25 02:30:12	echo_salik	but i have logs!
-2018-08-25 02:31:36	echo_salik	r0kk3rz: systemctl: https://paste.ubuntu.com/p/n6SbdntZwH/
-2018-08-25 02:32:30	r0kk3rz	journal is more useful
-2018-08-25 02:33:32	echo_salik	r0kk3rz: dmesg: https://paste.ubuntu.com/p/2FncdP3pg3/
-2018-08-25 02:33:35	echo_salik	oh...
-2018-08-25 02:33:44	echo_salik	next one is journal
-2018-08-25 02:34:48	echo_salik	r0kk3rz: journal: https://paste.ubuntu.com/p/mQcbPMtxBF/
-2018-08-25 02:38:40	r0kk3rz	have you enabled pstore ?
-2018-08-25 02:39:56	⬅️	echo_salik (~salik@39.50.162.213) has quit (Ping timeout: 272 seconds)
-2018-08-25 02:40:24	➡️	echo_salik (~salik@182.178.25.96) has joined #sailfishos-porters
-2018-08-25 02:40:29	echo_salik	r0kk3rz: journal: https://paste.ubuntu.com/p/mQcbPMtxBF/
-2018-08-25 02:40:34	echo_salik	sorry got dc
-2018-08-25 02:41:01	r0kk3rz	have you enabled pstore ?
-2018-08-25 02:41:28	echo_salik	i have not... manually at least
-2018-08-25 02:42:04	r0kk3rz	thats a good idea, the first thing to tackle is why your telnet is breaking
-2018-08-25 02:42:14	r0kk3rz	because without that everything else gets much harder
-2018-08-25 02:42:50	echo_salik	so how do i enable pstore...
-2018-08-25 02:45:54	echo_salik	do i need to rebuild the kernel with pstore enabled?
-2018-08-25 02:47:32	⬅️	wildlander (~wildlande@unaffiliated/wildlander) has quit (Ping timeout: 272 seconds)
-2018-08-25 02:57:02	⬅️	psachin (~psachin@103.51.232.81) has quit (Ping timeout: 272 seconds)
-2018-08-25 02:57:11	echo_salik	um r0kk3rz...
-2018-08-25 02:58:27	r0kk3rz	yeah
-2018-08-25 02:58:50	echo_salik	do i have to enable pstore?
-2018-08-25 02:59:16	echo_salik	if yes then how...
-2018-08-25 02:59:31	echo_salik	cause... i am a little comfused...
-2018-08-25 03:00:11	r0kk3rz	https://github.com/r0kk3rz/android_kernel_sony_msm/blob/hybris-sony-aosp-6.0.1_r80-20170902/arch/arm/configs/aosp_shinano_scorpion_defconfig#L625-L629
-2018-08-25 03:00:13	r0kk3rz	like that
-2018-08-25 03:00:59	echo_salik	thanks
-2018-08-25 03:01:02	r0kk3rz	so what will happen, is if you get kernel panics it will dump stuff to /sys/fs/pstore which we can use to figure out whats going on
-2018-08-25 03:01:24	echo_salik	oh...
-2018-08-25 03:01:59	echo_salik	so after this i'll just have to build boot img and recovery or everything?
-2018-08-25 03:03:03	r0kk3rz	you can just flash the hybris-boot.img after hybris-hal build
-2018-08-25 03:03:39	echo_salik	i have pstore enabled already...
-2018-08-25 03:03:48	r0kk3rz	ok good
-2018-08-25 03:03:57	echo_salik	sorry didnt knew that...
-2018-08-25 03:04:02	echo_salik	*know that
-2018-08-25 03:06:00	echo_salik	now... i'll read those contents after logging into telnet?
-2018-08-25 03:08:47	echo_salik	r0kk3rz, i have nothing in my pstore
-2018-08-25 03:14:06	elros1	it contains data only if kernel really crash
-2018-08-25 03:19:40	echo_salik	so the kernel didnt crash... but i did get kicked out by telent again...
-2018-08-25 03:20:24	echo_salik	so I nmap'ed the IP, the only open port is of ssh
-2018-08-25 03:20:28	echo_salik	port 22
-2018-08-25 03:20:49	r0kk3rz	hmm
-2018-08-25 03:21:12	r0kk3rz	something is obviously crashing
-2018-08-25 03:22:30	elros1	it can be some *.rc file which overwrites usb settings
-2018-08-25 03:31:02	echo_salik	i remember adding some rc's for services and then adding and rc dpmd service to stop it
-2018-08-25 03:32:02	echo_salik	in this: /sparse/usr/libexec/droid-hybris/system/etc/init/
-2018-08-25 03:32:08	echo_salik	droid confg
-2018-08-25 03:32:28	echo_salik	unless this is unrelated
-2018-08-25 03:57:26	➡️	_gnus_ (75f73307@gateway/web/freenode/ip.117.247.51.7) has joined #sailfishos-porters
-2018-08-25 03:59:24	_gnus_	Hi, When I started a build, it failed with build/core/product_config.mk:254: *** _nic.PRODUCTS.[[device/motorola/condor/cm.mk]]: "vendor/motorola/msm8610-common/msm8610-common-vendor.mk" does not exist.  Stop.
-2018-08-25 04:04:51	echo_salik	_gnus_: is there a folder with that name in vendor/motorola?
-2018-08-25 04:05:17	_gnus_	Its not there.
-2018-08-25 04:05:41	_gnus_	I couldn't find this dependency in any *.dependencies I have.
-2018-08-25 04:05:56	echo_salik	is you vendor repo synced?
-2018-08-25 04:06:13	_gnus_	Yes.
-2018-08-25 04:06:38	_gnus_	Should this directory be part of $device.xml?
-2018-08-25 04:06:43	echo_salik	what folder is there in that vendor moto folder?
-2018-08-25 04:06:44	r0kk3rz	you'll need to find a repo that has that
-2018-08-25 04:06:49	r0kk3rz	and sync it
-2018-08-25 04:07:31	_gnus_	Ok. I have only 'cm' directory in 'vendor'.
-2018-08-25 04:07:57	echo_salik	as r0kk3rz said you need the vendor repo as well
-2018-08-25 04:08:16	echo_salik	and yes it should be part of that $device.xml
-2018-08-25 04:09:16	echo_salik	for me its like this: <project path="vendor/xiaomi/rolex" name="redmidevs/android_vendor_xiaomi_rolex" revision="lineage-15.1" />
-2018-08-25 04:10:29	_gnus_	Should I look for this repo in some .dependencies file?
-2018-08-25 04:11:42	echo_salik	_gnus_ it will be in the repos of the same gituser you used for your kernel and yes it will be in cm.dependencies i think
-2018-08-25 04:12:25	_gnus_	echo_salik, r0kk3rz - Thanks.
-2018-08-25 04:12:31	echo_salik	_gnus_ you are the one with that moto E right?
-2018-08-25 04:13:03	echo_salik	glad i could help
-2018-08-25 04:14:20	_gnus_	Yes
-2018-08-25 04:19:01	echo_salik	search in the repos of the user you are using for your kernel, you'll find the vendor there
-2018-08-25 04:29:19	mal	like I said before the binder errors look very bad
-2018-08-25 04:29:27	⬅️	echo_salik (~salik@182.178.25.96) has quit (Ping timeout: 252 seconds)
-2018-08-25 04:32:51	r0kk3rz	mal: would that kill telnet though?
-2018-08-25 04:34:00	mal	not sure
-2018-08-25 04:34:08	➡️	echo_salik (~salik@39.50.219.111) has joined #sailfishos-porters
-2018-08-25 04:34:24	mal	in theory telnet could die if there some usb loading in .rc files
-2018-08-25 04:35:32	echo_salik	um... could mtp cause this? cause i think im getting an mtp
-2018-08-25 04:36:40	mal	probably not mtp but a debug mode because of btoo failure
-2018-08-25 04:36:42	mal	*boot
-2018-08-25 04:36:51	echo_salik	mal i saw this in dmesg: https://hastebin.com/arodiladen.css
-2018-08-25 04:37:16	echo_salik	usb 3-2 is the location of my device
-2018-08-25 04:39:02	⬅️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
-2018-08-25 04:42:30	_gnus_	echo_salik: I am using LineageOS repository.
-2018-08-25 04:45:22	echo_salik	oh its in muppet's repo...
-2018-08-25 04:45:23	echo_salik	https://github.com/TheMuppets/proprietary_vendor_motorola/tree/lineage-15.1/msm8610-common
-2018-08-25 04:46:10	echo_salik	you vcould just clone the repo
-2018-08-25 04:46:19	echo_salik	*use the repo
-2018-08-25 04:46:23	echo_salik	dont clone
-2018-08-25 04:46:24	mal	echo_salik: you are focusing too much on the usb and not on the real issue of the device probably rebooting into a debug mode
-2018-08-25 04:46:54	echo_salik	mal: ok... btw screen is blank... but lit up
-2018-08-25 04:47:03	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-25 04:47:47	echo_salik	mal: so what would i do next...
-2018-08-25 04:50:23	_gnus_	echo_salik: I have taken LineageOS-14.1 as base. I don't see it in Muppet's branches. CM14.1 is there. Is it ok to use?
-2018-08-25 04:51:11	echo_salik	_gnus_: there is one... cm-14.1
-2018-08-25 04:51:20	echo_salik	https://github.com/TheMuppets/proprietary_vendor_motorola/tree/cm-14.1
-2018-08-25 04:53:27	mal	echo_salik: you forgot at least one important partition from fixup-mountpoints "Dependency failed for Droid mount for /vendor."
-2018-08-25 04:53:50	mal	https://github.com/redmidevs/android_device_xiaomi_rolex/blob/lineage-15.1/rootdir/fstab.qcom#L15
-2018-08-25 04:54:45	echo_salik	oooohhhhh
-2018-08-25 04:55:15	Mister_Magister	mal: hiii got some time and energy to help me with anbox?
-2018-08-25 04:55:44	⬅️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
-2018-08-25 04:57:12	mal	Mister_Magister: probably not today, almost getting a headache
-2018-08-25 04:58:08	echo_salik	mal: just saying... dehydration is the leading cause of headaches... so hydrate youeself if you have for like an hour or so...
-2018-08-25 04:59:01	mal	this is most likely due to very bad sleep
-2018-08-25 04:59:09	echo_salik	juices and sodas dont count...
-2018-08-25 04:59:47	Mister_Magister	mal: ah ok no prob
-2018-08-25 05:00:55	echo_salik	oh... yeah if you have a long history of sleeping problem, get checked... and keep your system's monitor on warm colors ... special after dusk...
-2018-08-25 05:01:07	mal	only 10 years :D
-2018-08-25 05:01:33	echo_salik	dude... that's... wow...
-2018-08-25 05:07:32	echo_salik	mal: fixed mount point... now i have to do everything or just boot image?
-2018-08-25 05:10:20	mal	you need to run make hybris-hal in habuild_sdk the usual way and then build_packages.sh -d and then build a new image
-2018-08-25 05:10:30	mal	oops, sorry
-2018-08-25 05:10:37	mal	the first part is not needed
-2018-08-25 05:10:42	mal	mixed things
-2018-08-25 05:10:52	mal	so only build_packages.sh -d and image build
-2018-08-25 05:11:34	echo_salik	aye aye captain!
-2018-08-25 05:59:44	echo_salik	ok... again logs?
-2018-08-25 06:01:16	echo_salik	i have a stable telnet now
-2018-08-25 06:04:02	echo_salik	mal!!! i have logcat!!!!!
-2018-08-25 06:04:05	echo_salik	xD
-2018-08-25 07:01:57	⬅️	lpotter (~quassel@2001:8003:e113:2600:ba27:ebff:febb:59b) has quit (Ping timeout: 265 seconds)
-2018-08-25 07:06:37	➡️	psachin (~psachin@103.51.235.13) has joined #sailfishos-porters
-2018-08-25 07:10:39	mal	echo_salik: it's quite common to get stuck looking at some issue when the real problem is something completely different
-2018-08-25 07:10:44	mal	echo_salik: of course logs
-2018-08-25 07:14:02	⬅️	filippz (filippz@gateway/shell/panicbnc/x-hdppyefsqrmibuwq) has quit (Ping timeout: 265 seconds)
-2018-08-25 07:15:08	⬅️	psachin (~psachin@103.51.235.13) has quit (Ping timeout: 268 seconds)
-2018-08-25 07:16:38	echo_salik	all logs or just some?
-2018-08-25 07:17:11	echo_salik	mal: should i include logcat?
-2018-08-25 07:17:26	mal	at least journalctl and logcat, also dmesg might be useful
-2018-08-25 07:18:37	echo_salik	ok...
-2018-08-25 07:20:52	mal	usually it's good to get logcat quite soon after reboot so it's not completely flooded, sometimes there are repeating errors
-2018-08-25 07:21:08	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 272 seconds)
-2018-08-25 07:22:46	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-25 07:25:13	echo_salik	ok... i cant telent again...
-2018-08-25 07:25:58	echo_salik	mal: telnets in port 23
-2018-08-25 07:30:29	mal	hmm, wondering what happened
-2018-08-25 07:30:47	mal	check why it failed, it should be somewhere in init.log
-2018-08-25 07:39:39	echo_salik	mal: i see failed to boot init in rootfs
-2018-08-25 07:39:41	echo_salik	https://paste.ubuntu.com/p/jfBT9cnWKF/
-2018-08-25 07:41:36	echo_salik	i see three folders being mounted on the same block...
-2018-08-25 07:42:07	echo_salik	ok i meant the other way... one block mounted on three folders...
-2018-08-25 07:45:43	⬅️	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has quit (Ping timeout: 256 seconds)
-2018-08-25 07:49:04	echo_salik	echo "continue" >/init-ctl/stdin this causes the device to qualcom's debug mode
-2018-08-25 07:49:42	echo_salik	i think i should recreate hybris-boot
-2018-08-25 07:50:09	mal	check the /target folder in 23 telnet
-2018-08-25 07:50:38	➡️	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has joined #sailfishos-porters
-2018-08-25 07:51:30	echo_salik	target folder has data and dev
-2018-08-25 07:51:43	mal	what is in data folder
-2018-08-25 07:52:29	mal	it seems your saillfish rootfs is missing, it should be in /target
-2018-08-25 07:52:44	echo_salik	nope its not there
-2018-08-25 07:53:22	echo_salik	data has cache media and misc
-2018-08-25 07:53:37	echo_salik	shoud i reinstall rootfs?
-2018-08-25 07:58:36	mal	yes
-2018-08-25 07:59:38	mal	also I would reformat the userdata partition just to be sure, make sure you have a backup in case you have something important on that partition
-2018-08-25 07:59:55	mal	I mean reformat it before reinstalling sailfish
-2018-08-25 08:04:02	echo_salik	mal: i cant ssh without formating... so should i format?
-2018-08-25 08:04:15	echo_salik	i dont have anything important in it
-2018-08-25 08:04:19	echo_salik	*telnet
-2018-08-25 08:04:45	echo_salik	also for logcat... how should i get the data as it it continous?
-2018-08-25 08:08:11	⬅️	_gnus_ (75f73307@gateway/web/freenode/ip.117.247.51.7) has quit (Quit: Page closed)
-2018-08-25 08:10:30	mal	echo_salik: if you don't have anything important in userdata (which also has the android user data etc) then just format userdata in recovery and reinstall sailfish zip after that
-2018-08-25 08:12:32	echo_salik	ok...
-2018-08-25 08:27:19	echo_salik	mal: that same thing is happening again... i m getting kicked by telnet...
-2018-08-25 08:27:28	echo_salik	but i was able to get logcat
-2018-08-25 08:27:31	echo_salik	https://paste.ubuntu.com/p/z6MY6WfjQ4/
-2018-08-25 08:27:37	echo_salik	its full of errors though
-2018-08-25 08:28:21	mal	hmm, it's missing one important library, not sure why or how
-2018-08-25 08:29:03	echo_salik	should i rebuild hal-build?
-2018-08-25 08:31:30	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:2c57:a084:650f:a906) has quit (Remote host closed the connection)
-2018-08-25 08:41:54	mal	echo_salik: still wondering what is different in this new installation
-2018-08-25 09:14:29	echo_salik	mal: should i post something that could help in the proces?
-2018-08-25 09:14:48	mal	logs
-2018-08-25 09:16:07	echo_salik	oh yeah i forgot to post the other logs!
-2018-08-25 09:20:04	echo_salik	journal: https://paste.ubuntu.com/p/pvRqYShpfb/
-2018-08-25 09:20:20	echo_salik	telenet dc'ed before i could get dmesg
-2018-08-25 09:22:22	mal	it seems still some binder errors and the whole android side seem to be failing
-2018-08-25 09:23:30	mal	because even servicemanager is failing
-2018-08-25 09:23:50	echo_salik	mal: dmesg: https://paste.ubuntu.com/p/ZtGdpsfJ5H/
-2018-08-25 09:29:55	echo_salik	mal: systemctl: https://paste.ubuntu.com/p/cCpPnZDRjC/
-2018-08-25 09:30:33	mal	systemctl is not needed anymore, that is only for early debugging usually
-2018-08-25 09:31:36	mal	I'm going to be away for a while now, I'll think about this later today
-2018-08-25 09:35:12	echo_salik	thanks mal!
-2018-08-25 09:51:22	➡️	elros1 (~quassel@2a02:a315:e040:3a00:d1f8:ae39:215d:7b3e) has joined #sailfishos-porters
-2018-08-25 10:11:38	➡️	louis_ (~louisdk@static-5-103-139-176.ip.fibianet.dk) has joined #sailfishos-porters
-2018-08-25 11:01:22	⬅️	louis_ (~louisdk@static-5-103-139-176.ip.fibianet.dk) has quit (Ping timeout: 252 seconds)
-2018-08-25 11:03:55	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-25 11:04:17	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-25 12:19:56	➡️	louis_ (~louisdk@static-5-103-139-176.ip.fibianet.dk) has joined #sailfishos-porters
-2018-08-25 12:24:04	⬅️	louis_ (~louisdk@static-5-103-139-176.ip.fibianet.dk) has quit (Remote host closed the connection)
-2018-08-25 12:32:43	⬅️	echo_salik (~salik@39.50.219.111) has quit (Ping timeout: 272 seconds)
-2018-08-25 12:41:17	➡️	_sven (~sven@p57B51134.dip0.t-ipconnect.de) has joined #sailfishos-porters
-2018-08-25 12:45:01	➡️	wildlander (~wildlande@unaffiliated/wildlander) has joined #sailfishos-porters
-2018-08-25 12:46:44	⬅️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has quit (Quit: IRC for Sailfish 0.9)
-2018-08-25 12:51:30	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:d1f8:ae39:215d:7b3e) has quit (Remote host closed the connection)
-2018-08-25 13:19:26		irc: disconnected from server
-2018-08-25 13:19:30	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 13:32:56		irc: disconnected from server
-2018-08-25 08:43:56	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 08:49:36	⬅️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Ping timeout: 272 seconds)
-2018-08-25 08:53:07	⬅️	_sven (~sven@p57B51134.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
-2018-08-25 09:40:23		irc: disconnected from server
-2018-08-25 09:42:19	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 09:45:46	⬅️	murray (~murray@dyndsl-089-166-172-007.ewe-ip-backbone.de) has quit (Ping timeout: 244 seconds)
-2018-08-25 10:22:46	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-25 16:53:11		irc: disconnected from server
-2018-08-25 16:57:50	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 17:08:13		irc: disconnected from server
-2018-08-25 17:12:08	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-25 17:27:51	⬅️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
-2018-08-25 19:15:51	➡️	Piece_Maker (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-25 19:19:12	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-25 19:19:12		Piece_Maker is now known as Acou_Bass
-2018-08-25 19:35:12	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 252 seconds)
-2018-08-25 19:37:04	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-25 20:20:32	⬅️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Read error: Connection reset by peer)
-2018-08-25 20:21:14	➡️	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
-2018-08-25 20:23:07	⬅️	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
-2018-08-25 20:23:58	➡️	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has joined #sailfishos-porters
-2018-08-25 21:30:50	⬅️	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
-2018-08-25 21:32:39	➡️	SfietKonstantinW (b9c55441@gateway/web/cgi-irc/kiwiirc.com/ip.185.197.84.65) has joined #sailfishos-porters
-2018-08-25 23:07:13	⬅️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
-2018-08-25 23:07:35	➡️	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
-2018-08-25 23:43:31	➡️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has joined #sailfishos-porters
-2018-08-26 00:21:30	➡️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
-2018-08-26 00:26:38		irc: disconnected from server
-2018-08-26 00:26:41	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-26 00:43:52		irc: disconnected from server
-2018-08-26 00:45:05	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-26 00:57:03	⬅️	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has quit (Ping timeout: 244 seconds)
-2018-08-26 00:57:30	⬅️	rubdos (~rubdos@ptr-1uzevqefjgxdm5wv65h.18120a2.ip6.access.telenet.be) has quit (Ping timeout: 264 seconds)
-2018-08-26 00:58:11	➡️	murray (~murray@dyndsl-092-252-024-007.ewe-ip-backbone.de) has joined #sailfishos-porters
-2018-08-26 02:02:12	⬅️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Ping timeout: 272 seconds)
-2018-08-26 02:10:19	➡️	elros1 (~quassel@2a02:a315:e040:3a00:31ad:d8e:7d0d:ab0a) has joined #sailfishos-porters
-2018-08-26 02:11:44	➡️	return_0 (~salik@39.50.252.245) has joined #sailfishos-porters
-2018-08-26 02:12:10		return_0 is now known as echo_salik
-2018-08-26 02:12:50	echo_salik	hey all
-2018-08-26 02:18:51	⬅️	echo_salik (~salik@39.50.252.245) has quit (Ping timeout: 252 seconds)
-2018-08-26 03:09:58	⬅️	murray (~murray@dyndsl-092-252-024-007.ewe-ip-backbone.de) has quit (Ping timeout: 272 seconds)
-2018-08-26 03:20:30	➡️	echo_salik (~salik@39.50.194.249) has joined #sailfishos-porters
-2018-08-26 03:21:17	echo_salik	hey all
-2018-08-26 03:21:49	echo_salik	just a question: will channel log be back?
-2018-08-26 03:27:55	➡️	entil (~mjt@nysv.org) has joined #sailfishos-porters
-2018-08-26 03:33:39	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:31ad:d8e:7d0d:ab0a) has quit (Remote host closed the connection)
-2018-08-26 03:38:57	⬅️	echo_salik (~salik@39.50.194.249) has quit (Quit: Leaving)
-2018-08-26 04:05:58	mal	when the bot is back, hopefully the person usually handling it will be back online after weekend
-2018-08-26 04:18:54	➡️	elros1 (~quassel@2a02:a315:e040:3a00:119a:3df:8d87:b9ba) has joined #sailfishos-porters
-2018-08-26 04:20:46	r0kk3rz	mal: do you have ops here?
-2018-08-26 04:21:47	mal	not right now
-2018-08-26 04:23:40	r0kk3rz	obviously :P
-2018-08-26 04:24:24	r0kk3rz	but it seems like tbr needs ops to fix merbot
-2018-08-26 04:24:58	tbr	or I fix its auth to services, haven't tried that in a year or two
-2018-08-26 04:28:14	mal	tbr: I think it's common to have timing issues with auth, at least people using irssi have had such
-2018-08-26 04:28:28	➡️	merbot (~supybot@phost1.merproject.org) has joined #sailfishos-porters
-2018-08-26 04:28:34	mal	yay
-2018-08-26 04:29:44	kimmoli	!hello
-2018-08-26 04:29:44	merbot	kimmoli: Error: "hello" is not a valid command.
-2018-08-26 05:09:50	➡️	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
-2018-08-26 05:18:07	➡️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
-2018-08-26 05:19:33	ghosalmartin	morning :)
-2018-08-26 05:24:23	⬅️	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
-2018-08-26 05:26:04	➡️	echo_salik (~salik@39.50.194.249) has joined #sailfishos-porters
-2018-08-26 05:59:06	ghosalmartin	hmm if i build bootimage by it self it breaks, but it completes as part of hybris-boot...is there a chance hybris-boot is actually failing silently?
-2018-08-26 06:01:47	ghosalmartin	mal: when you disabled selinux in system/core. did that stop the relience on libsepol?
-2018-08-26 06:05:04	mal	ghosalmartin: are you sure you have the correct busybox, i.e. the prebuilt one used for android 8
-2018-08-26 06:05:14	ghosalmartin	mal...no
-2018-08-26 06:05:25	ghosalmartin	is that now required :P
-2018-08-26 06:05:42	mal	ghosalmartin: check external/busybox to see which one you have
-2018-08-26 06:06:10	mal	manifest has it correctly but not sure if your repo has been synced
-2018-08-26 06:06:11	ghosalmartin	mal: 32bit one. i synced using the hybris-15.1 manifest?
-2018-08-26 06:06:33	mal	so that points to mer-hybris/android_external_busybox_prebuilt ?
-2018-08-26 06:06:45	mal	I mean the local copy
-2018-08-26 06:06:58	ghosalmartin	mal: yes
-2018-08-26 06:07:04	mal	ok
-2018-08-26 06:07:20	ghosalmartin	am just trying to build a boot android kernel first
-2018-08-26 06:10:27	ghosalmartin	mal: also theres some weird thing with the pixel phones that the recovery is in the same partition as boot
-2018-08-26 06:11:02	mal	ghosalmartin: also some older sonys had recovery built into the kernel
-2018-08-26 06:11:18	mal	not sure about newer sonys
-2018-08-26 06:11:31	ghosalmartin	mal: hmm wonder why their moving to this kind of arch. it seemed much cleaner just having a separate partition
-2018-08-26 06:12:30	ghosalmartin	could be that they want 2 boot partitions and 2 systems partitions for completely seamless OTA
-2018-08-26 06:15:26	mal	ghosalmartin: sorry that I haven't made the test build yet for your device, I have some issues with disk space, I can only have out folder of one build at the time
-2018-08-26 06:15:38	ghosalmartin	mal: its alright, this is a new device :P
-2018-08-26 06:15:47	mal	oh, not the same annoying one
-2018-08-26 06:16:01	ghosalmartin	pretty much :P its the Pixel Xl this time
-2018-08-26 06:16:03	ghosalmartin	marlin
-2018-08-26 06:16:38	mal	ok
-2018-08-26 06:16:59	mal	wondering if I should rebase hybris-15.1
-2018-08-26 06:20:25	ghosalmartin	think its outta date?
-2018-08-26 06:21:28	mal	probably not too much but can't be sure, hybris-15.1 was based on r26 but lineage now uses r43 aosp as base
-2018-08-26 06:21:55	ghosalmartin	mal: ahh i dont mind rebasing it, got some spare time today
-2018-08-26 06:22:09	ghosalmartin	its complaining about some libsepol things when attempting a build, so could be relate
-2018-08-26 06:22:30	mal	ghosalmartin: need to think how to handle that, a rebase or merge, rebase is cleaner probably
-2018-08-26 06:23:07	ghosalmartin	rebase is always cleaner. i actively avoid merging nowadays unless others
-2018-08-26 06:23:45	mal	ghosalmartin: for me the rebase is easier as I can just force push the branches :)
-2018-08-26 06:24:42	ghosalmartin	there is that :P
-2018-08-26 06:31:09	ghosalmartin	mal: what would be the easiest way to get the changes in? make them on a fork and get that taken in?
-2018-08-26 06:32:20	mal	then it would be a merge
-2018-08-26 06:33:13	ghosalmartin	like this https://github.com/mer-hybris/android_build/pull/10
-2018-08-26 06:33:24	ghosalmartin	but isnt there a rebase option when selecting the merge?
-2018-08-26 06:34:15	ghosalmartin	always been curious if that button actually doesnt anything useful
-2018-08-26 06:40:18	ghosalmartin	yeah seems to work okay according to this quick test https://github.com/ghosalmartin/rebase_test/commits/master
-2018-08-26 06:40:20	r0kk3rz	yeah there is, i think i tried it once
-2018-08-26 06:43:27	ghosalmartin	it seems to work well. but am curious how itd work in a large team 8-10 people
-2018-08-26 06:43:44	ghosalmartin	would we start to get some crazy conflicts coming in from it. am trying convert the team to rebasing...still :P
-2018-08-26 06:44:38	ghosalmartin	also anyone know what happens if /boot isnt declared inside the fstab? do I just add an entry?
-2018-08-26 06:45:20	⬅️	elros1 (~quassel@2a02:a315:e040:3a00:119a:3df:8d87:b9ba) has quit (Remote host closed the connection)
-2018-08-26 06:47:56	Mikaela	T4 is now storing Telegram attachments for 24 hours, but I cannot make any stability or uptime or anything promises, I am not paid for this or anything, and I may not be able to remove confidential accidental uploads immediately, so please refrain from making those.
-2018-08-26 06:56:30	ghosalmartin	i have a nice rebasing script that pulls in all the appropriate remotes, and pushes to mine after its done
-2018-08-26 06:56:41	ghosalmartin	the only limiting factor is now my internet speed :P
-2018-08-26 06:57:47	echo_salik	hi mal
-2018-08-26 06:58:11	echo_salik	hi r0kk3rz
-2018-08-26 06:58:24	mal	ghosalmartin: nice
-2018-08-26 06:58:28	echo_salik	how are you...
-2018-08-26 06:59:12	ghosalmartin	https://pastebin.com/NuUPrwZW boom
-2018-08-26 06:59:19	ghosalmartin	if you have no conflicts its a slam dunk
-2018-08-26 07:00:00	mal	not very well, almost getting a headache today also and now I need to go and complain about a harddisk to a store, it broke down completely yesterday and it still has warranty
-2018-08-26 07:01:00	⬅️	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Ping timeout: 252 seconds)
-2018-08-26 07:01:23	ghosalmartin	hopefully no data loss
-2018-08-26 07:01:27	echo_salik	aww... good luck...
-2018-08-26 07:02:22	➡️	NeKit (~TheKit@178-45-11-126.saransk.ru) has joined #sailfishos-porters
-2018-08-26 07:05:42	mal	ghosalmartin: that was part of a raid 5 setup so should be fine
-2018-08-26 07:05:57	⬅️	echo_salik (~salik@39.50.194.249) has quit (Ping timeout: 244 seconds)
-2018-08-26 07:06:12	⬅️	TheKit (~TheKit@85-95-178-167.saransk.ru) has quit (Ping timeout: 272 seconds)
-2018-08-26 07:06:28	mal	ghosalmartin: if that would have been without raid then all data would have been lost, it doesn't even detect properly anymore
-2018-08-26 07:07:08	ghosalmartin	mal: ahh good good, raid never ceases to amaze me
-2018-08-26 07:18:37	ghosalmartin	mal: before i open the prs, would using githubs rebase be a good way to handle the rebase to latest lineageos? if so all rebased and ready to merge
-2018-08-26 07:18:41	ghosalmartin	or wanna test em first :P
-2018-08-26 07:19:09	mal	I'll have a look and discuss with others
-2018-08-26 07:19:45	ghosalmartin	okays :)
-2018-08-26 07:21:18	ghosalmartin	btw the hybris-boot-part. is that actually required to boot to stage 1?
-2018-08-26 07:21:41	mal	which one?
-2018-08-26 07:23:22	ghosalmartin	when building hybris boot its searching for /boot. is that required to get to telnet. or is that only for systemd?
-2018-08-26 07:23:31	ghosalmartin	this error ./hybris/hybris-boot/Android.mk:71: error: There should be a one and only one device entry for HYBRIS_BOOT_PART and HYBRIS_DATA_PART.
-2018-08-26 07:23:58	ghosalmartin	HYBRIS_BOOT_PART doesnt have a /boot in the fstab for whatever reason
-2018-08-26 07:24:56	mal	on one device I added /dev/null as /boot in fstab https://github.com/mlehtima/android_device_semc_msm7x30-common/commit/e1a57373b370ae7c4a3bc4541c09e751c567f6da
-2018-08-26 07:26:21	ghosalmartin	that looks perfect ta :)
-2018-08-26 07:41:31	ghosalmartin	boom am into telnet by disabling dm-verity
-2018-08-26 07:41:33	ghosalmartin	woop woop :D
-2018-08-26 07:42:34	mal	nice
-2018-08-26 07:42:57	ghosalmartin	shame hte same didnt work with the mi mix 2, but ah well
-2018-08-26 07:43:05	ghosalmartin	although it might be worth a shot, they both use the same hybris-15.1 codebase
-2018-08-26 07:55:58	➡️	echo_salik (~salik@39.50.243.109) has joined #sailfishos-porters
-2018-08-26 08:19:40	➡️	ohyash (~ohyash@43.224.157.38) has joined #sailfishos-porters
-2018-08-26 08:36:16		irc: disconnected from server
-2018-08-26 08:48:23	➡️	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
-2018-08-26 08:48:23	***	Buffer Playback...
-2018-08-26 08:48:23	ghosalmartin	[08:39:44] CONFIG_VT strikes again breaking yet another kernel
-2018-08-26 08:48:23	mal	[08:43:09] ghosalmartin: easy warranty change, I got a new disk right away
-2018-08-26 08:48:23	ghosalmartin	[08:43:33] mal: thats good. its nice when stores just sort it
-2018-08-26 08:48:23	***	Playback Complete.
-2018-08-26 08:53:12	⬅️	echo_salik (~salik@39.50.243.109) has quit (Ping timeout: 252 seconds)
-2018-08-26 09:15:27	r0kk3rz	ghosalmartin: you have all the luck
-2018-08-26 09:17:39	ghosalmartin	r0kk3rz, who knows it may get better :P
-2018-08-26 09:19:03	r0kk3rz	or worse :)
-2018-08-26 09:22:23	ghosalmartin	well atleast this device theres something to work with
+2018-08-29 14:27:03	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 14:27:03	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 14:27:03	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 14:27:03	--	Channel #sailfishos-porters: 75 nicks (0 ops, 0 voices, 75 normals)
+2018-08-29 14:27:07	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 14:30:27	<--	elros1 (~quassel@2a02:a315:e040:3a00:3d41:6c7c:f2e6:88) has quit (Remote host closed the connection)
+2018-08-29 15:04:34	<--	murray (~murray@dyndsl-089-166-139-003.ewe-ip-backbone.de) has quit (Ping timeout: 240 seconds)
+2018-08-29 15:08:16	<--	guhl (~guhl@gateway/tor-sasl/guhl) has quit (Quit: Leaving)
+2018-08-29 15:18:48	<--	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has quit (Read error: Connection reset by peer)
+2018-08-29 15:18:53	-->	doniks_ (~doniks@2001:980:8522:1:ea7d:41ab:bd12:e9e5) has joined #sailfishos-porters
+2018-08-29 15:45:28	<--	piggz (~piggz@95.150.63.194) has quit (Ping timeout: 245 seconds)
+2018-08-29 15:57:33	-->	Umeaboy (~Umeaboy@94-255-145-133.cust.bredband2.com) has joined #sailfishos-porters
+2018-08-29 15:57:38	Umeaboy	Hi!
+2018-08-29 15:57:53	Umeaboy	Is there a port started for Huawei P20 Lite? ?
+2018-08-29 15:58:11	Umeaboy	One that isn't added to the adaptation wiki page.
+2018-08-29 15:58:35	Umeaboy	I was thinking of buying it tomorrow.
+2018-08-29 16:15:39	<--	Umeaboy (~Umeaboy@94-255-145-133.cust.bredband2.com) has quit (Quit: Leaving)
+2018-08-29 16:32:27	--	irc: disconnected from server
+2018-08-29 16:36:57	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 16:36:57	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 16:36:57	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 16:36:57	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 16:37:00	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 16:51:22	<--	TheKit (~TheKit@178-45-11-126.saransk.ru) has quit (Remote host closed the connection)
+2018-08-29 17:00:36	-->	TheKit (~TheKit@178-45-11-126.saransk.ru) has joined #sailfishos-porters
+2018-08-29 18:18:47	--	irc: disconnected from server
+2018-08-29 18:20:54	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 18:20:54	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 18:20:54	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 18:20:54	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 18:20:58	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 18:26:46	<--	spiiroin (~spiiroin@82-203-159-129.bb.dnainternet.fi) has quit (Ping timeout: 260 seconds)
+2018-08-29 18:35:48	-->	OrokuSaki (44767a38@gateway/web/freenode/ip.68.118.122.56) has joined #sailfishos-porters
+2018-08-29 18:36:03	OrokuSaki	https://releases.jolla.com/jolla-apps//armv7hl/repodata/repomd.xml error 404 =(
+2018-08-29 18:39:12	-->	spiiroin (~spiiroin@82-203-156-9.bb.dnainternet.fi) has joined #sailfishos-porters
+2018-08-29 18:47:03	<--	OrokuSaki (44767a38@gateway/web/freenode/ip.68.118.122.56) has quit (Ping timeout: 252 seconds)
+2018-08-29 19:00:36	<--	doniks_ (~doniks@2001:980:8522:1:ea7d:41ab:bd12:e9e5) has quit (Ping timeout: 260 seconds)
+2018-08-29 19:05:35	--	irc: disconnected from server
+2018-08-29 19:19:58	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 19:19:58	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 19:19:58	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 19:19:58	--	Channel #sailfishos-porters: 70 nicks (0 ops, 0 voices, 70 normals)
+2018-08-29 19:20:02	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 19:48:26	-->	birdzhang[m] (birdzhangm@gateway/shell/matrix.org/x-vtfsmbvwwnamkwxd) has joined #sailfishos-porters
+2018-08-29 19:49:30	<--	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Remote host closed the connection)
+2018-08-29 19:52:32	--	irc: disconnected from server
+2018-08-29 20:24:54	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 20:24:54	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 20:24:54	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 20:24:54	--	Channel #sailfishos-porters: 70 nicks (0 ops, 0 voices, 70 normals)
+2018-08-29 20:24:58	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 20:27:58	-->	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-29 20:33:56	<--	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-29 20:38:11	-->	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-29 20:51:22	-->	psachin (~psachin@103.51.233.185) has joined #sailfishos-porters
+2018-08-29 21:06:29	--	irc: disconnected from server
+2018-08-29 21:06:32	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 21:06:32	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 21:06:32	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 21:06:32	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
+2018-08-29 21:06:36	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 21:08:50	<--	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Read error: No route to host)
+2018-08-29 21:10:14	-->	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-29 21:18:50	--	irc: disconnected from server
+2018-08-29 21:20:25	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 21:20:25	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 21:20:25	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 21:20:25	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
+2018-08-29 21:20:29	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 22:13:42	--	irc: disconnected from server
+2018-08-29 22:23:29	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 22:23:29	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 22:23:29	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 22:23:29	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 22:23:33	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 22:32:36	-->	rouji (~rouji@x0.at) has joined #sailfishos-porters
+2018-08-29 22:49:39	kimmoli	missing RELEASE. set envs
+2018-08-29 23:00:27	<--	spiiroin (~spiiroin@82-203-156-9.bb.dnainternet.fi) has quit (Ping timeout: 240 seconds)
+2018-08-29 23:04:59	--	irc: disconnected from server
+2018-08-29 23:05:09	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 23:05:09	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 23:05:09	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 23:05:09	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 23:05:13	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 23:14:03	--	irc: disconnected from server
+2018-08-29 23:14:07	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 23:14:07	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 23:14:07	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 23:14:07	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 23:14:11	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 23:20:30	--	irc: disconnected from server
+2018-08-29 23:20:49	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 23:20:49	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 23:20:49	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 23:20:49	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-29 23:20:53	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 23:24:15	-->	spiiroin (~spiiroin@2001:998:2a:dead:181c:c30f:38e3:aae4) has joined #sailfishos-porters
+2018-08-29 23:26:02	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-29 23:26:22	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-29 23:31:01	--	irc: disconnected from server
+2018-08-29 23:31:47	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-29 23:31:47	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-29 23:31:47	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-29 23:31:47	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
+2018-08-29 23:31:51	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-29 23:55:11	-->	lolek (~lolek@unaffiliated/marcin) has joined #sailfishos-porters
+2018-08-30 00:01:02	<--	segnior (segnior@gateway/shell/xshellz/x-yofstipufdfcbxko) has quit (Remote host closed the connection)
+2018-08-30 00:21:43	T4	<adampigg> anyone else find the tether shortcut doesnt work, but works ok in the settings page?
+2018-08-30 00:21:44	T4	<adampigg> stays in disabled state here
+2018-08-30 00:21:44	T4	<adampigg> when added to homescreen shortcuts
+2018-08-30 00:23:43	rydare	looks like it enabled here
+2018-08-30 00:23:59	rydare	took some time to think
+2018-08-30 00:24:33	T4	<adampigg> yeah, but leave it a /while ... if i remove and/ add, it works again for a bit, then just gives up
+2018-08-30 00:34:05	-->	segnior (segnior@gateway/shell/xshellz/x-tftqtruzhtzyxgmc) has joined #sailfishos-porters
+2018-08-30 00:39:49	T4	<adampigg> oh, 2.2.1.15 is out
+2018-08-30 00:40:40	 *	rydare waits for his Xperia X
+2018-08-30 00:42:25	-->	ghosalmartin (~mgrover@90.216.134.195) has joined #sailfishos-porters
+2018-08-30 00:43:47	-->	mgrover (~mgrover@90.216.150.198) has joined #sailfishos-porters
+2018-08-30 00:44:16	<--	mgrover (~mgrover@90.216.150.198) has quit (Client Quit)
+2018-08-30 00:46:43	<--	ghosalmartin (~mgrover@90.216.134.195) has quit (Ping timeout: 245 seconds)
+2018-08-30 00:56:30	 *	birdzhang not found any news about 2.2.1.15
+2018-08-30 00:57:49	rydare	oh i'm running it on a oneplus x
+2018-08-30 00:57:52	rydare	didn't see an update
+2018-08-30 01:00:27	rydare	i assumed it didn't automatically get new updates, but i could be wrong
+2018-08-30 01:38:59	r0kk3rz	i think @adampigg is tricking us
+2018-08-30 01:41:44	rydare	SAILFISH 3 OUT NOW
+2018-08-30 01:41:47	rydare	GO GO GO GO GO
+2018-08-30 01:41:50	rydare	(just kidding)
+2018-08-30 01:42:09	<--	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has quit (Ping timeout: 252 seconds)
+2018-08-30 01:42:14	rydare	r0kk3rz: what OS do you use on your computer?
+2018-08-30 01:45:28	r0kk3rz	which one? ;)
+2018-08-30 01:47:44	rydare	i was thinking the one you used for development :P
+2018-08-30 01:47:49	rydare	but all of them
+2018-08-30 01:47:53	rydare	if it's ok to ask
+2018-08-30 01:47:57	rydare	sort of off topic
+2018-08-30 01:49:17	T4	<DylanVanAssche> 2.2.1 is in the repos? It's not yet released as EA
+2018-08-30 01:49:59	-->	elros1 (~quassel@2a02:a315:e040:3a00:1c4:2ed9:edc2:d8f) has joined #sailfishos-porters
+2018-08-30 01:54:01	r0kk3rz	rydare: archlinux is a main one i use
+2018-08-30 01:54:26	rydare	oh that's nice, i like the up to date packages and the AUR
+2018-08-30 01:54:50	r0kk3rz	yes its nice not to have to continually fight against old packages
+2018-08-30 01:55:38	rydare	saw a fight between the xscreensaver guy and debian, he planted a message that would activate if it was x versions out of date, which the debian version was
+2018-08-30 01:55:52	r0kk3rz	hah
+2018-08-30 01:56:59	elros1	so anybody with native landscape display figured out how to make sailfish browser works correctly?
+2018-08-30 01:58:06	r0kk3rz	it sounds familiar
+2018-08-30 01:58:22	r0kk3rz	there was some hybris patch about it? not sure if that was merged
+2018-08-30 01:59:28	elros1	you mean this https://github.com/libhybris/libhybris/pull/374/files. I tried without any results
+2018-08-30 02:00:07	elros1	I have applied mal's patch to qtmozembed so content is displayed correctly but toolbar is inactive
+2018-08-30 02:00:57	--	irc: disconnected from server
+2018-08-30 02:00:59	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-30 02:00:59	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-30 02:00:59	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:13
+2018-08-30 02:00:59	--	Channel #sailfishos-porters: 73 nicks (0 ops, 0 voices, 73 normals)
+2018-08-30 02:01:03	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-30 02:10:31	<--	spiiroin (~spiiroin@2001:998:2a:dead:181c:c30f:38e3:aae4) has quit (Ping timeout: 260 seconds)
+2018-08-30 02:10:33	T4	<adampigg> my jtab updated
+2018-08-30 02:25:08	T4	<adampigg> r0kk3rz:not j/k ... jtab got updated this morning
+2018-08-30 02:27:35	T4	<DylanVanAssche> Any interesting visible changes? ^^
+2018-08-30 02:30:00	-->	zhxt[m] (zhxtmatrix@gateway/shell/matrix.org/x-oxcqpthcbaxmwewl) has joined #sailfishos-porters
+2018-08-30 02:33:17	T4	<adampigg> no, must have been a small update as it applied in no time while on bus
+2018-08-30 02:33:27	T4	<adampigg> probnably
+2018-08-30 02:33:45	T4	<adampigg> probably/so early i shouldnt be discussing!
+2018-08-30 02:34:12	T4	<DylanVanAssche> Oh okay :) mostly bugfixes :)
+2018-08-30 02:44:45	r0kk3rz	@adampigg should have new gstreamer :)
+2018-08-30 02:47:20	-->	spiiroin (~spiiroin@82-203-156-9.bb.dnainternet.fi) has joined #sailfishos-porters
+2018-08-30 03:13:38	-->	lpotter (~quassel@2001:8003:e172:cb00:ba27:ebff:febb:59b) has joined #sailfishos-porters
+2018-08-30 03:15:59	-->	ghosalmartin (~mgrover@90.216.150.198) has joined #sailfishos-porters
+2018-08-30 03:16:13	T4	<adampigg> id rather have working bt headphones on the jtab!
+2018-08-30 03:46:02	Mister_Magister	mal: ping
+2018-08-30 03:48:54	Mister_Magister	mal: i wonder… do i really need working cm/lineage for sfos or only device/kernel/vendor reppo?
+2018-08-30 04:02:00	-->	mgrover (~mgrover@90.216.134.197) has joined #sailfishos-porters
+2018-08-30 04:02:07	<--	mgrover (~mgrover@90.216.134.197) has quit (Client Quit)
+2018-08-30 04:02:25	-->	mgrover (~mgrover@90.216.134.197) has joined #sailfishos-porters
+2018-08-30 04:03:47	<--	ghosalmartin (~mgrover@90.216.150.198) has quit (Ping timeout: 240 seconds)
+2018-08-30 04:26:36	<--	elros1 (~quassel@2a02:a315:e040:3a00:1c4:2ed9:edc2:d8f) has quit (Remote host closed the connection)
+2018-08-30 04:49:47	T4	<Nokius> Mister_Magister SFOS needs the HAL and also some of the Android processes if its a Android based port with out this end well
+2018-08-30 04:53:29	Mister_Magister	but like… we build some android parts aswell right?
+2018-08-30 04:55:28	-->	Erhoof (~Erhoof@0895036014.static.corbina.ru) has joined #sailfishos-porters
+2018-08-30 04:56:02	Erhoof	Hello, is anyone can help me? I'm trying to get SFOS SDK image work on my x86 tablet. Now i can boot and do stuff, but Wayland is using FBDEV, so the speed of interface is slow. EGL_PLATFORM can be fbdev (slow) or hwcomposer (i have no libhybris). What should i do? Thanks
+2018-08-30 05:03:15	r0kk3rz	Erhoof: this might have some good information for you - https://talk.maemo.org/showthread.php?t=96708
+2018-08-30 05:03:30	r0kk3rz	thats TheKit's experiments with x86 devices
+2018-08-30 05:04:01	Erhoof	This guy is using libhybris from android with outdated kernel. There is no way to do it on my tablet, i tried before
+2018-08-30 05:24:10	Mister_Magister	ah ya want without libhybris
+2018-08-30 06:19:51	TheKit	Erhoof, you need to compile latest MESA and KMS Qt QPA plugin
+2018-08-30 06:20:16	Erhoof	And what should i do in config files?
+2018-08-30 06:20:51	Erhoof	btw you live here, as i see
+2018-08-30 06:24:39	TheKit	for older Qt, it was QT_QPA_PLATFORM=kms
+2018-08-30 06:24:50	TheKit	now it can be QT_QPA_PLATFORM=eglfs or QT_QPA_PLATFORM=eglfs_kms, haven't checked
+2018-08-30 06:28:05	Erhoof	Thanks a lot
+2018-08-30 06:40:59	Erhoof	TheKit, and what should i place in EGL_PLATFORM. wayland?
+2018-08-30 06:43:40	TheKit	EGL_PLATFORM matters only for libhybris
+2018-08-30 06:48:49	<--	mgrover (~mgrover@90.216.134.197) has quit (Remote host closed the connection)
+2018-08-30 06:57:04	-->	ghosalmartin (~mgrover@90.216.134.195) has joined #sailfishos-porters
+2018-08-30 06:59:02	<--	ghosalmartin (~mgrover@90.216.134.195) has quit (Remote host closed the connection)
+2018-08-30 07:22:39	-->	jbadiapa (~jubapa@red-hat-inc.vlan404.asr1.mad1.gblx.net) has joined #sailfishos-porters
+2018-08-30 07:51:12	<--	psachin (~psachin@103.51.233.185) has quit (Ping timeout: 252 seconds)
+2018-08-30 08:06:48	<--	lolek (~lolek@unaffiliated/marcin) has quit (Quit: Leaving.)
+2018-08-30 08:18:22	<--	Erhoof (~Erhoof@0895036014.static.corbina.ru) has quit (Remote host closed the connection)
+2018-08-30 08:20:43	<--	ahjolinna (~manjaro-k@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-30 08:31:19	-->	elros1 (~quassel@2a02:a315:e040:3a00:91ff:eafb:121a:c23a) has joined #sailfishos-porters
+2018-08-30 09:00:28	-->	echo_salik (~salik@39.50.240.155) has joined #sailfishos-porters
+2018-08-30 09:00:37	echo_salik	hey all!
+2018-08-30 09:00:53	echo_salik	hey mal and r0kk3rz, how are you guys!
+2018-08-30 09:02:27	<--	sledges (~sleleiva@unaffiliated/sledgeas) has quit (Ping timeout: 240 seconds)
+2018-08-30 09:03:24	-->	sledges (~sleleiva@unaffiliated/sledgeas) has joined #sailfishos-porters
+2018-08-30 09:08:00	mal	today is the first day this week when I don't feel completely terrible
+2018-08-30 09:10:47	echo_salik	yay!!!!
+2018-08-30 09:11:19	echo_salik	i hope you feel this way everyday!
+2018-08-30 09:12:14	mal	I didn't this still good, just not completely bad
+2018-08-30 09:12:31	mal	*I didn't say this is good
+2018-08-30 09:13:19	echo_salik	i misread... but go for my intentions not the words xD
+2018-08-30 09:13:29	<--	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has quit (Quit: Leaving)
+2018-08-30 09:15:28	echo_salik	and sometimes feeling a little less terrible is better...
+2018-08-30 09:15:43	-->	vitalyavolyn (~root@185.22.152.53) has joined #sailfishos-porters
+2018-08-30 09:16:34	<--	sledges (~sleleiva@unaffiliated/sledgeas) has quit (Ping timeout: 240 seconds)
+2018-08-30 09:19:39	vitalyavolyn	hi! sorry for stupid question, what do i need to set PORT_ARCH in .hadk.env to if my target device is arm64?
+2018-08-30 09:20:01	echo_salik	mal: is there any hope for my device?
+2018-08-30 09:20:23	-->	sledges (~sleleiva@unaffiliated/sledgeas) has joined #sailfishos-porters
+2018-08-30 09:21:39	-->	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has joined #sailfishos-porters
+2018-08-30 09:22:09	echo_salik	vitalyavolyn: i think it should stay arm7hl... still wait for someone else to confirm
+2018-08-30 09:22:49	mal	there is always hope
+2018-08-30 09:23:19	mal	vitalyavolyn: armv7hl
+2018-08-30 09:23:48	vitalyavolyn	thx
+2018-08-30 09:26:00	echo_salik	mal: anything i should do now?
+2018-08-30 09:26:23	echo_salik	recreate any part or something
+2018-08-30 09:27:01	mal	maybe push the adaptation repos to github so we can check there are no simple mistakes, make sure you add all changes to the repos before pushing to your github
+2018-08-30 09:28:15	echo_salik	OK... i think i have all changes pushed but I'll recheck and share links
+2018-08-30 09:33:06	<--	echo_salik (~salik@39.50.240.155) has quit (Remote host closed the connection)
+2018-08-30 09:49:59	-->	echo_salik (~salik@39.50.240.155) has joined #sailfishos-porters
+2018-08-30 09:50:18	echo_salik	mal: im pasting the git links
+2018-08-30 09:50:29	echo_salik	https://github.com/echosalik/droid-hal-configs
+2018-08-30 09:50:36	echo_salik	https://github.com/echosalik/droid-config-rolex
+2018-08-30 09:50:38	mal	only one is enough
+2018-08-30 09:50:47	echo_salik	which one...
+2018-08-30 09:50:55	mal	doesn't matter
+2018-08-30 09:51:08	mal	you have misunderstood a lot it seems
+2018-08-30 09:51:16	echo_salik	oh... well...
+2018-08-30 09:51:28	echo_salik	yeah i think so
+2018-08-30 09:51:44	mal	you do not add anything to droid-configs/droid-configs-device submodule
+2018-08-30 09:52:10	T4	<adampigg> why does the bluez4 config on jtab disable the headset and gateway services....thats what was stopping my bt headphones working!
+2018-08-30 09:53:17	vitalyavolyn	echo_salik: what? you are porting it to redmi 4a? but i just started to do it too :0
+2018-08-30 09:53:39	echo_salik	so that rc files were for the sparse folder in droid-config-rolex?
+2018-08-30 09:53:51	echo_salik	i had that feeling when going through commits
+2018-08-30 09:53:52	mal	echo_salik: I even gave you the exact place where you add some of the changes and you still managed to put those to the wrong folder
+2018-08-30 09:54:43	echo_salik	mal: you know me...
+2018-08-30 09:54:48	mal	echo_salik: http://www.merproject.org/logs/%23sailfishos-porters/%23sailfishos-porters.2018-08-23.log.html#t2018-08-23T14:57:21
+2018-08-30 09:54:50	echo_salik	vitalyavolyn: cool
+2018-08-30 09:55:37	echo_salik	i'll redo that...
+2018-08-30 09:56:54	echo_salik	mal: you should expect dumb stuff from me now...
+2018-08-30 09:58:00	mal	echo_salik: also you shouldn't have installroot, tmp or documentation.list folders/files in your droid-config-rolex github repo
+2018-08-30 09:58:14	mal	those are automatically generated files
+2018-08-30 09:58:19	mal	git add * is bad
+2018-08-30 09:58:38	echo_salik	oh... i'll remove them from git and add a gitignore
+2018-08-30 10:18:31	echo_salik	mal: could this have been a reason?
+2018-08-30 10:21:25	mal	echo_salik: this is just wrong https://github.com/echosalik/droid-hal-rolex/blob/master/droid-hal-rolex.spec
+2018-08-30 10:21:36	mal	the straggle_files looks very wrong
+2018-08-30 10:22:33	echo_salik	my phone doesnt have nfc btw...
+2018-08-30 10:23:06	T4	<adampigg> jusa: ping
+2018-08-30 10:24:30	mal	echo_salik: that was from you mess up with libhybris build
+2018-08-30 10:25:12	echo_salik	yeah... but without these in straggler build fails...
+2018-08-30 10:26:27	mal	sorry but I highly doubt that
+2018-08-30 10:27:01	echo_salik	I'll retry...
+2018-08-30 10:30:29	-->	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has joined #sailfishos-porters
+2018-08-30 10:31:52	kimmoli	rinigus: we should remove usbstick-utils from patterns
+2018-08-30 10:32:49	mal	kimmoli: what is pulling in udisks2?
+2018-08-30 10:32:57	kimmoli	sd-utils
+2018-08-30 10:34:48	mal	sorry, misread your message, I read it as sd-utils :D
+2018-08-30 10:34:48	-->	murray (~murray@dyndsl-092-252-011-236.ewe-ip-backbone.de) has joined #sailfishos-porters
+2018-08-30 10:35:06	<--	jbadiapa (~jubapa@red-hat-inc.vlan404.asr1.mad1.gblx.net) has quit (Ping timeout: 252 seconds)
+2018-08-30 10:35:37	echo_salik	mal: would kindly check if i have missed anything or did something wrong with this: https://github.com/echosalik/droid-config-rolex
+2018-08-30 10:36:46	echo_salik	vitalyavolyn: what kernel ar eyou using?
+2018-08-30 10:36:46	echo_salik	*are you using
+2018-08-30 10:38:06	mal	you still need to make sure that do you need straggler files and if yes then make sure those are correct
+2018-08-30 10:38:17	mal	in droid-hal spec
+2018-08-30 10:39:23	echo_salik	yep doing that right now... removing them then retrying
+2018-08-30 10:45:10	-->	Erhoof (~Erhoof@0895036014.static.corbina.ru) has joined #sailfishos-porters
+2018-08-30 10:49:06	Mister_Magister	echo_salik: there is phone with codename rolex? seriously?
+2018-08-30 10:49:41	echo_salik	Mister_Magister: yep...
+2018-08-30 10:49:52	Mister_Magister	echo_salik: which one?
+2018-08-30 10:50:07	echo_salik	Xiaomi Redmi 4a
+2018-08-30 10:50:11	Mister_Magister	oh xD
+2018-08-30 10:52:06	echo_salik	mal: shouldnt i just remove all nfc related stuff if my phone sdoesnt have the hardware
+2018-08-30 10:54:59	echo_salik	mal: https://pastebin.com/9QVB3YM5
+2018-08-30 10:55:26	echo_salik	i get these errors if i remove those locations from spec
+2018-08-30 10:55:43	<--	echo_salik (~salik@39.50.240.155) has quit (Quit: Leaving)
+2018-08-30 10:57:35	-->	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has joined #sailfishos-porters
+2018-08-30 11:16:42	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-30 11:23:33	-->	ahjolinna (~ahjolinna@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-30 11:24:46	-->	ghosalmartin (~mgrover@82-132-241-99.dab.02.net) has joined #sailfishos-porters
+2018-08-30 11:26:32	<--	piggz (~piggz@95.150.63.194) has quit (Quit: Konversation terminated!)
+2018-08-30 11:26:45	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-30 11:54:47	<--	piggz (~piggz@95.150.63.194) has quit (Ping timeout: 240 seconds)
+2018-08-30 11:57:08	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-30 11:57:27	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-30 12:00:38	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-30 12:05:27	<--	piggz (~piggz@95.150.63.194) has quit (Ping timeout: 240 seconds)
+2018-08-30 12:23:47	-->	guhl (~guhl@gateway/tor-sasl/guhl) has joined #sailfishos-porters
+2018-08-30 12:29:00	<--	mkosola (~mkosola@2001:998:2a:dead:5f0:bc9a:109:a5a1) has quit (Quit: Leaving.)
+2018-08-30 12:30:54	--	irc: disconnected from server
+2018-08-30 12:33:22	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-30 12:33:22	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-30 12:33:22	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-30 12:33:22	--	Channel #sailfishos-porters: 79 nicks (0 ops, 0 voices, 79 normals)
+2018-08-30 12:33:28	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-30 12:46:20	guhl	hi ghosalmartin hows it going
+2018-08-30 12:48:18	ghosalmartin	guhl, hey up, its good you?
+2018-08-30 12:49:10	-->	mkosola (~mkosola@194.157.27.5) has joined #sailfishos-porters
+2018-08-30 12:49:32	guhl	yes, i had some hard 3 work days but atm I build again
+2018-08-30 12:51:04	guhl	I forked the mer-hybris repos now myself and updated them from LOS
+2018-08-30 12:52:04	ghosalmartin	guhl, were mine out of date?
+2018-08-30 12:55:53	-->	mgrover (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has joined #sailfishos-porters
+2018-08-30 12:57:44	guhl	well building failed in all kind of places and i wanted to have the things under my control
+2018-08-30 12:58:07	<--	ghosalmartin (~mgrover@82-132-241-99.dab.02.net) has quit (Ping timeout: 240 seconds)
+2018-08-30 13:00:18	guhl	I built make libconscrypt_openjdk_jni in addition to fix the build of some android apps
+2018-08-30 13:01:44	--	mgrover is now known as ghosalmartin
+2018-08-30 13:01:47	ghosalmartin	guhl, fair enough, am moving house atm, so havent odne much
+2018-08-30 13:02:19	<--	ghosalmartin (~mgrover@79-76-207-39.dynamic.dsl.as9105.com) has quit (Remote host closed the connection)
+2018-08-30 13:03:23	guhl	well it looked too good but now it failed again with
+2018-08-30 13:03:24	guhl	art/runtime/thread-current-inl.h:37: error: undefined reference to '__get_tls'
+2018-08-30 13:39:55	guhl	does anybody have an idea regarding this __get_tls linker error?
+2018-08-30 13:40:54	guhl	for what i have seen in the code of bionic/libc/private/__get_tls.h this is not defined for arm64
+2018-08-30 13:42:26	guhl	also bionic/libc/libc.arm64.map does not show __get_tls (while libc.arm.map does)
+2018-08-30 13:47:07	guhl	so why is https://pastebin.com/u71jFhcU happening
+2018-08-30 13:47:09	<--	vitalyavolyn (~root@185.22.152.53) has quit (Quit: WeeChat 1.9.1)
+2018-08-30 13:47:54	<--	ahjolinna (~ahjolinna@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Remote host closed the connection)
+2018-08-30 13:49:31	-->	ahjolinna (~ahjolinna@mobile-access-bcee10-228.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-30 13:56:08	<--	Erhoof (~Erhoof@0895036014.static.corbina.ru) has quit (Remote host closed the connection)
+2018-08-30 14:20:49	-->	ghosalmartin (~mgrover@82.132.185.182) has joined #sailfishos-porters
+2018-08-30 14:27:42	<--	ghosalmartin (~mgrover@82.132.185.182) has quit (Quit: Leaving)
+2018-08-30 14:32:00	guhl	why do i even want to build libart ?
+2018-08-30 14:51:51	mal	what are you building?
+2018-08-30 14:52:06	guhl	hybris-hal
+2018-08-30 14:52:55	guhl	for device chiron, hybris-15.1
+2018-08-30 15:04:36	<--	murray (~murray@dyndsl-092-252-011-236.ewe-ip-backbone.de) has quit (Ping timeout: 252 seconds)
+2018-08-30 15:15:22	<--	birdzhang (~quassel@14.23.164.60) has quit (Ping timeout: 246 seconds)
+2018-08-30 15:21:59	elros1	abranson: implementation of convertDecoderOutputToI420 is empty. Have you ever seen such a thing? After removing libi420*so video colors are correct
+2018-08-30 15:23:46	r0kk3rz	eww
+2018-08-30 15:39:52	<--	filip_ (~filip_@193-138-55-40.dynamic.t-2.net) has quit (Ping timeout: 246 seconds)
+2018-08-30 16:15:38	<--	elros1 (~quassel@2a02:a315:e040:3a00:91ff:eafb:121a:c23a) has quit (Remote host closed the connection)
+2018-08-30 16:32:50	<--	Guest96408 (~daz@sauria.dazzozo.com) has quit (Ping timeout: 260 seconds)
+2018-08-30 16:34:22	-->	Dazzozo (~daz@sauria.dazzozo.com) has joined #sailfishos-porters
+2018-08-30 17:16:03	<--	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Ping timeout: 268 seconds)
+2018-08-30 17:38:56	-->	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
+2018-08-30 18:00:35	<--	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Quit: byeeeeeeeeeeeeeee)
+2018-08-30 18:01:30	-->	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
+2018-08-30 18:10:13	--	irc: disconnected from server
+2018-08-30 18:13:50	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-30 18:13:50	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-30 18:13:50	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-30 18:13:50	--	Channel #sailfishos-porters: 73 nicks (0 ops, 0 voices, 73 normals)
+2018-08-30 18:13:56	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-30 18:16:13	<--	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has quit (Quit: byeeeeeeeeeeeeeee)
+2018-08-30 18:17:01	-->	Acou_Bass (~Acou_Bass@cpc97736-bolt17-2-0-cust152.10-3.cable.virginm.net) has joined #sailfishos-porters
+2018-08-30 18:20:11	<--	ahjolinna (~ahjolinna@mobile-access-bcee10-228.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-30 18:21:29	--	irc: disconnected from server
+2018-08-30 18:21:37	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-30 18:21:37	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-30 18:21:37	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-30 18:21:37	--	Channel #sailfishos-porters: 72 nicks (0 ops, 0 voices, 72 normals)
+2018-08-30 18:21:43	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-30 18:22:49	-->	praiselordkek (~praiselor@kevanhill.plus.com) has joined #sailfishos-porters
+2018-08-30 18:24:16	praiselordkek	Can you build from a Lineage device tree?
+2018-08-30 18:43:48	<--	praiselordkek (~praiselor@kevanhill.plus.com) has quit (Ping timeout: 245 seconds)
+2018-08-30 18:55:01	<--	lpotter (~quassel@2001:8003:e172:cb00:ba27:ebff:febb:59b) has quit (Read error: Connection reset by peer)
+2018-08-30 19:17:19	--	irc: disconnected from server
+2018-08-30 19:17:44	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-30 19:17:44	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-30 19:17:44	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-30 19:17:44	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-30 19:17:50	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-30 20:26:35	<--	zotan (~zotan@16.34.155.90.in-addr.arpa) has quit (Ping timeout: 276 seconds)
+2018-08-30 20:56:39	-->	psachin (~psachin@103.51.234.171) has joined #sailfishos-porters
+2018-08-30 22:23:16	rinigus	kimmoli: ok. I'll try to remember it. any reason why is it there or for removal?
+2018-08-30 22:34:32	-->	Zucca (~zucca@85-76-4-191-nat.elisa-mobile.fi) has joined #sailfishos-porters
+2018-08-30 22:35:27	kimmoli	the replacmenet of sd-utils has support for usb disks now
+2018-08-30 23:01:13	<--	spiiroin (~spiiroin@82-203-156-9.bb.dnainternet.fi) has quit (Ping timeout: 246 seconds)
+2018-08-30 23:07:06	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-30 23:13:32	<--	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-30 23:19:13	<--	guhl (~guhl@gateway/tor-sasl/guhl) has quit (Ping timeout: 250 seconds)
+2018-08-30 23:27:08	-->	spiiroin (~spiiroin@2001:998:2a:dead:181c:c30f:38e3:aae4) has joined #sailfishos-porters
+2018-08-30 23:27:58	<--	mkosola (~mkosola@194.157.27.5) has quit (Ping timeout: 245 seconds)
+2018-08-30 23:40:33	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-30 23:40:53	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-30 23:44:15	-->	mkosola (~mkosola@2001:998:2a:dead:5f0:bc9a:109:a5a1) has joined #sailfishos-porters
+2018-08-30 23:44:25	<--	mkosola (~mkosola@2001:998:2a:dead:5f0:bc9a:109:a5a1) has quit (Client Quit)
+2018-08-30 23:44:37	-->	mkosola (~mkosola@2001:998:2a:dead:5f0:bc9a:109:a5a1) has joined #sailfishos-porters
+2018-08-30 23:49:35	<--	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has quit (Quit: doniks)
+2018-08-30 23:57:04	-->	lolek (~lolek@unaffiliated/marcin) has joined #sailfishos-porters
+2018-08-31 00:00:47	<--	psachin (~psachin@103.51.234.171) has quit (Ping timeout: 240 seconds)
+2018-08-31 00:01:58	-->	jbadiapa (~jubapa@44.red-81-37-143.dynamicip.rima-tde.net) has joined #sailfishos-porters
+2018-08-31 00:09:55	--	irc: disconnected from server
+2018-08-31 00:10:16	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-31 00:10:16	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-31 00:10:16	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-31 00:10:16	--	Channel #sailfishos-porters: 71 nicks (0 ops, 0 voices, 71 normals)
+2018-08-31 00:10:22	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-31 00:40:02	-->	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has joined #sailfishos-porters
+2018-08-31 00:52:17	-->	guhl (~guhl@gateway/tor-sasl/guhl) has joined #sailfishos-porters
+2018-08-31 00:58:36	<--	rouji (~rouji@x0.at) has quit (Ping timeout: 252 seconds)
+2018-08-31 01:00:11	<--	guhl (~guhl@gateway/tor-sasl/guhl) has quit (Ping timeout: 250 seconds)
+2018-08-31 01:00:50	-->	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
+2018-08-31 01:23:31	<--	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has quit (Ping timeout: 260 seconds)
+2018-08-31 01:49:29	-->	rouji (~rouji@x0.at) has joined #sailfishos-porters
+2018-08-31 02:18:48	-->	NeoChapay (~s.chuplig@host-207-138.dialup.telecet.ru) has joined #sailfishos-porters
+2018-08-31 02:29:42	-->	ghosalmartin (~mgrover@90.216.150.195) has joined #sailfishos-porters
+2018-08-31 02:31:44	-->	mgrover (~mgrover@90.216.150.198) has joined #sailfishos-porters
+2018-08-31 02:33:56	<--	ghosalmartin (~mgrover@90.216.150.195) has quit (Ping timeout: 244 seconds)
+2018-08-31 04:21:04	<--	mkosola (~mkosola@2001:998:2a:dead:5f0:bc9a:109:a5a1) has quit (Ping timeout: 240 seconds)
+2018-08-31 04:31:15	-->	mkosola (~mkosola@194.157.27.5) has joined #sailfishos-porters
+2018-08-31 04:51:59	<--	locusf (locusfdisr@gateway/shell/matrix.org/x-dlyojfwkuyxwyuhj) has quit (Remote host closed the connection)
+2018-08-31 04:52:03	<--	Mikaela- (cibliamatr@gateway/shell/matrix.org/x-smhmiamzkndkyfxi) has quit (Remote host closed the connection)
+2018-08-31 04:52:10	<--	birdzhang[m] (birdzhangm@gateway/shell/matrix.org/x-vtfsmbvwwnamkwxd) has quit (Remote host closed the connection)
+2018-08-31 04:52:20	<--	zhxt[m] (zhxtmatrix@gateway/shell/matrix.org/x-oxcqpthcbaxmwewl) has quit (Read error: Connection reset by peer)
+2018-08-31 05:34:38	-->	tuuletin (~tuuletin@87-92-202-55.bb.dnainternet.fi) has joined #sailfishos-porters
+2018-08-31 06:38:20	-->	birdzhang[m] (birdzhangm@gateway/shell/matrix.org/x-vaqxptvumfzjkwxo) has joined #sailfishos-porters
+2018-08-31 06:40:15	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-31 06:40:36	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-31 06:49:56	<--	birdzhang[m] (birdzhangm@gateway/shell/matrix.org/x-vaqxptvumfzjkwxo) has quit (Remote host closed the connection)
+2018-08-31 07:02:29	-->	NeKit (~TheKit@178-45-3-76.saransk.ru) has joined #sailfishos-porters
+2018-08-31 07:03:08	<--	spiiroin (~spiiroin@2001:998:2a:dead:181c:c30f:38e3:aae4) has quit (Quit: Leaving)
+2018-08-31 07:05:34	<--	TheKit (~TheKit@178-45-11-126.saransk.ru) has quit (Ping timeout: 240 seconds)
+2018-08-31 07:14:08	 *	Mikaela attempted to contact Stskeeeps and sledgeas using MemoServ
+2018-08-31 07:17:50	r0kk3rz	Mikaela: do you need a message forwarded?
+2018-08-31 07:26:13	-->	spiiroin (~spiiroin@82-203-156-9.bb.dnainternet.fi) has joined #sailfishos-porters
+2018-08-31 07:27:47	<--	rouji (~rouji@x0.at) has quit (Ping timeout: 240 seconds)
+2018-08-31 07:33:05	Mikaela	r0kk3rz, I am again asking for +V flag to be given to T4 as I worry that freenode's new antispam mechanisms might pick it up as spambot in the future and I have understood that they are less strict if the bot is voiced
+2018-08-31 07:34:36	-->	Mikaela- (cibliamatr@gateway/shell/matrix.org/x-xiuwyxsejndzhkpj) has joined #sailfishos-porters
+2018-08-31 07:37:20	r0kk3rz	for now i dont think we have a problem, sledges would be the best person to talk to about that
+2018-08-31 07:37:40	r0kk3rz	i'll try to remind him next time he surfaces
+2018-08-31 07:51:56	-->	birdzhang[m] (birdzhangm@gateway/shell/matrix.org/x-hgxlclzymwophsxp) has joined #sailfishos-porters
+2018-08-31 07:55:19	mgrover	guhl have you tried just downloading the entire source rather than minimised?
+2018-08-31 08:05:10	kimmoli	we need also the +r to be changed to +b $~a
+2018-08-31 08:05:12	<--	lolek (~lolek@unaffiliated/marcin) has quit (Quit: Leaving.)
+2018-08-31 08:05:27	kimmoli	r0kk3rz: ^
+2018-08-31 08:05:47	kimmoli	if you add that to the postit sticker :=
+2018-08-31 08:10:33	r0kk3rz	kimmoli: whats that all about?
+2018-08-31 08:11:23	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-31 08:11:58	Mikaela	I would also advice having more than two ops for this big channel
+2018-08-31 08:17:53	r0kk3rz	well particulary because stskeeps doesnt have anything to do with this anymore
+2018-08-31 08:18:08	<--	eduardas_m (~eduardas@213.197.143.19) has quit (Ping timeout: 272 seconds)
+2018-08-31 08:18:13	r0kk3rz	and sledges is always lurking
+2018-08-31 08:23:17	-->	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
+2018-08-31 08:24:06	kimmoli	even though is friday
+2018-08-31 08:25:28	kimmoli	r0kk3rz: that will allow unregistered to join, but can't post anything. this will keep your channel open in case of communication break (timeout and nickserv want to reidentify)
+2018-08-31 08:25:41	mal	kimmoli: we don't get the usual friday video anymore :(
+2018-08-31 08:25:48	kimmoli	that is ban non-authorised
+2018-08-31 08:26:22	kimmoli	https://m.youtube.com/watch?v=kfVsfOSbJY0#
+2018-08-31 08:27:36	mal	:)
+2018-08-31 08:30:21	-->	carepack_ (~carepack_@mue-88-130-76-192.dsl.tropolys.de) has joined #sailfishos-porters
+2018-08-31 08:30:33	Mikaela	kimmoli: I think you meant +q $~a
+2018-08-31 08:33:36	kimmoli	yes...
+2018-08-31 08:33:53	<--	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-31 08:36:20	-->	carepack (~carepack@unaffiliated/carepack) has joined #sailfishos-porters
+2018-08-31 08:43:17	<--	carepack_ (~carepack_@mue-88-130-76-192.dsl.tropolys.de) has quit (Quit: leaving)
+2018-08-31 08:52:53	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-31 09:44:58	<--	steeeve (uid318046@gateway/web/irccloud.com/x-ewkruhajnauloxzq) has left #sailfishos-porters
+2018-08-31 09:53:06	<--	eduardas_m (~eduardas@213.197.143.19) has quit (Ping timeout: 244 seconds)
+2018-08-31 09:53:35	-->	eduardas_m (~eduardas@213.197.143.19) has joined #sailfishos-porters
+2018-08-31 09:54:37	-->	murray (~murray@dyndsl-089-166-229-022.ewe-ip-backbone.de) has joined #sailfishos-porters
+2018-08-31 10:01:45	<--	eduardas_m (~eduardas@213.197.143.19) has quit (Quit: Konversation terminated!)
+2018-08-31 10:02:01	<--	mgrover (~mgrover@90.216.150.198) has quit (Remote host closed the connection)
+2018-08-31 10:32:54	-->	aa13q (~aa13q@92.241.126.127) has joined #sailfishos-porters
+2018-08-31 11:31:53	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-31 11:32:12	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-31 11:38:54	-->	echo_salik (~salik@39.50.240.155) has joined #sailfishos-porters
+2018-08-31 11:39:03	echo_salik	hey all
+2018-08-31 11:41:06	echo_salik	mal: last night my internet died so i couldn't report back. I tried the build after rebasing hal-config thing and removing nfc stuff from straggler and adding new locations. Built it. Now i dont have telnet at all and when i ping 192.168.2.15 i get No route to host.
+2018-08-31 11:41:53	echo_salik	so i ran `nmap -sn 192.168.2.0/24` i get only my system's IP
+2018-08-31 11:47:20	mal	do you see any sign of the device in host dmesg
+2018-08-31 11:47:53	-->	_gnus_ (75f7331b@gateway/web/freenode/ip.117.247.51.27) has joined #sailfishos-porters
+2018-08-31 11:50:34	_gnus_	Hi, I have flashed rootfs. On UI, it is stuck at boot screen. Journal is showing - 'Failed to start droid-hal-init'. System is mounted.
+2018-08-31 11:52:02	mal	_gnus_: more information needed, which android base, preferrably also provide the current adaptation repos on github so we can check if something is missing
+2018-08-31 11:52:04	_gnus_	Another error I can see is - ERROR! Can't connect to RILD
+2018-08-31 11:52:21	_gnus_	Ok
+2018-08-31 11:52:21	mal	rild only works if droid-hal-init works
+2018-08-31 11:52:40	_gnus_	Device is motorola E(Condor).
+2018-08-31 11:53:00	mal	also pastebin dmesg and journalctl -a -n10000 output
+2018-08-31 11:53:19	_gnus_	ok
+2018-08-31 11:54:13	echo_salik	mal: yeah... first i get boat loader ( i love this name) then in a few seconds i get Xiaomi Redmi 4a
+2018-08-31 11:55:00	echo_salik	and during the time i have boat loader (like for 3 4 seconds ) IP is being assigned.
+2018-08-31 11:55:02	echo_salik	so i cant telent
+2018-08-31 11:57:14	mal	the device probably reboots to a debug mode
+2018-08-31 11:59:14	mal	echo_salik: update your github with the latest droid-hal-$DEVICE changes
+2018-08-31 11:59:39	echo_salik	aye aye.. in a few moments...
+2018-08-31 12:00:12	mal	echo_salik: since you needed straggler files then you need detritus package in patterns like this https://github.com/mlehtima/droid-config-fp2-sibon/blob/master/patterns/jolla-hw-adaptation-fp2-sibon.yaml#L5
+2018-08-31 12:04:59	echo_salik	mal: is there sonething that might rewrite yaml?
+2018-08-31 12:05:33	echo_salik	i remember you telling me this and i added it. Also i added udisk or something similarly named...  both are no tthere
+2018-08-31 12:06:15	--	irc: disconnected from server
+2018-08-31 12:06:59	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-31 12:06:59	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-31 12:06:59	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-31 12:06:59	--	Channel #sailfishos-porters: 74 nicks (0 ops, 0 voices, 74 normals)
+2018-08-31 12:06:59	***	Buffer Playback...
+2018-08-31 12:06:59	mal	[12:06:28] echo_salik: only the commands in chapter 7.1 should overwrite it
+2018-08-31 12:06:59	***	Playback Complete.
+2018-08-31 12:07:05	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-31 12:09:04	echo_salik	i dont remeber running those again... i did run git stash at one point... may be i did that in this directory...
+2018-08-31 12:09:31	echo_salik	i also added surface-flinger
+2018-08-31 12:09:48	echo_salik	well.. what's the correct name for that?
+2018-08-31 12:11:18	echo_salik	qt5-qpa-surfaceflinger-plugin?
+2018-08-31 12:12:04	echo_salik	and udisks2?
+2018-08-31 12:12:38	mal	https://github.com/mer-hybris/droid-config-sony-nile/blob/master/patterns/jolla-hw-adaptation-h4113.yaml#L44
+2018-08-31 12:13:07	mal	udisks2 or sd-utils
+2018-08-31 12:17:12	echo_salik	thanks
+2018-08-31 12:18:10	echo_salik	i think i sould rebuild now...
+2018-08-31 12:18:18	echo_salik	i have pushed changes
+2018-08-31 12:18:44	echo_salik	https://github.com/echosalik/droid-hal-rolex
+2018-08-31 12:32:42	<--	echo_salik (~salik@39.50.240.155) has quit (Ping timeout: 252 seconds)
+2018-08-31 12:34:44	-->	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has joined #sailfishos-porters
+2018-08-31 12:59:58	--	irc: disconnected from server
+2018-08-31 13:00:18	-->	rydare (~rydare@unaffiliated/unheeding) has joined #sailfishos-porters
+2018-08-31 13:00:18	--	Topic for #sailfishos-porters is "PSA: http://bit.ly/hot-hadk | Official Sailfish OS Porters channel | checks in-order: https://sailfishos.org/hadk http://bit.ly/faq-hadk http://bit.ly/port-channel-log http://bit.ly/always-grep-irc-logs | http://bit.ly/port-status | http://bit.ly/port-requests | http://bit.ly/port-bugs http://bit.ly/port-new-bug | http://bit.ly/irc-house-rules |http://bit.ly/jolla-oss-contributors-policy"
+2018-08-31 13:00:18	--	Topic set by sledges (~sleleiva@unaffiliated/sledgeas) on Tue, 15 May 2018 11:19:09
+2018-08-31 13:00:18	--	Channel #sailfishos-porters: 74 nicks (0 ops, 0 voices, 74 normals)
+2018-08-31 13:00:24	--	Channel created on Mon, 26 May 2014 06:34:44
+2018-08-31 13:02:10	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-31 13:02:33	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-31 13:06:51	_gnus_	mal: Device: Moto E
+2018-08-31 13:07:00	_gnus_	Base: Lineage14.1
+2018-08-31 13:07:16	_gnus_	journal: https://pastebin.com/89TSqugF
+2018-08-31 13:07:30	_gnus_	and dmesg: https://pastebin.com/JMJTqQBR
+2018-08-31 13:08:53	_gnus_	Please let me know if you need any additional info
+2018-08-31 13:09:24	<--	lynxis (~lunarius@unaffiliated/lynxis) has quit (Remote host closed the connection)
+2018-08-31 13:09:43	-->	lynxis (~lunarius@unaffiliated/lynxis) has joined #sailfishos-porters
+2018-08-31 13:19:09	mal	_gnus_: that dmesg is useless which should have been obvious, did you need straggler_files in rpm/droid-hal-$DEVICE.spec? if yes did you add detritus package in patterns as mentioned also on the channel today
+2018-08-31 13:20:09	<--	_gnus_ (75f7331b@gateway/web/freenode/ip.117.247.51.27) has quit (Ping timeout: 252 seconds)
+2018-08-31 13:29:55	<--	pykape (~pykape@88-115-164-254.elisa-laajakaista.fi) has quit (Ping timeout: 246 seconds)
+2018-08-31 13:57:05	-->	_gnus_ (75f7331b@gateway/web/freenode/ip.117.247.51.27) has joined #sailfishos-porters
+2018-08-31 14:16:25	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-31 14:54:12	<--	_gnus_ (75f7331b@gateway/web/freenode/ip.117.247.51.27) has quit (Ping timeout: 252 seconds)
+2018-08-31 14:55:12	<--	piggz (~piggz@95.150.63.194) has quit (Quit: Konversation terminated!)
+2018-08-31 14:55:23	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-31 15:04:30	<--	piggz (~piggz@95.150.63.194) has quit (Ping timeout: 252 seconds)
+2018-08-31 15:13:36	<--	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-31 15:17:23	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-31 15:27:53	<--	piggz (~piggz@95.150.63.194) has quit (Read error: Connection reset by peer)
+2018-08-31 15:28:22	-->	piggz (~piggz@95.150.63.194) has joined #sailfishos-porters
+2018-08-31 15:41:59	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-31 16:15:16	<--	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-31 16:38:29	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-31 16:38:41	<--	murray (~murray@dyndsl-089-166-229-022.ewe-ip-backbone.de) has quit (Ping timeout: 244 seconds)
+2018-08-31 16:46:53	<--	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has quit (Quit: Konversation terminated!)
+2018-08-31 16:59:19	<--	saidinesh5 (~quassel@138.201.213.18) has quit (Ping timeout: 268 seconds)
+2018-08-31 17:01:16	-->	ahjolinna (~ahjolinna@mobile-access-6df0e5-94.dhcp.inet.fi) has joined #sailfishos-porters
+2018-08-31 18:07:12	-->	wildlander (~wildlande@unaffiliated/wildlander) has joined #sailfishos-porters
+2018-08-31 18:07:47	<--	vknecht (~vknecht@85-171-22-52.rev.numericable.fr) has quit (Ping timeout: 240 seconds)
+2018-08-31 19:12:36	-->	rouji (~rouji@x0.at) has joined #sailfishos-porters
+2018-08-31 19:32:31	<--	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has quit (Quit: doniks)
+2018-08-31 20:08:25	-->	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has joined #sailfishos-porters
+2018-08-31 21:04:34	<--	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has quit (Ping timeout: 240 seconds)
+2018-08-31 22:31:31	-->	doniks (~doniks@a80-101-10-222.adsl.xs4all.nl) has joined #sailfishos-porters
+2018-08-31 22:31:31	<--	doniks (~doniks@a80-101-10-222.adsl.xs4all.nl) has quit (Remote host closed the connection)
+2018-08-31 22:31:47	-->	doniks (~doniks@2001:980:8522:1:c0da:d2ea:dc50:c17e) has joined #sailfishos-porters
+2018-08-31 22:43:25	<--	redj (~quassel@bchmpq5707w-lp140-01-174-93-219-156.dsl.bell.ca) has quit (Ping timeout: 268 seconds)
+2018-08-31 22:44:43	-->	redj (~quassel@bchmpq5707w-lp140-01-174-93-219-156.dsl.bell.ca) has joined #sailfishos-porters
+2018-08-31 23:09:31	<--	T4 (~T4@unaffiliated/mikaela/bot/euforia) has quit (Remote host closed the connection)
+2018-08-31 23:09:53	-->	T4 (~T4@unaffiliated/mikaela/bot/euforia) has joined #sailfishos-porters
+2018-08-31 23:41:06	-->	steeeve (uid318046@gateway/web/irccloud.com/x-ewkruhajnauloxzq) has joined #sailfishos-porters
+2018-09-01 00:20:58	-->	echo_salik (~salik@39.50.240.155) has joined #sailfishos-porters
+2018-09-01 00:26:21	<--	echo_salik (~salik@39.50.240.155) has quit (Remote host closed the connection)

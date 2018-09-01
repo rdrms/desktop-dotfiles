@@ -1,0 +1,119 @@
+2018-08-30 21:18:07	beepnboop--	test
+2018-08-30 21:18:15	rydare	hello
+2018-08-30 21:18:25	beepnboop--	its still going
+2018-08-30 21:18:32	beepnboop--	i have no idea what its doing
+2018-08-30 21:18:57	beepnboop--	i need to relearn everything
+2018-08-30 21:19:00	beepnboop--	fuck me
+2018-08-30 21:19:14	rydare	there's just a few things you have to learn
+2018-08-30 21:19:21	rydare	like the syntax for searching packages
+2018-08-30 21:19:31	rydare	yay -Ss package
+2018-08-30 21:19:43	beepnboop--	what is it doing
+2018-08-30 21:19:51	rydare	it might be compiling firefox
+2018-08-30 21:19:59	rydare	i thought it would just download a tar.gz
+2018-08-30 21:20:08	beepnboop--	its like installing 2000 different versions of firefox
+2018-08-30 21:21:20	rydare	haha, this could take a bit
+2018-08-30 21:21:24	rydare	browsers are big program
+2018-08-30 21:21:25	rydare	s
+2018-08-30 21:21:39	rydare	and ti's taking the source code and turning it into a program
+2018-08-30 21:21:49	rydare	sorry, i thought it would just use a binary
+2018-08-30 21:22:04	rydare	it will use processing power, so the better your computer the faster it goes
+2018-08-30 21:22:22	rydare	but on the plus side it will be optimized for your machine
+2018-08-30 21:24:31	rydare	oh dang there's a faster way to do this
+2018-08-30 21:24:36	rydare	if you're in a rush
+2018-08-30 21:26:45	beepnboop--	its still going
+2018-08-30 21:27:06	rydare	do you want to cancel it and install the binary?
+2018-08-30 21:29:08	rydare	it's a trade off, faster browser or installed quicker
+2018-08-30 21:29:22	rydare	should take less than 20 minutes or so
+2018-08-30 21:30:42	rydare	depending on how much RAM you have, how fast your processor is, etc
+2018-08-30 21:31:55	beepnboop--	32 gb ram
+2018-08-30 21:32:03	rydare	nice
+2018-08-30 21:32:32	beepnboop--	12gb..
+2018-08-30 21:32:36	beepnboop--	jesus
+2018-08-30 21:33:36	beepnboop--	it stopped?
+2018-08-30 21:34:02	rydare	sometimes it will pause on heavy operations
+2018-08-30 21:34:07	rydare	then continue
+2018-08-30 21:34:10	rydare	unless it's finished
+2018-08-30 21:34:13	beepnboop--	ah nvm
+2018-08-30 21:34:38	beepnboop--	it peaked at 17gb
+2018-08-30 21:34:49	beepnboop--	lightweight os :D
+2018-08-30 21:34:53	rydare	haha
+2018-08-30 21:35:00	rydare	think of it as an investment
+2018-08-30 21:35:02	beepnboop--	cpu is at 100%
+2018-08-30 21:35:12	beepnboop--	8 cores lmao
+2018-08-30 21:35:24	rydare	some RAM and CPU now, for slightly less later
+2018-08-30 21:35:28	rydare	browsers are still heavy
+2018-08-30 21:35:31	rydare	what CPU do you have?
+2018-08-30 21:35:42	rydare	I'm looking to build an AMD system
+2018-08-30 21:37:32	beepnboop--	2700x
+2018-08-30 21:37:53	beepnboop--	wish asrock 470 taichi ultimate
+2018-08-30 21:38:01	beepnboop--	the only mb with 8 sata ports
+2018-08-30 21:38:10	beepnboop--	32gb 3200 cl 14
+2018-08-30 21:39:01	beepnboop--	honestly from my 5min of me using this i really like it so far
+2018-08-30 21:39:14	beepnboop--	comes with steam hexchat drivers
+2018-08-30 21:39:20	beepnboop--	what else do i want?
+2018-08-30 21:39:33	rydare	hmm, up to you
+2018-08-30 21:39:39	rydare	just what you use
+2018-08-30 21:40:09	rydare	i usually do something like weechat zsh ncmpcpp mpd vim 
+2018-08-30 21:40:15	rydare	those are the main programs i use on any distro
+2018-08-30 21:41:53	beepnboop--	it finished
+2018-08-30 21:42:00	beepnboop--	i still have quantom
+2018-08-30 21:42:09	rydare	did it install the package
+2018-08-30 21:42:31	rydare	might ask for your password
+2018-08-30 21:43:06	beepnboop--	it did
+2018-08-30 21:43:15	beepnboop--	even asked to remove to old one
+2018-08-30 21:43:25	rydare	did you close and reopen firefox
+2018-08-30 21:43:38	beepnboop--	ye
+2018-08-30 21:44:13	rydare	go to the menu -> about
+2018-08-30 21:44:17	rydare	see what version it is
+2018-08-30 21:44:26	rydare	the latest ESR might be past the quantum shift
+2018-08-30 21:44:30	rydare	you might need to go even older
+2018-08-30 21:44:44	beepnboop--	60
+2018-08-30 21:44:54	rydare	yeah that's the one we installed
+2018-08-30 21:44:59	rydare	RIP
+2018-08-30 21:45:05	beepnboop--	fuck me
+2018-08-30 21:45:14	beepnboop--	non of my extenstions work
+2018-08-30 21:46:18	beepnboop--	how do i update upgrade?
+2018-08-30 21:46:24	rydare	firefox esr version 52 is available
+2018-08-30 21:46:29	rydare	but i think you have to compile it
+2018-08-30 21:46:35	beepnboop--	yea thats the one i want
+2018-08-30 21:46:37	rydare	to update do 'yay -Syu'
+2018-08-30 21:46:59	rydare	https://aur.archlinux.org/packages/firefox-esr52/  'yay -S firefox-esr52'
+2018-08-30 21:47:16	beepnboop--	upgrade?
+2018-08-30 21:47:27	rydare	it'll update and then upgrade
+2018-08-30 21:47:39	beepnboop--	oh awesome
+2018-08-30 21:48:50	beepnboop--	so i need to forgt about sudo ap update
+2018-08-30 21:49:18	beepnboop--	when i finally got to remember it by heart
+2018-08-30 21:49:41	beepnboop--	yay -S is like in arch linux's?
+2018-08-30 21:50:01	rydare	yeah, it's like apt install
+2018-08-30 21:50:21	rydare	well pacman is, yay is just an extra tool that makes installing AUR stuff really easy
+2018-08-30 21:50:30	beepnboop--	remove ?
+2018-08-30 21:50:36	rydare	yay -R
+2018-08-30 21:50:39	rydare	to remove with dependencies
+2018-08-30 21:50:41	beepnboop--	lol
+2018-08-30 21:50:43	rydare	yay -Rcns
+2018-08-30 21:50:53	rydare	don't ask how i remember
+2018-08-30 21:50:54	beepnboop--	no way i'll remember any of this
+2018-08-30 21:51:05	rydare	maybe make yourself a cheat sheet or txt file
+2018-08-30 21:51:10	beepnboop--	until i use it a few times
+2018-08-30 21:51:15	beepnboop--	then i'll remember
+2018-08-30 21:51:25	beepnboop--	yeah good point
+2018-08-30 21:53:18	beepnboop--	sudo nano is the same?
+2018-08-30 21:53:26	beepnboop--	to change sources.list
+2018-08-30 21:53:47	rydare	yeah but it's a different
+2018-08-30 21:53:49	rydare	file
+2018-08-30 21:53:50	rydare	to edit
+2018-08-30 21:54:15	rydare	https://wiki.archlinux.org/index.php/pacman#Repositories_and_mirrors
+2018-08-30 21:55:20	beepnboop--	pacman
+2018-08-30 21:55:21	beepnboop--	lol
+2018-08-30 21:55:29	beepnboop--	sorry its too funny
+2018-08-30 21:55:40	beepnboop--	like who thought thats a good name
+2018-08-30 21:56:56	rydare	haha
+2018-08-30 21:56:58	rydare	i dont know
+2018-08-30 21:57:41	beepnboop--	hmm how do i whisper? /w didn't work
+2018-08-30 21:57:47	rydare	/msg
+2018-08-30 21:58:14	beepnboop--	u got it?
+2018-08-30 21:58:23	beepnboop--	ah nvm i must loging
+2018-08-30 21:59:09	beepnboop--	can you join#ibmthinkpad 1 sec so i can find you in ym desktop
+2018-08-30 21:59:38	beepnboop--	cant even pm without registering
+2018-08-30 21:59:53	rydare	what's your username
+2018-08-30 22:02:38	beepnboop--	one sec

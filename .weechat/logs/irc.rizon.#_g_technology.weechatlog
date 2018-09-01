@@ -1,1232 +1,843 @@
-2018-08-22 11:21:10	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 11:21:10	--	Topic for #/g/technology is "Let's get weird"
-2018-08-22 11:21:10	--	Topic set by Uncled1023 (~admin@Rizon-DFE872E3.hsd1.ca.comcast.net) on Sun, 12 Aug 2018 23:54:06
-2018-08-22 11:21:10	--	Channel #/g/technology: 204 nicks (4 ops, 1 halfop, 1 voice, 198 normals)
-2018-08-22 11:21:10	***	Buffer Playback...
-2018-08-22 11:21:10	THEWHITELION	[10:47:24] this place is prety quiet 
-2018-08-22 11:21:10	THEWHITELION	[10:47:34] why don't we talk about technology
-2018-08-22 11:21:10	THEWHITELION	[10:47:56] hmmmm
-2018-08-22 11:21:10	THEWHITELION	[10:50:21] the content of technolo/g/y is mostly about computer technology, but the computer machine is not the only kind of technology, the combustion engine is a kind of technology isn't it? i think we should define what technology means.
-2018-08-22 11:21:10	lvmbdv	[10:55:42] any kinda technology is good to talk about
-2018-08-22 11:21:10	lvmbdv	[10:56:45] is cooking technology?
-2018-08-22 11:21:10	tacocat	[11:03:19] Technically
-2018-08-22 11:21:10	THEWHITELION	[11:20:00] bodhi linux is hideous
-2018-08-22 11:21:10	THEWHITELION	[11:20:18] and i absolutely D E S P I S E the DE
-2018-08-22 11:21:10	lvmbdv	[11:20:30] bodhi sounds indian
-2018-08-22 11:21:10	lvmbdv	[11:20:57] so it's a no from me dog
-2018-08-22 11:21:10	***	Playback Complete.
-2018-08-22 11:21:10	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 11:28:10	<--	Combot (~Combot@my.name.isnt.cumbot) has quit (Read error: Connection reset by peer)
-2018-08-22 11:28:35	-->	Combot (~Combot@my.name.isnt.cumbot) has joined #/g/technology
-2018-08-22 11:28:35	--	Mode #/g/technology [+ao Combot Combot] by ChanServ
-2018-08-22 11:30:43	-->	QuestionC (~QuestionC@26F51FE:DC5D670D:1F709862:IP) has joined #/g/technology
-2018-08-22 11:42:12	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 11:42:53	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 11:44:57	-->	Karen1986 (~Mibbit@2C35B80C.865A7362.4D144096.IP) has joined #/g/technology
-2018-08-22 11:45:28	Karen1986	hello
-2018-08-22 11:45:33	<--	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Remote host closed the connection)
-2018-08-22 11:45:38	lvmbdv	go away whorebot
-2018-08-22 11:45:45	lvmbdv	.b Karen1986 
-2018-08-22 11:46:00	~Uncled1023	.ab add Karen1986
-2018-08-22 11:46:03	&Combot	Added Auto Ban for Karen1986.
-2018-08-22 11:46:03	--	Mode #/g/technology [+b Karen1986!*@*] by Combot
-2018-08-22 11:46:04	<--	Combot has kicked Karen1986 ([Auto Ban] No Reason Specified)
-2018-08-22 11:46:13	~Uncled1023	fucking bots
-2018-08-22 11:46:22	 *	Uncled1023 strokes Combot
-2018-08-22 11:46:31	 *	lvmbdv strokes Uncled1023
-2018-08-22 11:47:00	--	Uncled1023 has changed topic for #/g/technology from "Let's get weird" to "What is a topic?"
-2018-08-22 11:49:27	lvmbdv	/topic no sexbots
-2018-08-22 11:51:34	THEWHITELION	so what kind of work do you guys do?
-2018-08-22 11:51:55	<--	logim (~logim@F5CE131E.350C5ED0.CD304C9C.IP) has quit (Read error: Connection reset by peer)
-2018-08-22 11:54:26	~Uncled1023	software
-2018-08-22 11:56:27	tacocat	soon to be software
-2018-08-22 11:56:37	THEWHITELION	tbh i wish i worked in software
-2018-08-22 11:56:44	~Uncled1023	what do you do?
-2018-08-22 11:56:54	THEWHITELION	i NEET professionally
-2018-08-22 11:57:13	THEWHITELION	although i am registered for some classes at a community college for this fall
-2018-08-22 11:57:23	<--	mink_ (~mink@Rizon-110E502B.epfl.ch) has quit (Remote host closed the connection)
-2018-08-22 11:57:26	THEWHITELION	-\_(:/)_/-
-2018-08-22 11:58:13	THEWHITELION	what was your interview like Uncled1023
-2018-08-22 12:00:03	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 12:00:19	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 12:00:33	~Uncled1023	well, depends on the interview
-2018-08-22 12:04:19	~Uncled1023	anywhere from specific programming excercises, to personality questions
-2018-08-22 12:05:09	-->	Dorothy1979 (~Mibbit@2DEF2F6B.4424E9E.A075D785.IP) has joined #/g/technology
-2018-08-22 12:05:28	Dorothy1979	I'm here
-2018-08-22 12:09:49	~Uncled1023	.ab add Dorothy1979 
-2018-08-22 12:09:51	&Combot	Added Auto Ban for Dorothy1979.
-2018-08-22 12:09:51	--	Mode #/g/technology [+b Dorothy1979!*@*] by Combot
-2018-08-22 12:09:52	<--	Combot has kicked Dorothy1979 ([Auto Ban] No Reason Specified)
-2018-08-22 12:10:24	~Uncled1023	.b *!~Mibbit@*
-2018-08-22 12:10:24	--	Mode #/g/technology [+b *!~Mibbit@*] by Combot
-2018-08-22 12:10:35	~Uncled1023	bye bye mibbit
-2018-08-22 12:11:04	tacocat	ya! bye bye mibbit >:)
-2018-08-22 12:16:15	miniwa	I'm at work rn
-2018-08-22 12:16:18	miniwa	it's pretty comfy
-2018-08-22 12:16:23	-->	Tanochine (~Tanochine@fuwa.fuwa.time) has joined #/g/technology
-2018-08-22 12:16:56	lvmbdv	> work
-2018-08-22 12:16:58	lvmbdv	> comfy
-2018-08-22 12:17:04	lvmbdv	how
-2018-08-22 12:17:43	-->	rizla5 (~rizla5@Rizon-975D9B91.dyn.estpak.ee) has joined #/g/technology
-2018-08-22 12:17:47	rizla5	yo any1 here
-2018-08-22 12:19:37	lvmbdv	no
-2018-08-22 12:19:45	rizla5	u use 2bwm
-2018-08-22 12:19:59	lvmbdv	i use i3
-2018-08-22 12:20:37	rizla5	okay, I cant find any support for 2bwm, no channels or anything. issues on repo are turned off
-2018-08-22 12:21:16	lvmbdv	find the author's email from the commits
-2018-08-22 12:21:40	rizla5	what am i gonna email him? :D
-2018-08-22 12:21:55	lvmbdv	ye
-2018-08-22 12:21:58	rizla5	ahahaha
-2018-08-22 12:22:17	lvmbdv	what are you, 12?
-2018-08-22 12:23:22	\x	yes
-2018-08-22 12:23:27	\x	i am 12
-2018-08-22 12:23:44	lvmbdv	want some candy?
-2018-08-22 12:24:07	-->	Kimberlyj27 (~Kimberlyj@DC248632.BC0A3A56.496B3E43.IP) has joined #/g/technology
-2018-08-22 12:24:18	Kimberlyj27	Hi!
-2018-08-22 12:24:24	lvmbdv	GO 
-2018-08-22 12:24:26	lvmbdv	AWAY
-2018-08-22 12:28:14	<--	Kimberlyj27 (~Kimberlyj@DC248632.BC0A3A56.496B3E43.IP) has quit (Connection closed)
-2018-08-22 12:30:01	<--	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has quit (Ping timeout: 240 seconds)
-2018-08-22 12:30:50	-->	STumbles (~im.a.kitt@8E71560A.E49280C5.CE2C0498.IP) has joined #/g/technology
-2018-08-22 12:31:15	<--	STumbles (~im.a.kitt@8E71560A.E49280C5.CE2C0498.IP) has quit (Read error: Connection reset by peer)
-2018-08-22 12:36:25	<--	rizla5 (~rizla5@Rizon-975D9B91.dyn.estpak.ee) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
-2018-08-22 12:40:32	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-22 12:49:33	<--	Noerio (~Noerio@A85A8021.66B681CC.AF7259AE.IP) has quit (Quit: Leaving)
-2018-08-22 12:54:47	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-22 13:00:49	-->	Xylitol (~temari@user32.dll) has joined #/g/technology
-2018-08-22 13:14:27	<--	qwertzuiop_ (~qwertzuio@Rizon-4D6E5BC2.versanet.de) has left #/g/technology
-2018-08-22 13:14:29	-->	qwertzuiop_ (~qwertzuio@Rizon-4D6E5BC2.versanet.de) has joined #/g/technology
-2018-08-22 13:14:43	-->	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
-2018-08-22 13:23:09	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 13:23:24	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 13:32:11	<--	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has quit (Remote host closed the connection)
-2018-08-22 13:32:51	<--	Tanochine (~Tanochine@fuwa.fuwa.time) has quit (Quit: Leaving)
-2018-08-22 13:33:03	-->	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has joined #/g/technology
-2018-08-22 13:34:46	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 13:35:00	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 13:40:48	<--	kuso (~milkshake@piece.of.shit) has quit (Quit: Quit)
-2018-08-22 13:52:18	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 13:52:37	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 13:53:22	<--	opuntia (~opuntia@unironically.autistic) has quit
-2018-08-22 13:54:44	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 14:10:27	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-22 14:10:49	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 14:11:02	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 14:14:33	<--	qwertzuiop_ (~qwertzuio@Rizon-4D6E5BC2.versanet.de) has left #/g/technology
-2018-08-22 14:23:39	--	irc: disconnected from server
-2018-08-22 14:29:07	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 14:29:07	--	Topic for #/g/technology is "What is a topic?"
-2018-08-22 14:29:07	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 11:46:59
-2018-08-22 14:29:07	--	Channel #/g/technology: 199 nicks (4 ops, 1 halfop, 1 voice, 193 normals)
-2018-08-22 14:29:07	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 14:45:12	-->	christopher1155 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has joined #/g/technology
-2018-08-22 14:56:49	-->	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has joined #/g/technology
-2018-08-22 14:56:49	<--	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has quit (Excess Flood)
-2018-08-22 14:56:51	-->	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has joined #/g/technology
-2018-08-22 14:56:51	<--	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has quit (Excess Flood)
-2018-08-22 14:57:01	-->	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has joined #/g/technology
-2018-08-22 14:57:01	<--	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has quit (Excess Flood)
-2018-08-22 14:57:27	-->	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has joined #/g/technology
-2018-08-22 14:57:27	<--	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has quit (Excess Flood)
-2018-08-22 14:58:14	-->	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has joined #/g/technology
-2018-08-22 14:58:14	<--	bunt14 (~bunt14@811CA521.851ADE54.AE2ED63C.IP) has quit (Excess Flood)
-2018-08-22 15:04:35	<--	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit (Quit: Leaving)
-2018-08-22 15:07:35	<--	sed (~root@sed.bot) has quit (Ping timeout: 240 seconds)
-2018-08-22 15:09:13	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
-2018-08-22 15:10:04	-->	sed (~root@sed.bot) has joined #/g/technology
-2018-08-22 15:13:53	-->	jinks13[m] (~jinks13ma@75E69A59:32AA87A2:A75BB464:IP) has joined #/g/technology
-2018-08-22 15:16:14	<--	sed (~root@sed.bot) has quit (Ping timeout: 240 seconds)
-2018-08-22 15:18:16	<--	lesderid (~lesderid@check.out.fuwafuwa.moe) has quit (Ping timeout: 240 seconds)
-2018-08-22 15:18:21	-->	lesderid (~lesderid@C85517DE:195D0A73:D3EBC0F8:IP) has joined #/g/technology
-2018-08-22 15:19:18	-->	sed (~root@sed.bot) has joined #/g/technology
-2018-08-22 15:24:54	<--	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
-2018-08-22 15:36:28	<--	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Goodbye)
-2018-08-22 15:49:49	<--	Nux (~user@traps.arent.gay) has quit (Ping timeout: 240 seconds)
-2018-08-22 15:50:38	<--	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-22 16:03:39	-->	Nux (~user@traps.arent.gay) has joined #/g/technology
-2018-08-22 16:06:17	--	irc: disconnected from server
-2018-08-22 16:07:49	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 16:07:49	--	Topic for #/g/technology is "What is a topic?"
-2018-08-22 16:07:49	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 11:46:59
-2018-08-22 16:07:49	--	Channel #/g/technology: 196 nicks (4 ops, 1 halfop, 1 voice, 190 normals)
-2018-08-22 16:07:49	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 16:11:06	--	irc: disconnected from server
-2018-08-22 16:11:58	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 16:11:58	--	Topic for #/g/technology is "What is a topic?"
-2018-08-22 16:11:58	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 11:46:59
-2018-08-22 16:11:58	--	Channel #/g/technology: 196 nicks (4 ops, 1 halfop, 1 voice, 190 normals)
-2018-08-22 16:11:58	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 16:21:13	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 16:24:57	<--	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Remote host closed the connection)
-2018-08-22 16:29:18	<--	analyticat (~analytica@spherical.cows) has quit (Quit: ZNC 1.6.5+deb1+deb9u1 - http://znc.in)
-2018-08-22 16:29:47	--	Uncled1023 has changed topic for #/g/technology from "What is a topic?" to "Happy 30th Birthday IRC!!"
-2018-08-22 16:37:36	-->	analyticat (~analytica@spherical.cows) has joined #/g/technology
-2018-08-22 16:53:54	-->	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-22 16:55:58	<--	UTC (~UTC@FB613406.B5AC969A.CBAD3590.IP) has quit (Killed (NickServ (GHOST command used by UTC_)))
-2018-08-22 16:55:59	--	Uncled1023 has changed topic for #/g/technology from "Happy 30th Birthday IRC!!" to "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 16:56:15	-->	UTC_ (~UTC@FB613406.B5AC969A.CBAD3590.IP) has joined #/g/technology
-2018-08-22 17:08:20	hallucinate	herpty derpday
-2018-08-22 17:14:21	-->	On4r4p (~ouroboros@5B4C0CE6.E9EE0904.3D7F127D.IP) has joined #/g/technology
-2018-08-22 17:22:32	-->	tweak (~tweak@tweak.twk) has joined #/g/technology
-2018-08-22 17:22:42	<--	tweak (~tweak@tweak.twk) has left #/g/technology
-2018-08-22 17:27:18	-->	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-22 17:33:01	THEWHITELION	what is your opinion of the devuan repositories? they seem to be a bit outdated to me
-2018-08-22 17:33:45	<--	Shahid (~MadSci@moo.edu) has quit (Ping timeout: 240 seconds)
-2018-08-22 17:38:10	<--	oem (~oem@jihadist.loli) has quit (Remote host closed the connection)
-2018-08-22 17:51:27	<--	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-22 18:28:35	<--	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-22 18:31:17	-->	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-22 19:12:23	--	irc: disconnected from server
-2018-08-22 19:12:52	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 19:12:52	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 19:12:52	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
-2018-08-22 19:12:52	--	Channel #/g/technology: 194 nicks (4 ops, 1 halfop, 1 voice, 188 normals)
-2018-08-22 19:12:52	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 19:28:49	-->	Nancy1988 (~Nancy1988@3F807A6F.3C1EA088.DB6BD045.IP) has joined #/g/technology
-2018-08-22 19:29:07	Nancy1988	holaaaaaaa
-2018-08-22 19:31:15	<--	yuitimothy (~quassel@4276BE24.ADFAD452.CA2060B8.IP) has quit (Ping timeout: 240 seconds)
-2018-08-22 19:34:47	-->	Shahid (~MadSci@moo.edu) has joined #/g/technology
-2018-08-22 19:38:50	<--	Nancy1988 (~Nancy1988@3F807A6F.3C1EA088.DB6BD045.IP) has quit (Connection closed)
-2018-08-22 19:44:22	--	irc: disconnected from server
-2018-08-22 19:44:28	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 19:44:28	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 19:44:28	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
-2018-08-22 19:44:28	--	Channel #/g/technology: 194 nicks (4 ops, 1 halfop, 1 voice, 188 normals)
-2018-08-22 19:44:28	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 20:01:57	-->	swift110 (~swift110@B314E2EB:9497D10B:DBAC0729:IP) has joined #/g/technology
-2018-08-22 20:13:24	<--	urodna (~urodna@dank.memer) has quit
-2018-08-22 20:16:06	<--	Stringer (~str@5EF6947E.7E57D480.35D0F29A.IP) has quit (Read error: Connection reset by peer)
-2018-08-22 20:18:36	<--	QuestionC (~QuestionC@26F51FE:DC5D670D:1F709862:IP) has quit (Ping timeout: 240 seconds)
-2018-08-22 20:19:40	<--	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-22 20:20:20	-->	Stringer (~str@5EF6947E.7E57D480.35D0F29A.IP) has joined #/g/technology
-2018-08-22 20:21:23	-->	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-22 20:21:27	--	irc: disconnected from server
-2018-08-22 20:25:47	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 20:25:47	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 20:25:47	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
-2018-08-22 20:25:47	--	Channel #/g/technology: 194 nicks (4 ops, 1 halfop, 1 voice, 188 normals)
-2018-08-22 20:25:47	***	Buffer Playback...
-2018-08-22 20:25:47	GreyMan	[20:23:22] So many bots
-2018-08-22 20:25:47	***	Playback Complete.
-2018-08-22 20:25:47	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 20:25:52	--	irc: disconnected from server
-2018-08-22 20:27:51	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 20:27:51	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 20:27:51	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
-2018-08-22 20:27:51	--	Channel #/g/technology: 194 nicks (4 ops, 1 halfop, 1 voice, 188 normals)
-2018-08-22 20:27:51	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 20:30:07	--	irc: disconnected from server
-2018-08-22 20:32:06	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 20:32:06	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
-2018-08-22 20:32:06	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
-2018-08-22 20:32:06	--	Channel #/g/technology: 194 nicks (4 ops, 1 halfop, 1 voice, 188 normals)
-2018-08-22 20:32:06	--	Channel created on Tue, 27 Mar 2012 16:32:05
-2018-08-22 20:42:14	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Remote host closed the connection)
-2018-08-22 20:50:42		irc: disconnected from server
-2018-08-22 20:50:45	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 21:05:21	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-22 21:27:16		Nux is now known as gxsic_christ
-2018-08-22 21:31:39		irc: disconnected from server
-2018-08-22 21:31:41	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 21:36:40		gxsic_christ is now known as Nux
-2018-08-22 21:44:30		irc: disconnected from server
-2018-08-22 21:44:31	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-22 22:27:31	⬅️	Nux (~user@traps.arent.gay) has quit (Ping timeout: 240 seconds)
-2018-08-22 22:27:38	➡️	Nux_ (~user@A37213CF:8FC821DF:F0FC0C49:IP) has joined #/g/technology
-2018-08-22 22:30:47		Nux_ is now known as Nux
-2018-08-22 22:30:59	⬅️	Nux (~user@A37213CF:8FC821DF:F0FC0C49:IP) has quit
-2018-08-22 22:31:10	➡️	Nux (~user@traps.arent.gay) has joined #/g/technology
-2018-08-22 22:34:05	⬅️	UTC_ (~UTC@FB613406.B5AC969A.CBAD3590.IP) has quit (Ping timeout: 240 seconds)
-2018-08-22 23:00:40	⬅️	christopher1155 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has quit (Read error: Connection reset by peer)
-2018-08-22 23:00:42	➡️	christopher11556 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has joined #/g/technology
-2018-08-22 23:23:04	⬅️	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has quit (Quit: Leaving)
-2018-08-22 23:29:36	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-22 23:31:34	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Remote host closed the connection)
-2018-08-22 23:35:17	➡️	UTC (~UTC@FB613406.B5AC969A.CBAD3590.IP) has joined #/g/technology
-2018-08-22 23:37:36	➡️	oem (~oem@jihadist.loli) has joined #/g/technology
-2018-08-22 23:44:47	⬅️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has quit (Ping timeout: 240 seconds)
-2018-08-22 23:45:24	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-22 23:55:44		irc: disconnected from server
-2018-08-22 23:56:41	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 00:11:42	TaZeR	irc is the place to be when bitches cumming on your face is your fantasy
-2018-08-23 00:13:24	swift110	hey
-2018-08-23 00:15:25	THEWHITELION	the internet is a refuge from the general consensus, a place where people with unconventional and maybe unpopular opinions can express themselves without being chastised
-2018-08-23 00:25:55	⬅️	POJO (~quassel@PO.JO) has quit (Ping timeout: 240 seconds)
-2018-08-23 00:26:36	⬅️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has quit (Remote host closed the connection)
-2018-08-23 00:27:22	➡️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has joined #/g/technology
-2018-08-23 00:27:56	⬅️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has quit (Remote host closed the connection)
-2018-08-23 00:36:49	➡️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has joined #/g/technology
-2018-08-23 01:03:02	TaZeR	i think everyone in the world is free to express themselves without fear 
-2018-08-23 01:03:19	TaZeR	we live in a great and understanding society =)
-2018-08-23 01:03:58	rdr	FUCK YOU FEAR ME
-2018-08-23 01:04:00		irc: disconnected from server
-2018-08-23 01:04:05	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 01:07:34	_bryan	why are natural voice products like siri and that google shit always women
-2018-08-23 01:09:16	Aoyagi_raventop	why can't they have loli voice?
-2018-08-23 01:09:28	Aoyagi_raventop	like the one from Resident Evil
-2018-08-23 01:20:34	➡️	yuitimothy (~quassel@4276BE24.ADFAD452.CA2060B8.IP) has joined #/g/technology
-2018-08-23 01:21:38	⬅️	christopher11556 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has quit (Ping timeout: 240 seconds)
-2018-08-23 01:36:03	THEWHITELION	bullshit TaZeR the people in China cannot express themselves without persecution from Xi Jinping
-2018-08-23 01:36:48	Aoyagi_raventop	Chinese aren't people.
-2018-08-23 01:36:54	THEWHITELION	and by chastised i do not mean arrested/imprisoned, i mean that society would mistreat them because of their beliefs
-2018-08-23 01:36:58	TaZeR	they express themselves with fentanyl
-2018-08-23 01:37:19	THEWHITELION	chinese women are qt3.14
-2018-08-23 01:37:29	THEWHITELION	especially when they mix with the white man's seed
-2018-08-23 01:37:58	TaZeR	i think we need to slip these dictator leaders something in their drink, not poison but LSD or DMT
-2018-08-23 01:38:00	THEWHITELION	shit i should go to bed
-2018-08-23 01:38:17	TaZeR	maybe we can change the world by mass psychdelic infection
-2018-08-23 01:38:20	TaZeR	like the water supply
-2018-08-23 01:38:28	TaZeR	and wake people up
-2018-08-23 01:38:42	TaZeR	those that need to be awoken
-2018-08-23 01:51:50	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-23 01:55:39	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-23 02:01:08	⬅️	Combot (~Combot@my.name.isnt.cumbot) has quit (Ping timeout: 240 seconds)
-2018-08-23 02:12:00	➡️	GengarDanker (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has joined #/g/technology
-2018-08-23 02:29:57	➡️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has joined #/g/technology
-2018-08-23 02:38:47	➡️	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
-2018-08-23 02:39:40	➡️	slaqer (~slaqer@98ECEA43.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-23 03:12:10	⬅️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has quit (Read error: Connection reset by peer)
-2018-08-23 03:12:32	➡️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has joined #/g/technology
-2018-08-23 03:19:52	Aoyagi_raventop	.seen kodiak
-2018-08-23 03:19:55	Aoyagi_raventop	rip
-2018-08-23 03:30:40	_bryan	Aoyagi_raventop | why can't they have loli voice?
-2018-08-23 03:30:47	_bryan	natural voice interfaces are stupid anyway
-2018-08-23 03:33:23	⬅️	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
-2018-08-23 03:43:40	⬅️	GengarDanker (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has quit (Quit: Leaving)
-2018-08-23 03:49:53	⬅️	Semilevel (~Semilevel@reimu.nl-) has quit (Ping timeout: 240 seconds)
-2018-08-23 03:50:38	⬅️	slaqer (~slaqer@98ECEA43.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 03:56:54	➡️	Jasjar (~Jasjar@64CF30FE.B22F5974.626952AA.IP) has joined #/g/technology
-2018-08-23 04:06:15	⬅️	Kunoichi (~Kunochan@ninja.princess) has quit (Ping timeout: 240 seconds)
-2018-08-23 04:19:08	➡️	Kunoichi (~Kunochan@ninja.princess) has joined #/g/technology
-2018-08-23 04:19:08		Mode #/g/technology [+h Kunoichi] by ChanServ
-2018-08-23 04:30:02	➡️	Semilevel (~Semilevel@A71D4C93.28A4F350.A29C084C.IP) has joined #/g/technology
-2018-08-23 04:59:41	⬅️	swift110 (~swift110@B314E2EB:9497D10B:DBAC0729:IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 05:02:28	⬅️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has quit (Remote host closed the connection)
-2018-08-23 05:02:47	➡️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has joined #/g/technology
-2018-08-23 05:18:58	➡️	logim (~logim@F5CE131E.350C5ED0.CD304C9C.IP) has joined #/g/technology
-2018-08-23 05:19:20	⬅️	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has quit (Quit: qat)
-2018-08-23 05:29:46	➡️	GengarDanker (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has joined #/g/technology
-2018-08-23 05:30:05		GengarDanker is now known as GengarD
-2018-08-23 05:38:40	⬅️	GengarD (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has quit (Ping timeout: 240 seconds)
-2018-08-23 05:45:19	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-23 06:15:20	➡️	GengarD (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has joined #/g/technology
-2018-08-23 06:20:24	➡️	Susana26 (~Susana26@7990A59.5D466F81.338808BA.IP) has joined #/g/technology
-2018-08-23 06:20:32	Susana26	Hi!
-2018-08-23 06:25:46	➡️	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-23 06:29:53	⬅️	Susana26 (~Susana26@7990A59.5D466F81.338808BA.IP) has quit (Connection closed)
-2018-08-23 07:12:49	⬅️	naari (~naari@away.permanently.anyway.dont.bother.lol) has quit (Ping timeout: 240 seconds)
-2018-08-23 07:15:39	➡️	naari (~naari@away.permanently.anyway.dont.bother.lol) has joined #/g/technology
-2018-08-23 07:38:26	GreyMan	.ping
-2018-08-23 07:38:31	GreyMan	Oh no
-2018-08-23 07:38:44	GreyMan	They left gsicp and they are here now
-2018-08-23 07:42:44	➡️	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-23 08:00:37	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-23 08:10:37	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-23 08:11:29	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-23 08:14:58	➡️	tscott_ (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-23 08:16:15	➡️	LocustFurnace (~LocustFur@Rizon-14AA2660.totalplay.net) has joined #/g/technology
-2018-08-23 08:17:32	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-23 08:21:10	➡️	POJO (~quassel@PO.JO) has joined #/g/technology
-2018-08-23 08:22:40	⬅️	Leliana (~is@revthefox.co.uk) has quit (Ping timeout: 240 seconds)
-2018-08-23 08:32:24	⬅️	POJO (~quassel@PO.JO) has quit (Ping timeout: 240 seconds)
-2018-08-23 08:47:02	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-23 08:56:00	⬅️	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-23 08:58:34	➡️	Leliana (~is@revthefox.co.uk) has joined #/g/technology
-2018-08-23 09:21:27	➡️	christopher1155 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has joined #/g/technology
-2018-08-23 09:34:38	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-23 09:50:58	➡️	murdoc (~mduck@9FA3F4EE.2F92B7AA.78F8D30B.IP) has joined #/g/technology
-2018-08-23 10:05:54	⬅️	On4r4p (~ouroboros@5B4C0CE6.E9EE0904.3D7F127D.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 10:08:02	➡️	On4r4p (~ouroboros@5B4C0CE6.E9EE0904.3D7F127D.IP) has joined #/g/technology
-2018-08-23 10:13:54	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-23 10:36:24	⬅️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
-2018-08-23 10:39:03	⬅️	LocustFurnace (~LocustFur@Rizon-14AA2660.totalplay.net) has quit (Quit: Leaving)
-2018-08-23 10:40:52	⬅️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has quit (Remote host closed the connection)
-2018-08-23 10:41:10	➡️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has joined #/g/technology
-2018-08-23 11:01:06	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-23 11:06:13	⬅️	murdoc (~mduck@9FA3F4EE.2F92B7AA.78F8D30B.IP) has quit (Quit: Leaving)
-2018-08-23 11:10:15	THEWHITELION	good day
-2018-08-23 11:12:11	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-23 11:13:27	rdr	does anyone use firefox?  when i right click if i don't hold it selects back automatically, which is where the mouse is when the menu spawns
-2018-08-23 11:14:05	rdr	oh i found the solution
-2018-08-23 11:16:50	rdr	ui.context_menus.after_mouseup to true
-2018-08-23 11:20:49	Shahid	is ur mouse button broken?
-2018-08-23 11:21:26	rdr	no it works fine in other programs
-2018-08-23 11:21:37	rdr	apparently it's an issue with i3
-2018-08-23 11:22:14	rdr	my mouse has been doing weird things though
-2018-08-23 11:22:16	rdr	it's 5 years old
-2018-08-23 11:22:19	rdr	maybe time to replace it
-2018-08-23 11:37:12	➡️	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-23 11:42:20		irc: disconnected from server
-2018-08-23 11:42:34	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 11:49:12	⬅️	Kunoichi (~Kunochan@ninja.princess) has quit (Ping timeout: 240 seconds)
-2018-08-23 11:51:39	⬅️	logim (~logim@F5CE131E.350C5ED0.CD304C9C.IP) has quit (Read error: Connection reset by peer)
-2018-08-23 11:52:09	⬅️	kei (~me@kei.qt) has quit (Ping timeout: 240 seconds)
-2018-08-23 11:55:01	rdr	CANCEL MY MEETINGS
-2018-08-23 11:55:08	rdr	PACMAN FUCKED UP MY XORG.CONF AGAIN
-2018-08-23 11:55:16	THEWHITELION	kek
-2018-08-23 11:55:20	THEWHITELION	install void
-2018-08-23 11:55:27	rdr	what's good about void
-2018-08-23 11:55:29	rdr	i like manjaro
-2018-08-23 11:55:34	THEWHITELION	the aesthetic
-2018-08-23 11:55:35	rdr	haven't had any issues with it
-2018-08-23 11:55:50	rdr	does it have meme features like no systemd
-2018-08-23 11:56:01	THEWHITELION	yeah manjaro is great, i used it for a year before moving onto something different
-2018-08-23 11:56:31	➡️	kei (~me@kei.qt) has joined #/g/technology
-2018-08-23 11:56:45	THEWHITELION	void linux is very lean, no unnecessary packages that you didn't ask for are a part of the original installation
-2018-08-23 11:57:07	THEWHITELION	plus there is a musl library variant of void, which is interesting
-2018-08-23 11:57:26	THEWHITELION	and that screenfetch logo is sick
-2018-08-23 11:57:59	THEWHITELION	tbh i can't stand using desktop environments anymore, too much shit i don't use gets thrown into the install
-2018-08-23 11:58:16	THEWHITELION	i just use a window manager now and get whatever packages i need from the repository
-2018-08-23 11:58:40	rdr	eh i just get xfce since the programs are useful, and it's nice to have a backup DE if you screw up your wm
-2018-08-23 11:58:48	rdr	but i can see the appeal of not having any DE installed
-2018-08-23 11:58:51	rdr	and just picking your packages
-2018-08-23 12:02:10	➡️	Kunoichi (~Kunochan@ninja.princess) has joined #/g/technology
-2018-08-23 12:02:10		Mode #/g/technology [+h Kunoichi] by ChanServ
-2018-08-23 12:03:44	⬅️	UTC (~UTC@FB613406.B5AC969A.CBAD3590.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 12:03:51	➡️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
-2018-08-23 12:04:04	➡️	mib918281 (~mib918281@FB613406.B5AC969A.CBAD3590.IP) has joined #/g/technology
-2018-08-23 12:05:02	⬅️	mib918281 (~mib918281@FB613406.B5AC969A.CBAD3590.IP) has quit
-2018-08-23 12:06:44	⬅️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit
-2018-08-23 12:19:44	➡️	kuso (~milkshake@piece.of.shit) has joined #/g/technology
-2018-08-23 12:26:15	➡️	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has joined #/g/technology
-2018-08-23 12:27:00	⬅️	opuntia (~opuntia@unironically.autistic) has quit (Quit: Leaving)
-2018-08-23 12:31:40	⬅️	nullptr (~nullptr@Rizon-58100E37.net.upcbroadband.cz) has quit (Quit: ZNC - http://znc.in)
-2018-08-23 12:32:04	➡️	nullptr (~nullptr@Rizon-58100E37.net.upcbroadband.cz) has joined #/g/technology
-2018-08-23 12:34:23		irc: disconnected from server
-2018-08-23 12:34:50	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 13:09:52		irc: disconnected from server
-2018-08-23 13:10:36	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 13:22:09	➡️	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has joined #/g/technology
-2018-08-23 13:25:52	➡️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
-2018-08-23 13:26:06	⬅️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit (Remote host closed the connection)
-2018-08-23 13:30:32	⬅️	uchi (~uchikins@Rizon-F586582E.hsd1.il.comcast.net) has left #/g/technology (Leaving)
-2018-08-23 13:34:14	⬅️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has quit (Remote host closed the connection)
-2018-08-23 13:35:22	➡️	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has joined #/g/technology
-2018-08-23 13:40:05	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-23 13:45:18	➡️	opuntia (~opuntia@unironically.autistic) has joined #/g/technology
-2018-08-23 13:54:24	⬅️	opuntia (~opuntia@unironically.autistic) has quit
-2018-08-23 14:03:59	➡️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has joined #/g/technology
-2018-08-23 14:04:37	⬅️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has quit (Read error: Connection reset by peer)
-2018-08-23 14:05:10	➡️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has joined #/g/technology
-2018-08-23 14:05:12	⬅️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has quit (Read error: Connection reset by peer)
-2018-08-23 14:05:48		irc: disconnected from server
-2018-08-23 14:05:57	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 14:06:07	➡️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has joined #/g/technology
-2018-08-23 14:17:13		irc: disconnected from server
-2018-08-23 14:28:22	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 14:33:19	➡️	kei (~k@kei.qt) has joined #/g/technology
-2018-08-23 14:41:38	⬅️	STumbles (~im.a.kitt@65EA1ACA.E49280C5.CE2C0498.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 14:42:08	⬅️	GengarD (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has quit (Ping timeout: 240 seconds)
-2018-08-23 14:48:01		irc: disconnected from server
-2018-08-23 14:49:56	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 14:51:38	⬅️	BurnZeZ (~BurnZeZ@Rizon-ACB3F446.systems) has quit (Ping timeout: 240 seconds)
-2018-08-23 14:54:02	➡️	Polylith (~Polylith@979C1E4.EAF16F64.3A66C13D.IP) has joined #/g/technology
-2018-08-23 14:54:38	➡️	BurnZeZ (~BurnZeZ@Rizon-ACB3F446.systems) has joined #/g/technology
-2018-08-23 15:03:28	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-23 15:13:48	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 15:38:01	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-23 15:39:37	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Remote host closed the connection)
-2018-08-23 15:39:43	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 15:44:40	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-23 15:50:03	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-23 16:06:55	⬅️	anon9234 (~anon9234@anon.vh.org) has quit (Quit: Coyote finally caught me)
-2018-08-23 16:07:06	➡️	anon9234 (~anon9234@F0F2029C.16DF4F9D.F25E27D4.IP) has joined #/g/technology
-2018-08-23 16:11:14	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Goodbye)
-2018-08-23 16:22:29	⬅️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Remote host closed the connection)
-2018-08-23 16:30:56	➡️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has joined #/g/technology
-2018-08-23 16:33:06	⬅️	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
-2018-08-23 16:37:17	➡️	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-23 16:50:26	➡️	GengarD (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has joined #/g/technology
-2018-08-23 16:51:33	⬅️	kuso (~milkshake@piece.of.shit) has quit (Quit: Quit)
-2018-08-23 16:52:05	⬅️	GengarD (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has quit
-2018-08-23 16:57:07	➡️	Akaibu (uid118096@Rizon-911A775E.stonehaven.irccloud.com) has joined #/g/technology
-2018-08-23 17:03:54	➡️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has joined #/g/technology
-2018-08-23 17:24:03	➡️	tweak (~tweak@tweak.twk) has joined #/g/technology
-2018-08-23 17:24:04	⬅️	tweak (~tweak@tweak.twk) has quit
-2018-08-23 17:24:08	⬅️	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
-2018-08-23 17:33:34		irc: disconnected from server
-2018-08-23 17:33:52	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 17:37:31	➡️	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has joined #/g/technology
-2018-08-23 17:41:18	⬅️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 17:42:20	➡️	secret (~secret@Rizon-F8FC09F5.bstnma.fios.verizon.net) has joined #/g/technology
-2018-08-23 17:42:50	⬅️	secret (~secret@Rizon-F8FC09F5.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
-2018-08-23 17:58:25	➡️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has joined #/g/technology
-2018-08-23 18:01:11	⬅️	Nux (~user@traps.arent.gay) has quit (Quit: WeeChat 2.2)
-2018-08-23 18:01:24	➡️	Nux (~user@traps.arent.gay) has joined #/g/technology
-2018-08-23 18:01:54	sebbu	https://github.com/felixrieseberg/windows95
-2018-08-23 18:02:00	⬅️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has quit (Read error: Connection reset by peer)
-2018-08-23 18:02:43	⬅️	Fr0styy (~user@Rizon-9D7487C3.skybroadband.com) has quit (Ping timeout: 240 seconds)
-2018-08-23 18:04:21	➡️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has joined #/g/technology
-2018-08-23 18:04:51	➡️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has joined #/g/technology
-2018-08-23 18:10:01	⬅️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
-2018-08-23 18:10:05	➡️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has joined #/g/technology
-2018-08-23 18:16:08	THEWHITELION	i remember playing Age of Empires Gold Edition on this old biege colored computer running windows 95, the animated screensavers were pretty cool too
-2018-08-23 18:16:48	THEWHITELION	does that make me a boomer
-2018-08-23 18:17:29	Shahid	i don't know anymore
-2018-08-23 18:17:44	Shahid	are we millennial or are we boomer?
-2018-08-23 18:17:59	Shahid	millennial was pushed back all the way to 1982 now which includes me
-2018-08-23 18:18:36	hallucinate	https://www.youtube.com/watch?v=y2F0wjoKEhg
-2018-08-23 18:19:20	Shahid	i've been linking that too :)
-2018-08-23 18:19:39	tj	you know what i been linking
-2018-08-23 18:19:41	tj	https://www.youtube.com/watch?v=CL9gx3CJ73U
-2018-08-23 18:20:14	sebbu	i bought age of empire definitive edition
-2018-08-23 18:20:15	sebbu	:p
-2018-08-23 18:20:44	Shahid	i remember age of empires 2 only
-2018-08-23 18:21:02	Shahid	i liked playing warcraft 3 and starcraft 1
-2018-08-23 18:21:43	Shahid	ice wind dale!
-2018-08-23 18:26:29		irc: disconnected from server
-2018-08-23 18:29:52	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 18:34:02	sebbu	i liked warcraft3 too
-2018-08-23 18:34:10	sebbu	starcraft 1... not so much
-2018-08-23 18:34:15	sebbu	i do play sc2 though
-2018-08-23 18:39:12	⬅️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has quit (Remote host closed the connection)
-2018-08-23 18:43:16	hallucinate	Shahid, oh yeah, cool video
-2018-08-23 18:44:12	Shahid	10 fucking dollar
-2018-08-23 18:44:16	Shahid	what the fuck
-2018-08-23 18:44:37	Shahid	bed time now, i gotta hopefully dream and solve my ZFS issue
-2018-08-23 18:44:51	Shahid	i have all the great things happening on my server
-2018-08-23 18:44:58	Shahid	but all the bullshit on this desktop
-2018-08-23 18:49:29	THEWHITELION	'luxury computer chair'
-2018-08-23 18:49:34	THEWHITELION	sellout
-2018-08-23 18:49:39	THEWHITELION	not interested bye
-2018-08-23 18:50:08	hallucinate	just skip through the embedded ads
-2018-08-23 18:50:21	hallucinate	linus has like 20 employees he has to pay and ad revenue isn't enough
-2018-08-23 18:53:49	THEWHITELION	fire them all and replace them with sophisticated machine intelligences
-2018-08-23 18:55:10	hallucinate	ha
-2018-08-23 18:56:31	THEWHITELION	humanity will become obsolete
-2018-08-23 19:01:16	➡️	tweak (~tweak@tweak.twk) has joined #/g/technology
-2018-08-23 19:05:10	➡️	stonedcold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 19:06:04	⬅️	Akaibu (uid118096@Rizon-911A775E.stonehaven.irccloud.com) has quit (Quit: Connection closed for inactivity)
-2018-08-23 19:07:48	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Ping timeout: 240 seconds)
-2018-08-23 19:07:48		stonedcold is now known as stonecold
-2018-08-23 19:11:47	⬅️	kus (~kus@Rizon-533E67A4.nwrknj.fios.verizon.net) has quit (Remote host closed the connection)
-2018-08-23 19:39:06	⬅️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has quit (Read error: Connection reset by peer)
-2018-08-23 19:39:25	➡️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has joined #/g/technology
-2018-08-23 19:44:26	⬅️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has quit
-2018-08-23 19:52:33	⬅️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 19:57:15	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 20:00:20	⬅️	Pixi (~Pixi@magical.mithra) has quit
-2018-08-23 20:01:54	➡️	Pixi (~Pixi@Rizon-827BF723.hsd1.va.comcast.net) has joined #/g/technology
-2018-08-23 20:09:32	⬅️	urodna (~urodna@dank.memer) has quit
-2018-08-23 20:15:52		irc: disconnected from server
-2018-08-23 20:17:03	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 20:24:34		irc: disconnected from server
-2018-08-23 20:24:45	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 20:25:56	⬅️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has quit (Ping timeout: 240 seconds)
-2018-08-23 20:33:03	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-23 20:35:19	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-23 20:48:28	⬅️	tweak (~tweak@tweak.twk) has left #/g/technology
-2018-08-23 21:07:15		luis is now known as emmymadeinjapan
-2018-08-23 21:24:38	⬅️	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has quit (Ping timeout: 240 seconds)
-2018-08-23 21:30:52		irc: disconnected from server
-2018-08-23 21:39:19	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 21:41:59		irc: disconnected from server
-2018-08-23 21:46:57	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 21:51:38		irc: disconnected from server
-2018-08-23 21:51:52	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 21:52:55	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Ping timeout: 240 seconds)
-2018-08-23 21:53:22	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 21:55:42	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Read error: Connection reset by peer)
-2018-08-23 21:55:52	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 21:58:13	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Read error: Connection reset by peer)
-2018-08-23 21:58:21	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 22:13:21	⬅️	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has quit (Quit: Leaving)
-2018-08-23 22:21:59		irc: disconnected from server
-2018-08-23 22:22:35	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 22:43:55		irc: disconnected from server
-2018-08-23 22:44:17	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 22:45:47		irc: disconnected from server
-2018-08-23 22:46:27	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 23:02:28	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Ping timeout: 240 seconds)
-2018-08-23 23:08:58		irc: disconnected from server
-2018-08-23 23:11:46	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-23 23:13:42	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-23 23:29:42	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-23 23:48:32		irc: disconnected from server
-2018-08-23 23:55:18	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 00:19:03	➡️	Combot (~Combot@my.name.isnt.cumbot) has joined #/g/technology
-2018-08-24 00:19:03		Mode #/g/technology [+ao Combot Combot] by ChanServ
-2018-08-24 00:31:45	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-24 00:43:20	⬅️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 00:44:29	⬅️	Tanami (~q@irc.expert) has quit (Excess Flood)
-2018-08-24 00:44:30	➡️	Tanami (~q@Rizon-CE2DEBD5.expert) has joined #/g/technology
-2018-08-24 00:58:03	⬅️	hubcaps- (~hubcaps@sisyphus.is.happy) has quit (Ping timeout: 240 seconds)
-2018-08-24 00:58:56	⬅️	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has quit (Read error: Connection reset by peer)
-2018-08-24 00:59:44	➡️	slaqer (~slaqer@1200E992.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-24 01:46:08	⬅️	stonecold (~stonecold@enemies.of.metal.your.death.is.our.reward) has quit (Remote host closed the connection)
-2018-08-24 01:51:05	➡️	logim (~logim@12A087A6.F2A66122.CD304C9C.IP) has joined #/g/technology
-2018-08-24 01:54:46	➡️	Xylitol (~temari@user32.dll) has joined #/g/technology
-2018-08-24 02:01:43	⬅️	Combot (~Combot@my.name.isnt.cumbot) has quit (Ping timeout: 240 seconds)
-2018-08-24 02:18:50	➡️	JayJay| (~JayJay|\@F0569CBC.1A6A8992.48228009.IP) has joined #/g/technology
-2018-08-24 02:31:33	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-24 02:44:06	➡️	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
-2018-08-24 02:44:44	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-24 03:12:45	⬅️	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
-2018-08-24 03:31:43	⬅️	slaqer (~slaqer@1200E992.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 03:36:19	➡️	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has joined #/g/technology
-2018-08-24 03:58:36	➡️	spacca (~justatria@Rizon-575D10FA.east.us.northamericancoax.com) has joined #/g/technology
-2018-08-24 04:10:32	➡️	fnutt (~fnutt@Rizon-289B61DB.bc.googleusercontent.com) has joined #/g/technology
-2018-08-24 04:13:28	⬅️	fnutt (~fnutt@Rizon-289B61DB.bc.googleusercontent.com) has quit
-2018-08-24 04:32:58	➡️	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology
-2018-08-24 04:33:38	⬅️	analyticat (~analytica@spherical.cows) has quit (Quit: ZNC 1.6.5+deb1+deb9u1 - http://znc.in)
-2018-08-24 04:39:39	⬅️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 05:15:06	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-24 05:52:14	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Sleeping...)
-2018-08-24 06:04:47	⬅️	Kunoichi (~Kunochan@ninja.princess) has quit (Ping timeout: 240 seconds)
-2018-08-24 06:17:41	➡️	Kunoichi (~Kunochan@ninja.princess) has joined #/g/technology
-2018-08-24 06:17:42		Mode #/g/technology [+h Kunoichi] by ChanServ
-2018-08-24 06:46:34	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-24 07:02:12	⬅️	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has quit (Quit: qat)
-2018-08-24 07:12:03	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Sleeping...)
-2018-08-24 07:19:38	➡️	kuso (~milkshake@piece.of.shit) has joined #/g/technology
-2018-08-24 07:25:47	⬅️	wariw (~wariw@Rizon-B3597C7B.dynamic.chello.pl) has quit (Ping timeout: 240 seconds)
-2018-08-24 07:26:41	➡️	wariw (~wariw@Rizon-B3597C7B.dynamic.chello.pl) has joined #/g/technology
-2018-08-24 07:41:26	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-24 07:53:09	➡️	bottledjimmy (~gg@B0C3039A.1D0FE7CF.C64F2B35.IP) has joined #/g/technology
-2018-08-24 08:05:36	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Sleeping...)
-2018-08-24 08:05:56	➡️	inputnoise (~inputnois@Rizon-93BE5F5D.a486.priv.bahnhof.se) has joined #/g/technology
-2018-08-24 08:15:59	⬅️	bottledjimmy (~gg@B0C3039A.1D0FE7CF.C64F2B35.IP) has quit (Read error: Connection reset by peer)
-2018-08-24 08:16:16	➡️	bottledjimmy (~gg@B0C3039A.1D0FE7CF.C64F2B35.IP) has joined #/g/technology
-2018-08-24 08:19:22	➡️	kus (~kus@Rizon-533E67A4.nwrknj.fios.verizon.net) has joined #/g/technology
-2018-08-24 08:20:03	➡️	SeymoreJohnson (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has joined #/g/technology
-2018-08-24 08:24:05	⬅️	SeymoreJohnson (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has quit (Ping timeout: 240 seconds)
-2018-08-24 08:36:24	➡️	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-24 08:43:03	⬅️	manots (~manots@Rizon-1985B4F5.dhcp.chtrptr.net) has quit (Quit: ZNC 1.7.1 - https://znc.in)
-2018-08-24 09:02:32	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-24 09:03:02	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 09:08:12	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit
-2018-08-24 09:08:31	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 09:14:14	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit (Ping timeout: 240 seconds)
-2018-08-24 09:15:46	⬅️	nayfie (~nayfie@god.i.love.meme) has quit (Quit: bye)
-2018-08-24 09:17:14	➡️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has joined #/g/technology
-2018-08-24 09:20:52	⬅️	MutherDragon (~Kokaine77@Rizon-196D82F2.tyrccmta03.res.dyn.suddenlink.net) has quit
-2018-08-24 09:32:02	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-24 09:37:23	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 09:41:32	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit (Ping timeout: 240 seconds)
-2018-08-24 09:41:43	➡️	hubcaps- (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 09:42:21	⬅️	hubcaps- (~hubcaps@sisyphus.is.happy) has quit
-2018-08-24 09:45:54	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-24 10:05:47	⬅️	On4r4p (~ouroboros@5B4C0CE6.E9EE0904.3D7F127D.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 10:06:12	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-24 10:15:14	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-24 10:26:09	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 10:31:18	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit
-2018-08-24 10:38:17	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 10:45:11	⬅️	TigerbotHesh (~tbhesh@sealab.2021) has quit (Quit: ZNC - http://znc.in)
-2018-08-24 10:46:02	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit (Ping timeout: 240 seconds)
-2018-08-24 10:46:07	➡️	TigerbotHesh (~tbhesh@sealab.2021) has joined #/g/technology
-2018-08-24 10:46:56	➡️	ravensky (~ravensky@5385DB4F:65A315D:41E5EF0D:IP) has joined #/g/technology
-2018-08-24 10:51:06	➡️	hubcaps (~hubcaps@sisyphus.is.happy) has joined #/g/technology
-2018-08-24 11:01:35	➡️	cmx (~cmx@Rizon-9CD2D07E.dip0.t-ipconnect.de) has joined #/g/technology
-2018-08-24 11:10:49	⬅️	robits (~memes@crwrxy.lel.caw) has quit (Ping timeout: 240 seconds)
-2018-08-24 11:14:11	⬅️	spacca (~justatria@Rizon-575D10FA.east.us.northamericancoax.com) has quit (Quit: Leaving)
-2018-08-24 11:20:42		irc: disconnected from server
-2018-08-24 12:01:34	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 12:05:24	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-24 12:31:45		irc: disconnected from server
-2018-08-24 12:32:06	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 12:40:14	⬅️	ravensky (~ravensky@5385DB4F:65A315D:41E5EF0D:IP) has quit (Quit: Leaving)
-2018-08-24 12:47:06	⬅️	kus (~kus@Rizon-533E67A4.nwrknj.fios.verizon.net) has quit (Remote host closed the connection)
-2018-08-24 12:48:58	➡️	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-24 12:58:30	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 12:59:02	⬅️	october99 (~october99@949C7D30:897433B4:B13D3394:IP) has quit (Remote host closed the connection)
-2018-08-24 13:09:31	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 13:14:33	⬅️	bottledjimmy (~gg@B0C3039A.1D0FE7CF.C64F2B35.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 13:25:09	➡️	slaqer (~slaqer@E1ED3E2D.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-24 13:34:29	➡️	On4r4p (~ouroboros@9DBCFBF6.227EA41E.DF6CA376.IP) has joined #/g/technology
-2018-08-24 13:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 14:05:26	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 14:06:08	➡️	Xylitol (~temari@user32.dll) has joined #/g/technology
-2018-08-24 14:09:38	➡️	mcdade7 (~mcdade7@61DF75CA:93A947D0:24D2971:IP) has joined #/g/technology
-2018-08-24 14:09:38	⬅️	mcdade7 (~mcdade7@61DF75CA:93A947D0:24D2971:IP) has quit (Excess Flood)
-2018-08-24 14:11:47	➡️	wheelman3 (~wheelman3@E2569C24:FC9E54E0:E7EA85F5:IP) has joined #/g/technology
-2018-08-24 14:16:27	⬅️	wheelman3 (~wheelman3@E2569C24:FC9E54E0:E7EA85F5:IP) has quit (Remote host closed the connection)
-2018-08-24 14:34:03	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-24 14:38:52	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-24 14:53:48	➡️	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has joined #/g/technology
-2018-08-24 14:57:49	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 15:03:26	⬅️	kuso (~milkshake@piece.of.shit) has quit (Quit: Quit)
-2018-08-24 15:04:21	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 15:15:41	⬅️	Maylay (~gren@Cloud.Eight) has quit (Quit: Pipe Terminated)
-2018-08-24 15:33:01	➡️	anon85829 (~Mutter@8387E1C7.C9B3A3F9.26E70549.IP) has joined #/g/technology
-2018-08-24 15:34:31	⬅️	anon85829 (~Mutter@8387E1C7.C9B3A3F9.26E70549.IP) has quit
-2018-08-24 15:37:11	⬅️	slaqer (~slaqer@E1ED3E2D.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 15:41:49	➡️	Maylay (~gren@9CB14564:14547E0D:8A655AC0:IP) has joined #/g/technology
-2018-08-24 15:42:56	➡️	b0nk (~kn0b@boku.no.scope) has joined #/g/technology
-2018-08-24 15:46:50	➡️	GreekGod (~GreekGod@face.of.a.greek.god) has joined #/g/technology
-2018-08-24 15:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 16:00:04	➡️	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has joined #/g/technology
-2018-08-24 16:01:13	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Goodbye)
-2018-08-24 16:02:58	⬅️	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has quit (Ping timeout: 240 seconds)
-2018-08-24 16:04:21	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 16:05:47	⬅️	anon9234 (~anon9234@anon.vh.org) has quit (Quit: Coyote finally caught me)
-2018-08-24 16:05:59	➡️	anon9234 (~anon9234@Rizon-66EFDD7E.dynamic.reverse-mundo-r.com) has joined #/g/technology
-2018-08-24 16:12:42	➡️	`JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has joined #/g/technology
-2018-08-24 16:15:28	⬅️	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 16:19:17	➡️	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has joined #/g/technology
-2018-08-24 16:19:33	➡️	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-24 16:22:28	⬅️	`JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 16:26:17		irc: disconnected from server
-2018-08-24 16:39:12	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 16:39:30	➡️	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has joined #/g/technology
-2018-08-24 16:58:29	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 17:00:42	➡️	Fr0styy (~user@Rizon-9D7487C3.skybroadband.com) has joined #/g/technology
-2018-08-24 17:04:01	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 17:04:43	⬅️	b0nk (~kn0b@boku.no.scope) has quit (Ping timeout: 240 seconds)
-2018-08-24 17:04:55	➡️	b0nk (~kn0b@boku.no.scope) has joined #/g/technology
-2018-08-24 17:20:37	⬅️	Nux (~user@traps.arent.gay) has quit (Quit: WeeChat 2.2)
-2018-08-24 17:37:32	⬅️	GreekGod (~GreekGod@face.of.a.greek.god) has quit (Read error: Connection reset by peer)
-2018-08-24 17:50:38	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-24 17:53:37	➡️	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has joined #/g/technology
-2018-08-24 17:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 18:01:31	⬅️	Faize (~Faize@Rizon-4BFC8A9F.lfkncmta01.res.dyn.suddenlink.net) has left #/g/technology (Leaving)
-2018-08-24 18:03:08	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-24 18:03:53	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 18:18:28	➡️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has joined #/g/technology
-2018-08-24 18:26:08	⬅️	b0nk (~kn0b@boku.no.scope) has quit (Read error: Connection reset by peer)
-2018-08-24 18:27:56	➡️	b0nk (~kn0b@boku.no.scope) has joined #/g/technology
-2018-08-24 18:37:38	⬅️	b0nk (~kn0b@boku.no.scope) has quit (Read error: Connection reset by peer)
-2018-08-24 18:41:39	⬅️	Maylay (~gren@Cloud.Eight) has quit (Ping timeout: 240 seconds)
-2018-08-24 18:42:57	➡️	Maylay (~gren@9CB14564:14547E0D:8A655AC0:IP) has joined #/g/technology
-2018-08-24 18:57:49	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 18:57:53	⬅️	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
-2018-08-24 19:03:50	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 19:17:42	➡️	slaqer (~slaqer@68773741.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-24 19:18:27	⬅️	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has quit (Ping timeout: 240 seconds)
-2018-08-24 19:58:28	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 20:03:32	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 20:14:19		irc: disconnected from server
-2018-08-24 20:14:27	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 20:31:50	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-24 20:32:07	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-24 20:33:43	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-24 20:34:45		irc: disconnected from server
-2018-08-24 20:37:01	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 20:38:59	⬅️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has quit (Quit: Lost terminal)
-2018-08-24 20:41:36	➡️	gg (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has joined #/g/technology
-2018-08-24 20:43:15	⬅️	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has quit (Ping timeout: 240 seconds)
-2018-08-24 20:43:45	➡️	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has joined #/g/technology
-2018-08-24 20:46:17	⬅️	miniwa (~tsumiki@mini.wa) has quit (Ping timeout: 240 seconds)
-2018-08-24 20:46:46	➡️	miniwa (~tsumiki@516B270C.16DB60A2.F0E4344A.IP) has joined #/g/technology
-2018-08-24 20:47:31	➡️	ozz (~setahozz@SRL.IS.OBSOLETE) has joined #/g/technology
-2018-08-24 20:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 21:05:47	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-24 21:29:51	⬅️	Mule (~Animal@Rizon-88CD5674.hlrn.qwest.net) has quit
-2018-08-24 21:45:06	➡️	Mule (~Animal@Rizon-88CD5674.hlrn.qwest.net) has joined #/g/technology
-2018-08-24 21:57:45	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-24 22:07:25		irc: disconnected from server
-2018-08-24 22:12:07	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 22:20:27	⬅️	Fr0styy (~user@Rizon-9D7487C3.skybroadband.com) has quit (Ping timeout: 240 seconds)
-2018-08-24 22:22:57	➡️	logim (~logim@12A087A6.F2A66122.CD304C9C.IP) has joined #/g/technology
-2018-08-24 22:26:17		irc: disconnected from server
-2018-08-24 22:30:38	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 22:30:50	➡️	Nux (~user@traps.arent.gay) has joined #/g/technology
-2018-08-24 22:31:53		irc: disconnected from server
-2018-08-24 23:38:44	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-24 23:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 00:08:58	➡️	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has joined #/g/technology
-2018-08-25 00:33:07	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-25 00:35:27	➡️	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-25 00:45:53	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-25 00:49:20	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 00:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 01:06:22	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 01:12:46	➡️	Beer (AdiIRC@19AA8C88.71DB7F8B.C29C7618.IP) has joined #/g/technology
-2018-08-25 01:13:34		Beer is now known as soros
-2018-08-25 01:13:34	⬅️	soros (AdiIRC@19AA8C88.71DB7F8B.C29C7618.IP) has quit
-2018-08-25 01:13:45	➡️	soros (AdiIRC@19AA8C88.71DB7F8B.C29C7618.IP) has joined #/g/technology
-2018-08-25 01:20:31	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-25 01:58:28	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 02:06:01	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 02:17:10	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-25 02:19:26	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-25 02:22:56	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-25 02:23:57	➡️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
-2018-08-25 02:24:40	⬅️	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Remote host closed the connection)
-2018-08-25 02:27:36	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-25 02:32:34	⬅️	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has quit (Quit: Leaving)
-2018-08-25 02:38:10	⬅️	soros (AdiIRC@19AA8C88.71DB7F8B.C29C7618.IP) has quit (Quit: Going offline, see ya! (www.adiirc.com))
-2018-08-25 02:48:03	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-25 02:53:02	➡️	trigex (~trigex@Rizon-C475434A.static.mtpk.ca.charter.com) has joined #/g/technology
-2018-08-25 02:57:11	➡️	Hooten (~Hooten@Rizon-BEB447EA.blix.com) has joined #/g/technology
-2018-08-25 02:57:50	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 02:57:58	Hooten	Happy 30th Birthday IRC!!  Yes i read this
-2018-08-25 02:58:11	trigex	!!!
-2018-08-25 02:58:30	Hooten	???
-2018-08-25 03:00:03	➡️	qwertzuiop (~qwertzuio@Rizon-2776903C.versanet.de) has joined #/g/technology
-2018-08-25 03:03:39	⬅️	trigex (~trigex@Rizon-C475434A.static.mtpk.ca.charter.com) has quit (Ping timeout: 240 seconds)
-2018-08-25 03:03:51	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 03:05:50	➡️	trigex (~trigex@CDE17647.17CA0C7F.DE6D5023.IP) has joined #/g/technology
-2018-08-25 03:10:02	➡️	missymatch (~missymatc@7493D803:FE45AD9A:6C647615:IP) has joined #/g/technology
-2018-08-25 03:10:13	missymatch	j
-2018-08-25 03:12:21	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-25 03:13:57	Hooten	hi there
-2018-08-25 03:14:15	missymatch	;)
-2018-08-25 03:23:44	missymatch	which is the most privacy respecting OS?
-2018-08-25 03:24:02	missymatch	one that doesn't send most of my keystrokes back to langley?
-2018-08-25 03:24:34	⬅️	missymatch (~missymatc@7493D803:FE45AD9A:6C647615:IP) has left #/g/technology (Leaving)
-2018-08-25 03:26:13	trigex	GNU Herd
-2018-08-25 03:27:27	trigex	it can't log your keystrokes if you can't use it in the first place :)))
-2018-08-25 03:27:35	Hooten	I use MXlinux since 2016 and it had been the best so far.
-2018-08-25 03:36:41	⬅️	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has quit (Ping timeout: 240 seconds)
-2018-08-25 03:41:41	➡️	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
-2018-08-25 03:44:16	➡️	telega (~telega@Rizon-933B809E.range86-137.btcentralplus.com) has joined #/g/technology
-2018-08-25 03:50:56	⬅️	oem (~oem@jihadist.loli) has quit (Ping timeout: 240 seconds)
-2018-08-25 03:54:00	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-25 03:56:42	⬅️	trigex (~trigex@CDE17647.17CA0C7F.DE6D5023.IP) has quit (Quit: WeeChat 2.2)
-2018-08-25 03:57:47	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 04:00:06	⬅️	qwertzuiop (~qwertzuio@Rizon-2776903C.versanet.de) has left #/g/technology
-2018-08-25 04:05:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 04:17:58	⬅️	logim (~logim@12A087A6.F2A66122.CD304C9C.IP) has quit (Read error: Connection reset by peer)
-2018-08-25 04:22:27	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-25 04:29:41	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Ping timeout: 240 seconds)
-2018-08-25 04:33:02	⬅️	telega (~telega@Rizon-933B809E.range86-137.btcentralplus.com) has quit (Remote host closed the connection)
-2018-08-25 04:39:47	➡️	telega (~telega@Rizon-933B809E.range86-137.btcentralplus.com) has joined #/g/technology
-2018-08-25 04:43:51	⬅️	telega (~telega@Rizon-933B809E.range86-137.btcentralplus.com) has quit (Ping timeout: 240 seconds)
-2018-08-25 04:57:45	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 05:03:46	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 05:16:01	➡️	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology
-2018-08-25 05:22:42	ryce	https://i.redd.it/y7y8yuw1l7i11.jpg
-2018-08-25 05:25:55	⬅️	unimatrix (~anonymous@Rizon-21D8795B.powersrv.de) has quit (Quit: ZNC - https://znc.in)
-2018-08-25 05:32:23	➡️	unimatrix (~anonymous@Rizon-21D8795B.powersrv.de) has joined #/g/technology
-2018-08-25 05:35:51	➡️	soros (~soros@7CAAB7E1.9ED98669.C29C7618.IP) has joined #/g/technology
-2018-08-25 05:39:47	⬅️	soros (~soros@7CAAB7E1.9ED98669.C29C7618.IP) has quit
-2018-08-25 05:57:46	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 06:03:46	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 06:04:37	➡️	jollyjester (~jollyjest@22A92C92.7765B46C.534E5AEF.IP) has joined #/g/technology
-2018-08-25 06:04:39	jollyjester	fucking hell
-2018-08-25 06:04:42	jollyjester	this shit is so boring
-2018-08-25 06:04:45	jollyjester	SMH 
-2018-08-25 06:04:48	Hooten	yup
-2018-08-25 06:04:58	jollyjester	Hooten, wanna hang out with me
-2018-08-25 06:05:16	Hooten	creepy
-2018-08-25 06:05:21	jollyjester	why
-2018-08-25 06:05:39	Hooten	we are here
-2018-08-25 06:05:44	jollyjester	ok
-2018-08-25 06:05:48	jollyjester	so do you use emacs?
-2018-08-25 06:06:03	Hooten	nope
-2018-08-25 06:06:15	jollyjester	what distro?
-2018-08-25 06:06:23	Hooten	MX
-2018-08-25 06:06:27	Hooten	you?
-2018-08-25 06:06:34	jollyjester	arch linux /w bspwm
-2018-08-25 06:06:42	jollyjester	haven't even uploaded the config files and installation scripts to github
-2018-08-25 06:06:53	jollyjester	i need to but too comfortable 
-2018-08-25 06:07:26	jollyjester	Hooten, have you used arch linux? do you think it is a mei mei?
-2018-08-25 06:07:44	Hooten	arch never, just manjaro and antergos
-2018-08-25 06:07:58	Hooten	i'm kinda new in Linux
-2018-08-25 06:08:02	jollyjester	i installed arch linux manually (with a tutorial) only once
-2018-08-25 06:08:06	jollyjester	the rest i've used an installer
-2018-08-25 06:08:11	jollyjester	one of the best is "zen installer"
-2018-08-25 06:08:13	jollyjester	it's on sourceforge
-2018-08-25 06:08:25	jollyjester	Hooten, send me a "neofetch"
-2018-08-25 06:08:33	Hooten	i tried to install gentoo for fun
-2018-08-25 06:09:39	jollyjester	so did i
-2018-08-25 06:09:47	jollyjester	but uhh the network didn't work on it
-2018-08-25 06:09:50	jollyjester	so i gave up
-2018-08-25 06:11:47	jollyjester	Hooten, so uhh gimme your neofetch i guess
-2018-08-25 06:11:48	Hooten	i bought recently an odroid xu4 and fun to play with it. I installed debian (emmc) and android (sd).
-2018-08-25 06:12:58	jollyjester	ok
-2018-08-25 06:13:05	jollyjester	https://0x0.st/syug.png
-2018-08-25 06:13:08	jollyjester	here's my neofetch
-2018-08-25 06:14:20	jollyjester	Hooten, 
-2018-08-25 06:14:48	Hooten	https://ibb.co/fDqb09
-2018-08-25 06:15:06	jollyjester	>imgbb
-2018-08-25 06:15:17	jollyjester	is that like the default upload service of your screenshooter
-2018-08-25 06:15:55	Hooten	nope it is the fist site i found on internet to share this one now
-2018-08-25 06:16:24	jollyjester	wew ok
-2018-08-25 06:16:43	jollyjester	i have an "action" set in my .bashrc to upload a file to 0x0 by doing "0x0 [file path]"
-2018-08-25 06:18:21	⬅️	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has quit (Quit: WeeChat 2.1)
-2018-08-25 06:21:12	➡️	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has joined #/g/technology
-2018-08-25 06:28:29	➡️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has joined #/g/technology
-2018-08-25 06:56:19	➡️	Aoyagi| (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-25 06:57:45	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 06:58:51	⬅️	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Ping timeout: 240 seconds)
-2018-08-25 07:05:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 07:12:19	⬅️	Wolfgang (Wolfgang@kaese.brot) has quit (Ping timeout: 240 seconds)
-2018-08-25 07:20:01		jollyjester is now known as feh2
-2018-08-25 07:20:13		feh2 is now known as lol
-2018-08-25 07:20:18		lol is now known as opapgangnamstyle
-2018-08-25 07:20:23		opapgangnamstyle is now known as wewlad
-2018-08-25 07:20:25		wewlad is now known as hmmm
-2018-08-25 07:20:31		hmmm is now known as ohwait
-2018-08-25 07:20:55		ohwait is now known as thinking
-2018-08-25 07:21:05		thinking is now known as kalifuckme
-2018-08-25 07:21:16		kalifuckme is now known as loveudaddy
-2018-08-25 07:21:31		loveudaddy is now known as jollyjester
-2018-08-25 07:21:44	jollyjester	wew
-2018-08-25 07:21:45	jollyjester	lad
-2018-08-25 07:22:40	⬅️	jollyjester (~jollyjest@22A92C92.7765B46C.534E5AEF.IP) has quit (Remote host closed the connection)
-2018-08-25 07:30:22		Aoyagi| is now known as Aoyagi
-2018-08-25 07:35:51	➡️	logim (~logim@12A087A6.F2A66122.CD304C9C.IP) has joined #/g/technology
-2018-08-25 07:50:34	➡️	Wolfgang (Wolfgang@kaese.brot) has joined #/g/technology
-2018-08-25 07:50:51	THEWHITELION	yeah finding the right networking firmware for gentoo is a real pain in the ass
-2018-08-25 07:51:31	THEWHITELION	that is the major reason why i don't use it
-2018-08-25 07:52:14	THEWHITELION	although i do like the idea of having the package manager compile a program from its source before the program is installed
-2018-08-25 07:52:24	THEWHITELION	MAXIMUM PERFORMANCE
-2018-08-25 07:57:32	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 07:57:50	⬅️	jcv (~jcv@Rizon-7184F19E.getinternet.no) has quit (Read error: Connection reset by peer)
-2018-08-25 07:59:09	THEWHITELION	guys what program are you working on?
-2018-08-25 08:00:41	Shahid	THEWHITELION: i don't trust the machine enough for it to build it's own packages
-2018-08-25 08:01:41	Shahid	anything with a web browser is dangerous
-2018-08-25 08:03:36	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 08:04:44	THEWHITELION	really i am not sure if you are making a joke or telling me one of your personal convictions
-2018-08-25 08:06:53	THEWHITELION	do you really believe that something injects malicious code into your package builds?
-2018-08-25 08:09:06	THEWHITELION	i admit that it is possible, but you can always download the source code directly, validate its hash, audit the code, then compile it, albeit that would be time consuming
-2018-08-25 08:09:43	THEWHITELION	i have an idea, what if we formed a team of /g/men to audit open source code for malicious code?
-2018-08-25 08:09:57	THEWHITELION	we could design and build our own package manager that checks for malicious code etc
-2018-08-25 08:10:06	THEWHITELION	that would be a great project
-2018-08-25 08:10:51	THEWHITELION	imagine a universal repository, compatible with most or all types of linux distributions
-2018-08-25 08:11:43	THEWHITELION	all of the packages are audited for malicious code, the package manager validates the source before it's compiled, that would be nice
-2018-08-25 08:58:26	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 09:02:19	⬅️	scrykita (~scrykita@hyper.mediocrity) has quit (Quit: Leaving)
-2018-08-25 09:02:47	➡️	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-25 09:03:26	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 09:08:00	➡️	slaqer (~slaqer@C0B850E0.9FBA47F1.85E626DD.IP) has joined #/g/technology
-2018-08-25 09:34:29	⬅️	nayfie (~nayfie@god.i.love.meme) has quit (Quit: bye)
-2018-08-25 09:41:22	miniwa	that's pretty much what already happens THEWHITELION 
-2018-08-25 09:41:33	miniwa	it's why packages are signed with trusted keys
-2018-08-25 09:41:49	miniwa	the problem is you don't trust them
-2018-08-25 09:42:03	miniwa	if you don't trust them why do you think other people will trust you?
-2018-08-25 09:57:46	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 09:59:29	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Ping timeout: 240 seconds)
-2018-08-25 10:02:30	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-25 10:03:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 10:06:48	⬅️	On4r4p (~ouroboros@9DBCFBF6.227EA41E.DF6CA376.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 10:35:20	➡️	kts (~kts@F9303F10.59257E62.80F020C7.IP) has joined #/g/technology
-2018-08-25 10:39:33	⬅️	kts (~kts@F9303F10.59257E62.80F020C7.IP) has quit
-2018-08-25 10:52:52	⬅️	THEWHITELION (~manjaro-i@Rizon-A06AD6C9.hsd1.wa.comcast.net) has quit (Quit: leaving)
-2018-08-25 10:54:40	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-25 10:57:35	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 11:02:55	➡️	THEWHITELION (~manjaro-i@Rizon-A06AD6C9.hsd1.wa.comcast.net) has joined #/g/technology
-2018-08-25 11:04:35	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 11:15:30	⬅️	blank (~blank@empty.lives) has quit (Ping timeout: 240 seconds)
-2018-08-25 11:15:40	➡️	blank (~blank@empty.lives) has joined #/g/technology
-2018-08-25 11:36:58	⬅️	slaqer (~slaqer@C0B850E0.9FBA47F1.85E626DD.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 11:49:27	➡️	Kebolio (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has joined #/g/technology
-2018-08-25 11:52:05	⬅️	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
-2018-08-25 11:57:46	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 11:57:49	⬅️	urodna (~urodna@dank.memer) has quit
-2018-08-25 12:00:42	➡️	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-25 12:03:50	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 12:12:35	⬅️	logim (~logim@12A087A6.F2A66122.CD304C9C.IP) has quit (Read error: Connection reset by peer)
-2018-08-25 12:27:32	➡️	zakame (~zakame@6B08F715.A3DFB80C.69376DA6.IP) has joined #/g/technology
-2018-08-25 12:34:32	➡️	zakame_ (~zakame@5A635315.80A83041.98FA0D85.IP) has joined #/g/technology
-2018-08-25 12:35:14	⬅️	zakame (~zakame@6B08F715.A3DFB80C.69376DA6.IP) has quit (Remote host closed the connection)
-2018-08-25 12:38:29	⬅️	zakame_ (~zakame@5A635315.80A83041.98FA0D85.IP) has quit
-2018-08-25 12:57:41	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 13:02:35	⬅️	tj (~tj@mental.midget) has quit
-2018-08-25 13:03:12	➡️	tj (~tj@2AC889E3.47AB57F3.F99E67C6.IP) has joined #/g/technology
-2018-08-25 13:03:40	tj	We have received a request to reset the password for your Roblox account:
-2018-08-25 13:03:44	tj	WHO WAS IT
-2018-08-25 13:03:45	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 13:06:39	⬅️	christopher1155 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has quit (Remote host closed the connection)
-2018-08-25 13:06:50	⬅️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 13:16:37	➡️	jollyjester (~jollyjest@22A92C92.7765B46C.534E5AEF.IP) has joined #/g/technology
-2018-08-25 13:16:49	jollyjester	>tfw listening to this
-2018-08-25 13:16:51	jollyjester	https://www.youtube.com/watch?v=ravi3Jxe468
-2018-08-25 13:19:26		irc: disconnected from server
-2018-08-25 13:19:30	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-25 13:23:37	KittyKatt	wow that audio is rough
-2018-08-25 13:27:20	jollyjester	eh
-2018-08-25 13:27:27	jollyjester	imma just watch another one instead
-2018-08-25 13:27:32	jollyjester	i just want to learn lisp so i can use it on emacs
-2018-08-25 13:27:38	jollyjester	i'm also gonna learn clojure too
-2018-08-25 13:27:48	⬅️	Kebolio (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has left #/g/technology
-2018-08-25 13:32:56		irc: disconnected from server
-2018-08-25 08:43:56	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-25 08:43:56	***	Buffer Playback...
-2018-08-25 08:43:56	jollyjester	[13:34:06] how do i learn elisp
-2018-08-25 08:43:56	jollyjester	[13:34:08] :thinking:
-2018-08-25 08:43:56	***	Playback Complete.
-2018-08-25 08:56:42	➡️	AntiMacro_Macro (~setahozz@Rizon-ED065D26.phlapa.fios.verizon.net) has joined #/g/technology
-2018-08-25 08:56:46	⬅️	ozz (~setahozz@SRL.IS.OBSOLETE) has quit (Ping timeout: 240 seconds)
-2018-08-25 08:56:51		AntiMacro_Macro is now known as ozz
-2018-08-25 08:57:32	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 09:03:34	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 09:35:57	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Goodbye)
-2018-08-25 09:36:46	➡️	oem (~oem@jihadist.loli) has joined #/g/technology
-2018-08-25 09:40:23		irc: disconnected from server
-2018-08-25 09:42:19	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-25 09:57:56	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 10:03:29	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 10:05:45	⬅️	anon9234 (~anon9234@anon.vh.org) has quit (Quit: Coyote finally caught me)
-2018-08-25 10:05:56	➡️	anon9234 (~anon9234@Rizon-66EFDD7E.dynamic.reverse-mundo-r.com) has joined #/g/technology
-2018-08-25 10:06:45	⬅️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Remote host closed the connection)
-2018-08-25 10:20:34	⬅️	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
-2018-08-25 16:50:14	⬅️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit (Quit: Leaving)
-2018-08-25 16:53:11		irc: disconnected from server
-2018-08-25 16:57:50	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-25 17:00:00	⬅️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has quit (Read error: Connection reset by peer)
-2018-08-25 17:05:19	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 17:08:13		irc: disconnected from server
-2018-08-25 17:12:08	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-25 17:14:50	➡️	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has joined #/g/technology
-2018-08-25 17:14:50		Mode #/g/technology [+a Uncled1023] by ChanServ
-2018-08-25 17:15:39	➡️	GreyMan (~quassel@long.live.bsd) has joined #/g/technology
-2018-08-25 17:15:39	➡️	carl (carl@wrote.a.fucken.compiler) has joined #/g/technology
-2018-08-25 17:15:39	➡️	TaZeR (taz@Rizon-A52A3ADC.epsilon.elitebnc.org) has joined #/g/technology
-2018-08-25 17:15:39	➡️	fetus (~fetus@E38AA184.74018984.A13B68AB.IP) has joined #/g/technology
-2018-08-25 17:16:34	➡️	Blossy (sid126425@Rizon-51559800.hathersage.irccloud.com) has joined #/g/technology
-2018-08-25 17:16:34	➡️	Krelat (sid250562@Rizon-B0542774.stonehaven.irccloud.com) has joined #/g/technology
-2018-08-25 17:16:34	➡️	hiyosi (sid239709@Rizon-BFB8F46A.stonehaven.irccloud.com) has joined #/g/technology
-2018-08-25 17:16:34	➡️	GDX (~quassel@CEDE288E:D2F44D4:30888FD0:IP) has joined #/g/technology
-2018-08-25 17:16:34	➡️	KittyKatt (~ghost@help.im.stuck.in.a.vhost.factory) has joined #/g/technology
-2018-08-25 17:16:34	➡️	Syntack (~syntack@F01D9960:64F915E8:46BE83AB:IP) has joined #/g/technology
-2018-08-25 17:18:21	➡️	Insekt (~Insekt@95ABC263.F1DC579B.EB379D96.IP) has joined #/g/technology
-2018-08-25 17:24:27	➡️	mokura (~mokura@Rizon-EA516A35.hdsl.highway.telekom.at) has joined #/g/technology
-2018-08-25 17:31:41	⬅️	Insekt (~Insekt@95ABC263.F1DC579B.EB379D96.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 17:36:11	➡️	floppy (~floppy@Rizon-EAADDE08.ip4.static.sl-reverse.com) has joined #/g/technology
-2018-08-25 17:37:11	⬅️	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
-2018-08-25 17:38:21	⬅️	mokura (~mokura@Rizon-EA516A35.hdsl.highway.telekom.at) has quit (Quit: Read error: Connection reset by PEEVER)
-2018-08-25 17:44:34	➡️	hud_ (~hud@B49AD392.ADBE206D.4E143064.IP) has joined #/g/technology
-2018-08-25 17:44:52	⬅️	hud_ (~hud@B49AD392.ADBE206D.4E143064.IP) has quit (Remote host closed the connection)
-2018-08-25 17:50:08	➡️	hud_ (~hud@34E11F12.804E13EA.4249C630.IP) has joined #/g/technology
-2018-08-25 17:52:37	✴️	xtor was charging a 1300 Mah portable charger using a 1 amp feed and it got stuck at 22%, then after moving the wire to a higher amperage output the portable charger went shooting up to 23% and 24%. Makes one wonder how these gadgets are built.
-2018-08-25 17:55:11	⬅️	hud_ (~hud@34E11F12.804E13EA.4249C630.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 17:57:45	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 18:09:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 18:10:44	⬅️	Hooten (~Hooten@Rizon-BEB447EA.blix.com) has quit (Remote host closed the connection)
-2018-08-25 18:14:24	⬅️	slaqer (~slaqer@A851BD77.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 18:28:22	miniwa	>1300mAh
-2018-08-25 18:35:11	xtor	I should clarify that I am doing this inside of a car using the cig lighter as a power input.  
-2018-08-25 18:35:16	xtor	And now it's stuck at 52%
-2018-08-25 18:37:08	~Uncled1023	You mean that a higher amperage input increased the charging rate?  Who woulda thought! ...
-2018-08-25 18:46:56	miniwa	hmm
-2018-08-25 18:46:59	miniwa	I don't think the percentage is accurate
-2018-08-25 18:47:04	⬅️	hubcaps (~hubcaps@sisyphus.is.happy) has quit (Quit: ZNC - https://znc.in)
-2018-08-25 18:47:48	➡️	hud_ (~hud@D500563B.D52A3D92.52851FCF.IP) has joined #/g/technology
-2018-08-25 18:47:59	⬅️	hud_ (~hud@D500563B.D52A3D92.52851FCF.IP) has quit (Read error: Connection reset by peer)
-2018-08-25 18:55:08	➡️	christopher1155 (~christoph@Rizon-3843D9F.hsd1.mi.comcast.net) has joined #/g/technology
-2018-08-25 18:57:49	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 19:03:51	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 19:10:46	➡️	prim (~uwu@chroma.ost) has joined #/g/technology
-2018-08-25 19:21:35	prim	in terms of modern web browsers, are there other projects similar to waterfox or ungoogled chromium that a privacy concerned person should look at? this older laptop runs waterfox a bit slow... not sure about using regular chromium though
-2018-08-25 19:22:10	rdr	chromium is going to be nearly as heavy as regular chrome
-2018-08-25 19:22:31	rdr	there's alternatives to firefox and chrome/ium but they're lacking features
-2018-08-25 19:22:39	rdr	sure you might get adblock but you won't get imagus
-2018-08-25 19:22:44	rdr	if you're lucky you get usersripts
-2018-08-25 19:23:25	orekix	qutebrowser and use hosts based adblocking, maybe
-2018-08-25 19:23:28	prim	rdr: i find on this machine that chromium is noticably faster. 
-2018-08-25 19:23:50	prim	oh i forgot about qutebrowser i'll give it a shot
-2018-08-25 19:23:54	rdr	than chrome?  or waterfox
-2018-08-25 19:23:57	rdr	also what os are you running
-2018-08-25 19:24:53	prim	debian (devuan). chromium seems faster than waterfox.
-2018-08-25 19:25:47	orekix	what waterfox version?
-2018-08-25 19:26:47	rdr	prim, what toolkit are you primarily using?  gtk?
-2018-08-25 19:27:41	rdr	it uses xfce by default but you can install kde
-2018-08-25 19:31:06	prim	i believe version 56.2 64bit. yes gtk (xfce, i like xfce!). been using waterfox for a couple years and its great for me, with noscript, random agent spoofer, self-destructing cookies, ublock origin, disconnect, and my vpn.
-2018-08-25 19:32:16	➡️	AntiMacro_Macro (~setahozz@Rizon-ED065D26.phlapa.fios.verizon.net) has joined #/g/technology
-2018-08-25 19:32:51	⬅️	ozz (~setahozz@Rizon-ED065D26.phlapa.fios.verizon.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 19:32:55		AntiMacro_Macro is now known as ozz
-2018-08-25 19:33:16	prim	probably not a fair comparison with chromim however as i didn't have any adblock or anything running on chromium
-2018-08-25 19:33:46	orekix	so it's still xul based, no surprise chromium is outperforming it
-2018-08-25 19:34:17	prim	orekix: i don't know what xul is 
-2018-08-25 19:34:25	rdr	how does a recent version of firefox work
-2018-08-25 19:34:33	orekix	prim, mozilla's web rendering engine
-2018-08-25 19:34:52	orekix	try a version based on quantum (58+)
-2018-08-25 19:35:13	prim	oh i see. rdr i was under the impression that this is the most up-to-date version for *nix
-2018-08-25 19:35:29	rdr	that might be the latest verison of waterfox
-2018-08-25 19:35:34	rdr	i'm not sure if it's still updated
-2018-08-25 19:35:45	rdr	devuan might not have firefox in the repositories
-2018-08-25 19:35:51	rdr	might be iceweasel or whatever
-2018-08-25 19:36:00	rdr	unless they have less strict stuff than debian
-2018-08-25 19:36:13	prim	i believe it is the latest version of waterfox, i pulled it from the website not repos
-2018-08-25 19:36:33	rdr	what makes you use waterfox?
-2018-08-25 19:36:44	rdr	Firefox seems fine to me... is it the syncing stuff ?
-2018-08-25 19:37:22	prim	mentioned in my original question its just privacy converns / philosophy
-2018-08-25 19:37:43	prim	waterfox removes the wallet for instance
-2018-08-25 19:37:57	rdr	so you can't save password?
-2018-08-25 19:37:58	rdr	s
-2018-08-25 19:38:12	prim	not sure what you're referring to
-2018-08-25 19:38:41	rdr	like you go to a site, and your password/username is already filled because your browser saved it
-2018-08-25 19:38:45	rdr	or is wallet a different feature
-2018-08-25 19:38:54	orekix	I think he's talking about pocket?
-2018-08-25 19:39:27	rdr	i'm on the waterfox site, and it includes a sync feature that lets you send tabs to waterfox on android
-2018-08-25 19:39:48	rdr	seems like something that would turn off someone who was heavily concerned with privacy
-2018-08-25 19:39:59	prim	yes pocket, sorry not wallet. yes i would refer to the website if you want to understand what the waterfox project is all about, rdr
-2018-08-25 19:40:22	rdr	it's not a very helpful website
-2018-08-25 19:40:30	rdr	says browse faster but it's using a slower rendering engine?
-2018-08-25 19:42:59	prim	rdr: you are right, the waterfox website is a little bit light on meat
-2018-08-25 19:43:24	prim	rdr: perhaps i bought into hype i heard about it being less cucked than firefox, for whatever reason
-2018-08-25 19:43:40	rdr	yeah it's totally legitimate to not want to use chrome
-2018-08-25 19:43:49	rdr	but i don't really know why firefox is a problem
-2018-08-25 19:44:01	prim	something something blue haired sjw's
-2018-08-25 19:44:04	prim	i don't know
-2018-08-25 19:44:06	rdr	they're doing some cucked stuff with "women in tech" yeah
-2018-08-25 19:44:14	rdr	but the actual browser seems fine
-2018-08-25 19:44:21	rdr	i'd check out the gtk browsers
-2018-08-25 19:44:25	rdr	you will miss out on features though
-2018-08-25 19:44:33	rdr	but if you're not used to them it won't matter
-2018-08-25 19:44:39	rdr	i can't live without imagus
-2018-08-25 19:44:45	prim	i'm not much of a power user. i don't even know what imagus is
-2018-08-25 19:44:55	orekix	firefox is still a saner and more privacy conscious choice than chrome, just disable pocket and opt out of telemetry
-2018-08-25 19:45:07	rdr	basically any thumbnail, just hover over it, and it shows it in a frame
-2018-08-25 19:45:17	prim	orekix: yes this option is something i may try here tonight
-2018-08-25 19:45:46	prim	orekix: would you recommend ESR or the latest version
-2018-08-25 19:46:00	orekix	latest
-2018-08-25 19:46:24	rdr	NIGHTLY
-2018-08-25 19:46:39	rdr	COMPILE WITH --funroll-loops
-2018-08-25 19:47:06	rdr	does mozilla have a debian/devuan repository
-2018-08-25 19:47:21	rdr	i just saw the most hilarious kerfuffle with the developer of xscreensaver vs debian
-2018-08-25 19:47:34	prim	i believe the only package is firefox-esr from repos
-2018-08-25 19:47:40	prim	not sure
-2018-08-25 19:47:53	orekix	ah yes, jwz having an outbreak because debian packages old versions
-2018-08-25 19:47:54	rdr	prim: they might take away the branding and call it iceweasel
-2018-08-25 19:48:18	sebbu2	some extensions broke when "upgrading" from firefox 59.0.smth to firefox esr 52.0.9
-2018-08-25 19:48:47	sebbu2	even though the later was released way after the former, and include his patches
-2018-08-25 19:49:10	prim	ah yea there is 59.0-esr iceweasel from repos available also
-2018-08-25 19:49:52	rdr	firefox 61 is available in unstable
-2018-08-25 19:50:06	prim	cool
-2018-08-25 19:51:27	sebbu2	ff 60+ doesn't support old extensions
-2018-08-25 19:51:35	sebbu2	most extensions haven't been updated yet
-2018-08-25 19:51:53	prim	sebbu2: thanks for the heads up, maybe i'll give that iceweasel a shot then
-2018-08-25 19:52:05	orekix	most important have, the most important one that is missing is downthemall
-2018-08-25 19:55:16	prim	orekix: but you are mistaken, the bost imbordant one is missig the spurdo speag extendon :DDD
-2018-08-25 19:55:40	orekix	dost inbortdan one
-2018-08-25 19:55:43	orekix	well
-2018-08-25 19:55:45	orekix	fug :DDDD
-2018-08-25 19:55:50	prim	XDD
-2018-08-25 19:56:04	orekix	benis
-2018-08-25 19:56:33	prim	i should really install this https://weechat.org/scripts/stable/tag/spurdo/
-2018-08-25 19:57:32	carl	OH FUG :DDD
-2018-08-25 19:57:34	carl	saved
-2018-08-25 19:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 19:57:59	orekix	added to goobmarks :DD
-2018-08-25 19:58:14	prim	epig :DDD
-2018-08-25 19:58:29	carl	one day im gonna write an unrealircd module that does this server side
-2018-08-25 19:58:31	carl	mode +S
-2018-08-25 19:58:38	prim	yes
-2018-08-25 20:01:27	sebbu2	cliget is also usefull
-2018-08-25 20:02:20	⬅️	floppy (~floppy@Rizon-EAADDE08.ip4.static.sl-reverse.com) has quit (Quit: Leaving)
-2018-08-25 20:03:54	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 20:06:48	prim	sebbu2: hey thats preddy gud what do you use it for
-2018-08-25 20:25:53	➡️	slaqer (~slaqer@D3A28B9E.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-25 20:30:24	⬅️	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
-2018-08-25 20:32:01	➡️	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
-2018-08-25 20:35:06	➡️	xtpkt (~Xataphrak@chaika.class) has joined #/g/technology
-2018-08-25 20:51:30	⬅️	xtpkt (~Xataphrak@chaika.class) has quit (Remote host closed the connection)
-2018-08-25 20:51:42	➡️	xata (~Xataphrak@D2B4EE26.55BDE2.1CAA678B.IP) has joined #/g/technology
-2018-08-25 20:51:54		xata is now known as xtpkt
-2018-08-25 20:58:31	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 21:04:34	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 21:17:09	⬅️	xtpkt (~Xataphrak@chaika.class) has quit (Quit: Leaving)
-2018-08-25 21:36:48	⬅️	prim (~uwu@chroma.ost) has left #/g/technology (WeeChat 1.6)
-2018-08-25 21:53:27	➡️	ilike2learn (~ilike2lea@Rizon-76E94933.lightspeed.cicril.sbcglobal.net) has joined #/g/technology
-2018-08-25 21:56:57	⬅️	ilike2learn (~ilike2lea@Rizon-76E94933.lightspeed.cicril.sbcglobal.net) has left #/g/technology
-2018-08-25 21:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 22:03:56	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 22:45:30	⬅️	Mule (~Animal@Rizon-88CD5674.hlrn.qwest.net) has quit
-2018-08-25 22:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-25 23:03:56	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-25 23:05:28	xtor	I cannot believe I paid ten bucks for a 1300 
-2018-08-25 23:05:35	xtor	Mah fastcharger
-2018-08-25 23:05:45	xtor	At wallys
-2018-08-25 23:07:12	xtor	For twenty you can get what, 60 Mah chargers now? I really need to stock up because my cellies go kaput in my car and the regular trickle charge doesn't seem to be enough
-2018-08-25 23:12:07	➡️	Mule (~Animal@Rizon-88CD5674.hlrn.qwest.net) has joined #/g/technology
-2018-08-25 23:22:12	➡️	plasticcat_ (~dolphin@36A764AF.3D2A3853.EFE7C9AB.IP) has joined #/g/technology
-2018-08-25 23:28:16	⬅️	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Ping timeout: 240 seconds)
-2018-08-25 23:30:51	➡️	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
-2018-08-25 23:35:19	⬅️	plasticcat_ (~dolphin@36A764AF.3D2A3853.EFE7C9AB.IP) has quit (Ping timeout: 240 seconds)
-2018-08-25 23:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 00:03:51	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 00:17:13	sebbu2	downloading stuff from other computer which needs account / referer / cookies / other stuff, so i do the steps in the browser, and the last one elsewhere (sshà
-2018-08-26 00:17:18	sebbu2	(for prim)
-2018-08-26 00:26:38		irc: disconnected from server
-2018-08-26 00:26:41	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-26 00:30:49	⬅️	urodna (~urodna@dank.memer) has quit
-2018-08-26 00:34:03	➡️	logim (~logim@F5CE131E.350C5ED0.CD304C9C.IP) has joined #/g/technology
-2018-08-26 00:43:52		irc: disconnected from server
-2018-08-26 00:45:05	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-26 00:57:50	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 01:03:51	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 01:23:03	➡️	tanami_ (~q@irc.expert) has joined #/g/technology
-2018-08-26 01:24:34	➡️	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
-2018-08-26 01:24:52	⬅️	tanami_ (~q@irc.expert) has quit
-2018-08-26 01:29:40	⬅️	Tanami (~q@irc.expert) has quit (Quit: fixing my shit)
-2018-08-26 01:30:14	➡️	tanami (~q@irc.expert) has joined #/g/technology
-2018-08-26 01:47:33	➡️	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
-2018-08-26 01:51:52	➡️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
-2018-08-26 01:57:50	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 02:03:51	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 02:11:13	⬅️	slaqer (~slaqer@D3A28B9E.A0722AB9.39E48453.IP) has quit (Quit: WeeChat 2.2)
-2018-08-26 02:23:21	⬅️	oem (~oem@jihadist.loli) has quit (Remote host closed the connection)
-2018-08-26 02:28:38	⬅️	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
-2018-08-26 02:43:55	TaZeR	my laptop fell off my body when i fell asleap on the couch!
-2018-08-26 02:44:05	TaZeR	whew luckily there is no visible damage
-2018-08-26 02:44:15	TaZeR	without my laptop i am nothing
-2018-08-26 02:44:30	TaZeR	oh shit the wrist wrest is creaking bnow!
-2018-08-26 02:45:17	@witheld	TaZeR: time to buy a mac
-2018-08-26 02:45:47	TaZeR	i would never buy a macintosh =)
-2018-08-26 02:46:13	TaZeR	why do they offer some $5000 fall protection program?
-2018-08-26 02:46:53	TaZeR	pay us twice the cost of a new machine and we will replace your broken one free of charge!
-2018-08-26 02:47:59	TaZeR	i would buy a macbook air maybe if it was fairly priced and ran linux
-2018-08-26 02:49:08	@witheld	https://www.opengroup.org/openbrand/register/ why Linux when you have certified UNIX?
-2018-08-26 02:52:38	TaZeR	 because linux is cooler?
-2018-08-26 02:52:59	➡️	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
-2018-08-26 02:53:48	TaZeR	and why isnt linux on that list of certified unix products?
-2018-08-26 02:53:58	TaZeR	isnt it still considered unix
-2018-08-26 02:54:54	⬅️	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Remote host closed the connection)
-2018-08-26 02:55:57	➡️	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology
-2018-08-26 02:56:20	TaZeR	 lol someone spammmed me with a msg of a parrot with a giant cock and i msged him back "cool spaceship"
-2018-08-26 02:56:30	TaZeR	like in ASCII form
-2018-08-26 02:57:34	@witheld	TaZeR: why would it be
-2018-08-26 02:57:40	@witheld	it's not UNIX and who would pay to certify it
-2018-08-26 02:57:53	@witheld	maybe someone might certify their particular flavor of it
-2018-08-26 02:58:03	TaZeR	no clue, i thought it was just a thing smoe guy says "now it shall be certified"
-2018-08-26 02:58:32	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 03:03:34	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 03:07:53	tanami	[18:26] < TaZeR>  lol someone spammmed me with a msg of a parrot with a giant cock and i msged him back "cool
-2018-08-26 03:07:53	tanami	                 spaceship"
-2018-08-26 03:07:57	tanami	u faggot
-2018-08-26 03:15:29	TaZeR	lol
-2018-08-26 03:15:43	TaZeR	hahahaha
-2018-08-26 03:54:06	➡️	romo (~romo@2BF71301:B0022058:5A3368C:IP) has joined #/g/technology
-2018-08-26 03:54:10	romo	sup anyone here
-2018-08-26 03:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 04:03:56	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 04:47:24	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-26 04:57:51	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 05:03:54	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 05:05:17	⬅️	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit (Quit: Leaving)
-2018-08-26 05:41:34	➡️	NerdTheThird (~NerdTheTh@7FCEF63B.D864F1C1.E055DF8B.IP) has joined #/g/technology
-2018-08-26 05:41:58	⬅️	romo (~romo@2BF71301:B0022058:5A3368C:IP) has left #/g/technology
-2018-08-26 05:57:47	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 06:00:54	⬅️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Sleeping...)
-2018-08-26 06:02:31	⬅️	NerdTheThird (~NerdTheTh@7FCEF63B.D864F1C1.E055DF8B.IP) has quit (Ping timeout: 240 seconds)
-2018-08-26 06:03:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 06:37:26	➡️	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
-2018-08-26 06:39:14	➡️	GregHouse (~physicist@reformed.rocket.scientist) has joined #/g/technology
-2018-08-26 06:39:24	GregHouse	Uncled1023 is bae
-2018-08-26 06:55:47	➡️	GengarDanker (~Gengar@Rizon-311FC35D.rivrw11.nsw.optusnet.com.au) has joined #/g/technology
-2018-08-26 06:57:48	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 07:08:49	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 07:18:31	➡️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
-2018-08-26 07:57:50	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 07:59:47	➡️	slaqer (~slaqer@A6DA0C18.A0722AB9.39E48453.IP) has joined #/g/technology
-2018-08-26 08:03:54	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 08:18:36	⬅️	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has quit (Ping timeout: 240 seconds)
-2018-08-26 08:23:52	➡️	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has joined #/g/technology
-2018-08-26 08:32:35	⬅️	tinfoil_hat (~tinfoil_h@Rizon-F1E5BED5.ip-37-187-6.eu) has quit (Quit: ZNC 1.6.5+deb1+deb9u1 - http://znc.in)
-2018-08-26 08:36:16		irc: disconnected from server
-2018-08-26 08:48:23	➡️	rdr (~rdr@respect.my.freedom) has joined #/g/technology
-2018-08-26 08:52:46	⬅️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has quit (Ping timeout: 240 seconds)
-2018-08-26 08:55:03	➡️	ultraanon (~ultraanon@155B4C9E.C9F33C2B.BC33D90C.IP) has joined #/g/technology
-2018-08-26 08:58:36	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 09:00:13	➡️	urodna (~urodna@dank.memer) has joined #/g/technology
-2018-08-26 09:03:39	⬅️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 09:05:27	⬅️	carl (carl@wrote.a.fucken.compiler) has quit (*.net *.split)
-2018-08-26 09:05:27	⬅️	TaZeR (taz@Rizon-A52A3ADC.epsilon.elitebnc.org) has quit (*.net *.split)
-2018-08-26 09:05:27	⬅️	fetus (~fetus@E38AA184.74018984.A13B68AB.IP) has quit (*.net *.split)
-2018-08-26 09:05:27	⬅️	GreyMan (~quassel@long.live.bsd) has quit (*.net *.split)
-2018-08-26 09:05:31	➡️	carl (carl@Rizon-64BD6777.yt) has joined #/g/technology
-2018-08-26 09:05:32	➡️	GreyMan (~quassel@15E0D925:8BDBA5DF:8FB40973:IP) has joined #/g/technology
-2018-08-26 09:06:33	➡️	fetus (~fetus@E38AA184.74018984.A13B68AB.IP) has joined #/g/technology
-2018-08-26 09:06:51	➡️	TaZeR (taz@Rizon-A52A3ADC.epsilon.elitebnc.org) has joined #/g/technology
-2018-08-26 09:15:49	⬅️	slaqer (~slaqer@A6DA0C18.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
-2018-08-26 09:16:51	⬅️	kXay (~kXay@Rizon-DEFB5DBF.unity-media.net) has quit (Ping timeout: 240 seconds)
-2018-08-26 09:16:57	➡️	RaNd0M__ (~kXay@Rizon-DEFB5DBF.unity-media.net) has joined #/g/technology
-2018-08-26 09:25:04	⬅️	nayfie (~nayfie@god.i.love.meme) has quit (Quit: bye)
-2018-08-26 09:26:51	➡️	NerdTheThird (~NerdTheTh@7FCEF63B.D864F1C1.E055DF8B.IP) has joined #/g/technology
-2018-08-26 09:42:24	⬅️	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
-2018-08-26 09:57:52	➡️	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
-2018-08-26 10:07:01	⬅️	On4r4p (~ouroboros@9DBCFBF6.227EA41E.DF6CA376.IP) has quit (Ping timeout: 240 seconds)
+2018-08-29 14:22:10	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 14:22:10	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 14:22:10	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 14:22:10	--	Channel #/g/technology: 194 nicks (2 ops, 1 halfop, 0 voices, 191 normals)
+2018-08-29 14:22:10	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 14:22:34	<--	revolve (~username@Rizon-E3E29624.org) has quit (Server closed connection)
+2018-08-29 14:22:35	-->	revolve (~username@Rizon-E3E29624.org) has joined #/g/technology
+2018-08-29 14:25:15	--	irc: disconnected from server
+2018-08-29 14:26:12	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 14:26:12	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 14:26:12	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 14:26:12	--	Channel #/g/technology: 194 nicks (2 ops, 1 halfop, 0 voices, 191 normals)
+2018-08-29 14:26:13	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 14:27:19	<--	greenbagels (GreenBagel@touch.fluffy.tail) has quit (Server closed connection)
+2018-08-29 14:27:19	-->	GreenBagels (GreenBagel@Rizon-6E343E2A.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-29 14:28:18	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
+2018-08-29 14:28:19	--	GreenBagels is now known as Guest53057
+2018-08-29 14:34:16	-->	logim (~logim@FB5F4D0C.5CE07E2F.CD304C9C.IP) has joined #/g/technology
+2018-08-29 14:41:21	<--	Qnorsten (~admin@Rizon-9A909F77.clients.your-server.de) has quit (Server closed connection)
+2018-08-29 14:43:19	<--	Kurokin (Kurokin@Kuro.Kin) has quit (Server closed connection)
+2018-08-29 14:43:30	-->	Qnorsten (~admin@Rizon-9A909F77.clients.your-server.de) has joined #/g/technology
+2018-08-29 14:44:00	-->	Kurokin (Kurokin@Rizon-258444B6.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-29 14:44:28	-->	desu (Desu@desu.pie) has joined #/g/technology
+2018-08-29 14:54:55	<--	thoughtcrime (~neau@out.of.space) has quit (Server closed connection)
+2018-08-29 14:54:59	-->	thoughtcrime (~neau@out.of.space) has joined #/g/technology
+2018-08-29 14:59:19	<--	Pixi` (Pixi@Rizon-8249B672.rizonbnc.us.rizon.net) has quit (Server closed connection)
+2018-08-29 14:59:19	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
+2018-08-29 15:00:00	-->	Pixi- (Pixi@Rizon-8249B672.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-29 15:02:21	<--	anp2d (~qq@Rizon-E10641CB.jeleniagora.vectranet.pl) has quit (Ping timeout: 240 seconds)
+2018-08-29 15:03:24	-->	anp2d (~qq@Rizon-E10641CB.jeleniagora.vectranet.pl) has joined #/g/technology
+2018-08-29 15:05:45	<--	ozz (~setahozz@SRL.IS.OBSOLETE) has quit (Ping timeout: 240 seconds)
+2018-08-29 15:08:09	<--	anp2d (~qq@Rizon-E10641CB.jeleniagora.vectranet.pl) has left #/g/technology
+2018-08-29 15:13:15	--	Audi is now known as Aerous
+2018-08-29 15:13:31	--	Aerous is now known as Audi
+2018-08-29 15:14:11	<--	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2018-08-29 15:27:47	<--	bitcat (~bitcat@47363A11:E5495C4E:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-29 15:35:57	<--	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has quit (Quit: WeeChat 2.1)
+2018-08-29 15:36:04	-->	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has joined #/g/technology
+2018-08-29 15:46:41	<--	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has quit (Quit: WeeChat 2.1)
+2018-08-29 15:47:18	-->	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has joined #/g/technology
+2018-08-29 16:01:49	--	Guest18086 is now known as Luis
+2018-08-29 16:02:15	--	Luis is now known as emmymadeinjapan
+2018-08-29 16:19:24	-->	urodna (~urodna@dank.memer) has joined #/g/technology
+2018-08-29 16:23:37	<--	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
+2018-08-29 16:24:37	<--	Hydraxis (~Hydraxis@32E6E569:B54BA27A:D91FEE69:IP) has quit (Quit: WeeChat 2.1)
+2018-08-29 16:32:27	--	irc: disconnected from server
+2018-08-29 16:36:57	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 16:36:57	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 16:36:57	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 16:36:57	--	Channel #/g/technology: 189 nicks (2 ops, 1 halfop, 0 voices, 186 normals)
+2018-08-29 16:36:57	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 16:42:23	-->	Sciuro (~rogier@9EE16030:A648DD3C:D2F1BB6E:IP) has joined #/g/technology
+2018-08-29 16:48:42	<--	oem (~oem@jihadist.loli) has quit (Remote host closed the connection)
+2018-08-29 16:53:35	<--	malkkis (malkkis@fake.neet-lifestyle4ever2nite) has quit (Server closed connection)
+2018-08-29 16:53:37	-->	malkkis (~malkkis@Rizon-82CC7FA2.fi) has joined #/g/technology
+2018-08-29 16:55:55	-->	anon85829 (~Mutter@9D1A2267.460EC56F.4348EF39.IP) has joined #/g/technology
+2018-08-29 16:56:08	--	anon85829 is now known as astr1
+2018-08-29 16:59:11	<--	Dionysus (x@reconstituted.pork.product.in.gravy) has quit (Server closed connection)
+2018-08-29 16:59:16	-->	Dionysus (~x@Rizon-354921CA.everyone.prefers.my.znc.to.your.psybnc.org) has joined #/g/technology
+2018-08-29 17:02:23	<--	nointerfa (zineKing@Rizon-6F3845AC.omega.elitebnc.org) has quit (Server closed connection)
+2018-08-29 17:02:31	-->	nointerfa (zineKing@Rizon-6F3845AC.omega.elitebnc.org) has joined #/g/technology
+2018-08-29 17:03:17	<--	astr1 (~Mutter@astr1.yo) has quit
+2018-08-29 17:16:32	<--	andonuts (~nope@the.dr.is.in) has quit (Quit: M-muh logs...)
+2018-08-29 17:18:16	<--	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
+2018-08-29 17:23:04	-->	gg1 (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has joined #/g/technology
+2018-08-29 17:30:15	-->	astr1 (~Mutter@F9DE718:F16ABBA2:6E41C728:IP) has joined #/g/technology
+2018-08-29 17:33:00	<--	astr1 (~Mutter@F9DE718:F16ABBA2:6E41C728:IP) has quit
+2018-08-29 17:50:15	-->	hexafluoride (~hexafluor@3049C416:56DCA040:FFBE33F0:IP) has joined #/g/technology
+2018-08-29 17:50:48	hexafluoride	♥︎️
+2018-08-29 17:50:49	hexafluoride	wow really
+2018-08-29 17:50:51	hexafluoride	has someone done it before
+2018-08-29 17:50:52	hexafluoride	=(
+2018-08-29 17:51:00	<--	logim (~logim@FB5F4D0C.5CE07E2F.CD304C9C.IP) has quit (Read error: Connection reset by peer)
+2018-08-29 17:51:22	<--	hexafluoride (~hexafluor@evolutionary.failure) has quit
+2018-08-29 17:53:47	-->	bitcat (~bitcat@47363A11:E5495C4E:A66C4875:IP) has joined #/g/technology
+2018-08-29 17:56:13	-->	mofukka (~mofukka@Rizon-E9D94337.hsd1.wa.comcast.net) has joined #/g/technology
+2018-08-29 17:56:13	--	Mode #/g/technology [+v mofukka] by ChanServ
+2018-08-29 17:57:28	+mofukka	Uncled1023: back at it again https://twitter.com/graham/status/1034952221564104704
+2018-08-29 17:59:18	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-29 18:09:35	<--	monte (~monte@went.mad.in.Pyroland) has quit (Server closed connection)
+2018-08-29 18:09:45	-->	monte (~monte@went.mad.in.Pyroland) has joined #/g/technology
+2018-08-29 18:11:17	-->	andonuts (~nope@the.dr.is.in) has joined #/g/technology
+2018-08-29 18:18:47	--	irc: disconnected from server
+2018-08-29 18:20:54	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 18:20:54	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 18:20:54	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 18:20:54	--	Channel #/g/technology: 192 nicks (2 ops, 1 halfop, 1 voice, 188 normals)
+2018-08-29 18:20:54	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 18:24:01	<--	bitcat (~bitcat@47363A11:E5495C4E:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-29 18:43:06	<--	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-08-29 18:43:50	-->	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has joined #/g/technology
+2018-08-29 18:43:51	--	Mode #/g/technology [+qo Uncled1023 Uncled1023] by ChanServ
+2018-08-29 18:51:12	+mofukka	lol my vs code now has live wallpapers and the power mode
+2018-08-29 18:51:13	+mofukka	xD
+2018-08-29 18:51:34	+mofukka	not only live wallpapers a visualizer
+2018-08-29 18:52:37	rdr	>live wallpapers
+2018-08-29 18:52:40	rdr	is this ios?
+2018-08-29 18:54:35	+mofukka	no but it makes my add more happy to look at my terminal and code and i have a few of them to change now
+2018-08-29 18:54:56	rdr	YOUR SOFTWARE IS HARMFUL
+2018-08-29 18:54:57	+mofukka	im impressed at the guy who made power mode with the text decorations
+2018-08-29 18:55:10	+mofukka	i mean i definitely added an api that could be considered harmful
+2018-08-29 18:55:21	rdr	http://harmful.cat-v.org/
+2018-08-29 18:55:48	+mofukka	http://harmful.cat-v.org/software/
+2018-08-29 18:55:56	+mofukka	so opinionated
+2018-08-29 19:03:37	<--	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-08-29 19:05:35	--	irc: disconnected from server
+2018-08-29 19:19:58	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 19:19:58	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 19:19:58	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 19:19:58	--	Channel #/g/technology: 192 nicks (3 ops, 1 halfop, 1 voice, 187 normals)
+2018-08-29 19:19:58	***	Buffer Playback...
+2018-08-29 19:19:58	+mofukka	[19:12:06] https://i.imgur.com/0fR8Pz7.jpg
+2018-08-29 19:19:58	&Combot	[19:12:08] [image/jpeg] Size: 702.45 KB
+2018-08-29 19:19:58	***	Playback Complete.
+2018-08-29 19:19:58	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 19:20:09	-->	zxv (~zxv@kepler.186f) has joined #/g/technology
+2018-08-29 19:25:46	<--	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has quit (Remote host closed the connection)
+2018-08-29 19:26:00	-->	toxait1741 (~toxait@Rizon-4F830674.clients.your-server.de) has joined #/g/technology
+2018-08-29 19:29:11	<--	zxv (~zxv@kepler.186f) has quit
+2018-08-29 19:29:27	-->	zxv (~zxv@kepler.186f) has joined #/g/technology
+2018-08-29 19:30:21	<--	zxv (~zxv@kepler.186f) has quit
+2018-08-29 19:30:38	-->	zxv (~zxv@kepler.186f) has joined #/g/technology
+2018-08-29 19:32:21	<--	mofukka (~mofukka@Rizon-E9D94337.hsd1.wa.comcast.net) has quit
+2018-08-29 19:43:00	<--	bl (~biglittle@FB5F4D0C.5CE07E2F.CD304C9C.IP) has quit (Remote host closed the connection)
+2018-08-29 19:44:34	-->	bl (~biglittle@FB5F4D0C.5CE07E2F.CD304C9C.IP) has joined #/g/technology
+2018-08-29 19:44:55	<--	bl (~biglittle@FB5F4D0C.5CE07E2F.CD304C9C.IP) has quit (Remote host closed the connection)
+2018-08-29 19:52:32	--	irc: disconnected from server
+2018-08-29 20:24:54	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 20:24:54	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 20:24:54	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 20:24:54	--	Channel #/g/technology: 189 nicks (3 ops, 1 halfop, 0 voices, 185 normals)
+2018-08-29 20:24:54	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 20:59:23	-->	Alma (~alma@fluffy.heart) has joined #/g/technology
+2018-08-29 21:06:09	-->	BurnZeZ (~BurnZeZ@Rizon-ACB3F446.systems) has joined #/g/technology
+2018-08-29 21:06:29	--	irc: disconnected from server
+2018-08-29 21:06:32	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 21:06:32	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 21:06:32	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 21:06:32	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 21:06:32	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 21:18:50	--	irc: disconnected from server
+2018-08-29 21:20:25	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 21:20:25	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 21:20:25	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 21:20:25	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 21:20:25	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 21:35:03	-->	logim (~logim@FB5F4D0C.5CE07E2F.CD304C9C.IP) has joined #/g/technology
+2018-08-29 21:35:07	<--	logim (~logim@FB5F4D0C.5CE07E2F.CD304C9C.IP) has quit (Read error: Connection reset by peer)
+2018-08-29 22:12:12	<--	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has quit (Ping timeout: 240 seconds)
+2018-08-29 22:13:42	--	irc: disconnected from server
+2018-08-29 22:23:29	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 22:23:29	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 22:23:29	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 22:23:29	--	Channel #/g/technology: 190 nicks (3 ops, 1 halfop, 0 voices, 186 normals)
+2018-08-29 22:23:29	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 22:33:32	-->	bitcat (~bitcat@47363A11:E5495C4E:A66C4875:IP) has joined #/g/technology
+2018-08-29 22:46:13	<--	gg1 (~gg@7CA729DA.193FC3A8.1FF07A8C.IP) has quit (Quit: WeeChat 2.2)
+2018-08-29 22:53:02	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
+2018-08-29 22:59:51	-->	logim (~logim@7CA72F47.5CE07E2F.CD304C9C.IP) has joined #/g/technology
+2018-08-29 22:59:55	<--	logim (~logim@7CA72F47.5CE07E2F.CD304C9C.IP) has quit (Read error: Connection reset by peer)
+2018-08-29 23:04:59	--	irc: disconnected from server
+2018-08-29 23:05:09	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 23:05:09	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 23:05:09	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 23:05:09	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 23:05:09	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 23:14:03	--	irc: disconnected from server
+2018-08-29 23:14:07	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 23:14:07	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 23:14:07	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 23:14:07	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 23:14:07	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 23:20:30	--	irc: disconnected from server
+2018-08-29 23:20:49	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 23:20:49	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 23:20:49	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 23:20:49	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 23:20:49	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 23:31:01	--	irc: disconnected from server
+2018-08-29 23:31:47	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-29 23:31:47	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-29 23:31:47	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-29 23:31:47	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-29 23:31:47	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-29 23:59:17	-->	Skwid (~Skwid@9546C6C6.D82E0695.84D67B06.IP) has joined #/g/technology
+2018-08-29 23:59:46	<--	Skwid (~Skwid@9546C6C6.D82E0695.84D67B06.IP) has quit
+2018-08-30 00:07:44	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
+2018-08-30 00:08:04	<--	bitcat (~bitcat@47363A11:E5495C4E:A66C4875:IP) has quit (Read error: Connection reset by peer)
+2018-08-30 00:08:24	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 00:09:09	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Read error: Connection reset by peer)
+2018-08-30 00:09:28	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 00:13:53	<--	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Remote host closed the connection)
+2018-08-30 00:21:47	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 00:31:48	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 00:52:26	-->	Xylitol (~temari@user32.dll) has joined #/g/technology
+2018-08-30 01:49:42	<--	Sciuro (~rogier@9EE16030:A648DD3C:D2F1BB6E:IP) has quit (Quit: I found an acorn! Woehoe!)
+2018-08-30 01:49:56	-->	Sciuro (~screwy@9EE16030:A648DD3C:D2F1BB6E:IP) has joined #/g/technology
+2018-08-30 01:51:31	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 01:57:01	-->	slaqer (~slaqer@F160E810.A0722AB9.39E48453.IP) has joined #/g/technology
+2018-08-30 01:59:57	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 02:00:57	--	irc: disconnected from server
+2018-08-30 02:00:59	-->	rdr (~rdr@respect.my.freedom) has joined #/g/technology
+2018-08-30 02:00:59	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-30 02:00:59	--	Topic set by Uncled1023 on Wed, 22 Aug 2018 16:56:00
+2018-08-30 02:00:59	--	Channel #/g/technology: 191 nicks (3 ops, 1 halfop, 0 voices, 187 normals)
+2018-08-30 02:00:59	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-30 02:01:34	<--	Combot (~Combot@my.name.isnt.cumbot) has quit (Ping timeout: 240 seconds)
+2018-08-30 02:08:29	<--	witheld1 (~witheld@EFBF2729:3E7B8356:1B81842E:IP) has quit (Remote host closed the connection)
+2018-08-30 02:08:49	-->	witheld1 (~witheld@EFBF2729:3E7B8356:1B81842E:IP) has joined #/g/technology
+2018-08-30 02:10:36	-->	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
+2018-08-30 02:36:46	<--	M_nomad[m] (~nomad0129@AB4DE443:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-30 02:36:46	<--	jinks13[m] (~jinks13ma@75E69A59:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-30 02:36:46	<--	mildseven (~mildseven@D30B3B2D:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-30 02:36:46	<--	mildeight (~mildeight@F42CD6E1:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-30 03:07:19	<--	slaqer (~slaqer@F160E810.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 03:25:04	-->	logim (~logim@E7768B87.350C5ED0.CD304C9C.IP) has joined #/g/technology
+2018-08-30 03:25:08	<--	logim (~logim@E7768B87.350C5ED0.CD304C9C.IP) has quit (Read error: Connection reset by peer)
+2018-08-30 03:30:10	-->	shitheadd (~uid316526@Rizon-1431E7.stonehaven.irccloud.com) has joined #/g/technology
+2018-08-30 03:30:12	shitheadd	♥࿮࿯
+2018-08-30 03:30:27	<--	shitheadd (~uid316526@Rizon-1431E7.stonehaven.irccloud.com) has left #/g/technology
+2018-08-30 04:12:08	-->	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology
+2018-08-30 04:22:08	-->	M_nomad[m] (~nomad0129@AB4DE443:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-30 04:22:08	-->	jinks13[m] (~jinks13ma@75E69A59:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-30 04:29:07	<--	fwn (~fwn@liss.irama) has quit (Quit: Leaving)
+2018-08-30 04:29:43	--	benderr is now known as benderr[m]
+2018-08-30 04:31:28	--	benderr[m] is now known as benderr
+2018-08-30 04:31:57	-->	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has joined #/g/technology
+2018-08-30 04:42:44	<--	LambdaComplex (~blackmesa@IT.IS.THE.SAXOPHONE) has quit (Quit: WeeChat 2.0.1)
+2018-08-30 04:43:45	-->	LambdaComplex (~blackmesa@E3F63366.BC078DE.A8E8DB4A.IP) has joined #/g/technology
+2018-08-30 05:09:25	-->	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has joined #/g/technology
+2018-08-30 06:00:46	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 06:11:35	<--	Nux (~user@responsible.disclosure.is.killing.the.0day.industry) has quit (Quit: WeeChat 2.2)
+2018-08-30 06:16:59	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 06:49:11	<--	nayfie (~nayfie@god.i.love.meme) has quit (Quit: bye)
+2018-08-30 07:01:19	-->	Nux (~user@responsible.disclosure.is.killing.the.0day.industry) has joined #/g/technology
+2018-08-30 07:10:08	<--	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has quit (Quit: qat)
+2018-08-30 07:14:12	<--	thenewdesu (~thenewdes@series.of.tubes) has quit (Quit: I don't even.)
+2018-08-30 07:47:27	-->	Kebolio (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has joined #/g/technology
+2018-08-30 07:47:56	-->	thenewdesu (~thenewdes@series.of.tubes) has joined #/g/technology
+2018-08-30 07:51:41	-->	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has joined #/g/technology
+2018-08-30 08:12:21	-->	Gosha (~Gosha@in.irl.as.well.sometimes) has joined #/g/technology
+2018-08-30 08:13:22	<--	Kebolio (~qwebirc@Rizon-7340365E.natnow.res.rr.com) has quit (Quit: Page closed)
+2018-08-30 08:22:05	<--	tscott (~quassel@Rizon-B743BAE1.amrlcmtk01.com.sta.suddenlink.net) has quit (Remote host closed the connection)
+2018-08-30 08:47:07	<--	Alma (~alma@fluffy.heart) has quit (Read error: Connection reset by peer)
+2018-08-30 08:52:34	<--	chipolux (~chipolux@D4C222C.85D997F3.7BBE7EBC.IP) has quit
+2018-08-30 08:52:41	-->	chipolux (~chipolux@D4C222C.85D997F3.7BBE7EBC.IP) has joined #/g/technology
+2018-08-30 09:07:46	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 09:14:08	<--	Nux (~user@responsible.disclosure.is.killing.the.0day.industry) has quit (Quit: WeeChat 2.2)
+2018-08-30 09:34:42	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 10:00:16	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
+2018-08-30 10:15:44	-->	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
+2018-08-30 10:16:27	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
+2018-08-30 10:22:11	-->	Nux (~user@responsible.disclosure.is.killing.the.0day.industry) has joined #/g/technology
+2018-08-30 10:33:27	-->	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has joined #/g/technology
+2018-08-30 10:34:46	<--	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2018-08-30 10:35:58	-->	bitcat_ (~bitcat@34F3FDB6.CC032719.A033EF8D.IP) has joined #/g/technology
+2018-08-30 10:37:14	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
+2018-08-30 10:37:19	<--	bitcat_ (~bitcat@34F3FDB6.CC032719.A033EF8D.IP) has quit
+2018-08-30 10:38:57	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 10:43:49	-->	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
+2018-08-30 10:49:35	-->	th0m4s (~brian@Rizon-B00E764A.thoams.xyz) has joined #/g/technology
+2018-08-30 10:56:13	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 10:58:55	-->	manu (~manu@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 10:59:15	<--	manu (~manu@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 10:59:33	-->	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 11:05:07	<--	fwn (~fwn@liss.irama) has quit
+2018-08-30 11:09:27	<--	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 11:09:45	-->	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 11:13:16	<--	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 11:13:34	-->	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 11:14:58	-->	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has joined #/g/technology
+2018-08-30 11:16:42	<--	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 11:17:03	-->	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 11:18:22	<--	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 11:18:42	-->	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has joined #/g/technology
+2018-08-30 11:21:58	<--	kinotic (~kinotic@E103B01D.E0E7B2C3.D3D50080.IP) has quit
+2018-08-30 11:22:14	-->	Rush_ (~marcello5@4FE9965B.149941CB.23710D16.IP) has joined #/g/technology
+2018-08-30 11:22:38	<--	Rush_ (~marcello5@4FE9965B.149941CB.23710D16.IP) has quit
+2018-08-30 11:30:09	-->	Alma (~alma@fluffy.heart) has joined #/g/technology
+2018-08-30 11:33:31	<--	Nnavd (~Nnavd@no.no.no) has quit (Quit: ZNC 1.7.0 - https://znc.in)
+2018-08-30 11:40:55	-->	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-30 11:54:32	<--	ultraanon (~ultraanon@Rizon-613F05CB.adsl.inetia.pl) has quit (Ping timeout: 240 seconds)
+2018-08-30 11:55:10	-->	ultraanon (~ultraanon@Rizon-613F05CB.adsl.inetia.pl) has joined #/g/technology
+2018-08-30 11:57:42	--	witheld1 is now known as witheld
+2018-08-30 12:04:42	-->	slaqer (~slaqer@5B0B57B0.A0722AB9.39E48453.IP) has joined #/g/technology
+2018-08-30 12:20:46	<--	ffl|lappy (~tc@open.source.is.theft) has quit (Ping timeout: 240 seconds)
+2018-08-30 12:21:51	<--	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has quit (Ping timeout: 240 seconds)
+2018-08-30 12:30:54	--	irc: disconnected from server
+2018-08-30 12:33:02	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-30 12:33:02	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-30 12:33:02	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-30 12:33:02	--	Channel #/g/technology: 193 nicks (2 ops, 1 halfop, 0 voices, 190 normals)
+2018-08-30 12:33:13	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-30 12:35:54	-->	Siouxsie (~Siouxsie@Rizon-B8CE4176.dyn.plus.net) has joined #/g/technology
+2018-08-30 12:35:55	--	Mode #/g/technology [+v Siouxsie] by ChanServ
+2018-08-30 13:03:01	<--	wariw (~wariw@Rizon-B3597C7B.dynamic.chello.pl) has quit (Ping timeout: 240 seconds)
+2018-08-30 13:04:51	-->	wariw (~wariw@Rizon-B3597C7B.dynamic.chello.pl) has joined #/g/technology
+2018-08-30 13:08:58	locustlord	blkshp is a jew
+2018-08-30 13:12:13	rdr	how do you know
+2018-08-30 13:16:53	<--	Squall5668 (~Squall566@Rizon-BDC5DED.dsl.hol.gr) has quit (Quit: o/)
+2018-08-30 13:18:33	-->	Squall5668 (~Squall566@Rizon-D4E358B4.tellas.gr) has joined #/g/technology
+2018-08-30 13:22:06	-->	ffl|lappy (~tc@open.source.is.theft) has joined #/g/technology
+2018-08-30 13:24:55	<--	Squall5668 (~Squall566@Rizon-D4E358B4.tellas.gr) has quit
+2018-08-30 13:29:18	gnumale	everyone is a jew
+2018-08-30 13:29:41	<--	scrykita (~scrykita@hyper.mediocrity) has quit (Ping timeout: 240 seconds)
+2018-08-30 13:36:24	-->	Squall5668 (~Squall566@Rizon-D4E358B4.tellas.gr) has joined #/g/technology
+2018-08-30 14:10:44	-->	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has joined #/g/technology
+2018-08-30 14:18:31	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
+2018-08-30 14:22:35	-->	oem (~oem@jihadist.loli) has joined #/g/technology
+2018-08-30 14:32:51	<--	BurnZeZ (~BurnZeZ@Rizon-ACB3F446.systems) has quit (Remote host closed the connection)
+2018-08-30 14:56:34	-->	wineberry (~home0@C840BF5:812DA7E8:8D77BB27:IP) has joined #/g/technology
+2018-08-30 14:57:16	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
+2018-08-30 14:58:09	<--	andonuts (~nope@the.dr.is.in) has quit (Quit: M-muh logs...)
+2018-08-30 15:05:25	-->	oniichan (~oniichan@no.baka) has joined #/g/technology
+2018-08-30 15:18:59	<--	Alma (~alma@fluffy.heart) has quit (Quit: Leaving)
+2018-08-30 15:20:33	-->	BurnZeZ (~BurnZeZ@Rizon-ACB3F446.systems) has joined #/g/technology
+2018-08-30 15:45:21	<--	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Remote host closed the connection)
+2018-08-30 15:53:09	-->	Aurilas32 (~Aurilas32@9C7529F2.1E3FFC49.B9FB3A85.IP) has joined #/g/technology
+2018-08-30 15:53:11	<--	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has quit (Ping timeout: 240 seconds)
+2018-08-30 15:53:20	Aurilas32	Hi!
+2018-08-30 16:02:13	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 16:02:23	-->	bitcat_ (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 16:02:30	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit
+2018-08-30 16:02:37	<--	bitcat_ (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Remote host closed the connection)
+2018-08-30 16:02:51	-->	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 16:06:20	-->	tingol (~tingol@Rizon-AF74701D.dynamic.isp.telekom.rs) has joined #/g/technology
+2018-08-30 16:06:37	-->	bitcat_ (~bitcat@57C218CA.CC032719.A033EF8D.IP) has joined #/g/technology
+2018-08-30 16:08:22	rdr	Aurilas32: what's up bb
+2018-08-30 16:09:46	<--	bitcat (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 16:10:40	<--	Aurilas32 (~Aurilas32@9C7529F2.1E3FFC49.B9FB3A85.IP) has quit (Remote host closed the connection)
+2018-08-30 16:11:37	-->	mink_ (~mink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 16:12:02	<--	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
+2018-08-30 16:17:38	<--	Prosody (~on@C03EBC0A.E7F248E8.E00346C3.IP) has quit (Read error: Connection reset by peer)
+2018-08-30 16:20:37	<--	gnumale (~gnumale@9C4FF8A2.35112841.BE405F6D.IP) has quit (Quit: Leaving)
+2018-08-30 16:25:17	-->	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
+2018-08-30 16:31:49	-->	kus (~kus@D8A86B03.9A7F2E82.6E04EAEE.IP) has joined #/g/technology
+2018-08-30 16:34:51	<--	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 16:38:30	-->	bitcat__ (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has joined #/g/technology
+2018-08-30 16:38:38	<--	Xylitol (~temari@user32.dll) has quit (Quit: Sharpen your sickle at sunset)
+2018-08-30 16:41:45	<--	bitcat_ (~bitcat@57C218CA.CC032719.A033EF8D.IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 16:42:16	-->	urodna (~urodna@dank.memer) has joined #/g/technology
+2018-08-30 16:43:51	<--	tingol (~tingol@Rizon-AF74701D.dynamic.isp.telekom.rs) has quit (Ping timeout: 240 seconds)
+2018-08-30 16:49:49	-->	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has joined #/g/technology
+2018-08-30 16:53:26	<--	bitcat__ (~bitcat@F9E22745:9BBBC07C:A66C4875:IP) has quit (Quit: Leaving)
+2018-08-30 16:56:17	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:00:56	-->	seeker (~seeker@anarchist.transfemme.hacker) has joined #/g/technology
+2018-08-30 17:01:03	seeker	♥︎️
+2018-08-30 17:01:09	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:01:35	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:01:36	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:02:54	miniwa	Uncled1023 pls remove +C
+2018-08-30 17:03:05	miniwa	I need to send a red heart
+2018-08-30 17:04:44	<--	xtor (~xtor@E78A495C.4C6FAFBF.6564CFE5.IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 17:04:49	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:04:50	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:06:07	-->	Combot (~Combot@my.name.isnt.cumbot) has joined #/g/technology
+2018-08-30 17:06:07	--	Mode #/g/technology [+ao Combot Combot] by ChanServ
+2018-08-30 17:13:45	~Uncled1023	seeker: your heart breaks hexchat
+2018-08-30 17:16:18	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:16:18	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:16:22	-->	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has joined #/g/technology
+2018-08-30 17:17:41	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:17:41	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:26:38	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:26:39	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:39:44	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:39:44	<--	Combot (~Combot@my.name.isnt.cumbot) has quit (Read error: Connection reset by peer)
+2018-08-30 17:39:44	<--	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2018-08-30 17:40:36	<--	Zesty (~Zesty@encountered.super.titan.yetis) has quit (Ping timeout: 240 seconds)
+2018-08-30 17:40:54	-->	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has joined #/g/technology
+2018-08-30 17:40:54	--	Mode #/g/technology [+qo Uncled1023 Uncled1023] by ChanServ
+2018-08-30 17:41:03	seeker	wb Uncled1023  ♥︎️ 
+2018-08-30 17:41:40	<--	fwn (~fwn@liss.irama) has quit (Remote host closed the connection)
+2018-08-30 17:42:23	GregHouse	Uncled1023 is bae
+2018-08-30 17:42:25	hallucinate	LOL
+2018-08-30 17:44:21	<--	locustlord (~locustlor@Rizon-FD837939.va.shawcable.net) has quit (Read error: Connection reset by peer)
+2018-08-30 17:45:48	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-30 17:47:35	jrmu	anyone here own a thinkpad x200? Is $130 a fair price to pay for a used one?
+2018-08-30 17:49:07	<--	slaqer (~slaqer@5B0B57B0.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
+2018-08-30 17:50:03	hallucinate	ive seen them priced at like $60 on ebay (after shipping)
+2018-08-30 17:51:49	jrmu	hm
+2018-08-30 17:52:02	jrmu	I live in Asia, the shipping prices I saw on ebay were pretty high (like $60)
+2018-08-30 17:52:07	jrmu	I've never seen anything as low as $60
+2018-08-30 17:52:17	jrmu	do you have a link? I'd like to order from them if you can provide me with it
+2018-08-30 17:53:26	hallucinate	oh
+2018-08-30 17:53:41	hallucinate	its random people selling them, I check every so often
+2018-08-30 17:53:48	fwn	hey did anyone else experience client crashes when joining this channel? I think it has to do something with Pango. Since I've updated it it seems ok. 
+2018-08-30 17:53:56	hallucinate	$130 sounds fair though
+2018-08-30 17:54:06	jrmu	ah, ok thanks hallucinate 
+2018-08-30 17:54:10	hallucinate	yeah, its a pango exploit
+2018-08-30 17:54:12	jrmu	I may pick it up then
+2018-08-30 17:54:16	jrmu	the one at $130
+2018-08-30 17:54:35	hallucinate	https://www.exploit-db.com/exploits/45263/
+2018-08-30 17:55:00	<--	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has quit (Read error: Connection reset by peer)
+2018-08-30 17:55:19	-->	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has joined #/g/technology
+2018-08-30 17:55:20	<--	tacocat (~jack@Rizon-C58F5691.dhcp.nwtn.ct.charter.com) has quit (Read error: Connection reset by peer)
+2018-08-30 17:55:36	-->	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has joined #/g/technology
+2018-08-30 17:55:50	fwn	thank you hallucinate !
+2018-08-30 17:56:13	seeker	♥︎️
+2018-08-30 17:57:10	hallucinate	np
+2018-08-30 18:00:14	seeker	https://pastebin.com/RZcubNa7
+2018-08-30 18:01:02	fwn	cute
+2018-08-30 18:10:13	--	irc: disconnected from server
+2018-08-30 18:13:50	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-30 18:13:50	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-30 18:13:50	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-30 18:13:50	--	Channel #/g/technology: 191 nicks (2 ops, 1 halfop, 1 voice, 187 normals)
+2018-08-30 18:13:50	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-30 18:16:13	-->	sulejman (~sulejman@study.in.scarlet) has joined #/g/technology
+2018-08-30 18:17:01	<--	blueing (~blueing@Rizon-9CD42AF2.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2018-08-30 18:17:07	-->	tuchman62 (~tuchman62@Rizon-9CD42AF2.compute-1.amazonaws.com) has joined #/g/technology
+2018-08-30 18:17:58	sulejman	how is terry?
+2018-08-30 18:18:54	<--	tuchman62 (~tuchman62@Rizon-9CD42AF2.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2018-08-30 18:18:58	-->	balaton701 (~balaton70@Rizon-9CD42AF2.compute-1.amazonaws.com) has joined #/g/technology
+2018-08-30 18:19:07	rdr	😏
+2018-08-30 18:19:32	rdr	😀
+2018-08-30 18:19:46	<--	balaton701 (~balaton70@Rizon-9CD42AF2.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2018-08-30 18:19:49	-->	slatternly45 (~slatternl@Rizon-9CD42AF2.compute-1.amazonaws.com) has joined #/g/technology
+2018-08-30 18:21:29	--	irc: disconnected from server
+2018-08-30 18:21:37	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-30 18:21:37	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-30 18:21:37	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-30 18:21:37	--	Channel #/g/technology: 192 nicks (2 ops, 1 halfop, 1 voice, 188 normals)
+2018-08-30 18:21:37	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-30 18:21:52	<--	slatternly45 (~slatternl@Rizon-9CD42AF2.compute-1.amazonaws.com) has quit (Connection closed)
+2018-08-30 18:23:52	THEWHITELION	Public Announcement: I wish I had a big penis.
+2018-08-30 18:30:52	-->	TimeTraveler (~elalquimi@Rizon-BB18F090.totalplay.net) has joined #/g/technology
+2018-08-30 18:31:18	-->	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology
+2018-08-30 18:32:52	-->	andonuts (~nope@FA9FF281.D358458.E2972CA3.IP) has joined #/g/technology
+2018-08-30 18:33:10	--	andonuts is now known as Guest53711
+2018-08-30 18:37:34	<--	Guest53711 (~nope@FA9FF281.D358458.E2972CA3.IP) has quit
+2018-08-30 18:38:20	-->	andonuts (~nope@FA9FF281.D358458.E2972CA3.IP) has joined #/g/technology
+2018-08-30 18:38:38	--	andonuts is now known as Guest1144
+2018-08-30 18:39:32	-->	Monk (~Monk@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 18:42:01	--	mink_ is now known as ultramink
+2018-08-30 18:43:11	<--	TimeTraveler (~elalquimi@Rizon-BB18F090.totalplay.net) has left #/g/technology (Leaving)
+2018-08-30 18:45:04	-->	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 18:45:06	<--	ultramink (~mink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit (Quit: Leaving)
+2018-08-30 18:45:53	<--	Monk (~Monk@Rizon-51EBD9A0.dclient.hispeed.ch) has quit
+2018-08-30 18:47:42	<--	Guest1144 (~nope@FA9FF281.D358458.E2972CA3.IP) has quit
+2018-08-30 18:49:00	-->	andonuts (~nope@FA9FF281.D358458.E2972CA3.IP) has joined #/g/technology
+2018-08-30 18:49:19	--	andonuts is now known as Guest49054
+2018-08-30 18:51:32	<--	yeetmaster (~yeet@Rizon-3FE85B7D.res.spectrum.com) has quit (Read error: Connection reset by peer)
+2018-08-30 18:55:47	-->	biiiiit (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 19:00:52	<--	biiiiit (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit
+2018-08-30 19:08:13	<--	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit (Quit: Leaving)
+2018-08-30 19:08:40	-->	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 19:09:35	<--	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit
+2018-08-30 19:09:46	-->	ultramink (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 19:10:02	-->	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has joined #/g/technology
+2018-08-30 19:17:19	--	irc: disconnected from server
+2018-08-30 19:17:44	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-30 19:17:44	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-30 19:17:44	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-30 19:17:44	--	Channel #/g/technology: 193 nicks (2 ops, 1 halfop, 1 voice, 189 normals)
+2018-08-30 19:17:44	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-30 19:26:41	-->	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has joined #/g/technology
+2018-08-30 19:30:54	<--	ultramink (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit (Remote host closed the connection)
+2018-08-30 19:31:41	<--	ultramink_ (~ultramink@Rizon-51EBD9A0.dclient.hispeed.ch) has quit (Quit: Quit)
+2018-08-30 19:36:24	<--	Guest49054 (~nope@FA9FF281.D358458.E2972CA3.IP) has quit (Quit: M-muh logs...)
+2018-08-30 19:37:13	-->	andonuts (~nope@FA9FF281.D358458.E2972CA3.IP) has joined #/g/technology
+2018-08-30 19:37:31	--	andonuts is now known as Guest31479
+2018-08-30 19:52:08	<--	Guest31479 (~nope@FA9FF281.D358458.E2972CA3.IP) has quit (Quit: M-muh logs...)
+2018-08-30 19:52:52	-->	andonuts (~nope@the.dr.is.in) has joined #/g/technology
+2018-08-30 19:54:59	-->	Salkree88 (~Salkree88@12248CB3.BE27CCA1.B2679409.IP) has joined #/g/technology
+2018-08-30 19:55:12	Salkree88	Hey!
+2018-08-30 19:55:47	hallucinate	Salkree88, sup fam
+2018-08-30 20:04:17	<--	ultraanon (~ultraanon@Rizon-613F05CB.adsl.inetia.pl) has quit (Ping timeout: 240 seconds)
+2018-08-30 20:07:34	-->	ultraanon (~ultraanon@Rizon-AC514E5E.adsl.inetia.pl) has joined #/g/technology
+2018-08-30 20:10:11	<--	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-30 20:10:51	<--	Salkree88 (~Salkree88@12248CB3.BE27CCA1.B2679409.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2018-08-30 20:11:49	-->	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
+2018-08-30 20:12:36	<--	urodna (~urodna@dank.memer) has quit
+2018-08-30 20:20:33	<--	thenewdesu (~thenewdes@series.of.tubes) has quit (Read error: Connection reset by peer)
+2018-08-30 21:00:39	<--	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Excess Flood)
+2018-08-30 21:00:55	-->	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
+2018-08-30 21:07:55	-->	thenewdesu (~thenewdes@series.of.tubes) has joined #/g/technology
+2018-08-30 21:26:32	<--	thenewdesu (~thenewdes@series.of.tubes) has quit (Read error: Connection reset by peer)
+2018-08-30 21:26:47	-->	thenewdesu (~thenewdes@series.of.tubes) has joined #/g/technology
+2018-08-30 21:47:31	<--	Maylay (~gren@Cloud.Eight) has quit (Ping timeout: 240 seconds)
+2018-08-30 21:49:56	-->	Maylay (~gren@9CB14564:14547E0D:8A655AC0:IP) has joined #/g/technology
+2018-08-30 22:18:03	-->	qouwse (~qouwse@2680959D.9ED31936.BF09B6E.IP) has joined #/g/technology
+2018-08-30 22:42:16	<--	Squall5668 (~Squall566@Rizon-D4E358B4.tellas.gr) has quit (Ping timeout: 240 seconds)
+2018-08-30 22:43:03	-->	Squall5668 (~Squall566@Rizon-D4E358B4.tellas.gr) has joined #/g/technology
+2018-08-30 23:12:16	-->	Mejar19 (~Mejar19@3427B6CD.6C32C1EA.97874CE3.IP) has joined #/g/technology
+2018-08-30 23:12:26	Mejar19	Hi!
+2018-08-30 23:17:45	rdr	Mejar19: pls
+2018-08-30 23:19:50	<--	Mejar19 (~Mejar19@3427B6CD.6C32C1EA.97874CE3.IP) has quit
+2018-08-30 23:20:23	orekix	o/
+2018-08-30 23:26:07	<--	stonecold (~stonecold@i.live.for.headpats.ill.die.for.headpats) has quit (Remote host closed the connection)
+2018-08-30 23:33:33	-->	user (~user@36A764AF.3D2A3853.EFE7C9AB.IP) has joined #/g/technology
+2018-08-30 23:33:42	-->	skney (skney@wishes.to.be.the.little.girl) has joined #/g/technology
+2018-08-30 23:33:44	<--	user (~user@36A764AF.3D2A3853.EFE7C9AB.IP) has quit (Remote host closed the connection)
+2018-08-30 23:34:33	-->	user (~user@36A764AF.3D2A3853.EFE7C9AB.IP) has joined #/g/technology
+2018-08-30 23:34:43	--	user is now known as dolphin3423p498
+2018-08-30 23:35:32	dolphin3423p498	hey fags
+2018-08-30 23:40:11	<--	Cosmonaut (~wannagoto@S.P.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.E) has quit (Ping timeout: 240 seconds)
+2018-08-30 23:46:11	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
+2018-08-30 23:47:31	orekix	fag
+2018-08-30 23:49:35	rdr	tfw this channel has changed
+2018-08-30 23:56:26	~Uncled1023	tfw
+2018-08-30 23:56:57	THEWHITELION	tfw tfw
+2018-08-31 00:01:06	<--	dolphin3423p498 (~user@36A764AF.3D2A3853.EFE7C9AB.IP) has quit (Remote host closed the connection)
+2018-08-31 00:09:20	rdr	hey Uncled1023 
+2018-08-31 00:09:23	rdr	how's being a shill
+2018-08-31 00:09:31	~Uncled1023	pretty good
+2018-08-31 00:09:55	--	irc: disconnected from server
+2018-08-31 00:10:16	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-31 00:10:16	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-31 00:10:16	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-31 00:10:16	--	Channel #/g/technology: 192 nicks (2 ops, 1 halfop, 1 voice, 188 normals)
+2018-08-31 00:10:16	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-31 00:11:08	-->	Xylitol (~temari@user32.dll) has joined #/g/technology
+2018-08-31 00:25:45	-->	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has joined #/g/technology
+2018-08-31 00:32:46	<--	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has quit (Quit: Life without danger is a waste of oxygen)
+2018-08-31 00:34:12	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Read error: Connection reset by peer)
+2018-08-31 00:54:00	hallucinate	  ♥︎️
+2018-08-31 01:01:51	-->	person (~gotmail@Rizon-9A9DA1A2.hsd1.mn.comcast.net) has joined #/g/technology
+2018-08-31 01:01:55	person	hey there
+2018-08-31 01:02:33	rdr	are you real people
+2018-08-31 01:02:34	rdr	or bots
+2018-08-31 01:02:40	person	i am a bot
+2018-08-31 01:02:46	lvmbdv	i am a bot
+2018-08-31 01:03:34	rdr	that's what people would say
+2018-08-31 01:04:13	Aoyagi_raventop	i am a bot
+2018-08-31 01:04:23	rdr	what makes it a raventop Aoyagi_raventop 
+2018-08-31 01:04:47	Aoyagi_raventop	It has a Raven Ridge APU.
+2018-08-31 01:27:59	orekix	time to test cemu under wine
+2018-08-31 01:33:30	<--	oniichan (~oniichan@no.baka) has quit (Quit: Leaving...)
+2018-08-31 01:36:00	-->	logim (~logim@E7768B87.350C5ED0.CD304C9C.IP) has joined #/g/technology
+2018-08-31 01:36:06	<--	logim (~logim@E7768B87.350C5ED0.CD304C9C.IP) has quit (Read error: Connection reset by peer)
+2018-08-31 01:49:06	-->	siid (~qwebirc@Rizon-BCAEBBC3.gaststa.statesboro.ga.us.clients.pavlovmedia.net) has joined #/g/technology
+2018-08-31 01:49:10	siid	hey 
+2018-08-31 01:49:15	siid	any /g/ discords?
+2018-08-31 01:49:40	siid	Underdose: 
+2018-08-31 01:49:45	siid	get me in the #defect discord or line group
+2018-08-31 01:49:55	orekix	> discord
+2018-08-31 01:49:57	orekix	but why
+2018-08-31 01:50:17	siid	well my old irc channel switched to line
+2018-08-31 01:50:20	siid	and i cant find the line
+2018-08-31 01:50:24	siid	so i assume they switched to discord
+2018-08-31 02:01:57	-->	Superzak (~Superzak@a.comfy.cabin) has joined #/g/technology
+2018-08-31 02:02:19	<--	unimatrix (~anonymous@Rizon-21D8795B.powersrv.de) has quit (Quit: ZNC - https://znc.in)
+2018-08-31 02:05:59	Aoyagi_raventop	https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales
+2018-08-31 02:10:42	-->	trosa (~trosa@trosa.io) has joined #/g/technology
+2018-08-31 02:20:14	<--	person (~gotmail@Rizon-9A9DA1A2.hsd1.mn.comcast.net) has quit (Ping timeout: 240 seconds)
+2018-08-31 02:23:13	<--	siid (~qwebirc@Rizon-BCAEBBC3.gaststa.statesboro.ga.us.clients.pavlovmedia.net) has quit (Quit: Page closed)
+2018-08-31 02:56:43	-->	siid (~qwebirc@Rizon-BCAEBBC3.gaststa.statesboro.ga.us.clients.pavlovmedia.net) has joined #/g/technology
+2018-08-31 03:17:52	-->	On4r4p (~ouroboros@76D9838.FDB00754.745640AA.IP) has joined #/g/technology
+2018-08-31 03:21:36	<--	RJ45 (~GPRS@vhosts.are.for.faggots) has quit (Ping timeout: 240 seconds)
+2018-08-31 03:27:43	<--	siid (~qwebirc@Rizon-BCAEBBC3.gaststa.statesboro.ga.us.clients.pavlovmedia.net) has quit (Quit: Page closed)
+2018-08-31 03:36:16	<--	Zanthas (~Zanthas@Misaki.Mei-chan) has quit (Ping timeout: 240 seconds)
+2018-08-31 03:37:52	-->	Zanthas (~Zanthas@Misaki.Mei-chan) has joined #/g/technology
+2018-08-31 03:37:52	--	Mode #/g/technology [+qo Zanthas Zanthas] by ChanServ
+2018-08-31 03:43:45	lvmbdv	https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kumar.pdf
+2018-08-31 03:47:54	<--	fwn (~fwn@liss.irama) has left #/g/technology (Leaving)
+2018-08-31 04:20:43	LambdaComplex	lvmbdv: neat
+2018-08-31 04:26:52	-->	the_dream_of_life27 (~the_dream@E2CB37E0.6839FD3D.77EDFD68.IP) has joined #/g/technology
+2018-08-31 04:27:07	the_dream_of_life27	Hi!
+2018-08-31 04:34:35	LambdaComplex	the_dream_of_life27: hi
+2018-08-31 04:34:55	<--	the_dream_of_life27 (~the_dream@E2CB37E0.6839FD3D.77EDFD68.IP) has quit
+2018-08-31 04:45:41	-->	RJ45 (~GPRS@Rizon-C737BBD8.know.cable.virginm.net) has joined #/g/technology
+2018-08-31 04:54:46	<--	tragique (~tragique@Rizon-5402F272.mc.videotron.ca) has quit (Ping timeout: 240 seconds)
+2018-08-31 06:26:51	-->	unimatrix (~anonymous@Rizon-21D8795B.powersrv.de) has joined #/g/technology
+2018-08-31 06:36:45	<--	M_nomad[m] (~nomad0129@AB4DE443:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-31 06:36:45	<--	jinks13[m] (~jinks13ma@75E69A59:32AA87A2:A75BB464:IP) has quit (Remote host closed the connection)
+2018-08-31 06:44:10	-->	mildeight (~mildeight@F42CD6E1:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-31 06:56:59	<--	Aoyagi_raventop (~yags@3667AC10.A65F0691.EEDA6E32.IP) has quit (Quit: qat)
+2018-08-31 07:03:35	seeker	g ♥︎️
+2018-08-31 07:14:45	-->	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
+2018-08-31 07:15:19	<--	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit
+2018-08-31 07:15:36	-->	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
+2018-08-31 07:29:43	<--	nayfie (~nayfie@god.i.love.meme) has quit (Quit: bye)
+2018-08-31 07:40:21	-->	OtakuLord (~uid226350@Rizon-1CF83CA9.irccloud.com) has joined #/g/technology
+2018-08-31 07:54:53	OtakuLord	H-hi
+2018-08-31 08:01:50	lvmbdv	SUP
+2018-08-31 08:21:47	THEWHITELION	gues what do you think about the libreboot founder having 'gender reassignment' surgery?
+2018-08-31 08:23:47	seeker	epic
+2018-08-31 08:33:50	tj	brave
+2018-08-31 08:38:09	THEWHITELION	no matter how much he mutilates his body to resemble the female form, he was born male and has a Y chromosome, he is a male even if his penis has been restructured. not to mention that he doesn't have a uterus or overies, both of which are female characteristics.
+2018-08-31 08:39:08	THEWHITELION	i think he is illusioned about himself being female
+2018-08-31 08:39:27	tj	why are you telling us this
+2018-08-31 08:39:38	tj	do you just like it when people agree with you
+2018-08-31 08:39:57	THEWHITELION	i am telling you this to have some kind of interesting conversation
+2018-08-31 08:41:05	-->	Bludmaster99 (~Bludmaste@47AA364A.DB697649.EEB5BEE9.IP) has joined #/g/technology
+2018-08-31 08:41:16	Bludmaster99	Hey!
+2018-08-31 08:41:26	THEWHITELION	Hi
+2018-08-31 08:49:54	<--	Bludmaster99 (~Bludmaste@47AA364A.DB697649.EEB5BEE9.IP) has quit
+2018-08-31 08:57:28	-->	M_nomad[m] (~nomad0129@AB4DE443:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-31 08:57:28	-->	jinks13[m] (~jinks13ma@75E69A59:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-31 08:57:44	-->	mildseven (~mildseven@D30B3B2D:32AA87A2:A75BB464:IP) has joined #/g/technology
+2018-08-31 09:05:51	<--	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Sleeping...)
+2018-08-31 09:07:30	-->	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-31 09:14:30	-->	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has joined #/g/technology
+2018-08-31 09:23:12	<--	qouwse (~qouwse@2680959D.9ED31936.BF09B6E.IP) has quit (Read error: Connection reset by peer)
+2018-08-31 09:23:25	-->	qouwse (~qouwse@2680959D.9ED31936.BF09B6E.IP) has joined #/g/technology
+2018-08-31 09:23:27	<--	qouwse (~qouwse@2680959D.9ED31936.BF09B6E.IP) has quit (Read error: Connection reset by peer)
+2018-08-31 09:38:34	-->	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has joined #/g/technology
+2018-08-31 10:01:11	-->	cmx (~cmx@Rizon-9CD2D07E.dip0.t-ipconnect.de) has joined #/g/technology
+2018-08-31 10:08:50	-->	LocustFurnace (~LocustFur@Rizon-14AA2660.totalplay.net) has joined #/g/technology
+2018-08-31 10:11:20	-->	Jackie_001 (~Jackie@B5EC8D53:25412179:7D2F1F02:IP) has joined #/g/technology
+2018-08-31 10:13:44	sebbu	THEWHITELION, I think... I don't care at all, that's his private life, it doesn't matter to me nor would it affect his abilities to code / support his(?) software :p
+2018-08-31 10:14:02	sebbu	that's the level of gossip
+2018-08-31 10:14:11	sebbu	not related at all
+2018-08-31 10:14:37	<--	LocustFurnace (~LocustFur@Rizon-14AA2660.totalplay.net) has quit
+2018-08-31 10:14:47	sebbu	i remember hans reiser as a filesystem dev, not a murder, the later is unrelated to my interests
+2018-08-31 10:14:53	sebbu	murderer*
+2018-08-31 10:16:02	<--	Jackie_001 (~Jackie@B5EC8D53:25412179:7D2F1F02:IP) has quit
+2018-08-31 10:17:56	seeker	utter retard sebbu 
+2018-08-31 10:18:16	seeker	completely autistic and impractical worldview 
+2018-08-31 10:18:32	seeker	we live in a society
+2018-08-31 10:19:32	sebbu	yes we live in a society, but i have never met any of the two nor would i ever meet any of the two IRL
+2018-08-31 10:19:53	-->	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has joined #/g/technology
+2018-08-31 10:19:56	sebbu	my worldview in completely practical
+2018-08-31 10:21:21	seeker	just ignore literally everything except the patches
+2018-08-31 10:22:11	sebbu	why would I care about the personnal life of ppl I only interact with at the professionnal level ?
+2018-08-31 10:22:12	THEWHITELION	sebbu i suppose his gender is irrelevant to his ability to program, but really this does not address the subject of my original messag. The subject of my message was his sex, my argument was that even with 'gender reassignment'
+2018-08-31 10:22:15	THEWHITELION	shit
+2018-08-31 10:22:29	sebbu	why would you care about his sex ?
+2018-08-31 10:22:45	sebbu	or sexchange
+2018-08-31 10:22:52	sebbu	or sex attraction ?
+2018-08-31 10:22:53	THEWHITELION	even with 'gender reassignment' surgery, he is still a male because he has a Y chromosome, only males have the Y chromosome
+2018-08-31 10:23:12	THEWHITELION	that does not address the subject
+2018-08-31 10:23:27	THEWHITELION	the pertinent question is: is he male or female?
+2018-08-31 10:23:35	sebbu	the subject is you're a tattletale
+2018-08-31 10:23:41	<--	poptart (~poptart@Rizon-2BB0D15D.clients.your-server.de) has quit (Ping timeout: 240 seconds)
+2018-08-31 10:23:44	seeker	sebbu, because they inject themselves into work
+2018-08-31 10:23:46	sebbu	or is it tattler
+2018-08-31 10:23:53	THEWHITELION	you are speaking nonsense
+2018-08-31 10:23:55	seeker	so if you just play dumb like this you are going to get rolled over
+2018-08-31 10:24:43	THEWHITELION	kek
+2018-08-31 10:24:47	sebbu	sorry to separate my personnal/private life with my professionnal life and hoping others do the same
+2018-08-31 10:24:52	THEWHITELION	there is no need to be upset
+2018-08-31 10:25:01	seeker	others will not do the same
+2018-08-31 10:25:06	seeker	we don't live in that world anymore
+2018-08-31 10:25:08	sebbu	most do
+2018-08-31 10:25:16	seeker	yes exactly
+2018-08-31 10:25:36	seeker	so 2% of extreme radicals are injecting themselves and their politics into everybody elses life
+2018-08-31 10:26:36	sebbu	sadly journals, newspaper & all mostly talk about/for thoses 2%
+2018-08-31 10:26:57	seeker	yeah they are going to win
+2018-08-31 10:27:01	sebbu	THEWHITELION was brainwashed :(
+2018-08-31 10:27:04	seeker	they are going to totalyl dominate
+2018-08-31 10:27:11	-->	poptart (~poptart@Rizon-2BB0D15D.clients.your-server.de) has joined #/g/technology
+2018-08-31 10:27:12	THEWHITELION	by who?
+2018-08-31 10:27:20	seeker	biologists
+2018-08-31 10:27:25	THEWHITELION	lol
+2018-08-31 10:27:29	sebbu	by ppl who made you care about unrelated stuff
+2018-08-31 10:27:45	THEWHITELION	you are being irrationa
+2018-08-31 10:28:03	THEWHITELION	the libreboot dev is profoundly irrational
+2018-08-31 10:28:05	seeker	here'ss the thing
+2018-08-31 10:28:17	seeker	there's been a MASSIVE sharp increase in transgenders
+2018-08-31 10:28:29	THEWHITELION	it's in vogue to be transgender
+2018-08-31 10:28:36	seeker	and it's mostly just because they're lonely white males
+2018-08-31 10:28:43	seeker	and they can't find any community of self worth
+2018-08-31 10:29:00	seeker	because of this society that tells men they are evil
+2018-08-31 10:30:19	sebbu	embrace the dark side of the FORE
+2018-08-31 10:30:21	sebbu	FORCE*
+2018-08-31 10:30:34	sebbu	yes, we (both men and women) are evil
+2018-08-31 10:30:35	sebbu	and ?
+2018-08-31 10:30:44	THEWHITELION	your thoughts are based on the assumption that there really has been an increase in transgender people, that may or may not be true and requires data to substantiate. 
+2018-08-31 10:31:07	sebbu	well, there's more transgender now than 100 years ago
+2018-08-31 10:31:19	sebbu	(and i can probably lower than interval)
+2018-08-31 10:32:06	sebbu	i remember waterfox or palemoon original dev was transgender or smth
+2018-08-31 10:32:06	-->	Jackie_001 (~Jackie@B5EC8D53:25412179:7D2F1F02:IP) has joined #/g/technology
+2018-08-31 10:33:31	sebbu	wildfox*
+2018-08-31 10:33:44	THEWHITELION	OK
+2018-08-31 10:34:08	<--	Jackie_001 (~Jackie@B5EC8D53:25412179:7D2F1F02:IP) has quit
+2018-08-31 10:35:35	sebbu	I used it at some time, later it became obsolete because firefox finally supported h264 with the standard build
+2018-08-31 10:37:17	sebbu	[18:28:36] <seeker> and it's mostly just because they're lonely white males <-- the oldest job in the world (tm) can make them less lonely and bring them some (physical) love ;)
+2018-08-31 10:37:37	THEWHITELION	y'all need to use qutebrowser or conkeror
+2018-08-31 10:37:43	THEWHITELION	two of the best browsers
+2018-08-31 10:38:20	THEWHITELION	conkeror appears to collect data about its users though..
+2018-08-31 10:38:31	THEWHITELION	i think the data are just crash reports, etc
+2018-08-31 10:39:22	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit (Quit: For the rise of the fallen angel - sing hallelujah)
+2018-08-31 10:39:37	-->	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-31 10:39:55	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit
+2018-08-31 10:40:50	-->	Aoyagi (~AoyagiAic@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-31 10:40:59	<--	Aoyagi (~AoyagiAic@confrontation.beats.confirmation) has quit
+2018-08-31 10:41:40	THEWHITELION	my calculator program isn't working and i am upset about it
+2018-08-31 10:42:31	THEWHITELION	i know my method for converting digit characters into floats is viable because i tested it in another program
+2018-08-31 10:42:49	THEWHITELION	but the program produces strange outputs, like a negative number for adding two positive numbers
+2018-08-31 10:43:08	THEWHITELION	a positve number from adding two negative numbers, etc
+2018-08-31 10:43:15	THEWHITELION	i don't know what's wrong :|
+2018-08-31 10:44:29	sebbu	probably overflow
+2018-08-31 10:44:36	sebbu	and it overwrite the sign bit
+2018-08-31 10:45:19	THEWHITELION	it shouldn't be overflowing...it gives those kind of results even with small inputs
+2018-08-31 10:53:14	<--	wineberry (~home0@C840BF5:812DA7E8:8D77BB27:IP) has quit (Read error: Connection reset by peer)
+2018-08-31 11:02:47	-->	slaqer (~slaqer@C5606C4C.A0722AB9.39E48453.IP) has joined #/g/technology
+2018-08-31 11:03:42	-->	Stafer (~Stafer@AED47B08.556FC217.4F2D6955.IP) has joined #/g/technology
+2018-08-31 11:06:56	<--	slaqer (~slaqer@C5606C4C.A0722AB9.39E48453.IP) has quit (Ping timeout: 240 seconds)
+2018-08-31 11:08:32	sebbu	maybe some bit shift in the wrong part ?
+2018-08-31 11:09:17	sebbu	or numbers with different magnitude don't get summed correctly ?
+2018-08-31 11:10:29	sebbu	(the diff in magnitude might be greater than the number of significant digits ?)
+2018-08-31 11:17:06	<--	Pixi- (Pixi@Rizon-8249B672.rizonbnc.us.rizon.net) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	Kurokin (Kurokin@Rizon-258444B6.rizonbnc.us.rizon.net) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	Guest53057 (GreenBagel@Rizon-6E343E2A.rizonbnc.us.rizon.net) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	desu (Desu@desu.pie) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	emmymadeinjapan (Luis@Free.as.in.Freedom) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	fission (Fission@Action.and.Drama) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	DeezeNuts (DeezeNuts@THE.STREETS.IS.HARD.AND.SO.IS.MY.DICK) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	nullbyte (~nullbyte@there.is.no.byte) has quit (*.net *.split)
+2018-08-31 11:17:06	<--	noodle (~netwoodle@oodles.of.noodles) has quit (*.net *.split)
+2018-08-31 11:17:13	-->	nullbyte (~nullbyte@there.is.no.byte) has joined #/g/technology
+2018-08-31 11:22:46	-->	hud_ (~hud@24517774.4D6B7D1F.D5E79D9D.IP) has joined #/g/technology
+2018-08-31 11:23:42	<--	hud_ (~hud@24517774.4D6B7D1F.D5E79D9D.IP) has quit
+2018-08-31 11:28:24	-->	Guest84 (~Guest84@D4FD1F07.14620D5A.9D2C4A82.IP) has joined #/g/technology
+2018-08-31 11:32:40	-->	Suzuha (~suzuha@great.vhost) has joined #/g/technology
+2018-08-31 11:33:19	-->	Fission (Fission@Rizon-7056CBE6.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:34:19	--	Fission is now known as Guest60456
+2018-08-31 11:34:39	-->	GreenBagels (GreenBagel@Rizon-6E343E2A.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:34:45	sebbu	THEWHITELION, btw, which implementation did you choose for float-like ?
+2018-08-31 11:35:39	--	GreenBagels is now known as Guest20080
+2018-08-31 11:36:37	<--	Siouxsie (~Siouxsie@all.these.moments.will.be.lost.in.time.like.tears.in.rain) has quit (Remote host closed the connection)
+2018-08-31 11:37:36	<--	Suzuha (~suzuha@great.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-31 11:38:10	<--	Guest84 (~Guest84@D4FD1F07.14620D5A.9D2C4A82.IP) has quit
+2018-08-31 11:39:24	-->	Kurokin (Kurokin@Rizon-258444B6.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:40:07	-->	Guest39063 (DeezeNuts@Rizon-CCE381C8.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:40:39	-->	Guest54835 (Luis@Rizon-876C16C5.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:44:10	-->	Pixi- (Pixi@Rizon-8249B672.rizonbnc.us.rizon.net) has joined #/g/technology
+2018-08-31 11:45:20	-->	Suzuha (~suzuha@great.vhost) has joined #/g/technology
+2018-08-31 11:50:06	<--	Suzuha (~suzuha@great.vhost) has quit
+2018-08-31 11:50:16	THEWHITELION	what do you mean? i am using double variables to contain the fractional numbers
+2018-08-31 11:53:02	THEWHITELION	the float is computed by breaking apart the input into two floats, for example "789.321" is broken apart into "789" and "321", the fractional part is decimated (i.e. divide by 10 until it is less than 1) so the value becomes "0.321", then the two parts are added together into  a complete float, "789.321"
+2018-08-31 11:53:07	-->	desu (Desu@desu.pie) has joined #/g/technology
+2018-08-31 11:55:03	THEWHITELION	so after adding a bunch of printfs, the problem seems to be caused by the function that makes a float
+2018-08-31 11:55:08	THEWHITELION	i don't understand, it was working before!
+2018-08-31 12:01:47	THEWHITELION	after i get this calculator program working i'm going to add more features, i want the user to be able to define variables and to define expressions with those variables and to specfy a range for doing an operation repeatedly (e.g. add the numbers 1-100)
+2018-08-31 12:02:12	-->	Suzuha (~suzuha@great.vhost) has joined #/g/technology
+2018-08-31 12:06:15	--	irc: disconnected from server
+2018-08-31 12:06:59	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-31 12:06:59	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-31 12:06:59	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-31 12:06:59	--	Channel #/g/technology: 195 nicks (2 ops, 1 halfop, 0 voices, 192 normals)
+2018-08-31 12:06:59	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-31 12:16:00	-->	Siouxsie (~Siouxsie@DE5D42E0.D14131FE.7B075936.IP) has joined #/g/technology
+2018-08-31 12:16:00	--	Mode #/g/technology [+v Siouxsie] by ChanServ
+2018-08-31 12:16:03	<--	Siouxsie (~Siouxsie@all.these.moments.will.be.lost.in.time.like.tears.in.rain) has quit (Remote host closed the connection)
+2018-08-31 12:28:42	--	Guest54835 is now known as emmymadeinjapan
+2018-08-31 12:34:37	<--	Suzuha (~suzuha@great.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-31 12:43:28	<--	Stafer (~Stafer@AED47B08.556FC217.4F2D6955.IP) has quit (Quit: ())
+2018-08-31 12:47:58	<--	OtakuLord (~uid226350@Rizon-1CF83CA9.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2018-08-31 12:52:06	-->	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has joined #/g/technology
+2018-08-31 12:53:50	-->	Suzuha (~suzuha@great.vhost) has joined #/g/technology
+2018-08-31 12:54:28	-->	GunsmithCat (~StacheDud@CE039461:3503C9A6:6A46898:IP) has joined #/g/technology
+2018-08-31 12:59:58	--	irc: disconnected from server
+2018-08-31 13:00:18	-->	rdr (~rdr@Rizon-7CEE21EA.abhsia.telus.net) has joined #/g/technology
+2018-08-31 13:00:18	--	Topic for #/g/technology is "Happy 30th Birthday IRC!! | Do you actually read this?"
+2018-08-31 13:00:18	--	Topic set by Uncled1023 (admin@Teknik.io) on Wed, 22 Aug 2018 16:56:00
+2018-08-31 13:00:18	--	Channel #/g/technology: 195 nicks (2 ops, 1 halfop, 0 voices, 192 normals)
+2018-08-31 13:00:18	--	Channel created on Tue, 27 Mar 2012 16:32:05
+2018-08-31 13:10:22	<--	Kunoichi (~Kunochan@ninja.princess) has quit (Ping timeout: 240 seconds)
+2018-08-31 13:12:46	-->	Random024 (~Random024@Rizon-DA330055.hsd1.fl.comcast.net) has joined #/g/technology
+2018-08-31 13:23:29	-->	Kunoichi (~Kunochan@ninja.princess) has joined #/g/technology
+2018-08-31 13:23:29	--	Mode #/g/technology [+h Kunoichi] by ChanServ
+2018-08-31 13:30:56	<--	Suzuha (~suzuha@great.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-31 13:31:46	-->	Aoyagi_raventop (~yags@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-31 13:38:24	-->	Aurilas1999 (Aurilas199@20FDBD4B.9EEFDDDE.43DE826D.IP) has joined #/g/technology
+2018-08-31 13:38:38	<--	Aurilas1999 (Aurilas199@20FDBD4B.9EEFDDDE.43DE826D.IP) has quit
+2018-08-31 13:41:54	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-31 13:45:26	<--	fwn (~fwn@liss.irama) has left #/g/technology
+2018-08-31 13:52:35	<--	GunsmithCat (~StacheDud@CE039461:3503C9A6:6A46898:IP) has quit (Ping timeout: 240 seconds)
+2018-08-31 14:01:35	<--	ninjabuffet (~ninjabuff@ono.sendai) has quit (Read error: Connection reset by peer)
+2018-08-31 14:02:42	-->	ninjabuffet (~ninjabuff@ono.sendai) has joined #/g/technology
+2018-08-31 14:06:52	-->	oniichan (~oniichan@no.baka) has joined #/g/technology
+2018-08-31 14:15:08	<--	Aoyagi_raventop (~yags@Rizon-6E299A07.broadband15.iol.cz) has quit (Quit: qat)
+2018-08-31 14:27:31	<--	Random024 (~Random024@Rizon-DA330055.hsd1.fl.comcast.net) has quit (Read error: Connection reset by peer)
+2018-08-31 14:28:04	-->	Suzuha (~suzuha@great.vhost) has joined #/g/technology
+2018-08-31 14:33:00	-->	Aoyagi_raventop (~yags@Rizon-6E299A07.broadband15.iol.cz) has joined #/g/technology
+2018-08-31 14:52:30	<--	unit1 (~unit1@Rizon-FF6082E1.cable.virginm.net) has quit (Remote host closed the connection)
+2018-08-31 15:00:21	<--	Superzak (~Superzak@a.comfy.cabin) has quit (Ping timeout: 240 seconds)
+2018-08-31 15:03:32	--	Guest60456 is now known as fission
+2018-08-31 15:23:11	<--	ryce (~ryce@66F46D78.AC4DA6BE.ECC217EB.IP) has quit (Quit: Leaving)
+2018-08-31 15:24:26	-->	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has joined #/g/technology
+2018-08-31 15:41:10	-->	urodna (~urodna@dank.memer) has joined #/g/technology
+2018-08-31 15:41:12	<--	urodna (~urodna@dank.memer) has quit (Read error: Connection reset by peer)
+2018-08-31 15:52:08	-->	fwn (~fwn@liss.irama) has joined #/g/technology
+2018-08-31 15:58:26	<--	nullptr (~nullptr@Rizon-58100E37.net.upcbroadband.cz) has quit (Ping timeout: 240 seconds)
+2018-08-31 16:00:07	-->	nullptr (~nullptr@Rizon-58100E37.net.upcbroadband.cz) has joined #/g/technology
+2018-08-31 16:15:19	-->	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has joined #/g/technology
+2018-08-31 16:15:41	<--	Suzuha (~suzuha@great.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-31 16:18:12	<--	JX7P (~JX7P@marxism.leninism.mao-tsetung-thought) has quit (Ping timeout: 240 seconds)
+2018-08-31 16:19:36	-->	stonecold (~stonecold@5B9EE1F2.12B7342E.483B3B04.IP) has joined #/g/technology
+2018-08-31 16:27:42	<--	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has quit (Ping timeout: 240 seconds)
+2018-08-31 16:36:49	<--	fwn (~fwn@liss.irama) has quit (Quit: Leaving)
+2018-08-31 16:38:04	<--	Phallus (~Phallus@Rizon-BC65F6DA.access.telenet.be) has quit (Quit: Goodbye)
+2018-08-31 17:51:28	-->	yeetmaster (~yeet@13186B6A:C28C723A:D926128D:IP) has joined #/g/technology
+2018-08-31 18:06:32	<--	ephemer0l (~ephemer0l@Rizon-EF32F0FD.organizedmagnetism.com) has quit (Ping timeout: 240 seconds)
+2018-08-31 18:15:48	<--	Aenri (~Aenri@Rizon-275039BD.dynamic.chello.sk) has quit (Quit: Leaving.)
+2018-08-31 18:28:59	-->	ephemer0l (~ephemer0l@Rizon-EF32F0FD.organizedmagnetism.com) has joined #/g/technology
+2018-08-31 18:33:21	-->	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has joined #/g/technology
+2018-08-31 18:37:40	<--	Aoyagi_raventop (~yags@Rizon-6E299A07.broadband15.iol.cz) has quit (Quit: qat)
+2018-08-31 18:38:01	-->	PokemonGo30 (~PokemonGo@A060512E.55B365B7.35E988D.IP) has joined #/g/technology
+2018-08-31 18:38:16	PokemonGo30	Hey!
+2018-08-31 18:39:17	rdr	>PokemonGo30
+2018-08-31 18:40:21	-->	tingol (~tingol@Rizon-AF74701D.dynamic.isp.telekom.rs) has joined #/g/technology
+2018-08-31 18:46:27	THEWHITELION	my program was causing a bus error wtf
+2018-08-31 18:49:22	<--	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has quit (Ping timeout: 240 seconds)
+2018-08-31 18:50:11	<--	PokemonGo30 (~PokemonGo@A060512E.55B365B7.35E988D.IP) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2018-08-31 19:05:41	<--	tingol (~tingol@Rizon-AF74701D.dynamic.isp.telekom.rs) has quit (Ping timeout: 240 seconds)
+2018-08-31 19:20:46	-->	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has joined #/g/technology
+2018-08-31 19:35:18	rdr	bus error?  hope nobody died
+2018-08-31 20:08:16	<--	atemnot (~anon@likes.dicks.in.his.vhost) has quit (Ping timeout: 240 seconds)
+2018-08-31 20:09:59	-->	atemnot (~anon@likes.dicks.in.his.vhost) has joined #/g/technology
+2018-08-31 20:44:32	-->	hud_ (~hud@Rizon-450EE075.as43234.net) has joined #/g/technology
+2018-08-31 20:44:47	<--	hud_ (~hud@Rizon-450EE075.as43234.net) has quit (Remote host closed the connection)
+2018-08-31 20:59:41	<--	thenewdesu (~thenewdes@series.of.tubes) has quit (Ping timeout: 240 seconds)
+2018-08-31 21:31:56	-->	analyticat (~analytica@spherical.cows) has joined #/g/technology
+2018-08-31 21:33:02	<--	tyil (~root@trigger.fingers) has quit (Ping timeout: 240 seconds)
+2018-08-31 21:34:22	<--	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2018-08-31 21:37:13	-->	Uncled1023 (~admin@Rizon-BCBBBAD6.hsd1.ca.comcast.net) has joined #/g/technology
+2018-08-31 21:37:14	--	Mode #/g/technology [+qo Uncled1023 Uncled1023] by ChanServ
+2018-08-31 21:41:19	-->	tyil (~root@trigger.fingers) has joined #/g/technology
+2018-08-31 22:17:23	-->	thenewdesu (~thenewdes@series.of.tubes) has joined #/g/technology
+2018-08-31 22:32:16	<--	analyticat (~analytica@spherical.cows) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2018-08-31 23:44:38	-->	Combot (~Combot@my.name.isnt.cumbot) has joined #/g/technology
+2018-08-31 23:44:38	--	Mode #/g/technology [+ao Combot Combot] by ChanServ
+2018-08-31 23:48:18	orekix	so is Terry actually kill
+2018-08-31 23:48:19	orekix	?
+2018-08-31 23:49:07	THEWHITELION	maybe, it hasn't been confirmed, but it really seems to be true
+2018-08-31 23:49:32	THEWHITELION	someone should reach out to terry's parents and ask them for the definitive answer
+2018-08-31 23:49:47	orekix	parent*
+2018-08-31 23:49:51	orekix	his dad is kill
+2018-08-31 23:51:02	THEWHITELION	when did his dad die?
+2018-08-31 23:51:17	orekix	last year apparently, around the time he got kicked iirc
+2018-08-31 23:51:37	THEWHITELION	:(
+2018-08-31 23:51:48	orekix	also, seems to be real
+2018-08-31 23:51:52	THEWHITELION	R. I. P.
+2018-08-31 23:52:04	orekix	sister recently changed cover picture to family picture
+2018-08-31 23:52:10	THEWHITELION	yeah :/
+2018-08-31 23:59:40	-->	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has joined #/g/technology
+2018-09-01 00:10:02	<--	Combot (~Combot@my.name.isnt.cumbot) has quit (Ping timeout: 240 seconds)
+2018-09-01 00:23:35	-->	Anardin1996 (Anardin199@C2CCBFF6.17FD9578.338808BA.IP) has joined #/g/technology
+2018-09-01 00:23:50	Anardin1996	Hi!
+2018-09-01 00:24:22	<--	Klaatu (~Klaatu@Rizon-823E3673.dhcp.stls.mo.charter.com) has quit (Ping timeout: 240 seconds)
+2018-09-01 00:25:03	\x	F
+2018-09-01 00:25:43	rdr	who is here
+2018-09-01 00:25:46	rdr	who comes here anymore
+2018-09-01 00:25:55	rdr	i feel like i used to be more active here
+2018-09-01 00:26:02	rdr	tfw no Zanthas friendo
+2018-09-01 00:26:04	orekix	o/
+2018-09-01 00:32:44	<--	Anardin1996 (Anardin199@C2CCBFF6.17FD9578.338808BA.IP) has quit
+2018-09-01 00:40:22	<--	JX7P` (~JX7P@9CA172ED.554837E4.FB4E794F.IP) has quit (Ping timeout: 240 seconds)
+2018-09-01 00:43:21	-->	nayfie (~nayfie@god.i.love.meme) has joined #/g/technology

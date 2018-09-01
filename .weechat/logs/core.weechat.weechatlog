@@ -1,1522 +1,519 @@
-2018-08-22 11:20:18		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
-2018-08-22 11:20:18		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
-2018-08-22 11:20:18		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
-2018-08-22 11:20:18		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
-2018-08-22 11:20:18		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 11:20:58		irc: server Rizon added
-2018-08-22 11:21:05		Option changed: irc.server.Rizon.ssl_verify = off  (default if null: on)
-2018-08-22 11:21:06		Options saved to sec.conf
-2018-08-22 11:21:06		Options saved to weechat.conf
-2018-08-22 11:21:06		Options saved to plugins.conf
-2018-08-22 11:21:06		Options saved to charset.conf
-2018-08-22 11:21:06		Options saved to logger.conf
-2018-08-22 11:21:06		Options saved to exec.conf
-2018-08-22 11:21:06		Options saved to trigger.conf
-2018-08-22 11:21:06		Options saved to aspell.conf
-2018-08-22 11:21:06		Options saved to alias.conf
-2018-08-22 11:21:06		Options saved to buflist.conf
-2018-08-22 11:21:06		Options saved to fifo.conf
-2018-08-22 11:21:06		Options saved to xfer.conf
-2018-08-22 11:21:06		Options saved to irc.conf
-2018-08-22 11:21:06		Options saved to relay.conf
-2018-08-22 11:21:06		Options saved to python.conf
-2018-08-22 11:21:06		Options saved to perl.conf
-2018-08-22 11:21:06		Options saved to lua.conf
-2018-08-22 11:21:06		Options saved to tcl.conf
-2018-08-22 11:21:06		Options saved to script.conf
-2018-08-22 11:21:06		Options saved to fset.conf
-2018-08-22 11:21:36		irc: server Freenode added
-2018-08-22 11:21:43		Option changed: irc.server.Freenode.ssl_verify = off  (default if null: on)
-2018-08-22 11:21:44		Options saved to sec.conf
-2018-08-22 11:21:44		Options saved to weechat.conf
-2018-08-22 11:21:44		Options saved to plugins.conf
-2018-08-22 11:21:44		Options saved to charset.conf
-2018-08-22 11:21:44		Options saved to logger.conf
-2018-08-22 11:21:44		Options saved to exec.conf
-2018-08-22 11:21:44		Options saved to trigger.conf
-2018-08-22 11:21:44		Options saved to aspell.conf
-2018-08-22 11:21:44		Options saved to alias.conf
-2018-08-22 11:21:44		Options saved to buflist.conf
-2018-08-22 11:21:44		Options saved to fifo.conf
-2018-08-22 11:21:44		Options saved to xfer.conf
-2018-08-22 11:21:44		Options saved to irc.conf
-2018-08-22 11:21:44		Options saved to relay.conf
-2018-08-22 11:21:44		Options saved to python.conf
-2018-08-22 11:21:44		Options saved to perl.conf
-2018-08-22 11:21:44		Options saved to lua.conf
-2018-08-22 11:21:44		Options saved to tcl.conf
-2018-08-22 11:21:44		Options saved to script.conf
-2018-08-22 11:21:44		Options saved to fset.conf
-2018-08-22 11:21:53		Mouse enabled
-2018-08-22 11:22:46		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-22 14:29:07		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 16:07:49		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 16:11:58		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 17:29:04	=!=	Option "python.look." not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-22 17:29:43		Option changed: weechat.color.chat_prefix_buffer = red  (default: brown)
-2018-08-22 17:30:44		Option changed: weechat.color.chat_prefix_buffer = blue  (default: brown)
-2018-08-22 17:31:48		Option changed: buflist.format.hotlist_highlight = "${color:red}"  (default: "${color:magenta}")
-2018-08-22 17:32:17		Option changed: buflist.format.hotlist_highlight = "${color:blue}"  (default: "${color:magenta}")
-2018-08-22 17:32:53		Option changed: buflist.format.hotlist_highlight = "${color:white,blue}"  (default: "${color:magenta}")
-2018-08-22 17:33:14		Option changed: buflist.format.hotlist_highlight = "${color:white,red}""  (default: "${color:magenta}")
-2018-08-22 17:36:58		python: loading script "/home/ryan/.weechat/python/autoload/notify_send.py"
-2018-08-22 17:36:58		python: registered script "notify_send", version 0.8 (dev) (Sends highlight and message notifications through notify-send.)
-2018-08-22 17:38:39		Option changed: plugins.var.python.notify_send.ignore_buffers = "*highlight"
-2018-08-22 17:38:45		Options saved to sec.conf
-2018-08-22 17:38:45		Options saved to weechat.conf
-2018-08-22 17:38:45		Options saved to plugins.conf
-2018-08-22 17:38:45		Options saved to charset.conf
-2018-08-22 17:38:45		Options saved to logger.conf
-2018-08-22 17:38:45		Options saved to exec.conf
-2018-08-22 17:38:45		Options saved to trigger.conf
-2018-08-22 17:38:45		Options saved to aspell.conf
-2018-08-22 17:38:45		Options saved to alias.conf
-2018-08-22 17:38:45		Options saved to buflist.conf
-2018-08-22 17:38:45		Options saved to fifo.conf
-2018-08-22 17:38:45		Options saved to xfer.conf
-2018-08-22 17:38:45		Options saved to irc.conf
-2018-08-22 17:38:45		Options saved to relay.conf
-2018-08-22 17:38:45		Options saved to python.conf
-2018-08-22 17:38:45		Options saved to perl.conf
-2018-08-22 17:38:45		Options saved to lua.conf
-2018-08-22 17:38:45		Options saved to tcl.conf
-2018-08-22 17:38:45		Options saved to script.conf
-2018-08-22 17:38:45		Options saved to fset.conf
-2018-08-22 17:40:08		Option changed: weechat.color.chat_highlight = black  (default: yellow)
-2018-08-22 17:40:17		Option changed: weechat.color.chat_highlight_bg = red  (default: magenta)
-2018-08-22 18:36:50		Option changed: buflist.format.hotlist_highlight = "${color:white,red}"  (default: "${color:magenta}")
-2018-08-22 18:39:56		script: downloading list of scripts...
-2018-08-22 18:39:57		script: 346 scripts for WeeChat 2.2
-2018-08-22 18:39:57		python: loading script "/home/ryan/.weechat/python/buffer_autoset.py"
-2018-08-22 18:39:57		python: registered script "buffer_autoset", version 1.1 (Auto-set buffer properties when a buffer is opened)
-2018-08-22 18:41:01	=!=	No help available, "autosetbuffer" is not a command or an option
-2018-08-22 19:12:52		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 19:12:52		script: 346 scripts for WeeChat 2.2
-2018-08-22 19:12:52		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 19:44:13		Options reloaded from sec.conf
-2018-08-22 19:44:13		Options reloaded from weechat.conf
-2018-08-22 19:44:13		Options reloaded from plugins.conf
-2018-08-22 19:44:13		Options reloaded from charset.conf
-2018-08-22 19:44:13		Options reloaded from logger.conf
-2018-08-22 19:44:13		Options reloaded from exec.conf
-2018-08-22 19:44:13		Options reloaded from trigger.conf
-2018-08-22 19:44:13		Options reloaded from aspell.conf
-2018-08-22 19:44:13		Options reloaded from alias.conf
-2018-08-22 19:44:13		Options reloaded from buflist.conf
-2018-08-22 19:44:13		Options reloaded from fifo.conf
-2018-08-22 19:44:13		Options reloaded from xfer.conf
-2018-08-22 19:44:13		Options reloaded from irc.conf
-2018-08-22 19:44:13		Options reloaded from relay.conf
-2018-08-22 19:44:13		Options reloaded from python.conf
-2018-08-22 19:44:13		Options reloaded from buffer_autoset.conf
-2018-08-22 19:44:13		Options reloaded from perl.conf
-2018-08-22 19:44:13		Options reloaded from lua.conf
-2018-08-22 19:44:13		Options reloaded from tcl.conf
-2018-08-22 19:44:13		Options reloaded from script.conf
-2018-08-22 19:44:13		Options reloaded from fset.conf
-2018-08-22 19:44:17	=!=	Error: unknown command "/r" (type /help for help)
-2018-08-22 19:44:27		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 19:44:27		script: 346 scripts for WeeChat 2.2
-2018-08-22 19:44:27		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 19:46:29		Option changed: weechat.bar.fset.hidden = on  (default: off)
-2018-08-22 19:46:47		Option changed: weechat.bar.title.hidden = on  (default: off)
-2018-08-22 19:47:01		Option changed: weechat.bar.status.hidden = on  (default: off)
-2018-08-22 19:49:05		Option changed: weechat.bar.input.items = "+buffer_short_name [+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+] input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 19:50:08		Option changed: weechat.look.separator_vertical = " "  (default: "")
-2018-08-22 19:50:42		Option changed: weechat.look.prefix_join = "◥"  (default: "-->")
-2018-08-22 19:50:48		Option changed: weechat.look.prefix_network = "⚡"  (default: "--")
-2018-08-22 19:50:53		Option changed: weechat.look.prefix_quit = "◣"  (default: "<--")
-2018-08-22 19:51:01		Option changed: weechat.look.prefix_same_nick = "⇢"  (default: "")
-2018-08-22 19:51:10		Option changed: weechat.look.prefix_suffix = " "  (default: "|")
-2018-08-22 19:51:31		Option changed: weechat.color.chat_time = 238  (default: default)
-2018-08-22 19:51:42		Option changed: weechat.color.chat_time = 240  (default: default)
-2018-08-22 19:51:46	=!=	Error: failed to set option "weechat.color.chat_time"
-2018-08-22 19:51:55		Option changed: weechat.color.chat_time = 196  (default: default)
-2018-08-22 19:52:01		Option changed: weechat.color.chat_time = 239  (default: default)
-2018-08-22 19:52:07		Option changed: weechat.color.chat_time_delimiters = 238  (default: brown)
-2018-08-22 19:52:17		Option changed: weechat.color.separator = 30  (default: blue)
-2018-08-22 19:52:24		Option changed: weechat.color.status_name = 202  (default: white)
-2018-08-22 19:52:32		Option changed: weechat.look.buffer_time_format = ""  (default: "%H:%M:%S")
-2018-08-22 19:52:54		Option changed: weechat.look.buffer_time_format = "%h:%m"  (default: "%H:%M:%S")
-2018-08-22 19:54:15		Option changed: weechat.look.buffer_time_format = "%H:%m"  (default: "%H:%M:%S")
-2018-08-22 19:56:11	=!=	Error: option "buffers.look.show_number" not found
-2018-08-22 19:56:25	=!=	Option "buffer_autoset.look.show" not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-22 19:56:30	=!=	Option "buffer_autoset.look.show*" not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-22 19:56:41	=!=	Option "buffers." not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-22 19:56:53	=!=	Error: unknown command "/numb" (type /help for help)
-2018-08-22 19:57:19		Option changed: buflist.format.buffer_current = ""  (default: "${color:,blue}${format_buffer}")
-2018-08-22 19:57:55		Options reloaded from sec.conf
-2018-08-22 19:57:55		Options reloaded from weechat.conf
-2018-08-22 19:57:55		Options reloaded from plugins.conf
-2018-08-22 19:57:55		Options reloaded from charset.conf
-2018-08-22 19:57:55		Options reloaded from logger.conf
-2018-08-22 19:57:55		Options reloaded from exec.conf
-2018-08-22 19:57:55		Options reloaded from trigger.conf
-2018-08-22 19:57:55		Options reloaded from aspell.conf
-2018-08-22 19:57:55		Options reloaded from alias.conf
-2018-08-22 19:57:55		Options reloaded from buflist.conf
-2018-08-22 19:57:55		Options reloaded from fifo.conf
-2018-08-22 19:57:55		Options reloaded from xfer.conf
-2018-08-22 19:57:55		Options reloaded from irc.conf
-2018-08-22 19:57:55		Options reloaded from relay.conf
-2018-08-22 19:57:55		Options reloaded from python.conf
-2018-08-22 19:57:55		Options reloaded from buffer_autoset.conf
-2018-08-22 19:57:55		Options reloaded from perl.conf
-2018-08-22 19:57:55		Options reloaded from lua.conf
-2018-08-22 19:57:55		Options reloaded from tcl.conf
-2018-08-22 19:57:55		Options reloaded from script.conf
-2018-08-22 19:57:55		Options reloaded from fset.conf
-2018-08-22 19:58:58		Option changed: buflist.format.number = ""  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-22 19:59:09		Option changed: buflist.format.number = "  "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-22 19:59:58		Key "ctrl-B" unbound (context: "default")
-2018-08-22 19:59:58		New key binding (context "default"): ctrl-B => /bar toggle buffers
-2018-08-22 20:00:13	=!=	Error: unknown bar "buffers"
-2018-08-22 20:00:16	=!=	Error: unknown bar "buffers"
-2018-08-22 20:00:17	=!=	Error: unknown bar "buffers"
-2018-08-22 20:00:28	=!=	Error: unknown command "/toggle" (type /help for help)
-2018-08-22 20:00:31	=!=	Error with command "/buflist toggle" (help on command: /help buflist)
-2018-08-22 20:00:36		[buflist]  /buflist  bar
-2018-08-22 20:00:36		                     refresh
-2018-08-22 20:00:36		bar item with list of buffers
-2018-08-22 20:00:36		    bar: add the "buflist" bar
-2018-08-22 20:00:36		refresh: force the refresh of the bar items (buflist, buflist2 and buflist3)
-2018-08-22 20:00:36		The lines with buffers are displayed using string evaluation (see /help eval for the format), with these options:
-2018-08-22 20:00:36		  - buflist.look.display_conditions: conditions to display a buffer in the list
-2018-08-22 20:00:36		  - buflist.format.buffer: format for a buffer which is not current buffer
-2018-08-22 20:00:36		  - buflist.format.buffer_current: format for the current buffer
-2018-08-22 20:00:36		The following variables can be used in these options:
-2018-08-22 20:00:36		  - bar item data (see hdata "bar_item" in API doc for a complete list), for example:
-2018-08-22 20:00:36		    - ${bar_item.name}
-2018-08-22 20:00:36		  - buffer data (see hdata "buffer" in API doc for a complete list), for example:
-2018-08-22 20:00:36		    - ${buffer.number}
-2018-08-22 20:00:36		    - ${buffer.name}
-2018-08-22 20:00:36		    - ${buffer.full_name}
-2018-08-22 20:00:36		    - ${buffer.short_name}
-2018-08-22 20:00:36		    - ${buffer.nicklist_nicks_count}
-2018-08-22 20:00:36		  - irc_server: IRC server data, defined only on an IRC buffer (see hdata "irc_server" in API doc)
-2018-08-22 20:00:36		  - irc_channel: IRC channel data, defined only on an IRC channel buffer (see hdata "irc_channel" in API doc)
-2018-08-22 20:00:36		  - extra variables added by buflist for convenience:
-2018-08-22 20:00:36		    - ${format_buffer}: the evaluated value of option buflist.format.buffer; this can be used in option buflist.format.buffer_current to just change the background color for example
-2018-08-22 20:00:36		    - ${current_buffer}: a boolean ("0" or "1"), "1" if this is the current buffer; it can be used in a condition: ${if:${current_buffer}?...:...}
-2018-08-22 20:00:36		    - ${merged}: a boolean ("0" or "1"), "1" if the buffer is merged with at least another buffer; it can be used in a condition: ${if:${merged}?...:...}
-2018-08-22 20:00:36		    - ${format_number}: indented number with separator (evaluation of option buflist.format.number)
-2018-08-22 20:00:36		    - ${number}: indented number, for example " 1" if there are between 10 and 99 buffers
-2018-08-22 20:00:36		    - ${number_displayed}: "1" if the number is displayed, otherwise "0"
-2018-08-22 20:00:36		    - ${indent}: indentation for name (channel and private buffers are indented) (evaluation of option buflist.format.indent)
-2018-08-22 20:00:36		    - ${format_nick_prefix}: colored nick prefix for a channel (evaluation of option buflist.format.nick_prefix)
-2018-08-22 20:00:36		    - ${color_nick_prefix}: color of nick prefix for a channel (set only if the option buflist.look.nick_prefix is enabled)
-2018-08-22 20:00:36		    - ${nick_prefix}: nick prefix for a channel (set only if the option buflist.look.nick_prefix is enabled)
-2018-08-22 20:00:36		    - ${format_name}: formatted name (evaluation of option buflist.format.name)
-2018-08-22 20:00:36		    - ${name}: the short name (if set), with a fallback on the name
-2018-08-22 20:00:36		    - ${color_hotlist}: the color depending on the highest hotlist level for the buffer (evaluation of option buflist.format.hotlist_xxx where xxx is the level)
-2018-08-22 20:00:36		    - ${format_hotlist}: the formatted hotlist (evaluation of option buflist.format.hotlist)
-2018-08-22 20:00:36		    - ${hotlist}: the raw hotlist
-2018-08-22 20:00:36		    - ${hotlist_priority}: "none", "low", "message", "private" or "highlight"
-2018-08-22 20:00:36		    - ${format_lag}: the lag for an IRC server buffer, empty if there's no lag (evaluation of option buflist.format.lag)
-2018-08-22 20:03:19	=!=	Error: it is not safe to bind key "control+b" because it does not start with a ctrl or meta code (tip: use alt-k to find key codes); if you want to bind this key anyway, turn off option weechat.look.key_bind_safe
-2018-08-22 20:03:29	=!=	Error: it is not safe to bind key "ctrl+b" because it does not start with a ctrl or meta code (tip: use alt-k to find key codes); if you want to bind this key anyway, turn off option weechat.look.key_bind_safe
-2018-08-22 20:03:40	=!=	Error: unknown bar "buffers"
-2018-08-22 20:03:42	=!=	Error: unknown bar "buffers"
-2018-08-22 20:03:42	=!=	Error: unknown bar "buffers"
-2018-08-22 20:03:43	=!=	Error: unknown bar "buffers"
-2018-08-22 20:03:58		New key binding (context "default"): ctrl-b => /bar toggle buflist
-2018-08-22 20:04:00	=!=	Error: unknown bar "buffers"
-2018-08-22 20:04:02	=!=	Error: unknown bar "buffers"
-2018-08-22 20:04:10	=!=	Too few arguments for command "/bar toggle" (help on command: /help bar)
-2018-08-22 20:04:13		[core]  /bar  list|listfull|listitems
-2018-08-22 20:04:13		              add <name> <type>[,<conditions>] <position> <size> <separator> <item1>[,<item2>...]
-2018-08-22 20:04:13		              default [input|title|status|nicklist]
-2018-08-22 20:04:13		              del <name>|-all
-2018-08-22 20:04:13		              set <name> <option> <value>
-2018-08-22 20:04:13		              hide|show|toggle <name>
-2018-08-22 20:04:13		              scroll <name> <window> <scroll_value>
-2018-08-22 20:04:13		manage bars
-2018-08-22 20:04:13		         list: list all bars
-2018-08-22 20:04:13		     listfull: list all bars (verbose)
-2018-08-22 20:04:13		    listitems: list all bar items
-2018-08-22 20:04:13		          add: add a new bar
-2018-08-22 20:04:13		         name: name of bar (must be unique)
-2018-08-22 20:04:13		         type:   root: outside windows,
-2018-08-22 20:04:13		               window: inside windows, with optional conditions (see below)
-2018-08-22 20:04:13		   conditions: the conditions to display the bar:
-2018-08-22 20:04:13		                 active: on active window
-2018-08-22 20:04:13		               inactive: on inactive windows
-2018-08-22 20:04:13		               nicklist: on windows with nicklist
-2018-08-22 20:04:13		               other condition: see /help weechat.bar.xxx.conditions and /help eval
-2018-08-22 20:04:13		               without conditions, the bar is always displayed
-2018-08-22 20:04:13		     position: bottom, top, left or right
-2018-08-22 20:04:13		         size: size of bar (in chars)
-2018-08-22 20:04:13		    separator: 1 for using separator (line), 0 or nothing means no separator
-2018-08-22 20:04:13		    item1,...: items for this bar (items can be separated by comma (space between items) or "+" (glued items))
-2018-08-22 20:04:13		      default: create a default bar (all default bars if no bar name is given)
-2018-08-22 20:04:13		          del: delete a bar (or all bars with -all)
-2018-08-22 20:04:13		          set: set a value for a bar property
-2018-08-22 20:04:13		       option: option to change (for options list, look at /set weechat.bar.<barname>.*)
-2018-08-22 20:04:13		        value: new value for option
-2018-08-22 20:04:13		         hide: hide a bar
-2018-08-22 20:04:13		         show: show an hidden bar
-2018-08-22 20:04:13		       toggle: hide/show a bar
-2018-08-22 20:04:13		       scroll: scroll bar
-2018-08-22 20:04:13		       window: window number (use '*' for current window or for root bars)
-2018-08-22 20:04:13		 scroll_value: value for scroll: 'x' or 'y' (optional), followed by '+', '-', 'b' (beginning) or 'e' (end), value (for +/-), and optional % (to scroll by % of width/height, otherwise value is number of chars)
-2018-08-22 20:04:13		Examples:
-2018-08-22 20:04:13		  create a bar with time, buffer number + name, and completion:
-2018-08-22 20:04:13		    /bar add mybar root bottom 1 0 [time],buffer_number+:+buffer_name,completion
-2018-08-22 20:04:13		  hide a bar:
-2018-08-22 20:04:13		    /bar hide mybar
-2018-08-22 20:04:13		  scroll nicklist 10 lines down on current buffer:
-2018-08-22 20:04:13		    /bar scroll nicklist * y+10
-2018-08-22 20:04:13		  scroll to end of nicklist on current buffer:
-2018-08-22 20:04:13		    /bar scroll nicklist * ye
-2018-08-22 20:04:21		[core]  /bar  list|listfull|listitems
-2018-08-22 20:04:21		              add <name> <type>[,<conditions>] <position> <size> <separator> <item1>[,<item2>...]
-2018-08-22 20:04:21		              default [input|title|status|nicklist]
-2018-08-22 20:04:21		              del <name>|-all
-2018-08-22 20:04:21		              set <name> <option> <value>
-2018-08-22 20:04:21		              hide|show|toggle <name>
-2018-08-22 20:04:21		              scroll <name> <window> <scroll_value>
-2018-08-22 20:04:21		manage bars
-2018-08-22 20:04:21		         list: list all bars
-2018-08-22 20:04:21		     listfull: list all bars (verbose)
-2018-08-22 20:04:21		    listitems: list all bar items
-2018-08-22 20:04:21		          add: add a new bar
-2018-08-22 20:04:21		         name: name of bar (must be unique)
-2018-08-22 20:04:21		         type:   root: outside windows,
-2018-08-22 20:04:21		               window: inside windows, with optional conditions (see below)
-2018-08-22 20:04:21		   conditions: the conditions to display the bar:
-2018-08-22 20:04:21		                 active: on active window
-2018-08-22 20:04:21		               inactive: on inactive windows
-2018-08-22 20:04:21		               nicklist: on windows with nicklist
-2018-08-22 20:04:21		               other condition: see /help weechat.bar.xxx.conditions and /help eval
-2018-08-22 20:04:21		               without conditions, the bar is always displayed
-2018-08-22 20:04:21		     position: bottom, top, left or right
-2018-08-22 20:04:21		         size: size of bar (in chars)
-2018-08-22 20:04:21		    separator: 1 for using separator (line), 0 or nothing means no separator
-2018-08-22 20:04:21		    item1,...: items for this bar (items can be separated by comma (space between items) or "+" (glued items))
-2018-08-22 20:04:21		      default: create a default bar (all default bars if no bar name is given)
-2018-08-22 20:04:21		          del: delete a bar (or all bars with -all)
-2018-08-22 20:04:21		          set: set a value for a bar property
-2018-08-22 20:04:21		       option: option to change (for options list, look at /set weechat.bar.<barname>.*)
-2018-08-22 20:04:21		        value: new value for option
-2018-08-22 20:04:21		         hide: hide a bar
-2018-08-22 20:04:21		         show: show an hidden bar
-2018-08-22 20:04:21		       toggle: hide/show a bar
-2018-08-22 20:04:21		       scroll: scroll bar
-2018-08-22 20:04:21		       window: window number (use '*' for current window or for root bars)
-2018-08-22 20:04:21		 scroll_value: value for scroll: 'x' or 'y' (optional), followed by '+', '-', 'b' (beginning) or 'e' (end), value (for +/-), and optional % (to scroll by % of width/height, otherwise value is number of chars)
-2018-08-22 20:04:21		Examples:
-2018-08-22 20:04:21		  create a bar with time, buffer number + name, and completion:
-2018-08-22 20:04:21		    /bar add mybar root bottom 1 0 [time],buffer_number+:+buffer_name,completion
-2018-08-22 20:04:21		  hide a bar:
-2018-08-22 20:04:21		    /bar hide mybar
-2018-08-22 20:04:21		  scroll nicklist 10 lines down on current buffer:
-2018-08-22 20:04:21		    /bar scroll nicklist * y+10
-2018-08-22 20:04:21		  scroll to end of nicklist on current buffer:
-2018-08-22 20:04:21		    /bar scroll nicklist * ye
-2018-08-22 20:04:51		List of bars:
-2018-08-22 20:04:51		  input: window, bottom, height: 1
-2018-08-22 20:04:51		  title: window, top, height: 1
-2018-08-22 20:04:51		  status: window, bottom, height: 1
-2018-08-22 20:04:51		  nicklist: window, right, width: auto
-2018-08-22 20:04:51		  fset: window, top, height: 3
-2018-08-22 20:04:51		  buflist: root, left, width: auto
-2018-08-22 20:05:09		Key "ctrl-b" unbound (context: "default")
-2018-08-22 20:05:09		New key binding (context "default"): ctrl-b => /bar toggle buflist
-2018-08-22 20:05:11	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:12	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:19	=!=	Error: unknown command "/keys" (type /help for help)
-2018-08-22 20:05:23	=!=	Error: unknown command "/keybind" (type /help for help)
-2018-08-22 20:05:37	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:46	=!=	Error: unable to unbind key "ctrl+b"
-2018-08-22 20:05:48		Key "ctrl-b" unbound (context: "default")
-2018-08-22 20:05:54	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:54	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:55	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:55	=!=	Error: unknown bar "buffers"
-2018-08-22 20:05:59	=!=	Error: unable to unbind key "control-b"
-2018-08-22 20:06:34	=!=	Error: unknown bar "buffers"
-2018-08-22 20:06:36	=!=	Error: unknown bar "buffers"
-2018-08-22 20:06:51		New key binding (context "default"): ctrl-b => /bar toggle buflist
-2018-08-22 20:06:53	=!=	Error: unknown bar "buffers"
-2018-08-22 20:06:54	=!=	Error: unknown bar "buffers"
-2018-08-22 20:06:59		Options reloaded from sec.conf
-2018-08-22 20:06:59		Options reloaded from weechat.conf
-2018-08-22 20:06:59		Options reloaded from plugins.conf
-2018-08-22 20:06:59		Options reloaded from charset.conf
-2018-08-22 20:06:59		Options reloaded from logger.conf
-2018-08-22 20:06:59		Options reloaded from exec.conf
-2018-08-22 20:06:59		Options reloaded from trigger.conf
-2018-08-22 20:06:59		Options reloaded from aspell.conf
-2018-08-22 20:06:59		Options reloaded from alias.conf
-2018-08-22 20:06:59		Options reloaded from buflist.conf
-2018-08-22 20:06:59		Options reloaded from fifo.conf
-2018-08-22 20:06:59		Options reloaded from xfer.conf
-2018-08-22 20:06:59		Options reloaded from irc.conf
-2018-08-22 20:06:59		Options reloaded from relay.conf
-2018-08-22 20:06:59		Options reloaded from python.conf
-2018-08-22 20:06:59		Options reloaded from buffer_autoset.conf
-2018-08-22 20:06:59		Options reloaded from perl.conf
-2018-08-22 20:06:59		Options reloaded from lua.conf
-2018-08-22 20:06:59		Options reloaded from tcl.conf
-2018-08-22 20:06:59		Options reloaded from script.conf
-2018-08-22 20:06:59		Options reloaded from fset.conf
-2018-08-22 20:07:05		New key binding (context "default"): ctrl-b => /bar toggle buflist
-2018-08-22 20:07:38		Key "ctrl-B" unbound (context: "default")
-2018-08-22 20:07:38		New key binding (context "default"): ctrl-B => /bar toggle buflist
-2018-08-22 20:08:03		Option changed: buflist.format.number = "    "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-22 20:08:12		Option changed: buflist.format.number = "   "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-22 20:09:23		Key "ctrl-J" unbound (context: "default")
-2018-08-22 20:09:23		New key binding (context "default"): ctrl-J => /window left
-2018-08-22 20:09:29		Key "ctrl-K" unbound (context: "default")
-2018-08-22 20:09:29		New key binding (context "default"): ctrl-K => /window up
-2018-08-22 20:09:36		Key "ctrl-H" unbound (context: "default")
-2018-08-22 20:09:36		New key binding (context "default"): ctrl-H => /window down
-2018-08-22 20:09:41		Key "ctrl-L" unbound (context: "default")
-2018-08-22 20:09:41		New key binding (context "default"): ctrl-L => /window right
-2018-08-22 20:09:55		Option changed: weechat.bar.input.items = "+buffer_short_name [+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+] input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 20:10:47		Options saved to sec.conf
-2018-08-22 20:10:47		Options saved to weechat.conf
-2018-08-22 20:10:47		Options saved to plugins.conf
-2018-08-22 20:10:47		Options saved to charset.conf
-2018-08-22 20:10:47		Options saved to logger.conf
-2018-08-22 20:10:47		Options saved to exec.conf
-2018-08-22 20:10:47		Options saved to trigger.conf
-2018-08-22 20:10:47		Options saved to aspell.conf
-2018-08-22 20:10:47		Options saved to alias.conf
-2018-08-22 20:10:47		Options saved to buflist.conf
-2018-08-22 20:10:47		Options saved to fifo.conf
-2018-08-22 20:10:47		Options saved to xfer.conf
-2018-08-22 20:10:47		Options saved to irc.conf
-2018-08-22 20:10:47		Options saved to relay.conf
-2018-08-22 20:10:47		Options saved to python.conf
-2018-08-22 20:10:47		Options saved to buffer_autoset.conf
-2018-08-22 20:10:47		Options saved to perl.conf
-2018-08-22 20:10:47		Options saved to lua.conf
-2018-08-22 20:10:47		Options saved to tcl.conf
-2018-08-22 20:10:47		Options saved to script.conf
-2018-08-22 20:10:47		Options saved to fset.conf
-2018-08-22 20:10:55		Option changed: weechat.look.prefix_suffix = " "  (default: "|")
-2018-08-22 20:11:00		Option changed: weechat.look.separator_horizontal = " "  (default: "-")
-2018-08-22 20:11:05		Option changed: weechat.look.separator_vertical = " "  (default: "")
-2018-08-22 20:12:18		Option changed: weechat.bar.title.hidden = on  (default: off)
-2018-08-22 20:12:37		Option changed: weechat.bar.fset.hidden = on  (default: off)
-2018-08-22 20:12:50		Option changed: weechat.bar.status.hidden = on  (default: off)
-2018-08-22 20:13:26		python: loading script "/home/ryan/.weechat/python/vimode.py"
-2018-08-22 20:13:26		python: registered script "vimode", version 0.6 (Add vi/vim-like modes and keybindings to WeeChat.)
-2018-08-22 20:13:26		[vimode.py] Problematic keybindings detected:
-2018-08-22 20:13:26		[vimode.py]     meta-jmeta-f -> /buffer -
-2018-08-22 20:13:26		[vimode.py]     meta-jmeta-l -> /buffer +
-2018-08-22 20:13:26		[vimode.py]     meta-jmeta-r -> /server raw
-2018-08-22 20:13:26		[vimode.py]     meta-jmeta-s -> /server jump
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-meta2-A -> /window up
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-meta2-B -> /window down
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-meta2-C -> /window right
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-meta2-D -> /window left
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta2-1;3A -> /window up
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta2-1;3B -> /window down
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta2-1;3C -> /window right
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta2-1;3D -> /window left
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-b -> /window balance
-2018-08-22 20:13:26		[vimode.py]     meta-wmeta-s -> /window swap
-2018-08-22 20:13:26		[vimode.py] These keybindings may conflict with vimode.
-2018-08-22 20:13:26		[vimode.py] You can remove problematic key bindings and add recommended ones by using /vimode bind_keys, or only list them with /vimode bind_keys --list
-2018-08-22 20:13:26		[vimode.py] For help, see: https://github.com/GermainZ/weechat-vimode/blob/master/FAQ.md#problematic-key-bindings
-2018-08-22 20:13:26		[vimode.py] To force disable warnings, you can set plugins.var.python.vimode.no_warn to 'on'
-2018-08-22 20:14:18	=!=	Error with command "/script uninstall vimode.py" (help on command: /help script)
-2018-08-22 20:14:24		python: unloading script "vimode"
-2018-08-22 20:14:24		python: script removed: /home/ryan/.weechat/python/autoload/vimode.py
-2018-08-22 20:14:24		python: script removed: /home/ryan/.weechat/python/vimode.py
-2018-08-22 20:15:26		Option changed: weechat.color.chat_nick_colors = "default"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
-2018-08-22 20:16:22	=!=	Error: option "fset.color.*" not found
-2018-08-22 20:16:54		Option changed: irc.color.nick_prefixes = "deafult"  (default: "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue")
-2018-08-22 20:17:05		Option changed: irc.color.nick_prefixes = "default"  (default: "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue")
-2018-08-22 20:17:40		Option changed: irc.look.color_nicks_in_server_messages = off  (default: on)
-2018-08-22 20:20:44	=!=	Error: option "weechat.color_chat_host" not found
-2018-08-22 20:21:03		Option changed: irc.color.message_chghost = default  (default: brown)
-2018-08-22 20:25:47		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 20:25:47		script: 346 scripts for WeeChat 2.2
-2018-08-22 20:25:47		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 20:27:51		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 20:27:51		script: 346 scripts for WeeChat 2.2
-2018-08-22 20:27:51		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 20:29:17	=!=	Error: it is not safe to bind key "ctrl+V" because it does not start with a ctrl or meta code (tip: use alt-k to find key codes); if you want to bind this key anyway, turn off option weechat.look.key_bind_safe
-2018-08-22 20:29:27	=!=	Error: it is not safe to bind key "control+V" because it does not start with a ctrl or meta code (tip: use alt-k to find key codes); if you want to bind this key anyway, turn off option weechat.look.key_bind_safe
-2018-08-22 20:29:44		New key binding (context "default"): ctrl-V => /bar toggle nicklist
-2018-08-22 20:32:06		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 20:32:06		script: 346 scripts for WeeChat 2.2
-2018-08-22 20:32:06		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 20:32:37		Option changed: irc.look.display_join_message = ""  (default: "329,332,333,366")
-2018-08-22 20:32:46		Options saved to sec.conf
-2018-08-22 20:32:46		Options saved to weechat.conf
-2018-08-22 20:32:46		Options saved to plugins.conf
-2018-08-22 20:32:46		Options saved to charset.conf
-2018-08-22 20:32:46		Options saved to logger.conf
-2018-08-22 20:32:46		Options saved to exec.conf
-2018-08-22 20:32:46		Options saved to trigger.conf
-2018-08-22 20:32:46		Options saved to aspell.conf
-2018-08-22 20:32:46		Options saved to alias.conf
-2018-08-22 20:32:46		Options saved to buflist.conf
-2018-08-22 20:32:46		Options saved to fifo.conf
-2018-08-22 20:32:46		Options saved to xfer.conf
-2018-08-22 20:32:46		Options saved to irc.conf
-2018-08-22 20:32:46		Options saved to relay.conf
-2018-08-22 20:32:46		Options saved to python.conf
-2018-08-22 20:32:46		Options saved to buffer_autoset.conf
-2018-08-22 20:32:46		Options saved to perl.conf
-2018-08-22 20:32:46		Options saved to lua.conf
-2018-08-22 20:32:46		Options saved to tcl.conf
-2018-08-22 20:32:46		Options saved to script.conf
-2018-08-22 20:32:46		Options saved to fset.conf
-2018-08-22 20:34:35		Option changed: irc.color.message_join = default  (default: green)
-2018-08-22 20:34:59		Option changed: weechat.look.prefix_join = "➡️"  (default: "-->")
-2018-08-22 20:37:08		Option changed: weechat.look.prefix_quit = "⬅️"  (default: "<--")
-2018-08-22 20:37:42		Option changed: weechat.look.prefix_network = ""  (default: "--")
-2018-08-22 20:38:09		Option changed: weechat.look.prefix_error = "⚠️"  (default: "=!=")
-2018-08-22 20:38:55	⚠️	Error: failed to set option "weechat.look.prefix_buffer_align_more"
-2018-08-22 20:39:11	⚠️	Error: failed to set option "weechat.look.prefix_buffer_align_more"
-2018-08-22 20:39:33	⚠️	Error: failed to set option "weechat.look.prefix_buffer_align_more"
-2018-08-22 20:41:13	⚠️	Error: option "weechat.look.prefix_action"" not found
-2018-08-22 20:41:33		Option changed: weechat.look.prefix_action = "✴️"  (default: " *")
-2018-08-22 20:42:20	⚠️	Error: option "weechat.look.prefix_aligh_more" not found
-2018-08-22 20:42:47	⚠️	Error: failed to set option "weechat.look.prefix_align_more"
-2018-08-22 20:44:30		Option changed: weechat.color.chat_time = darkgray  (default: default)
-2018-08-22 20:44:41		Option changed: weechat.color.chat_delimiters = darkgray  (default: green)
-2018-08-22 20:44:49		Option changed: weechat.color.chat_delimiters = default  (default: green)
-2018-08-22 20:45:57	⚠️	Error: failed to set option "weechat.color.chat_time_delimiters"
-2018-08-22 20:46:24	⚠️	Error: failed to set option "weechat.color.chat_time_delimiters"
-2018-08-22 20:46:45		Option changed: weechat.color.chat_time_delimiters = darkgray  (default: brown)
-2018-08-22 20:47:24		Option changed: irc.color.message_quit = default  (default: red)
-2018-08-22 20:48:08		Option changed: weechat.bar.input.color_fg = darkgray  (default: default)
-2018-08-22 20:48:28		Option changed: weechat.bar.input.color_fg = default
-2018-08-22 20:50:21		Option changed: weechat.bar.input.items = "+buffer_short_name [+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+] input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 20:50:45		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 20:50:45		script: 346 scripts for WeeChat 2.2
-2018-08-22 20:50:45		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 21:02:38		Option changed: weechat.bar.input.items = "\e[34m +buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:02:55		Option changed: weechat.bar.input.items = ""\e[34m +buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:03:02		Option changed: weechat.bar.input.items = ""\e[34m +buffer_short_name "/"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:03:32		Option changed: weechat.bar.input.items = "\e[34m +buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:04:05		Option changed: weechat.bar.input.items = "\e[34m +buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:04:25		Option changed: weechat.bar.input.items = "+buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:05:07		Option changed: weechat.bar.input.items = "+buffer_short_nameinput_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:05:25		Option changed: weechat.bar.input.items = "+buffer_short_name>"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:05:27		Options saved to sec.conf
-2018-08-22 21:05:27		Options saved to weechat.conf
-2018-08-22 21:05:27		Options saved to plugins.conf
-2018-08-22 21:05:27		Options saved to charset.conf
-2018-08-22 21:05:27		Options saved to logger.conf
-2018-08-22 21:05:27		Options saved to exec.conf
-2018-08-22 21:05:27		Options saved to trigger.conf
-2018-08-22 21:05:27		Options saved to aspell.conf
-2018-08-22 21:05:27		Options saved to alias.conf
-2018-08-22 21:05:27		Options saved to buflist.conf
-2018-08-22 21:05:27		Options saved to fifo.conf
-2018-08-22 21:05:27		Options saved to xfer.conf
-2018-08-22 21:05:27		Options saved to irc.conf
-2018-08-22 21:05:27		Options saved to relay.conf
-2018-08-22 21:05:27		Options saved to python.conf
-2018-08-22 21:05:27		Options saved to buffer_autoset.conf
-2018-08-22 21:05:27		Options saved to perl.conf
-2018-08-22 21:05:27		Options saved to lua.conf
-2018-08-22 21:05:27		Options saved to tcl.conf
-2018-08-22 21:05:27		Options saved to script.conf
-2018-08-22 21:05:27		Options saved to fset.conf
-2018-08-22 21:05:29		Options reloaded from sec.conf
-2018-08-22 21:05:29		Bar "input" updated
-2018-08-22 21:05:29		Options reloaded from weechat.conf
-2018-08-22 21:05:29		Options reloaded from plugins.conf
-2018-08-22 21:05:29		Options reloaded from charset.conf
-2018-08-22 21:05:29		Options reloaded from logger.conf
-2018-08-22 21:05:29		Options reloaded from exec.conf
-2018-08-22 21:05:29		Options reloaded from trigger.conf
-2018-08-22 21:05:29		Options reloaded from aspell.conf
-2018-08-22 21:05:29		Options reloaded from alias.conf
-2018-08-22 21:05:29		Options reloaded from buflist.conf
-2018-08-22 21:05:29		Options reloaded from fifo.conf
-2018-08-22 21:05:29		Options reloaded from xfer.conf
-2018-08-22 21:05:29		Options reloaded from irc.conf
-2018-08-22 21:05:29		Options reloaded from relay.conf
-2018-08-22 21:05:29		Options reloaded from python.conf
-2018-08-22 21:05:29		Options reloaded from buffer_autoset.conf
-2018-08-22 21:05:29		Options reloaded from perl.conf
-2018-08-22 21:05:29		Options reloaded from lua.conf
-2018-08-22 21:05:29		Options reloaded from tcl.conf
-2018-08-22 21:05:29		Options reloaded from script.conf
-2018-08-22 21:05:29		Options reloaded from fset.conf
-2018-08-22 21:06:27		Option changed: weechat.bar.input.items = "+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:06:34		Options reloaded from sec.conf
-2018-08-22 21:06:34		Bar "input" updated
-2018-08-22 21:06:34		Options reloaded from weechat.conf
-2018-08-22 21:06:34		Options reloaded from plugins.conf
-2018-08-22 21:06:34		Options reloaded from charset.conf
-2018-08-22 21:06:34		Options reloaded from logger.conf
-2018-08-22 21:06:34		Options reloaded from exec.conf
-2018-08-22 21:06:34		Options reloaded from trigger.conf
-2018-08-22 21:06:34		Options reloaded from aspell.conf
-2018-08-22 21:06:34		Options reloaded from alias.conf
-2018-08-22 21:06:34		Options reloaded from buflist.conf
-2018-08-22 21:06:34		Options reloaded from fifo.conf
-2018-08-22 21:06:34		Options reloaded from xfer.conf
-2018-08-22 21:06:34		Options reloaded from irc.conf
-2018-08-22 21:06:34		Options reloaded from relay.conf
-2018-08-22 21:06:34		Options reloaded from python.conf
-2018-08-22 21:06:34		Options reloaded from buffer_autoset.conf
-2018-08-22 21:06:34		Options reloaded from perl.conf
-2018-08-22 21:06:34		Options reloaded from lua.conf
-2018-08-22 21:06:34		Options reloaded from tcl.conf
-2018-08-22 21:06:34		Options reloaded from script.conf
-2018-08-22 21:06:34		Options reloaded from fset.conf
-2018-08-22 21:06:40		Option changed: weechat.bar.input.items = "+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:06:41		Options saved to sec.conf
-2018-08-22 21:06:41		Options saved to weechat.conf
-2018-08-22 21:06:41		Options saved to plugins.conf
-2018-08-22 21:06:41		Options saved to charset.conf
-2018-08-22 21:06:41		Options saved to logger.conf
-2018-08-22 21:06:41		Options saved to exec.conf
-2018-08-22 21:06:41		Options saved to trigger.conf
-2018-08-22 21:06:41		Options saved to aspell.conf
-2018-08-22 21:06:41		Options saved to alias.conf
-2018-08-22 21:06:41		Options saved to buflist.conf
-2018-08-22 21:06:41		Options saved to fifo.conf
-2018-08-22 21:06:41		Options saved to xfer.conf
-2018-08-22 21:06:41		Options saved to irc.conf
-2018-08-22 21:06:41		Options saved to relay.conf
-2018-08-22 21:06:41		Options saved to python.conf
-2018-08-22 21:06:41		Options saved to buffer_autoset.conf
-2018-08-22 21:06:41		Options saved to perl.conf
-2018-08-22 21:06:41		Options saved to lua.conf
-2018-08-22 21:06:41		Options saved to tcl.conf
-2018-08-22 21:06:41		Options saved to script.conf
-2018-08-22 21:06:41		Options saved to fset.conf
-2018-08-22 21:06:46		Options reloaded from sec.conf
-2018-08-22 21:06:46		Bar "input" updated
-2018-08-22 21:06:46		Options reloaded from weechat.conf
-2018-08-22 21:06:46		Options reloaded from plugins.conf
-2018-08-22 21:06:46		Options reloaded from charset.conf
-2018-08-22 21:06:46		Options reloaded from logger.conf
-2018-08-22 21:06:46		Options reloaded from exec.conf
-2018-08-22 21:06:46		Options reloaded from trigger.conf
-2018-08-22 21:06:46		Options reloaded from aspell.conf
-2018-08-22 21:06:46		Options reloaded from alias.conf
-2018-08-22 21:06:46		Options reloaded from buflist.conf
-2018-08-22 21:06:46		Options reloaded from fifo.conf
-2018-08-22 21:06:46		Options reloaded from xfer.conf
-2018-08-22 21:06:46		Options reloaded from irc.conf
-2018-08-22 21:06:46		Options reloaded from relay.conf
-2018-08-22 21:06:46		Options reloaded from python.conf
-2018-08-22 21:06:46		Options reloaded from buffer_autoset.conf
-2018-08-22 21:06:46		Options reloaded from perl.conf
-2018-08-22 21:06:46		Options reloaded from lua.conf
-2018-08-22 21:06:46		Options reloaded from tcl.conf
-2018-08-22 21:06:46		Options reloaded from script.conf
-2018-08-22 21:06:46		Options reloaded from fset.conf
-2018-08-22 21:10:22		Option changed: weechat.bar.input.items = "$(color:black)$(bgcolor:blue)+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:11:15		Option changed: weechat.bar.input.items = "${color:black}${bgcolor:blue}+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:11:20		Options saved to sec.conf
-2018-08-22 21:11:20		Options saved to weechat.conf
-2018-08-22 21:11:20		Options saved to plugins.conf
-2018-08-22 21:11:20		Options saved to charset.conf
-2018-08-22 21:11:20		Options saved to logger.conf
-2018-08-22 21:11:20		Options saved to exec.conf
-2018-08-22 21:11:20		Options saved to trigger.conf
-2018-08-22 21:11:20		Options saved to aspell.conf
-2018-08-22 21:11:20		Options saved to alias.conf
-2018-08-22 21:11:20		Options saved to buflist.conf
-2018-08-22 21:11:20		Options saved to fifo.conf
-2018-08-22 21:11:20		Options saved to xfer.conf
-2018-08-22 21:11:20		Options saved to irc.conf
-2018-08-22 21:11:20		Options saved to relay.conf
-2018-08-22 21:11:20		Options saved to python.conf
-2018-08-22 21:11:20		Options saved to buffer_autoset.conf
-2018-08-22 21:11:20		Options saved to perl.conf
-2018-08-22 21:11:20		Options saved to lua.conf
-2018-08-22 21:11:20		Options saved to tcl.conf
-2018-08-22 21:11:20		Options saved to script.conf
-2018-08-22 21:11:20		Options saved to fset.conf
-2018-08-22 21:11:22		Options reloaded from sec.conf
-2018-08-22 21:11:22		Bar "input" updated
-2018-08-22 21:11:22		Options reloaded from weechat.conf
-2018-08-22 21:11:22		Options reloaded from plugins.conf
-2018-08-22 21:11:22		Options reloaded from charset.conf
-2018-08-22 21:11:22		Options reloaded from logger.conf
-2018-08-22 21:11:22		Options reloaded from exec.conf
-2018-08-22 21:11:22		Options reloaded from trigger.conf
-2018-08-22 21:11:22		Options reloaded from aspell.conf
-2018-08-22 21:11:22		Options reloaded from alias.conf
-2018-08-22 21:11:22		Options reloaded from buflist.conf
-2018-08-22 21:11:22		Options reloaded from fifo.conf
-2018-08-22 21:11:22		Options reloaded from xfer.conf
-2018-08-22 21:11:22		Options reloaded from irc.conf
-2018-08-22 21:11:22		Options reloaded from relay.conf
-2018-08-22 21:11:22		Options reloaded from python.conf
-2018-08-22 21:11:22		Options reloaded from buffer_autoset.conf
-2018-08-22 21:11:22		Options reloaded from perl.conf
-2018-08-22 21:11:22		Options reloaded from lua.conf
-2018-08-22 21:11:22		Options reloaded from tcl.conf
-2018-08-22 21:11:22		Options reloaded from script.conf
-2018-08-22 21:11:22		Options reloaded from fset.conf
-2018-08-22 21:12:00		Option changed: weechat.bar.input.items = "${color:252}+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:12:30		Options reloaded from sec.conf
-2018-08-22 21:12:31		Bar "input" updated
-2018-08-22 21:12:31		Options reloaded from weechat.conf
-2018-08-22 21:12:31		Options reloaded from plugins.conf
-2018-08-22 21:12:31		Options reloaded from charset.conf
-2018-08-22 21:12:31		Options reloaded from logger.conf
-2018-08-22 21:12:31		Options reloaded from exec.conf
-2018-08-22 21:12:31		Options reloaded from trigger.conf
-2018-08-22 21:12:31		Options reloaded from aspell.conf
-2018-08-22 21:12:31		Options reloaded from alias.conf
-2018-08-22 21:12:31		Options reloaded from buflist.conf
-2018-08-22 21:12:31		Options reloaded from fifo.conf
-2018-08-22 21:12:31		Options reloaded from xfer.conf
-2018-08-22 21:12:31		Options reloaded from irc.conf
-2018-08-22 21:12:31		Options reloaded from relay.conf
-2018-08-22 21:12:31		Options reloaded from python.conf
-2018-08-22 21:12:31		Options reloaded from buffer_autoset.conf
-2018-08-22 21:12:31		Options reloaded from perl.conf
-2018-08-22 21:12:31		Options reloaded from lua.conf
-2018-08-22 21:12:31		Options reloaded from tcl.conf
-2018-08-22 21:12:31		Options reloaded from script.conf
-2018-08-22 21:12:31		Options reloaded from fset.conf
-2018-08-22 21:16:59		Option changed: weechat.bar.input.items = "${color:252}+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:17:30		Options saved to sec.conf
-2018-08-22 21:17:30		Options saved to weechat.conf
-2018-08-22 21:17:30		Options saved to plugins.conf
-2018-08-22 21:17:30		Options saved to charset.conf
-2018-08-22 21:17:30		Options saved to logger.conf
-2018-08-22 21:17:30		Options saved to exec.conf
-2018-08-22 21:17:30		Options saved to trigger.conf
-2018-08-22 21:17:30		Options saved to aspell.conf
-2018-08-22 21:17:30		Options saved to alias.conf
-2018-08-22 21:17:30		Options saved to buflist.conf
-2018-08-22 21:17:30		Options saved to fifo.conf
-2018-08-22 21:17:30		Options saved to xfer.conf
-2018-08-22 21:17:30		Options saved to irc.conf
-2018-08-22 21:17:30		Options saved to relay.conf
-2018-08-22 21:17:30		Options saved to python.conf
-2018-08-22 21:17:30		Options saved to buffer_autoset.conf
-2018-08-22 21:17:30		Options saved to perl.conf
-2018-08-22 21:17:30		Options saved to lua.conf
-2018-08-22 21:17:30		Options saved to tcl.conf
-2018-08-22 21:17:30		Options saved to script.conf
-2018-08-22 21:17:30		Options saved to fset.conf
-2018-08-22 21:17:32		Options reloaded from sec.conf
-2018-08-22 21:17:32		Bar "input" updated
-2018-08-22 21:17:32		Options reloaded from weechat.conf
-2018-08-22 21:17:32		Options reloaded from plugins.conf
-2018-08-22 21:17:32		Options reloaded from charset.conf
-2018-08-22 21:17:32		Options reloaded from logger.conf
-2018-08-22 21:17:32		Options reloaded from exec.conf
-2018-08-22 21:17:32		Options reloaded from trigger.conf
-2018-08-22 21:17:32		Options reloaded from aspell.conf
-2018-08-22 21:17:32		Options reloaded from alias.conf
-2018-08-22 21:17:32		Options reloaded from buflist.conf
-2018-08-22 21:17:32		Options reloaded from fifo.conf
-2018-08-22 21:17:32		Options reloaded from xfer.conf
-2018-08-22 21:17:32		Options reloaded from irc.conf
-2018-08-22 21:17:32		Options reloaded from relay.conf
-2018-08-22 21:17:32		Options reloaded from python.conf
-2018-08-22 21:17:32		Options reloaded from buffer_autoset.conf
-2018-08-22 21:17:32		Options reloaded from perl.conf
-2018-08-22 21:17:32		Options reloaded from lua.conf
-2018-08-22 21:17:32		Options reloaded from tcl.conf
-2018-08-22 21:17:32		Options reloaded from script.conf
-2018-08-22 21:17:32		Options reloaded from fset.conf
-2018-08-22 21:22:42		Option changed: weechat.bar.input.color_bg = blue  (default: default)
-2018-08-22 21:23:12		Option changed: weechat.bar.input.color_fg = black  (default: default)
-2018-08-22 21:24:08		Option changed: weechat.bar.input.items = "${color:blue}+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:24:11		Options saved to sec.conf
-2018-08-22 21:24:11		Options saved to weechat.conf
-2018-08-22 21:24:11		Options saved to plugins.conf
-2018-08-22 21:24:11		Options saved to charset.conf
-2018-08-22 21:24:11		Options saved to logger.conf
-2018-08-22 21:24:11		Options saved to exec.conf
-2018-08-22 21:24:11		Options saved to trigger.conf
-2018-08-22 21:24:11		Options saved to aspell.conf
-2018-08-22 21:24:11		Options saved to alias.conf
-2018-08-22 21:24:11		Options saved to buflist.conf
-2018-08-22 21:24:11		Options saved to fifo.conf
-2018-08-22 21:24:11		Options saved to xfer.conf
-2018-08-22 21:24:11		Options saved to irc.conf
-2018-08-22 21:24:11		Options saved to relay.conf
-2018-08-22 21:24:11		Options saved to python.conf
-2018-08-22 21:24:11		Options saved to buffer_autoset.conf
-2018-08-22 21:24:11		Options saved to perl.conf
-2018-08-22 21:24:11		Options saved to lua.conf
-2018-08-22 21:24:11		Options saved to tcl.conf
-2018-08-22 21:24:11		Options saved to script.conf
-2018-08-22 21:24:11		Options saved to fset.conf
-2018-08-22 21:24:12		Options reloaded from sec.conf
-2018-08-22 21:24:12		Bar "input" updated
-2018-08-22 21:24:12		Options reloaded from weechat.conf
-2018-08-22 21:24:12		Options reloaded from plugins.conf
-2018-08-22 21:24:12		Options reloaded from charset.conf
-2018-08-22 21:24:12		Options reloaded from logger.conf
-2018-08-22 21:24:12		Options reloaded from exec.conf
-2018-08-22 21:24:12		Options reloaded from trigger.conf
-2018-08-22 21:24:12		Options reloaded from aspell.conf
-2018-08-22 21:24:12		Options reloaded from alias.conf
-2018-08-22 21:24:12		Options reloaded from buflist.conf
-2018-08-22 21:24:12		Options reloaded from fifo.conf
-2018-08-22 21:24:12		Options reloaded from xfer.conf
-2018-08-22 21:24:12		Options reloaded from irc.conf
-2018-08-22 21:24:12		Options reloaded from relay.conf
-2018-08-22 21:24:12		Options reloaded from python.conf
-2018-08-22 21:24:12		Options reloaded from buffer_autoset.conf
-2018-08-22 21:24:12		Options reloaded from perl.conf
-2018-08-22 21:24:12		Options reloaded from lua.conf
-2018-08-22 21:24:12		Options reloaded from tcl.conf
-2018-08-22 21:24:12		Options reloaded from script.conf
-2018-08-22 21:24:12		Options reloaded from fset.conf
-2018-08-22 21:26:44		Option changed: weechat.bar.input.items = "0,3+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:27:14		Options reloaded from sec.conf
-2018-08-22 21:27:14		Bar "input" updated
-2018-08-22 21:27:14		Options reloaded from weechat.conf
-2018-08-22 21:27:14		Options reloaded from plugins.conf
-2018-08-22 21:27:14		Options reloaded from charset.conf
-2018-08-22 21:27:14		Options reloaded from logger.conf
-2018-08-22 21:27:14		Options reloaded from exec.conf
-2018-08-22 21:27:14		Options reloaded from trigger.conf
-2018-08-22 21:27:14		Options reloaded from aspell.conf
-2018-08-22 21:27:14		Options reloaded from alias.conf
-2018-08-22 21:27:14		Options reloaded from buflist.conf
-2018-08-22 21:27:14		Options reloaded from fifo.conf
-2018-08-22 21:27:14		Options reloaded from xfer.conf
-2018-08-22 21:27:14		Options reloaded from irc.conf
-2018-08-22 21:27:14		Options reloaded from relay.conf
-2018-08-22 21:27:14		Options reloaded from python.conf
-2018-08-22 21:27:14		Options reloaded from buffer_autoset.conf
-2018-08-22 21:27:14		Options reloaded from perl.conf
-2018-08-22 21:27:14		Options reloaded from lua.conf
-2018-08-22 21:27:14		Options reloaded from tcl.conf
-2018-08-22 21:27:14		Options reloaded from script.conf
-2018-08-22 21:27:14		Options reloaded from fset.conf
-2018-08-22 21:28:21		Option changed: weechat.bar.input.items = "0,3+buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:28:36	⚠️	Error: unknown command "/sve" (type /help for help)
-2018-08-22 21:28:38		Options reloaded from sec.conf
-2018-08-22 21:28:38		Bar "input" updated
-2018-08-22 21:28:38		Options reloaded from weechat.conf
-2018-08-22 21:28:38		Options reloaded from plugins.conf
-2018-08-22 21:28:38		Options reloaded from charset.conf
-2018-08-22 21:28:38		Options reloaded from logger.conf
-2018-08-22 21:28:38		Options reloaded from exec.conf
-2018-08-22 21:28:38		Options reloaded from trigger.conf
-2018-08-22 21:28:38		Options reloaded from aspell.conf
-2018-08-22 21:28:38		Options reloaded from alias.conf
-2018-08-22 21:28:38		Options reloaded from buflist.conf
-2018-08-22 21:28:38		Options reloaded from fifo.conf
-2018-08-22 21:28:38		Options reloaded from xfer.conf
-2018-08-22 21:28:38		Options reloaded from irc.conf
-2018-08-22 21:28:38		Options reloaded from relay.conf
-2018-08-22 21:28:38		Options reloaded from python.conf
-2018-08-22 21:28:38		Options reloaded from buffer_autoset.conf
-2018-08-22 21:28:38		Options reloaded from perl.conf
-2018-08-22 21:28:38		Options reloaded from lua.conf
-2018-08-22 21:28:38		Options reloaded from tcl.conf
-2018-08-22 21:28:38		Options reloaded from script.conf
-2018-08-22 21:28:38		Options reloaded from fset.conf
-2018-08-22 21:30:33		Option changed: weechat.bar.input.items = "\e[44mBlue+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:30:48		Options saved to sec.conf
-2018-08-22 21:30:48		Options saved to weechat.conf
-2018-08-22 21:30:48		Options saved to plugins.conf
-2018-08-22 21:30:48		Options saved to charset.conf
-2018-08-22 21:30:48		Options saved to logger.conf
-2018-08-22 21:30:48		Options saved to exec.conf
-2018-08-22 21:30:48		Options saved to trigger.conf
-2018-08-22 21:30:48		Options saved to aspell.conf
-2018-08-22 21:30:48		Options saved to alias.conf
-2018-08-22 21:30:48		Options saved to buflist.conf
-2018-08-22 21:30:48		Options saved to fifo.conf
-2018-08-22 21:30:48		Options saved to xfer.conf
-2018-08-22 21:30:48		Options saved to irc.conf
-2018-08-22 21:30:48		Options saved to relay.conf
-2018-08-22 21:30:48		Options saved to python.conf
-2018-08-22 21:30:48		Options saved to buffer_autoset.conf
-2018-08-22 21:30:48		Options saved to perl.conf
-2018-08-22 21:30:48		Options saved to lua.conf
-2018-08-22 21:30:48		Options saved to tcl.conf
-2018-08-22 21:30:48		Options saved to script.conf
-2018-08-22 21:30:48		Options saved to fset.conf
-2018-08-22 21:31:01		Options reloaded from sec.conf
-2018-08-22 21:31:01		Bar "input" updated
-2018-08-22 21:31:01		Options reloaded from weechat.conf
-2018-08-22 21:31:01		Options reloaded from plugins.conf
-2018-08-22 21:31:01		Options reloaded from charset.conf
-2018-08-22 21:31:01		Options reloaded from logger.conf
-2018-08-22 21:31:01		Options reloaded from exec.conf
-2018-08-22 21:31:01		Options reloaded from trigger.conf
-2018-08-22 21:31:01		Options reloaded from aspell.conf
-2018-08-22 21:31:01		Options reloaded from alias.conf
-2018-08-22 21:31:01		Options reloaded from buflist.conf
-2018-08-22 21:31:01		Options reloaded from fifo.conf
-2018-08-22 21:31:01		Options reloaded from xfer.conf
-2018-08-22 21:31:01		Options reloaded from irc.conf
-2018-08-22 21:31:01		Options reloaded from relay.conf
-2018-08-22 21:31:01		Options reloaded from python.conf
-2018-08-22 21:31:01		Options reloaded from buffer_autoset.conf
-2018-08-22 21:31:01		Options reloaded from perl.conf
-2018-08-22 21:31:01		Options reloaded from lua.conf
-2018-08-22 21:31:01		Options reloaded from tcl.conf
-2018-08-22 21:31:01		Options reloaded from script.conf
-2018-08-22 21:31:01		Options reloaded from fset.conf
-2018-08-22 21:31:23		Option changed: weechat.bar.input.items = "\e[44m Blue+buffer_short_name "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:31:34		Options saved to sec.conf
-2018-08-22 21:31:34		Options saved to weechat.conf
-2018-08-22 21:31:34		Options saved to plugins.conf
-2018-08-22 21:31:34		Options saved to charset.conf
-2018-08-22 21:31:34		Options saved to logger.conf
-2018-08-22 21:31:34		Options saved to exec.conf
-2018-08-22 21:31:34		Options saved to trigger.conf
-2018-08-22 21:31:34		Options saved to aspell.conf
-2018-08-22 21:31:34		Options saved to alias.conf
-2018-08-22 21:31:34		Options saved to buflist.conf
-2018-08-22 21:31:34		Options saved to fifo.conf
-2018-08-22 21:31:34		Options saved to xfer.conf
-2018-08-22 21:31:34		Options saved to irc.conf
-2018-08-22 21:31:34		Options saved to relay.conf
-2018-08-22 21:31:34		Options saved to python.conf
-2018-08-22 21:31:34		Options saved to buffer_autoset.conf
-2018-08-22 21:31:34		Options saved to perl.conf
-2018-08-22 21:31:34		Options saved to lua.conf
-2018-08-22 21:31:34		Options saved to tcl.conf
-2018-08-22 21:31:34		Options saved to script.conf
-2018-08-22 21:31:34		Options saved to fset.conf
-2018-08-22 21:31:36		Options reloaded from sec.conf
-2018-08-22 21:31:37		Bar "input" updated
-2018-08-22 21:31:37		Options reloaded from weechat.conf
-2018-08-22 21:31:37		Options reloaded from plugins.conf
-2018-08-22 21:31:37		Options reloaded from charset.conf
-2018-08-22 21:31:37		Options reloaded from logger.conf
-2018-08-22 21:31:37		Options reloaded from exec.conf
-2018-08-22 21:31:37		Options reloaded from trigger.conf
-2018-08-22 21:31:37		Options reloaded from aspell.conf
-2018-08-22 21:31:37		Options reloaded from alias.conf
-2018-08-22 21:31:37		Options reloaded from buflist.conf
-2018-08-22 21:31:37		Options reloaded from fifo.conf
-2018-08-22 21:31:37		Options reloaded from xfer.conf
-2018-08-22 21:31:37		Options reloaded from irc.conf
-2018-08-22 21:31:37		Options reloaded from relay.conf
-2018-08-22 21:31:37		Options reloaded from python.conf
-2018-08-22 21:31:37		Options reloaded from buffer_autoset.conf
-2018-08-22 21:31:37		Options reloaded from perl.conf
-2018-08-22 21:31:37		Options reloaded from lua.conf
-2018-08-22 21:31:37		Options reloaded from tcl.conf
-2018-08-22 21:31:37		Options reloaded from script.conf
-2018-08-22 21:31:37		Options reloaded from fset.conf
-2018-08-22 21:31:40		python scripts loaded: buffer_autoset, notify_send
-2018-08-22 21:31:40		script: 346 scripts for WeeChat 2.2
-2018-08-22 21:31:40		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 21:32:04		Option changed: weechat.bar.input.color_bg = default  (default: blue)
-2018-08-22 21:32:14		Options saved to sec.conf
-2018-08-22 21:32:14		Options saved to weechat.conf
-2018-08-22 21:32:14		Options saved to plugins.conf
-2018-08-22 21:32:14		Options saved to charset.conf
-2018-08-22 21:32:14		Options saved to logger.conf
-2018-08-22 21:32:14		Options saved to exec.conf
-2018-08-22 21:32:14		Options saved to trigger.conf
-2018-08-22 21:32:14		Options saved to aspell.conf
-2018-08-22 21:32:14		Options saved to alias.conf
-2018-08-22 21:32:14		Options saved to buflist.conf
-2018-08-22 21:32:14		Options saved to fifo.conf
-2018-08-22 21:32:14		Options saved to xfer.conf
-2018-08-22 21:32:14		Options saved to irc.conf
-2018-08-22 21:32:14		Options saved to relay.conf
-2018-08-22 21:32:14		Options saved to python.conf
-2018-08-22 21:32:14		Options saved to buffer_autoset.conf
-2018-08-22 21:32:14		Options saved to perl.conf
-2018-08-22 21:32:14		Options saved to lua.conf
-2018-08-22 21:32:14		Options saved to tcl.conf
-2018-08-22 21:32:14		Options saved to script.conf
-2018-08-22 21:32:14		Options saved to fset.conf
-2018-08-22 21:32:17		Options reloaded from sec.conf
-2018-08-22 21:32:17		Options reloaded from weechat.conf
-2018-08-22 21:32:17		Options reloaded from plugins.conf
-2018-08-22 21:32:17		Options reloaded from charset.conf
-2018-08-22 21:32:17		Options reloaded from logger.conf
-2018-08-22 21:32:17		Options reloaded from exec.conf
-2018-08-22 21:32:17		Options reloaded from trigger.conf
-2018-08-22 21:32:17		Options reloaded from aspell.conf
-2018-08-22 21:32:17		Options reloaded from alias.conf
-2018-08-22 21:32:17		Options reloaded from buflist.conf
-2018-08-22 21:32:17		Options reloaded from fifo.conf
-2018-08-22 21:32:17		Options reloaded from xfer.conf
-2018-08-22 21:32:17		Options reloaded from irc.conf
-2018-08-22 21:32:17		Options reloaded from relay.conf
-2018-08-22 21:32:17		Options reloaded from python.conf
-2018-08-22 21:32:17		Options reloaded from buffer_autoset.conf
-2018-08-22 21:32:17		Options reloaded from perl.conf
-2018-08-22 21:32:17		Options reloaded from lua.conf
-2018-08-22 21:32:17		Options reloaded from tcl.conf
-2018-08-22 21:32:17		Options reloaded from script.conf
-2018-08-22 21:32:17		Options reloaded from fset.conf
-2018-08-22 21:34:23		List of bar items:
-2018-08-22 21:34:23		  input_paste (plugin: -)
-2018-08-22 21:34:23		  input_prompt (plugin: -)
-2018-08-22 21:34:23		  input_search (plugin: -)
-2018-08-22 21:34:23		  input_text (plugin: -)
-2018-08-22 21:34:23		  time (plugin: -)
-2018-08-22 21:34:23		  buffer_count (plugin: -)
-2018-08-22 21:34:23		  buffer_last_number (plugin: -)
-2018-08-22 21:34:23		  buffer_plugin (plugin: -)
-2018-08-22 21:34:23		  buffer_number (plugin: -)
-2018-08-22 21:34:23		  buffer_name (plugin: -)
-2018-08-22 21:34:23		  buffer_short_name (plugin: -)
-2018-08-22 21:34:23		  buffer_modes (plugin: -)
-2018-08-22 21:34:23		  buffer_filter (plugin: -)
-2018-08-22 21:34:23		  buffer_zoom (plugin: -)
-2018-08-22 21:34:23		  buffer_nicklist_count (plugin: -)
-2018-08-22 21:34:23		  scroll (plugin: -)
-2018-08-22 21:34:23		  hotlist (plugin: -)
-2018-08-22 21:34:23		  completion (plugin: -)
-2018-08-22 21:34:23		  buffer_title (plugin: -)
-2018-08-22 21:34:23		  buffer_nicklist (plugin: -)
-2018-08-22 21:34:23		  window_number (plugin: -)
-2018-08-22 21:34:23		  mouse_status (plugin: -)
-2018-08-22 21:34:23		  away (plugin: -)
-2018-08-22 21:34:23		  aspell_dict (plugin: aspell)
-2018-08-22 21:34:23		  aspell_suggest (plugin: aspell)
-2018-08-22 21:34:23		  buflist (plugin: buflist)
-2018-08-22 21:34:23		  buflist2 (plugin: buflist)
-2018-08-22 21:34:23		  buflist3 (plugin: buflist)
-2018-08-22 21:34:23		  buffer_plugin (plugin: irc)
-2018-08-22 21:34:23		  buffer_name (plugin: irc)
-2018-08-22 21:34:23		  buffer_short_name (plugin: irc)
-2018-08-22 21:34:23		  buffer_modes (plugin: irc)
-2018-08-22 21:34:23		  irc_channel (plugin: irc)
-2018-08-22 21:34:23		  lag (plugin: irc)
-2018-08-22 21:34:23		  input_prompt (plugin: irc)
-2018-08-22 21:34:23		  irc_nick_modes (plugin: irc)
-2018-08-22 21:34:23		  fset (plugin: fset)
-2018-08-22 21:35:08	⚠️	No help available, "input_prompt" is not a command or an option
-2018-08-22 21:41:54		Option changed: weechat.bar.input.items = ""!\u00A0 +buffer_short_name input_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:42:12		Options reloaded from sec.conf
-2018-08-22 21:42:12		Options reloaded from weechat.conf
-2018-08-22 21:42:12		Options reloaded from plugins.conf
-2018-08-22 21:42:12		Options reloaded from charset.conf
-2018-08-22 21:42:12		Options reloaded from logger.conf
-2018-08-22 21:42:12		Options reloaded from exec.conf
-2018-08-22 21:42:12		Options reloaded from trigger.conf
-2018-08-22 21:42:12		Options reloaded from aspell.conf
-2018-08-22 21:42:12		Options reloaded from alias.conf
-2018-08-22 21:42:12		Options reloaded from buflist.conf
-2018-08-22 21:42:12		Options reloaded from fifo.conf
-2018-08-22 21:42:12		Options reloaded from xfer.conf
-2018-08-22 21:42:12		Options reloaded from irc.conf
-2018-08-22 21:42:12		Options reloaded from relay.conf
-2018-08-22 21:42:12		Options reloaded from python.conf
-2018-08-22 21:42:12		Options reloaded from buffer_autoset.conf
-2018-08-22 21:42:12		Options reloaded from perl.conf
-2018-08-22 21:42:12		Options reloaded from lua.conf
-2018-08-22 21:42:12		Options reloaded from tcl.conf
-2018-08-22 21:42:12		Options reloaded from script.conf
-2018-08-22 21:42:12		Options reloaded from fset.conf
-2018-08-22 21:42:39		Option changed: weechat.bar.input.color_fg = default  (default: black)
-2018-08-22 21:44:15	⚠️	Error: unknown command "/plugins.va" (type /help for help)
-2018-08-22 21:44:31		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-22 21:44:31		script: 346 scripts for WeeChat 2.2
-2018-08-22 21:44:31		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-22 21:45:29	⚠️	Option "plugins.var.python.text_item." not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-22 21:46:41		[var] (plugins.conf)
-2018-08-22 21:46:41		  plugins.var.python.text_item.interval = "0"
-2018-08-22 21:46:41		1 option (matching with "plugins.var.python.text_item.*")
-2018-08-22 21:50:02		Option created: plugins.var.python.text_item.input_text = "channel ${color:yellow} WINDOW:"
-2018-08-22 21:50:21		Option changed: weechat.bar.input.items = "input_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:51:19		Option created: plugins.var.python.text_item.custom_text = "channel ${color:yellow} WINDOW:"
-2018-08-22 21:51:26		Option changed: weechat.bar.input.items = "custom_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:51:59		Options reloaded from sec.conf
-2018-08-22 21:51:59		Options reloaded from weechat.conf
-2018-08-22 21:51:59		Options reloaded from plugins.conf
-2018-08-22 21:51:59		Options reloaded from charset.conf
-2018-08-22 21:51:59		Options reloaded from logger.conf
-2018-08-22 21:51:59		Options reloaded from exec.conf
-2018-08-22 21:51:59		Options reloaded from trigger.conf
-2018-08-22 21:51:59		Options reloaded from aspell.conf
-2018-08-22 21:51:59		Options reloaded from alias.conf
-2018-08-22 21:51:59		Options reloaded from buflist.conf
-2018-08-22 21:51:59		Options reloaded from fifo.conf
-2018-08-22 21:51:59		Options reloaded from xfer.conf
-2018-08-22 21:51:59		Options reloaded from irc.conf
-2018-08-22 21:51:59		Options reloaded from relay.conf
-2018-08-22 21:51:59		Options reloaded from python.conf
-2018-08-22 21:51:59		Options reloaded from buffer_autoset.conf
-2018-08-22 21:51:59		Options reloaded from perl.conf
-2018-08-22 21:51:59		Options reloaded from lua.conf
-2018-08-22 21:51:59		Options reloaded from tcl.conf
-2018-08-22 21:51:59		Options reloaded from script.conf
-2018-08-22 21:51:59		Options reloaded from fset.conf
-2018-08-22 21:53:50		Option created: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:yellow}+buffer_short_name "
-2018-08-22 21:54:22		Option changed: weechat.bar.input.items = "rdr"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:54:52		Option changed: weechat.bar.input.items = "rdr"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:54:57		Option changed: weechat.bar.input.items = "rdrsave"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:54:58		Options reloaded from sec.conf
-2018-08-22 21:54:58		Options reloaded from weechat.conf
-2018-08-22 21:54:58		Options reloaded from plugins.conf
-2018-08-22 21:54:58		Options reloaded from charset.conf
-2018-08-22 21:54:58		Options reloaded from logger.conf
-2018-08-22 21:54:58		Options reloaded from exec.conf
-2018-08-22 21:54:58		Options reloaded from trigger.conf
-2018-08-22 21:54:58		Options reloaded from aspell.conf
-2018-08-22 21:54:58		Options reloaded from alias.conf
-2018-08-22 21:54:58		Options reloaded from buflist.conf
-2018-08-22 21:54:58		Options reloaded from fifo.conf
-2018-08-22 21:54:58		Options reloaded from xfer.conf
-2018-08-22 21:54:58		Options reloaded from irc.conf
-2018-08-22 21:54:58		Options reloaded from relay.conf
-2018-08-22 21:54:58		Options reloaded from python.conf
-2018-08-22 21:54:58		Options reloaded from buffer_autoset.conf
-2018-08-22 21:54:58		Options reloaded from perl.conf
-2018-08-22 21:54:58		Options reloaded from lua.conf
-2018-08-22 21:54:58		Options reloaded from tcl.conf
-2018-08-22 21:54:58		Options reloaded from script.conf
-2018-08-22 21:54:58		Options reloaded from fset.conf
-2018-08-22 21:55:39		Option changed: weechat.bar.input.items = "rdr"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 21:55:44		Options saved to sec.conf
-2018-08-22 21:55:44		Options saved to weechat.conf
-2018-08-22 21:55:44		Options saved to plugins.conf
-2018-08-22 21:55:44		Options saved to charset.conf
-2018-08-22 21:55:44		Options saved to logger.conf
-2018-08-22 21:55:44		Options saved to exec.conf
-2018-08-22 21:55:44		Options saved to trigger.conf
-2018-08-22 21:55:44		Options saved to aspell.conf
-2018-08-22 21:55:44		Options saved to alias.conf
-2018-08-22 21:55:44		Options saved to buflist.conf
-2018-08-22 21:55:44		Options saved to fifo.conf
-2018-08-22 21:55:44		Options saved to xfer.conf
-2018-08-22 21:55:44		Options saved to irc.conf
-2018-08-22 21:55:44		Options saved to relay.conf
-2018-08-22 21:55:44		Options saved to python.conf
-2018-08-22 21:55:44		Options saved to buffer_autoset.conf
-2018-08-22 21:55:44		Options saved to perl.conf
-2018-08-22 21:55:44		Options saved to lua.conf
-2018-08-22 21:55:44		Options saved to tcl.conf
-2018-08-22 21:55:44		Options saved to script.conf
-2018-08-22 21:55:44		Options saved to fset.conf
-2018-08-22 21:55:45		Options reloaded from sec.conf
-2018-08-22 21:55:45		Bar "input" updated
-2018-08-22 21:55:45		Options reloaded from weechat.conf
-2018-08-22 21:55:45		Options reloaded from plugins.conf
-2018-08-22 21:55:45		Options reloaded from charset.conf
-2018-08-22 21:55:45		Options reloaded from logger.conf
-2018-08-22 21:55:45		Options reloaded from exec.conf
-2018-08-22 21:55:45		Options reloaded from trigger.conf
-2018-08-22 21:55:45		Options reloaded from aspell.conf
-2018-08-22 21:55:45		Options reloaded from alias.conf
-2018-08-22 21:55:45		Options reloaded from buflist.conf
-2018-08-22 21:55:45		Options reloaded from fifo.conf
-2018-08-22 21:55:45		Options reloaded from xfer.conf
-2018-08-22 21:55:45		Options reloaded from irc.conf
-2018-08-22 21:55:45		Options reloaded from relay.conf
-2018-08-22 21:55:45		Options reloaded from python.conf
-2018-08-22 21:55:45		Options reloaded from buffer_autoset.conf
-2018-08-22 21:55:45		Options reloaded from perl.conf
-2018-08-22 21:55:45		Options reloaded from lua.conf
-2018-08-22 21:55:45		Options reloaded from tcl.conf
-2018-08-22 21:55:45		Options reloaded from script.conf
-2018-08-22 21:55:45		Options reloaded from fset.conf
-2018-08-22 22:01:18		Option created: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:blue}$buffer>>"
-2018-08-22 22:01:59		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:blue}${bgcolor=red}$buffer>>"
-2018-08-22 22:02:06		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:blue}${bg=red}$buffer>>"
-2018-08-22 22:03:00		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:blue,red}$buffer>>"
-2018-08-22 22:03:20		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:white,blue}$buffer>>"
-2018-08-22 22:03:29		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer>>"
-2018-08-22 22:03:50		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer>>${color=blue}"
-2018-08-22 22:03:57		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer>>${color=blue,default}"
-2018-08-22 22:04:09		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer>>${color=blue,black}"
-2018-08-22 22:05:48		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:red}"
-2018-08-22 22:06:49		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color}"
-2018-08-22 22:07:14		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,gray}"
-2018-08-22 22:07:22		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,0}"
-2018-08-22 22:07:38		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,1}"
-2018-08-22 22:07:44		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,2}"
-2018-08-22 22:07:48		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,3}"
-2018-08-22 22:07:51		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,4}"
-2018-08-22 22:07:54		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,5}"
-2018-08-22 22:07:58		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,6}"
-2018-08-22 22:08:03		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,7}"
-2018-08-22 22:08:07		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,8}"
-2018-08-22 22:08:12		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,9}"
-2018-08-22 22:08:16		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,10}"
-2018-08-22 22:08:24		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,11}"
-2018-08-22 22:08:27		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,12}"
-2018-08-22 22:08:30		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,13}"
-2018-08-22 22:08:32		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,14}"
-2018-08-22 22:08:35		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,15}"
-2018-08-22 22:08:38		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,16}"
-2018-08-22 22:08:44		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,17}"
-2018-08-22 22:08:52		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,none}"
-2018-08-22 22:08:58		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$buffer${color:blue,0}"
-2018-08-22 22:10:00		Option changed: weechat.bar.input.items = "rdr,+buffer+short+name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 22:10:12		Option changed: weechat.bar.input.items = "rdr,+buffer+short+name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 22:10:18		Options saved to sec.conf
-2018-08-22 22:10:18		Options saved to weechat.conf
-2018-08-22 22:10:18		Options saved to plugins.conf
-2018-08-22 22:10:18		Options saved to charset.conf
-2018-08-22 22:10:18		Options saved to logger.conf
-2018-08-22 22:10:18		Options saved to exec.conf
-2018-08-22 22:10:18		Options saved to trigger.conf
-2018-08-22 22:10:18		Options saved to aspell.conf
-2018-08-22 22:10:18		Options saved to alias.conf
-2018-08-22 22:10:18		Options saved to buflist.conf
-2018-08-22 22:10:18		Options saved to fifo.conf
-2018-08-22 22:10:18		Options saved to xfer.conf
-2018-08-22 22:10:18		Options saved to irc.conf
-2018-08-22 22:10:18		Options saved to relay.conf
-2018-08-22 22:10:18		Options saved to python.conf
-2018-08-22 22:10:18		Options saved to buffer_autoset.conf
-2018-08-22 22:10:18		Options saved to perl.conf
-2018-08-22 22:10:18		Options saved to lua.conf
-2018-08-22 22:10:18		Options saved to tcl.conf
-2018-08-22 22:10:18		Options saved to script.conf
-2018-08-22 22:10:18		Options saved to fset.conf
-2018-08-22 22:10:21		Options reloaded from sec.conf
-2018-08-22 22:10:21		Bar "input" updated
-2018-08-22 22:10:21		Options reloaded from weechat.conf
-2018-08-22 22:10:21		Options reloaded from plugins.conf
-2018-08-22 22:10:21		Options reloaded from charset.conf
-2018-08-22 22:10:21		Options reloaded from logger.conf
-2018-08-22 22:10:21		Options reloaded from exec.conf
-2018-08-22 22:10:21		Options reloaded from trigger.conf
-2018-08-22 22:10:21		Options reloaded from aspell.conf
-2018-08-22 22:10:21		Options reloaded from alias.conf
-2018-08-22 22:10:21		Options reloaded from buflist.conf
-2018-08-22 22:10:21		Options reloaded from fifo.conf
-2018-08-22 22:10:21		Options reloaded from xfer.conf
-2018-08-22 22:10:21		Options reloaded from irc.conf
-2018-08-22 22:10:21		Options reloaded from relay.conf
-2018-08-22 22:10:21		Options reloaded from python.conf
-2018-08-22 22:10:21		Options reloaded from buffer_autoset.conf
-2018-08-22 22:10:21		Options reloaded from perl.conf
-2018-08-22 22:10:21		Options reloaded from lua.conf
-2018-08-22 22:10:21		Options reloaded from tcl.conf
-2018-08-22 22:10:21		Options reloaded from script.conf
-2018-08-22 22:10:21		Options reloaded from fset.conf
-2018-08-22 22:10:45		Option changed: weechat.bar.input.items = "rdr,+buffer_short_name"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-22 22:11:12		Options reloaded from sec.conf
-2018-08-22 22:11:12		Bar "input" updated
-2018-08-22 22:11:12		Options reloaded from weechat.conf
-2018-08-22 22:11:12		Options reloaded from plugins.conf
-2018-08-22 22:11:12		Options reloaded from charset.conf
-2018-08-22 22:11:12		Options reloaded from logger.conf
-2018-08-22 22:11:12		Options reloaded from exec.conf
-2018-08-22 22:11:12		Options reloaded from trigger.conf
-2018-08-22 22:11:12		Options reloaded from aspell.conf
-2018-08-22 22:11:12		Options reloaded from alias.conf
-2018-08-22 22:11:12		Options reloaded from buflist.conf
-2018-08-22 22:11:12		Options reloaded from fifo.conf
-2018-08-22 22:11:12		Options reloaded from xfer.conf
-2018-08-22 22:11:12		Options reloaded from irc.conf
-2018-08-22 22:11:12		Options reloaded from relay.conf
-2018-08-22 22:11:12		Options reloaded from python.conf
-2018-08-22 22:11:12		Options reloaded from buffer_autoset.conf
-2018-08-22 22:11:12		Options reloaded from perl.conf
-2018-08-22 22:11:12		Options reloaded from lua.conf
-2018-08-22 22:11:12		Options reloaded from tcl.conf
-2018-08-22 22:11:12		Options reloaded from script.conf
-2018-08-22 22:11:12		Options reloaded from fset.conf
-2018-08-22 22:11:49		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}+buffer_short_name${color:blue,0}"
-2018-08-22 22:12:00		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}$+buffer_short_name${color:blue,0}"
-2018-08-22 22:19:35		[python/text_item]  /text_item  
-2018-08-22 22:19:35		add a plain text or evaluated content to item bar
-2018-08-22 22:19:35		How to use:
-2018-08-22 22:19:35		===========
-2018-08-22 22:19:35		Template:
-2018-08-22 22:19:35		/set plugins.var.python.text_item.<item_name> <type>|<signal> <${color:name/number}><text>
-2018-08-22 22:19:35		   type : channel, server, private, all (all kind of buffers e.g. /color, /fset...) and !all (channel, server and private buffer)
-2018-08-22 22:19:35		   (see: /buffer localvar)
-2018-08-22 22:19:35		   signal (eg.): buffer_switch, buffer_closing, print, mouse_enabled
-2018-08-22 22:19:35		   (for a list of all possible signals, see API doc weechat_hook_signal())
-2018-08-22 22:19:35		You can activate a timer hook() to force an upgrade of all items in a given period of time, for example using an item that have to be
-2018-08-22 22:19:35		updated every second (e.g. watch)
-2018-08-22 22:19:35		Examples:
-2018-08-22 22:19:35		creates an option for a text item named "nick_text". The item will be created for "channel" buffers. The text displayed in the status-bar is "Nicks:" (yellow colored!):
-2018-08-22 22:19:35		   /set plugins.var.python.text_item.nick_text "channel ${color:yellow}Nicks:"
-2018-08-22 22:19:35		now you have to add the item "nick_text" to the bar.items (use auto-completion or iset.pl!)
-2018-08-22 22:19:35		   /set weechat.bar.status.items nick_text
-2018-08-22 22:19:35		creates an option to display the terminal width and height in an item bar. item will be updated on signal "signal_sigwinch":
-2018-08-22 22:19:35		   /set plugins.var.python.text_item.dimension "all|signal_sigwinch width: ${info:term_width} height: ${info:term_height}"
-2018-08-22 22:19:35		creates an option to display the status from "/filter toggle" and "/filter toggle @" command, item name is "filter_item":
-2018-08-22 22:19:35		   /set plugins.var.python.text_item.filter_item "!all|*filters* ${if:${info:filters_enabled}==1?${color:yellow}F:${color:243}F}${if:${buffer.filter}==1?${color:yellow}@:${color:243}@}"
-2018-08-22 22:20:51		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer}${color:blue,0}"
-2018-08-22 22:21:07		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${info:buffer}${color:blue,0}"
-2018-08-22 22:21:29		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${info:buffer_name}${color:blue,0}"
-2018-08-22 22:21:35		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${info:buffername}${color:blue,0}"
-2018-08-22 22:22:37		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.full_name}${color:blue,0}"
-2018-08-22 22:22:48		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.name}${color:blue,0}"
-2018-08-22 22:23:03		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${color:blue,0}"
-2018-08-22 22:24:02		Options saved to sec.conf
-2018-08-22 22:24:02		Options saved to weechat.conf
-2018-08-22 22:24:02		Options saved to plugins.conf
-2018-08-22 22:24:02		Options saved to charset.conf
-2018-08-22 22:24:02		Options saved to logger.conf
-2018-08-22 22:24:02		Options saved to exec.conf
-2018-08-22 22:24:02		Options saved to trigger.conf
-2018-08-22 22:24:02		Options saved to aspell.conf
-2018-08-22 22:24:02		Options saved to alias.conf
-2018-08-22 22:24:02		Options saved to buflist.conf
-2018-08-22 22:24:02		Options saved to fifo.conf
-2018-08-22 22:24:02		Options saved to xfer.conf
-2018-08-22 22:24:02		Options saved to irc.conf
-2018-08-22 22:24:02		Options saved to relay.conf
-2018-08-22 22:24:02		Options saved to python.conf
-2018-08-22 22:24:02		Options saved to buffer_autoset.conf
-2018-08-22 22:24:02		Options saved to perl.conf
-2018-08-22 22:24:02		Options saved to lua.conf
-2018-08-22 22:24:02		Options saved to tcl.conf
-2018-08-22 22:24:02		Options saved to script.conf
-2018-08-22 22:24:02		Options saved to fset.conf
-2018-08-22 22:26:59		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${/color}"
-2018-08-22 22:27:13		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${color:none} "
-2018-08-22 22:27:55		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${color:default} "
-2018-08-22 22:32:59		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${color:none} "
-2018-08-22 22:37:09		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name}${color:,default} "
-2018-08-22 22:37:34		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue}${buffer.short_name} ${color:blue,default}"
-2018-08-22 22:40:24		Options saved to sec.conf
-2018-08-22 22:40:24		Options saved to weechat.conf
-2018-08-22 22:40:24		Options saved to plugins.conf
-2018-08-22 22:40:24		Options saved to charset.conf
-2018-08-22 22:40:24		Options saved to logger.conf
-2018-08-22 22:40:24		Options saved to exec.conf
-2018-08-22 22:40:24		Options saved to trigger.conf
-2018-08-22 22:40:24		Options saved to aspell.conf
-2018-08-22 22:40:24		Options saved to alias.conf
-2018-08-22 22:40:24		Options saved to buflist.conf
-2018-08-22 22:40:24		Options saved to fifo.conf
-2018-08-22 22:40:24		Options saved to xfer.conf
-2018-08-22 22:40:24		Options saved to irc.conf
-2018-08-22 22:40:24		Options saved to relay.conf
-2018-08-22 22:40:24		Options saved to python.conf
-2018-08-22 22:40:24		Options saved to buffer_autoset.conf
-2018-08-22 22:40:24		Options saved to perl.conf
-2018-08-22 22:40:24		Options saved to lua.conf
-2018-08-22 22:40:24		Options saved to tcl.conf
-2018-08-22 22:40:24		Options saved to script.conf
-2018-08-22 22:40:24		Options saved to fset.conf
-2018-08-22 22:49:30		Mouse enabled
-2018-08-22 23:56:41		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-22 23:56:41		script: 346 scripts for WeeChat 2.2
-2018-08-22 23:56:41		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 01:04:05		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 01:04:05		script: 346 scripts for WeeChat 2.2
-2018-08-23 01:04:05		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 01:17:15		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue} ${buffer.short_name} ${color:blue,default}"
-2018-08-23 01:17:21		Options saved to sec.conf
-2018-08-23 01:17:21		Options saved to weechat.conf
-2018-08-23 01:17:21		Options saved to plugins.conf
-2018-08-23 01:17:21		Options saved to charset.conf
-2018-08-23 01:17:21		Options saved to logger.conf
-2018-08-23 01:17:21		Options saved to exec.conf
-2018-08-23 01:17:21		Options saved to trigger.conf
-2018-08-23 01:17:21		Options saved to aspell.conf
-2018-08-23 01:17:21		Options saved to alias.conf
-2018-08-23 01:17:21		Options saved to buflist.conf
-2018-08-23 01:17:21		Options saved to fifo.conf
-2018-08-23 01:17:21		Options saved to xfer.conf
-2018-08-23 01:17:21		Options saved to irc.conf
-2018-08-23 01:17:21		Options saved to relay.conf
-2018-08-23 01:17:21		Options saved to python.conf
-2018-08-23 01:17:21		Options saved to buffer_autoset.conf
-2018-08-23 01:17:21		Options saved to perl.conf
-2018-08-23 01:17:21		Options saved to lua.conf
-2018-08-23 01:17:21		Options saved to tcl.conf
-2018-08-23 01:17:21		Options saved to script.conf
-2018-08-23 01:17:21		Options saved to fset.conf
-2018-08-23 11:35:21		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-23 11:42:15		Options saved to sec.conf
-2018-08-23 11:42:15		Options saved to weechat.conf
-2018-08-23 11:42:15		Options saved to plugins.conf
-2018-08-23 11:42:15		Options saved to charset.conf
-2018-08-23 11:42:15		Options saved to logger.conf
-2018-08-23 11:42:15		Options saved to exec.conf
-2018-08-23 11:42:15		Options saved to trigger.conf
-2018-08-23 11:42:15		Options saved to aspell.conf
-2018-08-23 11:42:15		Options saved to alias.conf
-2018-08-23 11:42:15		Options saved to buflist.conf
-2018-08-23 11:42:15		Options saved to fifo.conf
-2018-08-23 11:42:15		Options saved to xfer.conf
-2018-08-23 11:42:15		Options saved to irc.conf
-2018-08-23 11:42:15		Options saved to relay.conf
-2018-08-23 11:42:15		Options saved to python.conf
-2018-08-23 11:42:15		Options saved to buffer_autoset.conf
-2018-08-23 11:42:15		Options saved to perl.conf
-2018-08-23 11:42:15		Options saved to lua.conf
-2018-08-23 11:42:15		Options saved to tcl.conf
-2018-08-23 11:42:15		Options saved to script.conf
-2018-08-23 11:42:15		Options saved to fset.conf
-2018-08-23 11:42:17		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-23 11:42:34		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 11:42:34		script: 346 scripts for WeeChat 2.2
-2018-08-23 11:42:34		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 12:34:50		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 12:34:50		script: 346 scripts for WeeChat 2.2
-2018-08-23 12:34:50		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 13:10:36		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 13:10:36		script: 346 scripts for WeeChat 2.2
-2018-08-23 13:10:36		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 14:05:57		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 14:05:57		script: 346 scripts for WeeChat 2.2
-2018-08-23 14:05:57		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 14:28:22		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 14:28:22		script: 346 scripts for WeeChat 2.2
-2018-08-23 14:28:22		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 14:49:56		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 14:49:56		script: 346 scripts for WeeChat 2.2
-2018-08-23 14:49:56		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
-2018-08-23 15:42:17	⚠️	Error: unknown command "/same" (type /help for help)
-2018-08-23 17:33:52		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 17:33:52		script: 346 scripts for WeeChat 2.2
-2018-08-23 17:33:52		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 18:29:52		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 18:29:52		script: 346 scripts for WeeChat 2.2
-2018-08-23 18:29:52		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 19:39:15		Option changed: buflist.format.buffer_current = "${color:black,blue}${format_buffer}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:40:23		Option changed: buflist.format.buffer_current = "${color:black,blue}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:41:05		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:42:51		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:43:32		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}   ${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:44:01		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}      ${name}""  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:44:32		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}      ${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:44:40		Option changed: buflist.format.buffer_current = "${color:darkgray,blue}     ${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-23 19:44:50		Options saved to sec.conf
-2018-08-23 19:44:50		Options saved to weechat.conf
-2018-08-23 19:44:50		Options saved to plugins.conf
-2018-08-23 19:44:50		Options saved to charset.conf
-2018-08-23 19:44:50		Options saved to logger.conf
-2018-08-23 19:44:50		Options saved to exec.conf
-2018-08-23 19:44:50		Options saved to trigger.conf
-2018-08-23 19:44:50		Options saved to aspell.conf
-2018-08-23 19:44:50		Options saved to alias.conf
-2018-08-23 19:44:50		Options saved to buflist.conf
-2018-08-23 19:44:50		Options saved to fifo.conf
-2018-08-23 19:44:50		Options saved to xfer.conf
-2018-08-23 19:44:50		Options saved to irc.conf
-2018-08-23 19:44:50		Options saved to relay.conf
-2018-08-23 19:44:50		Options saved to python.conf
-2018-08-23 19:44:50		Options saved to buffer_autoset.conf
-2018-08-23 19:44:50		Options saved to perl.conf
-2018-08-23 19:44:50		Options saved to lua.conf
-2018-08-23 19:44:50		Options saved to tcl.conf
-2018-08-23 19:44:50		Options saved to ruby.conf
-2018-08-23 19:44:50		Options saved to script.conf
-2018-08-23 19:44:50		Options saved to fset.conf
-2018-08-23 21:39:19		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 21:39:19		script: downloading list of scripts...
-2018-08-23 21:39:19		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 21:39:21		script: 346 scripts for WeeChat 2.2
-2018-08-23 21:46:57		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 21:46:57		script: 346 scripts for WeeChat 2.2
-2018-08-23 21:46:57		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 21:51:51		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 21:51:51		script: 346 scripts for WeeChat 2.2
-2018-08-23 21:51:51		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 22:22:34		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 22:22:34		script: 346 scripts for WeeChat 2.2
-2018-08-23 22:22:34		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 22:44:17		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 22:44:17		script: 346 scripts for WeeChat 2.2
-2018-08-23 22:44:17		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 22:46:26		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 22:46:26		script: 346 scripts for WeeChat 2.2
-2018-08-23 22:46:26		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 23:11:46		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 23:11:46		script: 346 scripts for WeeChat 2.2
-2018-08-23 23:11:46		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-23 23:55:18		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-23 23:55:18		script: 346 scripts for WeeChat 2.2
-2018-08-23 23:55:18		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 12:01:34		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 12:01:34		script: 346 scripts for WeeChat 2.2
-2018-08-24 12:01:34		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 12:32:06		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 12:32:06		script: 346 scripts for WeeChat 2.2
-2018-08-24 12:32:06		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 16:39:12		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 16:39:12		script: 346 scripts for WeeChat 2.2
-2018-08-24 16:39:12		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 20:14:26		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 20:14:26		script: 346 scripts for WeeChat 2.2
-2018-08-24 20:14:26		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 20:37:01		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 20:37:01		script: 346 scripts for WeeChat 2.2
-2018-08-24 20:37:01		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 22:12:07		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 22:12:07		script: downloading list of scripts...
-2018-08-24 22:12:07		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 22:12:08		script: 346 scripts for WeeChat 2.2
-2018-08-24 22:30:37		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 22:30:38		script: 346 scripts for WeeChat 2.2
-2018-08-24 22:30:38		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-24 23:38:44		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-24 23:38:44		script: 346 scripts for WeeChat 2.2
-2018-08-24 23:38:44		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-25 13:19:30		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-25 13:19:30		script: 346 scripts for WeeChat 2.2
-2018-08-25 13:19:30		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-25 13:23:53		Option changed: weechat.color.chat_nick_self = default  (default: white)
-2018-08-25 13:26:01		Option changed: weechat.color.chat_buffer = cyan  (default: white)
-2018-08-25 13:26:17		Option changed: weechat.color.chat_buffer = white
-2018-08-25 13:27:02		Option changed: buflist.format.hotlist_low = ""${color:cyan}"  (default: "${color:white}")
-2018-08-25 13:27:30		Option changed: buflist.format.hotlist_low = "${color:cyan}"  (default: "${color:white}")
-2018-08-25 13:28:31		Option changed: weechat.color.chat_highlight = white  (default: yellow)
-2018-08-25 13:29:23		Option changed: weechat.color.chat_channel = black  (default: white)
-2018-08-25 08:43:55		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-25 08:43:55		script: 346 scripts for WeeChat 2.2
-2018-08-25 08:43:55		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-25 08:57:18		Option changed: buflist.format.buffer_current = "$color:white,blue}     ${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-25 08:57:50		Option changed: buflist.format.buffer_current = "${color:white,blue}     ${name}"  (default: "${color:,blue}${format_buffer}")
-2018-08-25 09:01:13	⚠️	Error: unknown command "/changed" (type /help for help)
-2018-08-25 09:04:21		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:white,blue} ${buffer.short_"
-2018-08-25 09:04:55		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue} ${buffer.short_name}"
-2018-08-25 09:10:27		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:black,blue} ${buffer.short_name} ${color:blue,default}"
-2018-08-25 09:11:39		Option changed: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:white,blue} ${buffer.short_name} ${color:blue,default}"
-2018-08-25 09:23:28		Option changed: buflist.format.hotlist_low = "${color:darkgray}"  (default: "${color:white}")
-2018-08-25 09:42:18		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-25 09:42:18		script: 346 scripts for WeeChat 2.2
-2018-08-25 09:42:18		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-25 09:56:47		Option changed: buflist.format.hotlist_message = "${color:teal}"  (default: "${color:brown}")
-2018-08-25 09:57:08		Option changed: buflist.format.hotlist_message = "${color:cyan}"  (default: "${color:brown}")
-2018-08-25 16:45:12		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-25 16:57:50		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-25 16:57:50		script: 346 scripts for WeeChat 2.2
-2018-08-25 16:57:50		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-25 17:12:08		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-25 17:12:08		script: 346 scripts for WeeChat 2.2
-2018-08-25 17:12:08		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-26 00:26:41		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-26 00:26:41		script: downloading list of scripts...
-2018-08-26 00:26:41		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-26 00:26:42		script: 346 scripts for WeeChat 2.2
-2018-08-26 00:28:38		Option changed: weechat.look.bar_more_down = "👇"  (default: "++")
-2018-08-26 00:29:07	⚠️	Error: option "weechat.look.bar+more_up" not found
-2018-08-26 00:29:46		Option changed: weechat.look.bar_more_up = "☝️"  (default: "--")
-2018-08-26 00:30:32		Option changed: weechat.look.bar_more_right = "⏩"  (default: ">>")
-2018-08-26 00:31:29		Option changed: weechat.look.bar_more_left = "⏪"  (default: "<<")
-2018-08-26 00:45:05		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-26 00:45:05		script: 346 scripts for WeeChat 2.2
-2018-08-26 00:45:05		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-26 08:48:23		python scripts loaded: buffer_autoset, notify_send, text_item
-2018-08-26 08:48:23		script: 346 scripts for WeeChat 2.2
-2018-08-26 08:48:23		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2018-08-26 09:16:18		Option changed: weechat.color.chat_time = white  (default: default)
-2018-08-26 09:16:28		Option changed: weechat.color.chat_time_delimiters = white  (default: brown)
-2018-08-26 09:16:34		Options saved to sec.conf
-2018-08-26 09:16:34		Options saved to weechat.conf
-2018-08-26 09:16:34		Options saved to plugins.conf
-2018-08-26 09:16:34		Options saved to charset.conf
-2018-08-26 09:16:34		Options saved to logger.conf
-2018-08-26 09:16:34		Options saved to exec.conf
-2018-08-26 09:16:34		Options saved to trigger.conf
-2018-08-26 09:16:34		Options saved to aspell.conf
-2018-08-26 09:16:34		Options saved to alias.conf
-2018-08-26 09:16:34		Options saved to buflist.conf
-2018-08-26 09:16:34		Options saved to fifo.conf
-2018-08-26 09:16:34		Options saved to xfer.conf
-2018-08-26 09:16:34		Options saved to irc.conf
-2018-08-26 09:16:34		Options saved to relay.conf
-2018-08-26 09:16:34		Options saved to python.conf
-2018-08-26 09:16:34		Options saved to buffer_autoset.conf
-2018-08-26 09:16:34		Options saved to perl.conf
-2018-08-26 09:16:34		Options saved to lua.conf
-2018-08-26 09:16:34		Options saved to tcl.conf
-2018-08-26 09:16:34		Options saved to ruby.conf
-2018-08-26 09:16:34		Options saved to script.conf
-2018-08-26 09:16:34		Options saved to fset.conf
+2018-08-29 14:21:30		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2018-08-29 14:21:30		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2018-08-29 14:21:30		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2018-08-29 14:21:30		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2018-08-29 14:21:30		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 14:21:55		irc: server Rizon added
+2018-08-29 14:22:03		Option changed: irc.server.Rizon.ssl_verify = off  (default if null: on)
+2018-08-29 14:22:05		Options saved to sec.conf
+2018-08-29 14:22:05		Options saved to weechat.conf
+2018-08-29 14:22:05		Options saved to plugins.conf
+2018-08-29 14:22:05		Options saved to charset.conf
+2018-08-29 14:22:05		Options saved to logger.conf
+2018-08-29 14:22:05		Options saved to exec.conf
+2018-08-29 14:22:05		Options saved to trigger.conf
+2018-08-29 14:22:05		Options saved to aspell.conf
+2018-08-29 14:22:05		Options saved to alias.conf
+2018-08-29 14:22:05		Options saved to buflist.conf
+2018-08-29 14:22:05		Options saved to fifo.conf
+2018-08-29 14:22:05		Options saved to xfer.conf
+2018-08-29 14:22:05		Options saved to irc.conf
+2018-08-29 14:22:05		Options saved to relay.conf
+2018-08-29 14:22:05		Options saved to python.conf
+2018-08-29 14:22:05		Options saved to perl.conf
+2018-08-29 14:22:05		Options saved to ruby.conf
+2018-08-29 14:22:05		Options saved to script.conf
+2018-08-29 14:22:05		Options saved to fset.conf
+2018-08-29 14:22:06	=!=	You can not write text in this buffer
+2018-08-29 14:25:15		fifo: pipe closed
+2018-08-29 14:26:12		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 14:26:48		irc: server Freenode added
+2018-08-29 14:26:58		Option changed: irc.server.Freenode.ssl_verify = off  (default if null: on)
+2018-08-29 14:28:12		irc: server OFTC added
+2018-08-29 14:28:22		Option changed: irc.server.OFTC.ssl_verify = off  (default if null: on)
+2018-08-29 14:28:25		Options saved to sec.conf
+2018-08-29 14:28:25		Options saved to weechat.conf
+2018-08-29 14:28:25		Options saved to plugins.conf
+2018-08-29 14:28:25		Options saved to charset.conf
+2018-08-29 14:28:25		Options saved to logger.conf
+2018-08-29 14:28:25		Options saved to exec.conf
+2018-08-29 14:28:25		Options saved to trigger.conf
+2018-08-29 14:28:25		Options saved to aspell.conf
+2018-08-29 14:28:25		Options saved to alias.conf
+2018-08-29 14:28:25		Options saved to buflist.conf
+2018-08-29 14:28:25		Options saved to fifo.conf
+2018-08-29 14:28:25		Options saved to xfer.conf
+2018-08-29 14:28:25		Options saved to irc.conf
+2018-08-29 14:28:25		Options saved to relay.conf
+2018-08-29 14:28:25		Options saved to python.conf
+2018-08-29 14:28:25		Options saved to perl.conf
+2018-08-29 14:28:25		Options saved to ruby.conf
+2018-08-29 14:28:25		Options saved to script.conf
+2018-08-29 14:28:25		Options saved to fset.conf
+2018-08-29 14:31:41	=!=	Error: unknown command "/seper" (type /help for help)
+2018-08-29 14:31:49	=!=	Option "seperator" not found (tip: you can use wildcard "*" in option to see a sublist)
+2018-08-29 14:34:07		Mouse enabled
+2018-08-29 14:35:10		Option changed: weechat.look.color_inactive_buffer = off  (default: on)
+2018-08-29 14:35:42	=!=	Error: unknown command "/seperator" (type /help for help)
+2018-08-29 14:35:45	=!=	Error: unknown command "/horizon" (type /help for help)
+2018-08-29 14:35:57	=!=	Error: unknown command "/separ" (type /help for help)
+2018-08-29 14:40:07		Option changed: weechat.bar.title.hidden = on  (default: off)
+2018-08-29 14:40:27		Option changed: weechat.bar.status.hidden = on  (default: off)
+2018-08-29 14:41:02		Option changed: weechat.bar.buflist.separator = off  (default: on)
+2018-08-29 14:41:12		Option changed: weechat.bar.nicklist.separator = off  (default: on)
+2018-08-29 14:43:36		Option changed: weechat.look.prefix_suffix = " "  (default: "|")
+2018-08-29 14:43:49		Option changed: weechat.look.quote_nick_suffix = " "  (default: ">")
+2018-08-29 14:47:22		Option changed: weechat.color.chat_delimiters = default  (default: green)
+2018-08-29 14:47:31		Option changed: weechat.color.chat_time_delimiters = default  (default: brown)
+2018-08-29 14:47:48		Option changed: weechat.color.chat_nick_colors = "default"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2018-08-29 14:48:41		Option changed: weechat.color.chat_prefix_buffer = default  (default: brown)
+2018-08-29 14:48:55		Option changed: weechat.color.chat_prefix_error = default  (default: yellow)
+2018-08-29 14:49:04		Option changed: weechat.color.chat_prefix_join = default  (default: lightgreen)
+2018-08-29 14:49:11		Option changed: weechat.color.chat_prefix_more = default  (default: lightmagenta)
+2018-08-29 14:49:20		Option changed: weechat.color.chat_prefix_network = default  (default: magenta)
+2018-08-29 14:49:28		Option changed: weechat.color.chat_prefix_quit = default  (default: lightred)
+2018-08-29 14:49:36		Option changed: weechat.color.chat_prefix_suffix = default  (default: green)
+2018-08-29 14:52:17	=!=	Error: unknown command "/shortcut" (type /help for help)
+2018-08-29 14:52:19		[core]
+2018-08-29 14:52:19		  away     cursor   history  mute     reload   unset    window 
+2018-08-29 14:52:19		  bar      debug    input    plugin   repeat   upgrade
+2018-08-29 14:52:19		  buffer   eval     key      print    save     uptime 
+2018-08-29 14:52:19		  color    filter   layout   proxy    secure   version
+2018-08-29 14:52:19		  command  help     mouse    quit     set      wait   
+2018-08-29 14:52:19		[charset]
+2018-08-29 14:52:19		  charset
+2018-08-29 14:52:19		[aspell]
+2018-08-29 14:52:19		  aspell
+2018-08-29 14:52:19		[exec]
+2018-08-29 14:52:19		  exec
+2018-08-29 14:52:19		[logger]
+2018-08-29 14:52:19		  logger
+2018-08-29 14:52:19		[alias]
+2018-08-29 14:52:19		  AAWAY    BEEP     CLOSE    KB       N        T        WC     
+2018-08-29 14:52:19		  alias    BYE      EXIT     LEAVE    Q        UB       WI     
+2018-08-29 14:52:19		  AME      C        IG       M        REDRAW   UMODE    WII    
+2018-08-29 14:52:19		  AMSG     CHAT     J        MSGBUF   SAY      V        WW     
+2018-08-29 14:52:19		  ANICK    CL       K        MUB      SIGNOFF  W      
+2018-08-29 14:52:19		[fifo]
+2018-08-29 14:52:19		  fifo
+2018-08-29 14:52:19		[buflist]
+2018-08-29 14:52:19		  buflist
+2018-08-29 14:52:19		[trigger]
+2018-08-29 14:52:19		  trigger
+2018-08-29 14:52:19		[xfer]
+2018-08-29 14:52:19		  me  xfer
+2018-08-29 14:52:19		[python]
+2018-08-29 14:52:19		  python
+2018-08-29 14:52:19		[perl]
+2018-08-29 14:52:19		  perl
+2018-08-29 14:52:19		[ruby]
+2018-08-29 14:52:19		  ruby
+2018-08-29 14:52:19		[fset]
+2018-08-29 14:52:19		  fset
+2018-08-29 14:52:19		[relay]
+2018-08-29 14:52:19		  relay
+2018-08-29 14:52:19		[irc]
+2018-08-29 14:52:19		  admin       halfop      motd        rehash      time      
+2018-08-29 14:52:19		  allchan     ignore      msg         remove      topic     
+2018-08-29 14:52:19		  allpv       info        names       restart     trace     
+2018-08-29 14:52:19		  allserv     invite      nick        sajoin      unban     
+2018-08-29 14:52:19		  ban         ison        notice      samode      unquiet   
+2018-08-29 14:52:19		  cap         join        notify      sanick      userhost  
+2018-08-29 14:52:19		  connect     kick        op          sapart      users     
+2018-08-29 14:52:19		  ctcp        kickban     oper        saquit      version   
+2018-08-29 14:52:19		  cycle       kill        part        server      voice     
+2018-08-29 14:52:19		  dcc         links       ping        service     wallchops 
+2018-08-29 14:52:19		  dehalfop    list        pong        servlist    wallops   
+2018-08-29 14:52:19		  deop        lusers      query       squery      who       
+2018-08-29 14:52:19		  devoice     map         quiet       squit       whois     
+2018-08-29 14:52:19		  die         me          quote       stats       whowas    
+2018-08-29 14:52:19		  disconnect  mode        reconnect   summon    
+2018-08-29 14:52:19		[script]
+2018-08-29 14:52:19		  script
+2018-08-29 14:54:16		Key "ctrl-B" unbound (context: "default")
+2018-08-29 14:54:16		New key binding (context "default"): ctrl-B => /bar toggle nicklist
+2018-08-29 14:54:33		New key binding (context "default"): ctrl-V => /bar toggle buflist
+2018-08-29 14:54:35		Options saved to sec.conf
+2018-08-29 14:54:35		Options saved to weechat.conf
+2018-08-29 14:54:35		Options saved to plugins.conf
+2018-08-29 14:54:35		Options saved to charset.conf
+2018-08-29 14:54:35		Options saved to logger.conf
+2018-08-29 14:54:35		Options saved to exec.conf
+2018-08-29 14:54:35		Options saved to trigger.conf
+2018-08-29 14:54:35		Options saved to aspell.conf
+2018-08-29 14:54:35		Options saved to alias.conf
+2018-08-29 14:54:35		Options saved to buflist.conf
+2018-08-29 14:54:35		Options saved to fifo.conf
+2018-08-29 14:54:35		Options saved to xfer.conf
+2018-08-29 14:54:35		Options saved to irc.conf
+2018-08-29 14:54:35		Options saved to relay.conf
+2018-08-29 14:54:35		Options saved to python.conf
+2018-08-29 14:54:35		Options saved to perl.conf
+2018-08-29 14:54:35		Options saved to ruby.conf
+2018-08-29 14:54:35		Options saved to script.conf
+2018-08-29 14:54:35		Options saved to fset.conf
+2018-08-29 14:55:06		script: downloading list of scripts...
+2018-08-29 14:55:07		script: 346 scripts for WeeChat 2.1
+2018-08-29 14:55:07		script: script "text_input" not found
+2018-08-29 14:58:45		Option created: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:white,blue} ${buffer.short_name} ${color:blue,default}"
+2018-08-29 14:59:15		Option changed: weechat.bar.input.items = "rdr,+buffer+short+name,input_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2018-08-29 15:00:50		Option changed: buflist.format.number = ""  (default: "${color:green}${number}${if:${number_displayed}?.: }")
+2018-08-29 15:00:59		Option changed: buflist.format.number = "  "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
+2018-08-29 15:02:39		python: loading script "/home/ryan/.weechat/python/notify_send.py"
+2018-08-29 15:02:39		python: registered script "notify_send", version 0.8 (dev) (Sends highlight and message notifications through notify-send.)
+2018-08-29 15:15:58		Option changed: weechat.color.chat_highlight = white  (default: yellow)
+2018-08-29 15:16:09		Option changed: weechat.color.chat_highlight_bg = red  (default: magenta)
+2018-08-29 15:20:19		Option changed: buflist.format.hotlist_highlight = "${color:white,red}"  (default: "${color:magenta}")
+2018-08-29 15:21:20		Option changed: buflist.format.hotlist_message = "${color:blue}"  (default: "${color:brown}")
+2018-08-29 15:25:21		Option changed: weechat.color.chat_nick_prefix = default  (default: green)
+2018-08-29 15:26:12		Option changed: irc.color.message_quit = default  (default: red)
+2018-08-29 15:26:29		Option changed: irc.color.message_join = default  (default: green)
+2018-08-29 15:26:37		Option changed: irc.color.notice = default  (default: green)
+2018-08-29 15:31:35	=!=	Option "chat" not found (tip: you can use wildcard "*" in option to see a sublist)
+2018-08-29 15:31:50		Option changed: weechat.color.chat_value = default  (default: cyan)
+2018-08-29 15:32:00		Option changed: weechat.color.chat_value_null = default  (default: blue)
+2018-08-29 15:32:59		Option changed: weechat.color.chat_host = default  (default: cyan)
+2018-08-29 15:36:26		Option changed: irc.color.nick_prefixes = "*:default"  (default: "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue")
+2018-08-29 16:32:27		python: scripts unloaded
+2018-08-29 16:32:27		fifo: pipe closed
+2018-08-29 16:36:56		python scripts loaded: notify_send, text_item
+2018-08-29 16:36:56		script: 346 scripts for WeeChat 2.1
+2018-08-29 16:36:56		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 16:37:20		Layout of buffers+windows stored in "default" (current layout: default)
+2018-08-29 18:18:47		python: scripts unloaded
+2018-08-29 18:18:47		fifo: pipe closed
+2018-08-29 18:18:48		python scripts loaded: notify_send, text_item
+2018-08-29 18:18:48		script: 346 scripts for WeeChat 2.1
+2018-08-29 18:18:48		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 18:20:53		python: scripts unloaded
+2018-08-29 18:20:53		fifo: pipe closed
+2018-08-29 18:20:54		python scripts loaded: notify_send, text_item
+2018-08-29 18:20:54		script: 346 scripts for WeeChat 2.1
+2018-08-29 18:20:54		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 18:38:19		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 18:38:19		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 18:38:19		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 18:38:19	=!=	python: error in function "message_printed_callback"
+2018-08-29 18:47:16		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 18:47:16		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 18:47:16		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 18:47:16	=!=	python: error in function "message_printed_callback"
+2018-08-29 19:05:35		python: scripts unloaded
+2018-08-29 19:05:35		fifo: pipe closed
+2018-08-29 19:19:58		python scripts loaded: notify_send, text_item
+2018-08-29 19:19:58		script: 346 scripts for WeeChat 2.1
+2018-08-29 19:19:58		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 19:19:58		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 19:19:58		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 19:19:58	=!=	python: error in function "message_printed_callback"
+2018-08-29 19:19:58		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 19:19:58		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 19:19:58		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 19:19:58	=!=	python: error in function "message_printed_callback"
+2018-08-29 19:52:32		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 19:52:32		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 19:52:32		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 19:52:32	=!=	python: error in function "message_printed_callback"
+2018-08-29 19:52:33		python: scripts unloaded
+2018-08-29 19:52:33		fifo: pipe closed
+2018-08-29 20:24:54		python scripts loaded: notify_send, text_item
+2018-08-29 20:24:54		script: 346 scripts for WeeChat 2.1
+2018-08-29 20:24:54		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 21:06:29		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-29 21:06:29		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-29 21:06:29		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-29 21:06:29	=!=	python: error in function "message_printed_callback"
+2018-08-29 21:06:29		python: scripts unloaded
+2018-08-29 21:06:29		fifo: pipe closed
+2018-08-29 21:06:32		python scripts loaded: notify_send, text_item
+2018-08-29 21:06:32		script: 346 scripts for WeeChat 2.1
+2018-08-29 21:06:32		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 21:18:50		python: scripts unloaded
+2018-08-29 21:18:50		fifo: pipe closed
+2018-08-29 21:20:25		python scripts loaded: notify_send, text_item
+2018-08-29 21:20:25		script: 346 scripts for WeeChat 2.1
+2018-08-29 21:20:25		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 22:13:42		python: scripts unloaded
+2018-08-29 22:13:42		fifo: pipe closed
+2018-08-29 22:23:29		python scripts loaded: notify_send, text_item
+2018-08-29 22:23:29		script: 346 scripts for WeeChat 2.1
+2018-08-29 22:23:29		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 23:04:59		python: scripts unloaded
+2018-08-29 23:04:59		fifo: pipe closed
+2018-08-29 23:05:09		python scripts loaded: notify_send, text_item
+2018-08-29 23:05:09		script: 346 scripts for WeeChat 2.1
+2018-08-29 23:05:09		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 23:14:03		python: scripts unloaded
+2018-08-29 23:14:03		fifo: pipe closed
+2018-08-29 23:14:07		python scripts loaded: notify_send, text_item
+2018-08-29 23:14:07		script: 346 scripts for WeeChat 2.1
+2018-08-29 23:14:07		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 23:20:30		python: scripts unloaded
+2018-08-29 23:20:30		fifo: pipe closed
+2018-08-29 23:20:49		python scripts loaded: notify_send, text_item
+2018-08-29 23:20:49		script: 346 scripts for WeeChat 2.1
+2018-08-29 23:20:49		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-29 23:31:01		python: scripts unloaded
+2018-08-29 23:31:01		fifo: pipe closed
+2018-08-29 23:31:47		python scripts loaded: notify_send, text_item
+2018-08-29 23:31:47		script: 346 scripts for WeeChat 2.1
+2018-08-29 23:31:47		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 00:21:37		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 00:21:37		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 00:21:37		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 00:21:37	=!=	python: error in function "message_printed_callback"
+2018-08-30 01:22:36		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 01:22:36		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 01:22:36		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 01:22:36	=!=	python: error in function "message_printed_callback"
+2018-08-30 01:54:01		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 01:54:01		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 01:54:01		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 01:54:01	=!=	python: error in function "message_printed_callback"
+2018-08-30 02:00:57		perl: scripts unloaded
+2018-08-30 02:00:57		python: scripts unloaded
+2018-08-30 02:00:57		fifo: pipe closed
+2018-08-30 02:00:59		python scripts loaded: notify_send, text_item
+2018-08-30 02:00:59		perl scripts loaded: notify_send
+2018-08-30 02:00:59		script: 346 scripts for WeeChat 2.1
+2018-08-30 02:00:59		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 02:17:36		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 02:17:36		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 02:17:36		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 02:17:36	=!=	python: error in function "message_printed_callback"
+2018-08-30 02:34:44		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 02:34:44		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 02:34:44		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 02:34:44	=!=	python: error in function "message_printed_callback"
+2018-08-30 02:36:55		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 02:36:55		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 02:36:55		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 02:36:55	=!=	python: error in function "message_printed_callback"
+2018-08-30 05:59:37		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 05:59:37		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 05:59:37		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 05:59:37	=!=	python: error in function "message_printed_callback"
+2018-08-30 10:01:31		python: stdout/stderr (notify_send): Traceback (most recent call last):
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     send_notification(notification)
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     stdout=devnull,
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     errread, errwrite)
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+2018-08-30 10:01:31		python: stdout/stderr (notify_send):     raise child_exception
+2018-08-30 10:01:31		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
+2018-08-30 10:01:31	=!=	python: error in function "message_printed_callback"
+2018-08-30 12:26:51		Options reloaded from sec.conf
+2018-08-30 12:26:51		Options reloaded from weechat.conf
+2018-08-30 12:26:51		Options reloaded from plugins.conf
+2018-08-30 12:26:51		Options reloaded from charset.conf
+2018-08-30 12:26:51		Options reloaded from logger.conf
+2018-08-30 12:26:51		Options reloaded from exec.conf
+2018-08-30 12:26:51		Options reloaded from trigger.conf
+2018-08-30 12:26:51		Options reloaded from aspell.conf
+2018-08-30 12:26:51		Options reloaded from alias.conf
+2018-08-30 12:26:51		Options reloaded from buflist.conf
+2018-08-30 12:26:51		Options reloaded from fifo.conf
+2018-08-30 12:26:51		Options reloaded from xfer.conf
+2018-08-30 12:26:51		Options reloaded from irc.conf
+2018-08-30 12:26:51		Options reloaded from relay.conf
+2018-08-30 12:26:51		Options reloaded from python.conf
+2018-08-30 12:26:51		Options reloaded from perl.conf
+2018-08-30 12:26:51		Options reloaded from ruby.conf
+2018-08-30 12:26:51		Options reloaded from script.conf
+2018-08-30 12:26:51		Options reloaded from fset.conf
+2018-08-30 12:29:14	=!=	Error: unknown command "/refresh" (type /help for help)
+2018-08-30 12:31:00		perl: scripts unloaded
+2018-08-30 12:31:00		python: scripts unloaded
+2018-08-30 12:31:00		fifo: pipe closed
+2018-08-30 12:31:55		python scripts loaded: notify_send, text_item
+2018-08-30 12:31:55		perl scripts loaded: notify_send
+2018-08-30 12:31:55		script: 346 scripts for WeeChat 2.1
+2018-08-30 12:31:55		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 15:50:58		script: downloading list of scripts...
+2018-08-30 15:50:59		script: 346 scripts for WeeChat 2.1
+2018-08-30 15:51:12		python: unloading script "notify_send"
+2018-08-30 15:51:12		python: script "notify_send" unloaded
+2018-08-30 16:10:31		python: loading script "/home/ryan/.weechat/python/notify_send.py"
+2018-08-30 16:10:31		python: registered script "notify_send", version 0.8 (dev) (Sends highlight and message notifications through notify-send.)
+2018-08-30 16:11:32		Option changed: plugins.var.python.notify_send.ignore_buffers = "*highlight"
+2018-08-30 18:10:13		python: scripts unloaded
+2018-08-30 18:10:13		fifo: pipe closed
+2018-08-30 18:13:50		python scripts loaded: notify_send, text_item
+2018-08-30 18:13:50		script: 346 scripts for WeeChat 2.1
+2018-08-30 18:13:50		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 18:21:29		python: scripts unloaded
+2018-08-30 18:21:29		fifo: pipe closed
+2018-08-30 18:21:36		python scripts loaded: notify_send, text_item
+2018-08-30 18:21:36		script: 346 scripts for WeeChat 2.1
+2018-08-30 18:21:36		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 19:17:19		python: scripts unloaded
+2018-08-30 19:17:19		fifo: pipe closed
+2018-08-30 19:17:43		python scripts loaded: notify_send, text_item
+2018-08-30 19:17:43		script: 346 scripts for WeeChat 2.1
+2018-08-30 19:17:43		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-30 19:43:28		Layout of buffers+windows stored in "default" (current layout: default)
+2018-08-31 00:09:55		python: scripts unloaded
+2018-08-31 00:09:55		fifo: pipe closed
+2018-08-31 00:10:16		python scripts loaded: notify_send, text_item
+2018-08-31 00:10:16		script: 346 scripts for WeeChat 2.1
+2018-08-31 00:10:16		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-31 12:06:16		python: scripts unloaded
+2018-08-31 12:06:16		fifo: pipe closed
+2018-08-31 12:06:59		python scripts loaded: notify_send, text_item
+2018-08-31 12:06:59		script: 346 scripts for WeeChat 2.1
+2018-08-31 12:06:59		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2018-08-31 12:59:58		python: scripts unloaded
+2018-08-31 12:59:58		fifo: pipe closed
+2018-08-31 13:00:18		python scripts loaded: notify_send, text_item
+2018-08-31 13:00:18		script: 346 scripts for WeeChat 2.1
+2018-08-31 13:00:18		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer

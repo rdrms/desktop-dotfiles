@@ -1,0 +1,44 @@
+2018-08-31 16:27:40	-->	rydare (~rydare@unaffiliated/unheeding) has joined #atom
+2018-08-31 16:27:40	--	Topic for #atom is "Official channel for the Atom editor || https://atom.io || https://github.com/atom/atom || http://twitter.com/AtomEditor"
+2018-08-31 16:27:40	--	Topic set by Someguy123 (~someguy@unaffiliated/compgenius999) on Fri, 23 May 2014 16:59:47
+2018-08-31 16:27:40	--	Channel #atom: 95 nicks (0 ops, 0 voices, 95 normals)
+2018-08-31 16:27:42	--	Channel created on Sat, 25 Nov 2006 23:43:16
+2018-08-31 16:30:19	rydare	I installed a theme to .atom/packages/atom-zenburn  in it there is a styles folder with base.less and syntax-variables.less but I am not seeing the option to select it as a theme, only a syntax highlighting theme
+2018-08-31 16:30:46	-->	Konsieur (~kabouik@236.34.200.37.customer.cdi.no) has joined #atom
+2018-08-31 16:36:21	<--	Konsieur (~kabouik@236.34.200.37.customer.cdi.no) has quit (Ping timeout: 252 seconds)
+2018-08-31 16:37:16	<--	ibispi (~quassel@46.17.144.90) has quit (Remote host closed the connection)
+2018-08-31 16:40:11	rydare	ahh found it out, found the semiofficial version
+2018-08-31 16:40:12	rydare	works ok
+2018-08-31 17:50:03	-->	dmj` (uid72307@gateway/web/irccloud.com/x-ivtflvqfvxrakjzb) has joined #atom
+2018-08-31 17:53:21	<--	[Butch] (~butch@169.145.89.203) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2018-08-31 18:13:50	<--	Velpoman_ (~Velpoman@159.65.76.124) has quit (Quit: leaving)
+2018-08-31 18:13:59	-->	Velpoman (~Velpoman@159.65.76.124) has joined #atom
+2018-08-31 19:06:40	<--	gattuso (~gattuso@pompel.me) has quit (Ping timeout: 272 seconds)
+2018-08-31 19:07:08	<--	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has quit (Quit: ZNC - http://znc.in)
+2018-08-31 19:07:28	-->	apetresc (~apetresc@CPE0c473de6e9b3-CM0c473de6e9b0.cpe.net.cable.rogers.com) has joined #atom
+2018-08-31 19:07:41	-->	gattuso (~gattuso@pompel.me) has joined #atom
+2018-08-31 19:10:27	<--	CastelRune (uid181779@gateway/web/irccloud.com/x-typqgheawlmgqvls) has quit (Quit: Connection closed for inactivity)
+2018-08-31 21:10:47	<--	kfoonamalik (~kfoonamal@50-202-132-170-static.hfc.comcastbusiness.net) has quit (Ping timeout: 240 seconds)
+2018-08-31 21:17:05	-->	Darcidride_ (~Darcidrid@194.2.202.93) has joined #atom
+2018-08-31 21:17:37	-->	Darcidride__ (~Darcidrid@194.2.202.93) has joined #atom
+2018-08-31 21:18:52	<--	Darcidride_ (~Darcidrid@194.2.202.93) has quit (Remote host closed the connection)
+2018-08-31 21:20:34	<--	Darcidride (~Darcidrid@194.2.202.93) has quit (Ping timeout: 240 seconds)
+2018-08-31 21:54:15	-->	kfoonamalik (~kfoonamal@50-202-132-170-static.hfc.comcastbusiness.net) has joined #atom
+2018-08-31 22:14:31	<--	thegrimreaper (~grimreape@49.206.6.169) has quit (Read error: Connection reset by peer)
+2018-08-31 22:31:27	-->	thegrimreaper (~grimreape@49.206.6.169) has joined #atom
+2018-08-31 22:42:05	<--	thegrimreaper (~grimreape@49.206.6.169) has quit (Read error: Connection reset by peer)
+2018-08-31 22:51:21	-->	ibispi (~quassel@46.17.144.90) has joined #atom
+2018-08-31 22:57:57	-->	thegrimreaper (~grimreape@49.206.6.169) has joined #atom
+2018-08-31 23:52:40	-->	zeroed (~zeroed@p6e42101d.tkyea127.ap.so-net.ne.jp) has joined #atom
+2018-08-31 23:52:40	zeroed	Αlⅼaһ iѕ doiᥒg
+2018-08-31 23:52:41	<--	zeroed (~zeroed@p6e42101d.tkyea127.ap.so-net.ne.jp) has quit (Killed (Unit193 (Spam is not permitted on freenode.)))
+2018-09-01 00:08:34	<--	gpap (~gpap@athedsl-4491894.home.otenet.gr) has quit (Quit: gpap)
+2018-09-01 00:33:36	<--	thegrimreaper (~grimreape@49.206.6.169) has quit (Quit: Leaving)
+2018-09-01 00:48:50	-->	anthonyf3 (~anthonyf@217.65.183.38) has joined #atom
+2018-09-01 00:48:54	anthonyf3	Ꭺllah is ԁοing
+2018-09-01 00:48:54	anthonyf3	ѕ∪ᥒ is ᥒഠt ⅾoiᥒɡ Αⅼⅼаһ ⅰs doiᥒg
+2018-09-01 00:48:54	anthonyf3	moоᥒ iѕ ᥒot dഠіᥒg Αllɑһ is ԁoiᥒg
+2018-09-01 00:48:54	anthonyf3	ѕtɑrs ɑrᥱ nοt doⅰᥒg Allɑh is ԁоіng
+2018-09-01 00:48:54	anthonyf3	plаᥒets are not ԁοiᥒg Allah іs dഠіng
+2018-09-01 00:48:55	<--	anthonyf3 (~anthonyf@217.65.183.38) has quit (Killed (Unit193 (Spam is not permitted on freenode.)))
+2018-09-01 00:50:14	rydare	what do you guys edit with atom
