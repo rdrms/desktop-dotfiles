@@ -84,7 +84,7 @@
 #
 #visualizer_look = ●▮
 #
-#visualizer_color = blue, cyan, green, yellow, magenta, red
+#visualizer_color = blue, white, green, white, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -156,10 +156,10 @@
 ## - 1 - black
 ## - 2 - red
 ## - 3 - green
-## - 4 - yellow
+## - 4 - white
 ## - 5 - blue
 ## - 6 - magenta
-## - 7 - cyan
+## - 7 - white
 ## - 8 - white
 ## - 9 - end of current color
 ## - b - bold text
@@ -175,24 +175,29 @@
 ## If you want to use 256 colors and/or background colors in formats (the naming
 ## scheme is described below in section about color definitions), it can be done
 ## with the syntax $(COLOR), e.g. to set the artist tag to one of the
-## non-standard colors and make it have yellow background, you need to write
-## $(197_yellow)%a$(end). Note that for standard colors this is interchangable
+## non-standard colors and make it have white background, you need to write
+## $(197_white)%a$(end). Note that for standard colors this is interchangable
 ## with attributes listed above.
 ##
 ## Note: colors can be nested.
 ##
 #
-#song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
+#song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
+song_list_format = {%a - }{%t}|{%f}$R{(%l)}
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
+song_status_format = "$(black_blue) {{%a{ "%b"{ (%y)}} - }{%t}}|{%f} $(end)$(blue)"
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
+alternative_header_first_line_format = $(blue)$(end)$(black_blue) $b{%t}|{%f} $(end)$(blue)
+#
 #
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
+alternative_header_second_line_format = $b$(red)$(end)$(black_red) {{$b%a$/b}{ - %b}{ (%y)}}|{%D} $(end)$(red)
 #
-#current_item_prefix = $(yellow)$r
+#current_item_prefix = $(white)$r
 #
 #current_item_suffix = $/r$(end)
 #
@@ -200,7 +205,7 @@
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
-#now_playing_prefix = $b
+#now_playing_prefix = $whiteb
 #
 #now_playing_suffix = $/b
 #
@@ -262,7 +267,10 @@
 ##   available.
 ##
 #
-#song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+#song_columns_list_format = "(5)[]() (22f)[]{a} (5)[]{} (30)[white]{t|f:Title} (20)[white]{b} (7f)[magenta]{l}"
+#song_columns_list_format = "(5)[]()  (22)[]{a} (50)[white]{t|f:Title} (20)[white]{b} (7f)[magenta]{l}"
+song_columns_list_format = "(10f)[]{} (22)[]{a} (30)[]{t|f:Title} (20)[]{b} (5f)[]{l} (10f)[]{}"
+
 #
 ##### various settings #####
 #
@@ -291,7 +299,7 @@
 ##
 ## Note: Possible display modes: classic, columns.
 ##
-#playlist_display_mode = columns
+# playlist_display_mode = classic
 #
 #browser_display_mode = classic
 #
@@ -309,7 +317,7 @@
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = yes
 #
 #centered_cursor = no
 #
@@ -317,7 +325,7 @@
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-#progressbar_look = =>
+progressbar_look = "─🔊 "
 #
 ## Available values: database, playlist.
 ##
@@ -341,11 +349,11 @@
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = no
 #
-#statusbar_visibility = yes
+statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
@@ -472,7 +480,7 @@
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
+external_editor = vim
 #
 ## Note: set to yes if external editor is a console application.
 ##
@@ -508,37 +516,37 @@
 ## are used there is a possibility that you'll be able to use only colors with
 ## transparent background.
 #
-colors_enabled = no 
+colors_enabled = yes
 #
-#empty_tag_color = cyan
+empty_tag_color = white
 #
-#header_window_color = default
+header_window_color = default
 #
-#volume_color = default
+volume_color = default
 #
-#state_line_color = default
+state_line_color = default
 #
-#state_flags_color = default:b
+state_flags_color = default:b
 #
-#main_window_color = yellow
+main_window_color = white
 #
-#color1 = white
+color1 = white
 #
-#color2 = green
+color2 = default
 #
-#progressbar_color = black:b
+progressbar_color = default:b
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = default:b
 #
-#statusbar_color = default
+statusbar_color = default
 #
-#statusbar_time_color = default:b
+statusbar_time_color = default:b
 #
-#player_state_color = default:b
+player_state_color = default:b
 #
 #alternative_ui_separator_color = black:b
 #
-#window_border_color = green
+window_border_color = default
 #
-#active_window_border = red
+active_window_border = default
 #

@@ -84,7 +84,7 @@
 #
 #visualizer_look = ●▮
 #
-#visualizer_color = blue, cyan, green, yellow, magenta, red
+#visualizer_color = blue, default, green, black, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -153,14 +153,14 @@
 ## followed by character '$'. After that you can put:
 ##
 ## - 0 - default window color (discards all other colors)
-## - 1 - black
+## - 1 - default
 ## - 2 - red
 ## - 3 - green
-## - 4 - yellow
+## - 4 - default
 ## - 5 - blue
 ## - 6 - magenta
-## - 7 - cyan
-## - 8 - white
+## - 7 - default
+## - 8 - default
 ## - 9 - end of current color
 ## - b - bold text
 ## - u - underline text
@@ -175,43 +175,47 @@
 ## If you want to use 256 colors and/or background colors in formats (the naming
 ## scheme is described below in section about color definitions), it can be done
 ## with the syntax $(COLOR), e.g. to set the artist tag to one of the
-## non-standard colors and make it have yellow background, you need to write
-## $(197_yellow)%a$(end). Note that for standard colors this is interchangable
+## non-standard colors and make it have default background, you need to write
+## $(197_default)%a$(end). Note that for standard colors this is interchangable
 ## with attributes listed above.
 ##
 ## Note: colors can be nested.
 ##
 #
-#song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
+#song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
+song_list_format = {%a - }{%t}|{%f}$R{(%l)}
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
-song_status_format = $(black_blue){{%a{ "%b"{ (%y)}} - }{%t}}|{%f}) $(end)$(blue)
+song_status_format = "$(white_blue) {{%a{ "%b"{ (%y)}} - }{%t}}|{%f} $(end)$(blue)"
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
+alternative_header_first_line_format = $(blue)$(end)$(white_blue) $b{%t}|{%f} $(end)$(blue)
+#
 #
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
+alternative_header_second_line_format = $b$(red)$(end)$(white_red) {{$b%a$/b}{ - %b}{ (%y)}}|{%D} $(end)$(red)
 #
-#current_item_prefix = $(white)$r
+current_item_prefix = $(white_blue) 
 #
 #current_item_suffix = $/r$(end)
 #
-#current_item_inactive_column_prefix = $(white)$r
+#current_item_inactive_column_prefix = $(default)$r
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
-#now_playing_prefix = $whiteb
+#now_playing_prefix = $defaultb
 #
 #now_playing_suffix = $/b
 #
 #browser_playlist_prefix = "$2playlist$9 "
 #
-#selected_item_prefix = $6
+selected_item_prefix = "+++"
 #
-#selected_item_suffix = $9
+selected_item_suffix = "+++"
 #
-#modified_item_prefix = $3> $9
+modified_item_prefix = ">>"
 #
 ##
 ## Note: attributes are not supported for the following variables.
@@ -237,9 +241,9 @@ song_status_format = $(black_blue){{%a{ "%b"{ (%y)}} - }{%t}}|{%f}) $(end)$(blue
 ## (width of the column)[color of the column]{displayed tag}
 ##
 ## Note: Width is by default in %, if you want a column to have fixed size, add
-## 'f' after the value, e.g. (10)[white]{a} will be the column that take 10% of
+## 'f' after the value, e.g. (10)[default]{a} will be the column that take 10% of
 ## screen (so the real width will depend on actual screen size), whereas
-## (10f)[white]{a} will take 10 terminal cells, no matter how wide the screen
+## (10f)[default]{a} will take 10 terminal cells, no matter how wide the screen
 ## is.
 ##
 ## - color is optional (if you want the default one, leave the field empty).
@@ -263,9 +267,9 @@ song_status_format = $(black_blue){{%a{ "%b"{ (%y)}} - }{%t}}|{%f}) $(end)$(blue
 ##   available.
 ##
 #
-#song_columns_list_format = "(5)[]() (22f)[]{a} (5)[]{} (30)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
-#song_columns_list_format = "(5)[]()  (22)[]{a} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
-song_columns_list_format = "(10f)[]{} (22)[blue]{a} (30)[]{t|f:Title} (20)[]{b} (5f)[blue]{l} (10f)[]{}"
+#song_columns_list_format = "(5)[]() (22f)[]{a} (5)[]{} (30)[default]{t|f:Title} (20)[black]{b} (7f)[magenta]{l}"
+#song_columns_list_format = "(5)[]()  (22)[]{a} (50)[default]{t|f:Title} (20)[black]{b} (7f)[magenta]{l}"
+song_columns_list_format = "(10f)[]{} (22)[]{a} (30)[]{t|f:Title} (20)[]{b} (5f)[]{l} (10f)[]{}"
 
 #
 ##### various settings #####
@@ -441,7 +445,7 @@ titles_visibility = no
 ## Note: if below is enabled, ncmpcpp will ignore diacritics while searching and
 ## filtering lists. This takes an effect only if boost was compiled with ICU
 ## support.
-##
+###
 #ignore_diacritics = no
 #
 #block_search_constraints_change_if_items_found = yes
@@ -485,12 +489,12 @@ external_editor = vim
 ##### colors definitions #####
 ##
 ## It is possible to set a background color by setting a color value
-## "<foreground>_<background>", e.g. red_black will set foregound color to red
-## and background color to black.
+## "<foreground>_<background>", e.g. red_default will set foregound color to red
+## and background color to default.
 ##
 ## In addition, for terminals that support 256 colors it is possible to set one
 ## of them by using a number in range [1, 256] instead of color name,
-## e.g. numerical value corresponding to red_black is 2_1. To find out if the
+## e.g. numerical value corresponding to red_default is 2_1. To find out if the
 ## terminal supports 256 colors, run ncmpcpp and check out the bottom of the
 ## help screen for list of available colors and their numerical values.
 ##
@@ -502,7 +506,7 @@ external_editor = vim
 ##
 ## Moreover, it is possible to attach format information to selected color
 ## variables by appending to their end a colon followed by one or more format
-## flags, e.g. black:b or red:ur. The following variables support this syntax:
+## flags, e.g. default:b or red:ur. The following variables support this syntax:
 ## visualizer_color, color1, color2, empty_tag_color, volume_color,
 ## state_line_color, state_flags_color, progressbar_color,
 ## progressbar_elapsed_color, player_state_color, statusbar_time_color,
@@ -514,35 +518,35 @@ external_editor = vim
 #
 colors_enabled = yes
 #
-#empty_tag_color = cyan
+empty_tag_color = default
 #
-#header_window_color = default
+header_window_color = default
 #
-#volume_color = default
+volume_color = default
 #
-#state_line_color = default
+state_line_color = default
 #
-#state_flags_color = default:b
+state_flags_color = default:b
 #
-#main_window_color = yellow
+main_window_color = default
 #
-#color1 = white
+color1 = default
 #
-#color2 = green
+color2 = default
 #
-#progressbar_color = black:b
+progressbar_color = default:b
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = default:b
 #
-#statusbar_color = default
+statusbar_color = default
 #
-#statusbar_time_color = default:b
+statusbar_time_color = default:b
 #
-#player_state_color = default:b
+player_state_color = default:b
 #
-#alternative_ui_separator_color = black:b
+#alternative_ui_separator_color = default:b
 #
-#window_border_color = green
+window_border_color = default
 #
-#active_window_border = red
+active_window_border = default
 #
