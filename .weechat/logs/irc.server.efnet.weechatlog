@@ -1,0 +1,375 @@
+2020-07-29 20:38:13	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 20:38:13	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 20:38:13	--	gnutls: receiving 1 certificate
+2020-07-29 20:38:13	--	 - certificate[1] info:
+2020-07-29 20:38:13	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 20:38:13	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 20:38:13	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 20:38:13	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 20:38:13	=!=	irc: TLS handshake failed
+2020-07-29 20:38:13	=!=	irc: error: Error in the certificate.
+2020-07-29 20:38:13	--	irc: reconnecting to server in 10 seconds
+2020-07-29 20:38:23	--	irc: reconnecting to server...
+2020-07-29 20:38:23	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 20:38:23	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 20:38:23	--	gnutls: receiving 1 certificate
+2020-07-29 20:38:23	--	 - certificate[1] info:
+2020-07-29 20:38:23	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 20:38:23	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 20:38:23	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 20:38:23	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 20:38:23	=!=	irc: TLS handshake failed
+2020-07-29 20:38:23	=!=	irc: error: Error in the certificate.
+2020-07-29 20:38:23	--	irc: reconnecting to server in 20 seconds
+2020-07-29 20:38:32	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 20:38:32	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 20:38:32	--	gnutls: receiving 1 certificate
+2020-07-29 20:38:32	--	 - certificate[1] info:
+2020-07-29 20:38:32	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 20:38:32	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 20:38:32	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 20:38:32	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 20:38:32	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-29 20:38:32	--	Invalid Password
+2020-07-29 20:38:32	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2020-07-29 20:38:32	--	irc: disconnecting from server...
+2020-07-29 20:38:32	--	irc: disconnected from server
+2020-07-29 20:38:32	--	irc: reconnecting to server in 10 seconds
+2020-07-29 20:38:42	--	irc: reconnecting to server...
+2020-07-29 20:38:42	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 20:38:42	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 20:38:42	--	gnutls: receiving 1 certificate
+2020-07-29 20:38:42	--	 - certificate[1] info:
+2020-07-29 20:38:42	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 20:38:42	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 20:38:42	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 20:38:42	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 20:38:42	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-29 20:38:42	--	Invalid Password
+2020-07-29 20:38:42	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2020-07-29 20:38:42	--	irc: disconnecting from server...
+2020-07-29 20:38:42	--	irc: disconnected from server
+2020-07-29 20:38:42	--	irc: reconnecting to server in 20 seconds
+2020-07-29 20:39:02	--	irc: reconnecting to server...
+2020-07-29 20:39:02	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 20:39:02	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 20:39:02	--	gnutls: receiving 1 certificate
+2020-07-29 20:39:02	--	 - certificate[1] info:
+2020-07-29 20:39:02	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 20:39:02	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 20:39:02	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 20:39:02	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 20:39:02	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-29 20:39:02	--	Welcome to ZNC
+2020-07-29 20:41:38	--	*** Processing connection to irc.servercentral.net
+2020-07-29 20:41:38	--	*** Looking up your hostname...
+2020-07-29 20:41:38	--	*** Checking Ident
+2020-07-29 20:41:38	--	*** Found your hostname
+2020-07-29 20:42:09	--	*** Processing connection to irc.servercentral.net
+2020-07-29 20:42:09	--	*** Looking up your hostname...
+2020-07-29 20:42:09	--	*** Checking Ident
+2020-07-29 20:42:09	--	*** Found your hostname
+2020-07-29 20:42:24	--	*** No Ident response
+2020-07-29 20:42:24	--	You are now known as rdr
+2020-07-29 20:42:24	--	Welcome to the EFnet Internet Relay Chat Network rdr
+2020-07-29 20:42:24	--	Your host is irc.servercentral.net[66.225.225.225/9999], running version ircd-ratbox-3.0.10
+2020-07-29 20:42:24	--	This server was created Sun May 24 2020 at 03:31:19 UTC
+2020-07-29 20:42:24	--	irc.servercentral.net ircd-ratbox-3.0.10 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2020-07-29 20:42:24	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:75 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2020-07-29 20:42:24	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2020-07-29 20:42:24	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2020-07-29 20:42:24	--	There are 5371 users and 9783 invisible on 22 servers
+2020-07-29 20:42:24	--	118 :IRC Operators online
+2020-07-29 20:42:24	--	1 :unknown connection(s)
+2020-07-29 20:42:24	--	8700 :channels formed
+2020-07-29 20:42:24	--	I have 1168 clients and 2 servers
+2020-07-29 20:42:24	--	1168 2060 :Current local users 1168, max 2060
+2020-07-29 20:42:24	--	15154 16478 :Current global users 15154, max 16478
+2020-07-29 20:42:24	--	Highest connection count: 2062 (2060 clients) (66548 connections received)
+2020-07-29 20:42:24	--	- irc.servercentral.net Message of the Day - 
+2020-07-29 20:42:24	--	- -                                                _            _ 
+2020-07-29 20:42:24	--	- -             ___ ___ _ ___ _____ _ _ __ ___ _ _| |_ _ _ __ _| |
+2020-07-29 20:42:24	--	- -            (_-</ -_) '_\ V / -_) '_/ _/ -_) ' \  _| '_/ _` | |
+2020-07-29 20:42:24	--	- -            /__/\___|_|  \_/\___|_| \__\___|_||_\__|_| \__,_|_|
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -          o Listening on ports: 6660 - 6669, 7000, 8080, 31337 o
+2020-07-29 20:42:24	--	- -                 o Listening on SSL ports: 6697, 9999 o
+2020-07-29 20:42:24	--	- -               o Visit us @ http://www.servercentral.com o
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -  -------- Server Rules ----------------------------------------------
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -        o No Flooding                         o No DoS bots
+2020-07-29 20:42:24	--	- -        o No Clones                           o No Spamming
+2020-07-29 20:42:24	--	- -        o No Takeovers                        o No Whiners 
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -  -------- Server Staff ----------------------------------------------
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -     o Local IRCops may be summoned with the command:  /stats p
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -  -------- Disclaimer ------------------------------------------------
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -     This server, its staff and the people hosting it are *NOT* 
+2020-07-29 20:42:24	--	- -     responsible for the content that passes through this server. 
+2020-07-29 20:42:24	--	- -     Use of this server is a *privilege* which may be removed at 
+2020-07-29 20:42:24	--	- -     any time and for any reason by the friendly server operators.
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	- -  -------- End of MOTD -----------------------------------------------
+2020-07-29 20:42:24	--	- -  
+2020-07-29 20:42:24	--	End of /MOTD command.
+2020-07-29 20:42:26	--	[*] rdr (~rdr@S0106905851c3eec9.mh.shawcable.net) H 0 (rdr)
+2020-07-29 20:42:26	--	[rdr] End of /WHO list.
+2020-07-29 21:02:25	--	irc: lag is high, reconnecting to server EfNet
+2020-07-29 21:02:25	--	irc: disconnected from server
+2020-07-29 21:02:25	--	irc: reconnecting to server in 10 seconds
+2020-07-29 21:02:35	--	irc: reconnecting to server...
+2020-07-29 21:02:35	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 21:02:35	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 21:02:35	--	gnutls: receiving 1 certificate
+2020-07-29 21:02:35	--	 - certificate[1] info:
+2020-07-29 21:02:35	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 21:02:35	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 21:02:35	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 21:02:35	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 21:02:35	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-29 21:02:35	--	Welcome to the EFnet Internet Relay Chat Network rdr
+2020-07-29 21:02:35	--	Your host is irc.servercentral.net[66.225.225.225/9999], running version ircd-ratbox-3.0.10
+2020-07-29 21:02:35	--	This server was created Sun May 24 2020 at 03:31:19 UTC
+2020-07-29 21:02:35	--	irc.servercentral.net ircd-ratbox-3.0.10 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2020-07-29 21:02:35	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:75 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2020-07-29 21:02:35	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2020-07-29 21:02:35	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2020-07-29 21:02:35	--	There are 5371 users and 9783 invisible on 22 servers
+2020-07-29 21:02:35	--	118 :IRC Operators online
+2020-07-29 21:02:35	--	8700 :channels formed
+2020-07-29 21:02:35	--	I have 1168 clients and 2 servers
+2020-07-29 21:02:35	--	1168 2060 :Current local users 1168, max 2060
+2020-07-29 21:02:35	--	15154 16478 :Current global users 15154, max 16478
+2020-07-29 21:02:35	--	Highest connection count: 2062 (2060 clients) (66548 connections received)
+2020-07-29 21:02:35	--	- irc.servercentral.net Message of the Day - 
+2020-07-29 21:02:35	--	- -                                                _            _ 
+2020-07-29 21:02:35	--	- -             ___ ___ _ ___ _____ _ _ __ ___ _ _| |_ _ _ __ _| |
+2020-07-29 21:02:35	--	- -            (_-</ -_) '_\ V / -_) '_/ _/ -_) ' \  _| '_/ _` | |
+2020-07-29 21:02:35	--	- -            /__/\___|_|  \_/\___|_| \__\___|_||_\__|_| \__,_|_|
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -          o Listening on ports: 6660 - 6669, 7000, 8080, 31337 o
+2020-07-29 21:02:35	--	- -                 o Listening on SSL ports: 6697, 9999 o
+2020-07-29 21:02:35	--	- -               o Visit us @ http://www.servercentral.com o
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -  -------- Server Rules ----------------------------------------------
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -        o No Flooding                         o No DoS bots
+2020-07-29 21:02:35	--	- -        o No Clones                           o No Spamming
+2020-07-29 21:02:35	--	- -        o No Takeovers                        o No Whiners 
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -  -------- Server Staff ----------------------------------------------
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -     o Local IRCops may be summoned with the command:  /stats p
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -  -------- Disclaimer ------------------------------------------------
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -     This server, its staff and the people hosting it are *NOT* 
+2020-07-29 21:02:35	--	- -     responsible for the content that passes through this server. 
+2020-07-29 21:02:35	--	- -     Use of this server is a *privilege* which may be removed at 
+2020-07-29 21:02:35	--	- -     any time and for any reason by the friendly server operators.
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	- -  -------- End of MOTD -----------------------------------------------
+2020-07-29 21:02:35	--	- -  
+2020-07-29 21:02:35	--	End of /MOTD command.
+2020-07-29 21:02:35	--	You have been marked as being away
+2020-07-29 21:02:35	--	You are no longer marked as being away
+2020-07-29 21:03:09	--	irc: connecting to server home/8080 (SSL)...
+2020-07-29 21:03:09	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-29 21:03:09	--	gnutls: receiving 1 certificate
+2020-07-29 21:03:09	--	 - certificate[1] info:
+2020-07-29 21:03:09	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-29 21:03:09	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-29 21:03:09	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-29 21:03:09	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-29 21:03:09	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-29 21:03:09	--	Welcome to the EFnet Internet Relay Chat Network rdr
+2020-07-29 21:03:09	--	Your host is irc.servercentral.net[66.225.225.225/9999], running version ircd-ratbox-3.0.10
+2020-07-29 21:03:09	--	This server was created Sun May 24 2020 at 03:31:19 UTC
+2020-07-29 21:03:09	--	irc.servercentral.net ircd-ratbox-3.0.10 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2020-07-29 21:03:09	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:75 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2020-07-29 21:03:09	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2020-07-29 21:03:09	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2020-07-29 21:03:09	--	There are 5371 users and 9783 invisible on 22 servers
+2020-07-29 21:03:09	--	118 :IRC Operators online
+2020-07-29 21:03:09	--	8700 :channels formed
+2020-07-29 21:03:09	--	I have 1168 clients and 2 servers
+2020-07-29 21:03:09	--	1168 2060 :Current local users 1168, max 2060
+2020-07-29 21:03:09	--	15154 16478 :Current global users 15154, max 16478
+2020-07-29 21:03:09	--	Highest connection count: 2062 (2060 clients) (66548 connections received)
+2020-07-29 21:03:09	--	You are now known as rdr
+2020-07-29 21:03:09	--	- irc.servercentral.net Message of the Day - 
+2020-07-29 21:03:09	--	- -                                                _            _ 
+2020-07-29 21:03:09	--	- -             ___ ___ _ ___ _____ _ _ __ ___ _ _| |_ _ _ __ _| |
+2020-07-29 21:03:09	--	- -            (_-</ -_) '_\ V / -_) '_/ _/ -_) ' \  _| '_/ _` | |
+2020-07-29 21:03:09	--	- -            /__/\___|_|  \_/\___|_| \__\___|_||_\__|_| \__,_|_|
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -          o Listening on ports: 6660 - 6669, 7000, 8080, 31337 o
+2020-07-29 21:03:09	--	- -                 o Listening on SSL ports: 6697, 9999 o
+2020-07-29 21:03:09	--	- -               o Visit us @ http://www.servercentral.com o
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -  -------- Server Rules ----------------------------------------------
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -        o No Flooding                         o No DoS bots
+2020-07-29 21:03:09	--	- -        o No Clones                           o No Spamming
+2020-07-29 21:03:09	--	- -        o No Takeovers                        o No Whiners 
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -  -------- Server Staff ----------------------------------------------
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -     o Local IRCops may be summoned with the command:  /stats p
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -  -------- Disclaimer ------------------------------------------------
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -     This server, its staff and the people hosting it are *NOT* 
+2020-07-29 21:03:09	--	- -     responsible for the content that passes through this server. 
+2020-07-29 21:03:09	--	- -     Use of this server is a *privilege* which may be removed at 
+2020-07-29 21:03:09	--	- -     any time and for any reason by the friendly server operators.
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	- -  -------- End of MOTD -----------------------------------------------
+2020-07-29 21:03:09	--	- -  
+2020-07-29 21:03:09	--	End of /MOTD command.
+2020-07-30 16:25:13	--	irc: connecting to server home/8080 (SSL)...
+2020-07-30 16:25:13	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-30 16:25:13	--	gnutls: receiving 1 certificate
+2020-07-30 16:25:13	--	 - certificate[1] info:
+2020-07-30 16:25:13	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-30 16:25:13	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-30 16:25:13	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-30 16:25:13	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-30 16:25:13	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-30 16:25:13	--	Welcome to the EFnet Internet Relay Chat Network rdr
+2020-07-30 16:25:13	--	Your host is irc.servercentral.net[66.225.225.225/9999], running version ircd-ratbox-3.0.10
+2020-07-30 16:25:13	--	This server was created Sun May 24 2020 at 03:31:19 UTC
+2020-07-30 16:25:13	--	irc.servercentral.net ircd-ratbox-3.0.10 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2020-07-30 16:25:13	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:75 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2020-07-30 16:25:13	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2020-07-30 16:25:13	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2020-07-30 16:25:13	--	There are 5371 users and 9783 invisible on 22 servers
+2020-07-30 16:25:13	--	118 :IRC Operators online
+2020-07-30 16:25:13	--	8700 :channels formed
+2020-07-30 16:25:13	--	I have 1168 clients and 2 servers
+2020-07-30 16:25:13	--	1168 2060 :Current local users 1168, max 2060
+2020-07-30 16:25:13	--	15154 16478 :Current global users 15154, max 16478
+2020-07-30 16:25:13	--	Highest connection count: 2062 (2060 clients) (66548 connections received)
+2020-07-30 16:25:13	--	You are now known as rdr
+2020-07-30 16:25:13	--	- irc.servercentral.net Message of the Day - 
+2020-07-30 16:25:13	--	- -                                                _            _ 
+2020-07-30 16:25:13	--	- -             ___ ___ _ ___ _____ _ _ __ ___ _ _| |_ _ _ __ _| |
+2020-07-30 16:25:13	--	- -            (_-</ -_) '_\ V / -_) '_/ _/ -_) ' \  _| '_/ _` | |
+2020-07-30 16:25:13	--	- -            /__/\___|_|  \_/\___|_| \__\___|_||_\__|_| \__,_|_|
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -          o Listening on ports: 6660 - 6669, 7000, 8080, 31337 o
+2020-07-30 16:25:13	--	- -                 o Listening on SSL ports: 6697, 9999 o
+2020-07-30 16:25:13	--	- -               o Visit us @ http://www.servercentral.com o
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -  -------- Server Rules ----------------------------------------------
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -        o No Flooding                         o No DoS bots
+2020-07-30 16:25:13	--	- -        o No Clones                           o No Spamming
+2020-07-30 16:25:13	--	- -        o No Takeovers                        o No Whiners 
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -  -------- Server Staff ----------------------------------------------
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -     o Local IRCops may be summoned with the command:  /stats p
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -  -------- Disclaimer ------------------------------------------------
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -     This server, its staff and the people hosting it are *NOT* 
+2020-07-30 16:25:13	--	- -     responsible for the content that passes through this server. 
+2020-07-30 16:25:13	--	- -     Use of this server is a *privilege* which may be removed at 
+2020-07-30 16:25:13	--	- -     any time and for any reason by the friendly server operators.
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	- -  -------- End of MOTD -----------------------------------------------
+2020-07-30 16:25:13	--	- -  
+2020-07-30 16:25:13	--	End of /MOTD command.
+2020-07-31 18:34:40	--	irc: connecting to server home/8080 (SSL)...
+2020-07-31 18:34:40	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2020-07-31 18:34:40	--	gnutls: receiving 1 certificate
+2020-07-31 18:34:40	--	 - certificate[1] info:
+2020-07-31 18:34:40	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2020-07-31 18:34:40	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2020-07-31 18:34:40	=!=	gnutls: peer's certificate is NOT trusted
+2020-07-31 18:34:40	=!=	gnutls: peer's certificate issuer is unknown
+2020-07-31 18:34:40	--	irc: connected to home/8080 (10.0.0.222)
+2020-07-31 18:34:40	--	Welcome to the EFnet Internet Relay Chat Network rdr
+2020-07-31 18:34:40	--	Your host is irc.servercentral.net[66.225.225.225/9999], running version ircd-ratbox-3.0.10
+2020-07-31 18:34:40	--	This server was created Sun May 24 2020 at 03:31:19 UTC
+2020-07-31 18:34:40	--	irc.servercentral.net ircd-ratbox-3.0.10 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2020-07-31 18:34:40	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:75 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2020-07-31 18:34:40	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2020-07-31 18:34:40	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2020-07-31 18:34:40	--	There are 5371 users and 9783 invisible on 22 servers
+2020-07-31 18:34:40	--	118 :IRC Operators online
+2020-07-31 18:34:40	--	8700 :channels formed
+2020-07-31 18:34:40	--	I have 1168 clients and 2 servers
+2020-07-31 18:34:40	--	1168 2060 :Current local users 1168, max 2060
+2020-07-31 18:34:40	--	15154 16478 :Current global users 15154, max 16478
+2020-07-31 18:34:40	--	Highest connection count: 2062 (2060 clients) (66548 connections received)
+2020-07-31 18:34:40	--	You are now known as rdr
+2020-07-31 18:34:40	--	- irc.servercentral.net Message of the Day - 
+2020-07-31 18:34:40	--	- -                                                _            _ 
+2020-07-31 18:34:40	--	- -             ___ ___ _ ___ _____ _ _ __ ___ _ _| |_ _ _ __ _| |
+2020-07-31 18:34:40	--	- -            (_-</ -_) '_\ V / -_) '_/ _/ -_) ' \  _| '_/ _` | |
+2020-07-31 18:34:40	--	- -            /__/\___|_|  \_/\___|_| \__\___|_||_\__|_| \__,_|_|
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -          o Listening on ports: 6660 - 6669, 7000, 8080, 31337 o
+2020-07-31 18:34:40	--	- -                 o Listening on SSL ports: 6697, 9999 o
+2020-07-31 18:34:40	--	- -               o Visit us @ http://www.servercentral.com o
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -  -------- Server Rules ----------------------------------------------
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -        o No Flooding                         o No DoS bots
+2020-07-31 18:34:40	--	- -        o No Clones                           o No Spamming
+2020-07-31 18:34:40	--	- -        o No Takeovers                        o No Whiners 
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -  -------- Server Staff ----------------------------------------------
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -     o Local IRCops may be summoned with the command:  /stats p
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -  -------- Disclaimer ------------------------------------------------
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -     This server, its staff and the people hosting it are *NOT* 
+2020-07-31 18:34:40	--	- -     responsible for the content that passes through this server. 
+2020-07-31 18:34:40	--	- -     Use of this server is a *privilege* which may be removed at 
+2020-07-31 18:34:40	--	- -     any time and for any reason by the friendly server operators.
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	- -  -------- End of MOTD -----------------------------------------------
+2020-07-31 18:34:40	--	- -  
+2020-07-31 18:34:40	--	End of /MOTD command.
+2020-07-31 18:34:40	--	You have been marked as being away
+2020-07-31 18:34:40	--	You are no longer marked as being away
+2021-01-22 14:37:59	--	irc: connecting to server home/8080 (SSL)...
+2021-01-22 14:37:59	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-01-22 14:37:59	--	gnutls: receiving 1 certificate
+2021-01-22 14:37:59	--	 - certificate[1] info:
+2021-01-22 14:37:59	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-01-22 14:37:59	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-01-22 14:37:59	=!=	gnutls: peer's certificate is NOT trusted
+2021-01-22 14:37:59	=!=	gnutls: peer's certificate issuer is unknown
+2021-01-22 14:37:59	--	irc: connected to home/8080 (10.0.0.224)
+2021-01-22 14:37:59	--	Welcome to ZNC
+2021-01-22 14:38:11	--	irc: disconnected from server
+2021-01-22 17:54:42	--	irc: connecting to server home/8080 (SSL)...
+2021-01-22 17:54:42	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-01-22 17:54:42	--	gnutls: receiving 1 certificate
+2021-01-22 17:54:42	--	 - certificate[1] info:
+2021-01-22 17:54:42	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-01-22 17:54:42	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-01-22 17:54:42	=!=	gnutls: peer's certificate is NOT trusted
+2021-01-22 17:54:42	=!=	gnutls: peer's certificate issuer is unknown
+2021-01-22 17:54:42	--	irc: connected to home/8080 (10.0.0.224)
+2021-01-22 17:54:42	--	Welcome to ZNC
+2021-01-22 17:59:14	--	irc: connecting to server home/8080 (SSL)...
+2021-01-22 17:59:14	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-01-22 17:59:14	--	gnutls: receiving 1 certificate
+2021-01-22 17:59:14	--	 - certificate[1] info:
+2021-01-22 17:59:14	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-01-22 17:59:14	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-01-22 17:59:14	=!=	gnutls: peer's certificate is NOT trusted
+2021-01-22 17:59:14	=!=	gnutls: peer's certificate issuer is unknown
+2021-01-22 17:59:14	--	irc: connected to home/8080 (10.0.0.224)
+2021-01-22 17:59:14	--	Welcome to ZNC
+2021-01-22 18:03:25	--	irc: disconnected from server

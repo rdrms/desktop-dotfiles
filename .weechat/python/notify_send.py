@@ -27,7 +27,10 @@
 # SOFTWARE.
 #
 
+from __future__ import print_function
+
 import os
+import re
 import subprocess
 import sys
 import time
@@ -37,8 +40,7 @@ import time
 try:
     import weechat
 except ImportError:
-    print('This script has to run under WeeChat (https://weechat.org/).')
-    sys.exit(1)
+    sys.exit('This script has to run under WeeChat (https://weechat.org/).')
 
 
 # Name of the script.
@@ -48,7 +50,7 @@ SCRIPT_NAME = 'notify_send'
 SCRIPT_AUTHOR = 's3rvac'
 
 # Version of the script.
-SCRIPT_VERSION = '0.8 (dev)'
+SCRIPT_VERSION = '0.10 (dev)'
 
 # License under which the script is distributed.
 SCRIPT_LICENSE = 'MIT'
@@ -84,10 +86,24 @@ OPTIONS = {
         'on',
         'Send also notifications for the currently active buffer.'
     ),
+    'notify_on_all_messages_in_current_buffer': (
+        'off',
+        'Send a notification on all messages in the currently active buffer.'
+    ),
     'notify_on_all_messages_in_buffers': (
         '',
         'A comma-separated list of buffers for which you want to receive '
         'notifications on all messages that appear in them.'
+    ),
+    'notify_on_all_messages_in_buffers_that_match': (
+        '',
+        'A comma-separated list of regex patterns of buffers for which you '
+        'want to receive notifications on all messages that appear in them.'
+    ),
+    'notify_on_messages_that_match': (
+        '',
+        'A comma-separated list of regex patterns that you want to receive '
+        'notifications on when message matches.'
     ),
     'min_notification_delay': (
         '500',
@@ -119,7 +135,7 @@ OPTIONS = {
         'notifications should be shown.'
     ),
     'ignore_nicks': (
-        '',
+        '-,--,-->',
         'A comma-separated list of nicks from which no notifications should '
         'be shown.'
     ),
@@ -127,6 +143,11 @@ OPTIONS = {
         '',
         'A comma-separated list of nick prefixes from which no '
         'notifications should be shown.'
+    ),
+    'hide_messages_in_buffers_that_match': (
+        '',
+        'A comma-separated list of regex patterns for names of buffers from '
+        'which you want to receive notifications without messages.'
     ),
     'nick_separator': (
         ': ',
@@ -148,6 +169,10 @@ OPTIONS = {
         '/usr/share/icons/hicolor/32x32/apps/weechat.png',
         'Path to an icon to be shown in notifications.'
     ),
+    'desktop_entry': (
+        'weechat',
+        'Name of the desktop entry for WeeChat.'
+    ),
     'timeout': (
         '5000',
         'Time after which the notification disappears (in milliseconds; '
@@ -168,10 +193,11 @@ OPTIONS = {
 class Notification(object):
     """A representation of a notification."""
 
-    def __init__(self, source, message, icon, timeout, transient, urgency):
+    def __init__(self, source, message, icon, desktop_entry, timeout, transient, urgency):
         self.source = source
         self.message = message
         self.icon = icon
+        self.desktop_entry = desktop_entry
         self.timeout = timeout
         self.transient = transient
         self.urgency = urgency
@@ -228,17 +254,17 @@ def message_printed_callback(data, buffer, date, tags, is_displayed,
     tags = parse_tags(tags)
     nick = nick_that_sent_message(tags, prefix)
 
-    if notification_should_be_sent(buffer, tags, nick, is_displayed, is_highlight):
+    if notification_should_be_sent(buffer, tags, nick, is_displayed, is_highlight, message):
         notification = prepare_notification(buffer, nick, message)
         send_notification(notification)
 
     return weechat.WEECHAT_RC_OK
 
 
-def notification_should_be_sent(buffer, tags, nick, is_displayed, is_highlight):
+def notification_should_be_sent(buffer, tags, nick, is_displayed, is_highlight, message):
     """Should a notification be sent?"""
     if notification_should_be_sent_disregarding_time(buffer, tags, nick,
-                                                     is_displayed, is_highlight):
+                                                     is_displayed, is_highlight, message):
         # The following function should be called only when the notification
         # should be sent (it updates the last notification time).
         if not is_below_min_notification_delay(buffer):
@@ -247,7 +273,7 @@ def notification_should_be_sent(buffer, tags, nick, is_displayed, is_highlight):
 
 
 def notification_should_be_sent_disregarding_time(buffer, tags, nick,
-                                                  is_displayed, is_highlight):
+                                                  is_displayed, is_highlight, message):
     """Should a notification be sent when not considering time?"""
     if not nick:
         # A nick is required to form a correct notification source/message.
@@ -258,10 +284,6 @@ def notification_should_be_sent_disregarding_time(buffer, tags, nick,
 
     if not is_displayed:
         if not notify_on_filtered_messages():
-            return False
-
-    if buffer == weechat.current_buffer():
-        if not notify_for_current_buffer():
             return False
 
     if is_away(buffer):
@@ -277,11 +299,20 @@ def notification_should_be_sent_disregarding_time(buffer, tags, nick,
     if ignore_notifications_from_buffer(buffer):
         return False
 
+    if buffer == weechat.current_buffer():
+        if not notify_for_current_buffer():
+            return False
+        elif notify_on_all_messages_in_current_buffer():
+            return True
+
     if is_private_message(buffer):
         return notify_on_private_messages()
 
     if is_highlight:
         return notify_on_highlights()
+
+    if notify_on_messages_that_match(message):
+        return True
 
     if notify_on_all_messages_in_buffer(buffer):
         return True
@@ -375,6 +406,11 @@ def notify_for_current_buffer():
     return weechat.config_get_plugin('notify_for_current_buffer') == 'on'
 
 
+def notify_on_all_messages_in_current_buffer():
+    """Should we send a notication on all messages in the current buffer?"""
+    return weechat.config_get_plugin('notify_on_all_messages_in_current_buffer') == 'on'
+
+
 def notify_on_highlights():
     """Should we send notifications on highlights?"""
     return weechat.config_get_plugin('notify_on_highlights') == 'on'
@@ -415,6 +451,10 @@ def split_option_value(option, separator=','):
     returns the result in a list.
     """
     values = weechat.config_get_plugin(option)
+    if not values:
+        # When there are no values, return the empty list instead of [''].
+        return []
+
     return [value.strip() for value in values.split(separator)]
 
 
@@ -440,7 +480,7 @@ def ignore_notifications_from_buffer(buffer):
 
     for buffer_name in buffer_names:
         for prefix in ignored_buffer_prefixes():
-            if prefix and buffer_name and buffer_name.startswith(prefix):
+            if prefix and buffer_name.startswith(prefix):
                 return True
 
     return False
@@ -486,6 +526,18 @@ def ignored_nick_prefixes():
         yield prefix
 
 
+def notify_on_messages_that_match(message):
+    """Should we send a notification for the given message, provided it matches
+    any of the requested patterns?
+    """
+    message_patterns = split_option_value('notify_on_messages_that_match')
+    for pattern in message_patterns:
+        if re.search(pattern, message):
+            return True
+
+    return False
+
+
 def buffers_to_notify_on_all_messages():
     """A generator of buffer names in which the user wants to be notified for
     all messages.
@@ -494,13 +546,50 @@ def buffers_to_notify_on_all_messages():
         yield buffer
 
 
+def buffer_patterns_to_notify_on_all_messages():
+    """A generator of buffer-name patterns in which the user wants to be
+    notifier for all messages.
+    """
+    for pattern in split_option_value('notify_on_all_messages_in_buffers_that_match'):
+        yield pattern
+
+
 def notify_on_all_messages_in_buffer(buffer):
     """Does the user want to be notified for all messages in the given buffer?
     """
     buffer_names = names_for_buffer(buffer)
+
+    # Option notify_on_all_messages_in_buffers:
     for buf in buffers_to_notify_on_all_messages():
         if buf in buffer_names:
             return True
+
+    # Option notify_on_all_messages_in_buffers_that_match:
+    for pattern in buffer_patterns_to_notify_on_all_messages():
+        for buf in buffer_names:
+            if re.search(pattern, buf):
+                return True
+
+    return False
+
+
+def buffer_patterns_to_hide_messages():
+    """A generator of buffer-name patterns in which the user wants to hide
+    messages.
+    """
+    for pattern in split_option_value('hide_messages_in_buffers_that_match'):
+        yield pattern
+
+
+def hide_message_in_buffer(buffer):
+    """Should messages in the given buffer be hidden?"""
+    buffer_names = names_for_buffer(buffer)
+
+    for pattern in buffer_patterns_to_hide_messages():
+        for buf in buffer_names:
+            if re.search(pattern, buf):
+                return True
+
     return False
 
 
@@ -513,6 +602,9 @@ def prepare_notification(buffer, nick, message):
                   weechat.buffer_get_string(buffer, 'name'))
         message = nick + nick_separator() + message
 
+    if hide_message_in_buffer(buffer):
+        message = ''
+
     max_length = int(weechat.config_get_plugin('max_length'))
     if max_length > 0:
         ellipsis = weechat.config_get_plugin('ellipsis')
@@ -524,11 +616,12 @@ def prepare_notification(buffer, nick, message):
     message = escape_slashes(message)
 
     icon = weechat.config_get_plugin('icon')
+    desktop_entry = weechat.config_get_plugin('desktop_entry')
     timeout = weechat.config_get_plugin('timeout')
     transient = should_notifications_be_transient()
     urgency = weechat.config_get_plugin('urgency')
 
-    return Notification(source, message, icon, timeout, transient, urgency)
+    return Notification(source, message, icon, desktop_entry, timeout, transient, urgency)
 
 
 def should_notifications_be_transient():
@@ -609,12 +702,17 @@ def send_notification(notification):
     notify_cmd = ['notify-send', '--app-name', 'weechat']
     if notification.icon:
         notify_cmd += ['--icon', notification.icon]
+    if notification.desktop_entry:
+        notify_cmd += ['--hint', 'string:desktop-entry:{}'.format(notification.desktop_entry)]
     if notification.timeout:
         notify_cmd += ['--expire-time', str(notification.timeout)]
     if notification.transient:
         notify_cmd += ['--hint', 'int:transient:1']
     if notification.urgency:
         notify_cmd += ['--urgency', notification.urgency]
+    # The "im.received" category means "A received instant message
+    # notification".
+    notify_cmd += ['--category', 'im.received']
     # We need to add '--' before the source and message to ensure that
     # notify-send considers the remaining parameters as the source and the
     # message. This prevents errors when a source or message starts with '--'.
@@ -627,16 +725,24 @@ def send_notification(notification):
     ]
 
     # Prevent notify-send from messing up the WeeChat screen when occasionally
-    # emitting assertion messages by redirecting the output to /dev/null (you
+    # emitting assertion messages by redirecting the output to /dev/null (users
     # would need to run /redraw to fix the screen).
     # In Python < 3.3, there is no subprocess.DEVNULL, so we have to use a
     # workaround.
     with open(os.devnull, 'wb') as devnull:
-        subprocess.check_call(
-            notify_cmd,
-            stderr=subprocess.STDOUT,
-            stdout=devnull,
-        )
+        try:
+            subprocess.check_call(
+                notify_cmd,
+                stderr=subprocess.STDOUT,
+                stdout=devnull,
+            )
+        except Exception as ex:
+            error_message = '{} (reason: {!r}). {}'.format(
+                'Failed to send the notification via notify-send',
+                '{}: {}'.format(ex.__class__.__name__, ex),
+                'Ensure that you have notify-send installed in your system.',
+            )
+            print(error_message, file=sys.stderr)
 
 
 if __name__ == '__main__':

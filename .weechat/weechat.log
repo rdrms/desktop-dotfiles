@@ -1,23 +1,26 @@
-[2018-08-31 13:00:18] WeeChat 2.1 (compiled on May 16 2018 08:02:10)
-[2018-08-31 13:00:18] Reading configuration file sec.conf
-[2018-08-31 13:00:18] Reading configuration file weechat.conf
-[2018-08-31 13:00:18] Reading configuration file plugins.conf
-[2018-08-31 13:00:18] Reading configuration file charset.conf
-[2018-08-31 13:00:18] Reading configuration file logger.conf
-[2018-08-31 13:00:18] Reading configuration file exec.conf
-[2018-08-31 13:00:18] Reading configuration file trigger.conf
-[2018-08-31 13:00:18] Reading configuration file aspell.conf
-[2018-08-31 13:00:18] Reading configuration file alias.conf
-[2018-08-31 13:00:18] Reading configuration file buflist.conf
-[2018-08-31 13:00:18] Reading configuration file fifo.conf
-[2018-08-31 13:00:18] Reading configuration file xfer.conf
-[2018-08-31 13:00:18] Reading configuration file irc.conf
-[2018-08-31 13:00:18] Reading configuration file relay.conf
-[2018-08-31 13:00:18] Reading configuration file python.conf
-[2018-08-31 13:00:18] Reading configuration file perl.conf
-[2018-08-31 13:00:18] Reading configuration file ruby.conf
-[2018-08-31 13:00:18] Reading configuration file script.conf
-[2018-08-31 13:00:18] Reading configuration file fset.conf
-[2018-08-31 13:00:18] irc: connecting to server home/8080 (SSL)...
-[2018-08-31 13:00:18] irc: connecting to server home/8080 (SSL)...
-[2018-08-31 13:00:18] irc: connecting to server home/8080 (SSL)...
+[2021-12-30 18:59:55] WeeChat 3.4 (compiled on Dec 20 2021 09:35:28)
+[2021-12-30 18:59:55] Reading configuration file sec.conf
+[2021-12-30 18:59:55] Reading configuration file weechat.conf
+[2021-12-30 18:59:55] Reading configuration file plugins.conf
+[2021-12-30 18:59:55] Reading configuration file charset.conf
+[2021-12-30 18:59:55] Reading configuration file logger.conf
+[2021-12-30 18:59:55] Reading configuration file exec.conf
+[2021-12-30 18:59:55] Reading configuration file trigger.conf
+[2021-12-30 18:59:55] Reading configuration file alias.conf
+[2021-12-30 18:59:55] Reading configuration file buflist.conf
+[2021-12-30 18:59:55] Reading configuration file fifo.conf
+[2021-12-30 18:59:55] Reading configuration file typing.conf
+[2021-12-30 18:59:55] Reading configuration file xfer.conf
+[2021-12-30 18:59:55] Reading configuration file irc.conf
+[2021-12-30 18:59:55] Reading configuration file relay.conf
+[2021-12-30 18:59:55] Reading configuration file guile.conf
+[2021-12-30 18:59:55] Reading configuration file lua.conf
+[2021-12-30 18:59:55] Reading configuration file perl.conf
+[2021-12-30 18:59:55] Reading configuration file iset.conf
+[2021-12-30 18:59:55] Reading configuration file python.conf
+[2021-12-30 18:59:55] Reading configuration file script.conf
+[2021-12-30 18:59:55] Reading configuration file fset.conf
+[2021-12-30 18:59:55] irc: connecting to server home/8080 (SSL)...
+[2021-12-30 18:59:55] irc: connecting to server home/8080 (SSL)...
+[2021-12-30 18:59:55] irc: connecting to server home/8080 (SSL)...
+[2021-12-30 18:59:55] irc: connecting to server home/8080 (SSL)...

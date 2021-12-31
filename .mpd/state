@@ -1,156 +1,166 @@
-sw_volume: 100
-audio_device_state:1:Azusa Pulse Server
-state: play
-current: 84
-time: 3.970000
+sw_volume: 82
+audio_device_state:1:My Pulse Output
+state: pause
+current: 2
+time: 21.009000
 random: 0
 repeat: 0
 single: 0
 consume: 0
-crossfade: 0
+crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:The Arrogant Sons Of Bitches/(2003) Sprout ASOB Tag Team Set MAR03/02 - Life Cycle.mp3
-1:Rosa/I, Mississippi, You/12 Wiskey.mp3
-2:B.A. Johnston/B.A. Johnston - 2012 - Hi Dudes! [v0]/03 - Dirtbag Beach.mp3
-3:Nirvana/Nirvana - 2002 - Nirvana/Nirvana - 13 - All Apologies.mp3
-4:D.O.A%2E/D.O.A - Win The Battle 192kbps/08 D.O.A - La Grange.mp3
-5:Sloan/Never Hear The End Of It/19 Love Is All Around.mp3
-6:Replacements Discography/XB04 Here Comes A Regular.mp3
-7:The Smashing Pumpkins/Machina II_ The Friends and Enemies of M/07 Lucky 13.mp3
-8:The Ruby Plumes/The Ruby Plumes Will Never Change/The Ruby Plumes - The Ruby Plumes Will Never Change - 01 Sensational.mp3
-9:The Smashing Pumpkins/Siamese Dream/07 Soma.mp3
-10:Drake/Drake - Take Care (2011) [V0]/16. Practice.mp3
-11:Taj Mahal & Toumani Diabaté - 1999 - Kulanjan/Taj Mahal & Toumani Diabaté-1999-Kulanjan-08-K'an Ben.mp3
-12:Mad Caddies/Mad Caddies - 2003 - Just One More - V0/03 - Mad Caddies - Villains.mp3
-13:Five Iron Frenzy/Five Iron Frenzy - The End is Here (V0)/CD 1 - The End is Near (V0)/07 - Wizard Needs Food, Badly.mp3
-14:Oasis/Oasis - Heathen Chemistry [2002]/09  Oasis - She Is Love.mp3
-15:vSpy vSpy/vSpy vSpy - Trash The Planet (320)/07 - Trash The Planet.mp3
-16:Andrew Jackson Jihad/[2011] Knife Man/16 - Big Bird.mp3
-17:Television and Tom Verlaine/Tom Verlaine 1990 The Wonder 07 Storm.mp3
-18:Pavement/Terror Twilight/03 You Are A Light.mp3
-19:The Beatles Collection - 24 Full Albums/The Beatles - Sgt Peppers Lonety Hearts/01 - Sgt Pepper's Lonely Hearts Club Band.mp3
-20:Tokyo Ska Orchestra/1994 - Fantasia/14 Hi-Speed Bus.mp3
-21:Replacements Discography/G01 I.O.U..mp3
-22:Nirvana/Nirvana - 1996 - From the Muddy Banks of the Whiskah/Nirvana - 11 - Heart-Shaped Box.mp3
-23:Nico Vega/Nico_Vega-Lead_To_Light-2014-MTD/01-nico_vega-no_home.mp3
-24:The Libertines/Self Titled/10 what katie did.mp3
-25:The Doors/The Doors (2007-03-27) Morrison Hotel/6-Ship of Fools.mp3
-26:The Fall/The Fall - Levitate - 1997 V0/12.The Fall-I Come and Stand at Your Door.mp3
-27:Babyshambles/The Blinding/03 I Wish.mp3
-28:The Fall/Psykick Dance Hall (2)/01 Fiery Jack.mp3
-29:Defiance, Ohio/The Fear, the Fear, the Fear/04 The Condition.mp3
-30:The Fall/Unknown Album/06_the_fall_-_janet,_johnny_+_james.mp3
-31:Fevertech/Throw Down.mp3
-32:Rage Against The Machine/1996 - Evil Empire/02 - Bulls On Parade.mp3
-33:Paddingtons/No Mundane Options/09-the_paddingtons-stand_down.mp3
-34:The Fall/The Complete Peel Sessions 1978 - 2004 (/10 2 x 4.mp3
-35:Streetlight Manifesto/Everything Goes Numb/07 Failing, Flailing.mp3
-36:The Tragically Hip/The Tragically Hip - We Are The Same/01. The Tragically Hip - Morning Moon.mp3
-37:Chatmonchy/表情_Coupling Collection_v0/表情 _Coupling Collection_v0 cd2/2-04 恋愛スピリッツ.mp3
-38:The Libertines/Up The Bracket/12 I Get Along.mp3
-39:The Tragically Hip/The Tragically Hip - Now For Plan A/07. The Modern Spirit - The Tragically Hip.mp3
-40:NOFX/NOFX - The Greatest Songs Ever Written (By Us)/04. The Separation Of Church And Skate.mp3
-41:The Fall/The Fall - Sub-Lingual Tablet (2015) - CD V0/09 Snazzy.mp3
-42:Nirvana/Nirvana - The Very Best Of/08_-In_Bloom.mp3
-43:Bomb the Music Industry!/To Leave or Die in Long Island/05 Dude, Get With The Program.mp3
-44:Bomb the Music Industry!/Album Minus Band/12 Future 86.mp3
-45:Nico Vega/Nico Vega - Fury Oh Fury (V0)/06 Lead To Light.mp3
-46:Myelin Sheaths/Various Artists - Yeti #8 (V0)/02 Lovely One [Demo].mp3
-47:Slackers/The Nods - 1999 - Before There Were Slackers, There Were... (V0)/13 - Sister Sister .mp3
-48:The Doors/The Doors (2007-03-27) Morrison Hotel/2-Waiting for the Sun.mp3
-49:O.C. Supertones/The OC Supertones - Chase the Sun (V0)/06 - Grounded.mp3
-50:Chima/Chima - Soranone (mp3)/01. PUSH ME.mp3
-51:Sakura Fujiwara/Fujiwara Sakura - full Bloom/08.mp3
-52:Nico Vega/Nico_Vega-Lead_To_Light-2014-MTD/08-nico_vega-im_on_fire.mp3
-53:Rage Against The Machine/2002 - 30 For A Revolution/2002-CD2/15 - Microphone Fiend.mp3
-54:Various Artists/SKA ME FOREVER [V0]/[DISC 1] - SKA ME FOREVER/01 ペドラーズ 2014.mp3
-55:Sublime/1994 - Sublime - Robbin' The Hood (Skunk)[320]/09 - Saw Red.mp3
-56:Antsy Pants/Antsy Pants/02 Henry Kelly.mp3
-57:The Bouncing Souls/The Bouncing Souls - Bouncing Souls/Bouncing Souls -14- East Coast! Fuck You!.mp3
-58:Titas/TitÃ£s - 2014 - Nheengatu (V0)/09 - Eu Me Sinto Bem.mp3
-59:The Fall/The Marshall Suite/09 - Early Life of Crying Marshall.mp3
-60:Our Lady Peace/Our Lady Peace~Burn Burn (Deluxe Edition) [V0]-2009/02 - Dreamland.mp3
-61:Your Heart Breaks/13 The First Show.mp3
-62:Sex Pistols/2002 - Boxset/CD3/cd3-14-sex_pistols-did_you_no_wrong-pyt.mp3
-63:Various Artists/Yeezer/The Girl Got BLKKK.mp3
-64:Television and Tom Verlaine/Tom Verlaine 1992 Warm and Cool 14 Lore.mp3
-65:Sloan/Pretty Together/10 Who You Talkin' To.mp3
-66:Streetlight Manifesto/99 Songs of Revolution Disc 1/04 Skyscraper.mp3
-67:Reel Big Fish/We're Not Happy 'Til You're Not Happy/14 Your Guts (I Hate 'Em).mp3
-68:Pavement/Brighten the Corners_ Nicene Creedence E/09 We Are Underused.mp3
-69:Sex Pistols/2002 - Boxset/CD2/cd2-06-sex_pistols-(im_not_your)_steppin_ston.-pyt.mp3
-70:Various Artists/Shake It Up Volume 1/05 Ice Fishing.mp3
-71:The Fall/Ersatz G B/09 - I've Seen Them Come.mp3
-72:Tokyo Ska Orchestra/Tokyo Ska Paradise Orchestra - Skapara Toujou (1990) (V0)/03. Monster Rock.mp3
-73:Titas/TitÃ£s-TelevisÃ£o-CD-FLAC-1985-BHQM/02 InsensÃ­vel.flac
-74:The Specials/The Specials - 1979 - Specials [LAME MP3 (VBR-new quality 0.0)]/06 Concrete Jungle.mp3
-75:Pavement/Crooked Rain, Crooked Rain_ L.A.'s Deser/04 Cut Your Hair.mp3
-76:The Smashing Pumpkins/Pisces Iscariot/08 Obscured.mp3
-77:Sloan/One Chord to Another/05 G Turns to D.mp3
-78:Tokyo Ska Orchestra/Tokyo Ska Paradise Orchestra - World Famous [V0]/11 - Tokyo Ska Paradise Orchestra - I Beeped When I Shoulda Bopped ''anta ni muchu''.mp3
-79:Beastie Boys/Check Your Head/05 Lighten Up.mp3
-80:Fevertech/09 Breakdown (A State of Life).mp3
-81:Arnaldo Antunes/Arnaldo Antunes - Ao Vivo No Estúdio (2007) - V0/12 Quarto de Dormir.mp3
-82:The Beatles Collection - 24 Full Albums/The Beatles - 1/11_The Beatles_Yesterday.mp3
-83:The Tragically Hip/The Tragically Hip - Live Between Us/11. Tragically Hip - Scared.mp3
-84:Titas/Titãs - Titanomaquia/10 Felizes São Os Peixes.flac
-85:Drake/Drake-Views-2016-CR/13-drake-grammys_(feat._future).mp3
-86:Replacements Discography/XB28 Wake Up.mp3
-87:Dropkick Murphys/Dropkick Murphys - Sing Loud, Sing Proud/Dropkick Murphys - 09 - The New American Way.mp3
-88:Taylor Swift/Taylor Swift - Fearless/04 - Hey Stephen.mp3
-89:Slackers/The Slackers {2003} Close My Eyes V0/07 - Mommy.mp3
-90:Johnny Hobo and the Freight Trains/anarchy means i hate you/09 punkrockanarchy.mp3
-91:Sloan/Hardcore Covers/05 Retrospect.mp3
-92:Nirvana/Nirvana - 1994 - Unplugged in New York (1994)/Nirvana - 03 - Jesus Doesn't Want Me For A Sunbeam.mp3
-93:Puffy/(2002.02.20) The Hit Parade - PUFFY/07 青い涙.mp3
-94:Jock Jams collection/Jock Jams Volume 4/Backstreet Boys - 09 - Everybody (Backstreet's Back).mp3
-95:The Thermals Discography/The Thermals - The Body, The Blood, The Machine (2006)/03 - An Ear For Baby.mp3
-96:Goldfinger/Stomping Ground/03 Carry On.mp3
-97:The Beatles Collection - 24 Full Albums/The Beatles - Past Masters 1/04 - She Loves You.mp3
-98:D.O.A%2E/1984 - Bloodied But Unbowed/06 - Slumlord.mp3
-99:The Tragically Hip/The Tragically Hip - In Between Evolution/08. Tragically Hip - As Makeshift As We Are.mp3
-100:Five Iron Frenzy/Five Iron Frenzy - The End is Here (V0)/CD 1 - The End is Near (V0)/02 - At Least I'm Not Like All Those Other Old Guys.mp3
-101:Nirvana/Nirvana - Singles Box -  Come As You Are [Single]/01-Come As You Are [LP Version]-Come As You Are [Single]-Nirvana.mp3
-102:Chatmonchy/チャットモンチー - 変身 (2012) [V0]/07 初日の出.mp3
-103:Andrew Jackson Jihad/[2011] Knife Man/07 - Hate, Rain On Me.mp3
-104:Neutral Milk Hotel/In the Aeroplane Over the Sea/11 Two-Headed Boy Part 2.mp3
-105:NOFX/NOFX - Liberal Animation/02. Freedumb.mp3
-106:Asking for it/Live And Let D.I.Y. EP (2007).Y/07 Sometimes.mp3
-107:The Fall/The Fall - Levitate - 1997 V0/03.The Fall-Hurricane Edward.mp3
-108:The Bouncing Souls/The Bouncing Souls (2001) How I Spent My Summer Vacation/03-True Believers.mp3
-109:The Tragically Hip/The Tragically Hip - World Container/03. The Tragically Hip - In View.mp3
-110:NOFX/NOFX - 45 Or 46 Songs That Weren't Good Enough To Go On Our Other Records/Disc 1/09. The Plan.mp3
-111:The Beatles Collection - 24 Full Albums/The Beatles - The Capitol Albums Volume 2/309-The_Beatles-Ticket_to_Ride.mp3
-112:The Tragically Hip/The Tragically Hip - Music @ Work/01. The Tragically Hip - My Music At Work.mp3
-113:Legião Urbana/Legião Urbana - Dois (1986)/07 Metrópole.mp3
-114:D.O.A%2E/1981 - Hardcore 81/03 - Slumlord.mp3
-115:The Beatles Collection - 24 Full Albums/The Beatles - With The Beatles/05 - Little Child.mp3
-116:The Fall/The Complete Peel Sessions 1978 - 2004 (/10 Idiot Joy Showland.mp3
-117:Oasis/Oasis - Definitely Maybe [1994]/09  Oasis - Digsy's Dinner.mp3
-118:Sex Pistols/2002 - Boxset/CD3/cd3-18-sex_pistols-flowers._2-pyt.mp3
-119:D.O.A%2E/1989 - Last Scream Of The Missing Neighbours/03 - Wish I Was In El Salvador.mp3
-120:Rage Against The Machine/1996 - Live & Rare/04 Take the Power Back (Live).mp3
-121:Pavement/Brighten the Corners_ Nicene Creedence E/14 Beautiful as a Butterfly.mp3
-122:The Smashing Pumpkins/Mellon Collie And The Infinite Sadness (/Disk 1/03 Jellybelly.mp3
-123:Guitar Vader/Guitar Vader - Dawn/01 - SATISFY.mp3
-124:The Clash/London Calling/09 Clampdown.MP3
-125:Kanye West/Kanye West - Graduation (2007)/08 - Drunk and Hot Girls (feat. Mos Def).mp3
-126:Taylor Swift/Taylor Swift - Fearless/09 - You're Not Sorry.mp3
-127:The Beatles Collection - 24 Full Albums/The Beatles - CD Singles Collection/1963 - The Beatles - Please Please Me/02. Ask Me Why.mp3
-128:Andrew Jackson Jihad/[2010] Home Style (Recordings)/andrew jackson jihad - 01 - skipping stone.mp3
-129:Goldfinger/Stomping Ground/06 Counting The Days.mp3
-130:Bomb the Music Industry!/Goodbye Cool World/11 Fuck The Fans.mp3
-131:Drake/Drake-Views-2016-CR/08-drake-with_you_(feat._partynextdoor).mp3
-132:The Fall/The Complete Peel Sessions 1978 - 2004 (/01 Futures And Pasts.mp3
-133:Pavement/Brighten the Corners_ Nicene Creedence E/05 And Then (The Hexx).mp3
-134:The Clash/Sandinista/09 The Crooked Beat.MP3
-135:I Like Japanese Hardcore/I Like Japanese Hardcore/09 Mutton_Chops.mp3
-136:Pete Doherty/Peter Doherty Graceland wastelands/Peter Doherty Sweet By And By Grace - Wastelands.mp3
-137:Beastie Boys/The Sounds of Science Disc 2/12 Get It Together.mp3
-138:Slackers/2008 - Self Medication/03 Don't Forget The Streets.mp3
-139:The Beatles Collection - 24 Full Albums/The Beatles - A Hard Days Night/07 - Can't Buy Me Love.mp3
-140:The Bouncing Souls/The Bouncing Souls (2001) How I Spent My Summer Vacation/10-Streetlight Serenade (To No One).mp3
-141:Reel Big Fish/Why Do They Rock So Hard/07 I'm Cool.mp3
+0:Babyshambles/Royalty Songs/03 32nd of December.mp3
+1:Babyshambles/Unknown Album/32nd Of December (Acoustic).mp3
+2:Guitar Vader/Guitar Vader - Dawn/08 - Cutting evil smile diablo remix.mp3
+3:the pillows/the pillows - [2018 09 05] - FooL on CooL generation - MP3 (V0)/[2018] FooL on CooL generation/07. Freebee Honey (Fool on cool version).mp3
+4:Radiohead/The Bends/08 My Iron Lung.mp3
+5:Replacements Discography/H02 Back To Back.mp3
+6:The Beatles Collection - 24 Full Albums/The Beatles - Let It Be/02-Dig a Pony.mp3
+7:Less Than Jake/[2000] Borders And Boundaries/06 - Mr Chevy Celebrity.mp3
+8:Our Lady Peace/Our Lady Peace - Happiness...Is Not a Fish/01 One Man Army.mp3
+9:The Beatles Collection - 24 Full Albums/The Beatles - 1967 - 1970 (BLUE)/Beatles - 1967-1970 (Blue Box) Disk 1/12 - Lady Madonna.mp3
+10:Smashing Pumpkins/Teargarden By Kaleidyscope, Vol. 2_ The/01 The Fellowship.mp3
+11:The Kinks/Kinks - Lola Versus Powerman and the Moneygoround, Part One [1989 Castle Classics]/12 Powerman.mp3
+12:Sublime/Greatest Hits/08 Badfish.mp3
+13:Our Lady Peace/Spiritual Machines/06 - Middle Of Yesterday.mp3
+14:Generation X/Generation X - 1978 - Generation X [V0]/10 Too Personal.mp3
+15:The Arrogant Sons Of Bitches/The Arrogant Sons of Bitches/03 - so let's go nowhere.mp3
+16:amiinA/amiinA - Avalon/amiinA - Atlas.mp3
+17:Midori/Midori - Aratamemashite, hajimemashite, Midori desu/08.mp3
+18:The Tragically Hip/The Tragically Hip - Live Between Us/14. Tragically Hip - The Wherewithal.mp3
+19:Various Artists/Japan Idol File 2/4-02 夏の魔法.mp3
+20:The Tragically Hip/The Tragically Hip - Road Apples/10. The Tragically Hip - On The Verge.mp3
+21:The Fall/The Fall - Code- Selfish (1992) - FLAC/11 - Married, 2 Kids.flac
+22:Arnaldo Antunes/Arnaldo Antunes - Qualquer/11 - O Que Você Quer Saber De Verdade.mp3
+23:The Kinks/Kinks - Lola Versus Powerman and the Moneygoround, Part One [1989 Castle Classics]/10 Rats.mp3
+24:Pavement/Wowee Zowee_ Sordid Sentinels Edition [D/03 Fight This Generation.mp3
+25:Various Artists/Japan Idol File 2/6-08 H・M・J!.mp3
+26:Less Than Jake/[1995] Pezcore/02 - My Very Own Flag.mp3
+27:The Monochrome Set/The Monochrome Set - Cosmonaut (2016) [FLAC]/07. Fêlé.mp3
+28:The Arrogant Sons Of Bitches/Dealing With Having The Stage Presence Of A Mid-1980s Emo Band/The Guy From Subway _live_.mp3
+29:The Tragically Hip/The Tragically Hip - Road Apples/02. The Tragically Hip - Twist My Arm.mp3
+30:Pete Doherty/Peter Doherty & The Puta Madres/02 - Who's Been Having You Over.mp3
+31:DJ Rectangle/DJ Rectangle - The Lightning Fist - (1997) - [FLAC]/02 - The LOX - Money, Power & Respect.mp3
+32:Puffy/(2009.03.25) PUFFY AMIYUMI X PUFFY - PUFFY/03 Basket Case.m4a
+33:Tokyo Ska Orchestra/[2012-11-14] - Yokubu/06 Rushin'.mp3
+34:The Hippos/The Hippos - Forget the World (1997) (V0)/09 So Lonely.mp3
+35:Reel Big Fish/We're Not Happy 'Til You're Not Happy/10 The Joke's On Me.mp3
+36:The Bouncing Souls/The_Bouncing_Souls-Comet-2012-pLAN9/10-the_bouncing_souls-ship_in_a_bottle.mp3
+37:Chatmonchy/Chatmonchy - Miminari [v0]/10 終わりなきBGM.mp3
+38:ORESKABAND/OreSkaBand - 2007 - Wao!!/12 - Knife to Fork.mp3
+39:The Doors/The Doors - The Doors (DCC Gold)/02 - Soul Kitchen.mp3
+40:Puffy/[1998.04.01] Jet CD/12 - 渚にまつわるエトセトラ.mp3
+41:The Tragically Hip/The Tragically Hip - In Between Evolution/03. Tragically Hip - Gus- The Polar Bear From Central Park.mp3
+42:Chance the Rapper/Chance the Rapper - 10 Day (2019) - WEB V0/10. Juke Juke.mp3
+43:Five Iron Frenzy/Five Iron Frenzy - All the Hype That Money Can Buy (MP3 V0) [2000]/11. I Still Like Larry.mp3
+44:Dead Kennedys/Dead Kennedys - Bedtime for Democracy (V0)/10 Macho Insecurity.mp3
+45:The Oral Cigarettes/[2017] -  UNOFFICIAL/08. Shala La.mp3
+46:necone conecone/2015.06.17 ねこね、こねこね。-  たのしい、わくわく、する音楽。/3. タイヤの恐竜.m4a
+47:Television and Tom Verlaine/Television 1978 Adventure 11 - Glory (early version).mp3
+48:The Beatles Collection - 24 Full Albums/The Beatles - CD Singles Collection/1967 - The Beatles - Hello Goodbye/02. I Am The Walrus.mp3
+49:Mighty Mighty Bosstones/The Mighty Mighty Bosstones - 2000 - Pay Attention/13 - Bad News And Bad Breaks.mp3
+50:EeL/Eel - (2010) Kung-Fu People Etcetera/people people (from people people).mp3
+51:D-Styles/D-Styles - Phantazmagorea/13 - D-Styles - Know Your Dope Fiend.mp3
+52:Babyshambles/Killamangiro EP/02 The Man Who Came to Stay.mp3
+53:The Beatles Collection - 24 Full Albums/The Beatles - Let It Be/10-The Long and Winding.mp3
+54:Runa Miyoshida/【アルバム】 美吉田月(Runa Miyoshida) - Ska Flavor #1/1. 全力少年.mp3
+55:Capsule/capsule - S.F. sound furniture (2004) [V0]2/07 - Kabe ni Tsukuiteiru Switch.mp3
+56:The Fall/The Infotainment Scan (Castle Music)/31 Lost In Music (Mix 14).mp3
+57:The Beatles Collection - 24 Full Albums/The Beatles - Please Please Me/12 - A Taste Of Honey.mp3
+58:Kanye West/Kanye West - My Beautiful Dark Twisted Fantasy (2010) [V0]/09 Kanye West - Runaway [feat. Pusha T].mp3
+59:Runa Miyoshida/【アルバム】 美吉田月(Runa Miyoshida) - Ska Flavor #1/4. Make-up Shadow.mp3
+60:Dropkick Murphys/Dropkick Murphys - The Early Years/Dropkick Murphys - 04 - Take It Or Leave It.mp3
+61:Slackers/The Slackers - The Slackers & Friends V0/08. The Slackers - Two-Faced Man (with The Congos).mp3
+62:Sublime/1994 - Sublime - Robbin' The Hood (Skunk)[320]/08 - Q-Ball.mp3
+63:The Zutons/The Zutons - You Can Do Anything (2008)(Deltasonic Records 2002 LTD, DLTCD078)[CD FLAC]/01 Harder And Harder.mp3
+64:K-On!!/K-ON!! Original Soundtrack Vol.2/17 - U&I ~Yuuhi no Kirei Naano Oka de~.mp3
+65:Kanye West/Kanye West - My Beautiful Dark Twisted Fantasy (2010) [V0]/07 Kanye West - So Appalled [feat. Jay-Z, Pusha T, CyHi Da Prynce, Swizz Beatz & The RZA].mp3
+66:The Doors/The Doors - Strange Days MP3 V0/(09) - I Can't See Your Face In My Mind.mp3
+67:The Smashing Pumpkins/The Aeroplane Flies High - Singles Box S/01 Zero.mp3
+68:The Coral/Coral - The Invisible Invasion [Deltasonic-Columbia Records]/The Coral - The Invisible Invasion - 02 - Cripples Crown.mp3
+69:Dropkick Murphys/Dropkick Murphys & The Business - Release Mob Mentality/Dropkick Murphys & The Business - 03 - Informer.mp3
+70:ASIAN KUNG-FU GENERATION/ASIAN KUNG-FU GENERATION - AKG TRIBUTE (2017) [MP3 - 320]/07 ブラックアウト.mp3
+71:Puffy/(2007.09.26) honeycreeper - PUFFY/11 complaint.mp3
+72:Babyshambles/Delivery VLS/02 torn.mp3
+73:Slackers/The Slackers - 2010 - New Year's Day [mp3 v0]/New Years Day.mp3
+74:Hitomi Tohyama/当山ひとみ - Sexy Robot (1983.10.21)/10 Be Mine.mp3
+75:Jock Jams collection/Jock Jams Volume 3/ESPN - 12 - The Chant.mp3
+76:Sloan/Parallel Play/10 Down In The Basement.mp3
+77:The Kinks/1485 The Kinks - Kinda Kinks V0 16/03. Nothin' In The World Can Stop Me Worryin' 'Bout That Girl.mp3
+78:ASIAN KUNG-FU GENERATION/ASIAN KUNG-FU GENERATION - Sol-fa (2016) [Google Play Music MP3 320]/05 - My World.mp3
+79:Dead Kennedys/Fresh Fruit for Rotting Vegetables/0102 - Forward to Death.mp3
+80:Television and Tom Verlaine/Television 1977 Marquee moon 04 - Marquee Moon.mp3
+81:Big D and the Kids Table/For The Damned, The Dumb & The Delirious/13 Not Our Fault.mp3
+82:The Cribs/24-7 Rock Star Shit/01 - Give Good Time.mp3
+83:Yukari Fresh/Cityrama [2000;320]/13 Sweet Vocoderless Mouth.mp3
+84:Yukari Fresh/Yukari Fresh (2008) Instrumentally Flammable [FLAC] {ESCD084,XQAV-1084}/03 - Radio Active Man (Just Music).mp3
+85:Less Than Jake/[1995] Pezcore/11 - Jen Doesn't Like Me Anymore.mp3
+86:HALCALI/14 - Kin no Nami Sen no Nami/02 - Torikago no Yume.mp3
+87:The Kinks/Kinks - The Village Green Preservation Society [2005 Sanctuary Mono-Stereo Remaster]/09 - Village Green [Mono].mp3
+88:Kanye West/Kanye West - 808s & Heartbreak (2008) [MP3 V0]/05 - Love Lockdown.mp3
+89:The Kinks/Kinks - Lola Versus Powerman and the Moneygoround, Part One [1989 Castle Classics]/04 Get Back In Line.mp3
+90:The Cribs/The New Fellas (WEBB 082CDJ)/08 - The Cribs - Hello. Oh... .mp3
+91:Chance the Rapper/Chance the Rapper - The Big Day (2019) - WEB V0/21. Our House (Skit).mp3
+92:The Clash/Super Black Market Clash/20 Cool Confusion.MP3
+93:Maika Loubte/Maika Loubté - Lucid Dreaming (2021-10-20) [WEB FLAC]/1.01. I Was Swimming To The Shore And Heard This.mp3
+94:Slackers/The Slackers - The Slackers & Friends V0/02. The Slackers - Mash Down Babylon (with The Congos).mp3
+95:The Smashing Pumpkins/Mellon Collie And The Infinite Sadness (/Disk 2/07 Thru the Eyes of Ruby.mp3
+96:The Beatles Collection - 24 Full Albums/The Beatles - Past Masters 1/04 - She Loves You.mp3
+97:Bomb the Music Industry!/Goodbye Cool World/04 Side Projects are Never Successfu.mp3
+98:DJ Rectangle/DJ Rectangle - The Lightning Fist - (1997) - [FLAC]/20 - Gang Starr - Royalty.mp3
+99:the pillows/(2007.05.02) Wake up! Wake up! Wake up!/08 - Skinny Blues.mp3
+100:The Beatles Collection - 24 Full Albums/The Beatles - 1967 - 1970 (BLUE)/Beatles - 1967-1970 (Blue Box) Disk 2/11 - Octopus Garden.mp3
+101:Akino Arai/Akino Arai - VHmusic/01 - Blooming spring.mp3
+102:The Smashing Pumpkins/Machina II_ The Friends and Enemies of M/11 Heavy Metal Machine [Alternate Ta.mp3
+103:Sublime/1994 - Sublime - Robbin' The Hood (Skunk)[320]/14 - Raleigh Soliloguy Pt. II.mp3
+104:Nirvana/Nirvana - The Very Best Of/02_-Come_As_You_Are.mp3
+105:The Arrogant Sons Of Bitches/(2003) Sprout ASOB Tag Team Set MAR03/05 - Built to Fail, Motherfucker.mp3
+106:The Oral Cigarettes/ORAL CIGARETTES, The - 2019-08-28 - Before It's Too Late/2-09 透明な雨宿り.m4a
+107:The Fall/30 Years/19 Hey! Luciani.mp3
+108:The Kinks/The Kinks - Muswell Hillbillies [Reissue]/01 - 20th Century Man.mp3
+109:The Kinks/Low Budget/12 A Gallon Of Gas (U.S. Single E.mp3
+110:The Fall/The Fall - Middle Class Revolt 1994 V0/10 Hey! Student.mp3
+111:EeL/EeL - A Worm (224 CBR)/03 - Wonderful Ability.mp3
+112:Richard Hell and the Voidoids/Richard Hell and the Voidoids - Destiny Street - 1982/08 - Ignore That Door.mp3
+113:Maika Loubte/Maika Loubté - Lucid Dreaming (2021-10-20) [WEB FLAC]/1.10. Show Me How (Album edit).mp3
+114:the peggies/the peggies - PPEP1/01 JAM.mp3
+115:The Clash/Sandinista/09 The Crooked Beat.MP3
+116:the pillows/(2002) Another Morning, Another Pillows/CD1/08 - Ressa Hamusutaa no Yu-utsu.mp3
+117:Carl Barat and the Jackals/Carl Barat and the Jackals - Let It Reign/09 - The Gears.mp3
+118:Mighty Mighty Bosstones/The Mighty Mighty Bosstones - Devil's Night Out (1989) FLAC/05 - Haji.mp3
+119:The Coral/Coral - The Curse of Love [Skeleton Key Records]/The Coral - The Curse of Love - 11 - Nine Times the Colour Red.mp3
+120:The Fall/The Fall - Code- Selfish (1992) - FLAC/08 - Just Waiting.flac
+121:Chatmonchy/表情_Coupling Collection_v0/表情_Coupling Collection_v0 cd1/1-04 RPG.mp3
+122:The Tragically Hip/The Tragically Hip - World Container/05. The Tragically Hip - Luv (sic).mp3
+123:Five Iron Frenzy/Five Iron Frenzy - The End is Here (V0)/CD 1 - The End is Near (V0)/04 - New Years Eve.mp3
+124:Tokyo Ska Orchestra/Tokyo Ska Paradise Orchestra [2003] High Numbers/03-tokyo_ska_paradise_orchestra-a_quick_drunkard-rh.mp3
+125:Mariko Goto/Mariko Goto - m@u/04. Subarashi Sekai..mp3
+126:The Fall/Bend Sinister/11 Shoulder Pads 2.mp3
+127:Suchmos/2015.07.08 Suchmos - THE BAY/11. Pacific.m4a
+128:The Kinks/1489. The Kinks - Arthur Or The Decline & Fall Of The British Empire (2018) [16-48] (V0)/01. Victoria.mp3
+129:The Beatles Collection - 24 Full Albums/The Beatles - Stars Of '63/The Beatles - Live at Stockholm - 04 - Money (1963).mp3
+130:Nirvana/Nirvana - 1994 - Unplugged in New York (1994)/Nirvana - 05 - Pennyroyal Tea.mp3
+131:Curtis Windover/Pop Songs/Curtis Windover - Pop Songs - 04 The Weird Normal.mp3
+132:The White Stripes/Get Behind Me Satan/04 Forever for Her (Is Over for Me).mp3
+133:Beastie Boys/Check Your Head/13 Pow.mp3
+134:Reel Big Fish/Candy Coated Fury/1-10 Famous Last Words.mp3
+135:DJ Rectangle/DJ Rectangle - The Tables Have Turned (1999) (MP3 V0)/10 - DJ Rectangle - Interlude.mp3
+136:Less Than Jake/[1998] Hello Rockview/09 - Danny Says.mp3
+137:Midori/[2008.11.05] LIVE!!/06 - あんたは誰や.mp3
+138:The Clash/Live/07 Magnificent Seven(Reprise).MP3
+139:The Ruby Plumes/Prairie Sessions/The Ruby Plumes - Prairie Sessions - 03 We Want Your Man.mp3
+140:the peggies/2017-05-10 the peggies-ドリーミージャーニー/01.ドリーミージャーニー.mp3
+141:The Fall/The Complete Peel Sessions 1978 - 2004 (/06 Garden.mp3
+142:Babyshambles/Zane Lowe Radio 1 session 27_10_04/03 Do You Know Me.mp3
+143:Arnaldo Antunes/Arnaldo Antunes - Qualquer/06 - 2 Perdidos.mp3
+144:Curtis Windover/Feelings For Sale/Curtis Windover - Feelings For Sale - 03 Infinity Is.mp3
+145:Akino Arai/(2009.04.29) (album) Sora no Sphere/06 - mizu.mp3
+146:The Smashing Pumpkins/Gish/03 Rhinoceros.mp3
+147:HALCALI/HALCALI - TOKYO CONNECTION [MP3]/01 浪漫飛行.mp3
+148:Puffy/[1998.04.01] Jet CD/04 - 愛のしるし.mp3
+149:the pillows/the pillows - [2018 09 05] - FooL on CooL generation - MP3 (V0)/[2018] FooL on CooL generation/13. Thank you, my twilight (Fool on cool version).mp3
+150:the pillows/The Pillows - 1995 - Living Field/06 - Girlfriend.mp3
+151:HALCALI/[2004.11.24] Ongaku no Susume/11 伝説の2人.mp3
 playlist_end

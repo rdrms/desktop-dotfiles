@@ -1,519 +1,1062 @@
-2018-08-29 14:21:30		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
-2018-08-29 14:21:30		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
-2018-08-29 14:21:30		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
-2018-08-29 14:21:30		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
-2018-08-29 14:21:30		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 14:21:55		irc: server Rizon added
-2018-08-29 14:22:03		Option changed: irc.server.Rizon.ssl_verify = off  (default if null: on)
-2018-08-29 14:22:05		Options saved to sec.conf
-2018-08-29 14:22:05		Options saved to weechat.conf
-2018-08-29 14:22:05		Options saved to plugins.conf
-2018-08-29 14:22:05		Options saved to charset.conf
-2018-08-29 14:22:05		Options saved to logger.conf
-2018-08-29 14:22:05		Options saved to exec.conf
-2018-08-29 14:22:05		Options saved to trigger.conf
-2018-08-29 14:22:05		Options saved to aspell.conf
-2018-08-29 14:22:05		Options saved to alias.conf
-2018-08-29 14:22:05		Options saved to buflist.conf
-2018-08-29 14:22:05		Options saved to fifo.conf
-2018-08-29 14:22:05		Options saved to xfer.conf
-2018-08-29 14:22:05		Options saved to irc.conf
-2018-08-29 14:22:05		Options saved to relay.conf
-2018-08-29 14:22:05		Options saved to python.conf
-2018-08-29 14:22:05		Options saved to perl.conf
-2018-08-29 14:22:05		Options saved to ruby.conf
-2018-08-29 14:22:05		Options saved to script.conf
-2018-08-29 14:22:05		Options saved to fset.conf
-2018-08-29 14:22:06	=!=	You can not write text in this buffer
-2018-08-29 14:25:15		fifo: pipe closed
-2018-08-29 14:26:12		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 14:26:48		irc: server Freenode added
-2018-08-29 14:26:58		Option changed: irc.server.Freenode.ssl_verify = off  (default if null: on)
-2018-08-29 14:28:12		irc: server OFTC added
-2018-08-29 14:28:22		Option changed: irc.server.OFTC.ssl_verify = off  (default if null: on)
-2018-08-29 14:28:25		Options saved to sec.conf
-2018-08-29 14:28:25		Options saved to weechat.conf
-2018-08-29 14:28:25		Options saved to plugins.conf
-2018-08-29 14:28:25		Options saved to charset.conf
-2018-08-29 14:28:25		Options saved to logger.conf
-2018-08-29 14:28:25		Options saved to exec.conf
-2018-08-29 14:28:25		Options saved to trigger.conf
-2018-08-29 14:28:25		Options saved to aspell.conf
-2018-08-29 14:28:25		Options saved to alias.conf
-2018-08-29 14:28:25		Options saved to buflist.conf
-2018-08-29 14:28:25		Options saved to fifo.conf
-2018-08-29 14:28:25		Options saved to xfer.conf
-2018-08-29 14:28:25		Options saved to irc.conf
-2018-08-29 14:28:25		Options saved to relay.conf
-2018-08-29 14:28:25		Options saved to python.conf
-2018-08-29 14:28:25		Options saved to perl.conf
-2018-08-29 14:28:25		Options saved to ruby.conf
-2018-08-29 14:28:25		Options saved to script.conf
-2018-08-29 14:28:25		Options saved to fset.conf
-2018-08-29 14:31:41	=!=	Error: unknown command "/seper" (type /help for help)
-2018-08-29 14:31:49	=!=	Option "seperator" not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-29 14:34:07		Mouse enabled
-2018-08-29 14:35:10		Option changed: weechat.look.color_inactive_buffer = off  (default: on)
-2018-08-29 14:35:42	=!=	Error: unknown command "/seperator" (type /help for help)
-2018-08-29 14:35:45	=!=	Error: unknown command "/horizon" (type /help for help)
-2018-08-29 14:35:57	=!=	Error: unknown command "/separ" (type /help for help)
-2018-08-29 14:40:07		Option changed: weechat.bar.title.hidden = on  (default: off)
-2018-08-29 14:40:27		Option changed: weechat.bar.status.hidden = on  (default: off)
-2018-08-29 14:41:02		Option changed: weechat.bar.buflist.separator = off  (default: on)
-2018-08-29 14:41:12		Option changed: weechat.bar.nicklist.separator = off  (default: on)
-2018-08-29 14:43:36		Option changed: weechat.look.prefix_suffix = " "  (default: "|")
-2018-08-29 14:43:49		Option changed: weechat.look.quote_nick_suffix = " "  (default: ">")
-2018-08-29 14:47:22		Option changed: weechat.color.chat_delimiters = default  (default: green)
-2018-08-29 14:47:31		Option changed: weechat.color.chat_time_delimiters = default  (default: brown)
-2018-08-29 14:47:48		Option changed: weechat.color.chat_nick_colors = "default"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
-2018-08-29 14:48:41		Option changed: weechat.color.chat_prefix_buffer = default  (default: brown)
-2018-08-29 14:48:55		Option changed: weechat.color.chat_prefix_error = default  (default: yellow)
-2018-08-29 14:49:04		Option changed: weechat.color.chat_prefix_join = default  (default: lightgreen)
-2018-08-29 14:49:11		Option changed: weechat.color.chat_prefix_more = default  (default: lightmagenta)
-2018-08-29 14:49:20		Option changed: weechat.color.chat_prefix_network = default  (default: magenta)
-2018-08-29 14:49:28		Option changed: weechat.color.chat_prefix_quit = default  (default: lightred)
-2018-08-29 14:49:36		Option changed: weechat.color.chat_prefix_suffix = default  (default: green)
-2018-08-29 14:52:17	=!=	Error: unknown command "/shortcut" (type /help for help)
-2018-08-29 14:52:19		[core]
-2018-08-29 14:52:19		  away     cursor   history  mute     reload   unset    window 
-2018-08-29 14:52:19		  bar      debug    input    plugin   repeat   upgrade
-2018-08-29 14:52:19		  buffer   eval     key      print    save     uptime 
-2018-08-29 14:52:19		  color    filter   layout   proxy    secure   version
-2018-08-29 14:52:19		  command  help     mouse    quit     set      wait   
-2018-08-29 14:52:19		[charset]
-2018-08-29 14:52:19		  charset
-2018-08-29 14:52:19		[aspell]
-2018-08-29 14:52:19		  aspell
-2018-08-29 14:52:19		[exec]
-2018-08-29 14:52:19		  exec
-2018-08-29 14:52:19		[logger]
-2018-08-29 14:52:19		  logger
-2018-08-29 14:52:19		[alias]
-2018-08-29 14:52:19		  AAWAY    BEEP     CLOSE    KB       N        T        WC     
-2018-08-29 14:52:19		  alias    BYE      EXIT     LEAVE    Q        UB       WI     
-2018-08-29 14:52:19		  AME      C        IG       M        REDRAW   UMODE    WII    
-2018-08-29 14:52:19		  AMSG     CHAT     J        MSGBUF   SAY      V        WW     
-2018-08-29 14:52:19		  ANICK    CL       K        MUB      SIGNOFF  W      
-2018-08-29 14:52:19		[fifo]
-2018-08-29 14:52:19		  fifo
-2018-08-29 14:52:19		[buflist]
-2018-08-29 14:52:19		  buflist
-2018-08-29 14:52:19		[trigger]
-2018-08-29 14:52:19		  trigger
-2018-08-29 14:52:19		[xfer]
-2018-08-29 14:52:19		  me  xfer
-2018-08-29 14:52:19		[python]
-2018-08-29 14:52:19		  python
-2018-08-29 14:52:19		[perl]
-2018-08-29 14:52:19		  perl
-2018-08-29 14:52:19		[ruby]
-2018-08-29 14:52:19		  ruby
-2018-08-29 14:52:19		[fset]
-2018-08-29 14:52:19		  fset
-2018-08-29 14:52:19		[relay]
-2018-08-29 14:52:19		  relay
-2018-08-29 14:52:19		[irc]
-2018-08-29 14:52:19		  admin       halfop      motd        rehash      time      
-2018-08-29 14:52:19		  allchan     ignore      msg         remove      topic     
-2018-08-29 14:52:19		  allpv       info        names       restart     trace     
-2018-08-29 14:52:19		  allserv     invite      nick        sajoin      unban     
-2018-08-29 14:52:19		  ban         ison        notice      samode      unquiet   
-2018-08-29 14:52:19		  cap         join        notify      sanick      userhost  
-2018-08-29 14:52:19		  connect     kick        op          sapart      users     
-2018-08-29 14:52:19		  ctcp        kickban     oper        saquit      version   
-2018-08-29 14:52:19		  cycle       kill        part        server      voice     
-2018-08-29 14:52:19		  dcc         links       ping        service     wallchops 
-2018-08-29 14:52:19		  dehalfop    list        pong        servlist    wallops   
-2018-08-29 14:52:19		  deop        lusers      query       squery      who       
-2018-08-29 14:52:19		  devoice     map         quiet       squit       whois     
-2018-08-29 14:52:19		  die         me          quote       stats       whowas    
-2018-08-29 14:52:19		  disconnect  mode        reconnect   summon    
-2018-08-29 14:52:19		[script]
-2018-08-29 14:52:19		  script
-2018-08-29 14:54:16		Key "ctrl-B" unbound (context: "default")
-2018-08-29 14:54:16		New key binding (context "default"): ctrl-B => /bar toggle nicklist
-2018-08-29 14:54:33		New key binding (context "default"): ctrl-V => /bar toggle buflist
-2018-08-29 14:54:35		Options saved to sec.conf
-2018-08-29 14:54:35		Options saved to weechat.conf
-2018-08-29 14:54:35		Options saved to plugins.conf
-2018-08-29 14:54:35		Options saved to charset.conf
-2018-08-29 14:54:35		Options saved to logger.conf
-2018-08-29 14:54:35		Options saved to exec.conf
-2018-08-29 14:54:35		Options saved to trigger.conf
-2018-08-29 14:54:35		Options saved to aspell.conf
-2018-08-29 14:54:35		Options saved to alias.conf
-2018-08-29 14:54:35		Options saved to buflist.conf
-2018-08-29 14:54:35		Options saved to fifo.conf
-2018-08-29 14:54:35		Options saved to xfer.conf
-2018-08-29 14:54:35		Options saved to irc.conf
-2018-08-29 14:54:35		Options saved to relay.conf
-2018-08-29 14:54:35		Options saved to python.conf
-2018-08-29 14:54:35		Options saved to perl.conf
-2018-08-29 14:54:35		Options saved to ruby.conf
-2018-08-29 14:54:35		Options saved to script.conf
-2018-08-29 14:54:35		Options saved to fset.conf
-2018-08-29 14:55:06		script: downloading list of scripts...
-2018-08-29 14:55:07		script: 346 scripts for WeeChat 2.1
-2018-08-29 14:55:07		script: script "text_input" not found
-2018-08-29 14:58:45		Option created: plugins.var.python.text_item.rdr = "all|buffer_switch ${color:white,blue} ${buffer.short_name} ${color:blue,default}"
-2018-08-29 14:59:15		Option changed: weechat.bar.input.items = "rdr,+buffer+short+name,input_text"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
-2018-08-29 15:00:50		Option changed: buflist.format.number = ""  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-29 15:00:59		Option changed: buflist.format.number = "  "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
-2018-08-29 15:02:39		python: loading script "/home/ryan/.weechat/python/notify_send.py"
-2018-08-29 15:02:39		python: registered script "notify_send", version 0.8 (dev) (Sends highlight and message notifications through notify-send.)
-2018-08-29 15:15:58		Option changed: weechat.color.chat_highlight = white  (default: yellow)
-2018-08-29 15:16:09		Option changed: weechat.color.chat_highlight_bg = red  (default: magenta)
-2018-08-29 15:20:19		Option changed: buflist.format.hotlist_highlight = "${color:white,red}"  (default: "${color:magenta}")
-2018-08-29 15:21:20		Option changed: buflist.format.hotlist_message = "${color:blue}"  (default: "${color:brown}")
-2018-08-29 15:25:21		Option changed: weechat.color.chat_nick_prefix = default  (default: green)
-2018-08-29 15:26:12		Option changed: irc.color.message_quit = default  (default: red)
-2018-08-29 15:26:29		Option changed: irc.color.message_join = default  (default: green)
-2018-08-29 15:26:37		Option changed: irc.color.notice = default  (default: green)
-2018-08-29 15:31:35	=!=	Option "chat" not found (tip: you can use wildcard "*" in option to see a sublist)
-2018-08-29 15:31:50		Option changed: weechat.color.chat_value = default  (default: cyan)
-2018-08-29 15:32:00		Option changed: weechat.color.chat_value_null = default  (default: blue)
-2018-08-29 15:32:59		Option changed: weechat.color.chat_host = default  (default: cyan)
-2018-08-29 15:36:26		Option changed: irc.color.nick_prefixes = "*:default"  (default: "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue")
-2018-08-29 16:32:27		python: scripts unloaded
-2018-08-29 16:32:27		fifo: pipe closed
-2018-08-29 16:36:56		python scripts loaded: notify_send, text_item
-2018-08-29 16:36:56		script: 346 scripts for WeeChat 2.1
-2018-08-29 16:36:56		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 16:37:20		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-29 18:18:47		python: scripts unloaded
-2018-08-29 18:18:47		fifo: pipe closed
-2018-08-29 18:18:48		python scripts loaded: notify_send, text_item
-2018-08-29 18:18:48		script: 346 scripts for WeeChat 2.1
-2018-08-29 18:18:48		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 18:20:53		python: scripts unloaded
-2018-08-29 18:20:53		fifo: pipe closed
-2018-08-29 18:20:54		python scripts loaded: notify_send, text_item
-2018-08-29 18:20:54		script: 346 scripts for WeeChat 2.1
-2018-08-29 18:20:54		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 18:38:19		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 18:38:19		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 18:38:19		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 18:38:19	=!=	python: error in function "message_printed_callback"
-2018-08-29 18:47:16		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 18:47:16		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 18:47:16		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 18:47:16	=!=	python: error in function "message_printed_callback"
-2018-08-29 19:05:35		python: scripts unloaded
-2018-08-29 19:05:35		fifo: pipe closed
-2018-08-29 19:19:58		python scripts loaded: notify_send, text_item
-2018-08-29 19:19:58		script: 346 scripts for WeeChat 2.1
-2018-08-29 19:19:58		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 19:19:58		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 19:19:58		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 19:19:58	=!=	python: error in function "message_printed_callback"
-2018-08-29 19:19:58		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 19:19:58		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 19:19:58		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 19:19:58	=!=	python: error in function "message_printed_callback"
-2018-08-29 19:52:32		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 19:52:32		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 19:52:32		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 19:52:32	=!=	python: error in function "message_printed_callback"
-2018-08-29 19:52:33		python: scripts unloaded
-2018-08-29 19:52:33		fifo: pipe closed
-2018-08-29 20:24:54		python scripts loaded: notify_send, text_item
-2018-08-29 20:24:54		script: 346 scripts for WeeChat 2.1
-2018-08-29 20:24:54		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 21:06:29		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-29 21:06:29		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-29 21:06:29		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-29 21:06:29	=!=	python: error in function "message_printed_callback"
-2018-08-29 21:06:29		python: scripts unloaded
-2018-08-29 21:06:29		fifo: pipe closed
-2018-08-29 21:06:32		python scripts loaded: notify_send, text_item
-2018-08-29 21:06:32		script: 346 scripts for WeeChat 2.1
-2018-08-29 21:06:32		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 21:18:50		python: scripts unloaded
-2018-08-29 21:18:50		fifo: pipe closed
-2018-08-29 21:20:25		python scripts loaded: notify_send, text_item
-2018-08-29 21:20:25		script: 346 scripts for WeeChat 2.1
-2018-08-29 21:20:25		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 22:13:42		python: scripts unloaded
-2018-08-29 22:13:42		fifo: pipe closed
-2018-08-29 22:23:29		python scripts loaded: notify_send, text_item
-2018-08-29 22:23:29		script: 346 scripts for WeeChat 2.1
-2018-08-29 22:23:29		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 23:04:59		python: scripts unloaded
-2018-08-29 23:04:59		fifo: pipe closed
-2018-08-29 23:05:09		python scripts loaded: notify_send, text_item
-2018-08-29 23:05:09		script: 346 scripts for WeeChat 2.1
-2018-08-29 23:05:09		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 23:14:03		python: scripts unloaded
-2018-08-29 23:14:03		fifo: pipe closed
-2018-08-29 23:14:07		python scripts loaded: notify_send, text_item
-2018-08-29 23:14:07		script: 346 scripts for WeeChat 2.1
-2018-08-29 23:14:07		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 23:20:30		python: scripts unloaded
-2018-08-29 23:20:30		fifo: pipe closed
-2018-08-29 23:20:49		python scripts loaded: notify_send, text_item
-2018-08-29 23:20:49		script: 346 scripts for WeeChat 2.1
-2018-08-29 23:20:49		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-29 23:31:01		python: scripts unloaded
-2018-08-29 23:31:01		fifo: pipe closed
-2018-08-29 23:31:47		python scripts loaded: notify_send, text_item
-2018-08-29 23:31:47		script: 346 scripts for WeeChat 2.1
-2018-08-29 23:31:47		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 00:21:37		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 00:21:37		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 00:21:37		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 00:21:37	=!=	python: error in function "message_printed_callback"
-2018-08-30 01:22:36		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 01:22:36		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 01:22:36		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 01:22:36	=!=	python: error in function "message_printed_callback"
-2018-08-30 01:54:01		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 01:54:01		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 01:54:01		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 01:54:01	=!=	python: error in function "message_printed_callback"
-2018-08-30 02:00:57		perl: scripts unloaded
-2018-08-30 02:00:57		python: scripts unloaded
-2018-08-30 02:00:57		fifo: pipe closed
-2018-08-30 02:00:59		python scripts loaded: notify_send, text_item
-2018-08-30 02:00:59		perl scripts loaded: notify_send
-2018-08-30 02:00:59		script: 346 scripts for WeeChat 2.1
-2018-08-30 02:00:59		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 02:17:36		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 02:17:36		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 02:17:36		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 02:17:36	=!=	python: error in function "message_printed_callback"
-2018-08-30 02:34:44		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 02:34:44		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 02:34:44		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 02:34:44	=!=	python: error in function "message_printed_callback"
-2018-08-30 02:36:55		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 02:36:55		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 02:36:55		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 02:36:55	=!=	python: error in function "message_printed_callback"
-2018-08-30 05:59:37		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 05:59:37		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 05:59:37		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 05:59:37	=!=	python: error in function "message_printed_callback"
-2018-08-30 10:01:31		python: stdout/stderr (notify_send): Traceback (most recent call last):
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 233, in message_printed_callback
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     send_notification(notification)
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/home/ryan/.weechat/python/autoload/notify_send.py", line 638, in send_notification
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     stdout=devnull,
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 185, in check_call
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     retcode = call(*popenargs, **kwargs)
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 172, in call
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     return Popen(*popenargs, **kwargs).wait()
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     errread, errwrite)
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):   File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
-2018-08-30 10:01:31		python: stdout/stderr (notify_send):     raise child_exception
-2018-08-30 10:01:31		python: stdout/stderr (notify_send): OSError: [Errno 2] No such file or directory
-2018-08-30 10:01:31	=!=	python: error in function "message_printed_callback"
-2018-08-30 12:26:51		Options reloaded from sec.conf
-2018-08-30 12:26:51		Options reloaded from weechat.conf
-2018-08-30 12:26:51		Options reloaded from plugins.conf
-2018-08-30 12:26:51		Options reloaded from charset.conf
-2018-08-30 12:26:51		Options reloaded from logger.conf
-2018-08-30 12:26:51		Options reloaded from exec.conf
-2018-08-30 12:26:51		Options reloaded from trigger.conf
-2018-08-30 12:26:51		Options reloaded from aspell.conf
-2018-08-30 12:26:51		Options reloaded from alias.conf
-2018-08-30 12:26:51		Options reloaded from buflist.conf
-2018-08-30 12:26:51		Options reloaded from fifo.conf
-2018-08-30 12:26:51		Options reloaded from xfer.conf
-2018-08-30 12:26:51		Options reloaded from irc.conf
-2018-08-30 12:26:51		Options reloaded from relay.conf
-2018-08-30 12:26:51		Options reloaded from python.conf
-2018-08-30 12:26:51		Options reloaded from perl.conf
-2018-08-30 12:26:51		Options reloaded from ruby.conf
-2018-08-30 12:26:51		Options reloaded from script.conf
-2018-08-30 12:26:51		Options reloaded from fset.conf
-2018-08-30 12:29:14	=!=	Error: unknown command "/refresh" (type /help for help)
-2018-08-30 12:31:00		perl: scripts unloaded
-2018-08-30 12:31:00		python: scripts unloaded
-2018-08-30 12:31:00		fifo: pipe closed
-2018-08-30 12:31:55		python scripts loaded: notify_send, text_item
-2018-08-30 12:31:55		perl scripts loaded: notify_send
-2018-08-30 12:31:55		script: 346 scripts for WeeChat 2.1
-2018-08-30 12:31:55		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 15:50:58		script: downloading list of scripts...
-2018-08-30 15:50:59		script: 346 scripts for WeeChat 2.1
-2018-08-30 15:51:12		python: unloading script "notify_send"
-2018-08-30 15:51:12		python: script "notify_send" unloaded
-2018-08-30 16:10:31		python: loading script "/home/ryan/.weechat/python/notify_send.py"
-2018-08-30 16:10:31		python: registered script "notify_send", version 0.8 (dev) (Sends highlight and message notifications through notify-send.)
-2018-08-30 16:11:32		Option changed: plugins.var.python.notify_send.ignore_buffers = "*highlight"
-2018-08-30 18:10:13		python: scripts unloaded
-2018-08-30 18:10:13		fifo: pipe closed
-2018-08-30 18:13:50		python scripts loaded: notify_send, text_item
-2018-08-30 18:13:50		script: 346 scripts for WeeChat 2.1
-2018-08-30 18:13:50		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 18:21:29		python: scripts unloaded
-2018-08-30 18:21:29		fifo: pipe closed
-2018-08-30 18:21:36		python scripts loaded: notify_send, text_item
-2018-08-30 18:21:36		script: 346 scripts for WeeChat 2.1
-2018-08-30 18:21:36		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 19:17:19		python: scripts unloaded
-2018-08-30 19:17:19		fifo: pipe closed
-2018-08-30 19:17:43		python scripts loaded: notify_send, text_item
-2018-08-30 19:17:43		script: 346 scripts for WeeChat 2.1
-2018-08-30 19:17:43		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-30 19:43:28		Layout of buffers+windows stored in "default" (current layout: default)
-2018-08-31 00:09:55		python: scripts unloaded
-2018-08-31 00:09:55		fifo: pipe closed
-2018-08-31 00:10:16		python scripts loaded: notify_send, text_item
-2018-08-31 00:10:16		script: 346 scripts for WeeChat 2.1
-2018-08-31 00:10:16		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-31 12:06:16		python: scripts unloaded
-2018-08-31 12:06:16		fifo: pipe closed
-2018-08-31 12:06:59		python scripts loaded: notify_send, text_item
-2018-08-31 12:06:59		script: 346 scripts for WeeChat 2.1
-2018-08-31 12:06:59		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
-2018-08-31 12:59:58		python: scripts unloaded
-2018-08-31 12:59:58		fifo: pipe closed
-2018-08-31 13:00:18		python scripts loaded: notify_send, text_item
-2018-08-31 13:00:18		script: 346 scripts for WeeChat 2.1
-2018-08-31 13:00:18		Plugins loaded: alias, aspell, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2020-05-09 15:36:48		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2020-05-09 15:36:48		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2020-05-09 15:36:48		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2020-05-09 15:36:48		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2020-05-09 15:36:48		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2020-05-09 15:36:48		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2020-05-09 15:36:48		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2020-05-09 15:36:48		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2020-05-09 15:36:48		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2020-05-09 15:36:48		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2020-05-09 15:36:48		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2020-05-09 15:36:48		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2020-05-09 15:36:48		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2020-05-09 15:36:48		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2020-05-09 15:36:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-09 15:37:16		irc: server added: Rizon
+2020-05-09 15:37:52		Option changed: irc.server.Rizon.ssl_verify = off  (default if null: on)
+2020-05-09 15:37:57		Options saved to sec.conf
+2020-05-09 15:37:57		Options saved to weechat.conf
+2020-05-09 15:37:57		Options saved to plugins.conf
+2020-05-09 15:37:57		Options saved to charset.conf
+2020-05-09 15:37:57		Options saved to logger.conf
+2020-05-09 15:37:57		Options saved to exec.conf
+2020-05-09 15:37:57		Options saved to trigger.conf
+2020-05-09 15:37:57		Options saved to spell.conf
+2020-05-09 15:37:57		Options saved to alias.conf
+2020-05-09 15:37:57		Options saved to buflist.conf
+2020-05-09 15:37:57		Options saved to fifo.conf
+2020-05-09 15:37:57		Options saved to xfer.conf
+2020-05-09 15:37:57		Options saved to irc.conf
+2020-05-09 15:37:57		Options saved to relay.conf
+2020-05-09 15:37:57		Options saved to ruby.conf
+2020-05-09 15:37:57		Options saved to python.conf
+2020-05-09 15:37:57		Options saved to perl.conf
+2020-05-09 15:37:57		Options saved to script.conf
+2020-05-09 15:37:57		Options saved to fset.conf
+2020-05-09 15:56:12		script: downloading list of scripts...
+2020-05-09 15:56:13		script: 364 scripts for WeeChat 2.8
+2020-05-09 15:56:17		script: script "urlselect.lua" can not be installed because plugin "lua" is not loaded
+2020-05-09 15:56:22		script: script "urlselect.lua" can not be installed because plugin "lua" is not loaded
+2020-05-09 15:56:56	=!=	Error: unknown command "/load" (type /help for help)
+2020-05-09 15:56:57		script: script "urlselect.lua" can not be installed because plugin "lua" is not loaded
+2020-05-09 15:57:05		Plugin "lua" loaded
+2020-05-09 15:57:08	urlselect	No custom commands configured. Adding default custom command...
+2020-05-09 15:57:08	urlselect	Key alt-i bound to command: /input insert ${url}\x20
+2020-05-09 15:57:09	urlselect	Key alt-o bound to command: /exec -bg -nosh xdg-open ${url}
+2020-05-09 16:39:15		Mouse enabled
+2020-05-09 16:39:16		Options saved to sec.conf
+2020-05-09 16:39:16		Options saved to weechat.conf
+2020-05-09 16:39:16		Options saved to plugins.conf
+2020-05-09 16:39:16		Options saved to charset.conf
+2020-05-09 16:39:16		Options saved to logger.conf
+2020-05-09 16:39:16		Options saved to exec.conf
+2020-05-09 16:39:16		Options saved to trigger.conf
+2020-05-09 16:39:16		Options saved to spell.conf
+2020-05-09 16:39:16		Options saved to alias.conf
+2020-05-09 16:39:16		Options saved to buflist.conf
+2020-05-09 16:39:16		Options saved to fifo.conf
+2020-05-09 16:39:16		Options saved to xfer.conf
+2020-05-09 16:39:16		Options saved to irc.conf
+2020-05-09 16:39:16		Options saved to relay.conf
+2020-05-09 16:39:16		Options saved to ruby.conf
+2020-05-09 16:39:16		Options saved to python.conf
+2020-05-09 16:39:16		Options saved to perl.conf
+2020-05-09 16:39:16		Options saved to script.conf
+2020-05-09 16:39:16		Options saved to fset.conf
+2020-05-09 16:39:16		Options saved to lua.conf
+2020-05-09 18:48:47		lua: scripts unloaded
+2020-05-10 13:47:24		lua scripts loaded: urlselect
+2020-05-10 13:47:24		script: 364 scripts for WeeChat 2.8
+2020-05-10 13:47:24		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-10 14:37:40	=!=	Error: unknown command "/iset" (type /help for help)
+2020-05-10 14:37:45		New key binding (context "mouse"): @chat(perl.iset):button1 => hsignal:iset_mouse
+2020-05-10 14:37:45		New key binding (context "mouse"): @chat(perl.iset):button2* => hsignal:iset_mouse
+2020-05-10 14:37:45		New key binding (context "mouse"): @chat(perl.iset):wheeldown => /repeat 5 /iset **down
+2020-05-10 14:37:45		New key binding (context "mouse"): @chat(perl.iset):wheelup => /repeat 5 /iset **up
+2020-05-10 14:38:02		Option changed: buflist.format.number = " "  (default: "${color:green}${number}${if:${number_displayed}?.: }")
+2020-05-10 14:38:07	=!=	Error: unknown command "/clos" (type /help for help)
+2020-05-10 19:06:39		Key "meta-b" unbound (context: "default")
+2020-05-10 19:06:39		New key binding (context "default"): meta-b => /bar toggle buffers
+2020-05-10 19:06:41	=!=	Error: unknown bar "buffers"
+2020-05-10 19:06:43	=!=	Error: unknown bar "buffers"
+2020-05-10 19:07:12		Key "meta-b" unbound (context: "default")
+2020-05-10 19:07:12		New key binding (context "default"): meta-b => /bar toggle buflist
+2020-05-10 19:07:47		Key "meta-n" unbound (context: "default")
+2020-05-10 19:07:47		New key binding (context "default"): meta-n => /bar toggle nicklist
+2020-05-10 19:08:01		Key "meta-u" unbound (context: "default")
+2020-05-10 19:08:01		New key binding (context "default"): meta-u => /urlselect
+2020-05-10 19:08:09		Options saved to sec.conf
+2020-05-10 19:08:09		Options saved to weechat.conf
+2020-05-10 19:08:09		Options saved to plugins.conf
+2020-05-10 19:08:09		Options saved to charset.conf
+2020-05-10 19:08:09		Options saved to logger.conf
+2020-05-10 19:08:09		Options saved to exec.conf
+2020-05-10 19:08:09		Options saved to trigger.conf
+2020-05-10 19:08:09		Options saved to spell.conf
+2020-05-10 19:08:09		Options saved to alias.conf
+2020-05-10 19:08:09		Options saved to buflist.conf
+2020-05-10 19:08:09		Options saved to fifo.conf
+2020-05-10 19:08:09		Options saved to xfer.conf
+2020-05-10 19:08:09		Options saved to irc.conf
+2020-05-10 19:08:09		Options saved to relay.conf
+2020-05-10 19:08:09		Options saved to lua.conf
+2020-05-10 19:08:09		Options saved to ruby.conf
+2020-05-10 19:08:09		Options saved to python.conf
+2020-05-10 19:08:09		Options saved to perl.conf
+2020-05-10 19:08:09		Options saved to script.conf
+2020-05-10 19:08:09		Options saved to fset.conf
+2020-05-10 19:08:09		Options saved to iset.conf
+2020-05-10 19:11:24	=!=	Error: unknown bar "topic"
+2020-05-10 19:11:54		Option changed: weechat.bar.status.hidden = on  (default: off)
+2020-05-10 19:12:08		Option changed: weechat.bar.title.hidden = on  (default: off)
+2020-05-10 19:12:14		Options saved to sec.conf
+2020-05-10 19:12:14		Options saved to weechat.conf
+2020-05-10 19:12:14		Options saved to plugins.conf
+2020-05-10 19:12:14		Options saved to charset.conf
+2020-05-10 19:12:14		Options saved to logger.conf
+2020-05-10 19:12:14		Options saved to exec.conf
+2020-05-10 19:12:14		Options saved to trigger.conf
+2020-05-10 19:12:14		Options saved to spell.conf
+2020-05-10 19:12:14		Options saved to alias.conf
+2020-05-10 19:12:14		Options saved to buflist.conf
+2020-05-10 19:12:14		Options saved to fifo.conf
+2020-05-10 19:12:14		Options saved to xfer.conf
+2020-05-10 19:12:14		Options saved to irc.conf
+2020-05-10 19:12:14		Options saved to relay.conf
+2020-05-10 19:12:14		Options saved to lua.conf
+2020-05-10 19:12:14		Options saved to ruby.conf
+2020-05-10 19:12:14		Options saved to python.conf
+2020-05-10 19:12:14		Options saved to perl.conf
+2020-05-10 19:12:14		Options saved to script.conf
+2020-05-10 19:12:14		Options saved to fset.conf
+2020-05-10 19:12:14		Options saved to iset.conf
+2020-05-10 19:28:22		Option changed: irc.server.Rizon.away_check = 10  (default if null: 0)
+2020-05-10 19:28:31		Option changed: irc.server.Rizon.away_check_max_nicks = 50  (default if null: 25)
+2020-05-10 20:05:00		perl: scripts unloaded
+2020-05-10 20:05:00		lua: scripts unloaded
+2020-05-11 21:54:05		lua scripts loaded: urlselect
+2020-05-11 21:54:05		perl scripts loaded: iset
+2020-05-11 21:54:05		script: downloading list of scripts...
+2020-05-11 21:54:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-11 21:54:06		script: 364 scripts for WeeChat 2.8
+2020-05-12 18:25:19		perl: scripts unloaded
+2020-05-12 18:25:19		lua: scripts unloaded
+2020-05-13 21:40:03		lua scripts loaded: urlselect
+2020-05-13 21:40:03		perl scripts loaded: iset
+2020-05-13 21:40:03		script: downloading list of scripts...
+2020-05-13 21:40:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-13 21:40:04		script: 364 scripts for WeeChat 2.8
+2020-05-13 21:42:06		perl: scripts unloaded
+2020-05-13 21:42:06		lua: scripts unloaded
+2020-05-13 21:42:34		lua scripts loaded: urlselect
+2020-05-13 21:42:34		perl scripts loaded: iset
+2020-05-13 21:42:34		script: 364 scripts for WeeChat 2.8
+2020-05-13 21:42:34		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-14 20:08:03		perl: scripts unloaded
+2020-05-14 20:08:03		lua: scripts unloaded
+2020-05-17 21:14:48		lua scripts loaded: urlselect
+2020-05-17 21:14:48		perl scripts loaded: iset
+2020-05-17 21:14:48		script: downloading list of scripts...
+2020-05-17 21:14:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-17 21:14:49		script: 364 scripts for WeeChat 2.8
+2020-05-17 21:33:41		Option changed: weechat.bar.input.items = "+buffer_short_name > input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2020-05-17 21:34:08		Option changed: weechat.bar.input.items = "+buffer_short_name > input_text+mini/set weechat.bar.input.items "+buffer_short_name > input_text+minimal"/set weechat.bar.input.items "+buffer_short_name > "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2020-05-17 21:34:10		Option changed: weechat.bar.input.items = "+buffer_short_name > "  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2020-05-17 21:34:59		Option changed: weechat.bar.input.items = "+buffer_short_name [+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+] input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2020-05-18 15:30:25		lua scripts loaded: urlselect
+2020-05-18 15:30:25		perl scripts loaded: iset
+2020-05-18 15:30:25		script: 364 scripts for WeeChat 2.8
+2020-05-18 15:30:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-18 15:31:37		Option changed: weechat.bar.input.items = "+buffer_short_name [+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+] input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2020-05-18 15:31:40		Options saved to sec.conf
+2020-05-18 15:31:40		Options saved to weechat.conf
+2020-05-18 15:31:40		Options saved to plugins.conf
+2020-05-18 15:31:40		Options saved to charset.conf
+2020-05-18 15:31:40		Options saved to logger.conf
+2020-05-18 15:31:40		Options saved to exec.conf
+2020-05-18 15:31:40		Options saved to trigger.conf
+2020-05-18 15:31:40		Options saved to spell.conf
+2020-05-18 15:31:40		Options saved to alias.conf
+2020-05-18 15:31:40		Options saved to buflist.conf
+2020-05-18 15:31:40		Options saved to fifo.conf
+2020-05-18 15:31:40		Options saved to xfer.conf
+2020-05-18 15:31:40		Options saved to irc.conf
+2020-05-18 15:31:40		Options saved to relay.conf
+2020-05-18 15:31:40		Options saved to lua.conf
+2020-05-18 15:31:40		Options saved to ruby.conf
+2020-05-18 15:31:40		Options saved to python.conf
+2020-05-18 15:31:40		Options saved to perl.conf
+2020-05-18 15:31:40		Options saved to iset.conf
+2020-05-18 15:31:40		Options saved to script.conf
+2020-05-18 15:31:40		Options saved to fset.conf
+2020-05-18 18:32:56		perl: scripts unloaded
+2020-05-18 18:32:56		lua: scripts unloaded
+2020-05-18 18:54:29		lua scripts loaded: urlselect
+2020-05-18 18:54:29		perl scripts loaded: iset
+2020-05-18 18:54:29		script: 364 scripts for WeeChat 2.8
+2020-05-18 18:54:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-19 15:43:47		perl: scripts unloaded
+2020-05-19 15:43:47		lua: scripts unloaded
+2020-05-19 16:32:25		lua scripts loaded: urlselect
+2020-05-19 16:32:25		perl scripts loaded: iset
+2020-05-19 16:32:25		script: downloading list of scripts...
+2020-05-19 16:32:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, xfer
+2020-05-19 16:32:26		script: 364 scripts for WeeChat 2.8
+2021-12-06 09:37:31		New key binding (context "default"): meta-B => /buflist toggle
+2021-12-06 09:37:31		lua scripts loaded: urlselect
+2021-12-06 09:37:31	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 09:37:31		perl scripts loaded: iset
+2021-12-06 09:37:31		script: 364 scripts for WeeChat 3.3
+2021-12-06 09:37:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 09:45:09		perl: scripts unloaded
+2021-12-06 09:45:09		lua: scripts unloaded
+2021-12-06 09:47:21		lua scripts loaded: urlselect
+2021-12-06 09:47:21	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 09:47:21		perl scripts loaded: iset
+2021-12-06 09:47:22		script: 364 scripts for WeeChat 3.3
+2021-12-06 09:47:22		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 09:50:10		perl: scripts unloaded
+2021-12-06 09:50:10		lua: scripts unloaded
+2021-12-06 09:50:58		lua scripts loaded: urlselect
+2021-12-06 09:50:58	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 09:50:58		perl scripts loaded: iset
+2021-12-06 09:50:58		script: 364 scripts for WeeChat 3.3
+2021-12-06 09:50:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 09:51:35		irc: server added: Freenode
+2021-12-06 09:51:42		Option changed: irc.server.Freenode.ssl_verify = off  (default if null: on)
+2021-12-06 09:51:48		Options saved to sec.conf
+2021-12-06 09:51:48		Options saved to weechat.conf
+2021-12-06 09:51:48		Options saved to plugins.conf
+2021-12-06 09:51:48		Options saved to charset.conf
+2021-12-06 09:51:48		Options saved to logger.conf
+2021-12-06 09:51:48		Options saved to exec.conf
+2021-12-06 09:51:48		Options saved to trigger.conf
+2021-12-06 09:51:48		Options saved to spell.conf
+2021-12-06 09:51:48		Options saved to alias.conf
+2021-12-06 09:51:48		Options saved to buflist.conf
+2021-12-06 09:51:48		Options saved to fifo.conf
+2021-12-06 09:51:48		Options saved to typing.conf
+2021-12-06 09:51:48		Options saved to xfer.conf
+2021-12-06 09:51:48		Options saved to irc.conf
+2021-12-06 09:51:48		Options saved to relay.conf
+2021-12-06 09:51:48		Options saved to guile.conf
+2021-12-06 09:51:48		Options saved to lua.conf
+2021-12-06 09:51:48		Options saved to perl.conf
+2021-12-06 09:51:48		Options saved to iset.conf
+2021-12-06 09:51:48		Options saved to python.conf
+2021-12-06 09:51:48		Options saved to ruby.conf
+2021-12-06 09:51:48		Options saved to tcl.conf
+2021-12-06 09:51:48		Options saved to script.conf
+2021-12-06 09:51:48		Options saved to fset.conf
+2021-12-06 09:52:12		irc: server added: Orpheus
+2021-12-06 09:52:18		Option changed: irc.server.Orpheus.ssl_verify = off  (default if null: on)
+2021-12-06 09:52:24		Options saved to sec.conf
+2021-12-06 09:52:24		Options saved to weechat.conf
+2021-12-06 09:52:24		Options saved to plugins.conf
+2021-12-06 09:52:24		Options saved to charset.conf
+2021-12-06 09:52:24		Options saved to logger.conf
+2021-12-06 09:52:24		Options saved to exec.conf
+2021-12-06 09:52:24		Options saved to trigger.conf
+2021-12-06 09:52:24		Options saved to spell.conf
+2021-12-06 09:52:24		Options saved to alias.conf
+2021-12-06 09:52:24		Options saved to buflist.conf
+2021-12-06 09:52:24		Options saved to fifo.conf
+2021-12-06 09:52:24		Options saved to typing.conf
+2021-12-06 09:52:24		Options saved to xfer.conf
+2021-12-06 09:52:24		Options saved to irc.conf
+2021-12-06 09:52:24		Options saved to relay.conf
+2021-12-06 09:52:24		Options saved to guile.conf
+2021-12-06 09:52:24		Options saved to lua.conf
+2021-12-06 09:52:24		Options saved to perl.conf
+2021-12-06 09:52:24		Options saved to iset.conf
+2021-12-06 09:52:24		Options saved to python.conf
+2021-12-06 09:52:24		Options saved to ruby.conf
+2021-12-06 09:52:24		Options saved to tcl.conf
+2021-12-06 09:52:24		Options saved to script.conf
+2021-12-06 09:52:24		Options saved to fset.conf
+2021-12-06 10:01:25		perl: scripts unloaded
+2021-12-06 10:01:25		lua: scripts unloaded
+2021-12-06 10:02:58		lua scripts loaded: urlselect
+2021-12-06 10:02:58	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 10:02:58		perl scripts loaded: iset
+2021-12-06 10:02:58		script: 364 scripts for WeeChat 3.3
+2021-12-06 10:02:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 10:03:19		Layout of buffers+windows stored in "default" (current layout: default)
+2021-12-06 10:03:22		Options saved to sec.conf
+2021-12-06 10:03:22		Options saved to weechat.conf
+2021-12-06 10:03:22		Options saved to plugins.conf
+2021-12-06 10:03:22		Options saved to charset.conf
+2021-12-06 10:03:22		Options saved to logger.conf
+2021-12-06 10:03:22		Options saved to exec.conf
+2021-12-06 10:03:22		Options saved to trigger.conf
+2021-12-06 10:03:22		Options saved to spell.conf
+2021-12-06 10:03:22		Options saved to alias.conf
+2021-12-06 10:03:22		Options saved to buflist.conf
+2021-12-06 10:03:22		Options saved to fifo.conf
+2021-12-06 10:03:22		Options saved to typing.conf
+2021-12-06 10:03:22		Options saved to xfer.conf
+2021-12-06 10:03:22		Options saved to irc.conf
+2021-12-06 10:03:22		Options saved to relay.conf
+2021-12-06 10:03:22		Options saved to guile.conf
+2021-12-06 10:03:22		Options saved to lua.conf
+2021-12-06 10:03:22		Options saved to perl.conf
+2021-12-06 10:03:22		Options saved to iset.conf
+2021-12-06 10:03:22		Options saved to python.conf
+2021-12-06 10:03:22		Options saved to ruby.conf
+2021-12-06 10:03:22		Options saved to tcl.conf
+2021-12-06 10:03:22		Options saved to script.conf
+2021-12-06 10:03:22		Options saved to fset.conf
+2021-12-06 11:14:28	=!=	Failed to set option "weechat.bar.input.position"
+2021-12-06 11:14:44		Option changed: weechat.bar.input.items = "➜ +buffer_short_name +mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+ input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-06 11:23:54		perl: scripts unloaded
+2021-12-06 11:23:54		lua: scripts unloaded
+2021-12-06 11:25:06		lua scripts loaded: urlselect
+2021-12-06 11:25:06	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 11:25:06		perl scripts loaded: iset
+2021-12-06 11:25:07		script: 364 scripts for WeeChat 3.3
+2021-12-06 11:25:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 11:49:55		perl: scripts unloaded
+2021-12-06 11:49:55		lua: scripts unloaded
+2021-12-06 11:59:00		lua scripts loaded: urlselect
+2021-12-06 11:59:00	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 11:59:00		perl scripts loaded: iset
+2021-12-06 11:59:00		script: 364 scripts for WeeChat 3.3
+2021-12-06 11:59:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 14:45:57		perl: scripts unloaded
+2021-12-06 14:45:57		lua: scripts unloaded
+2021-12-06 14:51:27		lua scripts loaded: urlselect
+2021-12-06 14:51:27	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 14:51:27		perl scripts loaded: iset
+2021-12-06 14:51:27		script: 364 scripts for WeeChat 3.3
+2021-12-06 14:51:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 15:20:54		perl: scripts unloaded
+2021-12-06 15:20:54		lua: scripts unloaded
+2021-12-06 15:58:40		lua scripts loaded: urlselect
+2021-12-06 15:58:40	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 15:58:40		perl scripts loaded: iset
+2021-12-06 15:58:40		script: 364 scripts for WeeChat 3.3
+2021-12-06 15:58:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-06 16:02:19		Option changed: weechat.bar.input.items = "+buffer_short_name +mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+ input_text+minimal ➜"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-06 16:03:26		Option changed: weechat.bar.input.items = "+buffer_short_name +mode_indicator+(away)+ ➜ input_search+ input_paste+ vi_buffer+ input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-06 16:04:55		Option changed: weechat.bar.input.items = "+buffer_short_name +mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+➜ input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-06 20:34:35		perl: scripts unloaded
+2021-12-06 20:34:35		lua: scripts unloaded
+2021-12-06 20:50:54		lua scripts loaded: urlselect
+2021-12-06 20:50:54	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-06 20:50:54		perl scripts loaded: iset
+2021-12-06 20:50:54		script: 364 scripts for WeeChat 3.3
+2021-12-06 20:50:54		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-07 09:29:33		perl: scripts unloaded
+2021-12-07 09:29:33		lua: scripts unloaded
+2021-12-07 11:04:37		lua scripts loaded: urlselect
+2021-12-07 11:04:37	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-07 11:04:37		perl scripts loaded: iset
+2021-12-07 11:04:37		script: 364 scripts for WeeChat 3.3
+2021-12-07 11:04:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-07 11:50:10		perl: scripts unloaded
+2021-12-07 11:50:10		lua: scripts unloaded
+2021-12-07 11:52:47		lua scripts loaded: urlselect
+2021-12-07 11:52:47	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-07 11:52:47		perl scripts loaded: iset
+2021-12-07 11:52:47		script: 364 scripts for WeeChat 3.3
+2021-12-07 11:52:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-07 11:56:32		perl: scripts unloaded
+2021-12-07 11:56:32		lua: scripts unloaded
+2021-12-07 12:05:16		lua scripts loaded: urlselect
+2021-12-07 12:05:16	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-07 12:05:16		perl scripts loaded: iset
+2021-12-07 12:05:16		script: 364 scripts for WeeChat 3.3
+2021-12-07 12:05:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-07 15:19:47		Option changed: weechat.look.prefix_align_max = 8  (default: 0)
+2021-12-07 15:19:49		Options saved to sec.conf
+2021-12-07 15:19:49		Options saved to weechat.conf
+2021-12-07 15:19:49		Options saved to plugins.conf
+2021-12-07 15:19:49		Options saved to charset.conf
+2021-12-07 15:19:49		Options saved to logger.conf
+2021-12-07 15:19:49		Options saved to exec.conf
+2021-12-07 15:19:49		Options saved to trigger.conf
+2021-12-07 15:19:49		Options saved to spell.conf
+2021-12-07 15:19:49		Options saved to alias.conf
+2021-12-07 15:19:49		Options saved to buflist.conf
+2021-12-07 15:19:49		Options saved to fifo.conf
+2021-12-07 15:19:49		Options saved to typing.conf
+2021-12-07 15:19:49		Options saved to xfer.conf
+2021-12-07 15:19:49		Options saved to irc.conf
+2021-12-07 15:19:49		Options saved to relay.conf
+2021-12-07 15:19:49		Options saved to guile.conf
+2021-12-07 15:19:49		Options saved to lua.conf
+2021-12-07 15:19:49		Options saved to perl.conf
+2021-12-07 15:19:49		Options saved to iset.conf
+2021-12-07 15:19:49		Options saved to python.conf
+2021-12-07 15:19:49		Options saved to ruby.conf
+2021-12-07 15:19:49		Options saved to tcl.conf
+2021-12-07 15:19:49		Options saved to script.conf
+2021-12-07 15:19:49		Options saved to fset.conf
+2021-12-07 17:57:19		perl: scripts unloaded
+2021-12-07 17:57:19		lua: scripts unloaded
+2021-12-07 18:04:17		lua scripts loaded: urlselect
+2021-12-07 18:04:17	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-07 18:04:17		perl scripts loaded: iset
+2021-12-07 18:04:17		script: 364 scripts for WeeChat 3.3
+2021-12-07 18:04:17		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-07 20:09:29		perl: scripts unloaded
+2021-12-07 20:09:29		lua: scripts unloaded
+2021-12-07 20:24:41		lua scripts loaded: urlselect
+2021-12-07 20:24:41	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-07 20:24:41		perl scripts loaded: iset
+2021-12-07 20:24:41		script: 364 scripts for WeeChat 3.3
+2021-12-07 20:24:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-08 13:16:26		perl: scripts unloaded
+2021-12-08 13:16:26		lua: scripts unloaded
+2021-12-08 13:16:36		lua scripts loaded: urlselect
+2021-12-08 13:16:36	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-08 13:16:36		perl scripts loaded: iset
+2021-12-08 13:16:36		script: 364 scripts for WeeChat 3.3
+2021-12-08 13:16:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-08 13:16:41		perl: scripts unloaded
+2021-12-08 13:16:41		lua: scripts unloaded
+2021-12-08 13:18:52		lua scripts loaded: urlselect
+2021-12-08 13:18:52	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-08 13:18:52		perl scripts loaded: iset
+2021-12-08 13:18:52		script: 364 scripts for WeeChat 3.3
+2021-12-08 13:18:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-08 13:19:14		perl: scripts unloaded
+2021-12-08 13:19:14		lua: scripts unloaded
+2021-12-08 13:54:47		lua scripts loaded: urlselect
+2021-12-08 13:54:47	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-08 13:54:47		perl scripts loaded: iset
+2021-12-08 13:54:47		script: 364 scripts for WeeChat 3.3
+2021-12-08 13:54:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-08 14:36:58		perl: scripts unloaded
+2021-12-08 14:36:58		lua: scripts unloaded
+2021-12-08 15:20:02		lua scripts loaded: urlselect
+2021-12-08 15:20:02	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-08 15:20:02		perl scripts loaded: iset
+2021-12-08 15:20:02		script: 364 scripts for WeeChat 3.3
+2021-12-08 15:20:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-08 20:40:03		perl: scripts unloaded
+2021-12-08 20:40:03		lua: scripts unloaded
+2021-12-08 20:40:38		lua scripts loaded: urlselect
+2021-12-08 20:40:38	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-08 20:40:38		perl scripts loaded: iset
+2021-12-08 20:40:38		script: 364 scripts for WeeChat 3.3
+2021-12-08 20:40:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 08:00:51		perl: scripts unloaded
+2021-12-09 08:00:51		lua: scripts unloaded
+2021-12-09 08:00:53		lua scripts loaded: urlselect
+2021-12-09 08:00:53	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 08:00:53		perl scripts loaded: iset
+2021-12-09 08:00:53		script: 364 scripts for WeeChat 3.3
+2021-12-09 08:00:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 08:01:28		Option changed: irc.server.Orpheus.ssl_verify = off  (default if null: on)
+2021-12-09 08:01:37		Option changed: irc.server.Freenode.ssl_verify = off  (default if null: on)
+2021-12-09 08:01:43		Option changed: irc.server.Rizon.ssl_verify = off  (default if null: on)
+2021-12-09 08:01:45		Options saved to sec.conf
+2021-12-09 08:01:45		Options saved to weechat.conf
+2021-12-09 08:01:45		Options saved to plugins.conf
+2021-12-09 08:01:45		Options saved to charset.conf
+2021-12-09 08:01:45		Options saved to logger.conf
+2021-12-09 08:01:45		Options saved to exec.conf
+2021-12-09 08:01:45		Options saved to trigger.conf
+2021-12-09 08:01:45		Options saved to spell.conf
+2021-12-09 08:01:45		Options saved to alias.conf
+2021-12-09 08:01:45		Options saved to buflist.conf
+2021-12-09 08:01:45		Options saved to fifo.conf
+2021-12-09 08:01:45		Options saved to typing.conf
+2021-12-09 08:01:45		Options saved to xfer.conf
+2021-12-09 08:01:45		Options saved to irc.conf
+2021-12-09 08:01:45		Options saved to relay.conf
+2021-12-09 08:01:45		Options saved to guile.conf
+2021-12-09 08:01:45		Options saved to lua.conf
+2021-12-09 08:01:45		Options saved to perl.conf
+2021-12-09 08:01:45		Options saved to iset.conf
+2021-12-09 08:01:45		Options saved to python.conf
+2021-12-09 08:01:45		Options saved to ruby.conf
+2021-12-09 08:01:45		Options saved to tcl.conf
+2021-12-09 08:01:45		Options saved to script.conf
+2021-12-09 08:01:45		Options saved to fset.conf
+2021-12-09 08:03:32		perl: scripts unloaded
+2021-12-09 08:03:32		lua: scripts unloaded
+2021-12-09 08:17:33		lua scripts loaded: urlselect
+2021-12-09 08:17:33	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 08:17:33		perl scripts loaded: iset
+2021-12-09 08:17:33		script: 364 scripts for WeeChat 3.3
+2021-12-09 08:17:33		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 08:23:48		Mouse enabled
+2021-12-09 09:10:05		perl: scripts unloaded
+2021-12-09 09:10:05		lua: scripts unloaded
+2021-12-09 09:10:08		lua scripts loaded: urlselect
+2021-12-09 09:10:08	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 09:10:08		perl scripts loaded: iset
+2021-12-09 09:10:08		script: 364 scripts for WeeChat 3.3
+2021-12-09 09:10:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 09:19:11		perl: scripts unloaded
+2021-12-09 09:19:11		lua: scripts unloaded
+2021-12-09 09:19:20		lua scripts loaded: urlselect
+2021-12-09 09:19:20	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 09:19:20		perl scripts loaded: iset
+2021-12-09 09:19:20		script: 364 scripts for WeeChat 3.3
+2021-12-09 09:19:20		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 09:59:53		perl: scripts unloaded
+2021-12-09 09:59:53		lua: scripts unloaded
+2021-12-09 10:01:32		lua scripts loaded: urlselect
+2021-12-09 10:01:32	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 10:01:32		perl scripts loaded: iset
+2021-12-09 10:01:32		script: 364 scripts for WeeChat 3.3
+2021-12-09 10:01:32		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 14:19:12		perl: scripts unloaded
+2021-12-09 14:19:12		lua: scripts unloaded
+2021-12-09 15:09:50		lua scripts loaded: urlselect
+2021-12-09 15:09:50	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 15:09:50		perl scripts loaded: iset
+2021-12-09 15:09:50		script: 364 scripts for WeeChat 3.3
+2021-12-09 15:09:50		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 15:17:17		perl: scripts unloaded
+2021-12-09 15:17:17		lua: scripts unloaded
+2021-12-09 15:17:42		lua scripts loaded: urlselect
+2021-12-09 15:17:42	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 15:17:42		perl scripts loaded: iset
+2021-12-09 15:17:42		script: 364 scripts for WeeChat 3.3
+2021-12-09 15:17:42		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 15:18:44	=!=	Unknown command "/ist" (type /help for help)
+2021-12-09 15:19:41		Option changed: weechat.bar.input.items = "+buffer_short_name +mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+??? input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-09 15:20:49		perl: scripts unloaded
+2021-12-09 15:20:49		lua: scripts unloaded
+2021-12-09 15:21:52		lua scripts loaded: urlselect
+2021-12-09 15:21:52	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 15:21:52		perl scripts loaded: iset
+2021-12-09 15:21:52		script: 364 scripts for WeeChat 3.3
+2021-12-09 15:21:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 15:22:00		perl: scripts unloaded
+2021-12-09 15:22:00		lua: scripts unloaded
+2021-12-09 15:22:54		lua scripts loaded: urlselect
+2021-12-09 15:22:54	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 15:22:54		perl scripts loaded: iset
+2021-12-09 15:22:54		script: 364 scripts for WeeChat 3.3
+2021-12-09 15:22:54		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 15:23:43		perl: scripts unloaded
+2021-12-09 15:23:43		lua: scripts unloaded
+2021-12-09 15:29:29		lua scripts loaded: urlselect
+2021-12-09 15:29:29	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 15:29:29		perl scripts loaded: iset
+2021-12-09 15:29:29		script: 364 scripts for WeeChat 3.3
+2021-12-09 15:29:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 17:54:53		perl: scripts unloaded
+2021-12-09 17:54:53		lua: scripts unloaded
+2021-12-09 17:55:10		lua scripts loaded: urlselect
+2021-12-09 17:55:10	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 17:55:10		perl scripts loaded: iset
+2021-12-09 17:55:10		script: 364 scripts for WeeChat 3.3
+2021-12-09 17:55:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 17:55:15		perl: scripts unloaded
+2021-12-09 17:55:15		lua: scripts unloaded
+2021-12-09 17:55:18		lua scripts loaded: urlselect
+2021-12-09 17:55:18	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 17:55:18		perl scripts loaded: iset
+2021-12-09 17:55:18		script: 364 scripts for WeeChat 3.3
+2021-12-09 17:55:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 17:56:13		Option changed: weechat.bar.input.items = "+buffer_short_name +mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+❯ input_text+minimal"  (default: "[input_prompt]+(away),[input_search],[input_paste],input_text")
+2021-12-09 17:56:17		perl: scripts unloaded
+2021-12-09 17:56:17		lua: scripts unloaded
+2021-12-09 17:56:21		lua scripts loaded: urlselect
+2021-12-09 17:56:21	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 17:56:21		perl scripts loaded: iset
+2021-12-09 17:56:21		script: 364 scripts for WeeChat 3.3
+2021-12-09 17:56:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 19:05:01		perl: scripts unloaded
+2021-12-09 19:05:01		lua: scripts unloaded
+2021-12-09 19:09:31		lua scripts loaded: urlselect
+2021-12-09 19:09:31	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 19:09:31		perl scripts loaded: iset
+2021-12-09 19:09:31		script: 364 scripts for WeeChat 3.3
+2021-12-09 19:09:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 19:12:01		perl: scripts unloaded
+2021-12-09 19:12:01		lua: scripts unloaded
+2021-12-09 19:13:31		lua scripts loaded: urlselect
+2021-12-09 19:13:31	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 19:13:31		perl scripts loaded: iset
+2021-12-09 19:13:31		script: 364 scripts for WeeChat 3.3
+2021-12-09 19:13:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 19:17:41		perl: scripts unloaded
+2021-12-09 19:17:41		lua: scripts unloaded
+2021-12-09 19:31:56		lua scripts loaded: urlselect
+2021-12-09 19:31:56	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 19:31:56		perl scripts loaded: iset
+2021-12-09 19:31:56		script: 364 scripts for WeeChat 3.3
+2021-12-09 19:31:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-09 19:56:26		perl: scripts unloaded
+2021-12-09 19:56:26		lua: scripts unloaded
+2021-12-09 19:56:39		lua scripts loaded: urlselect
+2021-12-09 19:56:39	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-09 19:56:39		perl scripts loaded: iset
+2021-12-09 19:56:39		script: 364 scripts for WeeChat 3.3
+2021-12-09 19:56:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 11:19:05		perl: scripts unloaded
+2021-12-10 11:19:05		lua: scripts unloaded
+2021-12-10 11:19:30		lua scripts loaded: urlselect
+2021-12-10 11:19:30	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 11:19:30		perl scripts loaded: iset
+2021-12-10 11:19:30		script: 364 scripts for WeeChat 3.3
+2021-12-10 11:19:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 11:31:57		Layout of buffers+windows stored in "default" (current layout: default)
+2021-12-10 11:31:58		Options saved to sec.conf
+2021-12-10 11:31:58		Options saved to weechat.conf
+2021-12-10 11:31:58		Options saved to plugins.conf
+2021-12-10 11:31:58		Options saved to charset.conf
+2021-12-10 11:31:58		Options saved to logger.conf
+2021-12-10 11:31:58		Options saved to exec.conf
+2021-12-10 11:31:58		Options saved to trigger.conf
+2021-12-10 11:31:58		Options saved to spell.conf
+2021-12-10 11:31:58		Options saved to alias.conf
+2021-12-10 11:31:58		Options saved to buflist.conf
+2021-12-10 11:31:58		Options saved to fifo.conf
+2021-12-10 11:31:58		Options saved to typing.conf
+2021-12-10 11:31:58		Options saved to xfer.conf
+2021-12-10 11:31:58		Options saved to irc.conf
+2021-12-10 11:31:58		Options saved to relay.conf
+2021-12-10 11:31:58		Options saved to guile.conf
+2021-12-10 11:31:58		Options saved to lua.conf
+2021-12-10 11:31:58		Options saved to perl.conf
+2021-12-10 11:31:58		Options saved to iset.conf
+2021-12-10 11:31:58		Options saved to python.conf
+2021-12-10 11:31:58		Options saved to ruby.conf
+2021-12-10 11:31:58		Options saved to tcl.conf
+2021-12-10 11:31:58		Options saved to script.conf
+2021-12-10 11:31:58		Options saved to fset.conf
+2021-12-10 11:53:15		perl: scripts unloaded
+2021-12-10 11:53:15		lua: scripts unloaded
+2021-12-10 11:53:25		lua scripts loaded: urlselect
+2021-12-10 11:53:25	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 11:53:25		perl scripts loaded: iset
+2021-12-10 11:53:25		script: 364 scripts for WeeChat 3.3
+2021-12-10 11:53:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 16:00:19		perl: scripts unloaded
+2021-12-10 16:00:19		lua: scripts unloaded
+2021-12-10 17:08:29		lua scripts loaded: urlselect
+2021-12-10 17:08:29	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 17:08:29		perl scripts loaded: iset
+2021-12-10 17:08:29		script: 364 scripts for WeeChat 3.3
+2021-12-10 17:08:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 17:09:08		Mouse disabled
+2021-12-10 17:09:18		Mouse enabled
+2021-12-10 17:11:02		perl: scripts unloaded
+2021-12-10 17:11:02		lua: scripts unloaded
+2021-12-10 17:11:10		lua scripts loaded: urlselect
+2021-12-10 17:11:10	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 17:11:10		perl scripts loaded: iset
+2021-12-10 17:11:10		script: 364 scripts for WeeChat 3.3
+2021-12-10 17:11:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 17:22:53		perl: scripts unloaded
+2021-12-10 17:22:53		lua: scripts unloaded
+2021-12-10 17:25:15		lua scripts loaded: urlselect
+2021-12-10 17:25:15	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 17:25:15		perl scripts loaded: iset
+2021-12-10 17:25:15		script: 364 scripts for WeeChat 3.3
+2021-12-10 17:25:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 20:03:52		perl: scripts unloaded
+2021-12-10 20:03:52		lua: scripts unloaded
+2021-12-10 21:40:54		lua scripts loaded: urlselect
+2021-12-10 21:40:55	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 21:40:55		perl scripts loaded: iset
+2021-12-10 21:40:55		script: 364 scripts for WeeChat 3.3
+2021-12-10 21:40:55		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-10 22:09:55	=!=	Unknown command "/exi" (type /help for help)
+2021-12-10 22:09:57		perl: scripts unloaded
+2021-12-10 22:09:57		lua: scripts unloaded
+2021-12-10 22:10:01		lua scripts loaded: urlselect
+2021-12-10 22:10:01	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-10 22:10:01		perl scripts loaded: iset
+2021-12-10 22:10:01		script: 364 scripts for WeeChat 3.3
+2021-12-10 22:10:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 10:54:19		perl: scripts unloaded
+2021-12-11 10:54:19		lua: scripts unloaded
+2021-12-11 11:06:07		lua scripts loaded: urlselect
+2021-12-11 11:06:07	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 11:06:07		perl scripts loaded: iset
+2021-12-11 11:06:07		script: 364 scripts for WeeChat 3.3
+2021-12-11 11:06:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 11:57:17		perl: scripts unloaded
+2021-12-11 11:57:17		lua: scripts unloaded
+2021-12-11 12:06:15		lua scripts loaded: urlselect
+2021-12-11 12:06:15	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 12:06:15		perl scripts loaded: iset
+2021-12-11 12:06:15		script: 364 scripts for WeeChat 3.3
+2021-12-11 12:06:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 12:12:02		irc: server added: GIMP
+2021-12-11 12:12:10		Option changed: irc.server.GIMP.ssl_verify = off  (default if null: on)
+2021-12-11 14:16:58		perl: scripts unloaded
+2021-12-11 14:16:58		lua: scripts unloaded
+2021-12-11 14:17:06		lua scripts loaded: urlselect
+2021-12-11 14:17:06	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 14:17:06		perl scripts loaded: iset
+2021-12-11 14:17:06		script: 364 scripts for WeeChat 3.3
+2021-12-11 14:17:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 14:19:03		perl: scripts unloaded
+2021-12-11 14:19:03		lua: scripts unloaded
+2021-12-11 14:20:13		lua scripts loaded: urlselect
+2021-12-11 14:20:13	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 14:20:13		perl scripts loaded: iset
+2021-12-11 14:20:13		script: 364 scripts for WeeChat 3.3
+2021-12-11 14:20:13		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 15:23:52		Option changed: weechat.color.chat_highlight = white  (default: yellow)
+2021-12-11 15:24:34		Options saved to sec.conf
+2021-12-11 15:24:34		Options saved to weechat.conf
+2021-12-11 15:24:34		Options saved to plugins.conf
+2021-12-11 15:24:34		Options saved to charset.conf
+2021-12-11 15:24:34		Options saved to logger.conf
+2021-12-11 15:24:34		Options saved to exec.conf
+2021-12-11 15:24:34		Options saved to trigger.conf
+2021-12-11 15:24:34		Options saved to spell.conf
+2021-12-11 15:24:34		Options saved to alias.conf
+2021-12-11 15:24:34		Options saved to buflist.conf
+2021-12-11 15:24:34		Options saved to fifo.conf
+2021-12-11 15:24:34		Options saved to typing.conf
+2021-12-11 15:24:34		Options saved to xfer.conf
+2021-12-11 15:24:34		Options saved to irc.conf
+2021-12-11 15:24:34		Options saved to relay.conf
+2021-12-11 15:24:34		Options saved to guile.conf
+2021-12-11 15:24:34		Options saved to lua.conf
+2021-12-11 15:24:34		Options saved to perl.conf
+2021-12-11 15:24:34		Options saved to iset.conf
+2021-12-11 15:24:34		Options saved to python.conf
+2021-12-11 15:24:34		Options saved to ruby.conf
+2021-12-11 15:24:34		Options saved to tcl.conf
+2021-12-11 15:24:34		Options saved to script.conf
+2021-12-11 15:24:34		Options saved to fset.conf
+2021-12-11 15:29:40		Option changed: weechat.color.chat_highlight_bg = blue  (default: magenta)
+2021-12-11 15:30:02		Option changed: weechat.color.chat_highlight_bg = lightblue  (default: magenta)
+2021-12-11 15:30:17		Option changed: weechat.color.chat_highlight = yellow
+2021-12-11 15:30:35		Option changed: weechat.color.chat_highlight = black  (default: yellow)
+2021-12-11 15:31:29		Option changed: buflist.format.buffer_current = "${color:black,blue}${format_buffer}"  (default: "${color:,blue}${format_buffer}")
+2021-12-11 15:31:42		Options saved to sec.conf
+2021-12-11 15:31:42		Options saved to weechat.conf
+2021-12-11 15:31:42		Options saved to plugins.conf
+2021-12-11 15:31:42		Options saved to charset.conf
+2021-12-11 15:31:42		Options saved to logger.conf
+2021-12-11 15:31:42		Options saved to exec.conf
+2021-12-11 15:31:42		Options saved to trigger.conf
+2021-12-11 15:31:42		Options saved to spell.conf
+2021-12-11 15:31:42		Options saved to alias.conf
+2021-12-11 15:31:42		Options saved to buflist.conf
+2021-12-11 15:31:42		Options saved to fifo.conf
+2021-12-11 15:31:42		Options saved to typing.conf
+2021-12-11 15:31:42		Options saved to xfer.conf
+2021-12-11 15:31:42		Options saved to irc.conf
+2021-12-11 15:31:42		Options saved to relay.conf
+2021-12-11 15:31:42		Options saved to guile.conf
+2021-12-11 15:31:42		Options saved to lua.conf
+2021-12-11 15:31:42		Options saved to perl.conf
+2021-12-11 15:31:42		Options saved to iset.conf
+2021-12-11 15:31:42		Options saved to python.conf
+2021-12-11 15:31:42		Options saved to ruby.conf
+2021-12-11 15:31:42		Options saved to tcl.conf
+2021-12-11 15:31:42		Options saved to script.conf
+2021-12-11 15:31:42		Options saved to fset.conf
+2021-12-11 15:31:47		perl: scripts unloaded
+2021-12-11 15:31:47		lua: scripts unloaded
+2021-12-11 15:31:49		lua scripts loaded: urlselect
+2021-12-11 15:31:49	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 15:31:49		perl scripts loaded: iset
+2021-12-11 15:31:49		script: 364 scripts for WeeChat 3.3
+2021-12-11 15:31:49		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 15:32:44		Option changed: buflist.format.buffer_current = "${color:white,blue}${format_buffer}"  (default: "${color:,blue}${format_buffer}")
+2021-12-11 15:34:14		Option changed: buflist.format.buffer_current = "${color:green}❯${color:blue}${format_buffer}"  (default: "${color:,blue}${format_buffer}")
+2021-12-11 15:35:58		Option changed: buflist.format.buffer = "${format_number}${format_nick_prefix}${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-11 15:36:45	=!=	Error with command "/server disconnect GIMP" (help on command: /help server)
+2021-12-11 15:36:50	=!=	irc: you can not delete server "GIMP" because you are connected to. Try "/disconnect GIMP" before.
+2021-12-11 15:37:04		irc: server GIMP has been deleted
+2021-12-11 15:39:00		python: loading script "/var/home/rdr/.weechat/python/autoload/notify_send.py"
+2021-12-11 15:39:00		python: registered script "notify_send", version 0.10 (dev) (Sends highlight and message notifications through notify-send.)
+2021-12-11 15:40:19		Option changed: buflist.format.hotlist_message = "${color:blue}"  (default: "${color:brown}")
+2021-12-11 15:40:45		Option changed: buflist.format.hotlist_highlight = "${color:red}"  (default: "${color:magenta}")
+2021-12-11 15:41:50		Option changed: buflist.format.buffer = "${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-11 15:43:19		Option changed: buflist.format.hotlist_message = "${color:green}"  (default: "${color:brown}")
+2021-12-11 15:43:35		Option changed: buflist.format.buffer = "${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-11 15:44:29		Option changed: buflist.format.buffer_current = "${color:green}❯${color:blue}${format_name}"  (default: "${color:,blue}${format_buffer}")
+2021-12-11 15:45:20		Option changed: buflist.format.buffer = " ${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-11 15:48:53		python: scripts unloaded
+2021-12-11 15:48:53		perl: scripts unloaded
+2021-12-11 15:48:53		lua: scripts unloaded
+2021-12-11 15:49:04		lua scripts loaded: urlselect
+2021-12-11 15:49:04	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 15:49:04		perl scripts loaded: iset
+2021-12-11 15:49:04		python scripts loaded: notify_send
+2021-12-11 15:49:04		script: 364 scripts for WeeChat 3.3
+2021-12-11 15:49:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-11 16:23:50		python: scripts unloaded
+2021-12-11 16:23:50		perl: scripts unloaded
+2021-12-11 16:23:50		lua: scripts unloaded
+2021-12-11 17:28:30		lua scripts loaded: urlselect
+2021-12-11 17:28:30	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-11 17:28:30		perl scripts loaded: iset
+2021-12-11 17:28:30		python scripts loaded: notify_send
+2021-12-11 17:28:30		script: 364 scripts for WeeChat 3.3
+2021-12-11 17:28:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2021-12-27 07:53:13	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 07:53:13		perl scripts loaded: iset
+2021-12-27 07:53:14		python scripts loaded: notify_send
+2021-12-27 07:53:14		script: 364 scripts for WeeChat 3.3
+2021-12-27 07:53:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 08:21:18		irc: server added: Snoonet
+2021-12-27 08:21:24		Option changed: irc.server.Snoonet.ssl_verify = off  (default if null: on)
+2021-12-27 08:21:27	=!=	irc: unable to add temporary server "snoonet" because the addition of temporary servers with command /connect is currently disabled
+2021-12-27 08:21:27	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2021-12-27 08:22:50		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 08:22:54		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:04:32		python: scripts unloaded
+2021-12-27 10:04:32		perl: scripts unloaded
+2021-12-27 10:04:34	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 10:04:34		perl scripts loaded: iset
+2021-12-27 10:04:34		python scripts loaded: notify_send
+2021-12-27 10:04:34		script: 364 scripts for WeeChat 3.3
+2021-12-27 10:04:34		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 10:06:39		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:06:41		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:06:47		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:06:53		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:09:56	=!=	Unknown command "/buffer.format.buffer_current" (type /help for help)
+2021-12-27 10:11:57	=!=	Unknown command "/buffer.format.buffer_current" (type /help for help)
+2021-12-27 10:12:05	=!=	Option "buffer.format.buffer_current" not found
+2021-12-27 10:12:17		Option changed: buflist.format.buffer_current = "${color:green}❯${color:default}${format_name}"  (default: "${color:,blue}${format_buffer}")
+2021-12-27 10:21:40		python: scripts unloaded
+2021-12-27 10:21:40		perl: scripts unloaded
+2021-12-27 10:23:35	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 10:23:35		perl scripts loaded: iset
+2021-12-27 10:23:35		python scripts loaded: notify_send
+2021-12-27 10:23:35		script: 364 scripts for WeeChat 3.3
+2021-12-27 10:23:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 10:27:30		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 10:32:21		python: scripts unloaded
+2021-12-27 10:32:21		perl: scripts unloaded
+2021-12-27 10:33:56	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 10:33:56		perl scripts loaded: iset
+2021-12-27 10:33:56		python scripts loaded: notify_send
+2021-12-27 10:33:56		script: 364 scripts for WeeChat 3.3
+2021-12-27 10:33:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 10:51:45		Layout of buffers+windows stored in "default" (current layout: default)
+2021-12-27 15:18:01		python: scripts unloaded
+2021-12-27 15:18:01		perl: scripts unloaded
+2021-12-27 15:20:01	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 15:20:01		perl scripts loaded: iset
+2021-12-27 15:20:01		python scripts loaded: notify_send
+2021-12-27 15:20:01		script: 364 scripts for WeeChat 3.3
+2021-12-27 15:20:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 15:29:50		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 15:45:27		python: scripts unloaded
+2021-12-27 15:45:27		perl: scripts unloaded
+2021-12-27 15:46:49	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 15:46:49		perl scripts loaded: iset
+2021-12-27 15:46:49		python scripts loaded: notify_send
+2021-12-27 15:46:49		script: 364 scripts for WeeChat 3.3
+2021-12-27 15:46:49		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, script, spell, trigger, typing, xfer
+2021-12-27 15:48:32		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 16:15:45	=!=	Unknown command "/urlselect" (type /help for help)
+2021-12-27 16:15:46	=!=	Unknown command "/urlselect" (type /help for help)
+2021-12-27 16:16:18	=!=	Unknown command "/load" (type /help for help)
+2021-12-27 16:16:24		[core]
+2021-12-27 16:16:24		  away     cursor   history  mute     reload   unset    window 
+2021-12-27 16:16:24		  bar      debug    input    plugin   repeat   upgrade
+2021-12-27 16:16:24		  buffer   eval     key      print    save     uptime 
+2021-12-27 16:16:24		  color    filter   layout   proxy    secure   version
+2021-12-27 16:16:24		  command  help     mouse    quit     set      wait   
+2021-12-27 16:16:24		[alias]
+2021-12-27 16:16:24		  AAWAY    C        IG       M        REDRAW   UMODE    WII    
+2021-12-27 16:16:24		  alias    CHAT     J        MSGBUF   SAY      V        WM     
+2021-12-27 16:16:24		  ANICK    CL       K        MUB      SIGNOFF  W        WW     
+2021-12-27 16:16:24		  BEEP     CLOSE    KB       N        T        WC     
+2021-12-27 16:16:24		  BYE      EXIT     LEAVE    Q        UB       WI     
+2021-12-27 16:16:24		[buflist]
+2021-12-27 16:16:24		  buflist
+2021-12-27 16:16:24		[charset]
+2021-12-27 16:16:24		  charset
+2021-12-27 16:16:24		[exec]
+2021-12-27 16:16:24		  exec
+2021-12-27 16:16:24		[fifo]
+2021-12-27 16:16:24		  fifo
+2021-12-27 16:16:24		[fset]
+2021-12-27 16:16:24		  fset
+2021-12-27 16:16:24		[irc]
+2021-12-27 16:16:24		  admin       halfop      msg         restart     trace     
+2021-12-27 16:16:24		  allchan     ignore      names       sajoin      unban     
+2021-12-27 16:16:24		  allpv       info        nick        samode      unquiet   
+2021-12-27 16:16:24		  allserv     invite      notice      sanick      userhost  
+2021-12-27 16:16:24		  auth        ison        notify      sapart      users     
+2021-12-27 16:16:24		  ban         join        op          saquit      version   
+2021-12-27 16:16:24		  cap         kick        oper        server      voice     
+2021-12-27 16:16:24		  connect     kickban     part        service     wallchops 
+2021-12-27 16:16:24		  ctcp        kill        ping        servlist    wallops   
+2021-12-27 16:16:24		  cycle       links       pong        setname     who       
+2021-12-27 16:16:24		  dcc         list        query       squery      whois     
+2021-12-27 16:16:24		  dehalfop    lusers      quiet       squit       whowas    
+2021-12-27 16:16:24		  deop        map         quote       stats     
+2021-12-27 16:16:24		  devoice     me          reconnect   summon    
+2021-12-27 16:16:24		  die         mode        rehash      time      
+2021-12-27 16:16:24		  disconnect  motd        remove      topic     
+2021-12-27 16:16:24		[logger]
+2021-12-27 16:16:24		  logger
+2021-12-27 16:16:24		[relay]
+2021-12-27 16:16:24		  relay
+2021-12-27 16:16:24		[script]
+2021-12-27 16:16:24		  script
+2021-12-27 16:16:24		[trigger]
+2021-12-27 16:16:24		  trigger
+2021-12-27 16:16:24		[xfer]
+2021-12-27 16:16:24		  me  xfer
+2021-12-27 16:16:24		[perl]
+2021-12-27 16:16:24		  iset  perl
+2021-12-27 16:16:24		[python]
+2021-12-27 16:16:24		  python
+2021-12-27 16:16:24		[spell]
+2021-12-27 16:16:24		  spell
+2021-12-27 16:16:46		lua scripts loaded: urlselect
+2021-12-27 16:16:46		Plugin "lua" loaded
+2021-12-27 16:16:51		Plugin "ruby" loaded
+2021-12-27 16:23:12		lua: scripts unloaded
+2021-12-27 16:23:12		python: scripts unloaded
+2021-12-27 16:23:12		perl: scripts unloaded
+2021-12-27 16:23:27	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 16:23:27		perl scripts loaded: iset
+2021-12-27 16:23:27		python scripts loaded: notify_send
+2021-12-27 16:23:27		lua scripts loaded: urlselect
+2021-12-27 16:23:27		script: 364 scripts for WeeChat 3.3
+2021-12-27 16:23:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-27 16:54:34		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 17:19:50		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 17:43:29		Option changed: buflist.format.buffer = "${indent}${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-27 17:44:02		Option changed: buflist.format.buffer_current = "${indent}${color:green}❯${color:default}${format_name}""  (default: "${color:,blue}${format_buffer}")
+2021-12-27 17:44:29		Option changed: buflist.format.buffer = "   ${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-27 17:45:06		Option changed: buflist.format.indent = "  "
+2021-12-27 17:45:12		Option changed: buflist.format.indent = " "  (default: "  ")
+2021-12-27 17:45:29		Option changed: buflist.format.buffer = "${indent}${color_hotlist}${format_name}"  (default: "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}")
+2021-12-27 17:45:54		Option changed: buflist.format.buffer_current = " ${color:green}❯${color:default}${format_name}"  (default: "${color:,blue}${format_buffer}")
+2021-12-27 17:46:05		Option changed: buflist.format.buffer_current = "${color:green}❯${color:default}${format_name}"  (default: "${color:,blue}${format_buffer}")
+2021-12-27 17:46:21		lua: scripts unloaded
+2021-12-27 17:46:21		python: scripts unloaded
+2021-12-27 17:46:21		perl: scripts unloaded
+2021-12-27 17:46:24	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 17:46:24		perl scripts loaded: iset
+2021-12-27 17:46:24		python scripts loaded: notify_send
+2021-12-27 17:46:24		lua scripts loaded: urlselect
+2021-12-27 17:46:24		script: 364 scripts for WeeChat 3.3
+2021-12-27 17:46:24		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-27 17:46:28		lua: scripts unloaded
+2021-12-27 17:46:28		python: scripts unloaded
+2021-12-27 17:46:28		perl: scripts unloaded
+2021-12-27 17:46:47	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 17:46:47		perl scripts loaded: iset
+2021-12-27 17:46:47		python scripts loaded: notify_send
+2021-12-27 17:46:47		lua scripts loaded: urlselect
+2021-12-27 17:46:47		script: 364 scripts for WeeChat 3.3
+2021-12-27 17:46:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-27 17:52:15		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 17:52:26		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-27 18:17:47		lua: scripts unloaded
+2021-12-27 18:17:47		python: scripts unloaded
+2021-12-27 18:17:47		perl: scripts unloaded
+2021-12-27 18:49:36	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 18:49:36		perl scripts loaded: iset
+2021-12-27 18:49:36		python scripts loaded: notify_send
+2021-12-27 18:49:36		lua scripts loaded: urlselect
+2021-12-27 18:49:36		script: 364 scripts for WeeChat 3.3
+2021-12-27 18:49:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-27 18:59:11		lua: scripts unloaded
+2021-12-27 18:59:11		python: scripts unloaded
+2021-12-27 18:59:11		perl: scripts unloaded
+2021-12-27 19:02:33	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 19:02:33		perl scripts loaded: iset
+2021-12-27 19:02:33		python scripts loaded: notify_send
+2021-12-27 19:02:33		lua scripts loaded: urlselect
+2021-12-27 19:02:33		script: 364 scripts for WeeChat 3.3
+2021-12-27 19:02:33		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-27 19:56:07		lua: scripts unloaded
+2021-12-27 19:56:07		python: scripts unloaded
+2021-12-27 19:56:07		perl: scripts unloaded
+2021-12-27 19:58:04	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-27 19:58:04		perl scripts loaded: iset
+2021-12-27 19:58:04		python scripts loaded: notify_send
+2021-12-27 19:58:04		lua scripts loaded: urlselect
+2021-12-27 19:58:04		script: 364 scripts for WeeChat 3.3
+2021-12-27 19:58:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-28 11:35:04		lua: scripts unloaded
+2021-12-28 11:35:04		python: scripts unloaded
+2021-12-28 11:35:04		perl: scripts unloaded
+2021-12-28 12:02:23	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-28 12:02:23		perl scripts loaded: iset
+2021-12-28 12:02:23		python scripts loaded: notify_send
+2021-12-28 12:02:23		lua scripts loaded: urlselect
+2021-12-28 12:02:23		script: 364 scripts for WeeChat 3.3
+2021-12-28 12:02:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-28 15:50:22		python: stdout/stderr (notify_send): Failed to send the notification via notify-send (reason: "FileNotFoundError: [Errno 2] No such file or directory: 'notify-send'"). Ensure that you have notify-send installed in your system.
+2021-12-28 17:43:25		lua: scripts unloaded
+2021-12-28 17:43:25		python: scripts unloaded
+2021-12-28 17:43:25		perl: scripts unloaded
+2021-12-28 18:26:01	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-28 18:26:01		perl scripts loaded: iset
+2021-12-28 18:26:01		python scripts loaded: notify_send
+2021-12-28 18:26:01		lua scripts loaded: urlselect
+2021-12-28 18:26:01		script: 364 scripts for WeeChat 3.3
+2021-12-28 18:26:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-28 18:45:18		lua: scripts unloaded
+2021-12-28 18:45:18		python: scripts unloaded
+2021-12-28 18:45:18		perl: scripts unloaded
+2021-12-28 18:46:06	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-28 18:46:06		perl scripts loaded: iset
+2021-12-28 18:46:06		python scripts loaded: notify_send
+2021-12-28 18:46:06		lua scripts loaded: urlselect
+2021-12-28 18:46:06		script: 364 scripts for WeeChat 3.3
+2021-12-28 18:46:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, trigger, typing, xfer
+2021-12-30 08:27:23		lua scripts loaded: urlselect
+2021-12-30 08:27:23	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 08:27:23		perl scripts loaded: iset
+2021-12-30 08:27:23		python scripts loaded: notify_send
+2021-12-30 08:27:23		script: 364 scripts for WeeChat 3.4
+2021-12-30 08:27:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 08:29:02		python: scripts unloaded
+2021-12-30 08:29:02		perl: scripts unloaded
+2021-12-30 08:29:02		lua: scripts unloaded
+2021-12-30 08:29:10		lua scripts loaded: urlselect
+2021-12-30 08:29:10	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 08:29:10		perl scripts loaded: iset
+2021-12-30 08:29:10		python scripts loaded: notify_send
+2021-12-30 08:29:10		script: 364 scripts for WeeChat 3.4
+2021-12-30 08:29:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 08:49:35		python: scripts unloaded
+2021-12-30 08:49:35		perl: scripts unloaded
+2021-12-30 08:49:35		lua: scripts unloaded
+2021-12-30 08:50:52		lua scripts loaded: urlselect
+2021-12-30 08:50:52	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 08:50:52		perl scripts loaded: iset
+2021-12-30 08:50:52		python scripts loaded: notify_send
+2021-12-30 08:50:52		script: 364 scripts for WeeChat 3.4
+2021-12-30 08:50:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 08:51:51		python: scripts unloaded
+2021-12-30 08:51:51		perl: scripts unloaded
+2021-12-30 08:51:51		lua: scripts unloaded
+2021-12-30 08:52:02		lua scripts loaded: urlselect
+2021-12-30 08:52:02	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 08:52:02		perl scripts loaded: iset
+2021-12-30 08:52:02		python scripts loaded: notify_send
+2021-12-30 08:52:02		script: 364 scripts for WeeChat 3.4
+2021-12-30 08:52:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 13:28:39		python: scripts unloaded
+2021-12-30 13:28:39		perl: scripts unloaded
+2021-12-30 13:28:39		lua: scripts unloaded
+2021-12-30 13:30:47		lua scripts loaded: urlselect
+2021-12-30 13:30:47	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 13:30:47		perl scripts loaded: iset
+2021-12-30 13:30:47		python scripts loaded: notify_send
+2021-12-30 13:30:47		script: 364 scripts for WeeChat 3.4
+2021-12-30 13:30:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 18:47:54	=!=	Unknown command "/xloaw" (type /help for help)
+2021-12-30 18:47:55	=!=	Unknown command "/xloaw" (type /help for help)
+2021-12-30 18:59:53		python: scripts unloaded
+2021-12-30 18:59:53		perl: scripts unloaded
+2021-12-30 18:59:53		lua: scripts unloaded
+2021-12-30 18:59:55		lua scripts loaded: urlselect
+2021-12-30 18:59:55	=!=	perl: wrong arguments for function "bar_new" (script: iset)
+2021-12-30 18:59:55		perl scripts loaded: iset
+2021-12-30 18:59:55		python scripts loaded: notify_send
+2021-12-30 18:59:55		script: 364 scripts for WeeChat 3.4
+2021-12-30 18:59:55		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, typing, xfer
+2021-12-30 20:33:30		Option changed: weechat.color.chat_nick_self = default  (default: white)

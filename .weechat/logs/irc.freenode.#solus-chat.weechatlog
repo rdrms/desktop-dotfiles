@@ -1,0 +1,2301 @@
+2021-02-10 23:59:46	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus-chat
+2021-02-10 23:59:46	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 23:59:46	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-10 23:59:46	--	Channel #solus-chat: 50 nicks (6 ops, 0 voices, 44 normals)
+2021-02-10 23:59:50	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-11 00:26:34	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has joined #Solus-Chat
+2021-02-11 00:47:08	-->	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has joined #Solus-Chat
+2021-02-11 00:50:03	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-11 00:56:54	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-11 01:47:25	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-11 01:49:04	-->	XianTheSatanist (~XianTheSa@98.156.161.167) has joined #Solus-Chat
+2021-02-11 02:31:08	<--	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has quit (Remote host closed the connection)
+2021-02-11 02:31:34	-->	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has joined #Solus-Chat
+2021-02-11 02:38:25	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Quit: Goodbye)
+2021-02-11 02:39:08	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus-Chat
+2021-02-11 02:42:34	--	ermo|zzZ is now known as ermo
+2021-02-11 02:44:16	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Ping timeout: 272 seconds)
+2021-02-11 02:44:58	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus-Chat
+2021-02-11 02:59:47	Scotty_Trees	Harvey, lol - https://i.imgur.com/YePUFgA.jpg
+2021-02-11 03:00:14	--	JoshStrobl is now known as JoshStrobl|Live
+2021-02-11 03:00:55	@JoshStrobl|Live	Now live for Day 5 of Koto development - https://twitch.tv/joshstrobl
+2021-02-11 03:00:56	@NarwhalBot	[ JoshStrobl - Twitch ]
+2021-02-11 03:01:23	Scotty_Trees	ugh, fine....
+2021-02-11 03:01:25	Scotty_Trees	:P
+2021-02-11 03:01:40	Harvey	:P
+2021-02-11 03:08:54	-->	mika_ (~mika@91-152-197-19.elisa-laajakaista.fi) has joined #Solus-Chat
+2021-02-11 03:14:14	@Girtablulu	.... still waiting for the bloody support of twitch
+2021-02-11 03:15:50	-->	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has joined #Solus-Chat
+2021-02-11 03:19:22	Eressea	Morning
+2021-02-11 03:25:43	<--	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has quit (Quit: Quit)
+2021-02-11 03:26:01	-->	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has joined #Solus-Chat
+2021-02-11 03:26:09	@Girtablulu	moin
+2021-02-11 03:30:12	Scotty_Trees	tach!
+2021-02-11 03:38:36	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-11 03:39:39	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 265 seconds)
+2021-02-11 04:09:21	<--	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has quit (Ping timeout: 265 seconds)
+2021-02-11 04:10:21	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-11 04:24:29	<--	mika_ (~mika@91-152-197-19.elisa-laajakaista.fi) has quit (Quit: Leaving)
+2021-02-11 04:42:04	-->	Beanary (~Johny31@shellium/member/Johny31) has joined #Solus-Chat
+2021-02-11 05:05:54	@Girtablulu	gnaa Printer troubleshooting
+2021-02-11 05:06:17	@Girtablulu	own printer driver, doesn't work because if cannot find any internet connection wtf....
+2021-02-11 05:06:28	@Girtablulu	manually adding IP works flawless...
+2021-02-11 05:06:31	@Girtablulu	I hate printers
+2021-02-11 05:24:11	<--	Beanary (~Johny31@shellium/member/Johny31) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-02-11 05:35:14	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-11 05:42:39	Eressea	Why in hell does Vala compiler say I'm missing libcurl when I have curl-devel installed?
+2021-02-11 06:04:10	livingsil94|work	it depends on where it's looking for the headers
+2021-02-11 06:06:27	-->	Doctor_Junglist (~Doctor_Ju@109.231.5.134) has joined #Solus-Chat
+2021-02-11 06:09:23	Eressea	Seems to be related to missing Vapi file in this case
+2021-02-11 06:18:03	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2021-02-11 06:19:22	-->	Eressea (~eressea@2a04:cec0:100b:1eab:f7db:9798:8620:8a81) has joined #Solus-Chat
+2021-02-11 06:28:39	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 06:30:20	-->	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 06:32:06	<--	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2021-02-11 06:32:39	-->	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 06:34:01	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-02-11 06:37:31	<--	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 265 seconds)
+2021-02-11 06:42:02	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-11 06:48:39	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 06:49:49	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2021-02-11 06:50:24	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 07:14:31	@DataDrake|zzz	man, this PCB layout is amateur hour: https://github.com/system76/launch/blob/master/pcb/launch-pcb.png
+2021-02-11 07:14:32	@NarwhalBot	[ launch/launch-pcb.png at master · system76/launch · GitHub ]
+2021-02-11 07:15:14	sheepman[m]	what the heck?
+2021-02-11 07:15:30	sheepman[m]	now, I've never done PCB design, but that does not look very tidy
+2021-02-11 07:15:50	@DataDrake|zzz	yeah, I expected a lot better from system76
+2021-02-11 07:15:50	sheepman[m]	minimizing trace length, I guess?
+2021-02-11 07:16:09	@DataDrake|zzz	nah, this looks like auto-routing almost
+2021-02-11 07:16:31	sheepman[m]	I suppose if it works it works
+2021-02-11 07:16:45	@DataDrake|zzz	the USB traces don't even look to me matched impedance
+2021-02-11 07:17:00	sheepman[m]	And at least they plated the screw holes and kept 12v planes away from them unlike /some/ people
+2021-02-11 07:17:32	@DataDrake|zzz	the tolerances on those through-holes are pretty bad actually
+2021-02-11 07:17:43	sheepman[m]	yeah
+2021-02-11 07:17:50	sheepman[m]	but better than NZXT :D
+2021-02-11 07:17:59	@DataDrake|zzz	the keepout they have is not as much as I'd give
+2021-02-11 07:18:02	sheepman[m]	purely by way of having tolerances at all
+2021-02-11 07:18:41	@DataDrake|zzz	that chip at the top is a USB hub
+2021-02-11 07:19:20	@DataDrake|zzz	bottom left is an AVR micro for the keyboard controller
+2021-02-11 07:20:02	@DataDrake|zzz	idk why they put it that far from the programming header and everything else
+2021-02-11 07:21:33	sheepman[m]	honestly you might have a point about auto routing
+2021-02-11 07:21:50	sheepman[m]	maybe it got stuffed there for "optimal" placement as far as getting lines to all the switches
+2021-02-11 07:22:01	@DataDrake|zzz	well they still would have manually placed most of the components
+2021-02-11 07:22:23	@DataDrake|zzz	I doubt they'd let the router move anything like that
+2021-02-11 07:22:48	@DataDrake|zzz	more like they got tunnel vision
+2021-02-11 07:24:04	sheepman[m]	maybe that too. with all the stuff at the top of the board spread out like it is, there's not a whole lot of room I can see for traces to run down to all the switches
+2021-02-11 07:24:20	sheepman[m]	not to say that makes it make sense to put it all the way down in the bottom
+2021-02-11 07:25:07	@DataDrake|zzz	plenty of room from what I'm seeing
+2021-02-11 07:25:30	sheepman[m]	but you might have to use your brain to route things rather than just throwing it at the auto router :D
+2021-02-11 07:25:54	sheepman[m]	I dunno though. as I said, I've got no real experience in this stuff at the moment
+2021-02-11 07:26:17	@DataDrake|zzz	it does look like that corner is a keep-out area for the rear piece
+2021-02-11 07:26:49	sheepman[m]	which, upper right?
+2021-02-11 07:26:57	@DataDrake|zzz	upper left
+2021-02-11 07:27:18	@DataDrake|zzz	if you look at the mechanical drawing https://github.com/system76/launch
+2021-02-11 07:27:18	@NarwhalBot	[ GitHub - system76/launch: System76 Launch Configurable Keyboard ]
+2021-02-11 07:27:39	@DataDrake|zzz	they have notches in the bottom plate for capacitors
+2021-02-11 07:27:51	@DataDrake|zzz	so maybe it's just too tight
+2021-02-11 07:27:51	sheepman[m]	huh yeah
+2021-02-11 07:28:29	@DataDrake|zzz	then again, the switch sockets act a bit like stand-offs
+2021-02-11 07:29:52	@DataDrake|zzz	idk
+2021-02-11 07:30:01	@DataDrake|zzz	this whole design is bad, IMHO
+2021-02-11 07:30:45	@DataDrake|zzz	keyboard hubs are dumb
+2021-02-11 07:31:12	Doctor_Junglist	is there anything i can do in qbittorrent to make me seed the solus torrents harder? or is there not much to be done due to the torrents already being well-seeded?
+2021-02-11 07:31:40	@DataDrake|zzz	mostly depends on demand from people downloading
+2021-02-11 07:32:00	@DataDrake|zzz	most people will download directly rather than torrent to begin with
+2021-02-11 07:34:00	TraceyC	Doctor_Junglist: The only thing you can do is to make sure it has no bandwidth limit. After that, you can only give out so much Halloween candy as you have takers
+2021-02-11 07:37:23	<--	Eressea (~eressea@2a04:cec0:100b:1eab:f7db:9798:8620:8a81) has quit (Ping timeout: 272 seconds)
+2021-02-11 07:39:49	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-11 07:52:17	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus-Chat
+2021-02-11 08:14:06	-->	JeffGila (~jeffrey@ip55-96-212-87.adsl2.static.versatel.nl) has joined #Solus-Chat
+2021-02-11 08:14:40	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 260 seconds)
+2021-02-11 08:19:10	-->	stalebread (~stalebrim@85-76-40-176-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-11 08:36:31	stalebread	I can't have the subwoofer
+2021-02-11 08:37:02	stalebread	it sounds nice on my listening position, but being next to it sounds like someone is punching the floor
+2021-02-11 08:37:18	stalebread	and I'm not sure whether my neighbors will tolerate that kind of noise for prolonged periods
+2021-02-11 08:38:09	Doctor_Junglist	bass needs distance to properly propagate, so you should move the sub further away from you
+2021-02-11 08:38:22	stalebread	that's what I said
+2021-02-11 08:38:28	stalebread	"sounds nice on my listening position"
+2021-02-11 08:38:37	stalebread	but I think it might be thumping on the floor too hard
+2021-02-11 08:39:21	stalebread	the vent is facing downwards
+2021-02-11 08:41:24	--	JoshStrobl|Live is now known as JoshStrobl
+2021-02-11 08:42:18	stalebread	welcome back JacekJagosz
+2021-02-11 08:42:19	stalebread	oh shit
+2021-02-11 08:44:49	Doctor_Junglist	maybe putting the sub on some dampening surface / a stand would help a bit?
+2021-02-11 08:44:52	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-yzvqootgadldiydj) has joined #Solus-Chat
+2021-02-11 08:45:22	stalebread	yea isolation pads or stands exist
+2021-02-11 08:46:29	stalebread	but I'll probably have the monitors only for now, it sounds balanced when you listen to it for a while
+2021-02-11 08:47:06	<--	JeffGila (~jeffrey@ip55-96-212-87.adsl2.static.versatel.nl) has quit (Quit: Konversation terminated!)
+2021-02-11 08:47:06	Doctor_Junglist	yeah, some speakers have decent enough bass for the sub to not be needed as much
+2021-02-11 08:47:41	stalebread	I mean if you A-B it's obvious
+2021-02-11 08:55:01	stalebread	but I kind of like this hall effect
+2021-02-11 08:58:14	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-11 09:04:04	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-11 09:04:14	 *	DataDrake|zzz senses that this is going to be a long day
+2021-02-11 09:05:47	 *	EbonJaeger agrees
+2021-02-11 09:11:49	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-11 09:13:39	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-11 09:21:17	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus-Chat
+2021-02-11 09:24:15	stalebread	how so?
+2021-02-11 09:25:09	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 272 seconds)
+2021-02-11 09:26:35	-->	Eressea (~eressea@2a04:cec0:100b:1eab:1c48:4c68:bd50:d948) has joined #Solus-Chat
+2021-02-11 09:40:51	@DataDrake|zzz	ugh, I should not have looked back at that layout
+2021-02-11 09:41:09	@DataDrake|zzz	they're routing SuperSpeed traces without any attention to RF
+2021-02-11 09:46:35	<--	Eressea (~eressea@2a04:cec0:100b:1eab:1c48:4c68:bd50:d948) has quit (Ping timeout: 272 seconds)
+2021-02-11 09:52:12	davidjharder	Did not expect Budgie on Hacker News: https://news.ycombinator.com/item?id=26101637
+2021-02-11 09:52:12	@NarwhalBot	[ Budgie Is Worth a Try | Hacker News ]
+2021-02-11 09:59:26	stalebread	budgie is worth a try
+2021-02-11 09:59:28	stalebread	plasma is worth using
+2021-02-11 09:59:29	 *	stalebread runs
+2021-02-11 09:59:50	livingsil94|work	woooah
+2021-02-11 10:00:04	<--	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has quit (Quit: Konversation terminated!)
+2021-02-11 10:00:11	 *	rdr readies the pitchforks
+2021-02-11 10:00:29	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-11 10:05:23	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 10:06:12	davidjharder	@stalebread The people have spoken https://imgur.com/a/3EjVswj
+2021-02-11 10:06:13	@NarwhalBot	[ Imgur: The magic of the Internet ]
+2021-02-11 10:06:54	@DataDrake|zzz	hah. that's exactly the order I predicted
+2021-02-11 10:23:35	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus-Chat
+2021-02-11 10:27:54	-->	drmbls (~marius@78-56-83-14.static.zebra.lt) has joined #Solus-Chat
+2021-02-11 10:46:43	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 10:51:38	@JoshStrobl	davidjharder, glad you linked it now. It would've been a real wtf moment had I been laying in bed and seen that pop up. Only was a lurker on Hacker News until today to response to the post :P Would've had to get up and reply
+2021-02-11 10:56:29	-->	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has joined #Solus-Chat
+2021-02-11 11:05:19	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus-Chat
+2021-02-11 11:07:13	stalebread	I'd love to work with this if there was a documentation written on this century
+2021-02-11 11:07:17	stalebread	(not solus related)
+2021-02-11 11:08:16	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 272 seconds)
+2021-02-11 11:09:00	davidjharder	JoshStrobl minor typoin your comment: lending -> leading i
+2021-02-11 11:09:05	davidjharder	*typo
+2021-02-11 11:09:07	<--	Flabb (~Flabb@89.169.84.221) has quit (Read error: Connection reset by peer)
+2021-02-11 11:09:27	davidjharder	I cannot type either apparently
+2021-02-11 11:09:45	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus-Chat
+2021-02-11 11:10:10	stalebread	I bought a repro NES controller
+2021-02-11 11:10:18	@JoshStrobl	davidjharder, yea it's not letting me edit anymore and I can't make a new post because somehow I've "posted too quickly"
+2021-02-11 11:10:20	stalebread	it's pretty close to the original actually, if not better
+2021-02-11 11:10:30	stalebread	>josh
+2021-02-11 11:10:33	stalebread	>stuff happening too quickly
+2021-02-11 11:10:35	 *	stalebread runs
+2021-02-11 11:10:44	<--	JoshStrobl has kicked stalebread (I can kick too quickly!)
+2021-02-11 11:10:52	-->	stalebread (~stalebrim@85-76-40-176-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-11 11:10:57	stalebread	granted, that was very quick
+2021-02-11 11:11:05	stalebread	I'm still suspecting you have a macro for kicking me
+2021-02-11 11:11:20	@JoshStrobl	One day I'll be bothered enough to do that
+2021-02-11 11:12:08	stalebread	JoshStrobl is live: Going live for scripting a macro to kick Stalebread on IRC
+2021-02-11 11:12:18	sheepman[m]	oh I'll watch that
+2021-02-11 11:12:33	@JoshStrobl	lol
+2021-02-11 11:12:44	stalebread	I would up my tier for that
+2021-02-11 11:13:34	davidjharder	random idea for a narwhalbot feature: autokick on matching string. Then we could have "No f Friday" or something
+2021-02-11 11:13:47	stalebread	"no when ever"
+2021-02-11 11:13:48	@JoshStrobl	davidjharder, we have that already actually
+2021-02-11 11:14:21	davidjharder	oh. Petition for "No F Friday" then
+2021-02-11 11:14:46	stalebread	what is F?
+2021-02-11 11:14:55	davidjharder	a letter
+2021-02-11 11:14:58	@JoshStrobl	F is for friendo
+2021-02-11 11:15:12	stalebread	food?
+2021-02-11 11:15:16	davidjharder	you have to type all comments without using F
+2021-02-11 11:15:16	stalebread	that would be tough for bryan
+2021-02-11 11:15:57	@JoshStrobl	Ironic coming from the person with food in their name
+2021-02-11 11:26:06	sheepman[m]	it would be tough for all of us, stalebread... we wouldn't be able to tell you to f*** off
+2021-02-11 11:28:14	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 11:31:42	<--	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has quit (Remote host closed the connection)
+2021-02-11 11:32:32	-->	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has joined #Solus-Chat
+2021-02-11 12:05:34	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus-Chat
+2021-02-11 12:08:24	stalebread	sheepman[m]: you don't want me to
+2021-02-11 12:29:52	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2021-02-11 12:42:06	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-11 13:01:25	stalebread	hi ultr4_l4s3r
+2021-02-11 13:01:39	ultr4_l4s3r	howdy
+2021-02-11 13:03:05	stalebread	blender
+2021-02-11 13:05:38	ultr4_l4s3r	flexo
+2021-02-11 13:06:26	stalebread	saido chesto
+2021-02-11 13:07:10	<--	JoshStrobl has kicked stalebread (no)
+2021-02-11 13:07:37	-->	stalebread (~stalebrim@85-76-40-176-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-11 13:08:39	EbonJaeger	O.o
+2021-02-11 13:08:52	@DataDrake|zzz	quick question, has anyone actually had a hand with eopkg since 5.10 landed?
+2021-02-11 13:08:56	@DataDrake|zzz	hang*
+2021-02-11 13:09:05	@JoshStrobl	yes
+2021-02-11 13:09:17	EbonJaeger	now tha- oh. well i was gonna say no, but i guess nvm lol
+2021-02-11 13:09:43	ultr4_l4s3r	I was also going to say no. Josh the party-pooper
+2021-02-11 13:09:47	@DataDrake|zzz	just wondering: https://engineering.skroutz.gr/blog/uncovering-a-24-year-old-bug-in-the-linux-kernel/
+2021-02-11 13:09:48	@NarwhalBot	[ Uncovering a 24-year-old bug in the Linux Kernel – Skroutz Engineering ]
+2021-02-11 13:09:52	stalebread	only josh can say no
+2021-02-11 13:10:01	@DataDrake|zzz	"After a bit of discussion, the final commit landed in linux-net, and from there it was merged into Linux mainline for 5.10-rc1."
+2021-02-11 13:11:01	@JoshStrobl	I had one as recent as a couple days ago when I was trying to update my laptop, a fresh install, to have all the qt5 stuff Girtablulu built.
+2021-02-11 13:11:19	@DataDrake|zzz	alright, just figured I'd rule it out
+2021-02-11 13:11:31	ultr4_l4s3r	ah, too bad
+2021-02-11 13:11:44	@JoshStrobl	What I'd kill for a kernel update to fix it though :(
+2021-02-11 13:11:48	@DataDrake|zzz	I guess it's possible that mirrors is still affected
+2021-02-11 13:11:59	stalebread	JoshStrobl: me
+2021-02-11 13:12:04	@JoshStrobl	yes
+2021-02-11 13:12:11	stalebread	you'd kill me anyway though
+2021-02-11 13:12:15	@JoshStrobl	Your sacrifice will be remembered stalebread
+2021-02-11 13:12:27	ultr4_l4s3r	or not
+2021-02-11 13:12:47	stalebread	good thing you haven't got an ETA for killing me
+2021-02-11 13:12:56	ultr4_l4s3r	it could happen at any time
+2021-02-11 13:12:58	ultr4_l4s3r	or never
+2021-02-11 13:13:01	@JoshStrobl	.eta
+2021-02-11 13:13:01	@NarwhalBot	We don't give ETAs.
+2021-02-11 13:13:13	stalebread	.shit
+2021-02-11 13:13:23	stalebread	"We don't give a shit."
+2021-02-11 13:13:39	@JoshStrobl	.noniin
+2021-02-11 13:13:43	@JoshStrobl	"No niin."
+2021-02-11 13:13:47	stalebread	.nonni
+2021-02-11 13:13:57	@JoshStrobl	nnooooooo niiiiin
+2021-02-11 13:14:04	stalebread	https://i.redd.it/qs0v7vt9b7i51.jpg
+2021-02-11 13:18:18	stalebread	JoshStrobl: do you call your wife emäntä
+2021-02-11 13:18:24	 *	stalebread runs
+2021-02-11 13:18:48	@JoshStrobl	Dunno what that means so no
+2021-02-11 13:19:07	stalebread	https://fi.wiktionary.org/wiki/em%C3%A4nt%C3%A4
+2021-02-11 13:19:07	@NarwhalBot	[ emäntä – Wikisanakirja ]
+2021-02-11 13:20:11	<--	drmbls (~marius@78-56-83-14.static.zebra.lt) has quit (Quit: WeeChat 3.0.1)
+2021-02-11 13:20:25	stalebread	torrents
+2021-02-11 13:20:27	stalebread	how do they work
+2021-02-11 13:20:38	sheepman[m]	with magnets
+2021-02-11 13:20:41	@JoshStrobl	peers come in, peers come out. can't explain that.
+2021-02-11 13:20:50	ultr4_l4s3r	sheepman[m], lol
+2021-02-11 13:20:53	stalebread	why I'm not seeding like all the time
+2021-02-11 13:21:02	stalebread	there are connected peers but not downloading from me
+2021-02-11 13:21:15	@JoshStrobl	Well it is you so
+2021-02-11 13:21:32	stalebread	.slap JoshStrobl
+2021-02-11 13:21:32	 *	NarwhalBot does far worse than a slap, taking JoshStrobl's system and installing Windows
+2021-02-11 13:21:45	@JoshStrobl	jokes on you, on Windows atm
+2021-02-11 13:22:04	stalebread	https://www.youtube.com/watch?v=Obj3Wg6z77g
+2021-02-11 13:22:05	@NarwhalBot	[ Michael M - Landlines (What The Fuck Are They?) | Desktop: https://youtube.com/watch?v=Obj3Wg6z77g | Mobile: https://m.youtube.com/watch?v=Obj3Wg6z77g ]
+2021-02-11 13:46:28	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-11 13:47:19	stalebread	hi livingsilver94_
+2021-02-11 13:47:22	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-11 13:48:58	stalebread	https://shop.lastnightfromglasgow.com/products/michael-m-now-thats-what-i-call-disappointment-eco-coloured-vinyl-lp?_pos=1&_sid=809107655&_ss=r
+2021-02-11 13:48:59	@NarwhalBot	[ Michael M. - Now That's What I Call Disappointment - Eco Coloured Viny ]
+2021-02-11 13:49:01	stalebread	..shit
+2021-02-11 13:49:03	stalebread	bye money
+2021-02-11 14:04:19	<--	Flabb (~Flabb@89.169.84.221) has quit (Quit: Leaving)
+2021-02-11 14:16:02	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-11 14:23:38	YakoYako	Placed a non `*.sh` terminated POSIX script, `gnome-keyring` was going around in circles, not recommended
+2021-02-11 14:24:07	YakoYako	^ Inside `/etc/profile.d`
+2021-02-11 14:34:36	livingsilver94_	and I'm building rust. Guess the both of us are having a bad time
+2021-02-11 14:34:49	livingsilver94_	that was for Josh
+2021-02-11 14:36:23	@DataDrake|zzz	he's usually gaming on Windows, so I doubt he's having a bad time
+2021-02-11 14:36:42	@DataDrake|zzz	more like a post-stream wind-down
+2021-02-11 14:36:49	@JoshStrobl	livingsilver94_, HAHA
+2021-02-11 14:36:53	@JoshStrobl	I mean awww
+2021-02-11 14:37:04	@JoshStrobl	(Thank you for updating it)
+2021-02-11 14:37:33	 *	JoshStrobl goes back to doing ESO dailies
+2021-02-11 14:37:38	livingsilver94_	given how thankful you are, I probably could ask you a ransom and you'd accept it
+2021-02-11 14:37:41	livingsilver94_	:P
+2021-02-11 14:41:24	XianTheSatanist	sheepman[m], if you're trying to package slic3r for Solus, have you considered also helping tag stable releases on the slic3r repository?
+2021-02-11 14:41:47	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-11 14:42:38	@DataDrake|zzz	that's a lot of work
+2021-02-11 14:43:54	@DataDrake|zzz	have to keep an eye on all of the github issues to see which ones are deal-breakers, maintain the changelog by the looks of it, and then take the flack every time you release a bugged release by accident
+2021-02-11 14:44:41	XianTheSatanist	I'm going to do something similar for Alan, so I mean if they want the package included he may decide it to be worth it or not.
+2021-02-11 14:45:07	XianTheSatanist	Wait can eopkg support external repos?
+2021-02-11 14:45:14	XianTheSatanist	unofficial?
+2021-02-11 14:45:44	@DataDrake|zzz	technically, yes. but we don't allow people to advertise them anywhere on Solus-run media
+2021-02-11 14:46:15	@DataDrake|zzz	and then you get to deal with the fallout every time we update something and it breaks your package(s)
+2021-02-11 14:46:32	@Girtablulu	or people ignore licenses
+2021-02-11 14:46:47	@DataDrake|zzz	well there's certainly that
+2021-02-11 14:47:11	@DataDrake|zzz	whack-a-mole aplenty with the unofficial megasync repos I keep finding
+2021-02-11 14:47:17	XianTheSatanist	like with mega? :^)
+2021-02-11 14:47:29	 *	DataDrake|zzz coughs
+2021-02-11 14:47:42	@DataDrake|zzz	amongst other things
+2021-02-11 14:48:03	@DataDrake|zzz	inb4 I get the 60th CUDA question in the last year
+2021-02-11 14:48:25	@Girtablulu	but AUR has it so it should be totally fine
+2021-02-11 14:48:49	@DataDrake|zzz	AUR is a copyright troll's wet dream
+2021-02-11 14:49:47	XianTheSatanist	That would be me, haha.
+2021-02-11 14:49:52	@Girtablulu	did they get take downs requests?
+2021-02-11 14:50:43	XianTheSatanist	I think a lot of Linux packagers get away with being too obscure to care. Usually...
+2021-02-11 14:51:52	@DataDrake|zzz	all it takes is pissing off the right person and it's a holy war
+2021-02-11 14:52:04	@DataDrake|zzz	we don't take chances
+2021-02-11 14:52:48	@Girtablulu	but arch doesn't take any responsibility about the AUR (while hosting it on the official side....)
+2021-02-11 14:53:06	@DataDrake|zzz	good luck arguing that in court
+2021-02-11 14:53:22	@Girtablulu	yea
+2021-02-11 14:53:32	@Girtablulu	but people seem no to understand this
+2021-02-11 14:54:08	@DataDrake|zzz	usually it's more that they're anarchists who don't care
+2021-02-11 14:54:55	--	DataDrake|zzz is now known as DataDrake|shop
+2021-02-11 15:00:09	@Girtablulu	well then Arch has many of them :)
+2021-02-11 15:01:06	livingsilver94_	arch has... anarchist users. Now I see a pattern
+2021-02-11 15:07:28	XianTheSatanist	oh no, guess I have to use Arch now :[
+2021-02-11 15:08:43	<--	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has quit (Remote host closed the connection)
+2021-02-11 15:19:26	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Remote host closed the connection)
+2021-02-11 15:19:50	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-11 15:28:03	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-11 15:39:02	stalebread	ultr4_l4s3r: two lasers holding hands
+2021-02-11 15:41:21	<--	panzeroceania (sid16210@gateway/web/irccloud.com/x-yxpltqdmzqridgww) has quit (Read error: Connection reset by peer)
+2021-02-11 15:42:36	-->	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has joined #Solus-Chat
+2021-02-11 15:54:01	-->	aquila (~aquila@185.172.210.31) has joined #Solus-Chat
+2021-02-11 15:58:30	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-11 16:04:06	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Quit: Quit)
+2021-02-11 16:13:18	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Cheers)
+2021-02-11 16:34:01	<--	aquila (~aquila@185.172.210.31) has quit (Remote host closed the connection)
+2021-02-11 16:34:09	<--	Doctor_Junglist (~Doctor_Ju@109.231.5.134) has quit (Remote host closed the connection)
+2021-02-11 16:39:06	-->	aquila (~aquila@185.172.210.31) has joined #Solus-Chat
+2021-02-11 16:47:17	-->	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has joined #Solus-Chat
+2021-02-11 16:50:46	rdr	I'm totally wired
+2021-02-11 16:51:40	<--	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has quit (Remote host closed the connection)
+2021-02-11 16:53:16	-->	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has joined #Solus-Chat
+2021-02-11 16:57:29	<--	DataDrake|shop (~DataDrake@98.3.31.10) has quit (Quit: Leaving)
+2021-02-11 16:57:35	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 264 seconds)
+2021-02-11 17:05:35	sheepman[m]	XianTheSatanist: yeah, just including my username in the message will do it. And yeah, you're right about the git version being more reliable. It seems that most people who use slic3r on linux either use the appimage or build from source. Appimages just make me crazy due to the lack of integration and such. As for why I don't try to help tag releases, I just don't feel qualified. I only know Python, which is
+2021-02-11 17:05:35	sheepman[m]	completely irrelevant to the project's codebase, and I'm not really an expert in 3d printing or slicer software. I just like printing stuff occasionally for my projects. I just don't feel comfortable testing stuff for releases based on that.
+2021-02-11 17:09:02	<--	aquila (~aquila@185.172.210.31) has quit (Ping timeout: 240 seconds)
+2021-02-11 17:13:00	Harvey	Several projects do that an its really annoying.
+2021-02-11 17:14:14	sheepman[m]	I've never seen another one that just doesn't bother tagging a release for two whole freaking years while development is still ongoing
+2021-02-11 17:14:28	sheepman[m]	At least not one that's actively used by a large number of people
+2021-02-11 17:15:38	Harvey	taglib hasn't tagged a stable release since 2016. Supposedly tagging one later this month.
+2021-02-11 17:15:51	sheepman[m]	....wow
+2021-02-11 17:19:31	XianTheSatanist	dang
+2021-02-11 17:19:59	XianTheSatanist	I'm still having trouble with the YAML version name
+2021-02-11 17:20:06	XianTheSatanist	3.0b7 isn't working
+2021-02-11 17:21:19	XianTheSatanist	The only other package called beta (nvidia driver) is just some numbers
+2021-02-11 17:21:27	XianTheSatanist	hm
+2021-02-11 17:25:03	XianTheSatanist	Ok looking at the wiki page for software versioning I may be able to just use a pure numbered form
+2021-02-11 17:25:51	-->	aquila (~aquila@185.172.210.31) has joined #Solus-Chat
+2021-02-11 17:32:28	Harvey	Yeah it'll allow you to have a letter in the version number but not if its followed by a number *shrugs*
+2021-02-11 17:38:10	--	irc: disconnected from server
+2021-02-11 18:02:54	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus-chat
+2021-02-11 18:02:54	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 18:02:54	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-11 18:02:54	--	Channel #solus-chat: 55 nicks (5 ops, 0 voices, 50 normals)
+2021-02-11 18:02:58	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-11 18:14:45	<--	aquila (~aquila@185.172.210.31) has quit (Ping timeout: 240 seconds)
+2021-02-11 18:27:31	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-11 18:41:15	stalebread	Hi Harvey Davidson
+2021-02-11 18:43:00	Harvey	-_-
+2021-02-11 18:43:08	stalebread	:(
+2021-02-11 18:43:46	stalebread	or are you Harvey from Stardew Valley
+2021-02-11 18:43:49	Harvey	In Australia there is a store called "Harvey Norman", so I'm used to that one.
+2021-02-11 18:44:07	stalebread	at least not Harvey Norton
+2021-02-11 18:44:08	Harvey	Never played it
+2021-02-11 18:44:27	stalebread	wow
+2021-02-11 18:44:30	stalebread	Norman still exists
+2021-02-11 18:47:18	Harvey	Not sure I follow.
+2021-02-11 18:47:26	stalebread	it's an antivirus company
+2021-02-11 18:49:04	Harvey	Ahh, yeah no relation to harvey norman. Which is just two surnames.
+2021-02-11 18:50:10	rdr	Harvey!
+2021-02-11 18:50:11	rdr	it's you
+2021-02-11 18:50:16	rdr	my mom's cat that ran away!
+2021-02-11 18:50:29	Harvey	It's me!
+2021-02-11 18:50:32	 *	Harvey runs
+2021-02-11 18:50:43	rdr	it's ok she has two new cats
+2021-02-11 18:50:49	rdr	including one that is a lookalike
+2021-02-11 18:50:56	rdr	not as good of a personality though
+2021-02-11 18:52:11	Harvey	Yeah can't just replace me. :)
+2021-02-11 18:59:11	rdr	man i am loving solus
+2021-02-11 18:59:21	rdr	Harvey of course we can't just replace a human
+2021-02-11 18:59:25	rdr	unless you're an android
+2021-02-11 18:59:30	rdr	in which case (gun emoji)
+2021-02-11 19:00:20	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-11 19:01:24	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-11 19:16:15	rdr	don't let me distrohop again
+2021-02-11 19:16:17	rdr	i dont wanna
+2021-02-11 19:16:21	rdr	but i know i might
+2021-02-11 19:16:29	rdr	it happens when everything is set up perfectly
+2021-02-11 19:35:25	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-11 19:40:02	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-11 19:53:34	--	irc: disconnected from server
+2021-02-11 20:00:50	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus-chat
+2021-02-11 20:00:50	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 20:00:50	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-11 20:00:50	--	Channel #solus-chat: 55 nicks (5 ops, 0 voices, 50 normals)
+2021-02-11 20:00:50	***	Buffer Playback...
+2021-02-11 20:00:50	Aph3x-WL	[19:57:08] most humans are easily replaceable
+2021-02-11 20:00:50	***	Playback Complete.
+2021-02-11 20:00:54	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-11 20:01:09	Aph3x-WL	i have like 12 stalebread's on one of my other servers
+2021-02-11 20:06:52	rdr	lol
+2021-02-11 20:06:55	rdr	but how many moms do you have
+2021-02-11 20:17:54	stalebread	you meet so many people
+2021-02-11 20:17:57	stalebread	why can't you forget them all
+2021-02-11 20:18:24	stalebread	Aph3x-WL: tell me more
+2021-02-11 20:32:18	rdr	sounds lonely stalebread 
+2021-02-11 20:32:25	rdr	your nick reminds me of Seneca
+2021-02-11 20:32:35	rdr	who suggested dining on stale bread fora  few days
+2021-02-11 20:32:41	rdr	to experience true poverty
+2021-02-11 20:32:48	rdr	so if it ever happened to you you'd be practiced
+2021-02-11 20:43:07	-->	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has joined #Solus-Chat
+2021-02-11 20:48:28	Aph3x-WL	i have lots of moms and dads
+2021-02-11 20:49:33	stalebread	bryan is my disappointed dad who just facepalms at everything I do
+2021-02-11 20:49:41	Aph3x-WL	one of the former manjaro devs is my dad
+2021-02-11 20:50:17	rdr	what did he do to become former
+2021-02-11 20:50:40	rdr	one of the current manjaro devs is my former dad
+2021-02-11 20:51:00	Aph3x-WL	he left because he didn't like how corrupt the other devs were
+2021-02-11 20:51:50	Aph3x-WL	they're very childish
+2021-02-11 20:52:00	rdr	sounds like manjaro
+2021-02-11 20:52:14	stalebread	re: the gaming laptop?
+2021-02-11 20:53:12	Aph3x-WL	no, this was a while ago when they had just abandoned their irc support channel
+2021-02-11 20:54:01	Aph3x-WL	jonathon, who was the treasurer that was fired because of the gaming laptop now works on endeavourOS i guess
+2021-02-11 20:54:30	rdr	I'm happy to be on Solus
+2021-02-11 20:55:35	stalebread	I like endeavour
+2021-02-11 20:56:12	rdr	i tried endeavour once
+2021-02-11 20:56:26	rdr	first update, the updater got into a loop and crashed over and over
+2021-02-11 20:56:31	stalebread	though its way of starting xcompmgr from xprofile is kind of random but
+2021-02-11 20:56:39	rdr	i had to go to the website and manually intervene to remove a package
+2021-02-11 20:56:55	stalebread	that's arch-based for you
+2021-02-11 20:57:00	rdr	apparently inherited from arch yeah
+2021-02-11 20:57:25	Aph3x-WL	how dare you
+2021-02-11 20:57:27	Aph3x-WL	arch is god
+2021-02-11 20:57:39	Aph3x-WL	it probably came from solus
+2021-02-11 20:58:40	stalebread	like arch never would require manual intervention
+2021-02-11 20:58:47	rdr	I see you're running Solus
+2021-02-11 20:58:59	rdr	I hear that distro is better, but you know what they say, old habits die hard
+2021-02-11 20:58:59	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-11 20:59:15	stalebread	I don't think Aph3x-WL is running on any occasion
+2021-02-11 20:59:35	Aph3x-WL	if it's a bad habit just stop
+2021-02-11 20:59:37	Aph3x-WL	easy
+2021-02-11 21:00:18	Aph3x-WL	stalebread: i run all the time
+2021-02-11 21:00:23	Aph3x-WL	gotta keep this body sexy
+2021-02-11 21:00:36	stalebread	https://www.youtube.com/watch?v=gfWQ1r6IQrY
+2021-02-11 21:00:36	@NarwhalBot	[ SexyBack | Desktop: https://youtube.com/watch?v=gfWQ1r6IQrY | Mobile: https://m.youtube.com/watch?v=gfWQ1r6IQrY ]
+2021-02-11 21:06:28	Aph3x-WL	not going to lie, i don't click your links
+2021-02-11 21:06:55	rdr	youtube?  why I'd never
+2021-02-11 21:07:12	 *	rdr is subscribed to a Youtube person.\
+2021-02-11 21:09:00	 *	Aph3x-WL is not
+2021-02-11 21:09:33	stalebread	I'm josh's patreon
+2021-02-11 21:14:24	rdr	who's josh
+2021-02-11 21:14:38	rdr	if it's someone here i'm new here
+2021-02-11 21:15:29	Aph3x-WL	josh is stalebread's imaginary friend
+2021-02-11 21:19:22	Harvey	https://getsol.us/solus/team/ - that Josh.
+2021-02-11 21:19:23	@NarwhalBot	[ Team | Solus ]
+2021-02-11 21:19:33	rdr	oh nice
+2021-02-11 21:19:37	rdr	thanks friend
+2021-02-11 21:19:49	rdr	i was a patron of another distro but i decided to part ways iwth them
+2021-02-11 21:19:58	rdr	i'm trying out Solus, and pretty impressed
+2021-02-11 21:22:27	Aph3x-WL	you didn't give money to manjaro did you? :/
+2021-02-11 21:22:57	Aph3x-WL	is philm your dad?
+2021-02-11 21:23:00	Aph3x-WL	did he send you?!
+2021-02-11 21:23:38	Harvey	Seek help Aph3x-WL :P
+2021-02-11 21:24:06	rdr	no i gave mine to a failed distro
+2021-02-11 21:24:16	stalebread	that's what he asked
+2021-02-11 21:24:22	Harvey	lol
+2021-02-11 21:24:24	rdr	it was going to be by feminists, for feminists, so we hired a bunch of female programs
+2021-02-11 21:24:27	rdr	programmers
+2021-02-11 21:24:41	rdr	anyways they ended up all fighting each other and the project was doomed
+2021-02-11 21:25:05	Aph3x-WL	but you said it's not manjaro?
+2021-02-11 21:25:15	rdr	no it was elementary OS
+2021-02-11 21:25:19	rdr	i wanted to try the new builds
+2021-02-11 21:25:24	rdr	they were not good 
+2021-02-11 21:25:43	rdr	like the installer couldn't understand other operating systems
+2021-02-11 21:25:50	rdr	a step backward from the previous version
+2021-02-11 21:26:17	rdr	it would have been fine if i had opened my case and unplugged the other drives
+2021-02-11 21:26:20	rdr	and said "install all"
+2021-02-11 21:26:25	rdr	but install somewhere confused it
+2021-02-11 21:27:02	Aph3x-WL	oh Scotty_Trees loves elementaryOS
+2021-02-11 21:27:10	stalebread	and Aph3x-WL loves Scotty_Trees
+2021-02-11 21:27:11	Aph3x-WL	don't tell him it failed
+2021-02-11 21:27:20	rdr	no that part was a joke
+2021-02-11 21:27:24	rdr	it was just elementary OS
+2021-02-11 21:27:28	rdr	al;though they're fairly progressive
+2021-02-11 21:27:36	rdr	wanting to be a big tech company sort of way
+2021-02-11 21:27:54	rdr	same with Mint
+2021-02-11 21:28:04	rdr	Clem famously saying he didn't want money or people from Israel using Mint.
+2021-02-11 21:28:27	Scotty_Trees	i'm busy.... https://www.youtube.com/watch?v=KuidQ9ang1Q
+2021-02-11 21:28:28	@NarwhalBot	[ The 1988 Volga GAZ 24-10 Is a Hilariously Bad Soviet Russian Car | Desktop: https://youtube.com/watch?v=KuidQ9ang1Q | Mobile: https://m.youtube.com/watch?v=KuidQ9ang1Q ]
+2021-02-11 21:29:51	stalebread	manjaro anthem https://www.youtube.com/watch?v=51NAFhGDIYw
+2021-02-11 21:29:51	@NarwhalBot	[ Johnny Hates Jazz - Turn Back The Clock (Official Video) | Desktop: https://youtube.com/watch?v=51NAFhGDIYw | Mobile: https://m.youtube.com/watch?v=51NAFhGDIYw ]
+2021-02-11 21:32:07	Aph3x-WL	it took you 1 minute to respond, you're not busy
+2021-02-11 21:34:05	rdr	maybe he can only respond minute by minute
+2021-02-11 21:34:13	rdr	so it's like he's on the moon
+2021-02-11 21:34:15	rdr	i should make a chart
+2021-02-11 21:34:20	Scotty_Trees	^
+2021-02-11 21:34:24	rdr	speed of light to various places
+2021-02-11 21:35:12	rdr	https://www.youtube.com/watch?v=b5eqE33Sh7E
+2021-02-11 21:35:13	@NarwhalBot	[ バスタブで朝食を 【MV】 marino with ティーポットオーケストラ | Desktop: https://youtube.com/watch?v=b5eqE33Sh7E | Mobile: https://m.youtube.com/watch?v=b5eqE33Sh7E ]
+2021-02-11 21:35:31	Aph3x-WL	that would mean he responded even quicker than that because of the delay
+2021-02-11 21:35:38	Aph3x-WL	poor Scotty_Trees :(
+2021-02-11 21:35:57	rdr	imagine always being three lines behind
+2021-02-11 21:36:08	 *	Scotty_Trees clicks no not disturb button
+2021-02-11 21:37:13	Aph3x-WL	speaking of being behind, did you finish the season yet Scotty_Trees ?
+2021-02-11 21:37:36	rdr	wow Scotty-Trees is a popular guy
+2021-02-11 21:38:23	Aph3x-WL	no
+2021-02-11 21:38:25	Aph3x-WL	don't give him that
+2021-02-11 21:40:02	Scotty_Trees	Aph3x-WL, no not yet, and if u spoil it for me intentionally, I will have you banned from all Dunkin Donuts
+2021-02-11 21:43:05	Aph3x-WL	i see you're trying to entice me to spoil it for you but sorry i'm not that kind of person
+2021-02-11 21:44:47	Scotty_Trees	Seems to me like someone doesn't want to lose their munchkins privileges
+2021-02-11 21:45:01	Scotty_Trees	looks like i've won another battle
+2021-02-11 21:45:31	rdr	but at what cost
+2021-02-11 21:45:35	Aph3x-WL	i don't know what a munchkins privilege is but i don't think i want it
+2021-02-11 21:48:39	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-11 22:00:15	--	irc: disconnected from server
+2021-02-11 22:03:10	-->	rdr (~rydare@unaffiliated/unheeding) has joined #Solus-Chat
+2021-02-11 22:03:10	--	Topic for #Solus-Chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 22:03:10	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-11 22:03:10	--	Channel #solus-chat: 55 nicks (5 ops, 0 voices, 50 normals)
+2021-02-11 22:03:15	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-11 22:05:55	Scotty_Trees	munchkins are those lil round donut bites one can never have just one of
+2021-02-11 22:06:37	Scotty_Trees	Sadly, I don't think Dunkin' exists in Australia anymore, right Harvey ?
+2021-02-11 22:07:49	Scotty_Trees	They do have Krispy Kreme tho, so that's something. And Aussie's have something called Donut Papi, lol
+2021-02-11 22:08:12	Scotty_Trees	This Boston Creme.....is NOT the father
+2021-02-11 22:08:19	-->	aquila (~aquila@185.172.210.31) has joined #Solus-Chat
+2021-02-11 22:09:25	Harvey	We do not have Dunkin Donuts no.
+2021-02-11 22:10:13	Harvey	I would also prefer Donut King plain donuts over anything at Krispy Kreme
+2021-02-11 22:12:17	sheepman[m]	Tim Hortons Forever
+2021-02-11 22:14:43	<--	shenchen (~shenchen@58.210.60.122) has quit (Remote host closed the connection)
+2021-02-11 22:16:07	Scotty_Trees	Harvey, Donut King from some of the Yelp photos looks tasty af ngl
+2021-02-11 22:16:39	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-11 22:18:30	Scotty_Trees	lol, they have something called Norman the Narwhal cookie/donut thingy in blue. Bet Josh would try that lol
+2021-02-11 22:19:44	Harvey	;)
+2021-02-11 22:22:50	Harvey	New addition to Metal Hermes playlist not available in straya
+2021-02-11 22:22:51	Harvey	ffs
+2021-02-11 22:23:18	sheepman[m]	Norman the Narwhal is just a great name.
+2021-02-11 22:24:50	Scotty_Trees	Harvey, oh noes!
+2021-02-11 22:25:40	Scotty_Trees	the last track i added was by a band called Convictions
+2021-02-11 22:25:49	Scotty_Trees	which is due to drop a new album soon
+2021-02-11 22:26:20	Harvey	Yeah, it tells me what is missing (just greyed out)
+2021-02-11 22:27:39	Harvey	I ended up with spotify premium btw. Someone added me to their family plan.
+2021-02-11 22:27:42	rdr	Scotty_Trees: you have no time for IRC
+2021-02-11 22:27:44	rdr	GET OUT OF HERE
+2021-02-11 22:28:12	Scotty_Trees	I have no time for Aph3x-WL is different from I have no time for IRC ;)
+2021-02-11 22:28:25	Scotty_Trees	#roasted
+2021-02-11 22:28:33	rdr	rekt
+2021-02-11 22:28:35	Scotty_Trees	#nationalroastday
+2021-02-11 22:28:36	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-11 22:32:28	Aph3x-WL	you always have time for me so of course they're different
+2021-02-11 22:35:50	 *	Scotty_Trees slowly leaves the room as quietly as possible...
+2021-02-11 22:37:33	Aph3x-WL	huh...that smell left too
+2021-02-11 22:37:53	Aph3x-WL	#roasted
+2021-02-11 22:40:50	Scotty_Trees	that was me taking all the donuts away with me
+2021-02-11 22:42:00	Aph3x-WL	if they smell like that then i don't want them anyway
+2021-02-11 22:43:01	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-yzvqootgadldiydj) has quit (Quit: Connection closed for inactivity)
+2021-02-11 22:47:50	Scotty_Trees	Not my fault you dislike Pineapple Donuts so much
+2021-02-11 22:49:02	rdr	you remind me of brothers
+2021-02-11 22:49:06	rdr	or you just dislike one another
+2021-02-11 22:53:33	Scotty_Trees	Dislike? No
+2021-02-11 22:54:22	Scotty_Trees	I feed him kindness and he rewards me with his words of wisdom, which I can always use against him.
+2021-02-11 22:55:03	Scotty_Trees	So it's not dislike, more like disfunctional :P (i know its spelled with a "y")
+2021-02-11 22:57:49	 *	Aph3x-WL hugs Scotty_Trees
+2021-02-11 22:59:03	--	irc: disconnected from server
+2021-02-12 00:12:27	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-12 00:12:27	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 00:12:27	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-12 00:12:27	--	Channel #solus-chat: 54 nicks (5 ops, 0 voices, 49 normals)
+2021-02-12 00:12:27	***	Buffer Playback...
+2021-02-12 00:12:27	Scotty_Trees	[23:00:12] anddddd the smells back
+2021-02-12 00:12:27	Scotty_Trees	[23:00:15] :P
+2021-02-12 00:12:27	Scotty_Trees	[23:20:45] Harvey, happy unstable normal friday btw :P
+2021-02-12 00:12:27	Harvey	[23:26:49] :P
+2021-02-12 00:12:27	***	Playback Complete.
+2021-02-12 00:12:31	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-12 00:14:29	Scotty_Trees	in case anyone might've missed this one just came out :) - https://www.youtube.com/watch?v=OGCZXEtoOw4
+2021-02-12 00:14:30	@NarwhalBot	[ Kevin James Forgets Who He Is While Eating Spicy Wings | Hot Ones | Desktop: https://youtube.com/watch?v=OGCZXEtoOw4 | Mobile: https://m.youtube.com/watch?v=OGCZXEtoOw4 ]
+2021-02-12 00:20:17	-->	nast (~nast@139.64.244.18) has joined #Solus-Chat
+2021-02-12 00:21:57	<--	aquila (~aquila@185.172.210.31) has quit (Remote host closed the connection)
+2021-02-12 00:54:00	<--	manokara (~manokara@200.187.163.138) has quit (Read error: Connection reset by peer)
+2021-02-12 00:58:24	-->	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has joined #Solus-Chat
+2021-02-12 01:01:15	-->	manokara (~manokara@189.112.56.85) has joined #Solus-Chat
+2021-02-12 01:07:24	-->	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 01:08:20	<--	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Client Quit)
+2021-02-12 01:08:40	<--	XianTheSatanist (~XianTheSa@98.156.161.167) has quit (Disconnected by services)
+2021-02-12 01:08:44	-->	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 01:09:12	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 01:12:30	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has quit (Client Quit)
+2021-02-12 01:14:47	<--	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Quit: Leaving)
+2021-02-12 01:15:09	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 01:17:09	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-12 01:20:00	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 265 seconds)
+2021-02-12 01:38:47	<--	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has quit (Remote host closed the connection)
+2021-02-12 01:49:05	-->	shenchen__ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-12 01:49:08	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-12 01:49:19	--	shenchen__ is now known as shenchen
+2021-02-12 01:51:12	-->	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-12 02:16:11	-->	chax_0 (~chax@cpe-188-252-130-254.zg5.cable.xnet.hr) has joined #Solus-Chat
+2021-02-12 02:19:56	<--	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has quit (Ping timeout: 265 seconds)
+2021-02-12 02:23:22	Scotty_Trees	ohhh, interesante mi amigos! - https://www.reddit.com/r/pop_os/comments/li47wr/system76_is_working_on_alternative_design_to/
+2021-02-12 02:23:23	@NarwhalBot	[ System76 is working on alternative design to GNOME 40 : pop_os ][Score: 71, 97% upvotes]
+2021-02-12 02:33:00	@Girtablulu	someone isn't happy as well in which way Gnome is moving?
+2021-02-12 02:34:28	Harvey	Took long enough.
+2021-02-12 02:58:01	Scotty_Trees	According to the Gnome devs, they've spent years researching and this is what people want
+2021-02-12 02:58:27	Scotty_Trees	as a gnome user, i don't think i ever agree with them
+2021-02-12 02:59:11	Scotty_Trees	apparently, it'll fix a bunch of touchpad issues or gestures as well
+2021-02-12 02:59:26	Scotty_Trees	but im a keyboard and mouse man, i touch my trackpad as a last resort
+2021-02-12 02:59:33	@JoshStrobl	That must be one helluva skewed polling if they came to the conclusion GNOME 40 is what people wanted.
+2021-02-12 02:59:39	Scotty_Trees	so all their 'changes' are infuritating to say the least
+2021-02-12 03:00:17	Scotty_Trees	i don't know where the research is either. i don't know what kind of people their asking
+2021-02-12 03:00:34	Scotty_Trees	"take our word for it"
+2021-02-12 03:01:09	Scotty_Trees	gnome 40 will make a Budgie man out of me yet :P
+2021-02-12 03:01:23	@JoshStrobl	yesssss, my master plan of letting GNOME destroy itself is working
+2021-02-12 03:01:37	Scotty_Trees	^my thoughts exactly, actually
+2021-02-12 03:02:04	Scotty_Trees	i wonder which gnome dev alias you go by to slowly corrupt them from the inside :P
+2021-02-12 03:02:41	@JoshStrobl	I'd say "libhandy" but they have that taken already
+2021-02-12 03:02:42	Scotty_Trees	i doubt you're secretly that baby wogue guy
+2021-02-12 03:02:48	@JoshStrobl	Fuuuuck no
+2021-02-12 03:02:51	Scotty_Trees	LOL
+2021-02-12 03:32:23	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus-Chat
+2021-02-12 03:49:37	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-12 03:54:57	<--	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Remote host closed the connection)
+2021-02-12 03:55:15	-->	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-12 05:03:55	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 05:20:41	-->	andril (~andril@2601:586:8400:5e9::1007) has joined #Solus-Chat
+2021-02-12 05:39:23	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-12 05:40:16	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 05:44:49	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus-Chat
+2021-02-12 05:59:16	sheepman[m]	JoshStrobl: Budgie Qt when? :P
+2021-02-12 06:03:10	@JoshStrobl	no
+2021-02-12 06:04:10	sheepman[m]	I remember back when that was the plan
+2021-02-12 06:04:14	shenchen	this question arises once every month
+2021-02-12 06:04:21	sheepman[m]	How times change
+2021-02-12 06:56:07	<--	andril (~andril@2601:586:8400:5e9::1007) has quit (Ping timeout: 265 seconds)
+2021-02-12 07:32:00	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-12 07:36:22	-->	drmbls (~marius@78-56-83-14.static.zebra.lt) has joined #Solus-Chat
+2021-02-12 07:50:13	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 07:58:29	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 08:09:25	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-12 08:46:07	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-12 09:14:25	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 246 seconds)
+2021-02-12 09:21:19	-->	stalebread (~stalebrim@85-76-108-181-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-12 09:36:09	stalebread	what's fun in snd_virtuoso is that I need about three applications to set my audio settings
+2021-02-12 09:36:14	stalebread	mainly alsamixer and pavucontrol
+2021-02-12 09:36:38	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-12 09:38:46	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-12 10:00:42	<--	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has quit (Quit: Konversation terminated!)
+2021-02-12 10:12:15	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 240 seconds)
+2021-02-12 10:36:10	Aph3x-WL	>According to the Gnome devs, they've spent years researching and this is what people want
+2021-02-12 10:36:13	Aph3x-WL	inb4 their research came from 4chan
+2021-02-12 10:43:04	-->	shenchen_ (~shenchen@114.218.92.203) has joined #Solus-Chat
+2021-02-12 10:44:42	rdr	yeah apparently people don't want to be able to control their music player seperately from master (oops "main") volume
+2021-02-12 11:00:10	stalebread	>gnome
+2021-02-12 11:00:14	stalebread	>researching what people want
+2021-02-12 11:01:50	-->	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has joined #Solus-Chat
+2021-02-12 11:02:35	Aph3x-WL	i don't know what main is, i only use master and slave
+2021-02-12 11:02:41	Aph3x-WL	dom and sub are also acceptable
+2021-02-12 11:03:24	-->	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has joined #Solus-Chat
+2021-02-12 11:06:27	stalebread	vouching for streamer and simp
+2021-02-12 11:09:28	<--	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has quit (Quit: WeeChat 3.0)
+2021-02-12 11:11:10	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-12 11:12:41	stalebread	hi ultr4_l4s3r
+2021-02-12 11:12:45	stalebread	making makaronilaatikko
+2021-02-12 11:19:40	Aph3x-WL	that's inappropriate
+2021-02-12 11:21:31	abdulocracy	Gesundheit
+2021-02-12 11:21:58	@JoshStrobl	stalebread, are you one of those heathens that adds ketchup on it?
+2021-02-12 11:22:10	abdulocracy	Ketchup on macaroni is good okay
+2021-02-12 11:22:17	@JoshStrobl	dafuq
+2021-02-12 11:22:33	abdulocracy	You know what I do?
+2021-02-12 11:22:39	@JoshStrobl	I raised you all to be better than this!
+2021-02-12 11:22:47	abdulocracy	I make PLAIN MACARONI
+2021-02-12 11:22:56	abdulocracy	And then I squirt KETCHUP
+2021-02-12 11:22:58	abdulocracy	ALL OVER IT
+2021-02-12 11:23:03	@JoshStrobl	NO
+2021-02-12 11:23:05	@JoshStrobl	GOD NO
+2021-02-12 11:23:42	ultr4_l4s3r	wtf
+2021-02-12 11:23:43	abdulocracy	In fact I'm gonna do it right now
+2021-02-12 11:23:56	@JoshStrobl	.slap abdulocracy
+2021-02-12 11:23:56	 *	NarwhalBot slaps abdulocracy
+2021-02-12 11:24:03	ultr4_l4s3r	snap out of it
+2021-02-12 11:24:07	abdulocracy	Hit me harder daddy
+2021-02-12 11:24:33	abdulocracy	Or I'll add mayo too
+2021-02-12 11:24:38	@JoshStrobl	D:
+2021-02-12 11:24:45	@JoshStrobl	you people disgust me
+2021-02-12 11:25:01	@JoshStrobl	next you're going to tell me you LIKE the default GNOME Shell experience
+2021-02-12 11:25:18	abdulocracy	I use it every damn DAY
+2021-02-12 11:25:29	ultr4_l4s3r	now we know you're lying
+2021-02-12 11:25:35	@JoshStrobl	^
+2021-02-12 11:25:50	abdulocracy	I swear on my ketchup 'n' mayo casserole
+2021-02-12 11:26:19	@JoshStrobl	That doesn't mean much around these parts
+2021-02-12 11:26:39	 *	abdulocracy uploaded an image: image.png (211KiB) < https://matrix.org/_matrix/media/r0/download/matrix.org/OJUXsEHfPuhFgMsLesRNdPHz/image.png >
+2021-02-12 11:26:50	abdulocracy	Oh wait that's just the window
+2021-02-12 11:27:10	abdulocracy	Yes, this Firefox window is proof lol
+2021-02-12 11:27:19	@JoshStrobl	xD
+2021-02-12 11:27:35	 *	abdulocracy uploaded an image: image.png (344KiB) < https://matrix.org/_matrix/media/r0/download/matrix.org/fUUzyNNICdceYzpVASdXpZCW/image.png >
+2021-02-12 11:27:38	abdulocracy	Boom
+2021-02-12 11:27:48	abdulocracy	Wait, how does Matrix handle sending images to irc?
+2021-02-12 11:28:24	@JoshStrobl	it says "xyz uploaded an image: filename.extension (size) < long ass link >
+2021-02-12 11:28:27	stalebread	JoshStrobl: yes
+2021-02-12 11:28:29	stalebread	and maksalaatikko
+2021-02-12 11:28:43	 *	abdulocracy high-fives stalebread 
+2021-02-12 11:29:02	rdr	using a webapp? lol
+2021-02-12 11:29:29	stalebread	JoshStrobl: I like solus gnome shell experience
+2021-02-12 11:29:32	abdulocracy	Yes, I am of the true heathens
+2021-02-12 11:29:54	abdulocracy	But I too have my principles
+2021-02-12 11:30:03	abdulocracy	No Electron
+2021-02-12 11:30:08	abdulocracy	And no libhandy
+2021-02-12 11:30:28	@JoshStrobl	There is a glimmer of hope for you yet
+2021-02-12 11:30:38	stalebread	I use cream cheese on fish
+2021-02-12 11:30:53	@JoshStrobl	Yea stalebread is hopeless 100%
+2021-02-12 11:31:11	abdulocracy	Wait a minute
+2021-02-12 11:31:25	@JoshStrobl	no u
+2021-02-12 11:31:36	 *	abdulocracy uploaded an image: image.png (7KiB) < https://matrix.org/_matrix/media/r0/download/matrix.org/oaxJeaKdjTGCulQpgSXpGtXq/image.png >
+2021-02-12 11:31:42	abdulocracy	no
+2021-02-12 11:31:57	 *	abdulocracy uploaded an image: image.png (5KiB) < https://matrix.org/_matrix/media/r0/download/matrix.org/YotgwxzJEQZwQqROakxWPdMb/image.png >
+2021-02-12 11:32:05	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 11:32:24	abdulocracy	http://gph.is/13EFbwo
+2021-02-12 11:32:25	@NarwhalBot	[ The Office GIF - Find & Share on GIPHY ]
+2021-02-12 11:32:52	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus-Chat
+2021-02-12 11:33:08	abdulocracy	My life was a lie
+2021-02-12 11:33:14	@JoshStrobl	That's what you get for using Arch
+2021-02-12 11:33:25	@JoshStrobl	You're just punishing yourself at this point
+2021-02-12 11:33:29	@Girtablulu	is an american trying to tell us about food culture while have cheese from a can?
+2021-02-12 11:34:13	@JoshStrobl	I don't have cheese in a can though? I have normal cheese.
+2021-02-12 11:34:21	@Girtablulu	and ketchup with macaroni is ヽ(・∀・)ﾉ
+2021-02-12 11:34:52	 *	Girtablulu takes quick a shower
+2021-02-12 11:35:02	@JoshStrobl	https://www.foodie.fi/entry/rainbow-kermajuusto-1-kg/6414893381018
+2021-02-12 11:35:03	@NarwhalBot	[ Rainbow 1 kg kermajuusto, rainbow - ruoan verkkokauppa foodie.fi | tilaa ruokaa prismasta, s-marketista, alepasta ja salesta ]
+2021-02-12 11:35:10	abdulocracy	Cheese in a can is good ok
+2021-02-12 11:35:29	mammothrept	never ever
+2021-02-12 11:35:58	abdulocracy	Sometimes you wanna do that open-the-fridge-and-squirt-whipped-cream-in-your-mouth thing
+2021-02-12 11:36:02	abdulocracy	But you just wish it was chees
+2021-02-12 11:36:08	abdulocracy	*cheese
+2021-02-12 11:36:31	@JoshStrobl	Uhhhh sure
+2021-02-12 11:37:32	mammothrept	xD
+2021-02-12 11:37:46	mammothrept	I could never
+2021-02-12 11:38:02	abdulocracy	mammothrept that's what they all say
+2021-02-12 11:38:15	abdulocracy	Join us
+2021-02-12 11:38:19	abdulocracy	Just give it a try
+2021-02-12 11:38:38	@JoshStrobl	Don't give in to the dark side
+2021-02-12 11:38:53	ultr4_l4s3r	This is reaching levels of depravity I didn't even think were possible
+2021-02-12 11:38:55	mammothrept	I've tried it. not my thing. at all
+2021-02-12 11:39:04	abdulocracy	Accompany the cheesy goodness with a ketchup mayo casserole
+2021-02-12 11:39:20	abdulocracy	And a cream cheese mackerel
+2021-02-12 11:39:22	mammothrept	I'll walk out now. xD
+2021-02-12 11:39:46	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-12 11:40:08	@JoshStrobl	ultr4_l4s3r, it is a real low for the chat isn't it
+2021-02-12 11:40:08	abdulocracy	https://media.giphy.com/media/3o84sw9CmwYpAnRRni/giphy.gif
+2021-02-12 11:40:20	@JoshStrobl	Promotion of canned cheese..ugh
+2021-02-12 11:40:32	ultr4_l4s3r	JoshStrobl, I wouldn't go that far. This chat has seen some pretty low lows :D
+2021-02-12 11:40:37	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-12 11:40:42	stalebread	abdulocracy: "But you just wish it was chees
+2021-02-12 11:40:52	stalebread	like in the goofy movie
+2021-02-12 11:41:02	abdulocracy	I shall remind you of why the history thingamabobber was removed
+2021-02-12 11:41:39	ultr4_l4s3r	it's not a story the Jedi would tell you
+2021-02-12 11:41:40	abdulocracy	.quote wasn't it
+2021-02-12 11:42:05	stalebread	subwoofers are for pussies who can't handle real treble
+2021-02-12 11:42:14	abdulocracy	The tragedy of darth quoteous the obscene
+2021-02-12 11:43:46	abdulocracy	stalebread that's why I have a surround tweeter setup in my living room
+2021-02-12 11:44:06	abdulocracy	#tweetergangunite
+2021-02-12 11:46:55	@JoshStrobl	Meanwhile I just use the speakers on my tv like a pleb
+2021-02-12 11:46:56	abdulocracy	The Autechre hits different when it's from 6 tweeters
+2021-02-12 11:47:45	stalebread	don't you seeeeeeee
+2021-02-12 11:47:49	stalebread	we're in thiiis tooogeeether
+2021-02-12 11:47:58	abdulocracy	We don't discriminate, just EQ down entirely everything below 2khz
+2021-02-12 11:48:09	abdulocracy	You'll have yourself a budget setup
+2021-02-12 11:50:31	abdulocracy	And listen to the initiation track https://youtu.be/USbGYJ8gnNw
+2021-02-12 11:50:32	@NarwhalBot	[ Crystel | Desktop: https://youtube.com/watch?v=USbGYJ8gnNw | Mobile: https://m.youtube.com/watch?v=USbGYJ8gnNw ]
+2021-02-12 11:51:05	abdulocracy	If you hear anything more than clinking metal you're doing it wrong
+2021-02-12 11:52:11	stalebread	https://www.youtube.com/watch?v=_wNK9ZhJo7k
+2021-02-12 11:52:11	@NarwhalBot	[ Telex - Peanuts (Long Version) [Audio Only] | Desktop: https://youtube.com/watch?v=_wNK9ZhJo7k | Mobile: https://m.youtube.com/watch?v=_wNK9ZhJo7k ]
+2021-02-12 11:52:23	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-12 11:53:17	ultr4_l4s3r	By all accounts it was no more than a hulking mass of iron
+2021-02-12 11:53:18	ultr4_l4s3r	https://youtu.be/xd9fiOrfEqI?list=FLoXK2HQbTA-rgsbxU9YT4ZQ
+2021-02-12 11:53:18	@NarwhalBot	[ Berserk - S3RL ft Iceman | Desktop: https://youtube.com/watch?v=xd9fiOrfEqI | Mobile: https://m.youtube.com/watch?v=xd9fiOrfEqI ]
+2021-02-12 11:59:22	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 11:59:55	abdulocracy	https://youtu.be/xdk7irXLbl4
+2021-02-12 11:59:55	@NarwhalBot	[ Cassius Castrato The She-Male Of The Men's Prison | Desktop: https://youtube.com/watch?v=xdk7irXLbl4 | Mobile: https://m.youtube.com/watch?v=xdk7irXLbl4 ]
+2021-02-12 12:01:45	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-12 12:04:32	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-relyhngldwxxkapv) has joined #Solus-Chat
+2021-02-12 12:07:58	abdulocracy	Man leaves negative review of law firm, is ordered to pay $34k in damages: https://news.slashdot.org/story/21/02/09/2043203/man-to-pay-34000-damages-over-negative-trustpilot-review
+2021-02-12 12:08:00	@NarwhalBot	[ Man To Pay $34,000 Damages Over Negative TrustPilot Review - Slashdot ]
+2021-02-12 12:14:27	stalebread	getting in fights with her
+2021-02-12 12:14:32	stalebread	playing sports with her
+2021-02-12 12:14:36	stalebread	watching kung-fu movies with her
+2021-02-12 12:21:22	TraceyC	Well, calling a firm a "scam solicitor" is a bit different than stating an opinion or that you're unhappy with their service
+2021-02-12 12:21:44	abdulocracy	Yep
+2021-02-12 12:22:26	TraceyC	Even in the US there's a clear distinction, in court, between stating an opinion in a review and claiming something as a fact
+2021-02-12 12:22:26	stalebread	"I don't like Budgie" *gets sued by Josh*
+2021-02-12 12:22:57	abdulocracy	More like "Budgie is a DE that illegally spies on users"
+2021-02-12 12:23:27	TraceyC	Also, the Pi foundation is clearly in cahoots with Microsoft to spy on all Pi users
+2021-02-12 12:23:45	stalebread	abdulocracy: you know too much
+2021-02-12 12:24:16	abdulocracy	I am mister megamind
+2021-02-12 12:24:32	abdulocracy	TraceyC: use Raspbian
+2021-02-12 12:24:42	TraceyC	(That was sarcasm)
+2021-02-12 12:24:48	stalebread	use Intel Compute Stick
+2021-02-12 12:25:55	abdulocracy	It's not spying, but it was still very shady
+2021-02-12 12:26:09	Aph3x-WL	i like how that guy has to prove his innocence but the firm doesn't have to prove that they lost business _because_ of him
+2021-02-12 12:26:14	stalebread	https://www.youtube.com/watch?v=eJO5HU_7_1w
+2021-02-12 12:26:15	@NarwhalBot	[ Eminem - The Real Slim Shady (Official Video - Clean Version) | Desktop: https://youtube.com/watch?v=eJO5HU_7_1w | Mobile: https://m.youtube.com/watch?v=eJO5HU_7_1w ]
+2021-02-12 12:26:58	abdulocracy	TraceyC how dare you not use /s my megamind is too good to comprehend your sarcasm
+2021-02-12 12:28:06	Aph3x-WL	TraceyC does sarcasm?
+2021-02-12 12:28:27	TraceyC	I see what you did there
+2021-02-12 12:29:02	stalebread	I know what you do
+2021-02-12 12:29:04	stalebread	cause I do it too
+2021-02-12 12:30:54	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-12 12:36:10	stalebread	https://ylilauta.org/sekalainen/129019134
+2021-02-12 12:36:11	@NarwhalBot	[ https://www.youtube.com/watch?v=D6Ae_ZwpSlo Mikä on Talla... | Ylilauta ]
+2021-02-12 12:37:32	stalebread	https://www.youtube.com/watch?v=D6Ae_ZwpSlo I was supposed to link the vid but ok
+2021-02-12 12:37:33	@NarwhalBot	[ Helmeily Jatkot | Desktop: https://youtube.com/watch?v=D6Ae_ZwpSlo | Mobile: https://m.youtube.com/watch?v=D6Ae_ZwpSlo ]
+2021-02-12 12:39:05	abdulocracy	What is he trying to do
+2021-02-12 12:39:08	ultr4_l4s3r	wat
+2021-02-12 12:39:12	<--	miracleorange (~miracleor@static-198-54-134-101.cust.tzulo.com) has quit (Remote host closed the connection)
+2021-02-12 12:59:35	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-12 13:05:18	stalebread	ultr4_l4s3r: so you're really tough guy
+2021-02-12 13:34:34	<--	chax_0 (~chax@cpe-188-252-130-254.zg5.cable.xnet.hr) has quit (Remote host closed the connection)
+2021-02-12 13:42:29	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-12 14:03:43	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-12 14:17:14	stalebread	JoshStrobl: how's your neural network AI-powered blockchain audio player going
+2021-02-12 14:18:50	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 265 seconds)
+2021-02-12 14:29:01	<--	Flabb (~Flabb@89.169.84.221) has quit (Quit: Leaving)
+2021-02-12 14:35:48	rdr	TGIF
+2021-02-12 14:37:38	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus-Chat
+2021-02-12 14:43:24	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 14:45:03	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-12 14:48:25	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-12 14:52:51	<--	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Ping timeout: 256 seconds)
+2021-02-12 14:53:30	-->	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b14b:22ca:44c3:57de:c213:9b8) has joined #Solus-Chat
+2021-02-12 14:57:12	rdr	It's our old pal Scotty_Trees_HP!
+2021-02-12 14:58:13	stalebread	in a high-passed manner
+2021-02-12 14:58:23	rdr	he has more hitpoints
+2021-02-12 15:12:07	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-12 15:18:31	stalebread	good night sleeping beauty
+2021-02-12 15:31:35	sheepman[m]	holy crap, maybe sometimes I shouldn't read the logs
+2021-02-12 15:32:14	sheepman[m]	just so everyone is clear, ketchup is the devil no matter what you put it on
+2021-02-12 15:53:56	stalebread	no, it's umami
+2021-02-12 15:54:09	stalebread	umami is good
+2021-02-12 16:08:01	stalebread	https://twitter.com/olynative/status/1360343707845726208
+2021-02-12 16:08:02	@NarwhalBot	[ Jordan Chase on Twitter: "The Mario Kart 64 extension downloads a ROM of the N64 game. 🤔… " ]
+2021-02-12 16:09:13	stalebread	https://a.uguu.se/uoFfvNKg.jpg
+2021-02-12 16:14:33	<--	drmbls (~marius@78-56-83-14.static.zebra.lt) has quit (Quit: WeeChat 3.0.1)
+2021-02-12 16:21:38	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-12 16:22:06	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 16:22:34	stalebread	girls watching anime and playing video games
+2021-02-12 16:22:38	stalebread	when will it be girls using linux
+2021-02-12 16:38:48	<--	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b14b:22ca:44c3:57de:c213:9b8) has quit (Ping timeout: 264 seconds)
+2021-02-12 16:39:01	-->	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-12 16:58:46	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-12 17:11:07	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 17:26:31	Harvey	We don't accept donations. - "Yes, I've read that. But it's hard to believe there is no way to accept donations."
+2021-02-12 17:26:32	Harvey	wat?
+2021-02-12 17:27:09	stalebread	I've read god doesn't exist
+2021-02-12 17:27:13	stalebread	it's hard to believe
+2021-02-12 17:27:37	Harvey	I just don't understand the logic. Yes I read you don't accept donations but clearly you must be lying.
+2021-02-12 17:30:36	stalebread	yes I read the pain will stop eventually but clearly you must be lying
+2021-02-12 17:31:43	stalebread	technically you can donate Josh now
+2021-02-12 17:33:47	Harvey	Which has he said isn't strictly related to Solus.
+2021-02-12 17:33:59	Harvey	he has said*
+2021-02-12 17:37:14	stalebread	yea
+2021-02-12 17:37:34	stalebread	but will indirectly benefit Solus also.
+2021-02-12 17:37:53	Harvey	It's also odd that it took them 8 months to respond to the answer they apparently do not believe.
+2021-02-12 17:38:20	@Girtablulu	more like you guys are insane
+2021-02-12 17:38:46	@Girtablulu	just throw josh patron link at him
+2021-02-12 17:38:54	stalebread	Girtablulu: I am
+2021-02-12 17:38:56	Harvey	Well I would have to be to follow that logic :P
+2021-02-12 17:40:08	rdr	all hail Girtablulu, the greatest of moderators
+2021-02-12 17:40:27	@Girtablulu	well he said one stream, he will work on solus stuff as well and stream it
+2021-02-12 17:41:06	rdr	so donating to josh is the only way to support solus?
+2021-02-12 17:41:13	rdr	besides cheering them on?
+2021-02-12 17:41:24	stalebread	no, another way is providing them patches and maintaining software
+2021-02-12 17:41:43	Harvey	https://getsol.us/articles/contributing/getting-involved/en/  =P
+2021-02-12 17:41:44	@NarwhalBot	[ Getting Involved | Solus Help Center ]
+2021-02-12 17:41:46	stalebread	(and sending Josh whiskey and Girt, idk, swiss cheese I guess)
+2021-02-12 17:41:59	@Girtablulu	i mean you could do both
+2021-02-12 17:42:02	rdr	i got this smoked cheddar, it's very good
+2021-02-12 17:42:25	@Girtablulu	throw money at josh and maintain a couple of packages
+2021-02-12 17:42:36	stalebread	throw money at the problem
+2021-02-12 17:42:41	 *	stalebread runs
+2021-02-12 17:43:02	rdr	unfortunately, i'm an author of many, maintainer of none
+2021-02-12 17:43:11	Harvey	An send me beer. It won't help Solus directly but I'm nicer with alcohol. So when you really think about it...
+2021-02-12 17:43:13	 *	rdr has 150 hello world projects all unmaintained
+2021-02-12 17:43:22	stalebread	yea you can send me alcohol too
+2021-02-12 17:43:39	stalebread	everyone likes me when I'm drunk so
+2021-02-12 17:44:24	@Girtablulu	for josh it should be whisky
+2021-02-12 17:45:07	stalebread	I send him the cheapest bulk beer I can find
+2021-02-12 17:45:45	Harvey	It's not the price that matters, its the ABV :P
+2021-02-12 17:46:04	rdr	you can get in trouble with stuff like 40s
+2021-02-12 17:47:12	stalebread	I regularly drank 40% vodka like year or two ago
+2021-02-12 17:47:22	stalebread	after my latest ban and act of grace, I actually haven't been drinking much
+2021-02-12 17:47:29	rdr	lol
+2021-02-12 17:47:39	rdr	i meant the high alcohol "beer"
+2021-02-12 17:47:44	rdr	not the percentage
+2021-02-12 17:47:47	rdr	i dunno what they call them there
+2021-02-12 17:47:54	rdr	40oz to freedom
+2021-02-12 17:49:00	stalebread	I've came to a conclusion I'm becoming physically old and can't really tolerate alcohol so much anymore so it's a couple beers or low-alc liqueur for me
+2021-02-12 17:49:17	rdr	yeah i'm with you
+2021-02-12 17:49:26	rdr	i haven't drank in a while, just haven't had the money to burn
+2021-02-12 17:49:40	rdr	plus nobody is going to bars these days
+2021-02-12 17:50:06	rdr	even my barfly 65 year old friend has stopped, saving him thousands of dollars
+2021-02-12 17:54:08	rdr	https://u.teknik.io/VwC70.png time for desktop screenshots
+2021-02-12 17:56:48	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 272 seconds)
+2021-02-12 17:57:33	Harvey	I just make my own. 22.2L costs me $20-30~ vs roughly $80+ for the same amount for store bought cheap shit.
+2021-02-12 17:58:25	Harvey	Should post it to the forum: https://discuss.getsol.us/d/8-show-your-solus
+2021-02-12 17:58:26	@NarwhalBot	[ Show your Solus - Solus Forum ]
+2021-02-12 17:59:57	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Quit: Leaving)
+2021-02-12 18:00:05	stalebread	https://a.uguu.se/KcjNCt.png not much to tell about it
+2021-02-12 18:00:34	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 240 seconds)
+2021-02-12 18:02:41	Harvey	https://i.imgur.com/K6s081K.png - old one... transparency stopped working an I don't know why.
+2021-02-12 18:02:55	Harvey	Typical Plasma.
+2021-02-12 18:04:01	-->	shenchen__ (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-12 18:06:54	<--	shenchen_ (~shenchen@114.218.92.203) has quit (Ping timeout: 264 seconds)
+2021-02-12 18:09:59	rdr	how do you link an image on teh forums?
+2021-02-12 18:11:27	rdr	oh i figured it out
+2021-02-12 18:11:30	rdr	just paste the link
+2021-02-12 18:14:27	rdr	harvey doxxedhimself
+2021-02-12 18:14:28	rdr	oh no
+2021-02-12 18:14:36	 *	rdr plans devilish schemes for troy
+2021-02-12 18:14:46	Harvey	If only my name wasn't already everywhere :P
+2021-02-12 18:14:49	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-12 18:14:50	Harvey	and my email address
+2021-02-12 18:14:57	stalebread	even worse, he's using Konversation
+2021-02-12 18:15:38	rdr	KONVERSATION TERMINATED
+2021-02-12 18:16:21	Harvey	I assume your a hexchat person. Enjoying gtk2? :)
+2021-02-12 18:16:59	stalebread	enjoying terminal
+2021-02-12 18:17:29	rdr	weechat!
+2021-02-12 18:17:35	rdr	hexchatt on wangblows though
+2021-02-12 18:17:40	rdr	but i normally just boot it to game
+2021-02-12 18:17:41	stalebread	why would you need a widget toolkit in an irc client
+2021-02-12 18:17:47	Harvey	I tried to like weechat
+2021-02-12 18:17:55	stalebread	fork it
+2021-02-12 18:17:56	stalebread	and name it peechat
+2021-02-12 18:17:57	Harvey	Why not just telnet :P
+2021-02-12 18:18:04	stalebread	yea solus BBS
+2021-02-12 18:22:13	stalebread	imagine if it was harvey who wrote the tray reimplementation
+2021-02-12 18:22:20	stalebread	he could've call it "tray harvey"
+2021-02-12 18:22:51	Harvey	An Budgie would be using qt.
+2021-02-12 18:25:24	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 18:38:44	stalebread	Harvey: well, aren't budgies supposed to be cute
+2021-02-12 18:39:04	Harvey	buh dum tss
+2021-02-12 18:47:55	YakoYako	Let's flippin' go
+2021-02-12 18:48:16	YakoYako	I've built a full `dotnet` that is bootstrapabble
+2021-02-12 18:49:30	stalebread	and josh says ketchup on macaronis is bad
+2021-02-12 18:50:21	Harvey	So should I not mention how I used to have peanut butter and tomato sauce sandwiches.
+2021-02-12 18:51:02	YakoYako	I win against you, I eat dulce de leche with chese
+2021-02-12 18:51:32	YakoYako	cheese you cheeky keyboard
+2021-02-12 18:52:28	stalebread	my mom likes frankfurters and yogurt
+2021-02-12 18:54:28	Harvey	weird.
+2021-02-12 18:54:45	stalebread	well she produced me so idk why you're wondering
+2021-02-12 19:07:16	--	irc: disconnected from server
+2021-02-12 19:46:44	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-12 19:46:44	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 19:46:44	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-12 19:46:44	--	Channel #solus-chat: 54 nicks (5 ops, 0 voices, 49 normals)
+2021-02-12 19:46:48	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-12 19:58:59	Aph3x-WL	at the same time?
+2021-02-12 20:01:39	Scotty_Trees	better late than not at all, but happy friday sync nerds :P
+2021-02-12 20:02:47	Aph3x-WL	Scotty_Trees: have you not read the backlog? nerds don't eat the horrifying things these people do
+2021-02-12 20:04:03	Scotty_Trees	i don't typically read the backlogs, no
+2021-02-12 20:04:13	Scotty_Trees	i skim them at best tho :P
+2021-02-12 20:04:19	stalebread	Aph3x-WL: yea combining frankfurter bits with strawberry yogurt
+2021-02-12 20:04:39	Aph3x-WL	:/
+2021-02-12 20:05:09	Aph3x-WL	not gonna lie
+2021-02-12 20:05:12	Aph3x-WL	that's pretty hot
+2021-02-12 20:06:45	Harvey	I need to get out more... This chat is having a negative impact on my metal state. :P
+2021-02-12 20:07:21	stalebread	s/chat/OS/
+2021-02-12 20:08:15	Aph3x-WL	what other states do you have besides metal?
+2021-02-12 20:08:41	Harvey	liquid and gas
+2021-02-12 20:08:58	Harvey	buh dum tss
+2021-02-12 20:09:05	stalebread	GAS GAS GAS
+2021-02-12 20:09:06	Harvey	See what I mean... I'm going insane
+2021-02-12 20:09:54	Aph3x-WL	you've been saying that for multiple years, if it was going to happen it would have by now
+2021-02-12 20:44:04	-->	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has joined #Solus-Chat
+2021-02-12 21:09:19	_shawn	happy friday
+2021-02-12 21:09:34	stalebread	it's saturday
+2021-02-12 21:10:03	_shawn	happy saturday
+2021-02-12 21:10:41	stalebread	thanks
+2021-02-12 21:12:33	_shawn	how is 'it' short for install
+2021-02-12 21:12:58	sheepman[m]	easier to type than "in"
+2021-02-12 21:13:10	_shawn	oh ins tall. I was thinking in stall
+2021-02-12 21:13:11	sheepman[m]	would be my guess, not being the one who wrote it
+2021-02-12 21:14:59	sheepman[m]	yeah, I'd guess the rationale was that I and T are two different hands when touch typing, so it's slightly easier to type fast. Once you get used to it, it's not something that really makes a difference, and people who move from other distros and don't read all the docs can just keep typing "install" like they always had before :D
+2021-02-12 21:15:12	sheepman[m]	or maybe it's just random, I don't know
+2021-02-12 21:15:20	_shawn	you know if I set a .desktop (installed by a package) to hidden it will get overwritten on next install? hmm I wonder if one in my home directory will override the system one
+2021-02-12 21:15:38	sheepman[m]	hmmm, I haven't tested that
+2021-02-12 21:15:50	_shawn	er, not on next install, I mean on next update
+2021-02-12 21:16:01	sheepman[m]	oh I read it as next update anyway :D
+2021-02-12 21:16:25	rdr	i believe if you put it in ~/.local/applications it will override the ones in /usr/share/applications
+2021-02-12 21:16:29	rdr	i might be misremembering t hough
+2021-02-12 21:17:04	sheepman[m]	generally that's how stuff works, but I don't know about .desktop files. I guess just try it and see if it unhides after updates
+2021-02-12 21:22:09	<--	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has quit
+2021-02-12 21:22:21	sheepman[m]	Harvey: moving here from #solus, have you tried Falkon? holy hell is that thing fast. I'm tempted to write a BitWarden plugin for its autofill so I can actually use it...
+2021-02-12 21:22:39	-->	manokara_ (~manokara@200.187.162.95) has joined #Solus-Chat
+2021-02-12 21:23:26	<--	manokara (~manokara@189.112.56.85) has quit (Ping timeout: 272 seconds)
+2021-02-12 21:24:13	Harvey	Have you tried alacritty. Its a super fast terminal... It doesn't do anything tho. Every feature addition is rejected as "the job of a window manager" or some other nonsense.  :P
+2021-02-12 21:24:31	Harvey	Also I don't want a browser who's last stable release was March 2019
+2021-02-12 21:24:36	sheepman[m]	honestly haven't heard of that one
+2021-02-12 21:24:54	rdr	i use alacritty with tmux
+2021-02-12 21:24:56	rdr	works very well
+2021-02-12 21:25:10	sheepman[m]	2019? huh. I thought it was newer than that... or maybe I just forgot 2019 is two years ago now
+2021-02-12 21:25:18	stalebread	have you heard of xfce-terminal
+2021-02-12 21:25:46	sheepman[m]	Falkon has features, it's not super barebones...
+2021-02-12 21:25:53	sheepman[m]	Better than Epiphany
+2021-02-12 21:26:00	Harvey	I'm just very sassy when it comes to alacritty. Of course its fast when ever feature addition is pushed to something else.
+2021-02-12 21:26:07	Harvey	tmux annoys me.
+2021-02-12 21:26:32	sheepman[m]	why does tmux annoy you?
+2021-02-12 21:27:23	-->	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has joined #Solus-Chat
+2021-02-12 21:27:32	Harvey	I just don't like how it functions. I would much rather the terminal just support panes and tabs
+2021-02-12 21:27:44	sheepman[m]	That's fair
+2021-02-12 21:28:15	sheepman[m]	I use tmux for doing stuff over SSH when I either want to be able to reconnect later or don't want to deal with multiple SSHes in different terminal tiles
+2021-02-12 21:28:27	stalebread	tabs?
+2021-02-12 21:28:32	stalebread	I just open 30 terminal windows
+2021-02-12 21:28:39	_shawn	ok .local/share/applications didnt work but it was a good idea. I think it's supposed to work but plasma is not doing the right thing
+2021-02-12 21:28:48	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-12 21:28:54	sheepman[m]	_shawn: try kmenuedit
+2021-02-12 21:28:56	_shawn	i think I will have to edit the original one and make it chattr +i
+2021-02-12 21:29:05	sheepman[m]	might give you the option you want
+2021-02-12 21:29:30	sheepman[m]	it's a GUI, but you have to start it from terminal as there's no .desktop file (somewhat ironic, I know)
+2021-02-12 21:30:12	stalebread	sheepman[m]: patches welcome
+2021-02-12 21:30:18	Harvey	or just right click the launcher and select edit
+2021-02-12 21:30:42	sheepman[m]	oh derp I didn't think of that, Harvey
+2021-02-12 21:31:46	_shawn	last time I installed vim it added gvim... and it messed up my file associations... am I the only one who likes vim only in the terminal ?
+2021-02-12 21:32:04	 *	sheepman[m] avoids starting editor wars
+2021-02-12 21:32:19	rdr	emacs with evil mode
+2021-02-12 21:32:24	sheepman[m]	but yeah I wouldn't use vim unless I was in the terminal
+2021-02-12 21:33:32	stalebread	vim is for cleaning
+2021-02-12 21:33:34	stalebread	nano is for text editing
+2021-02-12 21:34:16	sheepman[m]	_shawn: it may work to remove the menu item in kmenuedit
+2021-02-12 21:34:47	_shawn	if I right click on it in the menu it allows me to hide it but it still shows up with alt+space
+2021-02-12 21:34:57	_shawn	or if I search for it
+2021-02-12 21:36:18	stalebread	https://www.youtube.com/watch?v=JjTqE69ZkUs
+2021-02-12 21:36:19	@NarwhalBot	[ Bad Apple!! in Firefox browser tabs | Desktop: https://youtube.com/watch?v=JjTqE69ZkUs | Mobile: https://m.youtube.com/watch?v=JjTqE69ZkUs ]
+2021-02-12 21:36:21	stalebread	has science gone too far?
+2021-02-12 21:37:34	sheepman[m]	_shawn: there's a chance that *removing* the menu item would work differently
+2021-02-12 21:37:51	sheepman[m]	oh lord, if that formatting turned into an HTML mess I'm sorry
+2021-02-12 21:38:35	rdr	[offtopic, controversial] upgrading my server from 18.04 ubongo to 20.04, wish me luck
+2021-02-12 21:38:50	sheepman[m]	ooooof good luck
+2021-02-12 21:39:02	sheepman[m]	I've personally never seen an ubuntu upgrade actually work
+2021-02-12 21:39:07	Harvey	removing the .desktop file will only work for awhile. It will be added back every update and eopkg will consider the package broken.
+2021-02-12 21:39:22	sheepman[m]	ah dang, I was hoping that wouldn't be the case
+2021-02-12 21:39:36	_shawn	sheepman[m]: I realised I need to just comment out the entire .desktop in /usr/share because it also controls the mime types for file associations
+2021-02-12 21:39:36	stalebread	why have something installed if you don't want to see it?
+2021-02-12 21:39:50	_shawn	vim or weechat
+2021-02-12 21:40:04	Harvey	he just wants vim not gvim and vim contains both
+2021-02-12 21:43:11	stalebread	~/.local/share/applications
+2021-02-12 21:43:22	stalebread	and the .desktop file will get overridden
+2021-02-12 21:43:23	sheepman[m]	stalebread: read the log :D
+2021-02-12 21:43:39	Harvey	You may need to restart / relog, not sure if that was done.
+2021-02-12 21:43:40	rdr	did you log out and back in
+2021-02-12 21:43:58	sheepman[m]	oh actually that could be a good point
+2021-02-12 21:44:01	_shawn	yeah I rebooted, plasma is not honoring that hierarchy
+2021-02-12 21:44:11	stalebread	06:17 < rdr> i believe if you put it in ~/.local/applications it will override the ones in /usr/share/applications
+2021-02-12 21:44:18	_shawn	I rebooted also because I had a new kernel
+2021-02-12 21:44:22	stalebread	sheepman[m]: no u read the log
+2021-02-12 21:44:23	-->	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-12 21:44:29	_shawn	xD
+2021-02-12 21:44:40	sheepman[m]	stalebread: hahahaha yeah okay that's fair I did miss that typo
+2021-02-12 21:45:05	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-12 21:45:07	rdr	local share
+2021-02-12 21:45:10	rdr	i misttyped
+2021-02-12 21:45:22	_shawn	no I put it in ~/local/share/applications , knew what you meant
+2021-02-12 21:45:25	rdr	oh good
+2021-02-12 21:45:27	_shawn	.local*
+2021-02-12 21:45:57	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 21:47:30	_shawn	I think it's moot though because freedesktop.org says this about NoDisplay:
+2021-02-12 21:47:35	_shawn	NoDisplay means "this application exists, but don't display it in the menus". This can be useful to e.g. associate this application with MIME types, so that it gets launched from a file manager (or other apps), without having a menu entry for it (there are tons of good reasons for this, including e.g. the netscape -remote, or kfmclient openURL kind of stuff).
+2021-02-12 21:47:52	_shawn	so even if I hide it I still need to deal with the mime types
+2021-02-12 21:48:08	_shawn	well, if it worked yeah maybe I could override the mime types from the .local one too
+2021-02-12 21:50:43	_shawn	thats weird, adding # to beginning of each line did not change how it was parsed
+2021-02-12 21:50:54	_shawn	but renaming it to weechat.desktop.disabled worked
+2021-02-12 21:52:52	_shawn	ok it wasnt parsing it until i renamed it
+2021-02-12 21:54:37	_shawn	 mount -o 'relatime' prevents it from seeing change until the mv ?
+2021-02-12 21:56:29	_shawn	mv forced the atime to be written I think
+2021-02-12 21:56:54	sheepman[m]	yeah sounds about right
+2021-02-12 21:57:02	_shawn	so yeah # comments work. now I have to wait for an update to see if I need chattr +i
+2021-02-12 21:59:28	Harvey	Might not be what you're after but in case you don't know. krunner can be told to ignore applications entirely . I only have its "command line" setting enabled. So I get no predictions apart from krunner history predictions.
+2021-02-12 21:59:52	Harvey	So you can still launch anything you want but yea... I find that less annoying.
+2021-02-12 22:01:13	_shawn	ah yes good tip, there's an applications plugin
+2021-02-12 22:03:05	_shawn	how do you launch interactive commands from krunner?
+2021-02-12 22:03:30	_shawn	i tried pkill firefox, that runs so I know it's working
+2021-02-12 22:05:53	Harvey	Ahh, yeah sorry. Never ran into that. I just use it to open a specific firefox profile. firefox -p Guest
+2021-02-12 22:06:03	<--	stalebread (~stalebrim@85-76-108-181-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-12 22:06:47	_shawn	yeah gui apps are running from krunner but not terminal ones like htop
+2021-02-12 22:06:54	Harvey	Indeed.
+2021-02-12 22:07:55	_shawn	konsole -e top
+2021-02-12 22:09:54	Harvey	Yeah just found that myself :P
+2021-02-12 22:11:35	_shawn	so it turns out in the DE there is a default terminal application, and "Terminal=true" in the .desktop tells it to open in the terminal. so thats why weechat has a .desktop it's to make krunner work
+2021-02-12 22:12:19	_shawn	and similar tools of course
+2021-02-12 22:17:56	_shawn	ok I guess I can ignore it for weechat. also I'm just going to learn how to use nano better I think
+2021-02-12 22:18:30	_shawn	i just learned esc+a to select multiple lines and esc+3 to comment or uncomment them
+2021-02-12 22:21:39	_shawn	woah esc and then U is undo... I did that because it's my habit from vim to exit insert mode and hit u
+2021-02-12 22:21:45	TraceyC|roamin	That's a lot easier than in vim X|
+2021-02-12 22:21:58	Harvey	micro is worth a spin if you like nano. shift + arrow to select multiple lines. ctrl + / to comment or uncomment
+2021-02-12 22:21:59	<--	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 22:22:13	Harvey	an has stuff like file manager plugins etc
+2021-02-12 22:22:25	TraceyC	That sounds ... logical
+2021-02-12 22:22:37	sheepman[m]	babi is also fun, it's literally an exact clone of nano written in python
+2021-02-12 22:22:47	sheepman[m]	so you can extend it with python scripts
+2021-02-12 22:22:50	Harvey	An the type of comment is automatically changed depending on file type
+2021-02-12 22:23:10	sheepman[m]	Harvey:  holy crap I may have to use that :D
+2021-02-12 22:23:46	Harvey	Its neat.
+2021-02-12 22:28:14	<--	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has quit
+2021-02-12 22:28:29	-->	_shawn (188f6fbb@c-24-143-111-187.customer.broadstripe.net) has joined #Solus-Chat
+2021-02-12 22:31:31	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-12 22:38:47	_shawn	chattr +i breaks solus package management
+2021-02-12 22:39:00	_shawn	it doesnt just skip that file, it exits
+2021-02-12 22:39:38	Harvey	Sounds about right.
+2021-02-12 22:44:45	<--	shenchen__ (~shenchen@117.80.69.65) has quit (Remote host closed the connection)
+2021-02-12 22:46:58	_shawn	thats a bummer
+2021-02-12 22:53:06	_shawn	what stops solus pakackage manager from overwriting files in /etc ?
+2021-02-12 22:53:37	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 23:05:38	Harvey	Nothing. Other than if a package is made stateless. We don't put default configs in /etc/ but rather /usr/share/defaults/etc/ and will obey user configs if they place them in /etc/
+2021-02-12 23:05:58	Harvey	samba would be an example of this.
+2021-02-12 23:07:12	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 23:09:51	<--	_shawn (188f6fbb@c-24-143-111-187.customer.broadstripe.net) has quit (Quit: Connection closed)
+2021-02-12 23:14:09	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-relyhngldwxxkapv) has quit (Quit: Connection closed for inactivity)
+2021-02-12 23:23:04	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-12 23:30:12	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus-Chat
+2021-02-12 23:30:12	--	Mode #solus-chat [+o DataDrake] by ChanServ
+2021-02-12 23:30:22	--	DataDrake is now known as DataDrake|zzz
+2021-02-12 23:39:18	rdr	restarting let's see if it starts back up
+2021-02-12 23:39:37	--	irc: disconnected from server
+2021-02-12 23:43:13	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-12 23:43:13	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 23:43:13	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-12 23:43:13	--	Channel #solus-chat: 51 nicks (6 ops, 0 voices, 45 normals)
+2021-02-12 23:43:19	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-12 23:43:21	rdr	*checks body*
+2021-02-12 23:43:26	rdr	appears i'm in one piece
+2021-02-12 23:50:52	rdr	I think i'm just going to leave it for the next 5 years or until it breaks
+2021-02-12 23:51:01	rdr	Solus is awesome on my desktop though
+2021-02-12 23:52:39	--	irc: disconnected from server
+2021-02-12 23:53:14	-->	rdr (~rydare@unaffiliated/unheeding) has joined #Solus-Chat
+2021-02-12 23:53:14	--	Topic for #Solus-Chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 23:53:14	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-12 23:53:14	--	Channel #solus-chat: 51 nicks (6 ops, 0 voices, 45 normals)
+2021-02-12 23:53:18	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-13 00:34:10	-->	_shawn (~shawn@144.202.90.233) has joined #Solus-Chat
+2021-02-13 00:34:14	_shawn	yo
+2021-02-13 00:34:23	Harvey	o/
+2021-02-13 00:36:23	_shawn	https://bugs.kde.org/show_bug.cgi?id=424716
+2021-02-13 00:36:24	@NarwhalBot	[ 424716 – Hidden=true handling incorrect ]
+2021-02-13 00:39:47	_shawn	might just need to switch to gnome lol
+2021-02-13 00:41:09	Aph3x-WL	don't even joke about that
+2021-02-13 00:41:09	Harvey	Gnome, like hard drugs is never the answer. :P
+2021-02-13 00:46:21	_shawn	ok how about this, I make a wrapper for eopkg that checks the atime for gvim.desktop before and after it runs, and if it's differet it will printf "Hidden=true\n" >> gvim.desktop
+2021-02-13 00:46:52	Harvey	I think not using vim or weechat or whatever the fuck might be easier :P
+2021-02-13 00:47:30	_shawn	yeah thats what I am currently doing
+2021-02-13 00:48:17	_shawn	that last idea was kinda a joke if you didnt know
+2021-02-13 00:48:27	Harvey	I gathered :P
+2021-02-13 00:48:49	Harvey	I mean, I'm rather tipsy atm but... not that bad.
+2021-02-13 00:50:26	_shawn	what are in the delta updates? whole files?
+2021-02-13 00:50:54	Harvey	ideally the difference between the installed package and the updated / rebuilt package.
+2021-02-13 00:50:58	Harvey	But its not perfect.
+2021-02-13 00:51:04	_shawn	bit by bit?
+2021-02-13 00:51:59	Harvey	I don't pretend to understand exactly. I assume it is as complex as is individual file hash the same if not add to delta
+2021-02-13 00:55:51	_shawn	I just opened up vim-100-101-1-x86_64.delta.eopkg and it actually had whole files in it, just the ones that were different from last time
+2021-02-13 00:56:45	Harvey	Yeah
+2021-02-13 00:57:16	Harvey	any change to the file would make the hash different so it would be added. But once again. Just my assumptions I don't actually know.
+2021-02-13 01:29:22	-->	joebonrichie (~joebonric@90.254.29.232) has joined #Solus-Chat
+2021-02-13 01:29:22	--	Mode #solus-chat [+o joebonrichie] by ChanServ
+2021-02-13 01:38:32	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-13 01:46:01	-->	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 01:46:12	<--	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has quit (*.net *.split)
+2021-02-13 01:46:15	<--	Engrin (~user@dev-void.org) has quit (*.net *.split)
+2021-02-13 01:47:48	RobertTVarga	Alright, that was easy with freenode, IRC...yes, first timer :-D
+2021-02-13 01:48:52	<--	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has quit (*.net *.split)
+2021-02-13 01:48:53	<--	lapingv755 (lapingv755@gateway/shell/matrix.org/x-gfwecyovvdjukxip) has quit (*.net *.split)
+2021-02-13 01:48:56	<--	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has quit (*.net *.split)
+2021-02-13 01:48:57	<--	chaology (sid369406@gateway/web/irccloud.com/x-qirjushbaysreanb) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	yacn (sid445023@gateway/web/irccloud.com/x-rsayfjylqwbtdsdn) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	JoshStrobl (~joshua@joshuastrobl.com) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	gelswip (~user@81.4.109.137) has quit (*.net *.split)
+2021-02-13 01:48:59	<--	silkeh (silexslxhe@gateway/shell/matrix.org/x-tqqyemnvxzjfowzx) has quit (*.net *.split)
+2021-02-13 01:48:59	<--	serebit (serebitmat@gateway/shell/matrix.org/x-qkavtwpthxdjebsm) has quit (*.net *.split)
+2021-02-13 01:49:00	<--	saintdev (sid25343@gateway/web/irccloud.com/x-lzrykbduuxqhqnjw) has quit (*.net *.split)
+2021-02-13 01:49:01	<--	Aph3x-WL (~Aph3x@shellie.darchoods.net) has quit (*.net *.split)
+2021-02-13 01:49:01	<--	thePiGrepper (~thePiGrep@67.205.129.203) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	DataDrake|zzz (~DataDrake@98.3.31.10) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	siru (~yourname@unaffiliated/siru) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	nighcoder (~nighcoder@45.58.87.61) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	KittyKatt (~ghost@unaffiliated/kittykatt) has quit (*.net *.split)
+2021-02-13 01:49:06	<--	r00tobo (~r00tobo@unaffiliated/r00tobo) has quit (*.net *.split)
+2021-02-13 01:49:08	<--	Swift110-mobile (sid410914@gateway/web/irccloud.com/x-exxaofhjcujrlsid) has quit (*.net *.split)
+2021-02-13 01:49:10	<--	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has quit (*.net *.split)
+2021-02-13 01:49:10	<--	MintSpider (sid442361@gateway/web/irccloud.com/x-gckxnsalkocidgni) has quit (*.net *.split)
+2021-02-13 01:49:11	<--	Girtablulu (~Girtablul@pub082136079138.dh-hfc.datazug.ch) has quit (*.net *.split)
+2021-02-13 01:49:12	<--	mammothrept (mammothrep@gateway/shell/matrix.org/x-ktidoxpadrsmtxyx) has quit (*.net *.split)
+2021-02-13 01:49:12	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has quit (*.net *.split)
+2021-02-13 01:49:12	<--	YakoYako (yakoyakoyo@gateway/shell/matrix.org/x-gzaruvmgkunltdhe) has quit (*.net *.split)
+2021-02-13 01:49:13	<--	JacekJagosz (~IPiesek10@jacekjagosz.powered.by.lunarbnc.net) has quit (*.net *.split)
+2021-02-13 01:49:14	<--	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has quit (*.net *.split)
+2021-02-13 01:49:16	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	chbmb (~CHBMB@unaffiliated/chbmb) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	heliostatic (~heliostat@my.bdlc.co) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	Tk55 (~Tk55@ip-213-127-72-71.ip.prioritytelecom.net) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has quit (*.net *.split)
+2021-02-13 01:49:20	<--	davidjharder (~davidjhar@132.145.103.85) has quit (*.net *.split)
+2021-02-13 01:49:24	<--	clivejo (clivejo@kde/community/clivej) has quit (*.net *.split)
+2021-02-13 01:49:24	<--	DerRaiden (~quassel@2a01:4f8:c17:2a48::1) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	ermo (~ermo@foresight/developer/ermo) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	cowsay (~quassel@47.188.37.226) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	sheepman (~sheepman@nextcloud.stupid.frickin.website) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	nast (~nast@139.64.244.18) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has quit (*.net *.split)
+2021-02-13 01:53:10	-->	gelswip (~user@81.4.109.137) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	yacn (sid445023@gateway/web/irccloud.com/x-rsayfjylqwbtdsdn) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	chaology (sid369406@gateway/web/irccloud.com/x-qirjushbaysreanb) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Engrin (~user@dev-void.org) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	DataDrake|zzz (~DataDrake@98.3.31.10) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	nast (~nast@139.64.244.18) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	mammothrept (mammothrep@gateway/shell/matrix.org/x-ktidoxpadrsmtxyx) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	MintSpider (sid442361@gateway/web/irccloud.com/x-gckxnsalkocidgni) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	ermo (~ermo@foresight/developer/ermo) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	chbmb (~CHBMB@unaffiliated/chbmb) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	siru (~yourname@unaffiliated/siru) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	cowsay (~quassel@47.188.37.226) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	heliostatic (~heliostat@my.bdlc.co) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	nighcoder (~nighcoder@45.58.87.61) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Tk55 (~Tk55@ip-213-127-72-71.ip.prioritytelecom.net) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	KittyKatt (~ghost@unaffiliated/kittykatt) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Girtablulu (~Girtablul@pub082136079138.dh-hfc.datazug.ch) has joined #Solus-Chat
+2021-02-13 01:53:10	--	Mode #solus-chat [+oooo DataDrake|zzz NarwhalBot ermo Girtablulu] by card.freenode.net
+2021-02-13 01:53:10	-->	davidjharder (~davidjhar@132.145.103.85) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	JacekJagosz (~IPiesek10@jacekjagosz.powered.by.lunarbnc.net) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	Swift110-mobile (sid410914@gateway/web/irccloud.com/x-exxaofhjcujrlsid) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	sheepman (~sheepman@nextcloud.stupid.frickin.website) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	r00tobo (~r00tobo@unaffiliated/r00tobo) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	thePiGrepper (~thePiGrep@67.205.129.203) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	DerRaiden (~quassel@2a01:4f8:c17:2a48::1) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	ChanServ (ChanServ@services.) has joined #Solus-Chat
+2021-02-13 01:53:10	-->	clivejo (clivejo@kde/community/clivej) has joined #Solus-Chat
+2021-02-13 01:53:10	--	Mode #solus-chat [+o ChanServ] by card.freenode.net
+2021-02-13 01:53:44	<--	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has quit (Ping timeout: 258 seconds)
+2021-02-13 01:53:46	<--	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has quit (Ping timeout: 265 seconds)
+2021-02-13 01:53:46	<--	mammothrept (mammothrep@gateway/shell/matrix.org/x-ktidoxpadrsmtxyx) has quit (Ping timeout: 240 seconds)
+2021-02-13 01:53:46	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has quit (Ping timeout: 240 seconds)
+2021-02-13 01:53:46	-->	JoshStrobl (~joshua@joshuastrobl.com) has joined #Solus-Chat
+2021-02-13 01:53:46	--	Mode #solus-chat [+o JoshStrobl] by ChanServ
+2021-02-13 01:55:51	-->	saintdev (sid25343@gateway/web/irccloud.com/x-lzrykbduuxqhqnjw) has joined #Solus-Chat
+2021-02-13 01:55:51	-->	Aph3x-WL (~Aph3x@shellie.darchoods.net) has joined #Solus-Chat
+2021-02-13 01:59:05	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-13 02:02:10	-->	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 02:07:38	<--	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has quit (Ping timeout: 240 seconds)
+2021-02-13 02:13:55	-->	drmbls (~marius@78-56-83-14.static.zebra.lt) has joined #Solus-Chat
+2021-02-13 02:18:38	@Girtablulu	good morning
+2021-02-13 02:23:42	-->	serebit (serebitmat@gateway/shell/matrix.org/x-mnitbqpoquqcqxkk) has joined #Solus-Chat
+2021-02-13 02:23:47	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-wpettizfkubdsozm) has joined #Solus-Chat
+2021-02-13 02:23:50	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-13 02:33:31	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-13 02:34:28	-->	lapingv755 (lapingv755@gateway/shell/matrix.org/x-boxjsqdllloafcnc) has joined #Solus-Chat
+2021-02-13 02:34:35	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-13 02:39:52	Eressea	Morning!
+2021-02-13 02:41:17	<--	serebit (serebitmat@gateway/shell/matrix.org/x-mnitbqpoquqcqxkk) has quit (Ping timeout: 240 seconds)
+2021-02-13 02:41:46	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-wpettizfkubdsozm) has quit (Ping timeout: 258 seconds)
+2021-02-13 02:42:43	<--	lapingv755 (lapingv755@gateway/shell/matrix.org/x-boxjsqdllloafcnc) has quit (Ping timeout: 265 seconds)
+2021-02-13 02:44:03	-->	RobertTVarga (~RobertTVa@20014C4C17A913007814B7AD7019C72C.catv.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 02:45:31	<--	RobertTVarga (~RobertTVa@20014C4C17A913007814B7AD7019C72C.catv.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-13 02:46:58	-->	RobertTVarga (~RobertTVa@254C4A9A.nat.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 02:47:40	<--	RobertTVarga (~RobertTVa@254C4A9A.nat.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-13 03:00:56	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 03:01:33	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 264 seconds)
+2021-02-13 03:12:38	-->	RobertTVarga (~RobertTVa@254C4A9A.nat.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 03:13:19	<--	RobertTVarga (~RobertTVa@254C4A9A.nat.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-13 03:19:08	-->	silkeh (silexslxhe@gateway/shell/matrix.org/x-qzulxkxbqnzbxuzp) has joined #Solus-Chat
+2021-02-13 03:19:29	-->	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-cueyrwegndwnlplz) has joined #Solus-Chat
+2021-02-13 03:19:31	-->	mammothrept (mammothrep@gateway/shell/matrix.org/x-kqmdttpjnkqnxvdq) has joined #Solus-Chat
+2021-02-13 03:28:40	-->	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-wjjmkfstvoyyrrxz) has joined #Solus-Chat
+2021-02-13 03:37:46	-->	lapingv755 (lapingv755@gateway/shell/matrix.org/x-dmypfojurjwsitxi) has joined #Solus-Chat
+2021-02-13 03:41:29	-->	serebit (serebitmat@gateway/shell/matrix.org/x-yrdbdnolyikehjve) has joined #Solus-Chat
+2021-02-13 03:42:53	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-ohytjiharndvnzap) has joined #Solus-Chat
+2021-02-13 03:51:39	@Girtablulu	why? just why? you  nearly cant read shit https://niccolo.venerandi.com/
+2021-02-13 03:51:40	@NarwhalBot	[ [guest@veggero ~]$ ]
+2021-02-13 03:52:10	@JoshStrobl	yikes
+2021-02-13 03:52:52	@JoshStrobl	I'd get tired of that design before it'd even leave pre-production as a mockup
+2021-02-13 04:00:57	livingsilver94_	terrible font, I agree. That guy though is pretty ahead of his age
+2021-02-13 04:01:58	livingsilver94_	I guess his father educated him to gain extra skills beside the ones given at school. His father is a writer and a computer tinkerer, IIRC
+2021-02-13 04:06:16	-->	andril (~andril@2601:586:8400:5e9::1000) has joined #Solus-Chat
+2021-02-13 04:09:53	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus-Chat
+2021-02-13 04:10:42	@JoshStrobl	Ahead of his time? Eh I mean I was already contributing to open source when I was his age too. We all kinda grew up in the era of computers, it isn't particularly unusual.
+2021-02-13 04:12:55	livingsilver94_	hm, that's not the norm in Italy then. I started contributing to Solus only 4 years ago and the skilled young adults I know of can be counted with one hand
+2021-02-13 04:21:00	-->	YakoYako (yakoyakoyo@gateway/shell/matrix.org/x-vskhaqrzhmsemfvp) has joined #Solus-Chat
+2021-02-13 04:25:48	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-13 04:29:11	<--	joebonrichie (~joebonric@90.254.29.232) has quit (Remote host closed the connection)
+2021-02-13 04:57:36	shenchen	well, it depends on what school you went to. in my high school days, there is only 2-3 students in each year who can write non-trivial programs
+2021-02-13 05:07:18	<--	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has quit (Quit: Leaving)
+2021-02-13 05:10:01	<--	andril (~andril@2601:586:8400:5e9::1000) has quit (Ping timeout: 264 seconds)
+2021-02-13 05:10:16	<--	raven-au (~raven-au@121.44.144.209) has quit (Ping timeout: 240 seconds)
+2021-02-13 05:13:11	-->	raven-au (~raven-au@121.44.144.209) has joined #Solus-Chat
+2021-02-13 05:14:42	--	JoshStrobl is now known as Josh|Store
+2021-02-13 05:14:50	 *	Josh|Store goes to Alko to pick up some wine
+2021-02-13 05:48:25	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-13 07:22:51	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-13 07:24:17	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Remote host closed the connection)
+2021-02-13 07:24:46	-->	shenchen_ (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-13 07:24:49	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-13 07:27:35	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-13 07:31:28	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-13 07:55:01	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 264 seconds)
+2021-02-13 07:57:14	@DataDrake|zzz	fuck you too murphy
+2021-02-13 07:57:25	 *	DataDrake|zzz reboots laptop
+2021-02-13 07:58:00	shenchen_	experimented writing type-annotated Python code today. static-type-check everything, too.
+2021-02-13 07:58:16	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 07:58:34	shenchen_	not sure yet if this would produce better code or just wordy code
+2021-02-13 07:59:10	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 268 seconds)
+2021-02-13 08:03:15	--	Josh|Store is now known as JoshStrobl
+2021-02-13 08:03:22	 *	DataDrake|zzz goes to reset networking gear...
+2021-02-13 08:07:02	@Girtablulu	having fun :D
+2021-02-13 08:08:08	<--	DataDrake|zzz (~DataDrake@98.3.31.10) has quit (Ping timeout: 264 seconds)
+2021-02-13 08:08:20	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus-Chat
+2021-02-13 08:08:32	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus-Chat
+2021-02-13 08:08:32	--	Mode #solus-chat [+o DataDrake] by ChanServ
+2021-02-13 08:09:23	-->	DDrake (~DataDrake@98.3.31.10) has joined #Solus-Chat
+2021-02-13 08:09:23	--	Mode #solus-chat [+o DDrake] by ChanServ
+2021-02-13 08:09:37	--	DDrake is now known as DataDrake|live
+2021-02-13 08:10:47	 *	DataDrake puts living room back together
+2021-02-13 08:10:59	<--	DataDrake (~DataDrake@98.3.31.10) has quit (Client Quit)
+2021-02-13 08:27:26	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-13 08:30:12	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Ping timeout: 272 seconds)
+2021-02-13 08:45:34	<--	shenchen_ (~shenchen@58.210.60.122) has quit (Remote host closed the connection)
+2021-02-13 08:55:54	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Ping timeout: 268 seconds)
+2021-02-13 09:01:40	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-13 09:06:56	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 264 seconds)
+2021-02-13 09:19:25	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus-Chat
+2021-02-13 09:21:44	-->	shenchen (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-13 09:26:25	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-13 09:27:44	_shawn	Harvey: I figured it out horay. copy .desktop to your home directory, make edits, and run `sudo desktop-file-install *.desktop` , that installs it back into the /usr/share/applications directory but with a suffix, so it doesnt need to overwrite the original one to override it
+2021-02-13 09:28:27	_shawn	.local/share/applications wasnt working because on Solus for some reason the XDG_ environmental variables arent setup for that
+2021-02-13 09:30:14	<--	shenchen (~shenchen@117.80.69.65) has quit (Ping timeout: 246 seconds)
+2021-02-13 09:30:53	_shawn	darn it, no it didnt install a different suffix
+2021-02-13 09:31:20	_shawn	that was just the name of the temp file but it overwrote the original in the end
+2021-02-13 09:39:16	--	irc: disconnected from server
+2021-02-13 09:40:10	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-13 09:40:10	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 09:40:10	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-13 09:40:10	--	Channel #solus-chat: 57 nicks (6 ops, 0 voices, 51 normals)
+2021-02-13 09:40:14	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-13 10:08:17	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus-Chat
+2021-02-13 10:37:36	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-13 10:47:43	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus-Chat
+2021-02-13 10:50:46	--	irc: disconnected from server
+2021-02-13 11:15:59	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-13 11:15:59	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 11:15:59	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-13 11:15:59	--	Channel #solus-chat: 60 nicks (6 ops, 0 voices, 54 normals)
+2021-02-13 11:16:03	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-13 11:30:08	-->	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-13 11:50:37	--	irc: disconnected from server
+2021-02-13 11:53:03	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-13 11:53:03	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 11:53:03	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-13 11:53:03	--	Channel #solus-chat: 61 nicks (6 ops, 0 voices, 55 normals)
+2021-02-13 11:53:07	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-13 11:53:51	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-13 12:01:14	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-13 12:01:46	stalebread	hi ultr4_l4s3r
+2021-02-13 12:02:09	ultr4_l4s3r	hi stalebread
+2021-02-13 12:07:23	rdr	S_T_A_L_E_B_R_E_A_D
+2021-02-13 12:16:47	stalebread	dumbbell curl
+2021-02-13 12:23:06	_shawn	dead lift
+2021-02-13 12:23:39	_shawn	I'm all snowed in today
+2021-02-13 12:28:37	rdr	SNOWED IN
+2021-02-13 12:28:39	rdr	CRUISING
+2021-02-13 12:29:21	rdr	https://www.youtube.com/watch?v=n8qtBS7y2_o
+2021-02-13 12:29:23	@NarwhalBot	[ Snowed In/Cruisin' | Desktop: https://youtube.com/watch?v=n8qtBS7y2_o | Mobile: https://m.youtube.com/watch?v=n8qtBS7y2_o ]
+2021-02-13 12:31:43	@JoshStrobl	OH GOD NO WE CANNOT HAVE TWO WATPIS
+2021-02-13 12:35:56	TraceyC	halp
+2021-02-13 12:36:44	rdr	hi josh
+2021-02-13 12:36:51	rdr	i hear you need money to make great stuff
+2021-02-13 12:39:19	@JoshStrobl	I like money and I like food, yes :P
+2021-02-13 12:39:33	stalebread	I see no watpi here
+2021-02-13 12:39:58	@JoshStrobl	Nor stalebrim. Guess if they aren't around I can just close all their patches right?
+2021-02-13 12:40:07	@JoshStrobl	GOT EM
+2021-02-13 12:40:22	stalebread	if you whois me you see my username is stalebrim
+2021-02-13 12:40:24	stalebread	NO U
+2021-02-13 12:40:30	rdr	BREADBRIM
+2021-02-13 12:43:33	rdr	kid you've got some nerve!
+2021-02-13 12:44:07	 *	JoshStrobl gets his cane
+2021-02-13 12:44:13	@JoshStrobl	Back in my day...
+2021-02-13 12:45:28	abdulocracy	Do they still paddle kids in some of those Southern schools
+2021-02-13 12:45:37	abdulocracy	I remember hearing news about that a while back
+2021-02-13 12:46:23	rdr	i wish
+2021-02-13 12:46:28	rdr	you can't even yell at kids anymore
+2021-02-13 12:46:35	abdulocracy	Tell me about it
+2021-02-13 12:46:53	abdulocracy	I had an employer wouldn't even let me give time-out
+2021-02-13 12:46:53	rdr	once a kid was misbehaving so i gave him the required participation medal for disobedience
+2021-02-13 12:46:57	abdulocracy	So I fucking quit
+2021-02-13 12:47:18	rdr	nice you have some backbone
+2021-02-13 12:47:35	abdulocracy	Man I have an end to my wit
+2021-02-13 12:47:55	abdulocracy	Was like talking to a brick wall with some of those kids
+2021-02-13 12:47:59	stalebread	I have a core member who times me out on a regular basis
+2021-02-13 12:48:22	abdulocracy	You'll always be Josh's baby
+2021-02-13 12:48:23	@JoshStrobl	Yea but you like punishment
+2021-02-13 12:48:42	@JoshStrobl	You've not once told me the safe word
+2021-02-13 12:49:23	@JoshStrobl	Granted that *is* Vaðlaheiðarvegavinnuverkfærageymsluskúrslyklakippuhringurinn so I can understand why
+2021-02-13 12:50:01	abdulocracy	The reporter that perfectly executed that remains a god among men
+2021-02-13 12:50:23	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus-Chat
+2021-02-13 12:52:32	stalebread	do you want me to tell about the time I put cream cheese on a fish again
+2021-02-13 12:52:45	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus-Chat
+2021-02-13 12:52:45	--	Mode #solus-chat [+o DataDrake] by ChanServ
+2021-02-13 12:53:01	@JoshStrobl	.slap stalebread
+2021-02-13 12:53:01	 *	NarwhalBot takes out a clown costume, dresses stalebread up and tells everyone that stalebread is now the clown
+2021-02-13 12:53:06	<--	DataDrake|live (~DataDrake@98.3.31.10) has quit (Quit: Leaving)
+2021-02-13 12:53:50	rdr	i just attempted installing 9GB of software on an 8GB partition
+2021-02-13 12:53:55	rdr	it went about as well as you'd expect
+2021-02-13 12:54:22	abdulocracy	I mistyped a dd command and had my SSD fill up in less than a minute one
+2021-02-13 12:54:27	abdulocracy	s/one/once
+2021-02-13 12:54:47	-->	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has joined #Solus-Chat
+2021-02-13 12:55:27	abdulocracy	My inbox blew up
+2021-02-13 12:57:36	<--	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has quit (Remote host closed the connection)
+2021-02-13 13:00:34	stalebread	JoshStrobl: I'm the sad clown
+2021-02-13 13:01:53	Aph3x-WL	clown are creepy
+2021-02-13 13:01:55	Aph3x-WL	go away clowns
+2021-02-13 13:02:51	<--	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has quit (Quit: Leaving)
+2021-02-13 13:05:03	stalebread	I can go away
+2021-02-13 13:05:05	stalebread	but no ETAs
+2021-02-13 13:05:21	@JoshStrobl	nice
+2021-02-13 13:09:08	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 246 seconds)
+2021-02-13 13:09:10	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 13:20:50	stalebread	69
+2021-02-13 13:21:18	stalebread	JoshStrobl: have you drank Hiisi products?
+2021-02-13 13:23:45	rdr	it's written all over me
+2021-02-13 13:41:08	<--	drmbls (~marius@78-56-83-14.static.zebra.lt) has quit (Quit: WeeChat 3.0.1)
+2021-02-13 14:06:49	stalebread	Minä leikkaamassa tonnikalaa Okinawassa -95
+2021-02-13 14:33:41	rdr	what language(s) is that
+2021-02-13 14:35:27	ultr4_l4s3r	dwarvish
+2021-02-13 14:38:21	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Quit: WeeChat 3.0)
+2021-02-13 14:55:59	stalebread	https://a.uguu.se/fmLfkwtD.jpg
+2021-02-13 15:01:15	rdr	good meme
+2021-02-13 15:01:17	rdr	nice animoo gril
+2021-02-13 15:05:04	ultr4_l4s3r	a
+2021-02-13 15:06:26	rdr	nice sharkgirl reference
+2021-02-13 15:06:41	ultr4_l4s3r	I just browsed the forum in parallel and saw your desktop :)
+2021-02-13 15:06:56	rdr	mine?
+2021-02-13 15:07:00	ultr4_l4s3r	yeah
+2021-02-13 15:07:03	rdr	thanks
+2021-02-13 15:20:38	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-13 15:22:04	ultr4_l4s3r	https://youtu.be/3CMLK7p9j4U
+2021-02-13 15:22:05	@NarwhalBot	[ Careless Whisper / Eurobeat Remix | Desktop: https://youtube.com/watch?v=3CMLK7p9j4U | Mobile: https://m.youtube.com/watch?v=3CMLK7p9j4U ]
+2021-02-13 15:33:09	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Remote host closed the connection)
+2021-02-13 15:38:30	stalebread	not his best one
+2021-02-13 15:55:02	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (Quit: Null)
+2021-02-13 15:59:07	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus-Chat
+2021-02-13 15:59:10	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-13 16:00:23	<--	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2021-02-13 16:01:33	-->	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b126:5f59:344d:505e:ecde:31f9) has joined #Solus-Chat
+2021-02-13 16:11:37	stalebread	is this the right time to say saido chesto?
+2021-02-13 16:11:38	<--	NarwhalBot has kicked stalebread (Detected by this Narwhal for kick approval. Kicking.)
+2021-02-13 16:11:41	-->	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-13 16:11:42	<--	NarwhalBot has kicked stalebread (stalebread)
+2021-02-13 16:11:48	-->	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-13 16:11:52	stalebread	... wow
+2021-02-13 16:15:01	stalebread	I feel stupid for not expecting that
+2021-02-13 16:15:06	stalebread	anyway, hi again ultr4_l4s3r
+2021-02-13 16:19:11	ultr4_l4s3r	lol
+2021-02-13 16:23:15	stalebread	https://www.youtube.com/watch?v=-7SYWrc7CZA
+2021-02-13 16:23:16	@NarwhalBot	[ American Dad Intro Any% Speedrun by Novadica in 0:04:06 - AGDQ2020 (Gamecube World Record) | Desktop: https://youtube.com/watch?v=-7SYWrc7CZA | Mobile: https://m.youtube.com/watch?v=-7SYWrc7CZA ]
+2021-02-13 16:26:04	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-13 16:44:36	<--	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b126:5f59:344d:505e:ecde:31f9) has quit (Ping timeout: 264 seconds)
+2021-02-13 16:48:18	-->	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b128:f170:69b6:eae:44a:57b3) has joined #Solus-Chat
+2021-02-13 17:06:22	-->	endumiuz_ (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-13 17:07:24	<--	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b128:f170:69b6:eae:44a:57b3) has quit (Ping timeout: 264 seconds)
+2021-02-13 17:07:35	abdulocracy	I'll be back
+2021-02-13 17:08:10	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Ping timeout: 272 seconds)
+2021-02-13 17:08:12	<--	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-wjjmkfstvoyyrrxz) has left #solus-chat ("User left")
+2021-02-13 17:08:43	-->	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-13 17:10:00	-->	HarveyBirdman (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus-Chat
+2021-02-13 17:10:13	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Disconnected by services)
+2021-02-13 17:10:19	--	HarveyBirdman is now known as Harvey
+2021-02-13 17:11:43	<--	endumiuz_ (~endumiuz@194.117.188.224) has quit (Ping timeout: 240 seconds)
+2021-02-13 17:20:25	-->	abdulocracy (abdulocr1@gateway/shell/matrix.org/x-myuelldrpzkmpixx) has joined #Solus-Chat
+2021-02-13 17:23:51	ultr4_l4s3r	The prophecies were right!
+2021-02-13 17:23:52	<--	abdulocracy (abdulocr1@gateway/shell/matrix.org/x-myuelldrpzkmpixx) has quit (Quit: authenticating)
+2021-02-13 17:23:53	ultr4_l4s3r	He is back!
+2021-02-13 17:23:56	ultr4_l4s3r	oh no
+2021-02-13 17:23:58	-->	abdulocracy (abdulocr1@gateway/shell/matrix.org/x-ehrbfldszeneddyc) has joined #Solus-Chat
+2021-02-13 17:24:01	ultr4_l4s3r	yay
+2021-02-13 17:27:50	--	irc: disconnected from server
+2021-02-13 18:10:58	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus-chat
+2021-02-13 18:10:58	--	Topic for #solus-chat is "Solus Off-Topic Channel || Support Channel: #Solus || Dev Channel: #Solus-Dev || Livestream Channel: #Solus-LiveStream || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 18:10:58	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:16
+2021-02-13 18:10:58	--	Channel #solus-chat: 57 nicks (6 ops, 0 voices, 51 normals)
+2021-02-13 18:10:58	***	Buffer Playback...
+2021-02-13 18:10:58	abdulocracy	[17:32:30] I'm back?
+2021-02-13 18:10:58	ultr4_l4s3r	[17:32:46] I'm crazy for abdulocracy
+2021-02-13 18:10:58	abdulocracy	[17:32:54] I am back!
+2021-02-13 18:10:58	ultr4_l4s3r	[17:33:04] \o/
+2021-02-13 18:10:58	abdulocracy	[17:33:07] Huzzah, it works!!!
+2021-02-13 18:10:58	abdulocracy	[17:34:11] I'm coming at you live from my own Matrix thingamajig
+2021-02-13 18:10:58	ultr4_l4s3r	[17:34:19] nice
+2021-02-13 18:10:58	abdulocracy	[17:34:35] Ah fuck all the history's gone
+2021-02-13 18:10:58	ultr4_l4s3r	[17:34:38] I'll have to find the time at some point to also set up my own Matrix whatchamacallit
+2021-02-13 18:10:58	abdulocracy	[17:35:20] I've been at it for 4 hours
+2021-02-13 18:10:58	ultr4_l4s3r	[17:36:38] I think that' when you should see a doctor
+2021-02-13 18:10:58	abdulocracy	[17:36:58] I think you're right
+2021-02-13 18:10:58	abdulocracy	[17:37:40] It's not even completely set up yet, I was intending to have another go at it tomorrow
+2021-02-13 18:10:58	abdulocracy	[17:37:54] Now you've got me thinkin I might be a loony
+2021-02-13 18:10:58	stalebread	[17:38:47] 🅱️atrix
+2021-02-13 18:10:58	ultr4_l4s3r	[17:39:04] https://youtu.be/Jo9t5XK0FhA
+2021-02-13 18:10:58	@NarwhalBot	[17:39:04] [ Billy Joel - You May Be Right (Official Video) | Desktop: https://youtube.com/watch?v=Jo9t5XK0FhA | Mobile: https://m.youtube.com/watch?v=Jo9t5XK0FhA ]
+2021-02-13 18:10:58	stalebread	[17:41:22] https://www.youtube.com/watch?v=3Mp8ZohkGaE
+2021-02-13 18:10:58	@NarwhalBot	[17:41:23] [ It's Not Right | Desktop: https://youtube.com/watch?v=3Mp8ZohkGaE | Mobile: https://m.youtube.com/watch?v=3Mp8ZohkGaE ]
+2021-02-13 18:10:58	ultr4_l4s3r	[17:42:15] oh, no! it's DEVO
+2021-02-13 18:10:58	stalebread	[17:43:26] that's one of my favourite devo albums
+2021-02-13 18:10:58	ultr4_l4s3r	[17:43:53] Followed by "I can't believe it's not DEVO!"
+2021-02-13 18:10:58	stalebread	[17:44:03] https://www.youtube.com/watch?v=Zg1pDweZ0W8
+2021-02-13 18:10:58	@NarwhalBot	[17:44:03] [ Onegai Muscle / Eurobeat Remix | Desktop: https://youtube.com/watch?v=Zg1pDweZ0W8 | Mobile: https://m.youtube.com/watch?v=Zg1pDweZ0W8 ]
+2021-02-13 18:10:58	ultr4_l4s3r	[17:44:15] saido chesto!
+2021-02-13 18:10:58	stalebread	[17:44:30] ahahahaha
+2021-02-13 18:10:58	ultr4_l4s3r	[17:44:52] worth it
+2021-02-13 18:10:58	stalebread	[17:45:06] you've met with a terrible fate, haven't you?
+2021-02-13 18:10:58	ultr4_l4s3r	[17:45:56] https://youtu.be/2c4hnA8jXwo
+2021-02-13 18:10:58	@NarwhalBot	[17:45:57] [ Total Distortion - You Are Dead - Best Game Over Ever (HQ/MP3 Download) | Desktop: https://youtube.com/watch?v=2c4hnA8jXwo | Mobile: https://m.youtube.com/watch?v=2c4hnA8jXwo ]
+2021-02-13 18:10:58	stalebread	[17:46:43] is this some lost danny elfman demo again
+2021-02-13 18:10:58	ultr4_l4s3r	[17:47:41] Probably
+2021-02-13 18:10:58	***	Playback Complete.
+2021-02-13 18:11:02	--	Channel created on Thu, 09 Apr 2015 22:20:16
+2021-02-13 18:21:05	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-13 18:29:30	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 18:29:44	Doctor_Junglist	@stalebread, btw is it you stalebrim?
+2021-02-13 18:30:16	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-13 18:32:20	Doctor_Junglist	today i played my first session of DnD 5, the first impressions are positive, i'm likin it a lot more than DnD 3.5
+2021-02-13 18:34:34	stalebread	Doctor_Junglist: yea
+2021-02-13 18:37:30	rdr	play DND9.0, the strongest DND
+2021-02-13 18:38:07	rdr	is dnd5 where they removed stat bonuses from races?
+2021-02-13 18:38:19	rdr	to appease a certain subset of people who will never play DnD
+2021-02-13 18:40:17	Doctor_Junglist	DnD 3.5 seemed overly complicated to me, i enjoy the fact that DnD 5 is more simple
+2021-02-13 18:43:21	Doctor_Junglist	also you do get stat bonuses from races in DnD 5, eg i chose Tabaxi who get +2 dexterity and + 1 charisma
+2021-02-13 18:43:45	rdr	oh okay
+2021-02-13 18:43:53	rdr	i heard that the latest version removed those bonuses
+2021-02-13 18:43:57	rdr	because Orc Lives Matter
+2021-02-13 18:44:05	rdr	or some nonsense like that
+2021-02-13 18:44:08	rdr	like orcs are black ppl
+2021-02-13 18:44:27	Doctor_Junglist	DnD 5 is the latest, it'
+2021-02-13 18:44:40	Doctor_Junglist	it's possible you conflated it with something else they removed or changed
+2021-02-13 18:44:48	rdr	https://comicbook.com/gaming/news/dungeons-dragons-negative-race-ability-score-modifiers/
+2021-02-13 18:44:49	@NarwhalBot	[ Dungeons & Dragons Officially Removes Negative Racial Ability Score Modifiers From Rules ]
+2021-02-13 18:44:54	rdr	negative stats i guess
+2021-02-13 18:44:59	ultr4_l4s3r	wow
+2021-02-13 18:45:00	rdr	you can only get positive
+2021-02-13 18:45:18	rdr	i can finally be an orc wizard :P
+2021-02-13 18:45:43	ultr4_l4s3r	boy was I all happy and glad not knowing that this controversy existed
+2021-02-13 18:45:51	rdr	sorry
+2021-02-13 18:45:54	rdr	i am painfully aware of it
+2021-02-13 18:46:05	Doctor_Junglist	the positives are nice tho, it's fun to start out with a really fun character
+2021-02-13 18:46:05	ultr4_l4s3r	well, I guess I shouldn't be too surprised
+2021-02-13 18:46:22	Doctor_Junglist	i mean it's nice to have useful quirks
+2021-02-13 18:46:44	ultr4_l4s3r	yup, no denying that
+2021-02-13 18:47:24	 *	ultr4_l4s3r opens bottle of beer with teeth
+2021-02-13 18:47:48	 *	stalebread opens 20 bottles of beer per day
+2021-02-13 18:47:49	ultr4_l4s3r	just kidding, I don't do that. My teeth tend to break easily
+2021-02-13 18:47:58	rdr	i was gonna say
+2021-02-13 18:48:05	stalebread	just kidding, I don't do that. My mind tends to break easily
+2021-02-13 18:48:13	ultr4_l4s3r	but I have a friend who does
+2021-02-13 18:48:17	ultr4_l4s3r	open beers with his teeth
+2021-02-13 18:48:24	ultr4_l4s3r	I can't look when he does it
+2021-02-13 18:48:35	stalebread	that's a very good way to get teeth issues
+2021-02-13 18:49:01	ultr4_l4s3r	that's what I told him, but he's too cool to care
+2021-02-13 18:49:17	ultr4_l4s3r	actually I'm not sure he still does it. Haven't seen him in a year or so
+2021-02-13 18:49:33	ultr4_l4s3r	two years?
+2021-02-13 18:49:34	ultr4_l4s3r	damn
+2021-02-13 18:49:50	stalebread	ultr4_l4s3r: I have to say I prefer the Apoptygma version over the Kim Wilde version
+2021-02-13 18:50:09	ultr4_l4s3r	that's because you have no taste and are a poopoo head
+2021-02-13 18:50:25	stalebread	:(
+2021-02-13 18:50:59	ultr4_l4s3r	no, you're right it's actually quite good
+2021-02-13 18:52:24	ultr4_l4s3r	funnily enough I heard a new version of Cambodia on the radio just yesterday (and I don't listen to the radio often)
+2021-02-13 18:53:01	stalebread	https://www.youtube.com/watch?v=PLP9c0Z4Q3Y
+2021-02-13 18:53:02	@NarwhalBot	[ Bad apple but its discord messages | Desktop: https://youtube.com/watch?v=PLP9c0Z4Q3Y | Mobile: https://m.youtube.com/watch?v=PLP9c0Z4Q3Y ]
+2021-02-13 18:58:53	stalebread	https://www.youtube.com/watch?v=-FKM03M6ItY
+2021-02-13 18:58:54	@NarwhalBot	[ ESCHATOS 【SILVER LINING】 Roland XV-5080 arrange | Desktop: https://youtube.com/watch?v=-FKM03M6ItY | Mobile: https://m.youtube.com/watch?v=-FKM03M6ItY ]
+2021-02-13 18:59:01	stalebread	XV-5080 sounds so good
+2021-02-13 19:00:28	stalebread	https://www.youtube.com/watch?v=K6V_MPoUywE
+2021-02-13 19:00:28	@NarwhalBot	[ Counter Strike  【Roland XV-5080】 | Desktop: https://youtube.com/watch?v=K6V_MPoUywE | Mobile: https://m.youtube.com/watch?v=K6V_MPoUywE ]
+2021-02-13 19:04:43	-->	Gryman (~Gryman@108-206-150-112.lightspeed.irvnca.sbcglobal.net) has joined #Solus-Chat
+2021-02-13 19:09:13	Aph3x-WL	wtf is saido chesto?
+2021-02-13 19:09:14	<--	NarwhalBot has kicked Aph3x-WL (Detected by this Narwhal for kick approval. Kicking.)
+2021-02-13 19:09:18	-->	Aph3x-WL (~Aph3x@shellie.darchoods.net) has joined #Solus-Chat
+2021-02-13 19:09:53	ultr4_l4s3r	lol
+2021-02-13 19:09:56	TraceyC	lmgtfy
+2021-02-13 19:10:14	stalebread	ahahaha
+2021-02-13 19:10:16	stalebread	made my night
+2021-02-13 19:10:20	ultr4_l4s3r	Aph3x-WL, it's from an anime https://youtu.be/ULjbIMvP6A0
+2021-02-13 19:10:21	@NarwhalBot	[ How Heavy Are the Dumbbells You Lift? – Opening Theme – Onegai Muscle | Desktop: https://youtube.com/watch?v=ULjbIMvP6A0 | Mobile: https://m.youtube.com/watch?v=ULjbIMvP6A0 ]
+2021-02-13 19:10:36	stalebread	now if it would do it every time Aph3x-WL says something
+2021-02-13 19:10:56	ultr4_l4s3r	so stalebread-mode for Aph3x-WL?
+2021-02-13 19:11:15	 *	Aph3x-WL would then just emote everything
+2021-02-13 19:11:29	Aph3x-WL	why does it kick for that though?
+2021-02-13 19:11:39	stalebread	Josh hates weebs
+2021-02-13 19:11:43	ultr4_l4s3r	because stalebread said it one too many time
+2021-02-13 19:11:45	ultr4_l4s3r	s
+2021-02-13 19:12:27	Aph3x-WL	i'm honestly surprised there isn't a kick set for manjaro
+2021-02-13 19:12:57	ultr4_l4s3r	lol, true
+2021-02-13 19:13:14	ultr4_l4s3r	but then manjaro users would crash and lose connection after a while anyway
+2021-02-13 19:13:23	Aph3x-WL	good
+2021-02-13 19:13:23	stalebread	oh no
+2021-02-13 19:13:24	stalebread	anyway
+2021-02-13 19:13:26	Aph3x-WL	they shouldn't be here anyway
+2021-02-13 19:24:20	 *	rdr types this from Manjaro 21.02.13 "Greased Lightning" i3/Xfce/Budgie Edition
+2021-02-13 19:25:35	Aph3x-WL	their i3 edition is terrible, i don't understand why people like it
+2021-02-13 19:26:06	rdr	Fedora is going to have an i3 edition ow
+2021-02-13 19:26:08	rdr	now
+2021-02-13 19:26:39	stalebread	i3 + fedora
+2021-02-13 19:26:43	stalebread	sounds like a good match
+2021-02-13 19:27:31	Aph3x-WL	it works well, not sure how their official spin will be though
+2021-02-13 19:28:27	Aph3x-WL	the one i'm looking forword to the most is solus awesomeWM edition
+2021-02-13 19:28:43	rdr	I would give my left nutsack for a Solus Budgie edition
+2021-02-13 19:28:45	stalebread	I think the i3 edition would be more likely and even that will never happen
+2021-02-13 19:29:00	stalebread	understandably
+2021-02-13 19:29:05	Aph3x-WL	you have more than one nutsack?
+2021-02-13 19:29:35	rdr	the right one i gave to make solus gnome happen
+2021-02-13 19:30:24	stalebread	that's a bad deal
+2021-02-13 19:32:11	rdr	je regrette
+2021-02-13 19:32:41	-->	leapfog__ (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has joined #Solus-Chat
+2021-02-13 19:36:46	<--	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2021-02-13 19:37:57	-->	stalepoops (~stalepoop@85-76-117-5-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-13 19:39:00	stalepoops	if I'm a tomato
+2021-02-13 19:39:21	stalepoops	I wonder if mentioning that one widget library is blacklisted
+2021-02-13 19:40:34	ultr4_l4s3r	libhandy chesto!
+2021-02-13 19:40:34	<--	NarwhalBot has kicked ultr4_l4s3r (Detected by this Narwhal for kick approval. Kicking.)
+2021-02-13 19:40:54	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-13 19:41:24	stalepoops	side cheetos!
+2021-02-13 19:50:52	<--	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-13 19:51:15	-->	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-13 20:11:01	rdr	how do you spell chucky's real name?  is is Chestor?
+2021-02-13 20:11:08	rdr	lol not triggered
+2021-02-13 20:15:59	stalebread	https://twitter.com/Ash_735/status/1360664655904059398
+2021-02-13 20:16:00	@NarwhalBot	[ Ash R. on Twitter: "Grand Theft Auto III has been FULLY reverse engineered! Introducing re3, an open source project on GitHub which fixes what was broken and can be compiled for various platforms! #GTA #GTA3 : https://t.co/1oGYXNTm9z… https://t.co/PxkNnboAd2" ]
+2021-02-13 20:16:00	stalebread	that's cool
+2021-02-13 20:25:54	rdr	cease and desist
+2021-02-13 20:32:56	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-13 20:34:51	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Ping timeout: 265 seconds)
+2021-02-13 20:35:01	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus-Chat
+2021-02-13 20:35:37	Aph3x-WL	too bad they couldn't do that when the game was still relevant
+2021-02-13 20:36:05	Aph3x-WL	.blacklist
+2021-02-13 20:36:14	Aph3x-WL	.badwords
+2021-02-13 20:37:45	<--	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Ping timeout: 264 seconds)
+2021-02-13 20:38:00	-->	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b120:458b:b9b9:da32:9f8e:c10d) has joined #Solus-Chat
+2021-02-13 21:07:51	PipeItToDevNull	Badwords: Aph3x-WL
+2021-02-13 21:08:23	rdr	Aph3x-WL! Aph3x-WL! Aph3x-WL!
+2021-02-13 21:08:28	rdr	I said the badwords!
+2021-02-13 21:12:00	Aph3x-WL	so you pretty much just lurk for 3 years then come out to attack me :(
+2021-02-13 21:15:33	rdr	lol i just got here a couple days ago
+2021-02-13 21:17:30	Aph3x-WL	i was talking to PipeItToDevNull
+2021-02-13 21:17:51	PipeItToDevNull	I wasnt even lurking, I just aint been on Solus
+2021-02-13 21:17:58	rdr	oic
+2021-02-13 21:18:07	PipeItToDevNull	##techsupport moved to discord, so I dont do as much stuff on IRC anymore
+2021-02-13 21:19:12	Aph3x-WL	ew any channel that moves to discord is not worth following
+2021-02-13 21:21:44	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Ping timeout: 265 seconds)
+2021-02-13 21:24:02	<--	Scotty_Trees_HP (~Scotty_Tr@2600:1005:b120:458b:b9b9:da32:9f8e:c10d) has quit (Ping timeout: 264 seconds)
+2021-02-13 21:24:51	-->	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-13 21:39:54	sheepman[m]	gotta set up discord<->matrix<->irc to avoid moving platforms https://xkcd.com/1782/
+2021-02-13 21:39:55	@NarwhalBot	[ xkcd: Team Chat ]
+2021-02-13 22:11:28	_shawn	one ssec
+2021-02-13 22:12:35	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-13 22:17:15	-->	shenchen__ (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-13 22:19:26	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-13 22:21:43	stalebread	sheepman[m]: just communicate via resurrected msn messenger
+2021-02-13 22:23:17	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-cqomonhlfrsijysi) has quit (Quit: Connection closed for inactivity)
+2021-02-13 22:34:06	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-13 22:45:42	sheepman[m]	I'm sorry, what?
+2021-02-13 23:16:44	stalebread	I forgive you
+2021-02-13 23:24:20	Swift110-mobile	Hey all
+2021-02-13 23:24:27	Swift110-mobile	i member MSN messenger
+2021-02-13 23:24:35	Swift110-mobile	And Yahoo messenger
+2021-02-13 23:28:40	<--	stalebread (~stalebrim@85-76-45-218-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-13 23:33:40	Scotty_Trees	happy valentines day Harvey :P - https://www.youtube.com/watch?v=FqhWwzb-RY8&feature=emb_title
+2021-02-13 23:33:41	@NarwhalBot	[ [1241] A Love Lock That Can NEVER Be Opened?!? LOL | Desktop: https://youtube.com/watch?v=FqhWwzb-RY8 | Mobile: https://m.youtube.com/watch?v=FqhWwzb-RY8 ]
+2021-02-13 23:34:37	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-13 23:35:24	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-13 23:36:51	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Remote host closed the connection)
+2021-02-13 23:37:59	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-14 01:04:38	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-14 01:39:15	-->	manokara (~manokara@189.112.56.169) has joined #Solus-Chat
+2021-02-14 01:40:44	<--	manokara_ (~manokara@200.187.162.95) has quit (Ping timeout: 240 seconds)
+2021-02-14 02:08:58	<--	Gryman (~Gryman@108-206-150-112.lightspeed.irvnca.sbcglobal.net) has quit (Remote host closed the connection)
+2021-02-14 02:30:57	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-14 02:49:55	shenchen__	...this is very standard tool to open a lock
+2021-02-14 02:50:27	shenchen__	most cheap locks suffer from the exact same weakness
+2021-02-14 02:50:39	--	shenchen__ is now known as shenchen
+2021-02-14 02:51:38	Scotty_Trees	any VD stream plans JoshStrobl or do you already have plans with someone special? :P
+2021-02-14 02:52:09	@JoshStrobl	Already have plans
+2021-02-14 02:54:23	Scotty_Trees	I hope they work out the way you want :)
+2021-02-14 03:05:52	<--	leapfog__ (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-02-14 03:28:30	-->	leapfog (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has joined #Solus-Chat
+2021-02-14 04:08:47	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-14 04:11:35	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 265 seconds)
+2021-02-14 04:17:25	-->	endumiuz_ (~endumiuz@194.117.188.224) has joined #Solus-Chat
+2021-02-14 05:19:09	-->	RobertTVarga (~RobertTVa@20014C4C17A91300B80D08823A668C5D.unconfigured.pool.telekom.hu) has joined #Solus-Chat
+2021-02-14 05:20:18	<--	RobertTVarga (~RobertTVa@20014C4C17A91300B80D08823A668C5D.unconfigured.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-14 05:33:46	 *	YakoYako stretches
+2021-02-14 05:34:05	YakoYako	Morning people!
+2021-02-14 05:47:23	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 240 seconds)
+2021-02-14 05:49:42	-->	shenchen_ (~shenchen@58.210.60.122) has joined #Solus-Chat
+2021-02-14 06:01:51	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 06:02:11	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-14 06:23:53	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-dyhadmcwlhfvhhof) has joined #Solus-Chat
+2021-02-14 06:27:19	<--	Scotty_Trees_HP (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Remote host closed the connection)
+2021-02-14 06:36:37	<--	stalepoops (~stalepoop@85-76-117-5-nat.elisa-mobile.fi) has quit (Ping timeout: 246 seconds)
+2021-02-14 06:46:10	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-14 07:35:50	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus-Chat
+2021-02-14 07:42:22	abdulocracy	Morning person!
+2021-02-14 07:55:27	@Girtablulu	moin
+2021-02-14 07:57:12	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus-Chat
+2021-02-14 08:09:14	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has quit (Ping timeout: 240 seconds)
+2021-02-14 08:10:03	<--	shenchen_ (~shenchen@58.210.60.122) has quit (Ping timeout: 240 seconds)
+2021-02-14 08:12:05	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus-Chat
+2021-02-14 08:14:10	@Girtablulu	gnaa theming...
+2021-02-14 08:32:19	abdulocracy	The bridging tools in Matrix are so fucking cool
+2021-02-14 08:32:50	abdulocracy	Girtablulu one reason I remember not liking Plasma was the theming
+2021-02-14 08:33:11	@Girtablulu	oh well
+2021-02-14 08:45:10	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus-Chat
+2021-02-14 08:56:18	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus-Chat
+2021-02-14 08:57:35	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2021-02-14 09:03:13	-->	shenchen (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-14 10:36:28	-->	stalebread (~stalebrim@85-76-44-209-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-14 10:57:38	-->	Beanary (~Johny31@shellium/member/Johny31) has joined #Solus-Chat
+2021-02-14 11:03:45	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-14 11:24:44	Aph3x-WL	you don't like plasma because of the theme?
+2021-02-14 11:24:50	Aph3x-WL	you know you can change that right?
+2021-02-14 11:25:26	TraceyC	I mean, one of the main *advantages* of Linux DEs is how customizable they are
+2021-02-14 11:28:13	abdulocracy	I couldn't find a decent material theme
+2021-02-14 11:28:23	stalebread	>material theme
+2021-02-14 11:28:24	stalebread	that's your issue
+2021-02-14 11:28:47	TraceyC	material ... as in flat? I thought material was a description of a style of theme for Android
+2021-02-14 11:29:33	TraceyC	(which I hate because they have less visually distinct bits but to each their own)
+2021-02-14 11:33:18	Aph3x-WL	so plasma is bad because you couldn't find a good looking version of a shitty theme
+2021-02-14 11:33:23	Aph3x-WL	doesn't make sense to me but ok
+2021-02-14 11:33:28	 *	TraceyC snickers
+2021-02-14 11:38:01	abdulocracy	Yep
+2021-02-14 11:38:40	abdulocracy	I've been using a Material theme for a long time
+2021-02-14 11:39:04	abdulocracy	I don't care if the DE's very customizable
+2021-02-14 11:39:07	TraceyC	My only complaint with Plasma in regard to themes is that there are themes that don't have all the necessary assets. It's not pretty if you open your app menu and there are icons missing. I think some automated testing having to pass before a theme was allowed to be accepted would alleviate that
+2021-02-14 11:39:09	abdulocracy	I want it to be familiar and work
+2021-02-14 11:39:10	Aph3x-WL	having used something for a long is not a good reason to continue using it :P
+2021-02-14 11:39:12	abdulocracy	For me
+2021-02-14 11:39:18	Aph3x-WL	time*
+2021-02-14 11:40:28	TraceyC	Out of curiosity, what was your preferred theme called?
+2021-02-14 11:40:34	stalebread	Breeze
+2021-02-14 11:40:45	abdulocracy	Plata at the moment
+2021-02-14 11:40:55	abdulocracy	Was using Adapta, it's predecessor, before that
+2021-02-14 11:41:05	abdulocracy	s/it's/its
+2021-02-14 11:41:05	TraceyC	Adapta was really good looking
+2021-02-14 11:41:14	stalebread	adapta-kde
+2021-02-14 11:41:25	abdulocracy	It's shit
+2021-02-14 11:41:29	TraceyC	Yeah, I see that in the global theme search
+2021-02-14 11:41:30	stalebread	I know, it's adapta
+2021-02-14 11:42:19	TraceyC	Materia KDE looks similar
+2021-02-14 11:42:59	stalebread	I don't really find SolusDark Breeze to be so much different from Plata
+2021-02-14 11:44:10	abdulocracy	I mean I haven't tried Plasma in a long while, perhaps I'll like it if I tried it now
+2021-02-14 11:44:35	abdulocracy	s/I'll/I'd
+2021-02-14 11:44:47	TraceyC	OK, so let me get this straight. There was some complaint about Plasma being shit because someone couldn't find a theme but hasn't used it in a long time?
+2021-02-14 11:45:00	abdulocracy	That was me
+2021-02-14 11:45:09	stalebread	"I tried Solus. Meh"
+2021-02-14 11:45:17	TraceyC	If you hadn't used it in a long time how would you know it's currently great or shit?
+2021-02-14 11:45:44	abdulocracy	I wasn't complaining, just a remark on the state when I used it in the past
+2021-02-14 11:45:49	TraceyC	OK
+2021-02-14 11:46:03	abdulocracy	"one reason I remember not liking Plasma was the theming"
+2021-02-14 11:46:25	abdulocracy	Chill out fanbois
+2021-02-14 11:46:25	stalebread	I tried Solus over a year ago and it had a 4.x series kernel so I can't really recommend it for modern hardware
+2021-02-14 11:46:35	TraceyC	Who says I'm not chill?
+2021-02-14 11:46:44	Aph3x-WL	plasma is your god
+2021-02-14 11:46:45	abdulocracy	I do
+2021-02-14 11:46:49	TraceyC	ha. OK
+2021-02-14 11:47:32	abdulocracy	The main reason I can't use Plasma is too many knobs and dials
+2021-02-14 11:48:20	abdulocracy	GNOME is dumb but it's simple and is the same practically everywhere
+2021-02-14 11:48:27	Aph3x-WL	this wasn't meant to turn into an arguement, i just didn't know if he knew that he's not limited to the theme plasma ships with
+2021-02-14 11:48:34	Aph3x-WL	some people seem to think they can't even change the wallpaper
+2021-02-14 11:49:26	abdulocracy	I like connecting to remote machines or VMs and having the same GUI
+2021-02-14 11:51:59	<--	stalebread (~stalebrim@85-76-44-209-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-14 11:52:08	abdulocracy	Ubuntu, Debian, Fedora, RHEL, dudn't matter, I can use it comfortably as my own machine and that's nice
+2021-02-14 11:53:22	abdulocracy	Budgie is nice though, on Solus I use Budgie :)
+2021-02-14 11:53:43	-->	stalebread (~stalebrim@85-76-44-209-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-14 12:00:24	Aph3x-WL	stalebread thinks ubuntu budgie is better
+2021-02-14 12:04:48	stalebread	nope
+2021-02-14 12:05:06	stalebread	before I got into Solus I tried it and it crashed like hell
+2021-02-14 12:10:58	helium1	ubuntu budgie looks like elementary. Fuuu
+2021-02-14 12:19:24	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-14 12:23:43	stalebread	hi ultr4_l4s3r
+2021-02-14 12:43:34	stalebread	pls respond
+2021-02-14 12:50:27	abdulocracy	hi stalebread
+2021-02-14 12:50:31	abdulocracy	:)
+2021-02-14 12:54:13	-->	RobertTVarga (~RobertTVa@254C53A5.nat.pool.telekom.hu) has joined #Solus-Chat
+2021-02-14 12:55:10	<--	RobertTVarga (~RobertTVa@254C53A5.nat.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-14 13:15:23	stalebread	hi abdulocracy
+2021-02-14 13:20:47	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has left #solus-chat
+2021-02-14 13:22:53	ultr4_l4s3r	hi stalebread
+2021-02-14 13:24:04	stalebread	hi ultr4_l4s3r
+2021-02-14 13:24:22	Aph3x-WL	hi Aph3x-WL
+2021-02-14 13:24:52	ultr4_l4s3r	no
+2021-02-14 13:25:51	stalebread	https://www.youtube.com/watch?v=cZujEUueEPo
+2021-02-14 13:25:52	@NarwhalBot	[ Why I’m Not a Linux User | Desktop: https://youtube.com/watch?v=cZujEUueEPo | Mobile: https://m.youtube.com/watch?v=cZujEUueEPo ]
+2021-02-14 13:28:56	Aph3x-WL	why do these people think we care?
+2021-02-14 13:29:18	abdulocracy	Without even looking, is it the ex-software engineer guy
+2021-02-14 13:29:47	abdulocracy	Oh no it's another one
+2021-02-14 13:37:22	stalebread	oh no it's devo
+2021-02-14 13:41:08	rdr	are we not men?
+2021-02-14 13:41:55	Aph3x-WL	not all of us
+2021-02-14 13:43:46	rdr	we are devo
+2021-02-14 13:46:21	stalebread	now I realize what's the sc in solus-sc :)
+2021-02-14 13:46:23	Aph3x-WL	i don't know what that is but it sounds like something i'm glad to not be
+2021-02-14 13:48:08	stalebread	https://www.youtube.com/watch?v=Zk1DNzg0LWs
+2021-02-14 13:48:09	@NarwhalBot	[ Devo - Jocko Homo (In The Beginning Was The End: The Truth About De-Evolution. 1976) | Desktop: https://youtube.com/watch?v=Zk1DNzg0LWs | Mobile: https://m.youtube.com/watch?v=Zk1DNzg0LWs ]
+2021-02-14 13:48:13	-->	spindley (~mike@d204-191-184-152.abhsia.telus.net) has joined #Solus-Chat
+2021-02-14 13:54:38	ultr4_l4s3r	Happy Valentines, rdr!
+2021-02-14 13:54:39	ultr4_l4s3r	https://twitter.com/0207_yuyuyuyu/status/1360904668822470657
+2021-02-14 13:54:40	@NarwhalBot	[ おゆゆ on Twitter: "#gawrt💙🍫… " ]
+2021-02-14 14:04:43	rdr	cute
+2021-02-14 14:26:59	stalebread	no u
+2021-02-14 14:28:35	serebit	well rip my laptop i guess
+2021-02-14 14:28:58	serebit	can't install solus 4.2, keeps giving me "Error 5" on the unmounting disks step
+2021-02-14 14:31:05	stalebread	you can always install manjaro
+2021-02-14 14:31:06	 *	stalebread runs
+2021-02-14 14:36:42	ultr4_l4s3r	serebit, did you already install a previous version on this laptop? i.e. could this be an issue with changes in the installer?
+2021-02-14 14:37:36	serebit	it previously had 4.0 installed on it, so the installer has worked in the past
+2021-02-14 14:38:19	ultr4_l4s3r	oh no. Now I'm scared that I won't be able to refresh the installations on my PC and laptop with 4.2
+2021-02-14 14:38:34	stalebread	you sure you flashed it correctly?
+2021-02-14 14:39:05	ultr4_l4s3r	full frontal
+2021-02-14 14:40:40	serebit	tried etcher and dd, same results
+2021-02-14 14:40:53	serebit	going to troubleshoot a bit
+2021-02-14 14:41:03	serebit	i.e. fuck with the installer code
+2021-02-14 14:41:05	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 14:42:37	stalebread	xfs PR confirmed?
+2021-02-14 15:00:42	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Remote host closed the connection)
+2021-02-14 15:01:06	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus-Chat
+2021-02-14 15:02:14	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-14 15:02:45	stalebread	wb ultr4_l4s3r
+2021-02-14 15:07:38	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-14 15:07:55	stalebread	bye ultr4_l4s3r
+2021-02-14 15:14:10	serebit	well i found where the error is
+2021-02-14 15:14:17	serebit	it's erroring out while trying to copy a file
+2021-02-14 15:15:57	Aph3x-WL	s*ido ch*sto
+2021-02-14 15:16:04	stalebread	solus-sc
+2021-02-14 15:16:10	<--	JoshStrobl has kicked Aph3x-WL (Aph3x-WL)
+2021-02-14 15:17:47	-->	Aph3x-WL (~Aph3x@shellie.darchoods.net) has joined #Solus-Chat
+2021-02-14 15:17:50	Aph3x-WL	:/
+2021-02-14 15:17:57	Aph3x-WL	that's cheating
+2021-02-14 15:19:03	serebit	it specifically errors out while trying to copy /lib64/firmware/iwlwifi-Qu-b0-hr-b0-53.ucode
+2021-02-14 15:19:42	stalebread	have you verified the ISO?
+2021-02-14 15:19:51	serebit	i-
+2021-02-14 15:19:57	 *	serebit freezes
+2021-02-14 15:20:26	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-14 15:21:10	 *	rdr sends a super chat
+2021-02-14 15:24:04	 *	serebit sighs
+2021-02-14 15:25:02	stalebread	inb4 your download just got corrupt
+2021-02-14 15:26:15	serebit	if it were a normal download I'd be less surprised, but it's a torrent
+2021-02-14 15:26:20	serebit	I thought individual blocks were verified
+2021-02-14 15:26:31	stalebread	use torrents they said
+2021-02-14 15:26:35	stalebread	they'll be better they sayd
+2021-02-14 15:27:16	stalebread	.. said
+2021-02-14 15:28:02	Aph3x-WL	torrents are better
+2021-02-14 15:28:05	Aph3x-WL	you're just doing it wrong
+2021-02-14 15:28:15	serebit	how so
+2021-02-14 15:30:32	Aph3x-WL	maybe it's your harddrive
+2021-02-14 15:33:34	<--	endumiuz_ (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-14 15:36:38	stalebread	https://www.youtube.com/watch?v=J53UK_bul5Y
+2021-02-14 15:36:39	@NarwhalBot	[ Seal farts after looking directly at me | Desktop: https://youtube.com/watch?v=J53UK_bul5Y | Mobile: https://m.youtube.com/watch?v=J53UK_bul5Y ]
+2021-02-14 15:38:49	serebit	yeah that was it
+2021-02-14 15:39:00	stalebread	your hdd is bork?
+2021-02-14 15:39:02	serebit	thanks, torrents, for wasting two hours of my sunday
+2021-02-14 15:39:04	_shawn	sha sum didnt match?
+2021-02-14 15:39:11	serebit	checksum didn't match
+2021-02-14 15:39:25	_shawn	hours>
+2021-02-14 15:39:31	serebit	as far as i can tell the hard drive was fine
+2021-02-14 15:40:15	_shawn	how does it take hours
+2021-02-14 15:40:30	serebit	because i was troubleshooting for two hours
+2021-02-14 15:40:35	_shawn	oh
+2021-02-14 15:40:41	serebit	stalebread saved me from wasting more time
+2021-02-14 15:41:11	_shawn	i thought you were downloading it for hours :D
+2021-02-14 15:45:34	abdulocracy	Which client serebit
+2021-02-14 15:45:41	serebit	transmission
+2021-02-14 15:46:00	abdulocracy	Perhaps it's a bug?
+2021-02-14 15:46:07	serebit	could be
+2021-02-14 15:46:19	serebit	could also be a memory error that wasn't caught by verification? idk
+2021-02-14 15:46:34	serebit	or cache error, i think i downloaded those ISOs on a buggy BIOS
+2021-02-14 15:47:03	stalebread	if you want to waste more time, run memtest
+2021-02-14 15:47:11	abdulocracy	Maybe it was a solar flare
+2021-02-14 15:47:12	abdulocracy	That would explain the memory error
+2021-02-14 15:47:37	abdulocracy	Ahh, memtest
+2021-02-14 15:47:38	abdulocracy	Brings back memories
+2021-02-14 15:47:50	stalebread	no, it just tests them
+2021-02-14 15:48:05	serebit	i think it was a cache error
+2021-02-14 15:48:16	abdulocracy	You must now replace your CPU
+2021-02-14 15:48:26	abdulocracy	Its caches are broken
+2021-02-14 15:48:35	serebit	nah the CPU is fine, i was just using a BIOS with a newer AGESA that I shouldn't have been using
+2021-02-14 15:48:55	abdulocracy	Now apologize to poor Transmission
+2021-02-14 15:48:58	serebit	was seeing cache errors constantly
+2021-02-14 15:49:02	serebit	sorry transmission
+2021-02-14 15:49:23	abdulocracy	Transmission demands 3 slaps as penance
+2021-02-14 15:49:49	abdulocracy	.slap serebit
+2021-02-14 15:49:49	 *	NarwhalBot high fives serebit instead
+2021-02-14 15:50:10	abdulocracy	.slap serebit
+2021-02-14 15:50:11	 *	NarwhalBot slaps serebit
+2021-02-14 15:50:12	stalebread	.slap serebit
+2021-02-14 15:50:12	 *	NarwhalBot destroys serebit
+2021-02-14 15:50:17	abdulocracy	Good
+2021-02-14 15:50:26	abdulocracy	The ol' lure and destroy
+2021-02-14 15:51:17	stalebread	serebit: how do you point out a cache error?
+2021-02-14 15:52:20	abdulocracy	https://youtu.be/pF-3S-HTJSg
+2021-02-14 15:52:21	@NarwhalBot	[ Fake Hacking! Fake Virus! Pretend to be a Pro Hacker! | Desktop: https://youtube.com/watch?v=pF-3S-HTJSg | Mobile: https://m.youtube.com/watch?v=pF-3S-HTJSg ]
+2021-02-14 15:52:25	abdulocracy	By hacking of course
+2021-02-14 15:53:01	serebit	if a build fails, and you run it again and it fails the same way, it might be a cache error. if you run "sync; echo 3 | sudo tee /proc/sys/vm/drop_caches" and then run the build again, and it succeeds, it was probably a cache error
+2021-02-14 15:53:23	serebit	memory bit flips tend to not survive reruns
+2021-02-14 15:54:12	serebit	waiting for bryan to jump in and tell me i'm not even close to right lmao
+2021-02-14 15:57:13	stalebread	oaky
+2021-02-14 15:57:29	stalebread	so if my brother starts running into weird issues with his comp I know to downgrade the bios
+2021-02-14 15:58:53	<--	stalebread (~stalebrim@85-76-44-209-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-14 16:11:43	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 16:15:08	<--	Beanary (~Johny31@shellium/member/Johny31) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-02-14 16:19:14	@DataDrake	caches usually have some form of ECC to at least detect errors
+2021-02-14 16:20:03	@DataDrake	most cases that would trigger the cache to mark the line as dirty and force a refetch on next access
+2021-02-14 16:20:53	@DataDrake	re: torrents, much more likely to be affected by disk corruption.
+2021-02-14 16:21:55	@DataDrake	if the checksum doesn't match the tracker then usually it'll either mark it as bad or redownload any mismatched blocks
+2021-02-14 16:25:43	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Remote host closed the connection)
+2021-02-14 16:26:00	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-14 16:27:45	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2021-02-14 16:28:01	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-14 16:28:22	Aph3x-WL	ty dr drake
+2021-02-14 16:31:19	serebit	it's entirely possible I was just experiencing fs cache errors then rather than cpu cache
+2021-02-14 16:32:06	serebit	but the bios downgrade for sure resolved it
+2021-02-14 16:55:27	Scotty_Trees	https://www.youtube.com/watch?v=qbAuxp_I0zk&feature=emb_title
+2021-02-14 16:55:28	@NarwhalBot	[ KDE Plasma 5.21 - New look, new menu, and Wayland 100% usable | Desktop: https://youtube.com/watch?v=qbAuxp_I0zk | Mobile: https://m.youtube.com/watch?v=qbAuxp_I0zk ]
+2021-02-14 17:38:45	<--	ermo (~ermo@foresight/developer/ermo) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-02-14 17:40:56	-->	ermo (~ermo@foresight/developer/ermo) has joined #Solus-Chat
+2021-02-14 17:40:56	--	Mode #solus-chat [+o ermo] by ChanServ
+2021-02-14 17:49:04	_shawn	testingtesting
+2021-02-14 17:49:21	_shawn	https://getsol.us/
+2021-02-14 17:49:22	@NarwhalBot	[ Home | Solus ]
+2021-02-14 17:49:28	sheepman[m]	testing what?
+2021-02-14 17:49:37	_shawn	sorry
+2021-02-14 18:00:01	serebit	haha what if someone patched nautilus to have case-sensitive sort haha
+2021-02-14 18:00:21	serebit	just kidding
+2021-02-14 18:00:23	 *	serebit blushes
+2021-02-14 18:00:25	serebit	unless...?
+2021-02-14 18:02:37	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 18:02:54	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-14 18:12:17	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (Read error: Connection reset by peer)
+2021-02-14 18:14:41	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has quit (Remote host closed the connection)
+2021-02-14 18:28:51	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Ping timeout: 246 seconds)
+2021-02-14 18:51:50	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-14 19:15:23	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 19:16:27	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-14 19:20:22	rdr	testing testing
+2021-02-14 19:20:24	rdr	this is a test
+2021-02-14 19:20:33	rdr	if it was a real message, you would have recieved it
+2021-02-14 19:20:38	sheepman[m]	it worked
+2021-02-14 19:20:43	rdr	damnit
+2021-02-14 19:20:46	rdr	it was an anti-test
+2021-02-14 19:20:47	sheepman[m]	got it here
+2021-02-14 19:21:01	sheepman[m]	it didn't work
+2021-02-14 19:21:07	rdr	hooray it owrked
+2021-02-14 19:21:31	sheepman[m]	no, well, I got the message
+2021-02-14 19:22:31	 *	sheepman[m] uploaded an image: image.png (32KiB) < https://matrix.org/_matrix/media/r0/download/matrix.org/MABmJdsHJllnUgIEePPasNAv/image.png >
+2021-02-14 19:26:59	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus-Chat
+2021-02-14 19:30:56	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus-Chat
+2021-02-14 19:34:16	_shawn	I was testing my url server
+2021-02-14 19:34:39	_shawn	because my client is on my VPS and long URLS i cant click because they line wrap
+2021-02-14 19:56:22	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-14 20:06:45	<--	chbmb (~CHBMB@unaffiliated/chbmb) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-02-14 20:29:26	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 20:38:23	rdr	_shawn: what client are you using
+2021-02-14 20:38:47	rdr	or is it just in terminal
+2021-02-14 20:38:51	rdr	in weechat i have a url grabber
+2021-02-14 20:39:01	-->	chbmb (~CHBMB@unaffiliated/chbmb) has joined #Solus-Chat
+2021-02-14 20:40:07	_shawn	I'm using weechat
+2021-02-14 20:40:50	-->	stalebread (~stalebrim@85-76-51-35-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-14 20:40:55	_shawn	I'm going to use urlserver.py rdr
+2021-02-14 20:41:35	_shawn	I cant launch xdg-open because I am uing the ncurses ui over ssh
+2021-02-14 20:41:54	rdr	i use urlselect.lua, but it does xdg-open
+2021-02-14 20:51:44	stalebread	seriously what the fuck
+2021-02-14 20:51:55	stalebread	like every time Plasma updates my GTK theme gets changed to Raleigh
+2021-02-14 20:52:08	sheepman[m]	....huh?
+2021-02-14 20:52:18	_shawn	I gave up on plasma, never found a solution to my .desktop issue
+2021-02-14 20:52:23	stalebread	I first thought it's due to i3 somehow, now I have reinstalled Solus and use Plasma without any modifications, yet it still does that
+2021-02-14 20:52:28	_shawn	installed literally anything else and it works
+2021-02-14 20:53:00	stalebread	why it's even a problem
+2021-02-14 20:53:02	stalebread	just not use gvim
+2021-02-14 20:53:04	stalebread	simple as that
+2021-02-14 20:53:12	rdr	really?  you gave up on a DE because there's an extra menu entry?
+2021-02-14 20:53:52	_shawn	no it's more than that
+2021-02-14 20:54:02	_shawn	you cant edit the mime types for the same reason
+2021-02-14 20:54:03	sheepman[m]	stalebread: I've never had my GTK theme change after an update, but I've never knowingly changed it either... is Raleigh the default?
+2021-02-14 20:54:47	_shawn	I wanted vim installed but I didnt want the file manager to open text files in anything other than what I want it to
+2021-02-14 20:54:51	<--	spindley (~mike@d204-191-184-152.abhsia.telus.net) has quit (Quit: WeeChat 2.9)
+2021-02-14 20:54:55	_shawn	to me thats big
+2021-02-14 20:55:01	rdr	Adwaita is the default for GNOME
+2021-02-14 20:55:03	stalebread	sheepman[m]: I think it's supposed to be Breeze?
+2021-02-14 20:55:29	sheepman[m]	oh there it is
+2021-02-14 20:55:34	sheepman[m]	yeah, default is Breeze
+2021-02-14 20:55:39	Aph3x-WL	i don't think that's a plasma issue because it doesn't do that on arch
+2021-02-14 20:55:51	sheepman[m]	could be a solus plasma packaging issue
+2021-02-14 20:56:04	stalebread	what's the strange part, the system settings did still show it's Breeze, then I reclicked on the dropdown to select Breeze again and it changed back to Breeze
+2021-02-14 20:56:13	sheepman[m]	whaaat
+2021-02-14 20:56:27	stalebread	I don't think it's an issue on my system because it has been doing it for a while across multiple reinstallations
+2021-02-14 20:56:27	rdr	KDE does strange things
+2021-02-14 20:56:39	stalebread	and mind you, I have done nothing theme related
+2021-02-14 20:56:40	sheepman[m]	stalebread, I bet Josh pushed that to your machine specifically to get back at you for all the trolling
+2021-02-14 20:56:50	Aph3x-WL	don't you dare blame kde/plasma
+2021-02-14 20:56:50	stalebread	yea
+2021-02-14 20:56:54	Aph3x-WL	they are perfection
+2021-02-14 20:56:55	rdr	yeah, remember Josh has root
+2021-02-14 20:57:03	sheepman[m]	hahahaha
+2021-02-14 20:57:14	rdr	killall plasma-shell && plasma-shell
+2021-02-14 20:57:17	_shawn	also there was a strange issue nwith MPRIS and firefox, when I had music.youtube.com playing in a tab, in the task bar every window preview would just show the album art, even if it wasnt a window with that tab in it
+2021-02-14 20:57:28	stalebread	_shawn: you definitely can edit mimetypes on Plasma
+2021-02-14 20:57:39	sheepman[m]	oh my god it does that to me too _shawn
+2021-02-14 20:57:44	_shawn	theres a gui for it but it would revert
+2021-02-14 20:57:53	sheepman[m]	drives me up the wall
+2021-02-14 20:58:34	sheepman[m]	if you have the time, it might be worth filing a bug report about the mimetype issue on the solus bugtracker
+2021-02-14 20:58:50	stalebread	_shawn: I think the issue is it sources them from multiple places, and your changes got overridden by some other file
+2021-02-14 20:58:53	_shawn	stalebread: it reverts after you edit because to edit them it saves a .desktop in ~/.local/share/applications and it ignores those
+2021-02-14 20:59:11	_shawn	which i think is because it's not in some $XDG_ env var
+2021-02-14 20:59:12	stalebread	umm no it doesn't?
+2021-02-14 20:59:34	stalebread	I'm fairly sure I've made some overrides that way before
+2021-02-14 20:59:47	_shawn	ok youre right, lets move on
+2021-02-14 21:00:08	-->	spindley (~mike@d204-191-184-152.abhsia.telus.net) has joined #Solus-Chat
+2021-02-14 21:01:54	stalebread	and I recall there was a command which showed you which places exactly it does query for the mimetypes
+2021-02-14 21:02:14	 *	Aph3x-WL pretends to be in an invisible box
+2021-02-14 21:02:31	stalebread	we need a Plasma-Bryan to tell us how things are
+2021-02-14 21:04:12	Aph3x-WL	wouldn't a plasma-girt be better?
+2021-02-14 21:04:40	stalebread	I haven't seen him doing rants/lectures about various technical stuff
+2021-02-14 21:05:58	_shawn	ok but freedesktop.org says user installed locations of .desktops is supposed to be able override system installed ones, and that is not working on plasma
+2021-02-14 21:06:29	_shawn	and I noticed when I tried to uethe mime editor it would work temporarily and then it would revert
+2021-02-14 21:06:38	stalebread	lemme test
+2021-02-14 21:06:41	<--	stalebread (~stalebrim@85-76-51-35-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-14 21:09:42	-->	stalebread (~stalebrim@85-76-51-35-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-14 21:10:02	stalebread	https://a.uguu.se/HfQpcZLM.png persists on my system
+2021-02-14 21:12:58	stalebread	but idk, it might be it sources the mimetypes different or smth
+2021-02-14 21:13:09	stalebread	but it definitely overrides the .desktop with local for me
+2021-02-14 21:13:16	_shawn	you edited a .desktop in ~/.local/share/applications? without deleting the system installed one right
+2021-02-14 21:13:43	stalebread	I made a copy off a .desktop file at /usr/share/applications to .local/share/applications, then edited it
+2021-02-14 21:14:06	stalebread	(the local one)
+2021-02-14 21:14:10	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 21:14:25	_shawn	ok, so it works to some extent, but I wasnt trying to rename it
+2021-02-14 21:14:32	_shawn	https://bugs.kde.org/show_bug.cgi?id=424716
+2021-02-14 21:14:33	@NarwhalBot	[ 424716 – Hidden=true handling incorrect ]
+2021-02-14 21:14:38	_shawn	this works in gnome3
+2021-02-14 21:15:04	_shawn	Hidden=true is the only thing I added to the .desktop
+2021-02-14 21:15:20	Aph3x-WL	something works in gnome3?
+2021-02-14 21:15:27	_shawn	which disables mime types in addition to removing it from the menu@chat:button1
+2021-02-14 21:15:41	_shawn	menu*
+2021-02-14 21:15:49	stalebread	aight
+2021-02-14 21:17:42	_shawn	I spent like three hours trying to get it to work one day, trust me I tried everything and I even tested other DEs
+2021-02-14 21:17:48	_shawn	and they all worked except for plasma
+2021-02-14 21:18:45	stalebread	okay. might be they haven't implemented it or it doesn't work how it should
+2021-02-14 21:19:44	_shawn	I tried to edit the system installed .desktop and make it chattr +i
+2021-02-14 21:19:55	_shawn	but it caused eopkg to just die
+2021-02-14 21:20:39	_shawn	I was about ready to start maintaining my own version of the package lol
+2021-02-14 21:21:04	stalebread	imo the gvim could be just separated but I'm not who decides :P
+2021-02-14 21:22:13	_shawn	oh but vim also opens up in a terminal because it has a .desktop too
+2021-02-14 21:22:25	_shawn	with all the same mime types
+2021-02-14 21:23:49	_shawn	it uses Terminal=true which makes it open in the default terminal emulator
+2021-02-14 21:24:43	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus-Chat
+2021-02-14 21:45:21	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-14 21:47:38	<--	shenchen (~shenchen@117.80.69.65) has quit (Ping timeout: 246 seconds)
+2021-02-14 22:10:32	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Ping timeout: 240 seconds)
+2021-02-14 22:12:15	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-dyhadmcwlhfvhhof) has quit (Quit: Connection closed for inactivity)
+2021-02-14 22:27:54	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus-Chat
+2021-02-14 22:29:37	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Remote host closed the connection)
+2021-02-14 22:43:22	<--	stalebread (~stalebrim@85-76-51-35-nat.elisa-mobile.fi) has quit (Quit: Lost terminal)
+2021-02-14 22:55:46	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2021-02-14 22:56:31	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus-Chat
+2021-02-14 23:02:36	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-14 23:09:18	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-14 23:56:56	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-15 00:11:37	<--	Flabb (~Flabb@89.169.84.221) has quit (Read error: Connection reset by peer)
+2021-02-15 00:12:13	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus-Chat
+2021-02-15 00:37:02	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 246 seconds)
+2021-02-15 00:37:53	-->	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has joined #Solus-Chat
+2021-02-15 00:44:52	-->	manokara_ (~manokara@200.187.163.103) has joined #Solus-Chat
+2021-02-15 00:45:35	<--	manokara (~manokara@189.112.56.169) has quit (Ping timeout: 256 seconds)
+2021-02-15 01:08:10	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus-Chat
+2021-02-15 01:22:54	@Girtablulu	everybody hold tide, new kernel is out. So what did it broke this time? :D
+2021-02-15 01:23:35	livingsil94|work	I suspect Core will wait for .5 or so, this time xD
+2021-02-15 01:25:15	livingsil94|work	Girtablulu: how's the job hunt going on? It must not be easy in these times...
+2021-02-15 01:27:31	<--	cowsay (~quassel@47.188.37.226) has quit (Ping timeout: 256 seconds)
+2021-02-15 01:27:31	@Girtablulu	sucks hard
+2021-02-15 01:28:09	@Girtablulu	with combination of I can't got anywhere due my schools and not looking for a 80-100% job
+2021-02-15 01:31:42	livingsil94|work	ouch, right. Don't give up
+2021-02-15 01:32:45	@Girtablulu	iwont
+2021-02-15 01:43:52	@Girtablulu	it's not like I wanna get old here:D
+2021-02-15 01:54:38	-->	cowsay (~quassel@47.188.38.248) has joined #Solus-Chat
+2021-02-15 02:07:47	Scotty_Trees	i can't stop laughing at this - https://www.youtube.com/watch?v=NmaH0Y62QNo
+2021-02-15 02:07:47	@NarwhalBot	[ Paying $3300 for 'Wand Pleasure' Therapy | Desktop: https://youtube.com/watch?v=NmaH0Y62QNo | Mobile: https://m.youtube.com/watch?v=NmaH0Y62QNo ]
+2021-02-15 02:14:17	<--	cowsay (~quassel@47.188.38.248) has quit (Ping timeout: 264 seconds)
+2021-02-15 02:18:34	<--	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has quit (Remote host closed the connection)
+2021-02-15 02:18:52	-->	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has joined #Solus-Chat
+2021-02-15 02:40:50	-->	cowsay (~quassel@47.188.39.162) has joined #Solus-Chat
+2021-02-15 03:03:38	<--	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has quit (Quit: No Ping reply in 180 seconds.)
+2021-02-15 03:03:57	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus-Chat
+2021-02-15 03:25:05	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus-Chat
+2021-02-15 03:43:37	-->	stalemobile (~stalepoop@85-76-50-67-nat.elisa-mobile.fi) has joined #Solus-Chat
+2021-02-15 03:54:46	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-15 04:04:18	livingsil94|work	hey JoshStrobl
+2021-02-15 04:28:58	abdulocracy	Why does Avast have to let me know that an HTML email sent to me by someone is "Free of viruses"
+2021-02-15 04:30:00	@JoshStrobl	It probably checks for any malicious links
+2021-02-15 04:30:34	abdulocracy	Perhaps
+2021-02-15 04:30:42	abdulocracy	It's annoying
+2021-02-15 04:33:05	abdulocracy	How goes the startup JoshStrobl
+2021-02-15 04:39:28	@JoshStrobl	I've been primarily doing contract work while trying to gradually raise my Patreon and Liberapay so I can shift to doing full-time open source development. Been stuck dealing with some contract dev work for the last few months and hopefully getting to the end of it.
+2021-02-15 04:45:48	stalemobile	*OF
+2021-02-15 04:46:17	@JoshStrobl	?
+2021-02-15 04:46:27	stalemobile	onlyfans
+2021-02-15 04:46:30	 *	stalemobile runs
+2021-02-15 04:47:44	stalemobile	full of naughty things like josh running budgie python apps
+2021-02-15 04:51:42	stalemobile	josh should enable media donations in his stream so we could just endlessly play onegai muscle
+2021-02-15 04:53:30	@JoshStrobl	Nah I want my stream VODs to be tolerable. Eventually I'll want to have things set up with a capture card so I can have a VOD without any streamlabs overlays as well.
+2021-02-15 04:55:01	@JoshStrobl	I mean if I get to the point where I'm able to work on open source full-time then I'm intent on having a Monday, Tuesday, Thursday, Friday streaming schedule.
+2021-02-15 04:58:31	abdulocracy	Godspeed
+2021-02-15 05:01:00	@Girtablulu	so much streaming
+2021-02-15 05:01:36	@JoshStrobl	Well so far I've been managing Tuesday / Thursday just fine. Trying to get as much work done as possible atm so I can hopefully free up a Friday as well.
+2021-02-15 05:02:40	@Girtablulu	nice
+2021-02-15 05:04:57	@JoshStrobl	I don't expect my time slot to be any different though. I know it means U.S. folks can't catch it most of the time, I just am really trying to stay committed to a normal sleeping schedule and streaming around U.S. times would also eat into the evening time I'd otherwise spend relaxing with the wife so.
+2021-02-15 05:05:38	@Girtablulu	oh dare you to have a normal life
+2021-02-15 05:05:49	@JoshStrobl	Yea
+2021-02-15 05:36:28	-->	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has joined #Solus-Chat
+2021-02-15 05:52:29	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 272 seconds)
+2021-02-15 05:52:50	Scotty_Trees	i never thought i'd see another Tilix update, but sure glad it has, even if it's limited
+2021-02-15 05:53:02	-->	Eressea (~eressea@2a04:cec0:10c6:2fc6:94a8:2244:ef5:a72d) has joined #Solus-Chat
+2021-02-15 05:58:21	<--	RobertTVarga (~roberttva@20014C4C17A9130090E3CF6DAD51873D.catv.pool.telekom.hu) has quit (Remote host closed the connection)
+2021-02-15 06:00:36	<--	Eressea (~eressea@2a04:cec0:10c6:2fc6:94a8:2244:ef5:a72d) has quit (Ping timeout: 272 seconds)
+2021-02-15 06:02:48	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus-Chat
+2021-02-15 06:14:40	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus-Chat
+2021-02-15 06:19:42	abdulocracy	Tilix is pretty neat
+2021-02-15 06:20:33	abdulocracy	The humongous titlebar is kind of annoying though
+2021-02-15 06:21:16	abdulocracy	Oh and then they got the humongo titlebar in GNOME Terminal too
+2021-02-15 06:22:03	@JoshStrobl	GtkHeaderbars are only 4 pixels larger than normal titlebars, I calculated it in Inkscape a while back
+2021-02-15 06:22:26	abdulocracy	No they're huge ok
+2021-02-15 06:22:27	abdulocracy	:p
+2021-02-15 06:23:38	abdulocracy	Did you do the comparison with Adwaita?
+2021-02-15 06:23:44	@JoshStrobl	Fuck no
+2021-02-15 06:23:52	@JoshStrobl	Why would I subject myself to that shite?
+2021-02-15 06:24:06	abdulocracy	Plata compact does a good job at making them tolerable
+2021-02-15 06:24:15	@JoshStrobl	I compared it using normal Plata
+2021-02-15 06:24:45	@JoshStrobl	Plata-Compact makes normal titlebars too small IMO
+2021-02-15 06:25:54	abdulocracy	What's your display resolution?
+2021-02-15 06:26:24	TraceyC	<# Tilix. On Plasma I'm using Konsole, it's got the same kind of tiling & such that Tilix has, these days
+2021-02-15 06:26:44	@JoshStrobl	HDMI-0 connected 1600x900+5760+0 (normal left inverted right x axis y axis) 443mm x 249mm
+2021-02-15 06:26:45	@JoshStrobl	HDMI-1 connected 1920x1080+0+1080 (normal left inverted right x axis y axis) 477mm x 268mm
+2021-02-15 06:26:47	@JoshStrobl	DP-0 connected primary 3840x2160+1920+0 (normal left inverted right x axis y axis) 597mm x 336mm
+2021-02-15 06:26:51	@JoshStrobl	Primary is DP-0 ^
+2021-02-15 06:26:55	abdulocracy	I find Plata non-compact to be jarring on 1080p
+2021-02-15 06:27:08	@JoshStrobl	¯\_(ツ)_/¯
+2021-02-15 06:27:22	abdulocracy	Maybe I'm just a little picky
+2021-02-15 06:27:41	TraceyC	Ooo someone has 3 monitors connected up. I'm jelly. My ultrawide DP monitor makes the KDE display settings lose its mind. I ort to try it out in Budgie
+2021-02-15 06:27:48	@JoshStrobl	Personally I use tmux and zsh across all the things, so the terminal app for me rarely matters
+2021-02-15 06:27:59	Eressea	imo plata is too dark, don't know how I'll do when it will be deprecated
+2021-02-15 06:28:39	@JoshStrobl	By then I'll probably have my own GTK theme tbh
+2021-02-15 06:28:44	Eressea	*when Adapta will be deprecated sorry
+2021-02-15 06:29:05	@JoshStrobl	Yea I think the biggest complaint for Plata is the lack of contrast on some of the elements
+2021-02-15 06:29:06	abdulocracy	Me too, tmux and zsh, so when I have a huge titlebar that serves no purpose it's kind of annoying
+2021-02-15 06:29:24	abdulocracy	I like that Alacritty can just make it disappear
+2021-02-15 06:29:33	abdulocracy	Alacritty is bae
+2021-02-15 06:29:39	@JoshStrobl	abdulocracy, you could always alacritty and just disable its scrollback so it doesn't turn into a lagfest after a few minutes
+2021-02-15 06:29:43	@JoshStrobl	lol
+2021-02-15 06:29:58	abdulocracy	Alacritty has scrollback now?
+2021-02-15 06:30:02	abdulocracy	:p
+2021-02-15 06:30:23	@JoshStrobl	Has for a couple years now bud
+2021-02-15 06:30:31	abdulocracy	What
+2021-02-15 06:30:36	@JoshStrobl	https://jwilm.io/blog/alacritty-lands-scrollback/
+2021-02-15 06:30:36	@NarwhalBot	[ Alacritty now supports scrollback ]
+2021-02-15 06:30:44	@JoshStrobl	SEPTEMBER 17, 2018
+2021-02-15 06:31:05	@JoshStrobl	oh god they actually capitalized all of that instead of using CSS text-transform
+2021-02-15 06:31:45	abdulocracy	I'm a dinosaur
+2021-02-15 06:31:46	@JoshStrobl	*uppercased
+2021-02-15 06:32:35	abdulocracy	https://youtu.be/v3-KGSuJy_s
+2021-02-15 06:32:36	@NarwhalBot	[ Fingerbib | Desktop: https://youtube.com/watch?v=v3-KGSuJy_s | Mobile: https://m.youtube.com/watch?v=v3-KGSuJy_s ]
+2021-02-15 06:33:32	abdulocracy	What else do they have now that I could be using
+2021-02-15 06:34:27	Scotty_Trees	JoshStrobl, do what u gotta do, but imo Pop OS has the best dark theme. could be a decent starting point for inspiration
+2021-02-15 06:34:43	@JoshStrobl	nah I'm good
+2021-02-15 06:34:50	Scotty_Trees	fair enough :)
+2021-02-15 06:35:23	@JoshStrobl	There's is yet another fork of Adapta anyways
+2021-02-15 06:36:42	@JoshStrobl	Theirs
+2021-02-15 06:36:53	abdulocracy	OMG THE CURSOR CAN BLINK
+2021-02-15 06:36:57	 *	JoshStrobl needs more coffee
+2021-02-15 06:37:00	Scotty_Trees	this looks interesting: https://github.com/Selenium-H/Personalize
+2021-02-15 06:37:01	@NarwhalBot	[ GitHub - Selenium-H/Personalize: A GNOME Shell extension to personalize GNOME looks ]
+2021-02-15 06:37:17	Scotty_Trees	essentiall it's a gnome extension that lets u adjust the accent colors of the default theme
+2021-02-15 06:37:40	Scotty_Trees	only supports adwaita i think, so meh, but the idea is nice
+2021-02-15 06:37:43	@JoshStrobl	I imagine it just generates a gtk css file with those specific overrides
+2021-02-15 06:38:20	Scotty_Trees	if i used adwaita, i'd give it a go
+2021-02-15 06:38:35	Scotty_Trees	but i never use adwaita, cuz its shite as some say :P
+2021-02-15 06:39:20	@JoshStrobl	Just waiting for a new Adwaita that looks identical to macOS. They may as well given GNOME 40 will be close enough to iPadOS. Why pretend anymore, ya know?
+2021-02-15 06:39:22	abdulocracy	I wonder if it's still that bad, I heard they'd made some changes in the past few releases
+2021-02-15 06:41:09	Scotty_Trees	Gnome 40 can suck a lemon in its current state
+2021-02-15 06:41:25	-->	helium1 (~helium1@91.108.35.128) has joined #Solus-Chat
+2021-02-15 06:41:30	abdulocracy	Funny how after Plata Adwaita seems bright
+2021-02-15 06:41:39	abdulocracy	s/Adwaita/Adwaita Dark
+2021-02-15 06:41:58	Scotty_Trees	Plata Noir Compact is where it's at
+2021-02-15 06:42:03	abdulocracy	My man
+2021-02-15 06:42:42	abdulocracy	I'm going to use Adwaita Dark with it's icons and cursors for a day and report back
+2021-02-15 06:42:57	Scotty_Trees	please don't
+2021-02-15 06:43:16	abdulocracy	Taking one for the team
+2021-02-15 06:43:46	Scotty_Trees	no one's asking u to jump on that grenade
+2021-02-15 06:44:05	TraceyC	As a tester, I appreciate the sentiment
+2021-02-15 06:45:16	Scotty_Trees	adwaita is the baseline, the bare minimum for themes. most of us here prob don't want the bare minimum of something
+2021-02-15 06:45:30	@JoshStrobl	Yea why settle for "eh"
+2021-02-15 06:45:39	TraceyC	Life is too short for eh themes
+2021-02-15 06:45:45	Scotty_Trees	the only praise i ever heard from adwaita is from gnome devs and fedora purists
+2021-02-15 06:45:45	abdulocracy	Why is it so bright
+2021-02-15 06:45:49	abdulocracy	How can dark be bright
+2021-02-15 06:45:54	@JoshStrobl	lol
+2021-02-15 06:46:09	abdulocracy	https://youtu.be/Qn977W9HjWM
+2021-02-15 06:46:10	@NarwhalBot	[ Spongebob  MY EYES!!! | Desktop: https://youtube.com/watch?v=Qn977W9HjWM | Mobile: https://m.youtube.com/watch?v=Qn977W9HjWM ]
+2021-02-15 06:46:38	abdulocracy	I know I did the whole speech and everything
+2021-02-15 06:46:52	abdulocracy	But will you guys forever hate me if I turn back now
+2021-02-15 06:46:56	Scotty_Trees	i think the popOS devs mentioned that will do something else for GNome 40. what that something else is tho I dunno
+2021-02-15 06:47:17	Scotty_Trees	could be just keeping the dock on the left side somehow
+2021-02-15 06:47:23	Scotty_Trees	doubt they'd do a new DE
+2021-02-15 06:47:30	abdulocracy	Wait the dock's moving?
+2021-02-15 06:47:37	@JoshStrobl	Bro
+2021-02-15 06:47:39	abdulocracy	Why don't I KNOW THINSG
+2021-02-15 06:48:19	abdulocracy	First it was blinky curser in Alacritty now this
+2021-02-15 06:48:30	Scotty_Trees	u must not be on any gnome or ubuntu subreddits, otherwise u'd see it everyday lol
+2021-02-15 06:48:49	@JoshStrobl	https://blogs.gnome.org/shell-dev/2020/12/18/gnome-shell-ux-plans-for-gnome-40/
+2021-02-15 06:48:50	@NarwhalBot	[ GNOME Shell UX plans for GNOME 40 – GNOME Shell & Mutter ]
+2021-02-15 06:49:51	Scotty_Trees	honestly when i first saw that, my first thought was, "oh gnome is copying elementary now"
+2021-02-15 06:50:13	abdulocracy	Oh God
+2021-02-15 06:50:14	Scotty_Trees	i know it's similar to macOS too, but that was just my first thought
+2021-02-15 06:50:45	@JoshStrobl	I know I keep comparing it to iPadOS but even they expose more functionality in the main view
+2021-02-15 06:50:54	abdulocracy	Why are they making the window previews smaller, who thought that was a good idea?
+2021-02-15 06:51:48	abdulocracy	A user research firm"
+2021-02-15 06:52:09	abdulocracy	Now I wonder who got interviewed for this
+2021-02-15 06:52:19	@JoshStrobl	They *just* published a post about it at https://blogs.gnome.org/shell-dev/2021/02/15/shell-ux-changes-the-research/
+2021-02-15 06:52:20	@NarwhalBot	[ Shell UX Changes: The Research – GNOME Shell & Mutter ]
+2021-02-15 06:52:33	TraceyC	I mean, Gnome even adopted the very Apple attitude of "Our design choices are perfect. We take away options for your own good. Embrace our wisdom"
+2021-02-15 06:52:49	@JoshStrobl	"The research itself consisted of 20 moderated user testing sessions,"
+2021-02-15 06:53:01	@JoshStrobl	Imagine fundamentally changing your desktop environment because of 20 people.
+2021-02-15 06:53:06	@JoshStrobl	Classic GNOME.
+2021-02-15 06:53:20	TraceyC	At least it's not testing in production question mark?
+2021-02-15 06:54:16	@JoshStrobl	You know this blog post never would've been necessary or been written if there wasn't such major backlash to it.
+2021-02-15 06:54:38	abdulocracy	So this is it huh
+2021-02-15 06:54:43	abdulocracy	GNOME 4
+2021-02-15 06:54:48	@JoshStrobl	40*
+2021-02-15 06:55:04	abdulocracy	Yeah might as well be 4
+2021-02-15 06:55:53	abdulocracy	Ought to be the same community reaction as the 2 -> 3 transition
+2021-02-15 06:56:37	@JoshStrobl	Yea and GNOME went through with it anyways. As a result, Cinnamon and MATE were born. Users fled to those, XFCE, and KDE.
+2021-02-15 06:56:53	abdulocracy	Imagine "GNOME Legacy² Session"
+2021-02-15 07:04:39	Scotty_Trees	ewww
+2021-02-15 07:04:58	Scotty_Trees	and i say that as a gnome user ;p
+2021-02-15 07:07:13	livingsil94|work	that's where you are wrong, Scotty_Trees. Nobody is a GNOME user. They all are unconscious KDE users
+2021-02-15 07:07:30	@JoshStrobl	I think you mean Budgie users
+2021-02-15 07:07:35	Scotty_Trees	^
+2021-02-15 07:13:13	helium1	^
+2021-02-15 07:13:24	-->	drmbls (~marius@78-56-83-14.static.zebra.lt) has joined #Solus-Chat
+2021-02-15 07:47:40	sheepman[m]	"The best researched project I've ever participated in" -that blog post
+2021-02-15 07:47:54	sheepman[m]	Uh huh, sure...
+2021-02-15 07:48:20	@JoshStrobl	Yea even my initial polling for Koto was more comprehensive
+2021-02-15 07:51:06	sheepman[m]	I mean, judging by how GNOME never does much of anything intelligent, maybe it was the most researched project they had participated in :D
+2021-02-15 07:52:21	@Girtablulu	I saw someone post a link that you do not need more than 5 people statistically to have a good result
+2021-02-15 07:54:54	TraceyC	aha hahaha hahahahahhahahaha
+2021-02-15 07:55:18	@Girtablulu	well it may work but you would need to re test it and I don't think they haven't done this
+2021-02-15 07:58:45	sheepman[m]	TraceyC no, it's true- you just have to get the right 5 people. How you select 5 people who agree with the majority is beyond me though :)
+2021-02-15 08:00:24	@JoshStrobl	I think GNOME does plenty of intelligent things, I just don't agree with basically any of their decisions around GNOME Shell, their push for Wayland in both GTK4 and Mutter that actively regress or eliminate X11 functionality but no reason, etc.
+2021-02-15 08:01:15	@JoshStrobl	Like okay, you don't want to maintain the codebase for it, that's fine. Move it to an X11 namespace like the prior Gdk stuff and just fix FTBFS (fail to build from source) issues.
+2021-02-15 08:01:28	abdulocracy	GNOME Wayland doesn't have a smooth mouse cursor
+2021-02-15 08:01:39	abdulocracy	It's been a known issue for a while now
+2021-02-15 08:02:00	-->	kaktuspalme (~kaktuspal@149.20.150.83.dyn.dsl.as8758.net) has joined #Solus-Chat
+2021-02-15 08:02:07	abdulocracy	And Wayland is supposedly the production session
+2021-02-15 08:02:28	@JoshStrobl	Frankly I'm tired of the dishonest marketing from both KDE and GNOME on the maturity of their Wayland compositors and Wayland sessions.
+2021-02-15 08:02:55	TraceyC	Typical developer ego, no offense
+2021-02-15 08:03:00	@JoshStrobl	None taken
+2021-02-15 08:03:02	TraceyC	Plus a splash of marketing
+2021-02-15 08:03:47	sheepman[m]	Wayland won't be usable until it has color calibration support.
+2021-02-15 08:04:12	livingsil94|work	+1 sheepman[m]. That's essential in some environment
+2021-02-15 08:04:35	TraceyC	If you're doing video / graphics production, for instance, absolutely
+2021-02-15 08:06:30	sheepman[m]	I'm just a hobbyist photographer, and not having the option to calibrate colors would drive me insane
+2021-02-15 08:15:08	TraceyC	yeah
+2021-02-15 08:18:20	<--	cowsay (~quassel@47.188.39.162) has quit (Ping timeout: 240 seconds)
+2021-02-15 08:25:22	<--	Girtablulu has kicked livingsil94|work (livingsil94|work)
+2021-02-15 08:25:30	@Girtablulu	wait what?
+2021-02-15 08:25:33	@JoshStrobl	...
+2021-02-15 08:25:34	@JoshStrobl	what?
+2021-02-15 08:25:37	@Girtablulu	I chose pm xD
+2021-02-15 08:25:38	@Girtablulu	wtf
+2021-02-15 08:25:49	 *	JoshStrobl slowclaps
+2021-02-15 08:25:57	@Girtablulu	bhahahaha
+2021-02-15 08:26:00	@Girtablulu	shit xD
+2021-02-15 08:26:20	@Girtablulu	well he should work and not hang out in here :>
+2021-02-15 08:26:43	@JoshStrobl	You may still want to PM him :P
+2021-02-15 08:26:53	@Girtablulu	yea
+2021-02-15 08:27:25	TraceyC	You clicked it wrong. Clearly
+2021-02-15 08:28:21	@JoshStrobl	You know how this could be avoided? Using normal IRC commands or a terminal-based IRC client :P
+2021-02-15 08:28:53	@JoshStrobl	/query ftw
+2021-02-15 08:29:00	@Girtablulu	well probably moved my cursor a bit, right click is menu and than left click to choose and kick comes next after PM
+2021-02-15 08:29:58	@JoshStrobl	You'd think it'd at least prompt you :D
+2021-02-15 08:30:23	@Girtablulu	nope gonna stick to thelounge
+2021-02-15 08:53:29	-->	livingsil94|work (~fforni@88-149-182-87.static.eolo.it) has joined #Solus-Chat

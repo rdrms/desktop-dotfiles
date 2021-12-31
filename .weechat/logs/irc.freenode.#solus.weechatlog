@@ -1,0 +1,1648 @@
+2021-02-09 19:56:11	-->	rdr (~rydare@unaffiliated/unheeding) has joined #Solus
+2021-02-09 19:56:11	--	Topic for #Solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-09 19:56:11	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-09 19:56:11	--	Channel #Solus: 100 nicks (6 ops, 0 voices, 94 normals)
+2021-02-09 19:56:13	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-09 19:56:20	rdr	hello, can anyone tell me what package provides autoreconf?
+2021-02-09 19:56:44	rdr	wait i found it
+2021-02-09 19:56:53	rdr	i didn't use the -c for system.devel
+2021-02-09 19:57:04	rdr	sudo eopkg install -c system.devel
+2021-02-09 19:58:13	sheepman[m]	That'll do it!
+2021-02-09 20:00:28	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 256 seconds)
+2021-02-09 20:00:32	-->	tschan (~tschan@p57a8612c.dip0.t-ipconnect.de) has joined #Solus
+2021-02-09 20:00:50	rdr	thanks sheepman[m], i'm really enjoying solus
+2021-02-09 20:01:03	rdr	i just had FreeBSD die on me, so I went with something a little more familiar
+2021-02-09 20:01:12	rdr	it's quite fast
+2021-02-09 20:01:28	sheepman[m]	Yeah, it is. I'm glad you're enjoying it!
+2021-02-09 20:04:59	sheepman[m]	This won't help you if the package isn't installed, but in case you ever need to find what package installed some file, you can use "eopkg search-file" or "eopkg sf" to find out. That's how I was gonna tell you it was autoconf until you found it yourself
+2021-02-09 20:06:34	rdr	search-file, i will try to remember that
+2021-02-09 20:06:39	<--	Doctor_Junglist (~Doctor_Ju@nat-gw-86.koba.pl) has quit (Remote host closed the connection)
+2021-02-09 20:06:43	rdr	would that have shown me autoconf when i search autoreconf?
+2021-02-09 20:07:02	sheepman[m]	Only if you already had the package installed
+2021-02-09 20:07:11	rdr	ah
+2021-02-09 20:07:19	rdr	is there a "provides" sort of thing?
+2021-02-09 20:07:39	sheepman[m]	So it wouldn't have helped you there, but it's very useful when you, say, modify something you weren't supposed to and need to know what to install. Ask me how I know.
+2021-02-09 20:07:51	sheepman[m]	s/install/reinstall
+2021-02-09 20:08:08	rdr	lol i can imagine
+2021-02-09 20:09:21	sheepman[m]	I don't think there's anything integrated that lets you search for what package provides a file
+2021-02-09 20:10:07	sheepman[m]	Someone other than me could probably provide more info, but I usually end up googling it and trying to translate package names.
+2021-02-09 20:26:50	rdr	okay, well thanks for responding and trying to help
+2021-02-09 20:29:04	sheepman[m]	Of course!
+2021-02-09 20:29:14	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-09 20:30:42	<--	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has quit (Quit: WeeChat 2.8)
+2021-02-09 20:58:26	<--	ur5us (~ur5us@203.86.198.200) has quit (Ping timeout: 240 seconds)
+2021-02-09 21:03:18	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 264 seconds)
+2021-02-09 21:03:27	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-09 21:13:58	<--	MintSpider (sid442361@gateway/web/irccloud.com/x-bihyaqmnhtgdszgn) has quit (Read error: Connection reset by peer)
+2021-02-09 21:14:09	-->	MintSpider (sid442361@gateway/web/irccloud.com/x-gckxnsalkocidgni) has joined #Solus
+2021-02-09 21:18:56	--	irc: disconnected from server
+2021-02-09 22:04:13	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-09 22:04:13	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-09 22:04:13	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-09 22:04:13	--	Channel #solus: 85 nicks (6 ops, 0 voices, 79 normals)
+2021-02-09 22:04:15	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-09 22:07:18	-->	shmakes[m] (shmakesmat@gateway/shell/matrix.org/x-zsigqofjoneyzrwv) has joined #Solus
+2021-02-09 22:09:39	-->	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-tertfsmjtplxchci) has joined #Solus
+2021-02-09 22:10:15	-->	tuxayo[m] (tuxayomatr@gateway/shell/matrix.org/x-wogpwqklhokisuhv) has joined #Solus
+2021-02-09 22:20:06	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has joined #Solus
+2021-02-09 22:20:08	-->	nhvfc[m] (nhvfcmatri@gateway/shell/matrix.org/x-zcuxmrorgztkjixv) has joined #Solus
+2021-02-09 22:24:18	-->	silkeh (silexslxhe@gateway/shell/matrix.org/x-tqqyemnvxzjfowzx) has joined #Solus
+2021-02-09 22:24:35	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-09 22:24:38	-->	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-omgpqfbzwtgvgryl) has joined #Solus
+2021-02-09 22:25:45	-->	lapingv755 (lapingv755@gateway/shell/matrix.org/x-gfwecyovvdjukxip) has joined #Solus
+2021-02-09 22:26:21	-->	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has joined #Solus
+2021-02-09 22:27:08	-->	Sethil[m] (sethilmatr@gateway/shell/matrix.org/x-uisbnpavinciyxan) has joined #Solus
+2021-02-09 22:27:28	-->	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-cnpdrunangdcxupz) has joined #Solus
+2021-02-09 22:43:12	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus
+2021-02-09 22:47:37	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-09 22:47:37	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-09 22:47:37	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-09 22:52:49	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 272 seconds)
+2021-02-09 23:13:25	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-ksgclgajrofkfyxv) has quit (Quit: Connection closed for inactivity)
+2021-02-09 23:41:25	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-09 23:41:25	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-09 23:41:25	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-09 23:46:09	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-09 23:50:05	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-09 23:59:59	<--	sysrich_ (~sysrich@static.165.131.203.116.clients.your-server.de) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-02-10 00:02:13	-->	sysrich (~sysrich@static.165.131.203.116.clients.your-server.de) has joined #Solus
+2021-02-10 00:07:03	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-10 00:35:48	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 00:35:49	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 00:35:49	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 00:35:58	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-10 00:41:12	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 260 seconds)
+2021-02-10 00:46:37	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 00:47:45	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 00:51:07	-->	Paphnutiy (~Solus@109.251.148.234) has joined #Solus
+2021-02-10 00:52:30	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-10 01:05:26	-->	ur5us (~ur5us@2406:e002:689f:1e01:4b83:469a:6d61:cca6) has joined #Solus
+2021-02-10 01:29:37	--	irc: disconnected from server
+2021-02-10 02:28:48	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 02:28:48	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 02:28:48	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 02:28:48	--	Channel #solus: 98 nicks (6 ops, 0 voices, 92 normals)
+2021-02-10 02:28:50	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 02:42:34	<--	Future_Suture (~FutureSut@194.118.169.158) has quit (Remote host closed the connection)
+2021-02-10 02:42:59	-->	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has joined #Solus
+2021-02-10 03:18:03	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 03:18:04	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 03:18:04	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 03:22:49	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-10 03:36:54	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus
+2021-02-10 03:37:13	<--	shenchen (~shenchen@58.210.60.122) has quit (Read error: Connection reset by peer)
+2021-02-10 03:42:06	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 03:42:51	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 03:45:00	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 03:45:53	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 04:12:22	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 04:12:23	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 04:12:23	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 04:16:44	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-10 05:15:03	-->	andril (~andril@2601:586:8400:5e9::1003) has joined #Solus
+2021-02-10 05:20:56	<--	chax_0 (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has quit (Quit: Leaving)
+2021-02-10 05:21:21	-->	FriesischScott (~behrensd@200116b868a89f00fbab94831d62a27e.dip.versatel-1u1.de) has joined #Solus
+2021-02-10 05:34:33	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 05:40:01	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 05:53:25	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 05:53:36	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-jvdtchkxyfizrbfd) has joined #Solus
+2021-02-10 05:55:46	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 06:00:24	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 06:00:24	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 06:00:24	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 06:00:40	<--	andril (~andril@2601:586:8400:5e9::1003) has quit (Ping timeout: 265 seconds)
+2021-02-10 06:04:44	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-10 06:09:37	-->	poxifidenE (~poxifide@177.87.9.146) has joined #Solus
+2021-02-10 06:09:43	poxifidenE	/!\ this channel has moved to ##hamradio /!\
+2021-02-10 06:09:53	<--	poxifidenE (~poxifide@177.87.9.146) has quit (Remote host closed the connection)
+2021-02-10 06:11:36	-->	JonathanDbw (~JonathanD@210.223.181.241) has joined #Solus
+2021-02-10 06:11:39	@ermo	sheepman[m]: eopkg sf?
+2021-02-10 06:11:39	JonathanDbw	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:11:49	@ermo	.kick JonathanDbw
+2021-02-10 06:11:49	<--	NarwhalBot has kicked JonathanDbw (Detected by this Narwhal for kick approval. Kicking.)
+2021-02-10 06:11:51	@DataDrake|zzz	https://tenor.com/view/matrix-not-like-this-no-gif-4944407
+2021-02-10 06:11:51	@NarwhalBot	[ Matrix Not Like This GIF - Matrix NotLikeThis No - Discover & Share GIFs ]
+2021-02-10 06:12:47	sheepman[m]	ermo:  what about it?
+2021-02-10 06:12:47	-->	Our (~Our@cpe900eb323a985-cm688f2ec25070.cpe.net.cable.rogers.com) has joined #Solus
+2021-02-10 06:12:52	Our	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:13:13	<--	Our (~Our@cpe900eb323a985-cm688f2ec25070.cpe.net.cable.rogers.com) has quit (Remote host closed the connection)
+2021-02-10 06:13:50	@ermo	DataDrake|zzz: is this some sort of juvenile IRC turf war you think?
+2021-02-10 06:13:57	@DataDrake|zzz	no, spam bots again
+2021-02-10 06:14:03	@ermo	:/
+2021-02-10 06:15:55	-->	LokiwQ (~Loki@113.255.214.142) has joined #Solus
+2021-02-10 06:16:02	-->	MJ94WV (~MJ94@218.155.28.13) has joined #Solus
+2021-02-10 06:16:02	-->	LumpitZ (~Lumpi@45.65.230.138) has joined #Solus
+2021-02-10 06:16:02	-->	kek918 (~kek918@WGPON-39191-162.wateen.net) has joined #Solus
+2021-02-10 06:16:03	LokiwQ	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:16:06	LumpitZ	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:16:07	MJ94WV	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:16:07	kek918	/!\ this channel has moved to #nyymit /!\
+2021-02-10 06:16:12	<--	kek918 (~kek918@WGPON-39191-162.wateen.net) has quit (Remote host closed the connection)
+2021-02-10 06:16:22	 *	DataDrake|zzz sighs
+2021-02-10 06:16:34	 *	DataDrake|zzz joins #freenode and says something
+2021-02-10 06:17:03	<--	LokiwQ (~Loki@113.255.214.142) has quit (Remote host closed the connection)
+2021-02-10 06:17:24	Paphnutiy	OMG, how many of them...
+2021-02-10 06:17:35	<--	LumpitZ (~Lumpi@45.65.230.138) has quit (Remote host closed the connection)
+2021-02-10 06:18:34	@ermo	sheepman[m]: didn't read far enough up the backlog it appears xD
+2021-02-10 06:19:08	@ermo	sheepman[m]: as in "you already knew about 'eopkg sf' and told the user about it"
+2021-02-10 06:19:30	 *	ermo has one of those half-baked days where he feels like death warmed over
+2021-02-10 06:19:42	sheepman[m]	ermo:  hah. yeah, it just doesn't search stuff that's not installed :D
+2021-02-10 06:19:51	sheepman[m]	but I gather you noticed the rest of the conversation now
+2021-02-10 06:20:40	@ermo	mm
+2021-02-10 06:20:44	@DataDrake|zzz	it's not just us
+2021-02-10 06:20:56	@ermo	DataDrake|zzz: not sure if that's a relief
+2021-02-10 06:21:01	<--	MJ94WV (~MJ94@218.155.28.13) has quit (Ping timeout: 264 seconds)
+2021-02-10 06:21:07	@ermo	(but at least we're not being targeted)
+2021-02-10 06:24:42	-->	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has joined #Solus
+2021-02-10 06:25:23	-->	Doctor_Junglist (~Doctor_Ju@109.231.33.107) has joined #Solus
+2021-02-10 06:26:22	@DataDrake|zzz	sounds like they made a backend change
+2021-02-10 06:38:20	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-10 06:43:18	<--	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has quit (Remote host closed the connection)
+2021-02-10 06:43:27	-->	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has joined #Solus
+2021-02-10 06:43:28	--	Mode #solus [+o NarwhalBot] by ChanServ
+2021-02-10 06:47:13	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-10 06:54:59	<--	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has quit (Remote host closed the connection)
+2021-02-10 06:58:35	-->	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has joined #Solus
+2021-02-10 06:58:35	--	Mode #solus [+o NarwhalBot] by ChanServ
+2021-02-10 07:02:42	<--	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has quit (Remote host closed the connection)
+2021-02-10 07:03:46	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-10 07:16:08	<--	DataDrake|zzz (~DataDrake@98.3.31.10) has quit (Ping timeout: 264 seconds)
+2021-02-10 07:19:36	-->	Zaki (~Username@192.142.197.111) has joined #Solus
+2021-02-10 07:19:55	--	Zaki is now known as Guest9870
+2021-02-10 07:21:41	Guest9870	hi, i am using Solus 4.2, the gedit version is 3.38, is it possible to install gedit pervious version? i.e 3.31, or something else?
+2021-02-10 07:23:33	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 07:23:33	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 07:23:33	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 07:24:17	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 265 seconds)
+2021-02-10 07:25:54	--	Guest9870 is now known as raomohsinkhan
+2021-02-10 07:26:30	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-10 07:27:32	<--	raomohsinkhan (~Username@192.142.197.111) has quit (Remote host closed the connection)
+2021-02-10 07:28:55	-->	raomohsinkhan (~Username@192.142.197.111) has joined #Solus
+2021-02-10 07:29:15	@ermo	raomohsinkhan: no
+2021-02-10 07:29:22	@ermo	only if you end up compiling it yourself.
+2021-02-10 07:29:30	@ermo	at which point you can't expect support =)
+2021-02-10 07:29:51	@ermo	(sorry, but that how it is)
+2021-02-10 07:30:14	raomohsinkhan	@ermo I can only install those application which are placed at Solus repository?
+2021-02-10 07:30:36	@ermo	Yes.
+2021-02-10 07:30:46	@JoshStrobl	No you can install applications you build yourself as well.
+2021-02-10 07:30:56	@ermo	yes, but they're not from our upstream repo =)
+2021-02-10 07:30:56	@JoshStrobl	But officially supported applications are from the repo.
+2021-02-10 07:31:37	@ermo	raomohsinkhan: out of curiousity, why do you want an older gedit?
+2021-02-10 07:31:46	raomohsinkhan	will Solus increase application it's reposiotry in future?
+2021-02-10 07:31:57	@ermo	raomohsinkhan: do you plan to help us do it?
+2021-02-10 07:32:35	raomohsinkhan	@ermo in older gedit have a menu bar, file, edit,about etc..
+2021-02-10 07:32:48	@JoshStrobl	We don't support having multiple providers of the same package.
+2021-02-10 07:32:49	@ermo	if you must, try pluma instead
+2021-02-10 07:33:03	@ermo	that uses a menu bar (it's from MATE and is also GTK3)
+2021-02-10 07:33:12	raomohsinkhan	ok, thank you
+2021-02-10 07:33:13	@ermo	and was forked from the old GNOME2 gedit
+2021-02-10 07:36:48	-->	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has joined #Solus
+2021-02-10 07:36:48	--	Mode #solus [+o NarwhalBot] by ChanServ
+2021-02-10 07:41:28	-->	Zaki_ (~Username@192.142.225.146) has joined #Solus
+2021-02-10 07:44:52	<--	raomohsinkhan (~Username@192.142.197.111) has quit (Ping timeout: 265 seconds)
+2021-02-10 07:46:24	<--	Zaki_ (~Username@192.142.225.146) has quit (Ping timeout: 240 seconds)
+2021-02-10 07:59:48	-->	DataDrake|afk (~DataDrake@medept-btmeme.rit.edu) has joined #Solus
+2021-02-10 07:59:48	--	Mode #solus [+o DataDrake|afk] by ChanServ
+2021-02-10 08:14:32	<--	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has quit (Quit: mramish)
+2021-02-10 08:37:43	-->	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has joined #Solus
+2021-02-10 08:38:31	-->	Plasma-Live (~Plasma-Li@24.50.204.35) has joined #Solus
+2021-02-10 08:38:59	<--	Plasma-Live (~Plasma-Li@24.50.204.35) has quit (Client Quit)
+2021-02-10 08:43:08	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Remote host closed the connection)
+2021-02-10 09:00:37	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-10 09:01:44	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-10 09:02:24	<--	Paphnutiy (~Solus@109.251.148.234) has quit
+2021-02-10 09:05:10	-->	randy_ (~randy@152.0.246.129) has joined #Solus
+2021-02-10 09:21:37	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 09:21:37	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 09:21:37	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 09:22:46	-->	kyrios (~kyrios@2a02:a03f:65b8:2500:5141:5d1d:e81f:1fce) has joined #Solus
+2021-02-10 09:22:46	--	Mode #solus [+o kyrios] by ChanServ
+2021-02-10 09:26:43	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 240 seconds)
+2021-02-10 09:37:13	<--	Doctor_Junglist (~Doctor_Ju@109.231.33.107) has quit (Remote host closed the connection)
+2021-02-10 09:37:33	-->	Doctor_Junglist (~Doctor_Ju@109.231.33.107) has joined #Solus
+2021-02-10 09:38:09	<--	kaktuspalme (~kaktuspal@149.20.150.83.dyn.dsl.as8758.net) has quit (Quit: Leaving)
+2021-02-10 09:38:28	<--	novaphoenix (~quassel@163.172.98.86) has quit (Remote host closed the connection)
+2021-02-10 09:38:57	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Remote host closed the connection)
+2021-02-10 09:39:09	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-10 09:39:43	-->	novaphoenix (~quassel@163.172.98.86) has joined #Solus
+2021-02-10 09:42:29	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-10 09:56:18	-->	Plasma-Live (~Plasma-Li@92.253.178.13) has joined #Solus
+2021-02-10 09:56:51	<--	Plasma-Live (~Plasma-Li@92.253.178.13) has left #solus
+2021-02-10 10:18:11	--	irc: disconnected from server
+2021-02-10 10:32:48	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 10:32:48	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 10:32:48	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 10:32:48	--	Channel #solus: 107 nicks (7 ops, 0 voices, 100 normals)
+2021-02-10 10:32:50	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 10:47:15	-->	Plasma-Live (~Plasma-Li@5.238.88.119) has joined #Solus
+2021-02-10 10:47:22	<--	Plasma-Live (~Plasma-Li@5.238.88.119) has quit (Client Quit)
+2021-02-10 10:50:36	-->	Plasma-Live (~Plasma-Li@5.238.88.119) has joined #Solus
+2021-02-10 10:50:55	--	Plasma-Live is now known as aliakbar
+2021-02-10 10:50:59	<--	aliakbar (~Plasma-Li@5.238.88.119) has quit (Client Quit)
+2021-02-10 10:51:26	-->	aliakbar (~Plasma-Li@5.238.88.119) has joined #Solus
+2021-02-10 10:52:11	aliakbar	Hi
+2021-02-10 10:52:29	sheepman[m]	Hello!
+2021-02-10 10:53:09	aliakbar	I'm trying to find the best mtu settings for my network and when I try "ping" in Konsole on Solus KDE, there's no "-m" (hint) option
+2021-02-10 10:53:38	aliakbar	according to (https://linux.die.net/man/8/ping) there should be an -m parameter right?
+2021-02-10 10:54:22	sheepman[m]	are you doing -m or -M?
+2021-02-10 10:55:01	sheepman[m]	looks like it's a capital M in this case
+2021-02-10 10:55:22	aliakbar	tried both, even when I issue "ping --help" there's no -m or -M listed in the options!
+2021-02-10 10:55:45	aliakbar	I get "ping: invalid option -- 'M'"
+2021-02-10 10:56:02	sheepman[m]	oh you're right
+2021-02-10 10:57:38	sheepman[m]	I'm not sure why that is...
+2021-02-10 10:58:53	aliakbar	Yeah I guess it may be a version difference! I'm not sure
+2021-02-10 10:59:42	sheepman[m]	One sec, let me check something
+2021-02-10 11:00:31	aliakbar	so ping is a part of "iputils" package, and I found (https://github.com/iputils/iputils) released their latest version 8 days ago, how can I update to this? I guess I should build from source code, but replacing the one on the machine with this seems more than just a build...
+2021-02-10 11:00:45	algent|	Are you looking for `--mask`
+2021-02-10 11:01:31	aliakbar	@algent no it says "hint" for the name of this option, it's responsible for packet fragmentation policy, is mask the same?
+2021-02-10 11:02:23	algent|	I don't know
+2021-02-10 11:03:17	algent|	Maybe it is deprecated
+2021-02-10 11:05:00	algent|	sheepman[m], It is from `inetutils`
+2021-02-10 11:05:11	sheepman[m]	yeah, I saw that
+2021-02-10 11:05:41	sheepman[m]	looking for something in the inetutils package that would make ping different from what it is on other distros, can't find anything
+2021-02-10 11:07:04	@JoshStrobl	algent|, ping for us is part of inetutils, not iputils. We do have iputils in the repository, however have renamed its ping to iputils-ping to avoid conflicts.
+2021-02-10 11:07:54	sheepman[m]	I think I was about 10 seconds from realizing that, Josh
+2021-02-10 11:08:01	sheepman[m]	aliakbar: does that help you?
+2021-02-10 11:08:57	<--	Flabb (~Flabb@89.169.84.221) has quit (Read error: Connection reset by peer)
+2021-02-10 11:09:23	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus
+2021-02-10 11:09:58	aliakbar	Thanks everybody for the clarification, so I installed "iputils-ping" with eopkg and now my ping has the -m option. Thumbs up!
+2021-02-10 11:11:10	aliakbar	But may I ask what's the reason behind this decision? Is the inetutils package a better maintained one? Because it seems like a stripped down version compared to the usual iputils.
+2021-02-10 11:13:32	@JoshStrobl	I just don't think anyone has given an extensive enough look to determine if the iputils implementation is fully compatible with the legacy inetutils to ensure backwards compatibility with external applications. Bigger priorities than that at the moment (at least for the team).
+2021-02-10 11:17:43	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-10 11:17:49	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-10 11:20:24	aliakbar	JoshStrobl Okay fair point, thanks for your time and efforts. And thanks to you guys sheepman and algent .
+2021-02-10 11:23:06	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-10 11:28:52	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-10 11:29:45	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 11:35:41	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-10 11:38:35	<--	aliakbar (~Plasma-Li@5.238.88.119) has quit
+2021-02-10 11:41:07	<--	randy_ (~randy@152.0.246.129) has quit (Quit: Leaving)
+2021-02-10 11:41:35	-->	aliakbar (~Plasma-Li@5.238.76.233) has joined #Solus
+2021-02-10 11:47:24	<--	aliakbar (~Plasma-Li@5.238.76.233) has quit (Ping timeout: 240 seconds)
+2021-02-10 11:52:40	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-10 11:53:03	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-10 12:06:44	-->	Plasma-Live (~Plasma-Li@178.165.130.12.wireless.dyn.drei.com) has joined #Solus
+2021-02-10 12:07:56	--	Plasma-Live is now known as illgetanewone
+2021-02-10 12:20:24	<--	illgetanewone (~Plasma-Li@178.165.130.12.wireless.dyn.drei.com) has quit
+2021-02-10 12:22:19	<--	Flabb (~Flabb@89.169.84.221) has quit (Remote host closed the connection)
+2021-02-10 12:36:29	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-10 12:44:47	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-10 13:03:10	<--	DataDrake|afk (~DataDrake@medept-btmeme.rit.edu) has quit (Quit: Leaving)
+2021-02-10 13:22:16	-->	ur5us (~ur5us@2406:e002:689f:1e01:4b83:469a:6d61:cca6) has joined #Solus
+2021-02-10 13:43:34	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Quit: Quit)
+2021-02-10 13:54:44	<--	resistite (resistite@gateway/vpn/mullvad/resistite) has quit (Quit: Lost terminal)
+2021-02-10 14:10:12	-->	resistite (resistite@gateway/vpn/mullvad/resistite) has joined #Solus
+2021-02-10 14:10:26	-->	Leo[m]5 (hnngslmatr@gateway/shell/matrix.org/x-vjwamjmkrtkfamqh) has joined #Solus
+2021-02-10 14:11:28	<--	kyrios (~kyrios@2a02:a03f:65b8:2500:5141:5d1d:e81f:1fce) has quit (Remote host closed the connection)
+2021-02-10 14:12:29	-->	DataDrake|zzz (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-10 14:12:29	--	Mode #solus [+o DataDrake|zzz] by ChanServ
+2021-02-10 14:12:43	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-10 14:30:01	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-10 14:32:16	-->	pinocchio62 (~pinocchio@2603-9001-6d80-141e-8d7d-8f2e-8d4a-0a42.inf6.spectrum.com) has joined #Solus
+2021-02-10 14:34:16	<--	pinocchio62 (~pinocchio@2603-9001-6d80-141e-8d7d-8f2e-8d4a-0a42.inf6.spectrum.com) has quit (Client Quit)
+2021-02-10 14:39:22	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Cheers)
+2021-02-10 14:56:44	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 272 seconds)
+2021-02-10 15:04:21	<--	FriesischScott (~behrensd@200116b868a89f00fbab94831d62a27e.dip.versatel-1u1.de) has quit (Quit: WeeChat 3.0.1)
+2021-02-10 15:13:49	<--	ur5us (~ur5us@2406:e002:689f:1e01:4b83:469a:6d61:cca6) has quit (Ping timeout: 264 seconds)
+2021-02-10 15:14:32	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-10 15:21:37	-->	ur5us (~ur5us@203.86.198.200) has joined #Solus
+2021-02-10 15:42:06	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-10 16:00:32	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-10 16:15:03	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-10 16:17:29	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-10 16:18:54	-->	Beanary (~Johny31@shellium/member/Johny31) has joined #Solus
+2021-02-10 16:22:19	<--	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has quit (Quit: WeeChat 2.8)
+2021-02-10 16:27:05	--	ermo is now known as ermo|zzZ
+2021-02-10 16:30:35	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-10 16:30:36	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-10 16:30:36	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-10 16:32:59	<--	ur5us (~ur5us@203.86.198.200) has quit (Ping timeout: 272 seconds)
+2021-02-10 16:39:00	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-10 16:53:22	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 246 seconds)
+2021-02-10 16:55:12	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-10 17:01:06	-->	ur5us (~ur5us@2406:e002:68a2:1d01:e9f2:776d:4a2e:a71c) has joined #Solus
+2021-02-10 17:09:07	<--	metbsd (~metbsd@unaffiliated/metbsd) has quit (Ping timeout: 246 seconds)
+2021-02-10 17:13:18	-->	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has joined #Solus
+2021-02-10 17:14:01	<--	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has quit (Client Quit)
+2021-02-10 17:16:48	-->	ur5us_ (~ur5us@2406:e002:68a2:7c01:c880:52f:89f8:889a) has joined #Solus
+2021-02-10 17:16:49	<--	ur5us (~ur5us@2406:e002:68a2:1d01:e9f2:776d:4a2e:a71c) has quit (Ping timeout: 264 seconds)
+2021-02-10 17:39:46	<--	Beanary (~Johny31@shellium/member/Johny31) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-02-10 17:54:43	<--	Doctor_Junglist (~Doctor_Ju@109.231.33.107) has quit (Remote host closed the connection)
+2021-02-10 18:09:34	rdr	thanks devs for such a great distro
+2021-02-10 18:25:08	-->	kelptaken (~kelptaken@a85-15-119-32.pppoe.vtelecom.ru) has joined #Solus
+2021-02-10 18:26:49	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-10 18:26:57	-->	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-10 18:29:15	<--	kelptaken (~kelptaken@a85-15-119-32.pppoe.vtelecom.ru) has quit (Remote host closed the connection)
+2021-02-10 18:47:48	--	irc: disconnected from server
+2021-02-10 18:48:05	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 18:48:05	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 18:48:05	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 18:48:05	--	Channel #solus: 99 nicks (6 ops, 0 voices, 93 normals)
+2021-02-10 18:48:07	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 18:52:55	<--	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-10 18:53:24	<--	ur5us_ (~ur5us@2406:e002:68a2:7c01:c880:52f:89f8:889a) has quit (Ping timeout: 264 seconds)
+2021-02-10 19:24:18	-->	jordan (~jordan@131.0.197.95) has joined #Solus
+2021-02-10 19:24:20	-->	ur5us (~ur5us@2406:e002:68a2:b601:51c5:43b5:9b49:d837) has joined #Solus
+2021-02-10 19:24:42	--	jordan is now known as Guest21980
+2021-02-10 19:25:02	Guest21980	hello!
+2021-02-10 19:29:13	<--	Guest21980 (~jordan@131.0.197.95) has quit (Quit: Leaving)
+2021-02-10 19:37:53	rdr	hell- oh
+2021-02-10 19:43:43	rdr	hope he got help
+2021-02-10 19:46:50	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-10 19:49:12	<--	ur5us (~ur5us@2406:e002:68a2:b601:51c5:43b5:9b49:d837) has quit (Ping timeout: 264 seconds)
+2021-02-10 20:04:21	<--	tschan (~tschan@p57a8612c.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-02-10 20:09:14	-->	tschan (~tschan@p5498695d.dip0.t-ipconnect.de) has joined #Solus
+2021-02-10 20:34:33	--	irc: disconnected from server
+2021-02-10 20:34:37	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 20:34:37	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 20:34:37	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 20:34:37	--	Channel #solus: 98 nicks (6 ops, 0 voices, 92 normals)
+2021-02-10 20:34:39	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 20:36:00	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-10 20:41:12	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-10 21:14:38	--	irc: disconnected from server
+2021-02-10 21:14:42	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 21:14:42	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 21:14:42	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 21:14:42	--	Channel #solus: 96 nicks (6 ops, 0 voices, 90 normals)
+2021-02-10 21:14:44	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 21:19:12	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 264 seconds)
+2021-02-10 21:57:21	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-10 21:59:23	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-10 22:20:13	-->	mickotronic (~mike@61.68.6.123) has joined #Solus
+2021-02-10 22:26:44	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-10 22:36:54	<--	manokara (~manokara@200.187.163.138) has quit (Ping timeout: 240 seconds)
+2021-02-10 22:37:31	-->	manokara (~manokara@200.187.163.138) has joined #Solus
+2021-02-10 22:38:39	--	irc: disconnected from server
+2021-02-10 22:38:43	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 22:38:43	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 22:38:43	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 22:38:43	--	Channel #solus: 95 nicks (6 ops, 0 voices, 89 normals)
+2021-02-10 22:38:45	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 22:50:40	-->	michael__ (~michael@2603-8081-4e05-a898-0000-0000-0000-02cd.res6.spectrum.com) has joined #Solus
+2021-02-10 22:53:08	--	irc: disconnected from server
+2021-02-10 23:59:46	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-10 23:59:46	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-10 23:59:46	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-10 23:59:46	--	Channel #solus: 95 nicks (6 ops, 0 voices, 89 normals)
+2021-02-10 23:59:48	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-10 23:59:59	<--	sysrich (~sysrich@static.165.131.203.116.clients.your-server.de) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-02-11 00:01:41	-->	sysrich (~sysrich@static.165.131.203.116.clients.your-server.de) has joined #Solus
+2021-02-11 00:22:59	-->	Paphnutiy (~Solus@109.251.148.234) has joined #Solus
+2021-02-11 00:24:57	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-11 00:26:26	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has joined #Solus
+2021-02-11 00:27:06	XianTheSatanist	Which channel would be most appropriate for getting packaging help if I needed it?
+2021-02-11 00:45:57	<--	nyl (~nyl@srv.nyl.ro) has quit (Quit: ZNC 1.8.1 - https://znc.in)
+2021-02-11 00:46:44	-->	nyl (~nyl@srv.nyl.ro) has joined #Solus
+2021-02-11 00:50:03	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-11 00:53:32	<--	DansLeRuSH (~DansLeRuS@249.ip-164-132-107.eu) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-02-11 00:54:37	-->	DansLeRuSH (~DansLeRuS@249.ip-164-132-107.eu) has joined #Solus
+2021-02-11 00:56:54	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-11 01:01:03	-->	mac (~mac@189.187.68.77) has joined #Solus
+2021-02-11 01:01:07	mac	hey
+2021-02-11 01:02:03	<--	mac (~mac@189.187.68.77) has quit (Client Quit)
+2021-02-11 01:07:00	-->	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 01:12:44	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-11 01:25:44	<--	Paphnutiy (~Solus@109.251.148.234) has quit (Ping timeout: 240 seconds)
+2021-02-11 01:27:08	-->	Paphnutiy (~Solus@109.251.148.234) has joined #Solus
+2021-02-11 01:44:36	-->	XianTheSatanist1 (~XianTheSa@98.156.161.167) has joined #Solus
+2021-02-11 01:46:45	<--	XianTheSatanist1 (~XianTheSa@98.156.161.167) has quit (Client Quit)
+2021-02-11 01:47:05	-->	XianTheSatanist1 (~XianTheSa@98.156.161.167) has joined #Solus
+2021-02-11 01:47:25	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-11 01:48:39	<--	XianTheSatanist1 (~XianTheSa@98.156.161.167) has quit (Client Quit)
+2021-02-11 01:49:04	-->	XianTheSatanist (~XianTheSa@98.156.161.167) has joined #Solus
+2021-02-11 02:10:20	XianTheSatanist	So regarding package request https://dev.getsol.us/T9526 , I tried to build from the 3.0Beta7 tag and it was failing. However, this was fixed in a later build and building from source is successful. Is it ok to create the package still tagged as version 3.0Beta7 even though it's from a newer build?
+2021-02-11 02:10:21	@NarwhalBot	[ ⚓ T9526 Alan Interactive Fiction Language ]
+2021-02-11 02:32:08	<--	liontiger (liontiger@gateway/shell/ircnow/x-lizrsliejldwjpxq) has quit (Ping timeout: 272 seconds)
+2021-02-11 02:38:25	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Quit: Goodbye)
+2021-02-11 02:39:08	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-11 02:42:34	--	ermo|zzZ is now known as ermo
+2021-02-11 02:42:34	-->	liontiger (liontiger@gateway/shell/ircnow/x-jkpwyrvdwgpwibkl) has joined #Solus
+2021-02-11 02:44:16	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Ping timeout: 272 seconds)
+2021-02-11 02:44:58	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-11 02:49:18	@Girtablulu	XianTheSatanist #solus-dev reg packaging is the best place, and no no beta or rc releases are allowed unless it's really needed we always use official releases
+2021-02-11 02:50:09	XianTheSatanist	The Beta itself was approved, but I'll ask about details in dev
+2021-02-11 02:50:43	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 240 seconds)
+2021-02-11 02:51:26	@JoshStrobl	XianTheSatanist, a newer build is fine
+2021-02-11 02:51:36	 *	JoshStrobl gets back to stream prep
+2021-02-11 02:52:13	XianTheSatanist	Ah ok, thanks.
+2021-02-11 03:00:14	--	JoshStrobl is now known as JoshStrobl|Live
+2021-02-11 03:00:20	<--	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has quit (Quit: mramish)
+2021-02-11 03:08:33	-->	mika_ (~mika@91-152-197-19.elisa-laajakaista.fi) has joined #Solus
+2021-02-11 03:15:50	-->	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has joined #Solus
+2021-02-11 03:25:43	<--	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has quit (Quit: Quit)
+2021-02-11 03:26:01	-->	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has joined #Solus
+2021-02-11 03:38:36	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-11 03:39:39	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 265 seconds)
+2021-02-11 04:01:10	<--	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has quit (Quit: No Ping reply in 180 seconds.)
+2021-02-11 04:01:26	-->	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has joined #Solus
+2021-02-11 04:09:21	<--	Eressea (~eressea@2a04:cec0:100b:1eab:31a2:190f:de2d:ce7c) has quit (Ping timeout: 265 seconds)
+2021-02-11 04:10:21	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-11 04:16:28	-->	Merkaba (~Merkaba@197.94.197.52) has joined #Solus
+2021-02-11 04:17:06	<--	Merkaba (~Merkaba@197.94.197.52) has quit (Client Quit)
+2021-02-11 04:24:29	<--	mika_ (~mika@91-152-197-19.elisa-laajakaista.fi) has quit (Quit: Leaving)
+2021-02-11 04:42:04	-->	Beanary (~Johny31@shellium/member/Johny31) has joined #Solus
+2021-02-11 05:24:11	<--	Beanary (~Johny31@shellium/member/Johny31) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-02-11 05:35:14	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-11 06:06:27	-->	Doctor_Junglist (~Doctor_Ju@109.231.5.134) has joined #Solus
+2021-02-11 06:18:03	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2021-02-11 06:19:22	-->	Eressea (~eressea@2a04:cec0:100b:1eab:f7db:9798:8620:8a81) has joined #Solus
+2021-02-11 06:28:39	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 06:30:20	-->	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 06:32:06	<--	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2021-02-11 06:32:39	-->	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 06:34:01	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 256 seconds)
+2021-02-11 06:36:08	-->	metbsd (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has joined #Solus
+2021-02-11 06:37:31	<--	TraceyC1 (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 265 seconds)
+2021-02-11 06:37:34	<--	metbsd (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has quit (Changing host)
+2021-02-11 06:37:34	-->	metbsd (~metbsd@unaffiliated/metbsd) has joined #Solus
+2021-02-11 06:42:02	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-11 06:48:39	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 06:49:49	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Remote host closed the connection)
+2021-02-11 06:50:24	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 07:24:01	-->	Plasma-Live (~Plasma-Li@ip24-251-154-66.ph.ph.cox.net) has joined #Solus
+2021-02-11 07:24:46	-->	Plasma-Live_ (~Plasma-Li@188.235.28.1) has joined #Solus
+2021-02-11 07:25:17	Plasma-Live	Does this channel have Solus developers
+2021-02-11 07:25:35	--	Plasma-Live_ is now known as Plasma_niger
+2021-02-11 07:27:19	Paphnutiy	Yes, but they obviously are not here all the time.
+2021-02-11 07:28:25	<--	Plasma-Live (~Plasma-Li@ip24-251-154-66.ph.ph.cox.net) has quit (Client Quit)
+2021-02-11 07:32:13	-->	youngster (~clarkyoun@ip24-251-154-66.ph.ph.cox.net) has joined #Solus
+2021-02-11 07:33:31	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-11 07:35:59	youngster	The File Manager on Solus 4.2 Plasma is Dolphin. It has problems with playing movies over a Samba share (like from as NAS). I find that Budgie works fine because it uses Nautilus for its File Manager.
+2021-02-11 07:37:23	<--	Eressea (~eressea@2a04:cec0:100b:1eab:f7db:9798:8620:8a81) has quit (Ping timeout: 272 seconds)
+2021-02-11 07:38:46	@DataDrake|zzz	and?
+2021-02-11 07:39:49	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-11 07:41:03	youngster	and.... is this the proper place to report such problems? I would think the Solus dev team would be interested in such feedback
+2021-02-11 07:41:46	@DataDrake|zzz	that's not a Solus issue
+2021-02-11 07:42:17	TraceyC	That would be best filed against the Dolphin software, if there isn't an issue open already
+2021-02-11 07:42:29	TraceyC	In the Plasma / KDE tracker
+2021-02-11 07:42:49	@DataDrake|zzz	That's like filing a complain with your car dealer because you tried vehicle A and B but B does something A doesn't
+2021-02-11 07:43:10	TraceyC	yeah
+2021-02-11 07:44:32	youngster	okay, sorry to be a bother
+2021-02-11 07:44:59	@DataDrake|zzz	it's not a bother, I just can't fix it lol
+2021-02-11 07:45:45	youngster	I fixed it by removing Dolphin and replacing it with Nautilus
+2021-02-11 07:46:23	@DataDrake|zzz	we're not swapping the default file manager just because it falls over in one use case
+2021-02-11 07:46:39	youngster	I guess I should report it to the KDE folks
+2021-02-11 07:47:18	Harvey	I just played a mkv from a samba share in dolphin.
+2021-02-11 07:47:29	Harvey	No issue.
+2021-02-11 07:47:53	@DataDrake|zzz	samba or SMB?
+2021-02-11 07:48:01	youngster	SMB
+2021-02-11 07:48:42	@DataDrake|zzz	I'm asking because SMB != Samba
+2021-02-11 07:48:47	youngster	It's a permissions problem that Dolphin doesn't handle well
+2021-02-11 07:49:03	@DataDrake|zzz	well yeah
+2021-02-11 07:49:16	@DataDrake|zzz	CIFS is totally different than unix permissions
+2021-02-11 07:49:34	@DataDrake|zzz	there's all sorts of weirdness
+2021-02-11 07:49:42	youngster	of course, but Nautilus deals with it just fine
+2021-02-11 07:49:59	youngster	thanks for your help
+2021-02-11 07:50:27	youngster	I'll bring it up with the KDE filks
+2021-02-11 07:50:33	youngster	*folks
+2021-02-11 07:52:17	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-11 08:14:03	-->	JeffGila (~jeffrey@ip55-96-212-87.adsl2.static.versatel.nl) has joined #Solus
+2021-02-11 08:14:22	<--	youngster (~clarkyoun@ip24-251-154-66.ph.ph.cox.net) has quit (Remote host closed the connection)
+2021-02-11 08:14:40	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 260 seconds)
+2021-02-11 08:23:52	<--	Plasma_niger (~Plasma-Li@188.235.28.1) has quit
+2021-02-11 08:41:24	--	JoshStrobl|Live is now known as JoshStrobl
+2021-02-11 08:44:52	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-yzvqootgadldiydj) has joined #Solus
+2021-02-11 08:47:06	<--	JeffGila (~jeffrey@ip55-96-212-87.adsl2.static.versatel.nl) has quit (Quit: Konversation terminated!)
+2021-02-11 08:47:47	<--	metbsd (~metbsd@unaffiliated/metbsd) has quit (Quit: byeircer)
+2021-02-11 08:57:35	<--	Paphnutiy (~Solus@109.251.148.234) has quit
+2021-02-11 08:58:14	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-11 09:04:04	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-11 09:07:55	-->	metbsd (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has joined #Solus
+2021-02-11 09:07:55	<--	metbsd (~metbsd@cpe00fc8d943db3-cm00fc8d943db0.cpe.net.cable.rogers.com) has quit (Changing host)
+2021-02-11 09:07:55	-->	metbsd (~metbsd@unaffiliated/metbsd) has joined #Solus
+2021-02-11 09:11:49	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-11 09:13:39	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-11 09:21:17	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 09:25:09	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 272 seconds)
+2021-02-11 09:26:35	-->	Eressea (~eressea@2a04:cec0:100b:1eab:1c48:4c68:bd50:d948) has joined #Solus
+2021-02-11 09:32:43	-->	jordan (~jordan@131.0.197.95) has joined #Solus
+2021-02-11 09:32:58	<--	jordan (~jordan@131.0.197.95) has quit (Client Quit)
+2021-02-11 09:45:34	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 246 seconds)
+2021-02-11 09:46:35	<--	Eressea (~eressea@2a04:cec0:100b:1eab:1c48:4c68:bd50:d948) has quit (Ping timeout: 272 seconds)
+2021-02-11 10:00:28	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-11 10:02:38	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 10:05:23	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 10:06:00	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-11 10:06:00	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-11 10:06:00	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-11 10:23:35	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 10:26:07	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 265 seconds)
+2021-02-11 10:43:35	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 10:46:43	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 10:47:27	<--	metbsd (~metbsd@unaffiliated/metbsd) has left #solus ("Leaving")
+2021-02-11 11:05:19	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 11:07:22	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 11:08:16	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 272 seconds)
+2021-02-11 11:09:07	<--	Flabb (~Flabb@89.169.84.221) has quit (Read error: Connection reset by peer)
+2021-02-11 11:09:45	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus
+2021-02-11 11:25:55	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 11:28:14	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 240 seconds)
+2021-02-11 11:41:48	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-11 11:46:06	<--	algent| (~|algent|@93.159.199.87) has quit (Ping timeout: 264 seconds)
+2021-02-11 11:50:46	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-11 12:00:38	-->	michael__ (~michael@2603-8081-4e05-a898-0000-0000-0000-02cd.res6.spectrum.com) has joined #Solus
+2021-02-11 12:00:47	michael__	Hello
+2021-02-11 12:01:13	@Girtablulu	hi
+2021-02-11 12:01:50	michael__	Is it possible to port the native client for NordVPN?
+2021-02-11 12:03:38	@Girtablulu	you mean the dep package?
+2021-02-11 12:05:34	-->	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 12:05:43	michael__	Yes, I mean compiling it from source code
+2021-02-11 12:06:38	@Girtablulu	possible yes
+2021-02-11 12:07:24	<--	michael__ (~michael@2603-8081-4e05-a898-0000-0000-0000-02cd.res6.spectrum.com) has quit (Remote host closed the connection)
+2021-02-11 12:09:33	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 265 seconds)
+2021-02-11 12:17:21	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 12:26:27	-->	eryvile__ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 12:27:17	<--	eryvile__ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Client Quit)
+2021-02-11 12:27:30	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-02-11 12:27:42	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 12:28:09	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Client Quit)
+2021-02-11 12:29:20	<--	Christoph3 (~Christoph@120.79.37.188.rev.vodafone.pt) has quit (Ping timeout: 272 seconds)
+2021-02-11 12:29:44	-->	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has joined #Solus
+2021-02-11 12:29:52	<--	eryvile (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2021-02-11 12:42:06	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-11 12:47:41	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-11 12:51:45	-->	Plasma-Live (~Plasma-Li@93-103-176-162.dynamic.t-2.net) has joined #Solus
+2021-02-11 12:51:45	-->	mattiaoki (~mattiaoki@108.117.62.188.dynamic.wline.res.cust.swisscom.ch) has joined #Solus
+2021-02-11 12:52:14	<--	Plasma-Live (~Plasma-Li@93-103-176-162.dynamic.t-2.net) has quit (Client Quit)
+2021-02-11 12:52:20	<--	mattiaoki (~mattiaoki@108.117.62.188.dynamic.wline.res.cust.swisscom.ch) has quit (Client Quit)
+2021-02-11 12:55:02	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-11 12:59:52	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Client Quit)
+2021-02-11 13:02:37	-->	Christoph3 (~Christoph@120.79.37.188.rev.vodafone.pt) has joined #Solus
+2021-02-11 13:15:34	<--	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has quit (Ping timeout: 272 seconds)
+2021-02-11 13:19:31	-->	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has joined #Solus
+2021-02-11 13:22:42	<--	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-02-11 13:26:19	-->	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has joined #Solus
+2021-02-11 13:46:28	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-11 13:47:22	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-11 14:04:19	<--	Flabb (~Flabb@89.169.84.221) has quit (Quit: Leaving)
+2021-02-11 14:16:02	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-11 14:31:21	-->	tiresias (nemes@2607:5300:203:602::24) has joined #Solus
+2021-02-11 14:32:37	<--	tiresias_ (nemes@gateway/shell/tilde.team/x-esbebjcchwichsme) has quit (Ping timeout: 265 seconds)
+2021-02-11 14:41:47	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-11 14:54:55	--	DataDrake|zzz is now known as DataDrake|shop
+2021-02-11 15:19:26	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Remote host closed the connection)
+2021-02-11 15:19:50	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-11 15:23:45	-->	Plasma-Live (~Plasma-Li@net-93-65-106-250.cust.vodafonedsl.it) has joined #Solus
+2021-02-11 15:23:50	<--	Plasma-Live (~Plasma-Li@net-93-65-106-250.cust.vodafonedsl.it) has quit (Client Quit)
+2021-02-11 15:28:03	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-11 15:32:05	-->	swift110 (~swift110@2603:3003:159b:8000::f99f) has joined #Solus
+2021-02-11 15:34:36	<--	swift110 (~swift110@2603:3003:159b:8000::f99f) has quit (Changing host)
+2021-02-11 15:34:36	-->	swift110 (~swift110@unaffiliated/swift110) has joined #Solus
+2021-02-11 15:38:54	<--	algent| (~|algent|@93.159.199.87) has quit (Quit: Leaving)
+2021-02-11 15:41:21	<--	panzeroceania (sid16210@gateway/web/irccloud.com/x-yxpltqdmzqridgww) has quit (Read error: Connection reset by peer)
+2021-02-11 15:41:33	-->	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has joined #Solus
+2021-02-11 15:43:15	-->	disciple (~disciple@075-132-091-080.res.spectrum.com) has joined #Solus
+2021-02-11 15:43:43	disciple	how do you create shortcuts on the desktop?
+2021-02-11 15:44:14	disciple	should put more into the right click button for options acting with the desktop
+2021-02-11 15:44:27	disciple	even apps for uninstall - that is something that is good in mint.
+2021-02-11 15:44:50	disciple	love it so far - first impressions
+2021-02-11 15:47:29	<--	disciple (~disciple@075-132-091-080.res.spectrum.com) has quit (Client Quit)
+2021-02-11 15:54:01	-->	aquila (~aquila@185.172.210.31) has joined #Solus
+2021-02-11 15:57:24	aquila	Hi. I have a problem with atheros rt3290 bluetooth. Solus can't see BT device and I don't know how to install rtbth driver
+2021-02-11 15:58:30	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-11 15:58:37	aquila	I looked at the forum but there is nothing there about this card
+2021-02-11 16:01:48	swift110	oh
+2021-02-11 16:04:06	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Quit: Quit)
+2021-02-11 16:09:39	<--	swift110 (~swift110@unaffiliated/swift110) has quit (Remote host closed the connection)
+2021-02-11 16:09:58	-->	swift110 (~swift110@2603:3003:159b:8000::f99f) has joined #Solus
+2021-02-11 16:13:18	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Cheers)
+2021-02-11 16:14:50	-->	swift110_ (~swift110@2603:3003:159b:8000::f99f) has joined #Solus
+2021-02-11 16:14:54	<--	swift110 (~swift110@2603:3003:159b:8000::f99f) has quit (Remote host closed the connection)
+2021-02-11 16:17:35	<--	swift110_ (~swift110@2603:3003:159b:8000::f99f) has quit (Remote host closed the connection)
+2021-02-11 16:34:01	<--	aquila (~aquila@185.172.210.31) has quit (Remote host closed the connection)
+2021-02-11 16:34:09	<--	Doctor_Junglist (~Doctor_Ju@109.231.5.134) has quit (Remote host closed the connection)
+2021-02-11 16:39:06	-->	aquila (~aquila@185.172.210.31) has joined #Solus
+2021-02-11 16:47:17	-->	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has joined #Solus
+2021-02-11 16:51:40	<--	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has quit (Remote host closed the connection)
+2021-02-11 16:53:16	-->	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has joined #Solus
+2021-02-11 16:57:29	<--	DataDrake|shop (~DataDrake@98.3.31.10) has quit (Quit: Leaving)
+2021-02-11 16:57:35	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 264 seconds)
+2021-02-11 17:09:02	<--	aquila (~aquila@185.172.210.31) has quit (Ping timeout: 240 seconds)
+2021-02-11 17:25:51	-->	aquila (~aquila@185.172.210.31) has joined #Solus
+2021-02-11 17:38:10	--	irc: disconnected from server
+2021-02-11 18:02:54	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-11 18:02:54	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 18:02:54	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-11 18:02:54	--	Channel #solus: 99 nicks (5 ops, 0 voices, 94 normals)
+2021-02-11 18:02:56	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-11 18:14:45	<--	aquila (~aquila@185.172.210.31) has quit (Ping timeout: 240 seconds)
+2021-02-11 18:27:30	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-11 19:00:20	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-11 19:01:24	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-11 19:35:25	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-11 19:40:02	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-11 19:53:34	--	irc: disconnected from server
+2021-02-11 20:00:50	-->	rdr (~rydare@S0106905851c3eec9.mh.shawcable.net) has joined #solus
+2021-02-11 20:00:50	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 20:00:50	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-11 20:00:50	--	Channel #solus: 99 nicks (5 ops, 0 voices, 94 normals)
+2021-02-11 20:00:52	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-11 20:04:19	<--	tschan (~tschan@p5498695d.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2021-02-11 20:08:59	-->	tschan (~tschan@p57a862ba.dip0.t-ipconnect.de) has joined #Solus
+2021-02-11 20:58:59	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-11 21:26:40	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-11 21:47:15	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Remote host closed the connection)
+2021-02-11 21:47:35	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-11 21:48:39	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus
+2021-02-11 21:56:31	rdr	where can i find transmission-gtk?
+2021-02-11 21:57:11	rdr	oh it's just transmission
+2021-02-11 21:57:14	rdr	i could only find transgui
+2021-02-11 21:57:22	rdr	and it couldn't connect to my server
+2021-02-11 21:57:38	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 264 seconds)
+2021-02-11 21:58:37	rdr	brb
+2021-02-11 22:00:15	--	irc: disconnected from server
+2021-02-11 22:03:10	-->	rdr (~rydare@unaffiliated/unheeding) has joined #Solus
+2021-02-11 22:03:10	--	Topic for #Solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-11 22:03:10	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-11 22:03:10	--	Channel #solus: 99 nicks (5 ops, 0 voices, 94 normals)
+2021-02-11 22:03:13	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-11 22:08:19	-->	aquila (~aquila@185.172.210.31) has joined #Solus
+2021-02-11 22:14:14	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-11 22:14:43	<--	shenchen (~shenchen@58.210.60.122) has quit (Remote host closed the connection)
+2021-02-11 22:16:38	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus
+2021-02-11 22:24:14	-->	sony_ (~sony@2607:9880:1a50:1ca::8de6) has joined #Solus
+2021-02-11 22:24:30	sony_	hi
+2021-02-11 22:25:00	sony_	bye
+2021-02-11 22:25:09	<--	sony_ (~sony@2607:9880:1a50:1ca::8de6) has quit (Client Quit)
+2021-02-11 22:28:36	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-11 22:43:01	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-yzvqootgadldiydj) has quit (Quit: Connection closed for inactivity)
+2021-02-11 22:46:14	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 264 seconds)
+2021-02-11 22:59:03	--	irc: disconnected from server
+2021-02-12 00:12:27	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-12 00:12:27	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 00:12:27	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-12 00:12:27	--	Channel #solus: 99 nicks (5 ops, 0 voices, 94 normals)
+2021-02-12 00:12:29	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-12 00:20:16	-->	nast (~nast@139.64.244.18) has joined #Solus
+2021-02-12 00:21:57	<--	aquila (~aquila@185.172.210.31) has quit (Remote host closed the connection)
+2021-02-12 00:41:48	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-12 00:45:07	-->	Paphnutiy (~Solus@109.251.148.234) has joined #Solus
+2021-02-12 00:54:00	<--	manokara (~manokara@200.187.163.138) has quit (Read error: Connection reset by peer)
+2021-02-12 01:01:15	-->	manokara (~manokara@189.112.56.85) has joined #Solus
+2021-02-12 01:07:24	-->	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus
+2021-02-12 01:08:20	<--	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Client Quit)
+2021-02-12 01:08:40	<--	XianTheSatanist (~XianTheSa@98.156.161.167) has quit (Disconnected by services)
+2021-02-12 01:08:44	-->	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus
+2021-02-12 01:09:12	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has joined #Solus
+2021-02-12 01:12:30	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-0000-0000-0000-0003.res6.spectrum.com) has quit (Client Quit)
+2021-02-12 01:14:47	<--	XianTheSatanist1 (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Quit: Leaving)
+2021-02-12 01:15:09	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus
+2021-02-12 01:17:09	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-12 01:20:00	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 265 seconds)
+2021-02-12 01:22:37	<--	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has quit (Ping timeout: 272 seconds)
+2021-02-12 01:26:12	-->	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has joined #Solus
+2021-02-12 01:49:05	-->	shenchen__ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-12 01:49:08	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-12 01:49:19	--	shenchen__ is now known as shenchen
+2021-02-12 01:50:57	-->	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-12 02:16:11	-->	chax_0 (~chax@cpe-188-252-130-254.zg5.cable.xnet.hr) has joined #Solus
+2021-02-12 02:19:56	<--	chax (~chax@cpe-188-252-129-51.zg5.cable.xnet.hr) has quit (Ping timeout: 265 seconds)
+2021-02-12 02:40:50	-->	g_ (~g@206.48.91.79.rev.sfr.net) has joined #Solus
+2021-02-12 02:43:05	g_	hi, could someone explain why some applications installed are not visible in the dropdown menu?
+2021-02-12 02:47:33	@JoshStrobl	If you are using Budgie, it's possible the Budgie Menu's underlying lib, libgnome-menus, didn't properly communicate all the new desktop files after the application database was updated. Try opening up a Terminal, then doing: budgie-panel --replace &! followed by Ctrl+D to detach from that process.
+2021-02-12 02:50:20	g_	I'll give you an example: budgie shutdown timer is installed but doesn't appear anywhere so cannot be launched, which rather negates having it installed...
+2021-02-12 02:51:06	@JoshStrobl	You need to relog, Budgie's PluginManager doesn't currently reload to display newly available plugins, that inotify-related functionality is planned for the future.
+2021-02-12 02:51:41	@JoshStrobl	It won't immediately "appear" anywhere but should show up in Budgie Desktop Settings, where the rest of the applets are when you click to add them in a panel.
+2021-02-12 02:52:00	g_	it is not listed in applets
+2021-02-12 02:52:14	@JoshStrobl	As I stated, you need to relog.
+2021-02-12 02:52:37	@JoshStrobl	If you just installed it, it will not automatically be added to the list.
+2021-02-12 02:54:28	g_	I have not recently installed it separately, it came with budgie and a feature I need
+2021-02-12 02:54:36	@JoshStrobl	It does not come with Budgie.
+2021-02-12 02:54:49	@JoshStrobl	It is a third-party applet developed by Ubuntu Budgie.
+2021-02-12 02:55:14	@JoshStrobl	It is available in our repository.
+2021-02-12 02:57:43	g_	I know it's available in your repository, and when I go to software center it's listed as installed but as I said before is NOT visible anywhere so CANNOT be launched!
+2021-02-12 02:58:05	g_	which is quite stupid
+2021-02-12 02:58:09	<--	JoshStrobl has kicked g_ (g_)
+2021-02-12 02:59:01	@Girtablulu	can he not read?
+2021-02-12 02:59:08	@JoshStrobl	Apparently not.
+2021-02-12 02:59:17	@JoshStrobl	Don't have the patience for that.
+2021-02-12 03:23:06	-->	www_ (~www@2.61.253.118) has joined #Solus
+2021-02-12 03:24:17	<--	www_ (~www@2.61.253.118) has left #solus
+2021-02-12 03:32:23	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus
+2021-02-12 03:49:37	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-12 03:57:00	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-12 05:03:55	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 05:20:41	-->	andril (~andril@2601:586:8400:5e9::1007) has joined #Solus
+2021-02-12 05:39:23	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-12 05:40:16	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 05:44:49	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus
+2021-02-12 06:56:07	<--	andril (~andril@2601:586:8400:5e9::1007) has quit (Ping timeout: 265 seconds)
+2021-02-12 07:32:00	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-12 07:46:46	-->	mramish1 (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has joined #Solus
+2021-02-12 07:50:13	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus
+2021-02-12 07:58:29	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-12 08:09:25	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Ping timeout: 264 seconds)
+2021-02-12 08:19:17	<--	mramish1 (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has quit (Quit: mramish1)
+2021-02-12 08:32:14	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Remote host closed the connection)
+2021-02-12 08:42:06	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-12 08:46:07	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-12 08:51:17	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-12 08:51:17	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-12 08:51:17	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-12 08:56:20	-->	kyrios (~kyrios@2a02:a03f:65b8:2500:caa4:1b27:1372:288c) has joined #Solus
+2021-02-12 08:56:20	--	Mode #solus [+o kyrios] by ChanServ
+2021-02-12 08:57:33	<--	Paphnutiy (~Solus@109.251.148.234) has quit
+2021-02-12 09:14:25	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 246 seconds)
+2021-02-12 09:22:33	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Ping timeout: 256 seconds)
+2021-02-12 09:36:38	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-12 09:38:46	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-12 10:12:15	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 240 seconds)
+2021-02-12 10:17:13	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 246 seconds)
+2021-02-12 10:34:15	<--	eryvile_ (~quassel@dslb-178-000-150-195.178.000.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2021-02-12 10:43:04	-->	shenchen_ (~shenchen@114.218.92.203) has joined #Solus
+2021-02-12 10:48:07	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-12 10:48:07	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-12 10:48:07	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-12 11:03:24	-->	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has joined #Solus
+2021-02-12 11:09:28	<--	andril (~andril@2601:586:8400:5e9:4af1:7fff:fe83:1a12) has quit (Quit: WeeChat 3.0)
+2021-02-12 11:11:10	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-12 11:22:35	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-12 11:23:48	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-12 11:32:05	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 11:32:52	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has joined #Solus
+2021-02-12 11:39:46	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-12 11:40:37	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-12 11:52:23	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-12 11:59:22	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 12:01:45	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-12 12:04:32	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-relyhngldwxxkapv) has joined #Solus
+2021-02-12 12:30:54	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-12 12:57:15	<--	kyrios (~kyrios@2a02:a03f:65b8:2500:caa4:1b27:1372:288c) has quit (Ping timeout: 272 seconds)
+2021-02-12 12:59:35	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-12 13:08:52	-->	kyrios (~kyrios@2a02:a03f:65b8:2500:658f:ced7:f939:cf2) has joined #Solus
+2021-02-12 13:08:52	--	Mode #solus [+o kyrios] by ChanServ
+2021-02-12 13:34:34	<--	chax_0 (~chax@cpe-188-252-130-254.zg5.cable.xnet.hr) has quit (Remote host closed the connection)
+2021-02-12 13:37:21	<--	nekits07 (~nekits@074-135-024-063.res.spectrum.com) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-02-12 13:38:19	-->	nekits07 (~nekits@074-135-024-063.res.spectrum.com) has joined #Solus
+2021-02-12 13:42:29	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-12 14:03:43	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-12 14:07:32	<--	kyrios (~kyrios@2a02:a03f:65b8:2500:658f:ced7:f939:cf2) has quit (Quit: Leaving)
+2021-02-12 14:14:22	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-12 14:18:50	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 265 seconds)
+2021-02-12 14:28:29	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 256 seconds)
+2021-02-12 14:29:01	<--	Flabb (~Flabb@89.169.84.221) has quit (Quit: Leaving)
+2021-02-12 14:29:32	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-12 14:29:32	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-12 14:29:32	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-12 14:37:38	-->	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has joined #Solus
+2021-02-12 14:38:40	<--	tschan (~tschan@p57a862ba.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2021-02-12 14:43:24	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 14:44:40	-->	tschan (~tschan@p57a862ba.dip0.t-ipconnect.de) has joined #Solus
+2021-02-12 14:45:03	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-12 14:48:25	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-12 14:56:48	-->	henninb (~henninb@63-228-50-251.mpls.qwest.net) has joined #Solus
+2021-02-12 15:12:07	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-12 15:49:59	<--	henninb (~henninb@63-228-50-251.mpls.qwest.net) has quit (Quit: leaving)
+2021-02-12 16:21:38	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-12 16:22:06	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 16:58:46	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-12 17:11:07	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 17:56:48	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 272 seconds)
+2021-02-12 17:59:57	<--	XianTheSatanist (~XianTheSa@2603-8080-1202-fe00-8971-6868-7611-8f35.res6.spectrum.com) has quit (Quit: Leaving)
+2021-02-12 18:00:34	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Ping timeout: 240 seconds)
+2021-02-12 18:04:01	-->	shenchen__ (~shenchen@117.80.69.65) has joined #Solus
+2021-02-12 18:06:54	<--	shenchen_ (~shenchen@114.218.92.203) has quit (Ping timeout: 264 seconds)
+2021-02-12 18:14:49	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-12 18:25:24	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.2) has quit (Remote host closed the connection)
+2021-02-12 18:53:54	-->	mickotronic (~mike@61.68.6.123) has joined #Solus
+2021-02-12 18:57:50	mickotronic	Hi all, would you recommend using falkon browser? Seems like it has a long time between releases, but does it use a newish qtwebengine? Just wondering cause firefox seems to have a pretty bad memory leaks (no extensions) and falkon seems pretty cool, just don't know if it's as safe to use for general browsing
+2021-02-12 19:06:46	Harvey	I wouldn't use it. If you want to try another browser I would use vivaldi
+2021-02-12 19:07:16	--	irc: disconnected from server
+2021-02-12 19:46:44	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-12 19:46:44	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 19:46:44	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-12 19:46:44	--	Channel #solus: 98 nicks (5 ops, 0 voices, 93 normals)
+2021-02-12 19:46:46	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-12 20:03:08	<--	tschan (~tschan@p57a862ba.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2021-02-12 20:08:09	-->	tschan (~tschan@p2e53a3cf.dip0.t-ipconnect.de) has joined #Solus
+2021-02-12 20:16:12	-->	Plasma-Live (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has joined #Solus
+2021-02-12 20:16:37	--	Plasma-Live is now known as shawn_
+2021-02-12 20:20:42	shawn_	hello
+2021-02-12 20:22:09	<--	mogad0n (mogad0n@unaffiliated/mogad0n) has quit (Quit: mogad0n)
+2021-02-12 20:31:24	-->	Plasma-Live (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has joined #Solus
+2021-02-12 20:31:24	<--	shawn_ (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has quit (Read error: Connection reset by peer)
+2021-02-12 20:43:57	--	Plasma-Live is now known as _shawn
+2021-02-12 21:22:09	<--	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has quit
+2021-02-12 21:22:39	-->	manokara_ (~manokara@200.187.162.95) has joined #Solus
+2021-02-12 21:23:26	<--	manokara (~manokara@189.112.56.85) has quit (Ping timeout: 272 seconds)
+2021-02-12 21:24:37	-->	Plasma-Live (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has joined #Solus
+2021-02-12 21:24:44	--	Plasma-Live is now known as _shawn
+2021-02-12 21:28:48	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-12 21:44:23	-->	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-12 21:45:05	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-12 21:45:57	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-12 22:21:59	<--	TraceyC|roamin (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 22:28:14	<--	_shawn (~Plasma-Li@c-24-143-111-187.customer.broadstripe.net) has quit
+2021-02-12 22:31:31	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-12 22:44:45	<--	shenchen__ (~shenchen@117.80.69.65) has quit (Remote host closed the connection)
+2021-02-12 22:53:37	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-12 23:07:12	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-12 23:14:09	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-relyhngldwxxkapv) has quit (Quit: Connection closed for inactivity)
+2021-02-12 23:23:04	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-12 23:30:12	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-12 23:30:12	--	Mode #solus [+o DataDrake] by ChanServ
+2021-02-12 23:30:22	--	DataDrake is now known as DataDrake|zzz
+2021-02-12 23:39:37	--	irc: disconnected from server
+2021-02-12 23:43:13	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-12 23:43:13	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 23:43:13	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-12 23:43:13	--	Channel #solus: 95 nicks (6 ops, 0 voices, 89 normals)
+2021-02-12 23:43:17	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-12 23:47:48	rdr	ubongo 20.04.2 electric boogaloo
+2021-02-12 23:48:02	rdr	now to leave it and periodically upgrade until 22.04.2 is out
+2021-02-12 23:50:33	rdr	oops wrong channel
+2021-02-12 23:52:39	--	irc: disconnected from server
+2021-02-12 23:53:14	-->	rdr (~rydare@unaffiliated/unheeding) has joined #Solus
+2021-02-12 23:53:14	--	Topic for #Solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-12 23:53:14	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-12 23:53:14	--	Channel #solus: 95 nicks (6 ops, 0 voices, 89 normals)
+2021-02-12 23:53:16	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-13 00:36:13	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-13 00:46:47	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-13 01:22:53	<--	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has quit (Remote host closed the connection)
+2021-02-13 01:24:13	-->	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has joined #Solus
+2021-02-13 01:24:21	-->	bei_ (~bei@63-158-77-94.dia.static.qwest.net) has joined #Solus
+2021-02-13 01:29:22	-->	joebonrichie (~joebonric@90.254.29.232) has joined #Solus
+2021-02-13 01:29:22	--	Mode #solus [+o joebonrichie] by ChanServ
+2021-02-13 01:30:20	<--	bei (~bei@63-158-77-94.dia.static.qwest.net) has quit (Ping timeout: 258 seconds)
+2021-02-13 01:38:32	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-13 01:46:12	<--	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has quit (*.net *.split)
+2021-02-13 01:46:14	<--	LaserAllan_ (lazybones@shell.lazynet.se) has quit (*.net *.split)
+2021-02-13 01:46:15	<--	Engrin (~user@dev-void.org) has quit (*.net *.split)
+2021-02-13 01:48:53	<--	lapingv755 (lapingv755@gateway/shell/matrix.org/x-gfwecyovvdjukxip) has quit (*.net *.split)
+2021-02-13 01:48:53	<--	nhvfc[m] (nhvfcmatri@gateway/shell/matrix.org/x-zcuxmrorgztkjixv) has quit (*.net *.split)
+2021-02-13 01:48:53	<--	shmakes[m] (shmakesmat@gateway/shell/matrix.org/x-zsigqofjoneyzrwv) has quit (*.net *.split)
+2021-02-13 01:48:55	<--	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has quit (*.net *.split)
+2021-02-13 01:48:56	<--	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has quit (*.net *.split)
+2021-02-13 01:48:57	<--	chaology (sid369406@gateway/web/irccloud.com/x-qirjushbaysreanb) has quit (*.net *.split)
+2021-02-13 01:48:57	<--	Bert-vd-Lingen__ (sid232767@gateway/web/irccloud.com/x-bkjlawleoqbnbhgj) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	yacn (sid445023@gateway/web/irccloud.com/x-rsayfjylqwbtdsdn) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	JoshStrobl (~joshua@joshuastrobl.com) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	gelswip (~user@81.4.109.137) has quit (*.net *.split)
+2021-02-13 01:48:58	<--	liontiger (liontiger@gateway/shell/ircnow/x-jkpwyrvdwgpwibkl) has quit (*.net *.split)
+2021-02-13 01:48:59	<--	silkeh (silexslxhe@gateway/shell/matrix.org/x-tqqyemnvxzjfowzx) has quit (*.net *.split)
+2021-02-13 01:49:00	<--	saintdev (sid25343@gateway/web/irccloud.com/x-lzrykbduuxqhqnjw) has quit (*.net *.split)
+2021-02-13 01:49:01	<--	Aph3x-WL (~Aph3x@shellie.darchoods.net) has quit (*.net *.split)
+2021-02-13 01:49:01	<--	jesster1234 (~jessica@too.cool.for.ipv4.at.rymate.co.uk) has quit (*.net *.split)
+2021-02-13 01:49:01	<--	bei_ (~bei@63-158-77-94.dia.static.qwest.net) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	DataDrake|zzz (~DataDrake@98.3.31.10) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (*.net *.split)
+2021-02-13 01:49:02	<--	adriant (adriant@wlgwil-nat-office.catalyst.net.nz) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	nighcoder (~nighcoder@45.58.87.61) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	cweeks28 (~chris@h63-174.catalyst.net.nz) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (*.net *.split)
+2021-02-13 01:49:03	<--	KittyKatt (~ghost@unaffiliated/kittykatt) has quit (*.net *.split)
+2021-02-13 01:49:04	<--	m1cr0man (~m1cr0man@gelandewagen.m1cr0man.com) has quit (*.net *.split)
+2021-02-13 01:49:05	<--	dzr936 (~dzr-@81-231-183-179-no96.tbcn.telia.com) has quit (*.net *.split)
+2021-02-13 01:49:05	<--	iokiwi (iokiwi@wlgwil-nat-office.catalyst.net.nz) has quit (*.net *.split)
+2021-02-13 01:49:06	<--	r00tobo (~r00tobo@unaffiliated/r00tobo) has quit (*.net *.split)
+2021-02-13 01:49:07	<--	tiresias (nemes@2607:5300:203:602::24) has quit (*.net *.split)
+2021-02-13 01:49:07	<--	Sethil[m] (sethilmatr@gateway/shell/matrix.org/x-uisbnpavinciyxan) has quit (*.net *.split)
+2021-02-13 01:49:08	<--	Swift110-mobile (sid410914@gateway/web/irccloud.com/x-exxaofhjcujrlsid) has quit (*.net *.split)
+2021-02-13 01:49:10	<--	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has quit (*.net *.split)
+2021-02-13 01:49:10	<--	MintSpider (sid442361@gateway/web/irccloud.com/x-gckxnsalkocidgni) has quit (*.net *.split)
+2021-02-13 01:49:10	<--	Artik (~Artik_@falafel.win) has quit (*.net *.split)
+2021-02-13 01:49:11	<--	Girtablulu (~Girtablul@pub082136079138.dh-hfc.datazug.ch) has quit (*.net *.split)
+2021-02-13 01:49:12	<--	james000- (~james000-@too.cool.for.ipv4.at.rymate.co.uk) has quit (*.net *.split)
+2021-02-13 01:49:12	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has quit (*.net *.split)
+2021-02-13 01:49:13	<--	JacekJagosz (~IPiesek10@jacekjagosz.powered.by.lunarbnc.net) has quit (*.net *.split)
+2021-02-13 01:49:14	<--	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-cnpdrunangdcxupz) has quit (*.net *.split)
+2021-02-13 01:49:14	<--	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has quit (*.net *.split)
+2021-02-13 01:49:15	<--	gattuso (~gattuso@pompel.me) has quit (*.net *.split)
+2021-02-13 01:49:15	<--	Leo[m]5 (hnngslmatr@gateway/shell/matrix.org/x-vjwamjmkrtkfamqh) has quit (*.net *.split)
+2021-02-13 01:49:15	<--	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-omgpqfbzwtgvgryl) has quit (*.net *.split)
+2021-02-13 01:49:15	<--	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-tertfsmjtplxchci) has quit (*.net *.split)
+2021-02-13 01:49:16	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2021-02-13 01:49:16	<--	Christoph3 (~Christoph@120.79.37.188.rev.vodafone.pt) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	nyl (~nyl@srv.nyl.ro) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	erwyn (~Erwyn@gloups.piwany.com) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	chbmb (~CHBMB@unaffiliated/chbmb) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	hook54321 (sid149355@gateway/web/irccloud.com/x-bhtnavctkqyzsvpi) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	heliostatic (~heliostat@my.bdlc.co) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	Tk55 (~Tk55@ip-213-127-72-71.ip.prioritytelecom.net) has quit (*.net *.split)
+2021-02-13 01:49:17	<--	msitton (~matthew@45.76.237.165) has quit (*.net *.split)
+2021-02-13 01:49:18	<--	swecide (~swecide@62-20-229-23-no169.tbcn.telia.com) has quit (*.net *.split)
+2021-02-13 01:49:18	<--	jvrbanac (~jvrbanac@irc.verticalcue.com) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	tschan (~tschan@p2e53a3cf.dip0.t-ipconnect.de) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has quit (*.net *.split)
+2021-02-13 01:49:19	<--	elcobi (~elcobi@mimas.whatbox.ca) has quit (*.net *.split)
+2021-02-13 01:49:20	<--	maveonair` (~maveonair@77-58-52-124.dclient.hispeed.ch) has quit (*.net *.split)
+2021-02-13 01:49:20	<--	davidjharder (~davidjhar@132.145.103.85) has quit (*.net *.split)
+2021-02-13 01:49:21	<--	edenist (~edenist@rdns.robotprofessor.net) has quit (*.net *.split)
+2021-02-13 01:49:22	<--	zyga (~zyga@unaffiliated/zyga) has quit (*.net *.split)
+2021-02-13 01:49:23	<--	MrNr (MrNr@gateway/shell/panicbnc/x-mecmkdtlcszgwwvb) has quit (*.net *.split)
+2021-02-13 01:49:23	<--	Kabouik (~Kabouik@2a03:4000:4d:fbd:4fe:b1ff:fee3:35d) has quit (*.net *.split)
+2021-02-13 01:49:24	<--	DerRaiden (~quassel@2a01:4f8:c17:2a48::1) has quit (*.net *.split)
+2021-02-13 01:49:24	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	novaphoenix (~quassel@163.172.98.86) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	ermo (~ermo@foresight/developer/ermo) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	cowsay (~quassel@47.188.37.226) has quit (*.net *.split)
+2021-02-13 01:49:25	<--	machmalabala (~machmalab@82-65-82-156.subs.proxad.net) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	sheepman (~sheepman@nextcloud.stupid.frickin.website) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	ericnoan (~en@unaffiliated/ericnoan) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	mossman93 (~quassel@unaffiliated/mossman93) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	himmAllRight (~quassel@104.131.43.133) has quit (*.net *.split)
+2021-02-13 01:49:26	<--	simpleauthority (~simpleaut@unaffiliated/simpleauthority) has quit (*.net *.split)
+2021-02-13 01:49:27	<--	Shibe (~ShibaInu@botters/ShibaInu) has quit (*.net *.split)
+2021-02-13 01:49:27	<--	mesaboogie (~mesaboogi@us-01.ircbouncehouse.com) has quit (*.net *.split)
+2021-02-13 01:49:27	<--	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	nekits07 (~nekits@074-135-024-063.res.spectrum.com) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	nast (~nast@139.64.244.18) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	sysrich (~sysrich@static.165.131.203.116.clients.your-server.de) has quit (*.net *.split)
+2021-02-13 01:49:28	<--	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has quit (*.net *.split)
+2021-02-13 01:49:30	<--	tuxayo[m] (tuxayomatr@gateway/shell/matrix.org/x-wogpwqklhokisuhv) has quit (*.net *.split)
+2021-02-13 01:53:10	-->	gelswip (~user@81.4.109.137) has joined #Solus
+2021-02-13 01:53:10	-->	yacn (sid445023@gateway/web/irccloud.com/x-rsayfjylqwbtdsdn) has joined #Solus
+2021-02-13 01:53:10	-->	Bert-vd-Lingen__ (sid232767@gateway/web/irccloud.com/x-bkjlawleoqbnbhgj) has joined #Solus
+2021-02-13 01:53:10	-->	chaology (sid369406@gateway/web/irccloud.com/x-qirjushbaysreanb) has joined #Solus
+2021-02-13 01:53:10	-->	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has joined #Solus
+2021-02-13 01:53:10	-->	TheSpy0 (~TheSpy0@c-73-63-203-20.hsd1.ca.comcast.net) has joined #Solus
+2021-02-13 01:53:10	-->	Engrin (~user@dev-void.org) has joined #Solus
+2021-02-13 01:53:10	-->	LaserAllan_ (lazybones@shell.lazynet.se) has joined #Solus
+2021-02-13 01:53:10	-->	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has joined #Solus
+2021-02-13 01:53:10	-->	bei_ (~bei@63-158-77-94.dia.static.qwest.net) has joined #Solus
+2021-02-13 01:53:10	-->	DrFrankensteinUK (~quassel@cpc160069-brig23-2-0-cust862.3-3.cable.virginm.net) has joined #Solus
+2021-02-13 01:53:10	-->	DataDrake|zzz (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-13 01:53:10	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 01:53:10	-->	tschan (~tschan@p2e53a3cf.dip0.t-ipconnect.de) has joined #Solus
+2021-02-13 01:53:10	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 01:53:10	-->	nekits07 (~nekits@074-135-024-063.res.spectrum.com) has joined #Solus
+2021-02-13 01:53:10	-->	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-13 01:53:10	-->	nast (~nast@139.64.244.18) has joined #Solus
+2021-02-13 01:53:10	-->	sysrich (~sysrich@static.165.131.203.116.clients.your-server.de) has joined #Solus
+2021-02-13 01:53:10	-->	panzeroceania (sid16210@gateway/web/irccloud.com/x-loqvejflwzpglnmw) has joined #Solus
+2021-02-13 01:53:10	-->	tiresias (nemes@2607:5300:203:602::24) has joined #Solus
+2021-02-13 01:53:10	-->	Christoph3 (~Christoph@120.79.37.188.rev.vodafone.pt) has joined #Solus
+2021-02-13 01:53:10	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-13 01:53:10	-->	nyl (~nyl@srv.nyl.ro) has joined #Solus
+2021-02-13 01:53:10	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-13 01:53:10	-->	novaphoenix (~quassel@163.172.98.86) has joined #Solus
+2021-02-13 01:53:10	-->	NarwhalBot (~NarwhalBo@dsl-trebng11-54f91b-40.dhcp.inet.fi) has joined #Solus
+2021-02-13 01:53:10	-->	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-cnpdrunangdcxupz) has joined #Solus
+2021-02-13 01:53:10	-->	Sethil[m] (sethilmatr@gateway/shell/matrix.org/x-uisbnpavinciyxan) has joined #Solus
+2021-02-13 01:53:10	-->	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-omgpqfbzwtgvgryl) has joined #Solus
+2021-02-13 01:53:10	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has joined #Solus
+2021-02-13 01:53:10	-->	tuxayo[m] (tuxayomatr@gateway/shell/matrix.org/x-wogpwqklhokisuhv) has joined #Solus
+2021-02-13 01:53:10	-->	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-tertfsmjtplxchci) has joined #Solus
+2021-02-13 01:53:10	-->	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has joined #Solus
+2021-02-13 01:53:10	-->	MintSpider (sid442361@gateway/web/irccloud.com/x-gckxnsalkocidgni) has joined #Solus
+2021-02-13 01:53:10	-->	adriant (adriant@wlgwil-nat-office.catalyst.net.nz) has joined #Solus
+2021-02-13 01:53:10	-->	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has joined #Solus
+2021-02-13 01:53:10	-->	ermo (~ermo@foresight/developer/ermo) has joined #Solus
+2021-02-13 01:53:10	-->	erwyn (~Erwyn@gloups.piwany.com) has joined #Solus
+2021-02-13 01:53:10	-->	chbmb (~CHBMB@unaffiliated/chbmb) has joined #Solus
+2021-02-13 01:53:10	-->	elcobi (~elcobi@mimas.whatbox.ca) has joined #Solus
+2021-02-13 01:53:10	-->	cowsay (~quassel@47.188.37.226) has joined #Solus
+2021-02-13 01:53:10	-->	hook54321 (sid149355@gateway/web/irccloud.com/x-bhtnavctkqyzsvpi) has joined #Solus
+2021-02-13 01:53:10	-->	heliostatic (~heliostat@my.bdlc.co) has joined #Solus
+2021-02-13 01:53:10	-->	dzr936 (~dzr-@81-231-183-179-no96.tbcn.telia.com) has joined #Solus
+2021-02-13 01:53:10	-->	nighcoder (~nighcoder@45.58.87.61) has joined #Solus
+2021-02-13 01:53:10	--	Mode #solus [+ooo DataDrake|zzz NarwhalBot ermo] by card.freenode.net
+2021-02-13 01:53:10	-->	Tk55 (~Tk55@ip-213-127-72-71.ip.prioritytelecom.net) has joined #Solus
+2021-02-13 01:53:10	-->	cweeks28 (~chris@h63-174.catalyst.net.nz) has joined #Solus
+2021-02-13 01:53:10	-->	msitton (~matthew@45.76.237.165) has joined #Solus
+2021-02-13 01:53:10	-->	maveonair` (~maveonair@77-58-52-124.dclient.hispeed.ch) has joined #Solus
+2021-02-13 01:53:10	-->	Artik (~Artik_@falafel.win) has joined #Solus
+2021-02-13 01:53:10	-->	jesster1234 (~jessica@too.cool.for.ipv4.at.rymate.co.uk) has joined #Solus
+2021-02-13 01:53:10	-->	iokiwi (iokiwi@wlgwil-nat-office.catalyst.net.nz) has joined #Solus
+2021-02-13 01:53:10	-->	machmalabala (~machmalab@82-65-82-156.subs.proxad.net) has joined #Solus
+2021-02-13 01:53:10	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus
+2021-02-13 01:53:10	-->	gattuso (~gattuso@pompel.me) has joined #Solus
+2021-02-13 01:53:10	-->	KittyKatt (~ghost@unaffiliated/kittykatt) has joined #Solus
+2021-02-13 01:53:10	-->	Girtablulu (~Girtablul@pub082136079138.dh-hfc.datazug.ch) has joined #Solus
+2021-02-13 01:53:10	-->	davidjharder (~davidjhar@132.145.103.85) has joined #Solus
+2021-02-13 01:53:10	-->	JacekJagosz (~IPiesek10@jacekjagosz.powered.by.lunarbnc.net) has joined #Solus
+2021-02-13 01:53:10	-->	Swift110-mobile (sid410914@gateway/web/irccloud.com/x-exxaofhjcujrlsid) has joined #Solus
+2021-02-13 01:53:10	-->	MrNr (MrNr@gateway/shell/panicbnc/x-mecmkdtlcszgwwvb) has joined #Solus
+2021-02-13 01:53:10	-->	Kabouik (~Kabouik@2a03:4000:4d:fbd:4fe:b1ff:fee3:35d) has joined #Solus
+2021-02-13 01:53:10	-->	sheepman (~sheepman@nextcloud.stupid.frickin.website) has joined #Solus
+2021-02-13 01:53:10	-->	ericnoan (~en@unaffiliated/ericnoan) has joined #Solus
+2021-02-13 01:53:10	-->	mossman93 (~quassel@unaffiliated/mossman93) has joined #Solus
+2021-02-13 01:53:10	-->	swecide (~swecide@62-20-229-23-no169.tbcn.telia.com) has joined #Solus
+2021-02-13 01:53:10	-->	r00tobo (~r00tobo@unaffiliated/r00tobo) has joined #Solus
+2021-02-13 01:53:10	-->	m1cr0man (~m1cr0man@gelandewagen.m1cr0man.com) has joined #Solus
+2021-02-13 01:53:10	-->	jvrbanac (~jvrbanac@irc.verticalcue.com) has joined #Solus
+2021-02-13 01:53:10	-->	DerRaiden (~quassel@2a01:4f8:c17:2a48::1) has joined #Solus
+2021-02-13 01:53:10	-->	ChanServ (ChanServ@services.) has joined #Solus
+2021-02-13 01:53:10	-->	simpleauthority (~simpleaut@unaffiliated/simpleauthority) has joined #Solus
+2021-02-13 01:53:10	-->	mesaboogie (~mesaboogi@us-01.ircbouncehouse.com) has joined #Solus
+2021-02-13 01:53:10	-->	Shibe (~ShibaInu@botters/ShibaInu) has joined #Solus
+2021-02-13 01:53:10	-->	james000- (~james000-@too.cool.for.ipv4.at.rymate.co.uk) has joined #Solus
+2021-02-13 01:53:10	-->	himmAllRight (~quassel@104.131.43.133) has joined #Solus
+2021-02-13 01:53:10	-->	edenist (~edenist@rdns.robotprofessor.net) has joined #Solus
+2021-02-13 01:53:10	--	Mode #solus [+oo Girtablulu ChanServ] by card.freenode.net
+2021-02-13 01:53:44	<--	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-qvtvldqdpgirkhlk) has quit (Ping timeout: 258 seconds)
+2021-02-13 01:53:44	<--	Sethil[m] (sethilmatr@gateway/shell/matrix.org/x-uisbnpavinciyxan) has quit (Ping timeout: 265 seconds)
+2021-02-13 01:53:45	<--	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-tertfsmjtplxchci) has quit (Ping timeout: 244 seconds)
+2021-02-13 01:53:46	<--	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-cnpdrunangdcxupz) has quit (Ping timeout: 265 seconds)
+2021-02-13 01:53:46	<--	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-feqcnmbgvmzawvcw) has quit (Ping timeout: 265 seconds)
+2021-02-13 01:53:46	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-vmyhgzvjzeucjwwg) has quit (Ping timeout: 240 seconds)
+2021-02-13 01:53:46	-->	JoshStrobl (~joshua@joshuastrobl.com) has joined #Solus
+2021-02-13 01:53:46	--	Mode #solus [+o JoshStrobl] by ChanServ
+2021-02-13 01:53:46	<--	tuxayo[m] (tuxayomatr@gateway/shell/matrix.org/x-wogpwqklhokisuhv) has quit (Ping timeout: 268 seconds)
+2021-02-13 01:55:47	<--	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-omgpqfbzwtgvgryl) has quit (Ping timeout: 244 seconds)
+2021-02-13 01:55:56	-->	liontiger (liontiger@gateway/shell/ircnow/x-jkpwyrvdwgpwibkl) has joined #Solus
+2021-02-13 01:55:56	-->	saintdev (sid25343@gateway/web/irccloud.com/x-lzrykbduuxqhqnjw) has joined #Solus
+2021-02-13 01:55:56	-->	Aph3x-WL (~Aph3x@shellie.darchoods.net) has joined #Solus
+2021-02-13 01:59:05	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-13 02:19:21	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-13 02:23:38	-->	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-ontneuciiysrnaid) has joined #Solus
+2021-02-13 02:23:41	-->	Leo[m]5 (hnngslmatr@gateway/shell/matrix.org/x-kltfckiwupzhykcl) has joined #Solus
+2021-02-13 02:23:47	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-wpettizfkubdsozm) has joined #Solus
+2021-02-13 02:23:50	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-13 02:24:46	-->	YakoYako (yakoyakoyo@gateway/shell/matrix.org/x-vgtvffgrblfbqfxs) has joined #Solus
+2021-02-13 02:33:31	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-13 02:33:44	-->	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-xrtmvmzdrtnwvnqm) has joined #Solus
+2021-02-13 02:34:21	-->	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-vyclmsrgjhtigpgr) has joined #Solus
+2021-02-13 02:34:29	-->	lapingv755 (lapingv755@gateway/shell/matrix.org/x-boxjsqdllloafcnc) has joined #Solus
+2021-02-13 02:34:35	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-13 02:34:50	-->	shmakes[m] (shmakesmat@gateway/shell/matrix.org/x-xeowtymvftjmgkan) has joined #Solus
+2021-02-13 02:41:18	<--	Leo[m]5 (hnngslmatr@gateway/shell/matrix.org/x-kltfckiwupzhykcl) has quit (Ping timeout: 246 seconds)
+2021-02-13 02:41:46	<--	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-ontneuciiysrnaid) has quit (Ping timeout: 265 seconds)
+2021-02-13 02:41:46	<--	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-xrtmvmzdrtnwvnqm) has quit (Ping timeout: 258 seconds)
+2021-02-13 02:41:46	<--	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-wpettizfkubdsozm) has quit (Ping timeout: 258 seconds)
+2021-02-13 02:42:08	<--	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-vyclmsrgjhtigpgr) has quit (Ping timeout: 240 seconds)
+2021-02-13 02:42:29	-->	Valentin (~meggafagg@149.172.43.41) has joined #Solus
+2021-02-13 02:42:41	<--	YakoYako (yakoyakoyo@gateway/shell/matrix.org/x-vgtvffgrblfbqfxs) has quit (Ping timeout: 246 seconds)
+2021-02-13 02:42:43	<--	shmakes[m] (shmakesmat@gateway/shell/matrix.org/x-xeowtymvftjmgkan) has quit (Ping timeout: 265 seconds)
+2021-02-13 02:42:43	<--	lapingv755 (lapingv755@gateway/shell/matrix.org/x-boxjsqdllloafcnc) has quit (Ping timeout: 265 seconds)
+2021-02-13 03:00:56	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 03:01:33	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 264 seconds)
+2021-02-13 03:14:58	-->	nhvfc[m] (nhvfcmatri@gateway/shell/matrix.org/x-zwnjlzjdorolxjvh) has joined #Solus
+2021-02-13 03:19:10	-->	silkeh (silexslxhe@gateway/shell/matrix.org/x-qzulxkxbqnzbxuzp) has joined #Solus
+2021-02-13 03:19:30	-->	sheepman[m] (sheepmanma@gateway/shell/matrix.org/x-cueyrwegndwnlplz) has joined #Solus
+2021-02-13 03:21:37	-->	Sethil[m] (sethilmatr@gateway/shell/matrix.org/x-xkampmqvwabdmuad) has joined #Solus
+2021-02-13 03:28:46	-->	abdulocracy (abdulocrac@gateway/shell/matrix.org/x-wjjmkfstvoyyrrxz) has joined #Solus
+2021-02-13 03:30:43	-->	mtcos (~mtcos@2a02:2f0d:4200:fb00::46b) has joined #Solus
+2021-02-13 03:31:00	mtcos	hi
+2021-02-13 03:32:02	-->	tuxayo[m] (tuxayomatr@gateway/shell/matrix.org/x-uxhqgtqsybvlmuve) has joined #Solus
+2021-02-13 03:35:35	mtcos	i have a problem after update i can't connect to router whit a lan connexion, whit all 3 kernels (2 lts), this is the lan 09:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 11)
+2021-02-13 03:36:48	-->	greyltc[m] (greyltcmat@gateway/shell/matrix.org/x-ovykwzscfxtcmvli) has joined #Solus
+2021-02-13 03:37:48	-->	lapingv755 (lapingv755@gateway/shell/matrix.org/x-dmypfojurjwsitxi) has joined #Solus
+2021-02-13 03:41:02	-->	Leo[m]5 (hnngslmatr@gateway/shell/matrix.org/x-dqfmrddycoqjsxvd) has joined #Solus
+2021-02-13 03:42:07	-->	SpindleyQ[m] (spindleyqm@gateway/shell/matrix.org/x-kfumopkpeefymshe) has joined #Solus
+2021-02-13 03:42:49	-->	alecbcs[m] (alecbcsmat@gateway/shell/matrix.org/x-ohytjiharndvnzap) has joined #Solus
+2021-02-13 03:48:42	-->	tobiwan[m] (tobiwanken@gateway/shell/matrix.org/x-febvuhdgpmjoepzh) has joined #Solus
+2021-02-13 03:51:41	-->	shmakes[m] (shmakesmat@gateway/shell/matrix.org/x-wcxmfnrouhxpkkir) has joined #Solus
+2021-02-13 03:52:24	<--	Valentin (~meggafagg@149.172.43.41) has quit (Quit: Leaving)
+2021-02-13 03:53:23	-->	YakoYako (yakoyakoyo@gateway/shell/matrix.org/x-vskhaqrzhmsemfvp) has joined #Solus
+2021-02-13 04:06:16	-->	andril (~andril@2601:586:8400:5e9::1000) has joined #Solus
+2021-02-13 04:07:52	-->	Plasma-Live (~Plasma-Li@176-131-97-49.abo.bbox.fr) has joined #Solus
+2021-02-13 04:09:52	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus
+2021-02-13 04:25:48	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-13 04:29:11	<--	joebonrichie (~joebonric@90.254.29.232) has quit (Remote host closed the connection)
+2021-02-13 04:37:54	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-13 04:40:33	<--	Plasma-Live (~Plasma-Li@176-131-97-49.abo.bbox.fr) has quit (Ping timeout: 264 seconds)
+2021-02-13 05:07:18	<--	Eressea (~Eressea@31-32-250-252.abo.bbox.fr) has quit (Quit: Leaving)
+2021-02-13 05:10:01	<--	andril (~andril@2601:586:8400:5e9::1000) has quit (Ping timeout: 264 seconds)
+2021-02-13 05:14:42	--	JoshStrobl is now known as Josh|Store
+2021-02-13 05:44:20	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-13 05:48:25	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-13 06:23:13	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-13 06:59:26	<--	liontiger (liontiger@gateway/shell/ircnow/x-jkpwyrvdwgpwibkl) has quit (Quit: IRCNow and Forever!)
+2021-02-13 06:59:54	<--	erwyn (~Erwyn@gloups.piwany.com) has quit (Quit: The Lounge - https://thelounge.github.io)
+2021-02-13 07:22:51	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-13 07:24:17	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Remote host closed the connection)
+2021-02-13 07:24:46	-->	shenchen_ (~shenchen@58.210.60.122) has joined #Solus
+2021-02-13 07:24:49	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-13 07:27:35	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-13 07:31:28	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-13 07:51:46	-->	_shawn (~shawn@144.202.90.233) has joined #Solus
+2021-02-13 07:55:01	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Ping timeout: 264 seconds)
+2021-02-13 07:57:28	_shawn	in a .eopkg, files.xml, does the package manager treat <Type>config</Type> and <Type>data</Type> differently when updating? for example, does it by default overwrite <Type>data</Type>, but does not overwrite <Type>config</Type>?
+2021-02-13 07:57:36	-->	erwyn (~Erwyn@gloups.piwany.com) has joined #Solus
+2021-02-13 07:58:14	@DataDrake|zzz	correct
+2021-02-13 07:58:16	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 07:58:38	-->	Plasma-Live (~Plasma-Li@176-131-97-49.abo.bbox.fr) has joined #Solus
+2021-02-13 07:59:10	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 268 seconds)
+2021-02-13 08:02:01	_shawn	I wish it would not fail to update if I chattr +i a "data". The issue I am having is plasma wont let me remove mime types from gvim. I want to install vim but gvim is installed too, and I dont want it to show up in the file manager for it's default mime types
+2021-02-13 08:03:15	--	Josh|Store is now known as JoshStrobl
+2021-02-13 08:03:20	_shawn	so I want to remove mime types from the .desktop file, but if I do that an update overwrites my changes, and chattr +i prevents the update. eopkg just exits when it reaches that file
+2021-02-13 08:03:44	_shawn	this is a bug in plasma i'm trying to work around
+2021-02-13 08:04:16	_shawn	it wont let ~/.local/share/applications override the /usr/share/applications directory
+2021-02-13 08:04:30	<--	Plasma-Live (~Plasma-Li@176-131-97-49.abo.bbox.fr) has quit
+2021-02-13 08:08:08	<--	DataDrake|zzz (~DataDrake@98.3.31.10) has quit (Ping timeout: 264 seconds)
+2021-02-13 08:08:20	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-13 08:08:32	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-13 08:08:32	--	Mode #solus [+o DataDrake] by ChanServ
+2021-02-13 08:09:23	-->	DDrake (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-13 08:09:23	--	Mode #solus [+o DDrake] by ChanServ
+2021-02-13 08:09:37	--	DDrake is now known as DataDrake|live
+2021-02-13 08:10:59	<--	DataDrake (~DataDrake@98.3.31.10) has quit (Client Quit)
+2021-02-13 08:15:10	-->	st3ma (~st3ma@88.133.163.96) has joined #Solus
+2021-02-13 08:27:26	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-13 08:30:12	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Ping timeout: 272 seconds)
+2021-02-13 08:33:07	_shawn	exploring $XDG_ enviroment variables to see if they are the culprit
+2021-02-13 08:36:36	_shawn	ah yes $XDG_DATA_HOME is unset
+2021-02-13 08:40:22	_shawn	or maybe it's XDG_DATA_DIRS it needs to be added to, the freedesktop.org documentation is clear as mud
+2021-02-13 08:45:34	<--	shenchen_ (~shenchen@58.210.60.122) has quit (Remote host closed the connection)
+2021-02-13 08:51:48	<--	algent| (~|algent|@93.159.199.87) has quit (Ping timeout: 256 seconds)
+2021-02-13 08:54:41	-->	liontiger (liontiger@gateway/shell/ircnow/x-nptxznbunbdnfcec) has joined #Solus
+2021-02-13 08:55:54	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Ping timeout: 268 seconds)
+2021-02-13 09:01:30	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-13 09:01:40	-->	shenchen (~shenchen@58.210.60.122) has joined #Solus
+2021-02-13 09:04:19	_shawn	yeah looks like it's $XDG_DATA_DIRS, because `update-desktop-database -v` tries to make application directories at all the paths listed in $XDG_DATA_DIRS
+2021-02-13 09:06:56	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 264 seconds)
+2021-02-13 09:19:24	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus
+2021-02-13 09:21:44	-->	shenchen (~shenchen@117.80.69.65) has joined #Solus
+2021-02-13 09:22:18	mtcos	i have a problem after update i can't connect to router whit a lan connexion, whit all 3 kernels (2 lts), this is the lan 09:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 11)
+2021-02-13 09:26:25	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus
+2021-02-13 09:30:14	<--	shenchen (~shenchen@117.80.69.65) has quit (Ping timeout: 246 seconds)
+2021-02-13 09:39:16	--	irc: disconnected from server
+2021-02-13 09:40:10	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-13 09:40:10	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 09:40:10	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-13 09:40:10	--	Channel #solus: 103 nicks (6 ops, 0 voices, 97 normals)
+2021-02-13 09:40:12	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-13 10:08:17	-->	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has joined #Solus
+2021-02-13 10:13:38	<--	st3ma (~st3ma@88.133.163.96) has quit (Quit: WeeChat 3.0)
+2021-02-13 10:37:36	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-13 10:47:43	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-13 10:50:46	--	irc: disconnected from server
+2021-02-13 11:15:59	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-13 11:15:59	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 11:15:59	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-13 11:15:59	--	Channel #solus: 104 nicks (6 ops, 0 voices, 98 normals)
+2021-02-13 11:15:59	***	Buffer Playback...
+2021-02-13 11:15:59	_shawn	[11:13:11] I saw there was issues on their issue tracker about this that have been there for years
+2021-02-13 11:15:59	***	Playback Complete.
+2021-02-13 11:16:01	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-13 11:20:55	rdr	I'm having an issue with budgie
+2021-02-13 11:20:59	rdr	if i boot with my headphones in
+2021-02-13 11:21:09	rdr	it tries to play through line-out
+2021-02-13 11:21:23	rdr	until I change it manually
+2021-02-13 11:21:28	rdr	resulting in no sound
+2021-02-13 11:21:50	rdr	unplugging switches it to hdmi, which i don't use
+2021-02-13 11:22:09	rdr	is there a way to set priority for outputs?
+2021-02-13 11:22:17	rdr	like headphones first, then line out, finally last resort hdmi
+2021-02-13 11:23:44	rdr	hmm apparently pulseaudio already has the right priorities
+2021-02-13 11:23:58	rdr	9900 for headphones, 9000 for line-out, 5900 for hdmi
+2021-02-13 11:50:37	--	irc: disconnected from server
+2021-02-13 11:53:03	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-13 11:53:03	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 11:53:03	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-13 11:53:03	--	Channel #solus: 104 nicks (6 ops, 0 voices, 98 normals)
+2021-02-13 11:53:05	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-13 11:53:51	-->	endumiuz (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-13 11:55:34	_shawn	rdr: that sounds like it might be pulseaudio
+2021-02-13 11:58:05	_shawn	maybe try setting your default sync in /etc/pulse/default.pa
+2021-02-13 11:58:15	_shawn	default sink*
+2021-02-13 12:01:15	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-13 12:02:41	rdr	_shawn: thanks, i set my default sink to 1
+2021-02-13 12:02:53	rdr	which is the analog output+lineout+headphones
+2021-02-13 12:19:04	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-13 12:46:33	-->	mw42815 (~markgeek1@75-108-154-229.chstcmtk01.res.dyn.suddenlink.net) has joined #Solus
+2021-02-13 12:49:32	mw42815	hi . can you use caja file manager from mate desktop instead of nautilaus in budgie edition of solus ?  i mean can i install caja and subsituite it as the default file manager under default applications in system settings.?  thanks ofr any information .
+2021-02-13 12:50:17	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus
+2021-02-13 12:50:35	mw42815	sorry for typos
+2021-02-13 12:50:58	_shawn	I dont have experience doing that exactly mw42815 , but if you `eopkg install` it it will show you how many things it will try to pull in
+2021-02-13 12:51:29	_shawn	and read that, and decide, and if you try it and change your mind you can roll back the install using `eopkg history`
+2021-02-13 12:52:09	mw42815	okay.  i am going to try it .  thanks
+2021-02-13 12:52:13	@JoshStrobl	mw42815, you can't change it in the Default applications section since GNOME Control Center only lets you specify a few types of file types there and not stuff like inode/directory, but you *should* be able to install caja, remove nautilus, and caja be the default inode/directory handler. If it doesn't work by default, you can modify .config/mimeapps.list
+2021-02-13 12:52:45	-->	DataDrake (~DataDrake@98.3.31.10) has joined #Solus
+2021-02-13 12:52:45	--	Mode #solus [+o DataDrake] by ChanServ
+2021-02-13 12:53:06	<--	DataDrake|live (~DataDrake@98.3.31.10) has quit (Quit: Leaving)
+2021-02-13 12:53:25	mw42815	josh would that break budgie desktop view .  i am using budgie edition 4.2
+2021-02-13 12:53:31	@JoshStrobl	nope
+2021-02-13 12:53:38	@JoshStrobl	budgie-desktop-view is a completely independent application
+2021-02-13 12:53:54	@JoshStrobl	That is why we were able to upgrade Nautilus in the first place :)
+2021-02-13 12:54:36	@JoshStrobl	Can confirm just removed Nautilus, installed Caja, and clicking my user's home directory link on the desktop opened Caja as expected
+2021-02-13 12:55:39	mw42815	okay i thought it was dependent on the older version of Nautilus hence my query.  okay . great thanks for the help
+2021-02-13 12:56:14	mw42815	have a good day
+2021-02-13 12:56:25	<--	mw42815 (~markgeek1@75-108-154-229.chstcmtk01.res.dyn.suddenlink.net) has quit (Quit: Leaving)
+2021-02-13 12:57:36	<--	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has quit (Remote host closed the connection)
+2021-02-13 12:59:06	-->	Plasma-Live (~Plasma-Li@197.217.72.250) has joined #Solus
+2021-02-13 12:59:37	<--	Plasma-Live (~Plasma-Li@197.217.72.250) has quit (Client Quit)
+2021-02-13 13:03:49	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 264 seconds)
+2021-02-13 13:09:08	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 246 seconds)
+2021-02-13 13:09:09	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 13:13:23	-->	mw42815 (~markgeek1@75-108-154-229.chstcmtk01.res.dyn.suddenlink.net) has joined #Solus
+2021-02-13 13:15:03	mw42815	hey Josh it works fine for me .  i like the look and feel of caja better .   i love the budgie desktop for everything else .  thanks again for the help and information
+2021-02-13 13:15:25	<--	mw42815 (~markgeek1@75-108-154-229.chstcmtk01.res.dyn.suddenlink.net) has quit (Client Quit)
+2021-02-13 13:16:23	-->	Plasma-Live (~Plasma-Li@2601:144:c001:4210::b36a) has joined #Solus
+2021-02-13 13:16:40	<--	Plasma-Live (~Plasma-Li@2601:144:c001:4210::b36a) has quit (Client Quit)
+2021-02-13 14:25:53	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-13 14:38:21	<--	andril (~andril@2601:586:8400:5e9:c196:c330:25ab:47a5) has quit (Quit: WeeChat 3.0)
+2021-02-13 15:03:40	-->	happycod3r (~happycod3@bl9-20-219.dsl.telepac.pt) has joined #Solus
+2021-02-13 15:20:38	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-13 15:33:09	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Remote host closed the connection)
+2021-02-13 15:35:03	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 256 seconds)
+2021-02-13 15:36:15	<--	happycod3r (~happycod3@bl9-20-219.dsl.telepac.pt) has quit (Quit: Leaving)
+2021-02-13 15:55:02	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (Quit: Null)
+2021-02-13 15:59:01	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus
+2021-02-13 15:59:10	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-13 16:04:19	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 16:04:19	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 16:04:20	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 16:26:04	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-13 16:57:07	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-13 17:06:22	-->	endumiuz_ (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-13 17:08:10	<--	endumiuz (~endumiuz@194.117.188.224) has quit (Ping timeout: 272 seconds)
+2021-02-13 17:10:00	-->	HarveyBirdman (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-13 17:10:13	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Disconnected by services)
+2021-02-13 17:10:19	--	HarveyBirdman is now known as Harvey
+2021-02-13 17:11:43	<--	endumiuz_ (~endumiuz@194.117.188.224) has quit (Ping timeout: 240 seconds)
+2021-02-13 17:13:53	--	abdulocracy is now known as abdulocracy_old
+2021-02-13 17:25:00	<--	abdulocracy_old (abdulocrac@gateway/shell/matrix.org/x-wjjmkfstvoyyrrxz) has quit (Quit: issued !quit command)
+2021-02-13 17:27:50	--	irc: disconnected from server
+2021-02-13 18:10:58	-->	rdr (~rydare@unaffiliated/unheeding) has joined #solus
+2021-02-13 18:10:58	--	Topic for #solus is "Solus Support || Off-Topic Channel: #Solus-Chat || Development Channel: #Solus-Dev || Development Tracker: https://dev.getsol.us || Forums: https://discuss.getsol.us || Community Guidelines: https://getsol.us/articles/contributing/community-guidelines/en/ || Solus 4.2 Released: https://getsol.us/2021/02/03/solus-4-2-released"
+2021-02-13 18:10:58	--	Topic set by JoshStrobl (~joshua@joshuastrobl.com) on Wed, 03 Feb 2021 07:14:10
+2021-02-13 18:10:58	--	Channel #solus: 98 nicks (6 ops, 0 voices, 92 normals)
+2021-02-13 18:10:58	***	Buffer Playback...
+2021-02-13 18:10:58	mm_	[17:32:46] hi?
+2021-02-13 18:10:58	ultr4_l4s3r	[17:33:27] hello
+2021-02-13 18:10:58	mm_	[17:34:49] The gnome-soundrecorder package isn't in the repos, is it?
+2021-02-13 18:10:58	ultr4_l4s3r	[17:37:28] dude, give me a bit more time ^^
+2021-02-13 18:10:58	***	Playback Complete.
+2021-02-13 18:11:00	--	Channel created on Thu, 02 Apr 2015 18:39:36
+2021-02-13 18:21:05	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-13 18:26:11	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 18:26:11	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 18:26:11	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 18:29:30	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 18:30:16	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-13 18:35:36	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-13 19:04:43	-->	Gryman (~Gryman@108-206-150-112.lightspeed.irvnca.sbcglobal.net) has joined #Solus
+2021-02-13 19:05:11	Gryman	Hey guys, I'm trying to play Rocksmith on Steam and my Real Tone Cable isn't being detected as an input.
+2021-02-13 19:05:19	Gryman	Does anyone play this game?
+2021-02-13 19:07:24	rdr	what's a real tone cable
+2021-02-13 19:07:48	Gryman	1/4" audio to USB
+2021-02-13 19:07:57	Gryman	It's so you can connect your guitar or bass to the computer
+2021-02-13 19:08:06	rdr	ohhh okay
+2021-02-13 19:08:11	rdr	you may have to find a driver for it
+2021-02-13 19:08:15	rdr	which may or may not exist
+2021-02-13 19:08:29	rdr	unplug it, and type "lsusb" in the terminal
+2021-02-13 19:08:35	rdr	plug it in, and do the command again
+2021-02-13 19:08:37	rdr	see what changes
+2021-02-13 19:08:44	Gryman	greg@zeus ~/Games/SteamLibrary/steamapps/compatdata/221680 $ lsusb | grep Rock
+2021-02-13 19:08:44	Gryman	Bus 001 Device 005: ID 12ba:00ff Licensed by Sony Computer Entertainment America Rocksmith Guitar Adapter
+2021-02-13 19:09:14	ultr4_l4s3r	https://www.protondb.com/app/205190
+2021-02-13 19:09:21	ultr4_l4s3r	Maybe something there could help
+2021-02-13 19:09:24	rdr	https://lesateliersphv.ca/en/how-to-play-rocksmith-2014-on-linux/
+2021-02-13 19:09:26	@NarwhalBot	[ How to play Rocksmith 2014 on Linux - Les Ateliers PHV ]
+2021-02-13 19:09:32	rdr	it says you may have to disable pulseaudio
+2021-02-13 19:09:35	rdr	if it says it's disconnected
+2021-02-13 19:09:58	Gryman	I tried setting ALSA for Wine, and then opening the Wine config and it doesn't list Alsa or the input
+2021-02-13 19:13:09	Gryman	The only inputs I have for Wine are Pulseaudio
+2021-02-13 19:13:46	rdr	the link i shared says sometimes you have to temporarily disable pulseaudio
+2021-02-13 19:15:10	Gryman	I see it says to disable the cable in Pulse, but I don't see where it says to disable pulseaudio
+2021-02-13 19:15:24	Gryman	And the /etc/pulse/daemon.conf doesn't exist on my system it seems
+2021-02-13 19:16:02	Gryman	Oh, the other link
+2021-02-13 19:16:04	Gryman	one min
+2021-02-13 19:17:44	Gryman	I don't see a pulseaudio service
+2021-02-13 19:20:16	rdr	well, wine sees it
+2021-02-13 19:20:23	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 19:20:23	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 19:20:23	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 19:20:25	rdr	you can see if it's running with "ps aux | grpe pulse"
+2021-02-13 19:21:17	rdr	sorry misstyped grep
+2021-02-13 19:25:09	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-13 19:32:42	-->	leapfog__ (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has joined #Solus
+2021-02-13 19:36:46	<--	leapfog_ (~tsattler@p57bcfc62.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2021-02-13 19:47:14	Gryman	Yeah, the process is running
+2021-02-13 20:04:10	<--	tschan (~tschan@p2e53a3cf.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2021-02-13 20:08:59	-->	tschan (~tschan@p54986c95.dip0.t-ipconnect.de) has joined #Solus
+2021-02-13 20:15:08	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 20:15:08	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 20:15:08	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 20:24:31	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 256 seconds)
+2021-02-13 20:32:56	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-13 20:34:51	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Ping timeout: 265 seconds)
+2021-02-13 20:35:01	-->	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has joined #Solus
+2021-02-13 20:53:24	-->	Plasma-Live (~Plasma-Li@2600:6c5e:467f:71ac::1c3e) has joined #Solus
+2021-02-13 20:53:24	<--	Plasma-Live (~Plasma-Li@2600:6c5e:467f:71ac::1c3e) has quit (Client Quit)
+2021-02-13 21:09:38	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 21:09:39	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 21:09:39	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 21:13:44	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-13 21:17:43	<--	cweeks28 (~chris@h63-174.catalyst.net.nz) has quit (Quit: Ping timeout (120 seconds))
+2021-02-13 21:18:15	-->	cweeks28 (~chris@h63-174.catalyst.net.nz) has joined #Solus
+2021-02-13 21:21:44	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Ping timeout: 265 seconds)
+2021-02-13 21:30:04	-->	live_johnv (~livejohnv@2804:146c:4c4:f000:980d:5138:51f4:10) has joined #Solus
+2021-02-13 21:32:36	live_johnv	Hello Guys, the is anyone online ?
+2021-02-13 21:33:21	live_johnv	Maybe i just found a bug in solus 4.2 installation process...but i am not shure
+2021-02-13 21:38:02	live_johnv	Anyways, i am using solus 4.2 (Gnome) live session right now. I started the installer and now i am stuck in "examining local storage devices". This is happening booth with gnome and budgie versions. But only with Solus 4.2 ISOś... for me the only way to install Solus was download the 4.1 ISO and then update to 4.2
+2021-02-13 21:40:30	live_johnv	I ust want to report this issue and maybe you guys take a look at it. Solus is a great system and works very well with my hardware. Is the fastest distro that i ever tested.
+2021-02-13 21:42:50	sheepman[m]	live_johnv: and it worked fine on the 4.2 iso?
+2021-02-13 21:43:05	sheepman[m]	er, the 4.1 iso
+2021-02-13 21:43:20	sheepman[m]	...must be late at night
+2021-02-13 21:43:33	live_johnv	Yes, worked just fine
+2021-02-13 21:44:27	sheepman[m]	Odd. That's the first I've heard of installation issues on 4.2, but then I'm also not one of the maintainers- I just hang out in IRC
+2021-02-13 21:44:51	live_johnv	I just trying to decide between Gnome or Bugie versions, this is not easy  haha :)
+2021-02-13 21:45:42	sheepman[m]	Heh. I'm sure you can find many opinionated people to "help" with that
+2021-02-13 21:46:17	sheepman[m]	Of the two, I like Budgie, but I'll admit to using Plasma on most systems
+2021-02-13 21:47:01	sheepman[m]	In any case, I'm glad you got it working. Welcome to Solus!
+2021-02-13 21:48:18	live_johnv	Thank you Sheepman :) I am glad to be here
+2021-02-13 21:48:44	live_johnv	i know that is late. Maybe i will comeback tomorrow.
+2021-02-13 21:49:20	sheepman[m]	Indeed! There's usually someone around who will help out if you wait long enough
+2021-02-13 21:49:59	live_johnv	Great ! it is good to know
+2021-02-13 21:50:18	live_johnv	Bye...and have a good night
+2021-02-13 21:50:21	sheepman[m]	Good luck with your DE decision!
+2021-02-13 21:50:52	live_johnv	Thankś :)
+2021-02-13 21:50:59	<--	live_johnv (~livejohnv@2804:146c:4c4:f000:980d:5138:51f4:10) has quit (Quit: Leaving)
+2021-02-13 22:12:35	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-13 22:17:15	-->	shenchen__ (~shenchen@58.210.60.122) has joined #Solus
+2021-02-13 22:19:26	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Read error: Connection reset by peer)
+2021-02-13 22:23:17	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-cqomonhlfrsijysi) has quit (Quit: Connection closed for inactivity)
+2021-02-13 22:34:06	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-13 22:57:29	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 22:57:29	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 22:57:29	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 23:02:16	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 265 seconds)
+2021-02-13 23:08:31	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-13 23:34:37	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-13 23:35:24	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 272 seconds)
+2021-02-13 23:36:51	<--	Doctor_Junglist (~Doctor_Ju@109.231.11.64) has quit (Remote host closed the connection)
+2021-02-13 23:37:59	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-13 23:52:14	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-13 23:52:14	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-13 23:52:14	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-13 23:56:35	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 246 seconds)
+2021-02-14 00:13:44	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-14 00:28:09	-->	mtcos (~mtcos@2a02:2f0d:4200:fb00::46b) has joined #Solus
+2021-02-14 00:39:45	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-14 00:46:18	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 00:46:19	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 00:46:19	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 00:50:24	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-14 01:04:38	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-14 01:39:15	-->	manokara (~manokara@189.112.56.169) has joined #Solus
+2021-02-14 01:40:44	<--	manokara_ (~manokara@200.187.162.95) has quit (Ping timeout: 240 seconds)
+2021-02-14 01:55:01	<--	mtcos (~mtcos@2a02:2f0d:4200:fb00::46b) has quit (Quit: Leaving)
+2021-02-14 02:08:58	<--	Gryman (~Gryman@108-206-150-112.lightspeed.irvnca.sbcglobal.net) has quit (Remote host closed the connection)
+2021-02-14 02:12:54	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-14 02:30:57	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-14 02:31:10	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 02:34:05	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 02:34:05	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 02:34:05	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 02:38:35	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-14 02:50:39	--	shenchen__ is now known as shenchen
+2021-02-14 03:05:52	<--	leapfog__ (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has quit (Ping timeout: 265 seconds)
+2021-02-14 03:09:24	-->	tk217 (~tk217@pon468.cpe.hcn.gr) has joined #Solus
+2021-02-14 03:09:39	<--	tk217 (~tk217@pon468.cpe.hcn.gr) has quit (Client Quit)
+2021-02-14 03:11:48	-->	Plasma-Live (~Plasma-Li@186.167.251.78) has joined #Solus
+2021-02-14 03:11:54	<--	Plasma-Live (~Plasma-Li@186.167.251.78) has quit (Client Quit)
+2021-02-14 03:14:00	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 03:20:41	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 03:28:30	-->	leapfog (~tsattler@p5080f5c1.dip0.t-ipconnect.de) has joined #Solus
+2021-02-14 03:28:56	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 03:28:56	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 03:28:56	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 03:33:14	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 246 seconds)
+2021-02-14 03:36:13	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 03:42:43	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 03:44:12	<--	zyga (~zyga@unaffiliated/zyga) has quit (Client Quit)
+2021-02-14 03:46:33	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 04:01:02	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 04:01:03	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 04:01:03	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 04:08:47	-->	shenchen_ (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-14 04:11:35	<--	shenchen (~shenchen@58.210.60.122) has quit (Ping timeout: 265 seconds)
+2021-02-14 04:13:24	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 04:15:17	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 04:17:25	-->	endumiuz_ (~endumiuz@194.117.188.224) has joined #Solus
+2021-02-14 04:41:48	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 04:50:36	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-14 05:02:43	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-14 05:39:03	<--	algent| (~|algent|@93.159.199.87) has quit (Ping timeout: 240 seconds)
+2021-02-14 05:41:06	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 05:46:59	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-14 05:47:23	<--	shenchen_ (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 240 seconds)
+2021-02-14 05:49:42	-->	shenchen_ (~shenchen@58.210.60.122) has joined #Solus
+2021-02-14 05:51:11	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 05:53:35	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-14 05:57:17	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 05:57:18	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 05:57:18	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 06:01:51	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 06:02:11	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-14 06:02:16	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 265 seconds)
+2021-02-14 06:07:30	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 06:20:23	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 06:23:53	-->	waleee-cl (uid373333@gateway/web/irccloud.com/x-dyhadmcwlhfvhhof) has joined #Solus
+2021-02-14 06:25:55	<--	algent| (~|algent|@93.159.199.87) has quit (Ping timeout: 240 seconds)
+2021-02-14 06:46:10	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-14 06:51:59	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 06:51:59	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 06:51:59	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 06:56:24	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 265 seconds)
+2021-02-14 07:35:46	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus
+2021-02-14 07:39:38	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 07:39:38	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 07:39:38	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 07:57:12	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus
+2021-02-14 08:09:14	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has quit (Ping timeout: 240 seconds)
+2021-02-14 08:10:03	<--	shenchen_ (~shenchen@58.210.60.122) has quit (Ping timeout: 240 seconds)
+2021-02-14 08:12:05	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus
+2021-02-14 08:22:44	-->	catalin (~catalin@82.77.237.51) has joined #Solus
+2021-02-14 08:23:11	<--	catalin (~catalin@82.77.237.51) has quit (Client Quit)
+2021-02-14 08:45:10	-->	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has joined #Solus
+2021-02-14 08:56:18	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-14 08:57:35	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2021-02-14 08:57:49	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 09:03:13	-->	shenchen (~shenchen@117.80.69.65) has joined #Solus
+2021-02-14 09:11:36	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 09:18:27	-->	Plasma-Live (~Plasma-Li@2601:190:401:e1f0:8be4:9b27:f12e:14af) has joined #Solus
+2021-02-14 09:18:27	<--	Plasma-Live (~Plasma-Li@2601:190:401:e1f0:8be4:9b27:f12e:14af) has quit (Client Quit)
+2021-02-14 09:24:07	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 09:24:09	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-14 09:26:30	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 09:45:41	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 09:47:53	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 09:51:22	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-14 10:02:58	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 10:04:39	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 10:18:07	-->	Plasma-Live (~Plasma-Li@dynamic-adsl-78-14-114-127.clienti.tiscali.it) has joined #Solus
+2021-02-14 10:18:08	<--	Plasma-Live (~Plasma-Li@dynamic-adsl-78-14-114-127.clienti.tiscali.it) has quit (Client Quit)
+2021-02-14 10:25:45	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 10:28:05	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 10:30:32	<--	zyga (~zyga@unaffiliated/zyga) has quit (Client Quit)
+2021-02-14 10:38:35	-->	algent| (~|algent|@93.159.199.87) has joined #Solus
+2021-02-14 10:57:38	-->	Beanary (~Johny31@shellium/member/Johny31) has joined #Solus
+2021-02-14 11:03:45	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-14 11:27:48	-->	live_john (~live@191.7.188.188) has joined #Solus
+2021-02-14 11:28:06	<--	live_john (~live@191.7.188.188) has quit (Client Quit)
+2021-02-14 11:28:28	-->	live_john (~live@2804:146c:4c4:f000:980d:5138:51f4:10) has joined #Solus
+2021-02-14 11:30:06	live_john	Hello guys, is there anyone onlie ?
+2021-02-14 11:34:49	<--	live_john (~live@2804:146c:4c4:f000:980d:5138:51f4:10) has quit (Quit: Leaving)
+2021-02-14 11:38:20	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 11:39:03	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-14 11:39:50	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 12:16:07	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-14 12:17:03	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 12:19:24	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-14 12:22:07	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-14 12:23:04	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 12:43:14	-->	dark (~dark@net-93-149-144-221.cust.vodafonedsl.it) has joined #Solus
+2021-02-14 12:43:16	dark	hello
+2021-02-14 12:43:38	--	dark is now known as Guest37924
+2021-02-14 12:44:22	Guest37924	I'm wondering if I'm the only person with this kind of Budgie Desktop problem
+2021-02-14 12:44:41	Guest37924	Like, if I right click on the desktop I cannot create folders, open terminal and other stuff like this
+2021-02-14 12:44:52	Guest37924	I only open Settings
+2021-02-14 12:47:48	Guest37924	Anyone can help me?
+2021-02-14 12:48:40	algent|	Those options were removed with the update of Nautilus and implementing budgie-desktop-view
+2021-02-14 12:49:10	Guest37924	Oh, so now the desktop is only "usable" in his Folder?
+2021-02-14 12:50:03	algent|	This change is mention in blog post. https://getsol.us/2021/02/03/solus-4-2-released/
+2021-02-14 12:50:04	@NarwhalBot	[ Solus 4.2 Released | Solus ]
+2021-02-14 12:50:11	algent|	*mentioned
+2021-02-14 12:51:11	Guest37924	oh understood
+2021-02-14 12:51:13	Guest37924	thank you
+2021-02-14 12:51:43	<--	Guest37924 (~dark@net-93-149-144-221.cust.vodafonedsl.it) has quit (Quit: Leaving)
+2021-02-14 12:52:14	algent|	In desktop you can do basic stuff, not like before with old nautilus, because budgie-desktop-view is not intended to be a file manager.
+2021-02-14 12:53:37	algent|	check this reddit post too. https://www.reddit.com/r/SolusProject/comments/lhtf7f/desktop_icons_unable_to_be_movedremoved_can/
+2021-02-14 12:53:38	@NarwhalBot	[ Desktop Icons Unable to be Moved/Removed. Can somebody explain how? : SolusProject ][Score: 23, 91% upvotes]
+2021-02-14 13:12:19	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-14 13:14:26	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 13:14:38	-->	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has joined #Solus
+2021-02-14 13:48:10	-->	spindley (~mike@d204-191-184-152.abhsia.telus.net) has joined #Solus
+2021-02-14 14:00:00	<--	ur5us_ (~ur5us@2406:e002:68a2:da01:c4ce:478c:584:eb42) has quit (Ping timeout: 264 seconds)
+2021-02-14 14:15:31	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 14:21:26	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-14 14:22:22	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-14 14:41:05	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 15:00:42	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Remote host closed the connection)
+2021-02-14 15:01:06	-->	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has joined #Solus
+2021-02-14 15:02:14	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-14 15:07:38	<--	ultr4_l4s3r (~ultr4_l4s@cpe90-146-85-156.liwest.at) has quit (Quit: Goodbye, everyone! (Probably forgot to say that))
+2021-02-14 15:20:26	<--	helium1 (~helium1@91.108.35.128) has quit (Quit: Leaving)
+2021-02-14 15:25:41	<--	algent| (~|algent|@93.159.199.87) has quit (Remote host closed the connection)
+2021-02-14 15:33:34	<--	endumiuz_ (~endumiuz@194.117.188.224) has quit (Remote host closed the connection)
+2021-02-14 15:42:10	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-14 16:11:43	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 16:15:08	<--	Beanary (~Johny31@shellium/member/Johny31) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-02-14 16:18:42	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-02-14 16:25:43	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Remote host closed the connection)
+2021-02-14 16:26:00	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-14 16:27:28	<--	mossman93 (~quassel@unaffiliated/mossman93) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-02-14 16:27:45	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2021-02-14 16:28:01	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-14 16:28:11	-->	mossman93 (~quassel@unaffiliated/mossman93) has joined #Solus
+2021-02-14 16:39:43	-->	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has joined #Solus
+2021-02-14 16:47:37	<--	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has quit (Quit: WeeChat 2.8)
+2021-02-14 16:50:33	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 240 seconds)
+2021-02-14 17:22:01	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-14 17:22:01	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-14 17:22:01	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-14 17:38:45	<--	ermo (~ermo@foresight/developer/ermo) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-02-14 17:40:56	-->	ermo (~ermo@foresight/developer/ermo) has joined #Solus
+2021-02-14 17:40:56	--	Mode #solus [+o ermo] by ChanServ
+2021-02-14 18:02:37	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 18:02:54	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-14 18:12:17	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (Read error: Connection reset by peer)
+2021-02-14 18:12:55	-->	PipeItToDevNull (~PipeItToD@d-24-153-52-13.md.cpe.atlanticbb.net) has joined #Solus
+2021-02-14 18:13:19	--	PipeItToDevNull is now known as Guest58613
+2021-02-14 18:14:41	<--	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has quit (Remote host closed the connection)
+2021-02-14 18:18:54	-->	ccaballerob (~ccaballer@2806:264:5409:90b1::4) has joined #Solus
+2021-02-14 18:26:01	-->	marmalade (~marmalade@cpe-107-184-34-78.socal.res.rr.com) has joined #Solus
+2021-02-14 18:26:42	marmalade	Hey there, I have an old machine that has Solus installed on it, but when I try to update I get an error about "could not fetch destination file packages.solus-rpoject.com
+2021-02-14 18:26:56	marmalade	I remember that at some point something about the repo changed, but I can't find any info on it
+2021-02-14 18:27:12	marmalade	Is there a way to redirect the package manager to the correct url?
+2021-02-14 18:28:51	<--	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has quit (Ping timeout: 246 seconds)
+2021-02-14 18:31:47	@JoshStrobl	At this point it'd make more sense to do a re-install, but regardless you can check https://getsol.us/2018/09/11/package-repo-migration-now-available/
+2021-02-14 18:31:48	@NarwhalBot	[ Package Repo Migration Now Available | Solus ]
+2021-02-14 18:32:37	@JoshStrobl	You're gonna have more upgrades than what the ISO likely would be in terms of download size.
+2021-02-14 18:32:58	@JoshStrobl	Assuming it even works
+2021-02-14 18:35:06	marmalade	Tyty
+2021-02-14 18:51:50	--	JoshStrobl is now known as JoshStrobl|zzz
+2021-02-14 19:15:23	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 19:16:27	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-14 19:24:01	<--	ccaballerob (~ccaballer@2806:264:5409:90b1::4) has quit (Quit: Leaving)
+2021-02-14 19:25:46	--	Guest58613 is now known as PipeItToDevNull
+2021-02-14 19:25:49	<--	PipeItToDevNull (~PipeItToD@d-24-153-52-13.md.cpe.atlanticbb.net) has quit (Changing host)
+2021-02-14 19:25:49	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus
+2021-02-14 19:26:43	<--	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-02-14 19:26:59	-->	PipeItToDevNull (~PipeItToD@unaffiliated/pipeittodevnull) has joined #Solus
+2021-02-14 19:30:56	-->	Harvey (Harvey@gateway/vpn/privateinternetaccess/harveybirdman) has joined #Solus
+2021-02-14 19:44:27	-->	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-14 19:45:21	<--	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 265 seconds)
+2021-02-14 19:56:22	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-14 20:03:53	<--	tschan (~tschan@p54986c95.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2021-02-14 20:06:45	<--	chbmb (~CHBMB@unaffiliated/chbmb) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-02-14 20:08:55	-->	tschan (~tschan@p54986ec5.dip0.t-ipconnect.de) has joined #Solus
+2021-02-14 20:29:26	<--	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has quit (Quit: Leaving)
+2021-02-14 20:39:02	-->	chbmb (~CHBMB@unaffiliated/chbmb) has joined #Solus
+2021-02-14 20:51:32	-->	spindley_ (~mike@d204-191-184-152.abhsia.telus.net) has joined #Solus
+2021-02-14 20:54:25	<--	spindley_ (~mike@d204-191-184-152.abhsia.telus.net) has quit (Client Quit)
+2021-02-14 20:54:51	<--	spindley (~mike@d204-191-184-152.abhsia.telus.net) has quit (Quit: WeeChat 2.9)
+2021-02-14 20:59:23	-->	spindley (~mike@d204-191-184-152.abhsia.telus.net) has joined #Solus
+2021-02-14 21:14:10	<--	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has quit (Quit: Leaving)
+2021-02-14 21:16:38	<--	marmalade (~marmalade@cpe-107-184-34-78.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2021-02-14 21:24:43	-->	Scotty_Trees (~Scotty_Tr@162-234-179-169.lightspeed.brhmal.sbcglobal.net) has joined #Solus
+2021-02-14 21:36:22	-->	dan (~dan@cpe-74-139-184-211.kya.res.rr.com) has joined #Solus
+2021-02-14 21:37:35	<--	dan (~dan@cpe-74-139-184-211.kya.res.rr.com) has quit (Client Quit)
+2021-02-14 21:45:21	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus
+2021-02-14 21:47:38	<--	shenchen (~shenchen@117.80.69.65) has quit (Ping timeout: 246 seconds)
+2021-02-14 22:01:50	rdr	under ubuntu, I'd add a file to /etc/modprobe.d/ to disable ertm for bluetooth on boot, where would I do this for Solus?
+2021-02-14 22:03:02	rdr	oh i found it /usr/lib64/modeprobe.d/
+2021-02-14 22:10:32	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Ping timeout: 240 seconds)
+2021-02-14 22:12:15	<--	waleee-cl (uid373333@gateway/web/irccloud.com/x-dyhadmcwlhfvhhof) has quit (Quit: Connection closed for inactivity)
+2021-02-14 22:27:54	-->	shenchen_ (~shenchen@117.80.69.65) has joined #Solus
+2021-02-14 22:29:37	<--	shenchen_ (~shenchen@117.80.69.65) has quit (Remote host closed the connection)
+2021-02-14 22:55:46	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2021-02-14 22:56:31	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus
+2021-02-14 23:02:36	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-14 23:09:18	<--	EbonJaeger (~EbonJaege@2603-7080-3a42-df00-0000-0000-0000-0002.res6.spectrum.com) has quit (Quit: WeeChat 3.0.1)
+2021-02-14 23:44:27	-->	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has joined #Solus
+2021-02-14 23:56:56	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-15 00:11:37	<--	Flabb (~Flabb@89.169.84.221) has quit (Read error: Connection reset by peer)
+2021-02-15 00:12:13	-->	Flabb (~Flabb@89.169.84.221) has joined #Solus
+2021-02-15 00:18:41	--	maveonair` is now known as maveonair
+2021-02-15 00:21:15	<--	mramish (Thunderbir@gateway/vpn/privateinternetaccess/mramish) has quit (Quit: mramish)
+2021-02-15 00:37:02	<--	shenchen (~shenchen@mail.cogenda.com.cn) has quit (Ping timeout: 246 seconds)
+2021-02-15 00:39:29	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-15 00:44:52	-->	manokara_ (~manokara@200.187.163.103) has joined #Solus
+2021-02-15 00:45:35	<--	manokara (~manokara@189.112.56.169) has quit (Ping timeout: 256 seconds)
+2021-02-15 01:08:11	-->	shenchen (~shenchen@mail.cogenda.com.cn) has joined #Solus
+2021-02-15 01:21:25	-->	livingsilver94_ (~livingsil@host-188-13-7-4.business.telecomitalia.it) has joined #Solus
+2021-02-15 01:22:28	<--	livingsilver94 (~livingsil@host-188-13-7-4.business.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2021-02-15 01:27:31	<--	cowsay (~quassel@47.188.37.226) has quit (Ping timeout: 256 seconds)
+2021-02-15 01:54:38	-->	cowsay (~quassel@47.188.38.248) has joined #Solus
+2021-02-15 01:57:19	<--	zyga (~zyga@unaffiliated/zyga) has quit (Read error: Connection reset by peer)
+2021-02-15 01:57:45	-->	zyga-mbp (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-15 02:14:02	-->	Paphnutiy (~Solus@109.251.148.234) has joined #Solus
+2021-02-15 02:14:17	<--	cowsay (~quassel@47.188.38.248) has quit (Ping timeout: 264 seconds)
+2021-02-15 02:17:31	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Remote host closed the connection)
+2021-02-15 02:18:34	<--	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has quit (Remote host closed the connection)
+2021-02-15 02:18:52	-->	Future_Suture (~FutureSut@194-118-169-158.hdsl.highway.telekom.at) has joined #Solus
+2021-02-15 02:21:48	-->	Merkaba (~Merkaba@197.94.197.52) has joined #Solus
+2021-02-15 02:32:20	<--	Merkaba (~Merkaba@197.94.197.52) has quit (Quit: Merkaba)
+2021-02-15 02:40:50	-->	cowsay (~quassel@47.188.39.162) has joined #Solus
+2021-02-15 03:03:38	<--	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has quit (Quit: No Ping reply in 180 seconds.)
+2021-02-15 03:03:44	-->	eryvile (~quassel@2001:a62:14c6:e701:9a3a:2873:99be:cd67) has joined #Solus
+2021-02-15 03:20:31	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-15 03:20:31	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-15 03:20:31	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-15 03:25:05	-->	Doctor_Junglist (~Doctor_Ju@109.231.9.189) has joined #Solus
+2021-02-15 03:47:07	-->	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has joined #Solus
+2021-02-15 03:54:46	--	JoshStrobl|zzz is now known as JoshStrobl
+2021-02-15 04:34:51	<--	mramish (~Thunderbi@dslb-002-204-203-239.002.204.pools.vodafone-ip.de) has quit (Quit: mramish)
+2021-02-15 05:52:29	<--	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has quit (Ping timeout: 272 seconds)
+2021-02-15 05:53:02	-->	Eressea (~eressea@2a04:cec0:10c6:2fc6:94a8:2244:ef5:a72d) has joined #Solus
+2021-02-15 06:00:36	<--	Eressea (~eressea@2a04:cec0:10c6:2fc6:94a8:2244:ef5:a72d) has quit (Ping timeout: 272 seconds)
+2021-02-15 06:02:48	-->	Eressea (~eressea@31-32-250-252.abo.bbox.fr) has joined #Solus
+2021-02-15 06:14:40	-->	TraceyC (~TraceyC@c-73-206-210-195.hsd1.tx.comcast.net) has joined #Solus
+2021-02-15 06:26:46	<--	zyga-mbp (~zyga@unaffiliated/zyga) has quit (Quit: zyga-mbp)
+2021-02-15 06:41:25	-->	helium1 (~helium1@91.108.35.128) has joined #Solus
+2021-02-15 06:43:40	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 264 seconds)
+2021-02-15 06:46:52	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-15 06:48:26	<--	zyga (~zyga@unaffiliated/zyga) has quit (Client Quit)
+2021-02-15 06:52:56	-->	zyga (~zyga@unaffiliated/zyga) has joined #Solus
+2021-02-15 06:55:11	<--	zyga (~zyga@unaffiliated/zyga) has quit (Client Quit)
+2021-02-15 07:12:27	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-15 07:12:27	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-15 07:12:27	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus
+2021-02-15 07:37:02	-->	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has joined #Solus
+2021-02-15 07:38:34	<--	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has quit (Client Quit)
+2021-02-15 08:02:00	-->	kaktuspalme (~kaktuspal@149.20.150.83.dyn.dsl.as8758.net) has joined #Solus
+2021-02-15 08:16:49	-->	trens (~trens@cpe-184-54-194-110.swo.res.rr.com) has joined #Solus
+2021-02-15 08:18:20	<--	cowsay (~quassel@47.188.39.162) has quit (Ping timeout: 240 seconds)
+2021-02-15 08:41:34	<--	AlienTrooper (~Alien@unaffiliated/alientrooper) has quit (Ping timeout: 256 seconds)
+2021-02-15 08:57:23	<--	Paphnutiy (~Solus@109.251.148.234) has quit
+2021-02-15 09:09:14	-->	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has joined #Solus
+2021-02-15 09:09:15	<--	AlienTrooper (~Alien@81-224-101-181-no2201.tbcn.telia.com) has quit (Changing host)
+2021-02-15 09:09:15	-->	AlienTrooper (~Alien@unaffiliated/alientrooper) has joined #Solus

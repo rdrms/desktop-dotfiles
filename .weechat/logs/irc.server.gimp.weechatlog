@@ -1,0 +1,215 @@
+2021-12-11 12:12:14	--	irc: connecting to server home/8080 (SSL)...
+2021-12-11 12:12:14	--	gnutls: receiving 1 certificate
+2021-12-11 12:12:14	--	 - certificate[1] info:
+2021-12-11 12:12:14	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-11 12:12:14	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-11 12:12:14	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-11 12:12:14	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-11 12:12:14	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-11 12:12:14	--	Welcome to ZNC
+2021-12-11 12:13:19	--	irc2.acc.umu.se: *** Looking up your hostname...
+2021-12-11 12:13:19	--	irc2.acc.umu.se: *** Found your hostname
+2021-12-11 12:13:22	--	You are now known as rdr
+2021-12-11 12:13:22	--	Welcome to the GIMPNet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-11 12:13:22	--	Your host is irc2.acc.umu.se, running version UnrealIRCd-5.2.0.1
+2021-12-11 12:13:22	--	This server was created Tue Jun 22 2021 at 14:32:05 CEST
+2021-12-11 12:13:22	--	irc2.acc.umu.se UnrealIRCd-5.2.0.1 iowrsxzdHtIDZRqpWGTSB lvhopsmntikraqbeIHzMQNRTOVKDdGLPZSCcf
+2021-12-11 12:13:22	--	AWAYLEN=307 BOT=B CASEMAPPING=ascii CHANLIMIT=#:200 CHANMODES=beI,kLf,lH,psmntirzMQNRTOVKDdGPZSCc CHANNELLEN=32 CHANTYPES=# CHATHISTORY=50 CLIENTTAGDENY=*,-draft/typing,-typing,-draft/reply DEAF=d ELIST=MNUCT EXCEPTS :are supported by this server
+2021-12-11 12:13:22	--	EXTBAN=~,GptmTSOcarnqjf HCN INVEX KICKLEN=307 KNOCK MAP MAXCHANNELS=200 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 MINNICKLEN=0 MODES=12 NAMESX :are supported by this server
+2021-12-11 12:13:22	--	NETWORK=GIMPNet NICKLEN=30 PREFIX=(qaohv)~&@%+ QUITLEN=307 SAFELIST SILENCE=15 STATUSMSG=~&@%+ TARGMAX=DCCALLOW:,ISON:,JOIN:,KICK:4,KILL:,LIST:,NAMES:1,NOTICE:1,PART:,PRIVMSG:4,SAJOIN:,SAPART:,TAGMSG:1,USERHOST:,USERIP:,WATCH:,WHOIS:1,WHOWAS:1 TOPICLEN=360 UHNAMES USERIP WALLCHOPS :are supported by this server
+2021-12-11 12:13:22	--	WATCH=128 WATCHOPTS=A WHOX :are supported by this server
+2021-12-11 12:13:22	--	irc2.acc.umu.se: *** You are connected to irc2.acc.umu.se with TLSv1.3-TLS_CHACHA20_POLY1305_SHA256
+2021-12-11 12:13:22	--	There are 3 users and 5662 invisible on 5 servers
+2021-12-11 12:13:22	--	11 :operator(s) online
+2021-12-11 12:13:22	--	429 :channels formed
+2021-12-11 12:13:22	--	I have 2664 clients and 3 servers
+2021-12-11 12:13:22	--	2664 3040 :Current local users 2664, max 3040
+2021-12-11 12:13:22	--	5665 6381 :Current global users 5665, max 6381
+2021-12-11 12:13:22	--	- irc2.acc.umu.se Message of the Day -
+2021-12-11 12:13:22	--	- 25/6/2021 21:55
+2021-12-11 12:13:22	--	- Welcome to irc.acc.umu.se!
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	- ==( Server Information )==========================================
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-   This server is running at Academic Computer Club, Umeå University
+2021-12-11 12:13:22	--	-   http://www.acc.umu.se/
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-   Your local admins: stric, maswan, av
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-   This server is also part of the GIMPNet network, also
+2021-12-11 12:13:22	--	-   known as irc.gnome.org. As such you should respect the
+2021-12-11 12:13:22	--	-   GNOME's Code of Conduct while participating in discussions
+2021-12-11 12:13:22	--	-   on any of the GNOME-related channels:
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-     https://wiki.gnome.org/Foundation/CodeOfConduct
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-   A list of the most relevant GNOME channels and other general
+2021-12-11 12:13:22	--	-   information can be found at the following page:
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-     https://wiki.gnome.org/Community/GettingInTouch/IRC
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	-   The Network now supports nickname and channel registrations,
+2021-12-11 12:13:22	--	-   query NickServ, ChanServ (and issue the command 'help'), respectively.
+2021-12-11 12:13:22	--	-
+2021-12-11 12:13:22	--	End of /MOTD command.
+2021-12-11 12:13:22	--	User mode [+iwz] by rdr
+2021-12-11 12:13:24	--	[*] rdr (rdr@S0106905851c3eec9.mh.shawcable.net) Hs 0 (rdr)
+2021-12-11 12:13:24	--	[rdr] End of /WHO list.
+2021-12-11 12:13:48	--	Channel Users  Name
+2021-12-11 12:13:48	--	End of /LIST
+2021-12-11 14:17:06	--	irc: connecting to server home/8080 (SSL)...
+2021-12-11 14:17:07	--	gnutls: receiving 1 certificate
+2021-12-11 14:17:07	--	 - certificate[1] info:
+2021-12-11 14:17:07	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-11 14:17:07	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-11 14:17:07	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-11 14:17:07	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-11 14:17:07	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-11 14:17:07	--	Welcome to the GIMPNet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-11 14:17:07	--	Your host is irc2.acc.umu.se, running version UnrealIRCd-5.2.0.1
+2021-12-11 14:17:07	--	This server was created Tue Jun 22 2021 at 14:32:05 CEST
+2021-12-11 14:17:07	--	irc2.acc.umu.se UnrealIRCd-5.2.0.1 iowrsxzdHtIDZRqpWGTSB lvhopsmntikraqbeIHzMQNRTOVKDdGLPZSCcf
+2021-12-11 14:17:07	--	AWAYLEN=307 BOT=B CASEMAPPING=ascii CHANLIMIT=#:200 CHANMODES=beI,kLf,lH,psmntirzMQNRTOVKDdGPZSCc CHANNELLEN=32 CHANTYPES=# CHATHISTORY=50 CLIENTTAGDENY=*,-draft/typing,-typing,-draft/reply DEAF=d ELIST=MNUCT EXCEPTS :are supported by this server
+2021-12-11 14:17:07	--	EXTBAN=~,GptmTSOcarnqjf HCN INVEX KICKLEN=307 KNOCK MAP MAXCHANNELS=200 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 MINNICKLEN=0 MODES=12 NAMESX :are supported by this server
+2021-12-11 14:17:07	--	NETWORK=GIMPNet NICKLEN=30 PREFIX=(qaohv)~&@%+ QUITLEN=307 SAFELIST SILENCE=15 STATUSMSG=~&@%+ TARGMAX=DCCALLOW:,ISON:,JOIN:,KICK:4,KILL:,LIST:,NAMES:1,NOTICE:1,PART:,PRIVMSG:4,SAJOIN:,SAPART:,TAGMSG:1,USERHOST:,USERIP:,WATCH:,WHOIS:1,WHOWAS:1 TOPICLEN=360 UHNAMES USERIP WALLCHOPS :are supported by this server
+2021-12-11 14:17:07	--	WATCH=128 WATCHOPTS=A WHOX :are supported by this server
+2021-12-11 14:17:07	--	There are 3 users and 5662 invisible on 5 servers
+2021-12-11 14:17:07	--	11 :operator(s) online
+2021-12-11 14:17:07	--	429 :channels formed
+2021-12-11 14:17:07	--	I have 2664 clients and 3 servers
+2021-12-11 14:17:07	--	2664 3040 :Current local users 2664, max 3040
+2021-12-11 14:17:07	--	5665 6381 :Current global users 5665, max 6381
+2021-12-11 14:17:07	--	You are now known as rdr
+2021-12-11 14:17:07	--	- irc2.acc.umu.se Message of the Day -
+2021-12-11 14:17:07	--	- 25/6/2021 21:55
+2021-12-11 14:17:07	--	- Welcome to irc.acc.umu.se!
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	- ==( Server Information )==========================================
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-   This server is running at Academic Computer Club, Umeå University
+2021-12-11 14:17:07	--	-   http://www.acc.umu.se/
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-   Your local admins: stric, maswan, av
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-   This server is also part of the GIMPNet network, also
+2021-12-11 14:17:07	--	-   known as irc.gnome.org. As such you should respect the
+2021-12-11 14:17:07	--	-   GNOME's Code of Conduct while participating in discussions
+2021-12-11 14:17:07	--	-   on any of the GNOME-related channels:
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-     https://wiki.gnome.org/Foundation/CodeOfConduct
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-   A list of the most relevant GNOME channels and other general
+2021-12-11 14:17:07	--	-   information can be found at the following page:
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-     https://wiki.gnome.org/Community/GettingInTouch/IRC
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	-   The Network now supports nickname and channel registrations,
+2021-12-11 14:17:07	--	-   query NickServ, ChanServ (and issue the command 'help'), respectively.
+2021-12-11 14:17:07	--	-
+2021-12-11 14:17:07	--	End of /MOTD command.
+2021-12-11 14:17:07	--	User mode [+iwz] by rdr
+2021-12-11 14:20:13	--	irc: connecting to server home/8080 (SSL)...
+2021-12-11 14:20:14	--	gnutls: receiving 1 certificate
+2021-12-11 14:20:14	--	 - certificate[1] info:
+2021-12-11 14:20:14	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-11 14:20:14	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-11 14:20:14	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-11 14:20:14	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-11 14:20:14	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-11 14:20:14	--	Welcome to the GIMPNet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-11 14:20:14	--	Your host is irc2.acc.umu.se, running version UnrealIRCd-5.2.0.1
+2021-12-11 14:20:14	--	This server was created Tue Jun 22 2021 at 14:32:05 CEST
+2021-12-11 14:20:14	--	irc2.acc.umu.se UnrealIRCd-5.2.0.1 iowrsxzdHtIDZRqpWGTSB lvhopsmntikraqbeIHzMQNRTOVKDdGLPZSCcf
+2021-12-11 14:20:14	--	AWAYLEN=307 BOT=B CASEMAPPING=ascii CHANLIMIT=#:200 CHANMODES=beI,kLf,lH,psmntirzMQNRTOVKDdGPZSCc CHANNELLEN=32 CHANTYPES=# CHATHISTORY=50 CLIENTTAGDENY=*,-draft/typing,-typing,-draft/reply DEAF=d ELIST=MNUCT EXCEPTS :are supported by this server
+2021-12-11 14:20:14	--	EXTBAN=~,GptmTSOcarnqjf HCN INVEX KICKLEN=307 KNOCK MAP MAXCHANNELS=200 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 MINNICKLEN=0 MODES=12 NAMESX :are supported by this server
+2021-12-11 14:20:14	--	NETWORK=GIMPNet NICKLEN=30 PREFIX=(qaohv)~&@%+ QUITLEN=307 SAFELIST SILENCE=15 STATUSMSG=~&@%+ TARGMAX=DCCALLOW:,ISON:,JOIN:,KICK:4,KILL:,LIST:,NAMES:1,NOTICE:1,PART:,PRIVMSG:4,SAJOIN:,SAPART:,TAGMSG:1,USERHOST:,USERIP:,WATCH:,WHOIS:1,WHOWAS:1 TOPICLEN=360 UHNAMES USERIP WALLCHOPS :are supported by this server
+2021-12-11 14:20:14	--	WATCH=128 WATCHOPTS=A WHOX :are supported by this server
+2021-12-11 14:20:14	--	There are 3 users and 5662 invisible on 5 servers
+2021-12-11 14:20:14	--	11 :operator(s) online
+2021-12-11 14:20:14	--	429 :channels formed
+2021-12-11 14:20:14	--	I have 2664 clients and 3 servers
+2021-12-11 14:20:14	--	2664 3040 :Current local users 2664, max 3040
+2021-12-11 14:20:14	--	5665 6381 :Current global users 5665, max 6381
+2021-12-11 14:20:14	--	You are now known as rdr
+2021-12-11 14:20:14	--	- irc2.acc.umu.se Message of the Day -
+2021-12-11 14:20:14	--	- 25/6/2021 21:55
+2021-12-11 14:20:14	--	- Welcome to irc.acc.umu.se!
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	- ==( Server Information )==========================================
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-   This server is running at Academic Computer Club, Umeå University
+2021-12-11 14:20:14	--	-   http://www.acc.umu.se/
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-   Your local admins: stric, maswan, av
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-   This server is also part of the GIMPNet network, also
+2021-12-11 14:20:14	--	-   known as irc.gnome.org. As such you should respect the
+2021-12-11 14:20:14	--	-   GNOME's Code of Conduct while participating in discussions
+2021-12-11 14:20:14	--	-   on any of the GNOME-related channels:
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-     https://wiki.gnome.org/Foundation/CodeOfConduct
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-   A list of the most relevant GNOME channels and other general
+2021-12-11 14:20:14	--	-   information can be found at the following page:
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-     https://wiki.gnome.org/Community/GettingInTouch/IRC
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	-   The Network now supports nickname and channel registrations,
+2021-12-11 14:20:14	--	-   query NickServ, ChanServ (and issue the command 'help'), respectively.
+2021-12-11 14:20:14	--	-
+2021-12-11 14:20:14	--	End of /MOTD command.
+2021-12-11 14:20:14	--	User mode [+iwz] by rdr
+2021-12-11 14:20:14	--	You have been marked as being away
+2021-12-11 14:20:14	--	You are no longer marked as being away
+2021-12-11 15:31:49	--	irc: connecting to server home/8080 (SSL)...
+2021-12-11 15:31:49	--	gnutls: receiving 1 certificate
+2021-12-11 15:31:49	--	 - certificate[1] info:
+2021-12-11 15:31:49	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-11 15:31:49	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-11 15:31:49	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-11 15:31:49	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-11 15:31:49	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-11 15:31:49	--	Welcome to the GIMPNet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-11 15:31:49	--	Your host is irc2.acc.umu.se, running version UnrealIRCd-5.2.0.1
+2021-12-11 15:31:49	--	This server was created Tue Jun 22 2021 at 14:32:05 CEST
+2021-12-11 15:31:49	--	irc2.acc.umu.se UnrealIRCd-5.2.0.1 iowrsxzdHtIDZRqpWGTSB lvhopsmntikraqbeIHzMQNRTOVKDdGLPZSCcf
+2021-12-11 15:31:49	--	AWAYLEN=307 BOT=B CASEMAPPING=ascii CHANLIMIT=#:200 CHANMODES=beI,kLf,lH,psmntirzMQNRTOVKDdGPZSCc CHANNELLEN=32 CHANTYPES=# CHATHISTORY=50 CLIENTTAGDENY=*,-draft/typing,-typing,-draft/reply DEAF=d ELIST=MNUCT EXCEPTS :are supported by this server
+2021-12-11 15:31:49	--	EXTBAN=~,GptmTSOcarnqjf HCN INVEX KICKLEN=307 KNOCK MAP MAXCHANNELS=200 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 MINNICKLEN=0 MODES=12 NAMESX :are supported by this server
+2021-12-11 15:31:49	--	NETWORK=GIMPNet NICKLEN=30 PREFIX=(qaohv)~&@%+ QUITLEN=307 SAFELIST SILENCE=15 STATUSMSG=~&@%+ TARGMAX=DCCALLOW:,ISON:,JOIN:,KICK:4,KILL:,LIST:,NAMES:1,NOTICE:1,PART:,PRIVMSG:4,SAJOIN:,SAPART:,TAGMSG:1,USERHOST:,USERIP:,WATCH:,WHOIS:1,WHOWAS:1 TOPICLEN=360 UHNAMES USERIP WALLCHOPS :are supported by this server
+2021-12-11 15:31:49	--	WATCH=128 WATCHOPTS=A WHOX :are supported by this server
+2021-12-11 15:31:49	--	There are 3 users and 5662 invisible on 5 servers
+2021-12-11 15:31:49	--	11 :operator(s) online
+2021-12-11 15:31:50	--	429 :channels formed
+2021-12-11 15:31:50	--	I have 2664 clients and 3 servers
+2021-12-11 15:31:50	--	2664 3040 :Current local users 2664, max 3040
+2021-12-11 15:31:50	--	5665 6381 :Current global users 5665, max 6381
+2021-12-11 15:31:50	--	You are now known as rdr
+2021-12-11 15:31:50	--	- irc2.acc.umu.se Message of the Day -
+2021-12-11 15:31:50	--	- 25/6/2021 21:55
+2021-12-11 15:31:50	--	- Welcome to irc.acc.umu.se!
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	- ==( Server Information )==========================================
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-   This server is running at Academic Computer Club, Umeå University
+2021-12-11 15:31:50	--	-   http://www.acc.umu.se/
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-   Your local admins: stric, maswan, av
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-   This server is also part of the GIMPNet network, also
+2021-12-11 15:31:50	--	-   known as irc.gnome.org. As such you should respect the
+2021-12-11 15:31:50	--	-   GNOME's Code of Conduct while participating in discussions
+2021-12-11 15:31:50	--	-   on any of the GNOME-related channels:
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-     https://wiki.gnome.org/Foundation/CodeOfConduct
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-   A list of the most relevant GNOME channels and other general
+2021-12-11 15:31:50	--	-   information can be found at the following page:
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-     https://wiki.gnome.org/Community/GettingInTouch/IRC
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	-   The Network now supports nickname and channel registrations,
+2021-12-11 15:31:50	--	-   query NickServ, ChanServ (and issue the command 'help'), respectively.
+2021-12-11 15:31:50	--	-
+2021-12-11 15:31:50	--	End of /MOTD command.
+2021-12-11 15:31:50	--	User mode [+iwz] by rdr
+2021-12-11 15:36:56	--	irc: disconnected from server

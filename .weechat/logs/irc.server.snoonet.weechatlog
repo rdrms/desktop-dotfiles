@@ -1,0 +1,1705 @@
+2021-12-27 08:21:29	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 08:21:29	--	gnutls: receiving 1 certificate
+2021-12-27 08:21:29	--	 - certificate[1] info:
+2021-12-27 08:21:29	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 08:21:29	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 08:21:29	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 08:21:29	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 08:21:29	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 08:21:29	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 08:21:29	--	Your host is yosemite.snoonet.org, running version InspIRCd-3
+2021-12-27 08:21:29	--	This server was created 19:48:38 Sep 18 2021
+2021-12-27 08:21:29	--	yosemite.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 08:21:29	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 08:21:29	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 08:21:29	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 08:21:29	--	WHOX :are supported by this server
+2021-12-27 08:21:29	--	There are 4 users and 3357 invisible on 8 servers
+2021-12-27 08:21:29	--	22 :operator(s) online
+2021-12-27 08:21:29	--	5599 :channels formed
+2021-12-27 08:21:29	--	I have 860 clients and 1 servers
+2021-12-27 08:21:29	--	Current local users: 860  Max: 1263
+2021-12-27 08:21:29	--	Current global users: 3361  Max: 4034
+2021-12-27 08:21:29	--	You are now known as rdr
+2021-12-27 08:21:29	--	yosemite.snoonet.org message of the day
+2021-12-27 08:21:29	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 08:21:29	--	   _____                              _
+2021-12-27 08:21:29	--	  / ____|                            | |
+2021-12-27 08:21:29	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 08:21:29	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 08:21:29	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 08:21:29	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 08:21:29	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 08:21:29	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 08:21:29	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 08:21:29	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 08:21:29	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 08:21:29	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 08:21:29	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 08:21:30	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 08:21:30	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 08:21:30	--	 to the best of our ability. This may also include the use of
+2021-12-27 08:21:30	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 08:21:30	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 08:21:30	--	 all network channels to protect you and your users during times
+2021-12-27 08:21:30	--	 of network turmoil.
+2021-12-27 08:21:30	--	 Please join #help if you have questions about any of the above
+2021-12-27 08:21:30	--	 information.
+2021-12-27 08:21:30	--	 Network Administration may remove any problem user at any time
+2021-12-27 08:21:30	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 08:21:30	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 08:21:30	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 08:21:30	--	 media websites, or any thing that network administration sees as
+2021-12-27 08:21:30	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 08:21:30	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 08:21:30	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 08:21:30	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 08:21:30	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 08:21:30	--	 Act, or any other classified request for user information.
+2021-12-27 08:21:30	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 08:21:30	--	 MOTD Last Updated:
+2021-12-27 08:21:30	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 08:21:30	--	End of message of the day.
+2021-12-27 08:21:30	--	User mode [+Iirw] by rdr
+2021-12-27 08:21:30	--	You have been marked as being away
+2021-12-27 08:21:30	--	You are no longer marked as being away
+2021-12-27 08:58:49	--	User mode [-Iirw] by rdr
+2021-12-27 08:58:49	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-12-27 08:58:49	--	irc: disconnecting from server...
+2021-12-27 08:58:49	--	irc: disconnected from server
+2021-12-27 08:58:49	--	irc: reconnecting to server in 10 seconds
+2021-12-27 08:58:59	--	irc: reconnecting to server...
+2021-12-27 08:58:59	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 08:59:18	=!=	irc: connection refused
+2021-12-27 08:59:18	--	irc: reconnecting to server in 20 seconds
+2021-12-27 08:59:38	--	irc: reconnecting to server...
+2021-12-27 08:59:38	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 08:59:42	=!=	irc: connection refused
+2021-12-27 08:59:42	--	irc: reconnecting to server in 40 seconds
+2021-12-27 09:00:22	--	irc: reconnecting to server...
+2021-12-27 09:00:22	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:00:26	=!=	irc: connection refused
+2021-12-27 09:00:26	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-12-27 09:01:46	--	irc: reconnecting to server...
+2021-12-27 09:01:46	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:01:50	=!=	irc: connection refused
+2021-12-27 09:01:50	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2021-12-27 09:04:30	--	irc: reconnecting to server...
+2021-12-27 09:04:30	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:04:30	=!=	irc: connection refused
+2021-12-27 09:04:30	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2021-12-27 09:09:50	--	irc: reconnecting to server...
+2021-12-27 09:09:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:09:50	=!=	irc: connection refused
+2021-12-27 09:09:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 09:19:50	--	irc: reconnecting to server...
+2021-12-27 09:19:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:19:50	=!=	irc: connection refused
+2021-12-27 09:19:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 09:29:50	--	irc: reconnecting to server...
+2021-12-27 09:29:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:29:50	=!=	irc: connection refused
+2021-12-27 09:29:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 09:39:50	--	irc: reconnecting to server...
+2021-12-27 09:39:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:39:50	=!=	irc: connection refused
+2021-12-27 09:39:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 09:49:50	--	irc: reconnecting to server...
+2021-12-27 09:49:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:49:50	=!=	irc: connection refused
+2021-12-27 09:49:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 09:59:50	--	irc: reconnecting to server...
+2021-12-27 09:59:50	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 09:59:50	=!=	irc: connection refused
+2021-12-27 09:59:50	--	irc: reconnecting to server in 10 minutes
+2021-12-27 10:04:34	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:04:34	=!=	irc: connection refused
+2021-12-27 10:04:34	--	irc: reconnecting to server in 10 seconds
+2021-12-27 10:04:44	--	irc: reconnecting to server...
+2021-12-27 10:04:44	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:04:44	=!=	irc: connection refused
+2021-12-27 10:04:44	--	irc: reconnecting to server in 20 seconds
+2021-12-27 10:05:04	--	irc: reconnecting to server...
+2021-12-27 10:05:04	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:05:04	=!=	irc: connection refused
+2021-12-27 10:05:04	--	irc: reconnecting to server in 40 seconds
+2021-12-27 10:05:44	--	irc: reconnecting to server...
+2021-12-27 10:05:44	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:05:44	=!=	irc: connection refused
+2021-12-27 10:05:44	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-12-27 10:06:11	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:06:11	=!=	irc: connection refused
+2021-12-27 10:06:11	--	irc: reconnecting to server in 10 seconds
+2021-12-27 10:06:21	--	irc: reconnecting to server...
+2021-12-27 10:06:21	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:06:21	=!=	irc: connection refused
+2021-12-27 10:06:21	--	irc: reconnecting to server in 20 seconds
+2021-12-27 10:06:41	--	irc: reconnecting to server...
+2021-12-27 10:06:41	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:06:41	--	gnutls: receiving 1 certificate
+2021-12-27 10:06:41	--	 - certificate[1] info:
+2021-12-27 10:06:41	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 10:06:41	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 10:06:41	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 10:06:41	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 10:06:41	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 10:06:41	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 10:06:41	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 10:06:41	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 10:06:41	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 10:06:41	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 10:06:41	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 10:06:41	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 10:06:41	--	WHOX :are supported by this server
+2021-12-27 10:06:41	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 10:06:41	--	22 :operator(s) online
+2021-12-27 10:06:41	--	5604 :channels formed
+2021-12-27 10:06:41	--	I have 289 clients and 1 servers
+2021-12-27 10:06:41	--	Current local users: 289  Max: 597
+2021-12-27 10:06:41	--	Current global users: 3406  Max: 4337
+2021-12-27 10:06:41	--	You are now known as rdr
+2021-12-27 10:06:41	--	veronica.snoonet.org message of the day
+2021-12-27 10:06:41	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:06:41	--	   _____                              _
+2021-12-27 10:06:41	--	  / ____|                            | |
+2021-12-27 10:06:41	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 10:06:41	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 10:06:41	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 10:06:41	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 10:06:41	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 10:06:41	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 10:06:41	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 10:06:41	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 10:06:41	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 10:06:41	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 10:06:41	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 10:06:41	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 10:06:41	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 10:06:41	--	 to the best of our ability. This may also include the use of
+2021-12-27 10:06:41	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 10:06:41	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 10:06:41	--	 all network channels to protect you and your users during times
+2021-12-27 10:06:41	--	 of network turmoil.
+2021-12-27 10:06:41	--	 Please join #help if you have questions about any of the above
+2021-12-27 10:06:41	--	 information.
+2021-12-27 10:06:41	--	 Network Administration may remove any problem user at any time
+2021-12-27 10:06:41	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 10:06:41	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 10:06:41	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 10:06:41	--	 media websites, or any thing that network administration sees as
+2021-12-27 10:06:41	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 10:06:41	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 10:06:41	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 10:06:41	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 10:06:41	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 10:06:41	--	 Act, or any other classified request for user information.
+2021-12-27 10:06:41	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:06:41	--	 MOTD Last Updated:
+2021-12-27 10:06:41	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 10:06:41	--	End of message of the day.
+2021-12-27 10:06:41	--	User mode [+Iirw] by rdr
+2021-12-27 10:06:41	--	You have been marked as being away
+2021-12-27 10:06:41	--	irc.snoonet.org: [17:03:32] *** You are connected to irc.snoonet.org using TLS (SSL) cipher 'TLSv1.2-ECDHE-RSA-AES256-GCM-SHA384'
+2021-12-27 10:06:41	--	NickServ (NickServ@services): [17:03:32] This nickname is registered and protected.  If it is your
+2021-12-27 10:06:41	--	NickServ (NickServ@services): [17:03:32] nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2021-12-27 10:06:41	--	NickServ (NickServ@services): [17:03:32] please choose a different nick.
+2021-12-27 10:06:41	--	NickServ (NickServ@services): [17:03:39] Password accepted - you are now recognized.
+2021-12-27 10:06:41	--	HostServ (HostServ@services): [17:03:39] Your vhost of user/rdr is now activated.
+2021-12-27 10:06:41	--	You are no longer marked as being away
+2021-12-27 10:23:35	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:23:35	--	gnutls: receiving 1 certificate
+2021-12-27 10:23:35	--	 - certificate[1] info:
+2021-12-27 10:23:35	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 10:23:35	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 10:23:35	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 10:23:35	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 10:23:35	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 10:23:35	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 10:23:35	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 10:23:35	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 10:23:35	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 10:23:35	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 10:23:35	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 10:23:35	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 10:23:36	--	WHOX :are supported by this server
+2021-12-27 10:23:36	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 10:23:36	--	22 :operator(s) online
+2021-12-27 10:23:36	--	5604 :channels formed
+2021-12-27 10:23:36	--	I have 289 clients and 1 servers
+2021-12-27 10:23:36	--	Current local users: 289  Max: 597
+2021-12-27 10:23:36	--	Current global users: 3406  Max: 4337
+2021-12-27 10:23:36	--	You are now known as rdr
+2021-12-27 10:23:36	--	veronica.snoonet.org message of the day
+2021-12-27 10:23:36	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:23:36	--	   _____                              _
+2021-12-27 10:23:36	--	  / ____|                            | |
+2021-12-27 10:23:36	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 10:23:36	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 10:23:36	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 10:23:36	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 10:23:36	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 10:23:36	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 10:23:36	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 10:23:36	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 10:23:36	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 10:23:36	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 10:23:36	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 10:23:36	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 10:23:36	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 10:23:36	--	 to the best of our ability. This may also include the use of
+2021-12-27 10:23:36	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 10:23:36	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 10:23:36	--	 all network channels to protect you and your users during times
+2021-12-27 10:23:36	--	 of network turmoil.
+2021-12-27 10:23:36	--	 Please join #help if you have questions about any of the above
+2021-12-27 10:23:36	--	 information.
+2021-12-27 10:23:36	--	 Network Administration may remove any problem user at any time
+2021-12-27 10:23:36	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 10:23:36	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 10:23:36	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 10:23:36	--	 media websites, or any thing that network administration sees as
+2021-12-27 10:23:36	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 10:23:36	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 10:23:36	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 10:23:36	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 10:23:36	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 10:23:36	--	 Act, or any other classified request for user information.
+2021-12-27 10:23:36	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:23:36	--	 MOTD Last Updated:
+2021-12-27 10:23:36	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 10:23:36	--	End of message of the day.
+2021-12-27 10:23:36	--	User mode [+Iirw] by rdr
+2021-12-27 10:23:36	--	You have been marked as being away
+2021-12-27 10:23:36	--	You are no longer marked as being away
+2021-12-27 10:33:56	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 10:33:56	--	gnutls: receiving 1 certificate
+2021-12-27 10:33:56	--	 - certificate[1] info:
+2021-12-27 10:33:56	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 10:33:56	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 10:33:56	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 10:33:56	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 10:33:56	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 10:33:56	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 10:33:56	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 10:33:56	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 10:33:56	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 10:33:56	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 10:33:56	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 10:33:56	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 10:33:56	--	WHOX :are supported by this server
+2021-12-27 10:33:56	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 10:33:56	--	22 :operator(s) online
+2021-12-27 10:33:56	--	5604 :channels formed
+2021-12-27 10:33:56	--	I have 289 clients and 1 servers
+2021-12-27 10:33:56	--	Current local users: 289  Max: 597
+2021-12-27 10:33:56	--	Current global users: 3406  Max: 4337
+2021-12-27 10:33:56	--	You are now known as rdr
+2021-12-27 10:33:56	--	veronica.snoonet.org message of the day
+2021-12-27 10:33:56	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:33:56	--	   _____                              _
+2021-12-27 10:33:56	--	  / ____|                            | |
+2021-12-27 10:33:56	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 10:33:56	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 10:33:56	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 10:33:56	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 10:33:56	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 10:33:56	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 10:33:56	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 10:33:56	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 10:33:56	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 10:33:56	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 10:33:56	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 10:33:56	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 10:33:56	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 10:33:56	--	 to the best of our ability. This may also include the use of
+2021-12-27 10:33:56	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 10:33:56	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 10:33:56	--	 all network channels to protect you and your users during times
+2021-12-27 10:33:56	--	 of network turmoil.
+2021-12-27 10:33:56	--	 Please join #help if you have questions about any of the above
+2021-12-27 10:33:56	--	 information.
+2021-12-27 10:33:56	--	 Network Administration may remove any problem user at any time
+2021-12-27 10:33:56	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 10:33:56	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 10:33:56	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 10:33:56	--	 media websites, or any thing that network administration sees as
+2021-12-27 10:33:56	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 10:33:56	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 10:33:56	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 10:33:56	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 10:33:56	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 10:33:56	--	 Act, or any other classified request for user information.
+2021-12-27 10:33:56	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 10:33:56	--	 MOTD Last Updated:
+2021-12-27 10:33:56	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 10:33:56	--	End of message of the day.
+2021-12-27 10:33:56	--	User mode [+Iirw] by rdr
+2021-12-27 10:33:56	--	You have been marked as being away
+2021-12-27 10:33:56	--	You are no longer marked as being away
+2021-12-27 15:20:01	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 15:20:02	--	gnutls: receiving 1 certificate
+2021-12-27 15:20:02	--	 - certificate[1] info:
+2021-12-27 15:20:02	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 15:20:02	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 15:20:02	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 15:20:02	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 15:20:02	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 15:20:02	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 15:20:02	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 15:20:02	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 15:20:02	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 15:20:02	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 15:20:02	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 15:20:02	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 15:20:02	--	WHOX :are supported by this server
+2021-12-27 15:20:02	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 15:20:02	--	22 :operator(s) online
+2021-12-27 15:20:02	--	5604 :channels formed
+2021-12-27 15:20:02	--	I have 289 clients and 1 servers
+2021-12-27 15:20:02	--	Current local users: 289  Max: 597
+2021-12-27 15:20:02	--	Current global users: 3406  Max: 4337
+2021-12-27 15:20:02	--	You are now known as rdr
+2021-12-27 15:20:02	--	veronica.snoonet.org message of the day
+2021-12-27 15:20:02	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 15:20:02	--	   _____                              _
+2021-12-27 15:20:02	--	  / ____|                            | |
+2021-12-27 15:20:02	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 15:20:02	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 15:20:02	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 15:20:02	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 15:20:02	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 15:20:02	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 15:20:02	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 15:20:02	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 15:20:02	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 15:20:02	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 15:20:02	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 15:20:02	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 15:20:02	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 15:20:02	--	 to the best of our ability. This may also include the use of
+2021-12-27 15:20:02	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 15:20:02	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 15:20:02	--	 all network channels to protect you and your users during times
+2021-12-27 15:20:02	--	 of network turmoil.
+2021-12-27 15:20:02	--	 Please join #help if you have questions about any of the above
+2021-12-27 15:20:02	--	 information.
+2021-12-27 15:20:02	--	 Network Administration may remove any problem user at any time
+2021-12-27 15:20:02	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 15:20:02	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 15:20:02	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 15:20:02	--	 media websites, or any thing that network administration sees as
+2021-12-27 15:20:02	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 15:20:02	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 15:20:02	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 15:20:02	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 15:20:02	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 15:20:02	--	 Act, or any other classified request for user information.
+2021-12-27 15:20:02	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 15:20:02	--	 MOTD Last Updated:
+2021-12-27 15:20:02	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 15:20:02	--	End of message of the day.
+2021-12-27 15:20:02	--	User mode [+Iirw] by rdr
+2021-12-27 15:20:02	--	You have been marked as being away
+2021-12-27 15:20:02	--	You are no longer marked as being away
+2021-12-27 15:46:49	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 15:46:49	--	gnutls: receiving 1 certificate
+2021-12-27 15:46:49	--	 - certificate[1] info:
+2021-12-27 15:46:49	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 15:46:49	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 15:46:49	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 15:46:49	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 15:46:49	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 15:46:49	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 15:46:49	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 15:46:49	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 15:46:49	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 15:46:49	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 15:46:49	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 15:46:49	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 15:46:49	--	WHOX :are supported by this server
+2021-12-27 15:46:49	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 15:46:49	--	22 :operator(s) online
+2021-12-27 15:46:50	--	5604 :channels formed
+2021-12-27 15:46:50	--	I have 289 clients and 1 servers
+2021-12-27 15:46:50	--	Current local users: 289  Max: 597
+2021-12-27 15:46:50	--	Current global users: 3406  Max: 4337
+2021-12-27 15:46:50	--	You are now known as rdr
+2021-12-27 15:46:50	--	veronica.snoonet.org message of the day
+2021-12-27 15:46:50	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 15:46:50	--	   _____                              _
+2021-12-27 15:46:50	--	  / ____|                            | |
+2021-12-27 15:46:50	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 15:46:50	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 15:46:50	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 15:46:50	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 15:46:50	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 15:46:50	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 15:46:50	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 15:46:50	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 15:46:50	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 15:46:50	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 15:46:50	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 15:46:50	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 15:46:50	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 15:46:50	--	 to the best of our ability. This may also include the use of
+2021-12-27 15:46:50	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 15:46:50	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 15:46:50	--	 all network channels to protect you and your users during times
+2021-12-27 15:46:50	--	 of network turmoil.
+2021-12-27 15:46:50	--	 Please join #help if you have questions about any of the above
+2021-12-27 15:46:50	--	 information.
+2021-12-27 15:46:50	--	 Network Administration may remove any problem user at any time
+2021-12-27 15:46:50	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 15:46:50	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 15:46:50	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 15:46:50	--	 media websites, or any thing that network administration sees as
+2021-12-27 15:46:50	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 15:46:50	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 15:46:50	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 15:46:50	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 15:46:50	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 15:46:50	--	 Act, or any other classified request for user information.
+2021-12-27 15:46:50	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 15:46:50	--	 MOTD Last Updated:
+2021-12-27 15:46:50	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 15:46:50	--	End of message of the day.
+2021-12-27 15:46:50	--	User mode [+Iirw] by rdr
+2021-12-27 15:46:50	--	You have been marked as being away
+2021-12-27 15:46:50	--	You are no longer marked as being away
+2021-12-27 16:16:14	=!=	irc: this buffer is not a channel!
+2021-12-27 16:23:27	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 16:23:27	--	gnutls: receiving 1 certificate
+2021-12-27 16:23:27	--	 - certificate[1] info:
+2021-12-27 16:23:27	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 16:23:27	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 16:23:27	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 16:23:27	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 16:23:27	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 16:23:27	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 16:23:27	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 16:23:27	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 16:23:27	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 16:23:27	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 16:23:27	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 16:23:27	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 16:23:27	--	WHOX :are supported by this server
+2021-12-27 16:23:27	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 16:23:27	--	22 :operator(s) online
+2021-12-27 16:23:27	--	5604 :channels formed
+2021-12-27 16:23:27	--	I have 289 clients and 1 servers
+2021-12-27 16:23:27	--	Current local users: 289  Max: 597
+2021-12-27 16:23:27	--	Current global users: 3406  Max: 4337
+2021-12-27 16:23:27	--	You are now known as rdr
+2021-12-27 16:23:27	--	veronica.snoonet.org message of the day
+2021-12-27 16:23:27	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 16:23:27	--	   _____                              _
+2021-12-27 16:23:27	--	  / ____|                            | |
+2021-12-27 16:23:27	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 16:23:27	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 16:23:27	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 16:23:27	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 16:23:27	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 16:23:27	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 16:23:27	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 16:23:27	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 16:23:27	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 16:23:27	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 16:23:27	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 16:23:27	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 16:23:27	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 16:23:27	--	 to the best of our ability. This may also include the use of
+2021-12-27 16:23:27	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 16:23:27	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 16:23:27	--	 all network channels to protect you and your users during times
+2021-12-27 16:23:27	--	 of network turmoil.
+2021-12-27 16:23:27	--	 Please join #help if you have questions about any of the above
+2021-12-27 16:23:27	--	 information.
+2021-12-27 16:23:27	--	 Network Administration may remove any problem user at any time
+2021-12-27 16:23:27	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 16:23:27	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 16:23:27	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 16:23:27	--	 media websites, or any thing that network administration sees as
+2021-12-27 16:23:27	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 16:23:27	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 16:23:27	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 16:23:27	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 16:23:27	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 16:23:27	--	 Act, or any other classified request for user information.
+2021-12-27 16:23:27	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 16:23:27	--	 MOTD Last Updated:
+2021-12-27 16:23:27	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 16:23:27	--	End of message of the day.
+2021-12-27 16:23:27	--	User mode [+Iirw] by rdr
+2021-12-27 17:46:24	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 17:46:24	--	gnutls: receiving 1 certificate
+2021-12-27 17:46:24	--	 - certificate[1] info:
+2021-12-27 17:46:24	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 17:46:24	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 17:46:24	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 17:46:24	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 17:46:24	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 17:46:24	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 17:46:24	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 17:46:24	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 17:46:24	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 17:46:24	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 17:46:24	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 17:46:24	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 17:46:24	--	WHOX :are supported by this server
+2021-12-27 17:46:24	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 17:46:24	--	22 :operator(s) online
+2021-12-27 17:46:24	--	5604 :channels formed
+2021-12-27 17:46:24	--	I have 289 clients and 1 servers
+2021-12-27 17:46:24	--	Current local users: 289  Max: 597
+2021-12-27 17:46:24	--	Current global users: 3406  Max: 4337
+2021-12-27 17:46:24	--	You are now known as rdr
+2021-12-27 17:46:24	--	veronica.snoonet.org message of the day
+2021-12-27 17:46:24	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 17:46:24	--	   _____                              _
+2021-12-27 17:46:24	--	  / ____|                            | |
+2021-12-27 17:46:24	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 17:46:24	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 17:46:24	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 17:46:24	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 17:46:24	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 17:46:24	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 17:46:24	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 17:46:24	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 17:46:24	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 17:46:24	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 17:46:24	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 17:46:24	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 17:46:24	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 17:46:24	--	 to the best of our ability. This may also include the use of
+2021-12-27 17:46:24	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 17:46:24	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 17:46:24	--	 all network channels to protect you and your users during times
+2021-12-27 17:46:24	--	 of network turmoil.
+2021-12-27 17:46:24	--	 Please join #help if you have questions about any of the above
+2021-12-27 17:46:24	--	 information.
+2021-12-27 17:46:24	--	 Network Administration may remove any problem user at any time
+2021-12-27 17:46:24	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 17:46:24	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 17:46:24	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 17:46:24	--	 media websites, or any thing that network administration sees as
+2021-12-27 17:46:24	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 17:46:24	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 17:46:24	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 17:46:24	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 17:46:24	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 17:46:24	--	 Act, or any other classified request for user information.
+2021-12-27 17:46:24	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 17:46:24	--	 MOTD Last Updated:
+2021-12-27 17:46:24	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 17:46:24	--	End of message of the day.
+2021-12-27 17:46:24	--	User mode [+Iirw] by rdr
+2021-12-27 17:46:47	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 17:46:47	--	gnutls: receiving 1 certificate
+2021-12-27 17:46:47	--	 - certificate[1] info:
+2021-12-27 17:46:47	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 17:46:47	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 17:46:47	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 17:46:47	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 17:46:47	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 17:46:47	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 17:46:47	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 17:46:47	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 17:46:47	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 17:46:47	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 17:46:47	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 17:46:47	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 17:46:47	--	WHOX :are supported by this server
+2021-12-27 17:46:47	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 17:46:47	--	22 :operator(s) online
+2021-12-27 17:46:47	--	5604 :channels formed
+2021-12-27 17:46:47	--	I have 289 clients and 1 servers
+2021-12-27 17:46:47	--	Current local users: 289  Max: 597
+2021-12-27 17:46:47	--	Current global users: 3406  Max: 4337
+2021-12-27 17:46:47	--	You are now known as rdr
+2021-12-27 17:46:47	--	veronica.snoonet.org message of the day
+2021-12-27 17:46:47	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 17:46:47	--	   _____                              _
+2021-12-27 17:46:47	--	  / ____|                            | |
+2021-12-27 17:46:47	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 17:46:47	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 17:46:47	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 17:46:47	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 17:46:47	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 17:46:47	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 17:46:47	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 17:46:47	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 17:46:47	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 17:46:47	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 17:46:47	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 17:46:47	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 17:46:47	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 17:46:47	--	 to the best of our ability. This may also include the use of
+2021-12-27 17:46:47	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 17:46:47	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 17:46:47	--	 all network channels to protect you and your users during times
+2021-12-27 17:46:47	--	 of network turmoil.
+2021-12-27 17:46:47	--	 Please join #help if you have questions about any of the above
+2021-12-27 17:46:47	--	 information.
+2021-12-27 17:46:47	--	 Network Administration may remove any problem user at any time
+2021-12-27 17:46:47	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 17:46:47	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 17:46:47	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 17:46:47	--	 media websites, or any thing that network administration sees as
+2021-12-27 17:46:47	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 17:46:47	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 17:46:47	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 17:46:47	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 17:46:47	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 17:46:47	--	 Act, or any other classified request for user information.
+2021-12-27 17:46:47	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 17:46:47	--	 MOTD Last Updated:
+2021-12-27 17:46:47	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 17:46:47	--	End of message of the day.
+2021-12-27 17:46:47	--	User mode [+Iirw] by rdr
+2021-12-27 18:49:36	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 18:49:36	--	gnutls: receiving 1 certificate
+2021-12-27 18:49:36	--	 - certificate[1] info:
+2021-12-27 18:49:36	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 18:49:36	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 18:49:36	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 18:49:36	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 18:49:36	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 18:49:36	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 18:49:36	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 18:49:36	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 18:49:36	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 18:49:36	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 18:49:36	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 18:49:36	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 18:49:36	--	WHOX :are supported by this server
+2021-12-27 18:49:36	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 18:49:36	--	22 :operator(s) online
+2021-12-27 18:49:36	--	5604 :channels formed
+2021-12-27 18:49:36	--	I have 289 clients and 1 servers
+2021-12-27 18:49:36	--	Current local users: 289  Max: 597
+2021-12-27 18:49:36	--	Current global users: 3406  Max: 4337
+2021-12-27 18:49:36	--	You are now known as rdr
+2021-12-27 18:49:36	--	veronica.snoonet.org message of the day
+2021-12-27 18:49:36	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 18:49:36	--	   _____                              _
+2021-12-27 18:49:36	--	  / ____|                            | |
+2021-12-27 18:49:36	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 18:49:36	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 18:49:36	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 18:49:36	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 18:49:36	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 18:49:36	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 18:49:36	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 18:49:36	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 18:49:36	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 18:49:36	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 18:49:36	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 18:49:36	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 18:49:36	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 18:49:36	--	 to the best of our ability. This may also include the use of
+2021-12-27 18:49:36	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 18:49:36	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 18:49:36	--	 all network channels to protect you and your users during times
+2021-12-27 18:49:36	--	 of network turmoil.
+2021-12-27 18:49:36	--	 Please join #help if you have questions about any of the above
+2021-12-27 18:49:36	--	 information.
+2021-12-27 18:49:36	--	 Network Administration may remove any problem user at any time
+2021-12-27 18:49:36	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 18:49:36	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 18:49:36	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 18:49:36	--	 media websites, or any thing that network administration sees as
+2021-12-27 18:49:36	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 18:49:36	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 18:49:36	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 18:49:36	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 18:49:36	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 18:49:36	--	 Act, or any other classified request for user information.
+2021-12-27 18:49:36	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 18:49:36	--	 MOTD Last Updated:
+2021-12-27 18:49:36	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 18:49:36	--	End of message of the day.
+2021-12-27 18:49:36	--	User mode [+Iirw] by rdr
+2021-12-27 18:49:36	--	You have been marked as being away
+2021-12-27 18:49:36	--	You are no longer marked as being away
+2021-12-27 19:02:33	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 19:02:33	--	gnutls: receiving 1 certificate
+2021-12-27 19:02:33	--	 - certificate[1] info:
+2021-12-27 19:02:33	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 19:02:33	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 19:02:33	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 19:02:33	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 19:02:33	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 19:02:33	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 19:02:33	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 19:02:33	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 19:02:33	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 19:02:33	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 19:02:33	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 19:02:33	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 19:02:33	--	WHOX :are supported by this server
+2021-12-27 19:02:33	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 19:02:33	--	22 :operator(s) online
+2021-12-27 19:02:33	--	5604 :channels formed
+2021-12-27 19:02:33	--	I have 289 clients and 1 servers
+2021-12-27 19:02:33	--	Current local users: 289  Max: 597
+2021-12-27 19:02:33	--	Current global users: 3406  Max: 4337
+2021-12-27 19:02:33	--	You are now known as rdr
+2021-12-27 19:02:33	--	veronica.snoonet.org message of the day
+2021-12-27 19:02:33	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 19:02:33	--	   _____                              _
+2021-12-27 19:02:33	--	  / ____|                            | |
+2021-12-27 19:02:33	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 19:02:33	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 19:02:33	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 19:02:33	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 19:02:33	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 19:02:33	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 19:02:33	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 19:02:33	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 19:02:33	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 19:02:33	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 19:02:33	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 19:02:33	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 19:02:33	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 19:02:33	--	 to the best of our ability. This may also include the use of
+2021-12-27 19:02:33	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 19:02:33	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 19:02:33	--	 all network channels to protect you and your users during times
+2021-12-27 19:02:33	--	 of network turmoil.
+2021-12-27 19:02:33	--	 Please join #help if you have questions about any of the above
+2021-12-27 19:02:33	--	 information.
+2021-12-27 19:02:33	--	 Network Administration may remove any problem user at any time
+2021-12-27 19:02:33	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 19:02:33	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 19:02:33	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 19:02:33	--	 media websites, or any thing that network administration sees as
+2021-12-27 19:02:33	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 19:02:33	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 19:02:33	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 19:02:33	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 19:02:33	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 19:02:33	--	 Act, or any other classified request for user information.
+2021-12-27 19:02:33	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 19:02:33	--	 MOTD Last Updated:
+2021-12-27 19:02:33	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 19:02:33	--	End of message of the day.
+2021-12-27 19:02:33	--	User mode [+Iirw] by rdr
+2021-12-27 19:02:33	--	You have been marked as being away
+2021-12-27 19:02:33	--	You are no longer marked as being away
+2021-12-27 19:58:04	--	irc: connecting to server home/8080 (SSL)...
+2021-12-27 19:58:04	--	gnutls: receiving 1 certificate
+2021-12-27 19:58:04	--	 - certificate[1] info:
+2021-12-27 19:58:04	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-27 19:58:04	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-27 19:58:04	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-27 19:58:04	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-27 19:58:04	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-27 19:58:04	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-27 19:58:04	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-27 19:58:04	--	This server was created 13:22:15 Jul 11 2021
+2021-12-27 19:58:04	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-27 19:58:04	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-27 19:58:04	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-27 19:58:04	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-27 19:58:04	--	WHOX :are supported by this server
+2021-12-27 19:58:04	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-27 19:58:04	--	22 :operator(s) online
+2021-12-27 19:58:04	--	5604 :channels formed
+2021-12-27 19:58:04	--	I have 289 clients and 1 servers
+2021-12-27 19:58:04	--	Current local users: 289  Max: 597
+2021-12-27 19:58:04	--	Current global users: 3406  Max: 4337
+2021-12-27 19:58:04	--	You are now known as rdr
+2021-12-27 19:58:04	--	veronica.snoonet.org message of the day
+2021-12-27 19:58:04	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 19:58:04	--	   _____                              _
+2021-12-27 19:58:04	--	  / ____|                            | |
+2021-12-27 19:58:04	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-27 19:58:04	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-27 19:58:04	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-27 19:58:04	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-27 19:58:04	--	 Welcome to the Snoonet Chat Network.
+2021-12-27 19:58:04	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-27 19:58:04	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-27 19:58:04	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-27 19:58:04	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-27 19:58:04	--	 from scammers, spammers and the propagation of viruses.
+2021-12-27 19:58:04	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-27 19:58:04	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-27 19:58:04	--	 many network wide rules but the ones we do have we enforce
+2021-12-27 19:58:04	--	 to the best of our ability. This may also include the use of
+2021-12-27 19:58:04	--	 automated oper utilities and/or standalone network bots that may
+2021-12-27 19:58:04	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-27 19:58:04	--	 all network channels to protect you and your users during times
+2021-12-27 19:58:04	--	 of network turmoil.
+2021-12-27 19:58:04	--	 Please join #help if you have questions about any of the above
+2021-12-27 19:58:04	--	 information.
+2021-12-27 19:58:04	--	 Network Administration may remove any problem user at any time
+2021-12-27 19:58:04	--	 for the betterment of all users. This includes, but is not limited
+2021-12-27 19:58:04	--	 to, trolling, attempting to receive or spread users personal
+2021-12-27 19:58:04	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-27 19:58:04	--	 media websites, or any thing that network administration sees as
+2021-12-27 19:58:04	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-27 19:58:04	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-27 19:58:04	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-27 19:58:04	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-27 19:58:04	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-27 19:58:04	--	 Act, or any other classified request for user information.
+2021-12-27 19:58:04	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-27 19:58:04	--	 MOTD Last Updated:
+2021-12-27 19:58:04	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-27 19:58:04	--	End of message of the day.
+2021-12-27 19:58:04	--	User mode [+Iirw] by rdr
+2021-12-27 19:58:04	--	You have been marked as being away
+2021-12-27 19:58:04	--	You are no longer marked as being away
+2021-12-28 12:02:23	--	irc: connecting to server home/8080 (SSL)...
+2021-12-28 12:02:23	--	gnutls: receiving 1 certificate
+2021-12-28 12:02:23	--	 - certificate[1] info:
+2021-12-28 12:02:23	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-28 12:02:23	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-28 12:02:23	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-28 12:02:23	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-28 12:02:23	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-28 12:02:23	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-28 12:02:23	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-28 12:02:23	--	This server was created 13:22:15 Jul 11 2021
+2021-12-28 12:02:23	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-28 12:02:23	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-28 12:02:23	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-28 12:02:23	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-28 12:02:23	--	WHOX :are supported by this server
+2021-12-28 12:02:23	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-28 12:02:23	--	22 :operator(s) online
+2021-12-28 12:02:23	--	5604 :channels formed
+2021-12-28 12:02:23	--	I have 289 clients and 1 servers
+2021-12-28 12:02:23	--	Current local users: 289  Max: 597
+2021-12-28 12:02:23	--	Current global users: 3406  Max: 4337
+2021-12-28 12:02:23	--	You are now known as rdr
+2021-12-28 12:02:23	--	veronica.snoonet.org message of the day
+2021-12-28 12:02:23	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 12:02:23	--	   _____                              _
+2021-12-28 12:02:23	--	  / ____|                            | |
+2021-12-28 12:02:23	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-28 12:02:23	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-28 12:02:23	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-28 12:02:24	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-28 12:02:24	--	 Welcome to the Snoonet Chat Network.
+2021-12-28 12:02:24	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-28 12:02:24	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-28 12:02:24	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-28 12:02:24	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-28 12:02:24	--	 from scammers, spammers and the propagation of viruses.
+2021-12-28 12:02:24	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-28 12:02:24	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-28 12:02:24	--	 many network wide rules but the ones we do have we enforce
+2021-12-28 12:02:24	--	 to the best of our ability. This may also include the use of
+2021-12-28 12:02:24	--	 automated oper utilities and/or standalone network bots that may
+2021-12-28 12:02:24	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-28 12:02:24	--	 all network channels to protect you and your users during times
+2021-12-28 12:02:24	--	 of network turmoil.
+2021-12-28 12:02:24	--	 Please join #help if you have questions about any of the above
+2021-12-28 12:02:24	--	 information.
+2021-12-28 12:02:24	--	 Network Administration may remove any problem user at any time
+2021-12-28 12:02:24	--	 for the betterment of all users. This includes, but is not limited
+2021-12-28 12:02:24	--	 to, trolling, attempting to receive or spread users personal
+2021-12-28 12:02:24	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-28 12:02:24	--	 media websites, or any thing that network administration sees as
+2021-12-28 12:02:24	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-28 12:02:24	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-28 12:02:24	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-28 12:02:24	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-28 12:02:24	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-28 12:02:24	--	 Act, or any other classified request for user information.
+2021-12-28 12:02:24	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 12:02:24	--	 MOTD Last Updated:
+2021-12-28 12:02:24	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-28 12:02:24	--	End of message of the day.
+2021-12-28 12:02:24	--	User mode [+Iirw] by rdr
+2021-12-28 12:02:24	--	You have been marked as being away
+2021-12-28 12:02:24	--	You are no longer marked as being away
+2021-12-28 15:20:46	=!=	irc: reading data on socket: error -54 Error in the pull function.
+2021-12-28 15:20:46	--	irc: disconnecting from server...
+2021-12-28 15:20:46	--	irc: disconnected from server
+2021-12-28 15:20:46	--	irc: reconnecting to server in 10 seconds
+2021-12-28 15:20:56	--	irc: reconnecting to server...
+2021-12-28 15:20:56	--	irc: connecting to server home/8080 (SSL)...
+2021-12-28 15:20:56	--	gnutls: receiving 1 certificate
+2021-12-28 15:20:56	--	 - certificate[1] info:
+2021-12-28 15:20:56	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-28 15:20:56	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-28 15:20:56	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-28 15:20:56	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-28 15:20:56	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-28 15:20:56	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-28 15:20:56	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-28 15:20:56	--	This server was created 13:22:15 Jul 11 2021
+2021-12-28 15:20:56	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-28 15:20:56	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-28 15:20:56	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-28 15:20:56	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-28 15:20:56	--	WHOX :are supported by this server
+2021-12-28 15:20:56	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-28 15:20:56	--	22 :operator(s) online
+2021-12-28 15:20:56	--	5604 :channels formed
+2021-12-28 15:20:56	--	I have 289 clients and 1 servers
+2021-12-28 15:20:56	--	Current local users: 289  Max: 597
+2021-12-28 15:20:56	--	Current global users: 3406  Max: 4337
+2021-12-28 15:20:56	--	veronica.snoonet.org message of the day
+2021-12-28 15:20:56	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 15:20:56	--	   _____                              _
+2021-12-28 15:20:56	--	  / ____|                            | |
+2021-12-28 15:20:56	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-28 15:20:56	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-28 15:20:56	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-28 15:20:56	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-28 15:20:56	--	 Welcome to the Snoonet Chat Network.
+2021-12-28 15:20:56	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-28 15:20:56	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-28 15:20:56	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-28 15:20:56	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-28 15:20:56	--	 from scammers, spammers and the propagation of viruses.
+2021-12-28 15:20:56	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-28 15:20:56	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-28 15:20:56	--	 many network wide rules but the ones we do have we enforce
+2021-12-28 15:20:56	--	 to the best of our ability. This may also include the use of
+2021-12-28 15:20:56	--	 automated oper utilities and/or standalone network bots that may
+2021-12-28 15:20:56	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-28 15:20:56	--	 all network channels to protect you and your users during times
+2021-12-28 15:20:56	--	 of network turmoil.
+2021-12-28 15:20:56	--	 Please join #help if you have questions about any of the above
+2021-12-28 15:20:56	--	 information.
+2021-12-28 15:20:56	--	 Network Administration may remove any problem user at any time
+2021-12-28 15:20:56	--	 for the betterment of all users. This includes, but is not limited
+2021-12-28 15:20:56	--	 to, trolling, attempting to receive or spread users personal
+2021-12-28 15:20:56	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-28 15:20:56	--	 media websites, or any thing that network administration sees as
+2021-12-28 15:20:56	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-28 15:20:56	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-28 15:20:56	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-28 15:20:56	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-28 15:20:56	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-28 15:20:56	--	 Act, or any other classified request for user information.
+2021-12-28 15:20:56	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 15:20:56	--	 MOTD Last Updated:
+2021-12-28 15:20:56	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-28 15:20:56	--	End of message of the day.
+2021-12-28 15:20:56	--	User mode [+Iirw] by rdr
+2021-12-28 15:20:56	--	You have been marked as being away
+2021-12-28 15:20:56	--	You are no longer marked as being away
+2021-12-28 18:26:01	--	irc: connecting to server home/8080 (SSL)...
+2021-12-28 18:26:01	--	gnutls: receiving 1 certificate
+2021-12-28 18:26:01	--	 - certificate[1] info:
+2021-12-28 18:26:01	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-28 18:26:01	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-28 18:26:01	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-28 18:26:01	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-28 18:26:01	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-28 18:26:01	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-28 18:26:01	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-28 18:26:01	--	This server was created 13:22:15 Jul 11 2021
+2021-12-28 18:26:01	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-28 18:26:01	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-28 18:26:01	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-28 18:26:01	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-28 18:26:01	--	WHOX :are supported by this server
+2021-12-28 18:26:01	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-28 18:26:01	--	22 :operator(s) online
+2021-12-28 18:26:01	--	5604 :channels formed
+2021-12-28 18:26:01	--	I have 289 clients and 1 servers
+2021-12-28 18:26:01	--	Current local users: 289  Max: 597
+2021-12-28 18:26:01	--	Current global users: 3406  Max: 4337
+2021-12-28 18:26:01	--	You are now known as rdr
+2021-12-28 18:26:01	--	veronica.snoonet.org message of the day
+2021-12-28 18:26:01	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 18:26:01	--	   _____                              _
+2021-12-28 18:26:01	--	  / ____|                            | |
+2021-12-28 18:26:01	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-28 18:26:01	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-28 18:26:01	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-28 18:26:01	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-28 18:26:01	--	 Welcome to the Snoonet Chat Network.
+2021-12-28 18:26:01	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-28 18:26:01	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-28 18:26:01	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-28 18:26:01	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-28 18:26:01	--	 from scammers, spammers and the propagation of viruses.
+2021-12-28 18:26:01	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-28 18:26:01	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-28 18:26:01	--	 many network wide rules but the ones we do have we enforce
+2021-12-28 18:26:01	--	 to the best of our ability. This may also include the use of
+2021-12-28 18:26:01	--	 automated oper utilities and/or standalone network bots that may
+2021-12-28 18:26:01	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-28 18:26:01	--	 all network channels to protect you and your users during times
+2021-12-28 18:26:01	--	 of network turmoil.
+2021-12-28 18:26:01	--	 Please join #help if you have questions about any of the above
+2021-12-28 18:26:01	--	 information.
+2021-12-28 18:26:01	--	 Network Administration may remove any problem user at any time
+2021-12-28 18:26:01	--	 for the betterment of all users. This includes, but is not limited
+2021-12-28 18:26:01	--	 to, trolling, attempting to receive or spread users personal
+2021-12-28 18:26:01	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-28 18:26:01	--	 media websites, or any thing that network administration sees as
+2021-12-28 18:26:01	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-28 18:26:01	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-28 18:26:01	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-28 18:26:01	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-28 18:26:01	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-28 18:26:01	--	 Act, or any other classified request for user information.
+2021-12-28 18:26:01	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 18:26:01	--	 MOTD Last Updated:
+2021-12-28 18:26:01	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-28 18:26:01	--	End of message of the day.
+2021-12-28 18:26:01	--	User mode [+Iirw] by rdr
+2021-12-28 18:26:01	--	You have been marked as being away
+2021-12-28 18:26:01	--	You are no longer marked as being away
+2021-12-28 18:46:06	--	irc: connecting to server home/8080 (SSL)...
+2021-12-28 18:46:07	--	gnutls: receiving 1 certificate
+2021-12-28 18:46:07	--	 - certificate[1] info:
+2021-12-28 18:46:07	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-28 18:46:07	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-28 18:46:07	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-28 18:46:07	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-28 18:46:07	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-28 18:46:07	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-28 18:46:07	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-28 18:46:07	--	This server was created 13:22:15 Jul 11 2021
+2021-12-28 18:46:07	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz :FHIJLWXYZbdefghjklovwx
+2021-12-28 18:46:07	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx :are supported by this server
+2021-12-28 18:46:07	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet :are supported by this server
+2021-12-28 18:46:07	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 :are supported by this server
+2021-12-28 18:46:07	--	WHOX :are supported by this server
+2021-12-28 18:46:07	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-28 18:46:07	--	22 :operator(s) online
+2021-12-28 18:46:07	--	5604 :channels formed
+2021-12-28 18:46:07	--	I have 289 clients and 1 servers
+2021-12-28 18:46:07	--	Current local users: 289  Max: 597
+2021-12-28 18:46:07	--	Current global users: 3406  Max: 4337
+2021-12-28 18:46:07	--	You are now known as rdr
+2021-12-28 18:46:07	--	veronica.snoonet.org message of the day
+2021-12-28 18:46:07	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 18:46:07	--	   _____                              _
+2021-12-28 18:46:07	--	  / ____|                            | |
+2021-12-28 18:46:07	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-28 18:46:07	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-28 18:46:07	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-28 18:46:07	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-28 18:46:07	--	 Welcome to the Snoonet Chat Network.
+2021-12-28 18:46:07	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-28 18:46:07	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-28 18:46:07	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-28 18:46:07	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-28 18:46:07	--	 from scammers, spammers and the propagation of viruses.
+2021-12-28 18:46:07	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-28 18:46:07	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-28 18:46:07	--	 many network wide rules but the ones we do have we enforce
+2021-12-28 18:46:07	--	 to the best of our ability. This may also include the use of
+2021-12-28 18:46:07	--	 automated oper utilities and/or standalone network bots that may
+2021-12-28 18:46:07	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-28 18:46:07	--	 all network channels to protect you and your users during times
+2021-12-28 18:46:07	--	 of network turmoil.
+2021-12-28 18:46:07	--	 Please join #help if you have questions about any of the above
+2021-12-28 18:46:07	--	 information.
+2021-12-28 18:46:07	--	 Network Administration may remove any problem user at any time
+2021-12-28 18:46:07	--	 for the betterment of all users. This includes, but is not limited
+2021-12-28 18:46:07	--	 to, trolling, attempting to receive or spread users personal
+2021-12-28 18:46:07	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-28 18:46:07	--	 media websites, or any thing that network administration sees as
+2021-12-28 18:46:07	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-28 18:46:07	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-28 18:46:07	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-28 18:46:07	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-28 18:46:07	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-28 18:46:07	--	 Act, or any other classified request for user information.
+2021-12-28 18:46:07	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-28 18:46:07	--	 MOTD Last Updated:
+2021-12-28 18:46:07	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-28 18:46:07	--	End of message of the day.
+2021-12-28 18:46:07	--	User mode [+Iirw] by rdr
+2021-12-30 08:27:23	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 08:27:24	--	gnutls: receiving 1 certificate
+2021-12-30 08:27:24	--	 - certificate[1] info:
+2021-12-30 08:27:24	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 08:27:24	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 08:27:24	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 08:27:24	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 08:27:24	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 08:27:24	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 08:27:24	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 08:27:24	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 08:27:24	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 08:27:24	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 08:27:24	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 08:27:24	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 08:27:24	--	WHOX are supported by this server
+2021-12-30 08:27:24	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-30 08:27:24	--	22 operator(s) online
+2021-12-30 08:27:24	--	5604 channels formed
+2021-12-30 08:27:24	--	I have 289 clients and 1 servers
+2021-12-30 08:27:24	--	Current local users: 289  Max: 597
+2021-12-30 08:27:24	--	Current global users: 3406  Max: 4337
+2021-12-30 08:27:24	--	You are now known as rdr
+2021-12-30 08:27:24	--	veronica.snoonet.org message of the day
+2021-12-30 08:27:24	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:27:24	--	   _____                              _
+2021-12-30 08:27:24	--	  / ____|                            | |
+2021-12-30 08:27:24	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 08:27:24	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 08:27:24	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 08:27:24	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 08:27:24	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 08:27:24	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 08:27:24	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 08:27:24	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 08:27:24	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 08:27:24	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 08:27:24	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 08:27:24	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 08:27:24	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 08:27:24	--	 to the best of our ability. This may also include the use of
+2021-12-30 08:27:24	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 08:27:24	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 08:27:24	--	 all network channels to protect you and your users during times
+2021-12-30 08:27:24	--	 of network turmoil.
+2021-12-30 08:27:24	--	 Please join #help if you have questions about any of the above
+2021-12-30 08:27:24	--	 information.
+2021-12-30 08:27:24	--	 Network Administration may remove any problem user at any time
+2021-12-30 08:27:24	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 08:27:24	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 08:27:24	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 08:27:24	--	 media websites, or any thing that network administration sees as
+2021-12-30 08:27:24	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 08:27:24	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 08:27:24	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 08:27:24	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 08:27:24	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 08:27:24	--	 Act, or any other classified request for user information.
+2021-12-30 08:27:24	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:27:24	--	 MOTD Last Updated:
+2021-12-30 08:27:24	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 08:27:24	--	End of message of the day.
+2021-12-30 08:27:24	--	User mode [+Iirw] by rdr
+2021-12-30 08:27:24	--	You have been marked as being away
+2021-12-30 08:27:24	--	You are no longer marked as being away
+2021-12-30 08:29:10	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 08:29:11	--	gnutls: receiving 1 certificate
+2021-12-30 08:29:11	--	 - certificate[1] info:
+2021-12-30 08:29:11	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 08:29:11	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 08:29:11	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 08:29:11	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 08:29:11	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 08:29:11	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 08:29:11	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 08:29:11	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 08:29:11	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 08:29:11	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 08:29:11	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 08:29:11	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 08:29:11	--	WHOX are supported by this server
+2021-12-30 08:29:11	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-30 08:29:11	--	22 operator(s) online
+2021-12-30 08:29:11	--	5604 channels formed
+2021-12-30 08:29:11	--	I have 289 clients and 1 servers
+2021-12-30 08:29:11	--	Current local users: 289  Max: 597
+2021-12-30 08:29:11	--	Current global users: 3406  Max: 4337
+2021-12-30 08:29:11	--	You are now known as rdr
+2021-12-30 08:29:11	--	veronica.snoonet.org message of the day
+2021-12-30 08:29:11	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:29:11	--	   _____                              _
+2021-12-30 08:29:11	--	  / ____|                            | |
+2021-12-30 08:29:11	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 08:29:11	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 08:29:11	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 08:29:11	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 08:29:11	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 08:29:11	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 08:29:11	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 08:29:11	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 08:29:11	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 08:29:11	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 08:29:11	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 08:29:11	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 08:29:11	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 08:29:11	--	 to the best of our ability. This may also include the use of
+2021-12-30 08:29:11	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 08:29:11	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 08:29:11	--	 all network channels to protect you and your users during times
+2021-12-30 08:29:11	--	 of network turmoil.
+2021-12-30 08:29:11	--	 Please join #help if you have questions about any of the above
+2021-12-30 08:29:11	--	 information.
+2021-12-30 08:29:11	--	 Network Administration may remove any problem user at any time
+2021-12-30 08:29:11	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 08:29:11	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 08:29:11	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 08:29:11	--	 media websites, or any thing that network administration sees as
+2021-12-30 08:29:11	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 08:29:11	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 08:29:11	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 08:29:11	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 08:29:11	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 08:29:11	--	 Act, or any other classified request for user information.
+2021-12-30 08:29:11	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:29:11	--	 MOTD Last Updated:
+2021-12-30 08:29:11	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 08:29:11	--	End of message of the day.
+2021-12-30 08:29:11	--	User mode [+Iirw] by rdr
+2021-12-30 08:50:52	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 08:50:52	--	gnutls: receiving 1 certificate
+2021-12-30 08:50:52	--	 - certificate[1] info:
+2021-12-30 08:50:52	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 08:50:52	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 08:50:52	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 08:50:52	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 08:50:52	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 08:50:52	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 08:50:52	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 08:50:52	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 08:50:52	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 08:50:52	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 08:50:52	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 08:50:52	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 08:50:52	--	WHOX are supported by this server
+2021-12-30 08:50:52	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-30 08:50:52	--	22 operator(s) online
+2021-12-30 08:50:52	--	5604 channels formed
+2021-12-30 08:50:52	--	I have 289 clients and 1 servers
+2021-12-30 08:50:52	--	Current local users: 289  Max: 597
+2021-12-30 08:50:52	--	Current global users: 3406  Max: 4337
+2021-12-30 08:50:52	--	You are now known as rdr
+2021-12-30 08:50:52	--	veronica.snoonet.org message of the day
+2021-12-30 08:50:52	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:50:52	--	   _____                              _
+2021-12-30 08:50:52	--	  / ____|                            | |
+2021-12-30 08:50:52	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 08:50:52	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 08:50:52	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 08:50:52	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 08:50:52	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 08:50:52	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 08:50:52	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 08:50:52	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 08:50:52	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 08:50:52	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 08:50:52	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 08:50:52	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 08:50:52	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 08:50:52	--	 to the best of our ability. This may also include the use of
+2021-12-30 08:50:52	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 08:50:52	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 08:50:52	--	 all network channels to protect you and your users during times
+2021-12-30 08:50:52	--	 of network turmoil.
+2021-12-30 08:50:52	--	 Please join #help if you have questions about any of the above
+2021-12-30 08:50:52	--	 information.
+2021-12-30 08:50:52	--	 Network Administration may remove any problem user at any time
+2021-12-30 08:50:52	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 08:50:52	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 08:50:52	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 08:50:52	--	 media websites, or any thing that network administration sees as
+2021-12-30 08:50:52	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 08:50:52	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 08:50:52	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 08:50:52	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 08:50:52	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 08:50:52	--	 Act, or any other classified request for user information.
+2021-12-30 08:50:52	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:50:52	--	 MOTD Last Updated:
+2021-12-30 08:50:52	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 08:50:52	--	End of message of the day.
+2021-12-30 08:50:52	--	User mode [+Iirw] by rdr
+2021-12-30 08:50:52	--	You have been marked as being away
+2021-12-30 08:50:52	--	You are no longer marked as being away
+2021-12-30 08:52:03	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 08:52:03	--	gnutls: receiving 1 certificate
+2021-12-30 08:52:03	--	 - certificate[1] info:
+2021-12-30 08:52:03	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 08:52:03	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 08:52:03	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 08:52:03	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 08:52:03	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 08:52:03	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 08:52:03	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 08:52:03	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 08:52:03	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 08:52:03	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 08:52:03	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 08:52:03	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 08:52:03	--	WHOX are supported by this server
+2021-12-30 08:52:03	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-30 08:52:03	--	22 operator(s) online
+2021-12-30 08:52:03	--	5604 channels formed
+2021-12-30 08:52:03	--	I have 289 clients and 1 servers
+2021-12-30 08:52:03	--	Current local users: 289  Max: 597
+2021-12-30 08:52:03	--	Current global users: 3406  Max: 4337
+2021-12-30 08:52:03	--	You are now known as rdr
+2021-12-30 08:52:03	--	veronica.snoonet.org message of the day
+2021-12-30 08:52:03	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:52:03	--	   _____                              _
+2021-12-30 08:52:03	--	  / ____|                            | |
+2021-12-30 08:52:03	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 08:52:03	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 08:52:03	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 08:52:03	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 08:52:03	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 08:52:03	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 08:52:03	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 08:52:03	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 08:52:03	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 08:52:03	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 08:52:03	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 08:52:03	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 08:52:03	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 08:52:03	--	 to the best of our ability. This may also include the use of
+2021-12-30 08:52:03	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 08:52:03	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 08:52:03	--	 all network channels to protect you and your users during times
+2021-12-30 08:52:03	--	 of network turmoil.
+2021-12-30 08:52:03	--	 Please join #help if you have questions about any of the above
+2021-12-30 08:52:03	--	 information.
+2021-12-30 08:52:03	--	 Network Administration may remove any problem user at any time
+2021-12-30 08:52:03	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 08:52:03	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 08:52:03	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 08:52:03	--	 media websites, or any thing that network administration sees as
+2021-12-30 08:52:03	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 08:52:03	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 08:52:03	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 08:52:03	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 08:52:03	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 08:52:03	--	 Act, or any other classified request for user information.
+2021-12-30 08:52:03	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 08:52:03	--	 MOTD Last Updated:
+2021-12-30 08:52:03	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 08:52:03	--	End of message of the day.
+2021-12-30 08:52:03	--	User mode [+Iirw] by rdr
+2021-12-30 13:30:47	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 13:30:47	--	gnutls: receiving 1 certificate
+2021-12-30 13:30:47	--	 - certificate[1] info:
+2021-12-30 13:30:47	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 13:30:47	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 13:30:47	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 13:30:47	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 13:30:47	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 13:30:47	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 13:30:47	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 13:30:47	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 13:30:47	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 13:30:47	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 13:30:47	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 13:30:47	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 13:30:47	--	WHOX are supported by this server
+2021-12-30 13:30:47	--	There are 5 users and 3401 invisible on 8 servers
+2021-12-30 13:30:47	--	22 operator(s) online
+2021-12-30 13:30:47	--	5604 channels formed
+2021-12-30 13:30:47	--	I have 289 clients and 1 servers
+2021-12-30 13:30:47	--	Current local users: 289  Max: 597
+2021-12-30 13:30:47	--	Current global users: 3406  Max: 4337
+2021-12-30 13:30:47	--	You are now known as rdr
+2021-12-30 13:30:47	--	veronica.snoonet.org message of the day
+2021-12-30 13:30:47	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 13:30:47	--	   _____                              _
+2021-12-30 13:30:47	--	  / ____|                            | |
+2021-12-30 13:30:47	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 13:30:47	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 13:30:47	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 13:30:47	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 13:30:47	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 13:30:47	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 13:30:47	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 13:30:47	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 13:30:47	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 13:30:47	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 13:30:47	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 13:30:47	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 13:30:47	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 13:30:47	--	 to the best of our ability. This may also include the use of
+2021-12-30 13:30:47	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 13:30:47	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 13:30:47	--	 all network channels to protect you and your users during times
+2021-12-30 13:30:47	--	 of network turmoil.
+2021-12-30 13:30:47	--	 Please join #help if you have questions about any of the above
+2021-12-30 13:30:47	--	 information.
+2021-12-30 13:30:47	--	 Network Administration may remove any problem user at any time
+2021-12-30 13:30:47	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 13:30:47	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 13:30:47	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 13:30:47	--	 media websites, or any thing that network administration sees as
+2021-12-30 13:30:47	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 13:30:47	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 13:30:47	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 13:30:47	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 13:30:47	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 13:30:47	--	 Act, or any other classified request for user information.
+2021-12-30 13:30:47	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 13:30:47	--	 MOTD Last Updated:
+2021-12-30 13:30:47	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 13:30:47	--	End of message of the day.
+2021-12-30 13:30:47	--	User mode [+Iirw] by rdr
+2021-12-30 13:30:47	--	You have been marked as being away
+2021-12-30 13:30:47	--	Wallops from Phase (phase@snoonet/manager/phase): [19:15:48] Hey, Snoonet! Join us in #snoonet-newyears as we get ready for 2022. We'll be partying throughout New Year's Eve until the last clocks tick 2022.
+2021-12-30 13:30:47	--	You are no longer marked as being away
+2021-12-30 17:59:48	--	irc.snoonet.org: *** Looking up your hostname...
+2021-12-30 17:59:48	--	irc.snoonet.org: *** Found your hostname (S0106905851c3eec9.mh.shawcable.net)
+2021-12-30 17:59:48	--	* PING You have not registered.
+2021-12-30 17:59:53	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 17:59:53	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 17:59:53	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 17:59:53	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 17:59:53	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 17:59:53	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 17:59:53	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 17:59:53	--	WHOX are supported by this server
+2021-12-30 17:59:53	--	There are 5 users and 3431 invisible on 8 servers
+2021-12-30 17:59:53	--	22 operator(s) online
+2021-12-30 17:59:53	--	2 unknown connections
+2021-12-30 17:59:53	--	5604 channels formed
+2021-12-30 17:59:53	--	I have 289 clients and 1 servers
+2021-12-30 17:59:53	--	Current local users: 289  Max: 597
+2021-12-30 17:59:53	--	Current global users: 3436  Max: 4337
+2021-12-30 17:59:53	--	veronica.snoonet.org message of the day
+2021-12-30 17:59:53	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 17:59:53	--	   _____                              _
+2021-12-30 17:59:53	--	  / ____|                            | |
+2021-12-30 17:59:53	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 17:59:53	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 17:59:53	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 17:59:53	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 17:59:53	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 17:59:53	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 17:59:53	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 17:59:53	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 17:59:53	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 17:59:53	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 17:59:53	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 17:59:53	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 17:59:53	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 17:59:53	--	 to the best of our ability. This may also include the use of
+2021-12-30 17:59:53	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 17:59:53	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 17:59:53	--	 all network channels to protect you and your users during times
+2021-12-30 17:59:53	--	 of network turmoil.
+2021-12-30 17:59:53	--	 Please join #help if you have questions about any of the above
+2021-12-30 17:59:53	--	 information.
+2021-12-30 17:59:53	--	 Network Administration may remove any problem user at any time
+2021-12-30 17:59:53	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 17:59:53	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 17:59:53	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 17:59:53	--	 media websites, or any thing that network administration sees as
+2021-12-30 17:59:53	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 17:59:53	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 17:59:53	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 17:59:53	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 17:59:53	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 17:59:53	--	 Act, or any other classified request for user information.
+2021-12-30 17:59:53	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 17:59:53	--	 MOTD Last Updated:
+2021-12-30 17:59:53	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 17:59:53	--	End of message of the day.
+2021-12-30 17:59:53	--	Snoonet-rvs.kde.qnmt8p.IP is now your displayed host
+2021-12-30 17:59:53	--	User mode [+Iwxi] by rdr
+2021-12-30 17:59:53	--	irc.snoonet.org: *** You are connected to irc.snoonet.org using TLS (SSL) cipher 'TLSv1.2-ECDHE-RSA-AES256-GCM-SHA384'
+2021-12-30 17:59:53	--	NickServ (NickServ@services): This nickname is registered and protected.  If it is your
+2021-12-30 17:59:53	--	NickServ (NickServ@services): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2021-12-30 17:59:53	--	NickServ (NickServ@services): please choose a different nick.
+2021-12-30 17:59:54	--	[*] rdr (rdr@Snoonet-rvs.kde.qnmt8p.IP) Hs 0 (rdr)
+2021-12-30 17:59:54	--	[rdr] End of /WHO list.
+2021-12-30 18:05:52	--	irc.snoonet.org: *** Looking up your hostname...
+2021-12-30 18:05:52	--	irc.snoonet.org: *** Found your hostname (S0106905851c3eec9.mh.shawcable.net)
+2021-12-30 18:05:56	--	PING You have not registered.
+2021-12-30 18:06:03	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 18:06:03	--	Your host is yosemite.snoonet.org, running version InspIRCd-3
+2021-12-30 18:06:03	--	This server was created 19:48:38 Sep 18 2021
+2021-12-30 18:06:03	--	yosemite.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 18:06:03	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 18:06:03	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 18:06:03	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 18:06:03	--	WHOX are supported by this server
+2021-12-30 18:06:03	--	There are 5 users and 3426 invisible on 8 servers
+2021-12-30 18:06:03	--	22 operator(s) online
+2021-12-30 18:06:03	--	1 unknown connections
+2021-12-30 18:06:03	--	5603 channels formed
+2021-12-30 18:06:03	--	I have 889 clients and 1 servers
+2021-12-30 18:06:03	--	Current local users: 889  Max: 1263
+2021-12-30 18:06:03	--	Current global users: 3431  Max: 4034
+2021-12-30 18:06:03	--	yosemite.snoonet.org message of the day
+2021-12-30 18:06:03	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:06:03	--	   _____                              _
+2021-12-30 18:06:03	--	  / ____|                            | |
+2021-12-30 18:06:03	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 18:06:03	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 18:06:03	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 18:06:03	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 18:06:03	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 18:06:03	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 18:06:03	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 18:06:03	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 18:06:03	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 18:06:03	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 18:06:03	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 18:06:03	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 18:06:03	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 18:06:03	--	 to the best of our ability. This may also include the use of
+2021-12-30 18:06:03	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 18:06:03	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 18:06:03	--	 all network channels to protect you and your users during times
+2021-12-30 18:06:03	--	 of network turmoil.
+2021-12-30 18:06:03	--	 Please join #help if you have questions about any of the above
+2021-12-30 18:06:03	--	 information.
+2021-12-30 18:06:03	--	 Network Administration may remove any problem user at any time
+2021-12-30 18:06:03	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 18:06:03	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 18:06:03	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 18:06:03	--	 media websites, or any thing that network administration sees as
+2021-12-30 18:06:03	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 18:06:03	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 18:06:03	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 18:06:03	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 18:06:03	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 18:06:03	--	 Act, or any other classified request for user information.
+2021-12-30 18:06:03	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:06:03	--	 MOTD Last Updated:
+2021-12-30 18:06:03	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 18:06:03	--	End of message of the day.
+2021-12-30 18:06:03	--	Snoonet-rvs.kde.qnmt8p.IP is now your displayed host
+2021-12-30 18:06:03	--	User mode [+Iwxi] by rdr
+2021-12-30 18:06:03	--	irc.snoonet.org: *** You are connected to irc.snoonet.org using TLS (SSL) cipher 'TLSv1.2-ECDHE-RSA-AES256-GCM-SHA384'
+2021-12-30 18:06:03	--	NickServ (NickServ@services): This nickname is registered and protected.  If it is your
+2021-12-30 18:06:03	--	NickServ (NickServ@services): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2021-12-30 18:06:03	--	NickServ (NickServ@services): please choose a different nick.
+2021-12-30 18:06:03	--	[*] rdr (rdr@Snoonet-rvs.kde.qnmt8p.IP) Hs 0 (rdr)
+2021-12-30 18:06:03	--	[rdr] End of /WHO list.
+2021-12-30 18:06:04	--	NickServ (NickServ@services): Password accepted - you are now recognized.
+2021-12-30 18:06:04	--	You are now logged in as rdr (rdr!rdr@Snoonet-rvs.kde.qnmt8p.IP)
+2021-12-30 18:06:04	--	User mode [-x] by irc.snoonet.org
+2021-12-30 18:06:04	--	user/rdr is now your displayed host
+2021-12-30 18:06:04	--	HostServ (HostServ@services): Your vhost of user/rdr is now activated.
+2021-12-30 18:06:04	--	User mode [+r] by NickServ
+2021-12-30 18:57:29	--	irc: lag is high, reconnecting to server Snoonet
+2021-12-30 18:57:29	--	irc: disconnected from server
+2021-12-30 18:57:29	--	irc: reconnecting to server in 10 seconds
+2021-12-30 18:57:39	--	irc: reconnecting to server...
+2021-12-30 18:57:39	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 18:57:39	--	gnutls: receiving 1 certificate
+2021-12-30 18:57:39	--	 - certificate[1] info:
+2021-12-30 18:57:39	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 18:57:39	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 18:57:39	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 18:57:39	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 18:57:39	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 18:57:39	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 18:57:39	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 18:57:39	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 18:57:39	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 18:57:39	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 18:57:39	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 18:57:39	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 18:57:39	--	WHOX are supported by this server
+2021-12-30 18:57:39	--	There are 5 users and 3428 invisible on 8 servers
+2021-12-30 18:57:39	--	22 operator(s) online
+2021-12-30 18:57:39	--	5608 channels formed
+2021-12-30 18:57:39	--	I have 289 clients and 1 servers
+2021-12-30 18:57:39	--	Current local users: 289  Max: 597
+2021-12-30 18:57:39	--	Current global users: 3433  Max: 4337
+2021-12-30 18:57:39	--	veronica.snoonet.org message of the day
+2021-12-30 18:57:39	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:57:39	--	   _____                              _
+2021-12-30 18:57:39	--	  / ____|                            | |
+2021-12-30 18:57:39	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 18:57:39	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 18:57:39	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 18:57:39	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 18:57:39	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 18:57:39	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 18:57:39	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 18:57:39	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 18:57:39	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 18:57:39	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 18:57:39	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 18:57:39	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 18:57:39	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 18:57:39	--	 to the best of our ability. This may also include the use of
+2021-12-30 18:57:39	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 18:57:39	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 18:57:39	--	 all network channels to protect you and your users during times
+2021-12-30 18:57:39	--	 of network turmoil.
+2021-12-30 18:57:39	--	 Please join #help if you have questions about any of the above
+2021-12-30 18:57:39	--	 information.
+2021-12-30 18:57:39	--	 Network Administration may remove any problem user at any time
+2021-12-30 18:57:39	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 18:57:39	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 18:57:39	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 18:57:39	--	 media websites, or any thing that network administration sees as
+2021-12-30 18:57:39	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 18:57:39	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 18:57:39	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 18:57:39	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 18:57:39	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 18:57:39	--	 Act, or any other classified request for user information.
+2021-12-30 18:57:39	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:57:39	--	 MOTD Last Updated:
+2021-12-30 18:57:39	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 18:57:39	--	End of message of the day.
+2021-12-30 18:57:39	--	User mode [+Iirw] by rdr
+2021-12-30 18:57:39	--	You have been marked as being away
+2021-12-30 18:57:39	--	You are no longer marked as being away
+2021-12-30 18:59:55	--	irc: connecting to server home/8080 (SSL)...
+2021-12-30 18:59:55	--	gnutls: receiving 1 certificate
+2021-12-30 18:59:55	--	 - certificate[1] info:
+2021-12-30 18:59:55	--	   - subject `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', issuer `EMAIL=ryan@host.unknown,CN=host.unknown,OU=ryan', serial 0x6f, RSA key 2048 bits, signed using RSA-SHA256, activated `2018-08-01 15:47:17 UTC', expires `2028-07-29 15:47:17 UTC', pin-sha256="zRFv0mSZJqDuP0v+YJYiN13hgdf02Lw4F/fqLJR4uUE="
+2021-12-30 18:59:55	=!=	gnutls: the hostname in the certificate does NOT match "home"
+2021-12-30 18:59:55	=!=	gnutls: peer's certificate is NOT trusted
+2021-12-30 18:59:55	=!=	gnutls: peer's certificate issuer is unknown
+2021-12-30 18:59:55	--	irc: connected to home/8080 (10.0.0.222)
+2021-12-30 18:59:55	--	Welcome to the Snoonet IRC Network rdr!rdr@S0106905851c3eec9.mh.shawcable.net
+2021-12-30 18:59:55	--	Your host is veronica.snoonet.org, running version InspIRCd-3
+2021-12-30 18:59:55	--	This server was created 13:22:15 Jul 11 2021
+2021-12-30 18:59:55	--	veronica.snoonet.org InspIRCd-3 BHILRSTWcdghikorswx ABCDFHIJKLMNOPQRSTWXYZbcdefghijklmnoprstuvwxz FHIJLWXYZbdefghjklovwx
+2021-12-30 18:59:55	--	ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:200 CHANMODES=IXZbegw,k,FHJLWdfjlx,ABCDKMNOPQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CLIENTTAGDENY=* ELIST=CMNTU ESILENCE=CcdiNnPpTtx are supported by this server
+2021-12-30 18:59:55	--	EXCEPTS=e EXTBAN=,ABCNOQRSTUacjmprsz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:1024,X:1024,b:1024,e:1024,g:1024,w:1024 MAXTARGETS=20 MODES=50 NAMELEN=128 NAMESX NETWORK=Snoonet are supported by this server
+2021-12-30 18:59:55	--	NICKLEN=27 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@%+ TOPICLEN=307 UHNAMES USERIP USERLEN=11 USERMODES=,,s,BHILRSTWcdghikorwx WATCH=30 are supported by this server
+2021-12-30 18:59:55	--	WHOX are supported by this server
+2021-12-30 18:59:55	--	There are 5 users and 3428 invisible on 8 servers
+2021-12-30 18:59:55	--	22 operator(s) online
+2021-12-30 18:59:55	--	5608 channels formed
+2021-12-30 18:59:55	--	I have 289 clients and 1 servers
+2021-12-30 18:59:55	--	Current local users: 289  Max: 597
+2021-12-30 18:59:55	--	Current global users: 3433  Max: 4337
+2021-12-30 18:59:55	--	You are now known as rdr
+2021-12-30 18:59:55	--	veronica.snoonet.org message of the day
+2021-12-30 18:59:55	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:59:55	--	   _____                              _
+2021-12-30 18:59:55	--	  / ____|                            | |
+2021-12-30 18:59:55	--	 | (___  _ __   ___   ___  _ __   ___| |_
+2021-12-30 18:59:55	--	  \___ \| '_ \ / _ \ / _ \| '_ \ / _ \ __|
+2021-12-30 18:59:55	--	  ____) | | | | (_) | (_) | | | |  __/ |_
+2021-12-30 18:59:55	--	 |_____/|_| |_|\___/ \___/|_| |_|\___|\__|
+2021-12-30 18:59:55	--	 Welcome to the Snoonet Chat Network.
+2021-12-30 18:59:55	--	 By connecting to Snoonet you indicate that you have read and
+2021-12-30 18:59:55	--	 accept our policies as set out on https://snoonet.org/rules
+2021-12-30 18:59:55	--	 Snoonet runs an open proxy scanner. If you continue connecting
+2021-12-30 18:59:55	--	 to Snoonet, you agree to this scanning to protect our network
+2021-12-30 18:59:55	--	 from scammers, spammers and the propagation of viruses.
+2021-12-30 18:59:55	--	 Please visit our ruleset listed at https://snoonet.org/rules
+2021-12-30 18:59:55	--	 Yes, this is so important we list it twice. Snoonet does not have
+2021-12-30 18:59:55	--	 many network wide rules but the ones we do have we enforce
+2021-12-30 18:59:55	--	 to the best of our ability. This may also include the use of
+2021-12-30 18:59:55	--	 automated oper utilities and/or standalone network bots that may
+2021-12-30 18:59:55	--	 join/part your channel, or the mass setting of channel modes across
+2021-12-30 18:59:55	--	 all network channels to protect you and your users during times
+2021-12-30 18:59:55	--	 of network turmoil.
+2021-12-30 18:59:55	--	 Please join #help if you have questions about any of the above
+2021-12-30 18:59:55	--	 information.
+2021-12-30 18:59:55	--	 Network Administration may remove any problem user at any time
+2021-12-30 18:59:55	--	 for the betterment of all users. This includes, but is not limited
+2021-12-30 18:59:55	--	 to, trolling, attempting to receive or spread users personal
+2021-12-30 18:59:55	--	 information (also known as Doxxing), vote brigading on any social
+2021-12-30 18:59:55	--	 media websites, or any thing that network administration sees as
+2021-12-30 18:59:55	--	 potentially harmful to the atmosphere of Snoonet.
+2021-12-30 18:59:55	--	 Our network rules are located here: https://snoonet.org/rules
+2021-12-30 18:59:55	--	 Ignorance is not an excuse - most of the network rules are common sense.
+2021-12-30 18:59:55	--	 As of the last MOTD Update, Snoonet has never received a National
+2021-12-30 18:59:55	--	 Security Letter, an order under the Foreign Intelligence Surveillance
+2021-12-30 18:59:55	--	 Act, or any other classified request for user information.
+2021-12-30 18:59:55	--	 #/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-#/-
+2021-12-30 18:59:55	--	 MOTD Last Updated:
+2021-12-30 18:59:55	--	 Thu 17 Dec 16:36:00 UTC 2020
+2021-12-30 18:59:55	--	End of message of the day.
+2021-12-30 18:59:55	--	User mode [+Iirw] by rdr
+2021-12-31 03:29:04	--	Wallops from Matthew (Matthew@snoonet/staff/Shadeblast): Hey, Snoonet! Join us in #snoonet-newyears as we get ready for 2022. We'll be partying throughout New Year's Eve until the last clocks tick 2022.

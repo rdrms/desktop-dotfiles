@@ -1,0 +1,37 @@
+2021-02-11 21:16:43	-->	rdr (~rydare@unaffiliated/unheeding) has joined #tmux
+2021-02-11 21:16:43	--	Topic for #tmux is "tmux is a terminal multiplexer | http://tmux.github.io/ | http://man.openbsd.org/OpenBSD-current/man1/tmux.1"
+2021-02-11 21:16:43	--	Topic set by nicm (~nicholas@host81-154-196-102.range81-154.btcentralplus.com) on Fri, 24 Apr 2020 03:18:04
+2021-02-11 21:16:43	--	Channel #tmux: 296 nicks (0 ops, 0 voices, 296 normals)
+2021-02-11 21:16:45	--	Channel created on Thu, 11 Jun 2009 13:16:11
+2021-02-11 21:17:11	rdr	if C is control and M is alt, what is Super_L or the Windows key in the config?
+2021-02-11 21:18:04	-->	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has joined #tmux
+2021-02-11 21:20:10	genevino	rdr: i doubt you can use the windows key as a modifier in terminal applications. well, at least my guess is the application in the terminal won't see those.
+2021-02-11 21:21:31	rdr	oh really? that's a shame
+2021-02-11 21:22:09	genevino	can't say for sure, but i've never in my life seen a setup where that was a thing.
+2021-02-11 21:22:47	<--	jlf (~user@pdpc/supporter/active/jlf) has quit (Ping timeout: 260 seconds)
+2021-02-11 21:22:49	rdr	I guess that's why all the terminal application I use appear to be obsessed with alt
+2021-02-11 21:23:24	genevino	well i still use alt instead of win for all my window manager shortcuts
+2021-02-11 21:23:30	genevino	for the simply reason of ergonomics
+2021-02-11 21:23:39	genevino	it's much easier to reach with my left thumb
+2021-02-11 21:24:07	genevino	of course it's hard to come up with a setup where these two worlds aren't colliding, but for me it was worth it
+2021-02-11 21:25:30	genevino	in fact, my whole setup doesn't even utilize the windows key anymore
+2021-02-11 21:29:10	rdr	maybe you're just biased lol
+2021-02-11 21:29:25	rdr	maybe it wasn't possible in 1984 so you've just avoided the key :P
+2021-02-11 21:32:45	genevino	no it just turned out to hurt my left hand
+2021-02-11 21:34:50	rdr	ooh i see
+2021-02-11 21:34:52	rdr	that's too bad
+2021-02-11 21:35:54	--	atlas` is now known as Atlas
+2021-02-11 21:37:10	-->	jan6 (jan6@tilde.team/users/jan6) has joined #tmux
+2021-02-11 21:43:15	<--	topcat001 (~topcat001@unaffiliated/topcat001) has quit (Remote host closed the connection)
+2021-02-11 21:52:37	-->	topcat001 (~topcat001@unaffiliated/topcat001) has joined #tmux
+2021-02-11 22:00:15	--	irc: disconnected from server
+2021-02-11 22:03:10	-->	rdr (~rydare@unaffiliated/unheeding) has joined #tmux
+2021-02-11 22:03:10	--	Topic for #tmux is "tmux is a terminal multiplexer | http://tmux.github.io/ | http://man.openbsd.org/OpenBSD-current/man1/tmux.1"
+2021-02-11 22:03:10	--	Topic set by nicm (~nicholas@host81-154-196-102.range81-154.btcentralplus.com) on Fri, 24 Apr 2020 03:18:04
+2021-02-11 22:03:10	--	Channel #tmux: 297 nicks (0 ops, 0 voices, 297 normals)
+2021-02-11 22:03:17	--	Channel created on Thu, 11 Jun 2009 13:16:11
+2021-02-11 22:09:38	-->	thebope (~thebope@pdpc/supporter/student/thebope) has joined #tmux
+2021-02-11 22:21:33	<--	diniwed (~gavron@92.118.13.114) has quit (Ping timeout: 264 seconds)
+2021-02-11 22:26:21	<--	thebope (~thebope@pdpc/supporter/student/thebope) has quit (Ping timeout: 264 seconds)
+2021-02-11 22:27:36	-->	normen (~normen@p200300d7171d1d0055e3217b65b7e28a.dip0.t-ipconnect.de) has joined #tmux
+2021-02-11 22:35:31	<--	zebrag (~inkbottle@aaubervilliers-654-1-112-148.w86-198.abo.wanadoo.fr) has quit (Quit: Konversation terminated!)

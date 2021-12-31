@@ -186,18 +186,18 @@
 #song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 song_list_format = {%a - }{%t}|{%f}$R{(%l)}
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
-song_status_format = "$b$(white_blue) {{%a{ "%b"{ (%y)}} - }{%t}}|{%f} $(end)$(blue)"
+song_status_format = "$b$(green) {{%a{ "%b"{ (%y)}} - }{%t}}|{%f} $(end)$(blue)❯ "
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
-alternative_header_first_line_format = $(blue)$(end)$(white_blue) $b{%t}|{%f} $(end)$(blue)
+alternative_header_first_line_format = $(blue)$(end)$(white_blue) $b{%t}|{%f} $(end)$(blue)
 #
 #
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
-alternative_header_second_line_format = $b$(red)$(end)$(white_red) {{$b%a$/b}{ - %b}{ (%y)}}|{%D} $(end)$(red)
+alternative_header_second_line_format = $b$(red)$(end)$(white_red) {{$b%a$/b}{ - %b}{ (%y)}}|{%D} $(end)$(red)
 #
-current_item_prefix = $(white_blue) 
+current_item_prefix = $r 
 #
 #current_item_suffix = $/r$(end)
 #
@@ -325,7 +325,7 @@ autocenter_mode = yes
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-progressbar_look = "─🔊 "
+progressbar_look = "─❯ "
 #
 ## Available values: database, playlist.
 ##
