@@ -1,0 +1,130 @@
+/*
+ * Waybar Powerline Zenburn Theme
+ * Colors:
+ * BG (Dark): #3f3f3f
+ * FG (Light): #dcdccc
+ * Green: #7f9f7f
+ * Red: #cc9393
+ * Yellow: #f0dfaf
+ * Blue: #8cd0d3
+ */
+
+* {
+    border: none;
+    border-radius: 0;
+    /* Ensure you have a Nerd Font installed for the icons and arrows to render */
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #3f3f3f; /* Zenburn base background */
+    color: #dcdccc;
+}
+
+/* ---- Module Base Formatting ---- */
+#workspaces, #custom-waybar-mpris, #pulseaudio, #network, #clock {
+    padding: 0 10px;
+    color: #3f3f3f; 
+    font-weight: bold;
+}
+
+/* Arrow Base Formatting */
+#custom-rr-workspaces, #custom-rl-mpris, #custom-rr-mpris, #custom-rl-pulse, #custom-rl-net, #custom-rl-clock {
+    padding: 0;
+    margin: 0;
+    font-size: 22px; /* Set slightly larger than text to prevent vertical pixel gaps */
+}
+
+/* ---- Left Modules ---- */
+#custom-rr-workspaces {
+    color: #7f9f7f;
+    background-color: transparent;
+}
+/* Workspaces (Green) */
+#workspaces {
+    background-color: #7f9f7f;
+}
+#workspaces button {
+    padding: 0 5px;
+    color: #3f3f3f;
+}
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: rgba(0,0,0,0.2); 
+}
+
+/* ---- Center Modules ---- */
+/* MPRIS (Red) */
+#custom-rl-mpris {
+    color: #cc9393;
+    background-color: transparent;
+}
+#custom-waybar-mpris {
+    background-color: #cc9393;
+}
+#custom-rr-mpris {
+    color: #cc9393;
+    background-color: transparent;
+}
+
+/* ---- Right Modules ---- */
+/* PulseAudio (Yellow) */
+#custom-rl-pulse {
+    color: #f0dfaf;
+    background-color: transparent;
+}
+#pulseaudio {
+    background-color: #f0dfaf;
+}
+
+/* Network (Blue) */
+#custom-rl-net {
+    color: #8cd0d3;
+    background-color: #f0dfaf; /* Bridges from the yellow PulseAudio module */
+}
+#network {
+    background-color: #8cd0d3;
+}
+
+/* Clock (Green) */
+#custom-rl-clock {
+    color: #7f9f7f;
+    background-color: #8cd0d3; /* Bridges from the blue Network module */
+}
+#clock {
+    background-color: #7f9f7f;
+}
+
+/* ---- Bottom Bar (Taskbar) ---- */
+
+#taskbar {
+    background-color: #8cd0d3; /* Zenburn Blue */
+    padding: 0 5px;
+}
+
+#taskbar button {
+    padding: 0 8px;
+    color: #3f3f3f;
+    font-weight: bold;
+    background: transparent;
+}
+
+#taskbar button.active {
+    background-color: rgba(0,0,0,0.2); /* Darkens the currently focused window */
+}
+
+#taskbar button:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Powerline Arrow capping the end of the taskbar */
+/* Powerline Arrows capping the taskbar */
+#custom-rl-taskbar, #custom-rr-taskbar {
+    color: #8cd0d3;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+  <menu id="root-menu" label="Openbox 3">
+    <!-- This creates a dynamic submenu for your apps -->
+    <menu id="apps" label="Applications" execute="labwc-menu-generator -p" />
+    <separator />
+    <item label="Terminal">
+      <action name="Execute"><command>alacritty</command></action>
+    </item>
+    <item label="Web Browser">
+      <action name="Execute"><command>firefox</command></action>
+    </item>
+    <separator />
+    <item label="Reconfigure">
+      <action name="Reconfigure" />
+    </item>
+    <item label="Exit">
+      <action name="Exit" />
+    </item>
+  </menu>
+</openbox_menu>
