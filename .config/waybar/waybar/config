@@ -1,0 +1,110 @@
+[
+    {
+        "layer": "top",
+        "position": "top",
+        "height": 28,
+        "spacing": 0,
+        "modules-left": [
+            "ext/workspaces",
+            "custom/rr-workspaces"
+        ],
+        "modules-center": [
+            "custom/rl-mpris",
+            "custom/waybar-mpris",
+            "custom/rr-mpris"
+        ],
+        "modules-right": [
+            "custom/rl-pulse",
+            "pulseaudio",
+            "custom/rl-net",
+            "network",
+            "custom/rl-tray",
+            "tray",
+            "clock",
+            "custom/rl-power",
+            "custom/power"
+        ],
+
+        // --- Powerline Separators ---
+        "custom/rr-workspaces": { "format": "", "tooltip": false },
+        "custom/rl-mpris":      { "format": "", "tooltip": false },
+        "custom/rr-mpris":      { "format": "", "tooltip": false },
+        "custom/rl-pulse":      { "format": "", "tooltip": false },
+        "custom/rl-net":        { "format": "", "tooltip": false },
+        "custom/rl-tray":       { "format": "", "tooltip": false },
+        "custom/rl-power":      { "format": "", "tooltip": false },
+
+        // --- Functional Modules ---
+        "ext/workspaces": {
+            "format": "{icon}",
+            "format-icons": {
+                "1": "💼",
+                "2": "🎮",
+                "3": "🎨",
+                "4": "🌀",
+                "default": ""
+            },
+            "sort-by-number": true,
+            "on-click": "activate"
+        },
+        "custom/waybar-mpris": {
+            "return-type": "json",
+            "exec": "waybar-mpris --position --autofocus --play '' --pause ''",
+            "on-click": "waybar-mpris --send toggle",
+            "on-click-right": "playerctl --player=mpd next",
+            "escape": true
+        },
+        "pulseaudio": {
+            "format": "{icon} {volume}%",
+            "format-muted": " Muted",
+            "format-icons": {
+                "default": ["", ""]
+            }
+        },
+        "network": {
+            "format-wifi": " {essid}",
+            "format-ethernet": "󰈀 Ethernet",
+            "format-disconnected": "⚠ Disconnect"
+        },
+        "clock": {
+            "format": " {:%H:%M}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10,
+            "show-passive-items": true
+        },
+        "custom/power": {
+        "format": "⏻",
+        "on-click": "wlogout",
+        "tooltip": false
+        }
+    },
+    {
+        "layer": "top",
+        "position": "bottom",
+        "height": 28,
+        "spacing": 0,
+        "modules-center": [
+            "custom/rl-taskbar",
+            "wlr/taskbar",
+            "custom/rr-taskbar"
+        ],
+        "custom/rl-taskbar": {
+            "format": "",
+            "tooltip": false
+        },
+        "custom/rr-taskbar": {
+            "format": "",
+            "tooltip": false
+        },
+        "wlr/taskbar": {
+            "format": "{icon} {title:.15}",
+            "icon-size": 14,
+            "tooltip-format": "{title}",
+            "on-click": "minimize-raise",
+            "on-click-middle": "close"
+        },
+    }
+]
