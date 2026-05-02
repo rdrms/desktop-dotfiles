@@ -1,73 +1,116 @@
 [
- {
-    "layer": "top",
-    "position": "top",
-    "height": 28,
-    "spacing": 0,
-    "modules-left": [
-        "ext/workspaces",
-        "custom/rr-workspaces"
-    ],
-    "modules-center": [
-        "custom/rl-mpris",
-        "custom/waybar-mpris",
-        "custom/rr-mpris"
-    ],
-    "modules-right": [
-        "custom/rl-pulse",
-        "pulseaudio",
-        "custom/rl-net",
-        "network",
-        "custom/rl-clock",
-        "clock"
-    ],
+    {
+        "output": "DVI-D-1",
+        "layer": "top",
+        "position": "top",
+        "height": 28,
+        "spacing": 0,
+        "modules-left": [
+            "ext/workspaces",
+            "custom/rr-workspaces"
+        ],
+        "modules-center": [
+            "custom/rl-mpris",
+            "custom/waybar-mpris",
+            "custom/rr-mpris"
+        ],
+        "modules-right": [
+            "custom/rl-pulse",
+            "pulseaudio",
+            "custom/rl-net",
+            "network",
+            "custom/rl-tray",
+            "tray",
+            "clock",
+            "custom/rl-power",
+            "custom/power"
+        ],
 
-    // --- Powerline Separators ---
-    "custom/rr-workspaces": { "format": "", "tooltip": false },
-    "custom/rl-mpris":      { "format": "", "tooltip": false },
-    "custom/rr-mpris":      { "format": "", "tooltip": false },
-    "custom/rl-pulse":      { "format": "", "tooltip": false },
-    "custom/rl-net":        { "format": "", "tooltip": false },
-    "custom/rl-clock":      { "format": "", "tooltip": false },
+        "custom/rr-workspaces": { "format": "", "tooltip": false },
+        "custom/rl-mpris":      { "format": "", "tooltip": false },
+        "custom/rr-mpris":      { "format": "", "tooltip": false },
+        "custom/rl-pulse":      { "format": "", "tooltip": false },
+        "custom/rl-net":        { "format": "", "tooltip": false },
+        "custom/rl-tray":       { "format": "", "tooltip": false },
+        "custom/rl-power":      { "format": "", "tooltip": false },
 
-    // --- Functional Modules ---
-    "ext/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": "💼", /* Work */
-            "2": "🎮", /* Game */
-            "3": "🎨", /* Graphics */
-            "4": "🌀", /* Misc */
-            "default": ""
+        "custom/rl-taskbar": {
+            "format": "",
+            "tooltip": false
         },
-        "sort-by-number": true,
-        "on-click": "activate"
-    },
-    "custom/waybar-mpris": {
-        "return-type": "json",
-        "exec": "waybar-mpris --position --autofocus --play '' --pause ''",
-        "on-click": "waybar-mpris --send toggle",
-        "on-click-right": "playerctl --player=spotify next",
-        "escape": true
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": " Muted",
-        "format-icons": {
-            "default": ["", ""]
+        "custom/rr-taskbar": {
+            "format": "",
+            "tooltip": false
+        },
+
+        "ext/workspaces": {
+            "format": "{icon}",
+            "format-icons": {
+                "1": "",
+                "2": "󰊴",
+                "3": "",
+                "4": "",
+                "default": ""
+            },
+            "sort-by-number": true,
+            "on-click": "activate",
+            "on-scroll-up": "wtype -M logo -k left",
+            "on-scroll-down": "wtype -M logo -k right"
+        },
+        "custom/waybar-mpris": {
+            "return-type": "json",
+            "exec": "waybar-mpris --position --autofocus --play '' --pause ''",
+            "on-click": "waybar-mpris --send toggle",
+            "on-click-right": "playerctl next",
+            "escape": true
+        },
+        "pulseaudio": {
+            "format": "{icon}  {volume}%",
+            "format-muted": " Muted",
+            "format-icons": {
+                "default": ["", ""]
+            }
+        },
+        "network": {
+            "format-wifi": "  {essid}",
+            "format-ethernet": "󰈀  Ethernet",
+            "format-disconnected": "⚠  Disconnect"
+        },
+        "clock": {
+            "format": "  {:%H:%M}",
+            "tooltip-format": "<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                "mode"          : "month",
+                "mode-mon-col"  : 3,
+                "weeks-pos"     : "right",
+                "on-scroll"     : 1,
+                "format": {
+                    "months":     "<span color='#f0dfaf'><b>{}</b></span>",
+                    "days":       "<span color='#dcdccc'><b>{}</b></span>",
+                    "weeks":      "<span color='#8cd0d3'><b>W{}</b></span>",
+                    "weekdays":   "<span color='#dfaf8f'><b>{}</b></span>",
+                    "today":      "<span color='#cc9393'><b><u>{}</u></b></span>"
+                }
+            },
+            "actions":  {
+                "on-click-right": "mode",
+                "on-scroll-up": "shift_up",
+                "on-scroll-down": "shift_down"
+            }
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10,
+            "show-passive-items": true
+        },
+        "custom/power": {
+            "format": "⏻",
+            "on-click": "wlogout",
+            "tooltip": false
         }
     },
-    "network": {
-        "format-wifi": " {essid}",
-        "format-ethernet": "󰈀 Ethernet",
-        "format-disconnected": "⚠ Disconnect"
-    },
-    "clock": {
-        "format": " {:%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    }
-},
-{
+    {
+        "output": "DVI-D-1",
         "layer": "top",
         "position": "bottom",
         "height": 28,
@@ -78,18 +121,19 @@
             "custom/rr-taskbar"
         ],
         "custom/rl-taskbar": {
-            "format": "",
-            "tooltip": false
-        },
-        "custom/rr-taskbar": {
             "format": "",
             "tooltip": false
         },
+        "custom/rr-taskbar": {
+            "format": "",
+            "tooltip": false
+        },
         "wlr/taskbar": {
+            "all-outputs": true,
             "format": "{icon} {title:.15}",
             "icon-size": 14,
             "tooltip-format": "{title}",
-            "on-click": "activate",
+            "on-click": "minimize-raise",
             "on-click-middle": "close"
         }
     }

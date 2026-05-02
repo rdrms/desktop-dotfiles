@@ -1,12 +1,28 @@
 #!/bin/sh
 
 # 1. Monitor Setup
-# Run wlr-randr before other graphical elements to ensure they render on the correct geometry
-wlr-randr --output HDMI-A-1 --pos 0,0 --output DVI-D-1 --scale 1.25 --pos 1920,0
+# Delay slightly to ensure labwc has fully initialized outputs
+sleep 1
+
+# 1.1 Add the exact --mode for your DVI-D-1 monitor (replace with your actual mode)
+wlr-randr --output HDMI-A-1 --pos 0,0 --output DVI-D-1 --mode 2560x1440@59.951000Hz --scale 1.25 --pos 1920,0
+
+# 1.2 Add environment variables
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc
 
 # 2. Wallpaper
 # -m fill scales the image to fit the screen, cropping as necessary
-swaybg -i /home/rdr/Pictures/Wallpapers/wallpapersden.com_night-at-beach-4k_3840x2160.jpg -m fill &
-
-# 3. Status Bar
+swaybg -i /home/rdr/Pictures/Wallpapers/gemini_zenburn.png -m fill &
+# 2.1 audio inhibitor 
+sway-audio-idle-inhibit &
+# 2.2  Screensaver/lock
+swayidle -w \
+    timeout 300 'swaylock -f -c 3f3f3f' \
+    timeout 600 'wlopm --off \*' \
+    resume 'wlopm --on \*' &
+# 3. anyrun daemon
+anyrun daemon &
+# 3.1 notification daemmon
+mako &
+# 4. Status Bar
 waybar &

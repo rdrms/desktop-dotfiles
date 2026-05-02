@@ -1,15 +1,16 @@
-<?xml version="1.0"?>
 <labwc_config>
   <core>
-  </core>
+  <gap>10</gap></core>
   <theme>
     <name>Adwaita</name>
     <icon>Papirus-Dark</icon>
     <dropShadows>yes</dropShadows>
+    <dropShadowsOnTiled>yes</dropShadowsOnTiled>
   </theme>
   <libinput>
     <device>
       <scrollFactor>1.2</scrollFactor>
+      <accelProfile>flat</accelProfile>
     </device>
   </libinput>
   <!-- Define your workspaces here -->
@@ -22,41 +23,74 @@
       <name>4</name>
     </names>
   </desktops>
-
   <keyboard>
-    <default /> <!-- Keeps standard labwc hotkeys intact -->
-    
+    <default />
+    <!-- Keeps standard labwc hotkeys intact -->
     <!-- Switch Workspaces -->
-    <keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
-    <keybind key="W-2"><action name="GoToDesktop" to="2" /></keybind>
-    <keybind key="W-3"><action name="GoToDesktop" to="3" /></keybind>
-    <keybind key="W-4"><action name="GoToDesktop" to="4" /></keybind>
-
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
     <!-- Send Active Window to Workspace -->
-    <keybind key="W-S-1"><action name="SendToDesktop" to="1" /></keybind>
-    <keybind key="W-S-2"><action name="SendToDesktop" to="2" /></keybind>
-    <keybind key="W-S-3"><action name="SendToDesktop" to="3" /></keybind>
-    <keybind key="W-S-4"><action name="SendToDesktop" to="4" /></keybind>
+    <keybind key="W-S-1">
+      <action name="SendToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop" to="4" />
+    </keybind>
+    <!-- Go to Desktop Left/Right -->
+    <keybind key="W-Left">
+      <action name="GoToDesktop" to="left" />
+    </keybind>
+    <keybind key="W-Right">
+      <action name="GoToDesktop" to="right" />
+    </keybind>
     <!-- Print Screen: Save full screen to ~/Pictures -->
     <keybind key="Print">
       <action name="Execute">
         <command>sh -c 'grim ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png'</command>
       </action>
     </keybind>
-
     <!-- Super + Shift + S: Select region and copy to clipboard -->
     <keybind key="W-S-s">
       <action name="Execute">
         <command>sh -c 'grim -g "$(slurp)" - | wl-copy'</command>
       </action>
     </keybind>
-
     <!-- Alt + Print Screen: Select region and save to ~/Pictures -->
     <keybind key="A-Print">
       <action name="Execute">
         <command>sh -c 'grim -g "$(slurp)" ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png'</command>
       </action>
     </keybind>
-   </keyboard>
-
+    <!-- Launch Anyrun -->
+    <keybind key="W-space">
+      <action name="Execute" command="anyrun" />
+    </keybind>
+    <!-- Super + L to Lock -->
+    <keybind key="W-l">
+      <action name="Execute" command="swaylock -f -c 3f3f3f" />
+    </keybind>
+    <!-- Super + Shift + R to Reboot -->
+    <keybind key="W-S-r">
+      <action name="Execute" command="systemctl reboot" />
+    </keybind>
+    <keybind key="C-A-l">
+      <action name="Execute" command="~/.local/bin/lock-sleep.sh" />
+    </keybind>
+  </keyboard>
 </labwc_config>

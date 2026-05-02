@@ -24,83 +24,138 @@ window#waybar {
 }
 
 /* ---- Module Base Formatting ---- */
-#workspaces, #custom-waybar-mpris, #pulseaudio, #network, #clock {
+#custom-waybar-mpris, #pulseaudio, #network, #tray, #clock {
     padding: 0 10px;
     color: #3f3f3f; 
     font-weight: bold;
 }
 
 /* Arrow Base Formatting */
-#custom-rr-workspaces, #custom-rl-mpris, #custom-rr-mpris, #custom-rl-pulse, #custom-rl-net, #custom-rl-clock {
+#custom-rr-workspaces, #custom-rl-mpris, #custom-rr-mpris, #custom-rl-pulse, #custom-rl-net, #custom-rl-tray, #custom-rl-taskbar, #custom-rr-taskbar, #custom-rl-power {
     padding: 0;
     margin: 0;
-    font-size: 22px; /* Set slightly larger than text to prevent vertical pixel gaps */
+    font-size: 22px; 
 }
 
 /* ---- Left Modules ---- */
 #custom-rr-workspaces {
-    color: #7f9f7f;
-    background-color: transparent;
+    color: #3f3f3f;       /* Arrow color matches main bar BG */
+    background-color: #dc8cc3; /* Background matches Workspace color */
 }
-/* Workspaces (Green) */
+
+/* Workspaces (Magenta) */
 #workspaces {
-    background-color: #7f9f7f;
+    background-color: #dc8cc3;
+    padding-left: 10px;  /* Pushes the first icon inward to balance the powerline tail on the right */
 }
+
 #workspaces button {
-    padding: 0 5px;
+    padding-left: 0;
+    padding-right: 8px;  /* Acts as a bumper to shove the icon back to the left */
+    min-width: 36px;     /* Keeps the highlight boxes perfectly uniform */
+    margin: 0;
+    border-radius: 0;
     color: #3f3f3f;
 }
+
 #workspaces button.focused,
 #workspaces button.active {
+    background-color: rgba(0,0,0,0.2); 
+}
+#ext-workspaces button {
+    padding-left: 0;
+    padding-right: 8px;  /* Acts as a bumper to shove the icon back to the left */
+    min-width: 36px;     /* Keeps the highlight boxes perfectly uniform */
+    margin: 0;
+    border-radius: 0;
+    color: #3f3f3f;
+}
+
+#ext-workspaces button.focused,
+#ext-workspaces button.active {
     background-color: rgba(0,0,0,0.2); 
 }
 
 /* ---- Center Modules ---- */
 /* MPRIS (Red) */
 #custom-rl-mpris {
-    color: #cc9393;
-    background-color: transparent;
+    color: #3f3f3f;       /* Arrow color matches main bar BG */
+    background-color: #cc9393; 
 }
 #custom-waybar-mpris {
     background-color: #cc9393;
 }
 #custom-rr-mpris {
-    color: #cc9393;
-    background-color: transparent;
+    color: #3f3f3f;       /* Arrow color matches main bar BG */
+    background-color: #cc9393;
 }
 
 /* ---- Right Modules ---- */
-/* PulseAudio (Yellow) */
+/* PulseAudio */
 #custom-rl-pulse {
-    color: #f0dfaf;
-    background-color: transparent;
+    color: #3f3f3f; 
+    background-color: #f0dfaf;
 }
+
+/* PulseAudio Module (Yellow) */
 #pulseaudio {
     background-color: #f0dfaf;
 }
 
-/* Network (Blue) */
-#custom-rl-net {
-    color: #8cd0d3;
-    background-color: #f0dfaf; /* Bridges from the yellow PulseAudio module */
-}
+/* Network Module (Blue) */
 #network {
-    background-color: #8cd0d3;
+    background-color: #94bff3;
 }
 
-/* Clock (Green) */
-#custom-rl-clock {
-    color: #7f9f7f;
-    background-color: #8cd0d3; /* Bridges from the blue Network module */
+/* Network */
+#custom-rl-net {
+    color: #f0dfaf;       /* Arrow color matches previous module (Yellow) */
+    background-color: #94bff3; /* BG matches current module (Blue) */
 }
-#clock {
-    background-color: #7f9f7f;
+
+/* Tray & Clock */
+#custom-rl-tray {
+    color: #94bff3;       /* Arrow color matches previous module (Blue) */
+    background-color: #7f9f7f; /* BG matches current module (Green) */
+}
+
+#tray, #clock {
+    background-color: #7f9f7f; /* Both share the Zenburn Green background */
+    border-radius: 0; 
+    margin: 0; 
+}
+
+#tray {
+    padding-right: 5px; /* Breathing room between tray icons and the clock text */
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #dcdccc;
+}
+
+/* Power Button */
+#custom-rl-power {
+    color: #7f9f7f;       /* Arrow color matches previous module (Green) */
+    background-color: #dfaf8f; /* BG matches current module (Orange) */
+}
+
+#custom-power {
+    background-color: #dfaf8f;
+    color: #3f3f3f;
+    font-weight: bold;
+    padding: 0 15px; /* The padding fixes the cut-off icon! Extra 5px on the right edge looks nice. */
+    border-radius: 0;
 }
 
 /* ---- Bottom Bar (Taskbar) ---- */
 
 #taskbar {
-    background-color: #8cd0d3; /* Zenburn Blue */
+    background-color: #93e0e3; /* Zenburn Cyan */
     padding: 0 5px;
 }
 
@@ -111,20 +166,49 @@ window#waybar {
     background: transparent;
 }
 
+/* Update this specific block */
 #taskbar button.active {
-    background-color: rgba(0,0,0,0.2); /* Darkens the currently focused window */
+    background-color: #cc9393; /* Zenburn Red */ 
 }
 
 #taskbar button:hover {
-    background-color: rgba(0,0,0,0.1);
+    background-color: #dca3a3; /* Lighter Zenburn Red */
+}
+/* Powerline Arrows capping the taskbar */
+#custom-rl-taskbar {
+    color: #3f3f3f; 
+    background-color: #93e0e3;
+}
+#custom-rr-taskbar {
+    color: #3f3f3f; 
+    background-color: #93e0e3;
 }
 
-/* Powerline Arrow capping the end of the taskbar */
-/* Powerline Arrows capping the taskbar */
-#custom-rl-taskbar, #custom-rr-taskbar {
-    color: #8cd0d3;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    font-size: 22px;
+/* ---- Calendar Popup (Zenburn Theme) ---- */
+tooltip {
+    background: #3f3f3f; /* Zenburn BG */
+    border: 2px solid #7f9f7f; /* Zenburn Green to match the clock module */
+    border-radius: 4px;
+}
+
+tooltip label {
+    color: #dcdccc; /* Zenburn FG */
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+/* Styling the calendar grid specifically */
+#calendar {
+    padding: 10px;
+    margin: 5px;
+}
+
+#calendar > .header {
+    background-color: #3f3f3f;
+}
+
+/* Today's date highlight */
+#calendar > .today {
+    background-color: #cc9393; /* Zenburn Red */
+    color: #3f3f3f;
+    border-radius: 2px;
 }
